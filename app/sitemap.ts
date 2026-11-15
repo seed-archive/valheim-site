@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { BASE_PATH } from "@/lib/site";
 
-const SITE = `https://seedarchive.gg${BASE_PATH}`;
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/map"].map((path) => ({ url: `${SITE}${path}` }));
+  const base =
+    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5020${BASE_PATH}`;
+  return ["", "/map"].map((path) => ({ url: `${base}${path}` }));
 }

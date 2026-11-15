@@ -15,7 +15,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5002${BASE_PATH}`,
+    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5020${BASE_PATH}`,
   ),
   title: "Valheim seeds — Seed Archive",
   alternates: { canonical: "/" },

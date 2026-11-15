@@ -3,6 +3,9 @@
     "title": "Seed Archive",
     "game": "Valheim",
     "map": "Map",
+    "account": "Account",
+    "signOut": "Sign out",
+    "unavailable": "The archive could not be read.",
     "privacy": "Privacy",
     "terms": "Terms",
     "releaseNotes": "Release notes"
@@ -10,10 +13,21 @@
   "pages": {
     "home": {
       "title": "Valheim seeds",
-      "lead": "Valheim worlds computed from their seeds. The section is being built."
+      "lead": "Valheim worlds computed from their seeds. The section is being built.",
+      "toMap": "Type a seed on the <link>Valheim seed map</link> to see its world."
     },
     "map": {
-      "placeholder": "The world map comes here."
+      "title": "Valheim seed map",
+      "seed": "Seed",
+      "show": "Show the map",
+      "cursor": "x {x}, z {z}",
+      "layers": {
+        "biomes": "Biomes",
+        "bosses": "Bosses",
+        "traders": "Traders",
+        "dungeons": "Dungeons",
+        "subBiomes": "Sub-biomes"
+      }
     },
     "notFound": {
       "title": "This page does not exist",

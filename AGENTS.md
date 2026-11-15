@@ -18,7 +18,7 @@ The Valheim section of Seed Archive, to be served at https://seedarchive.gg/valh
 
 ```bash
 npm install
-npm run dev      # the site on localhost:5002/valheim
+npm run dev      # the site on localhost:5020/valheim
 npm run lint
 npm run build
 ```
