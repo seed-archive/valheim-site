@@ -1,7 +1,8 @@
 # Repository and release
 
-- Work and commit on `dev`. `main` holds releases: a merge to `main` deploys production, so it happens only on the
-  owner's word; the coordinator deploys it together with the portal.
+- Work and commit on `dev`; every pull request, Renovate's included, targets `dev`, the default branch on GitHub (`seed-archive/docs/releases.md`). `main` holds
+  releases: the coordinator merges `dev` into `main` on the owner's word, which deploys production together with the
+  portal. Only generators commit to `main` (`../.claude/rules/architecture.md`, Repositories).
 - **The Valheim session owns this repository**: pages, texts, data, the map, components (the owner, 2026-11-15).
 - **The coordinating session owns what the games share**: the domain and DNS, the Vercel project and its environment
   variables, the portal's routing of `/valheim/*`, and the zone contract — `basePath` stays `/valheim`
