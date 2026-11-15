@@ -1,0 +1,50 @@
+{
+  "bugs": {
+    "url": "https://github.com/seed-archive/valheim-site/issues"
+  },
+  "dependencies": {
+    "@emotion/cache": "11.14.0",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/icons-material": "9.5.0",
+    "@mui/material": "9.5.0",
+    "@mui/material-nextjs": "9.5.0",
+    "@sentry/core": "11.9.0",
+    "@sentry/nextjs": "11.9.0",
+    "@vercel/analytics": "2.0.1",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-intl": "12.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.13.0",
+    "eslint-config-next": "16.4.3",
+    "eslint-config-prettier": "10.1.8",
+    "husky": "9.1.7",
+    "lint-staged": "17.6.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT",
+  "name": "valheim-site",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seed-archive/valheim-site"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 5002",
+    "lint": "eslint . --fix",
+    "prepare": "husky",
+    "start": "next start -p 5102"
+  },
+  "version": "0.1.0"
+}

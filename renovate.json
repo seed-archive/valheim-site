@@ -1,0 +1,4 @@
+{
+  "baseBranchPatterns": ["main"],
+  "extends": ["github>seed-archive/renovate-config"]
+}

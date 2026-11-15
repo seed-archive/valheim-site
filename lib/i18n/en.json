@@ -1,0 +1,23 @@
+{
+  "archive": {
+    "title": "Seed Archive",
+    "game": "Valheim",
+    "map": "Map",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "releaseNotes": "Release notes"
+  },
+  "pages": {
+    "home": {
+      "title": "Valheim seeds",
+      "lead": "Valheim worlds computed from their seeds. The section is being built."
+    },
+    "map": {
+      "placeholder": "The world map comes here."
+    },
+    "notFound": {
+      "title": "This page does not exist",
+      "home": "Back to Valheim"
+    }
+  }
+}
