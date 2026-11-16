@@ -72,7 +72,7 @@ function overlayPalette(
   return p;
 }
 
-// The trees layer: 1 a crown's shadow, then four shades a kind from 32 on
+// The trees layer: 1 a tree's shadow, 2 a trunk, 3 a birch's trunk, then four shades a kind from 32 on
 // (dark to light), the order the generator draws them in: beech, birch, oak,
 // fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree. Muted, so the forest
 // sits in the land; oak warm and birch pale, so both stand out.
@@ -88,6 +88,8 @@ const TREE_KINDS: [number, number, number][][] = [
 ];
 export const TREE_COLOURS: [number, [number, number, number, number]][] = [
   [1, [16, 24, 8, 90]],
+  [2, [62, 44, 30, 255]], // trunk
+  [3, [214, 210, 196, 255]], // birch trunk
   ...TREE_KINDS.flatMap((shades, k) =>
     shades.map(
       ([r, g, b], s): [number, [number, number, number, number]] => [
