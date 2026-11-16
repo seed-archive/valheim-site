@@ -65,21 +65,19 @@ const SIGNS: Record<string, string> = {
   drakeNest: `<ellipse cx="14" cy="14.8" rx="4.6" ry="6" fill="${W}"/>`,
 };
 
-// Every marker is a classic map pin — a drop in its group's colour, its point
-// on the place — with the place's own sign in its head. The viewer centres an
-// icon on its place, so the pin is drawn in the top half of a square twice
-// its height and its point lands in the square's middle.
-// The pin's size on screen: the 26 × 36 drop below, scaled (our own choice).
-const PIN_SCALE = 1.2;
-const PIN_W = 26 * PIN_SCALE;
-const PIN_H = 36 * PIN_SCALE;
-const BOX = Math.round(PIN_H * 2);
-// The drop, on a 26 × 36 grid: a round head (centre 13, 13; radius 12) and a
-// point at the bottom.
-const DROP =
-  "M13 1 C6.4 1 1 6.3 1 12.9 C1 21.5 13 35 13 35 C13 35 25 21.5 25 12.9 C25 6.3 19.6 1 13 1 Z";
+// Every marker is the map pin Google Maps uses (the Material "place" shape: a
+// round head whose sides curve in to a point), in its group's colour, its point
+// on the place, with the place's own sign in its head. The viewer centres an
+// icon on its place, so the pin sits in the top half of its square and its
+// point lands in the square's middle.
+const PLACE_PIN =
+  "M12 2 C8.13 2 5 5.13 5 9 C5 14.25 12 22 12 22 C12 22 19 14.25 19 9 C19 5.13 15.87 2 12 2 Z";
+// The pin is drawn on a 24-unit grid: head centre (12, 9), radius 7, point
+// (12, 22). On screen it is this many pixels a unit (our own choice).
+const PIN_SCALE = 2;
+const BOX = 80;
 // The sign (drawn on a 28-unit grid around 14, 14) scaled into the head.
-const SIGN_SCALE = 0.8;
+const SIGN_SCALE = 0.5;
 // Signs dark where the pin is light (our own choice).
 const INK: Partial<Record<PlaceGroup, string>> = {
   traders: "#3e2723",
@@ -91,17 +89,19 @@ export function placeIcon(
   group: PlaceGroup,
   key: string,
 ): { html: string; size: number; front: boolean } {
-  const k = SIGN_SCALE;
   const ink = INK[group];
   const sign = ink ? (SIGNS[key] ?? "").replaceAll(W, ink) : (SIGNS[key] ?? "");
-  const left = (BOX - PIN_W) / 2;
+  const k = SIGN_SCALE;
+  // The point (12, 22) on the square's centre.
+  const x = BOX / 2 - 12 * PIN_SCALE;
+  const y = BOX / 2 - 22 * PIN_SCALE;
   return {
     html:
       `<svg xmlns="http://www.w3.org/2000/svg" width="${BOX}" height="${BOX}" viewBox="0 0 ${BOX} ${BOX}" ` +
-      `style="pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.55))">` +
-      `<g transform="translate(${left} 0) scale(${PIN_SCALE})" style="pointer-events:auto">` +
-      `<path d="${DROP}" fill="${PLACE_COLOUR[group]}" stroke="#111" stroke-width="1.3"/>` +
-      `<g transform="translate(${13 - 14 * k} ${13 - 14 * k}) scale(${k})">${sign}</g>` +
+      `style="pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.5))">` +
+      `<g transform="translate(${x} ${y}) scale(${PIN_SCALE})" style="pointer-events:auto">` +
+      `<path d="${PLACE_PIN}" fill="${PLACE_COLOUR[group]}" stroke="#111" stroke-width="0.7"/>` +
+      `<g transform="translate(${12 - 14 * k} ${9 - 14 * k}) scale(${k})">${sign}</g>` +
       `</g></svg>`,
     size: BOX,
     front: group === "start",
