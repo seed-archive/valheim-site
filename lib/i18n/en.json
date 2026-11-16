@@ -13,7 +13,10 @@
     "releaseNotes": "Release notes",
     "allTools": "All tools",
     "seedRating": "How good is my seed?",
-    "bugs": "Bugs"
+    "bugs": "Bugs",
+    "guides": "Guides",
+    "allGuides": "All guides",
+    "guideStart": "Where to go first"
   },
   "pages": {
     "home": {
@@ -186,7 +189,11 @@
         "vegetation_groves_start": "Oaks and birches around the start",
         "vegetation_groves_yagluth": "Oaks and birches around Yagluth's altar",
         "route_swamp_fireHole": "Bonemass or his crypt to the nearest surtling fire hole",
-        "sectors_abomination": "Bonemass or his crypt to where Abominations spawn"
+        "sectors_abomination": "Bonemass or his crypt to where Abominations spawn",
+        "route_firstHome_blackForest": "The start to the nearest Black Forest",
+        "vegetation_copperCaves_walk": "Start, Eikthyr, the copper cave: the whole walk",
+        "vegetation_copperCaves_shore": "The copper cave to the sea",
+        "vegetation_copperCaves_tin": "Tin within reach of the copper cave"
       },
       "compass": {
         "north": "north",
@@ -259,6 +266,35 @@
         "others": "Sunken Crypts, troll caves, Infested Mines and the other dungeons are not touched by it: their rooms follow from the seed alone.",
         "maps": "A seed map that shows a single layout for a Burial Chamber shows one of its possible layouts. What a world really holds is in its save, once someone has walked in."
       }
+    },
+    "guides": {
+      "title": "Guides",
+      "start": "<b>Where do I go first on a new seed?</b> Read <link>Where to go first on a new seed</link>: Eikthyr, the Black Forest, copper and tin, and how near they lie."
+    },
+    "start": {
+      "title": "Where to go first on a new seed",
+      "lead": "<b>Where do I go first on a new seed?</b> To Eikthyr's altar, a short walk from the start, then into the Black Forest to a troll cave near the shore, with copper at its entrance and tin on the beach below.",
+      "eikthyr": {
+        "title": "Eikthyr's altar is a short walk from the start",
+        "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
+        "island": "On {island}% of seeds it stands on the start island. On the rest it is across water, so the first boat comes before the first boss."
+      },
+      "blackForest": {
+        "title": "The Black Forest begins at the edge of the Meadows",
+        "near": "The start sits in a ring of Meadows: the nearest Black Forest is usually {median} m away, and rarely nearer than {least} m.",
+        "island": "On {island}% of seeds the start island has Black Forest of its own."
+      },
+      "copper": {
+        "title": "Build the first home at a troll cave with copper",
+        "why": "A troll cave gives what the Black Forest rarely does: flat ground on the ledge at its mouth. Two copper veins by the entrance is the sign to stop there.",
+        "caves": "Of the {all} troll caves nearest the start, usually {caves} have two copper veins or more within reach of the entrance; the nearest of them is usually {nearest} m from the start.",
+        "walk": "The whole way of the first days — start, Eikthyr, that cave — is usually {walk} m."
+      },
+      "tin": {
+        "title": "Tin lies on the shore below",
+        "near": "Tin grows only at the water's edge. Within {reach} m of that cave there are usually {tin} tin deposits, and the cave is usually {shore} m from the sea: copper and tin in one trip, and the boat at the door."
+      },
+      "rate": "See all this for your own seed in <link>How good is my seed?</link>"
     }
   }
 }

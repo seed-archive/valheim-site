@@ -46,6 +46,7 @@ const LAND_BIOMES = [
 const ROUTE = [
   ["firstHome.walk", "km"],
   ["firstHome.caveShore", "km"],
+  ["firstHome.blackForest", "km"],
   ["swamp.bogWitch", "km"],
   ["swamp.crypt", "km"],
   ["swamp.fireHole", "km"],
@@ -69,6 +70,9 @@ const WOOD = [
   ["copperCaves.oaks", "more"],
   ["copperCaves.birches", "more"],
   ["copperCaves.nearestOak", "km"],
+  ["copperCaves.walk", "km"],
+  ["copperCaves.shore", "km"],
+  ["copperCaves.tin", "more"],
   ["groves.start", "more"],
   ["groves.yagluth", "more"],
 ] as const;

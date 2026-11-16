@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { useAuth } from "@/components/providers/AuthProvider";
+import { GUIDES } from "@/lib/guides";
 import { TOOLS } from "@/lib/tools";
 
 // The archive's one header (D15): "Seed Archive", a plain link to the domain's
@@ -24,6 +25,7 @@ export function ArchiveBar() {
   const intl = useIntl();
   const [accountMenu, setAccountMenu] = useState<HTMLElement | null>(null);
   const [toolsMenu, setToolsMenu] = useState<HTMLElement | null>(null);
+  const [guidesMenu, setGuidesMenu] = useState<HTMLElement | null>(null);
 
   return (
     <AppBar
@@ -63,6 +65,41 @@ export function ArchiveBar() {
             <FormattedMessage id="archive.game" />
           </Typography>
         </Box>
+        <Button
+          color="inherit"
+          onClick={(event) => setGuidesMenu(event.currentTarget)}
+          id="guides-button"
+          aria-haspopup="true"
+          aria-controls={guidesMenu ? "guides-menu" : undefined}
+          aria-expanded={guidesMenu ? "true" : undefined}
+        >
+          <FormattedMessage id="archive.guides" />
+        </Button>
+        <Menu
+          id="guides-menu"
+          anchorEl={guidesMenu}
+          open={Boolean(guidesMenu)}
+          onClose={() => setGuidesMenu(null)}
+          slotProps={{ list: { "aria-labelledby": "guides-button" } }}
+        >
+          <MenuItem
+            component={Link}
+            href="/guides"
+            onClick={() => setGuidesMenu(null)}
+          >
+            <FormattedMessage id="archive.allGuides" />
+          </MenuItem>
+          {GUIDES.map((guide) => (
+            <MenuItem
+              key={guide.href}
+              component={Link}
+              href={guide.href}
+              onClick={() => setGuidesMenu(null)}
+            >
+              <FormattedMessage id={guide.id} />
+            </MenuItem>
+          ))}
+        </Menu>
         <Button
           color="inherit"
           onClick={(event) => setToolsMenu(event.currentTarget)}
