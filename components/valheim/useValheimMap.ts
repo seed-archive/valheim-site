@@ -149,7 +149,7 @@ export function useValheimMap(seed: string | null) {
           x: p.x,
           y: p.y,
           card,
-          icon: placeIcon(p.group, p.key, p.unique),
+          icon: placeIcon(p.group, p.key),
         };
       });
   }, [current, t]);

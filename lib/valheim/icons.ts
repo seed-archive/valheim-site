@@ -1,21 +1,11 @@
 import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 
-// The map's own marker icons, small inline SVGs (our own drawings): the
-// group's shape and colour, so a boss reads as a boss at a glance, and inside
-// it a white sign of its own for each kind of place. Drawn on a 28-unit grid.
-const SIZE = 26;
+// The map's own marker icons, inline SVGs (our own drawings): a pin in the
+// group's colour, so a boss reads as a boss at a glance, and in its head a
+// sign of its own for each kind of place. Signs are drawn on a 28-unit grid.
 const W = "#fff";
 // The dark of a sign's details: holes, doors, eyes.
 const D = "#1b1b1b";
-
-const BACKGROUND: Record<PlaceGroup, string> = {
-  start: `<circle cx="14" cy="14" r="11" fill="${PLACE_COLOUR.start}" stroke="#111" stroke-width="2.5"/>`,
-  bosses: `<path d="M14 1.5 L26.5 14 L14 26.5 L1.5 14 Z" fill="${PLACE_COLOUR.bosses}" stroke="#111" stroke-width="1.5"/>`,
-  traders: `<circle cx="14" cy="14" r="12" fill="${PLACE_COLOUR.traders}" stroke="#111" stroke-width="1.5"/>`,
-  dungeons: `<rect x="2.5" y="2.5" width="23" height="23" rx="5" fill="${PLACE_COLOUR.dungeons}" stroke="#111" stroke-width="1.5"/>`,
-  resources: `<path d="M14 1.8 L24.6 7.9 L24.6 20.1 L14 26.2 L3.4 20.1 L3.4 7.9 Z" fill="${PLACE_COLOUR.resources}" stroke="#111" stroke-width="1.5"/>`,
-  other: `<circle cx="14" cy="14" r="6" fill="#fafafa" stroke="#111" stroke-width="1.5"/>`,
-};
 
 const line = (d: string, width = 1.8) =>
   `<path d="${d}" fill="none" stroke="${W}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round"/>`;
@@ -75,16 +65,45 @@ const SIGNS: Record<string, string> = {
   drakeNest: `<ellipse cx="14" cy="14.8" rx="4.6" ry="6" fill="${W}"/>`,
 };
 
-// The icon of a place: its group's shape with its own sign, faded for a
-// trader's candidate place.
+// Every marker is a classic map pin — a drop in its group's colour, its point
+// on the place — with the place's own sign in its head. The viewer centres an
+// icon on its place, so the pin is drawn in the top half of a square twice
+// its height and its point lands in the square's middle.
+// The pin's size on screen: the 26 × 36 drop below, scaled (our own choice).
+const PIN_SCALE = 1.2;
+const PIN_W = 26 * PIN_SCALE;
+const PIN_H = 36 * PIN_SCALE;
+const BOX = Math.round(PIN_H * 2);
+// The drop, on a 26 × 36 grid: a round head (centre 13, 13; radius 12) and a
+// point at the bottom.
+const DROP =
+  "M13 1 C6.4 1 1 6.3 1 12.9 C1 21.5 13 35 13 35 C13 35 25 21.5 25 12.9 C25 6.3 19.6 1 13 1 Z";
+// The sign (drawn on a 28-unit grid around 14, 14) scaled into the head.
+const SIGN_SCALE = 0.8;
+// Signs dark where the pin is light (our own choice).
+const INK: Partial<Record<PlaceGroup, string>> = {
+  traders: "#3e2723",
+  start: "#111",
+};
+
+// The icon of a place: a pin in its group's colour with its own sign.
 export function placeIcon(
   group: PlaceGroup,
   key: string,
-  faded: boolean,
 ): { html: string; size: number; front: boolean } {
+  const k = SIGN_SCALE;
+  const ink = INK[group];
+  const sign = ink ? (SIGNS[key] ?? "").replaceAll(W, ink) : (SIGNS[key] ?? "");
+  const left = (BOX - PIN_W) / 2;
   return {
-    html: `<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 28 28" style="opacity:${faded ? 0.6 : 1};filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))">${BACKGROUND[group]}${SIGNS[key] ?? ""}</svg>`,
-    size: SIZE,
+    html:
+      `<svg xmlns="http://www.w3.org/2000/svg" width="${BOX}" height="${BOX}" viewBox="0 0 ${BOX} ${BOX}" ` +
+      `style="pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.55))">` +
+      `<g transform="translate(${left} 0) scale(${PIN_SCALE})" style="pointer-events:auto">` +
+      `<path d="${DROP}" fill="${PLACE_COLOUR[group]}" stroke="#111" stroke-width="1.3"/>` +
+      `<g transform="translate(${13 - 14 * k} ${13 - 14 * k}) scale(${k})">${sign}</g>` +
+      `</g></svg>`,
+    size: BOX,
     front: group === "start",
   };
 }
