@@ -269,30 +269,27 @@
     },
     "guides": {
       "title": "Guides",
-      "start": "<b>Where do I go first on a new seed?</b> Read <link>Where to go first on a new seed</link>: Eikthyr, the Black Forest, copper and tin, and how near they lie."
+      "start": "<b>Where do I go first on a new seed?</b> Read <link>Where to go first on a new seed</link>: the Meadows and Eikthyr, then the Black Forest with copper and tin, and what each stage can and cannot skip."
     },
     "start": {
       "title": "Where to go first on a new seed",
-      "lead": "<b>Where do I go first on a new seed?</b> To Eikthyr's altar, a short walk from the start, then into the Black Forest to a troll cave near the shore, with copper at its entrance and tin on the beach below.",
-      "eikthyr": {
-        "title": "Eikthyr's altar is a short walk from the start",
-        "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
-        "island": "On {island}% of seeds it stands on the start island. On the rest it is across water, so the first boat comes before the first boss."
+      "lead": "<b>Where do I go first on a new seed?</b> Through the Meadows to Eikthyr's altar, a short walk from the start, then into the Black Forest to a troll cave near the shore, with copper at its entrance and tin on the beach below.",
+      "meadows": {
+        "title": "The Meadows: Eikthyr",
+        "why": "Eikthyr's hard antler is what the first pickaxe is made of, and without a pickaxe there is no copper and no tin.",
+        "near": "On half of all seeds his altar is within {median} m of the start; on nine seeds in ten within {most} m.",
+        "island": "On {island}% of seeds it stands on the start island. On the rest it is across water, so the first boat comes before the first boss.",
+        "skipTitle": "Can you skip Eikthyr?",
+        "skip": "Technically you can walk past him, but not on a run: no antler means no pickaxe and no bronze, and his power, which cuts what running and jumping cost in stamina, carries half the game."
       },
       "blackForest": {
-        "title": "The Black Forest begins at the edge of the Meadows",
+        "title": "The Black Forest: copper, tin and the first home",
         "near": "The start sits in a ring of Meadows: the nearest Black Forest is usually {median} m away, and rarely nearer than {least} m.",
-        "island": "On {island}% of seeds the start island has Black Forest of its own."
-      },
-      "copper": {
-        "title": "Build the first home at a troll cave with copper",
-        "why": "A troll cave gives what the Black Forest rarely does: flat ground on the ledge at its mouth. Two copper veins by the entrance is the sign to stop there.",
+        "island": "On {island}% of seeds the start island has Black Forest of its own.",
+        "why": "Settle at a troll cave: the ledge at its mouth is flat ground, which the Black Forest rarely gives, and two copper veins by the entrance is the sign to stop there.",
         "caves": "Of the {all} troll caves nearest the start, usually {caves} have two copper veins or more within reach of the entrance; the nearest of them is usually {nearest} m from the start.",
-        "walk": "The whole way of the first days — start, Eikthyr, that cave — is usually {walk} m."
-      },
-      "tin": {
-        "title": "Tin lies on the shore below",
-        "near": "Tin grows only at the water's edge. Within {reach} m of that cave there are usually {tin} tin deposits, and the cave is usually {shore} m from the sea: copper and tin in one trip, and the boat at the door."
+        "walk": "The whole way of the first days — start, Eikthyr, that cave — is usually {walk} m.",
+        "tin": "Tin grows only at the water's edge. Within {reach} m of that cave there are usually {tin} tin deposits, and the cave is usually {shore} m from the sea: copper and tin in one trip, and the boat at the door."
       },
       "rate": "See all this for your own seed in <link>How good is my seed?</link>"
     }

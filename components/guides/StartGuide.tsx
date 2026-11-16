@@ -38,8 +38,8 @@ function slug(text: string) {
 
 const known = (...v: (number | undefined)[]) => v.every((x) => x !== undefined);
 
-// Where to go first on a new seed: Eikthyr, the Black Forest, a troll cave with
-// copper and the tin below it — each with what the seed scan measured.
+// Where to go first on a new seed, biome by biome: what each stage is for, what
+// the seed scan measured of it, and whether a run can skip it.
 export function StartGuide({ eikthyr, blackForest, copper }: Props) {
   const intl = useIntl();
   const h2 = (id: string) => {
@@ -50,6 +50,19 @@ export function StartGuide({ eikthyr, blackForest, copper }: Props) {
         component="h2"
         id={slug(text)}
         sx={{ mt: 4, mb: 1 }}
+      >
+        {text}
+      </Typography>
+    );
+  };
+  const h3 = (id: string) => {
+    const text = intl.formatMessage({ id });
+    return (
+      <Typography
+        variant="h6"
+        component="h3"
+        id={slug(text)}
+        sx={{ mt: 2, mb: 1 }}
       >
         {text}
       </Typography>
@@ -85,43 +98,34 @@ export function StartGuide({ eikthyr, blackForest, copper }: Props) {
           />
         </Typography>
 
-        {known(eikthyr.median, eikthyr.most) ? (
-          <>
-            {h2("pages.start.eikthyr.title")}
-            {p("pages.start.eikthyr.near", eikthyr)}
-            {eikthyr.island !== undefined
-              ? p("pages.start.eikthyr.island", eikthyr)
-              : null}
-          </>
-        ) : null}
+        {h2("pages.start.meadows.title")}
+        {p("pages.start.meadows.why", {})}
+        {known(eikthyr.median, eikthyr.most)
+          ? p("pages.start.meadows.near", eikthyr)
+          : null}
+        {eikthyr.island !== undefined
+          ? p("pages.start.meadows.island", eikthyr)
+          : null}
+        {h3("pages.start.meadows.skipTitle")}
+        {p("pages.start.meadows.skip", {})}
 
-        {known(blackForest.median, blackForest.least) ? (
-          <>
-            {h2("pages.start.blackForest.title")}
-            {p("pages.start.blackForest.near", blackForest)}
-            {blackForest.island !== undefined
-              ? p("pages.start.blackForest.island", blackForest)
-              : null}
-          </>
-        ) : null}
-
-        {known(copper.caves, copper.nearest) ? (
-          <>
-            {h2("pages.start.copper.title")}
-            {p("pages.start.copper.why", {})}
-            {p("pages.start.copper.caves", { ...copper, all: CAVES })}
-            {copper.walk !== undefined
-              ? p("pages.start.copper.walk", copper)
-              : null}
-          </>
-        ) : null}
-
-        {known(copper.tin, copper.shore) ? (
-          <>
-            {h2("pages.start.tin.title")}
-            {p("pages.start.tin.near", { ...copper, reach: REACH })}
-          </>
-        ) : null}
+        {h2("pages.start.blackForest.title")}
+        {known(blackForest.median, blackForest.least)
+          ? p("pages.start.blackForest.near", blackForest)
+          : null}
+        {blackForest.island !== undefined
+          ? p("pages.start.blackForest.island", blackForest)
+          : null}
+        {p("pages.start.blackForest.why", {})}
+        {known(copper.caves, copper.nearest)
+          ? p("pages.start.blackForest.caves", { ...copper, all: CAVES })
+          : null}
+        {copper.walk !== undefined
+          ? p("pages.start.blackForest.walk", copper)
+          : null}
+        {known(copper.tin, copper.shore)
+          ? p("pages.start.blackForest.tin", { ...copper, reach: REACH })
+          : null}
 
         <Typography sx={{ mt: 4 }}>
           <FormattedMessage
