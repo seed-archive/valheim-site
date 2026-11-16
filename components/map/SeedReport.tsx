@@ -9,10 +9,14 @@ import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
+import { createContext, useContext, useEffect, useState } from "react";
 import { FormattedMessage, FormattedNumber } from "react-intl";
 
 import type { Placed, SeedMeasures } from "@/lib/generator";
-import { shareBeaten } from "@/lib/scan";
+import { loadScan, shareBeaten, type Scan } from "@/lib/scan";
+
+// The seed scan's summary, once loaded; until then no rank is shown.
+const ScanContext = createContext<Scan | null>(null);
 
 // What a seed is worth, measured the same way as the seed scan and set against
 // it: for each measure, the share of scanned seeds this one beats.
@@ -47,7 +51,8 @@ function Beats({
   value: number;
   less: boolean;
 }) {
-  const share = shareBeaten(path, value, less);
+  const scan = useContext(ScanContext);
+  const share = scan ? shareBeaten(scan, path, value, less) : null;
   if (share === null) {
     return null;
   }
@@ -158,7 +163,22 @@ type Props = {
   onFocus: (p: { x: number; z: number }) => void;
 };
 
-export function SeedReport({ measures, placing, onFocus }: Props) {
+export function SeedReport(props: Props) {
+  // The summary is fetched the first time a report opens.
+  const [scan, setScan] = useState<Scan | null>(null);
+  useEffect(() => {
+    loadScan()
+      .then(setScan)
+      .catch(() => setScan(null));
+  }, []);
+  return (
+    <ScanContext.Provider value={scan}>
+      <Report {...props} />
+    </ScanContext.Provider>
+  );
+}
+
+function Report({ measures, placing, onFocus }: Props) {
   if (!measures) {
     return (
       <Box>

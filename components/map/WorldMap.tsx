@@ -17,7 +17,6 @@ import {
   BIOME_KEYS,
   compass,
   PLACE_GROUPS,
-  placeKind,
   type PlaceGroup,
 } from "@/lib/places";
 import { WORLD_RADIUS, type MapLayer } from "@/lib/world";
@@ -234,9 +233,7 @@ export default function WorldMap({
       if (!live) {
         return;
       }
-      const start = items.find(
-        ([t]) => l.locations[t].prefab === "StartTemple",
-      );
+      const start = items.find(([t]) => l.locations[t].group === "start");
       const t = textNow.current;
       // What a marker says: what kind of place, its name, its biome and
       // coordinates, how far and which way from the start; the nearest boss
@@ -244,8 +241,7 @@ export default function WorldMap({
       // measured.
       const byPlace = new Map<string, { marker: L.Layer; base: Card }>();
       for (const [type, x, z, biome] of items) {
-        const { prefab, unique } = l.locations[type];
-        const { group, key } = placeKind(prefab);
+        const { group, key, unique } = l.locations[type];
         const lines: string[] = [];
         if (unique) {
           lines.push(t("pages.map.possiblePlace"));

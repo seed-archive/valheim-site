@@ -1,6 +1,6 @@
 /**
- * The tables the map needs once: every location type's prefab and sub-biome parent, and every sub-biome's name and
- * colour. JSON.
+ * The tables the map needs once: every location type's group and name key (`build.rs`) and whether it is unique (a
+ * trader's candidate places), and every sub-biome's name and colour. JSON.
  * @returns {string}
  */
 export function legend() {

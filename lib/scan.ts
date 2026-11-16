@@ -1,8 +1,9 @@
-import summary from "@/lib/data/scan-summary.json";
+import { BASE_PATH } from "@/lib/site";
 
 // Where one seed stands among the worlds of the seed scan: the share of
 // scanned worlds it beats on one measure. The summary is the Valheim
-// generator's (copied into lib/data on each new scan).
+// generator's, a static file (public/data, copied on each new scan) fetched
+// only when a seed report opens.
 
 type Measure = {
   worlds: number;
@@ -17,7 +18,20 @@ type Measure = {
   share?: number;
 };
 
-const MEASURES = summary.measures as Record<string, Measure>;
+export type Scan = { measures: Record<string, Measure> };
+
+let loading: Promise<Scan> | null = null;
+
+export function loadScan(): Promise<Scan> {
+  loading ??= fetch(`${BASE_PATH}/data/scan-summary.json`).then((r) => {
+    if (!r.ok) {
+      loading = null;
+      throw new Error(`scan summary: ${r.status}`);
+    }
+    return r.json() as Promise<Scan>;
+  });
+  return loading;
+}
 
 // The measure's distribution as (value, share of worlds at or below it).
 function steps(m: Measure): [number, number][] {
@@ -43,11 +57,12 @@ function steps(m: Measure): [number, number][] {
 // worlds share (no sea on the way) does not claim to beat them. Null when the
 // scan has no such measure.
 export function shareBeaten(
+  scan: Scan,
   path: string,
   value: number,
   less: boolean,
 ): number | null {
-  const m = MEASURES[path];
+  const m = scan.measures[path];
   if (!m) {
     return null;
   }
@@ -65,8 +80,8 @@ export function shareBeaten(
       if (v1 <= value) {
         atOrBelow = p1;
       } else {
-        const [v0, p0] = i > 0 ? s[i - 1] : s[i];
-        if (i > 0 && v1 > v0) {
+        const [v0, p0] = s[i - 1];
+        if (v1 > v0) {
           atOrBelow = p0 + ((value - v0) / (v1 - v0)) * (p1 - p0);
         }
         break;
@@ -86,9 +101,4 @@ export function shareBeaten(
     }
   }
   return 1;
-}
-
-// The share of scanned worlds where a flag (a boss on the start island) holds.
-export function shareOfWorlds(path: string): number | null {
-  return MEASURES[path]?.share ?? null;
 }

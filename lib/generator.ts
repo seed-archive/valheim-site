@@ -1,3 +1,4 @@
+import type { PlaceGroup } from "@/lib/places";
 import { BASE_PATH } from "@/lib/site";
 
 // A pool of workers running the Valheim generator in WebAssembly
@@ -98,7 +99,7 @@ export class Generator {
 }
 
 export type Legend = {
-  locations: { prefab: string; unique: boolean; alt: string | null }[];
+  locations: { group: PlaceGroup; key: string; unique: boolean }[];
   subBiomes: { name: string; colour: string }[];
 };
 
