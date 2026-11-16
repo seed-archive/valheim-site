@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useIntl } from "react-intl";
 
-import type { Card } from "@/components/map/card";
-import { MapClient, type World } from "@/components/map/client";
-import type { Marker } from "@/components/map/Viewer";
+import type { Card } from "@seed-archive/map/card";
+import { MapClient, type World } from "@seed-archive/map/client";
+import type { Marker } from "@seed-archive/map/viewer";
 import {
   decodeMeasures,
   decodePlaces,

@@ -17,7 +17,7 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@/components/archive/PageTrail";
 import { SeedReport } from "@/components/tools/seed/SeedReport";
-import { MapClient } from "@/components/map/client";
+import { MapClient } from "@seed-archive/map/client";
 import {
   decodeMeasures,
   moduleUrl,

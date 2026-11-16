@@ -26,7 +26,7 @@ import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
 // Leaflet touches `window`, so the viewer loads in the browser only.
-const Viewer = dynamic(() => import("@/components/map/Viewer"), {
+const Viewer = dynamic(() => import("@seed-archive/map/viewer"), {
   ssr: false,
 });
 
@@ -35,6 +35,10 @@ const Viewer = dynamic(() => import("@/components/map/Viewer"), {
 const SEED_MAX = 10;
 
 type SeedForm = { seed: string };
+
+// A click on the map only closes the open popup: what lies at a point is the
+// generator's data for the seed tool, not for the visitor.
+const describeNothing = () => Promise.resolve(null);
 
 // The map page: the map fills everything under the header, its controls sit on
 // it, and there is no footer (the owner, 2026-11-15, as valheim.tools does it;
@@ -102,6 +106,7 @@ export function MapScreen() {
           focus={at}
           pinsKey="valheim-pins"
           labels={world.labels}
+          describe={describeNothing}
           onCursor={onCursor}
         />
         <Paper

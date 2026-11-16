@@ -10,6 +10,8 @@ const PORTAL_PAGES = ["privacy", "terms", "release-notes"];
 
 const nextConfig: NextConfig = {
   basePath: BASE_PATH,
+  // The shared map viewer ships as TypeScript (github:seed-archive/map).
+  transpilePackages: ["@seed-archive/map"],
   reactStrictMode: true,
   async redirects() {
     // The archive's own pages live in the portal: with or without this
