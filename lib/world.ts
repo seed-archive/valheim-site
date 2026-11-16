@@ -3,14 +3,13 @@
 export const WORLD_RADIUS = 10_500;
 
 // What the map can switch on and off, in menu order: places first, then the
-// layers drawn over the biomes. The start is always shown.
+// contour lines drawn over the map. The start is always shown; the game's
+// other small places (ruins, camps, houses) are not drawn.
 export const MAP_LAYERS = [
   "bosses",
   "traders",
   "dungeons",
-  "other",
-  "subBiomes",
-  "swampWidth",
+  "resources",
   "relief",
 ] as const;
 export type MapLayer = (typeof MAP_LAYERS)[number];
@@ -20,8 +19,6 @@ export const DEFAULT_LAYERS: Record<MapLayer, boolean> = {
   bosses: true,
   traders: true,
   dungeons: false,
-  other: false,
-  subBiomes: false,
-  swampWidth: false,
+  resources: false,
   relief: false,
 };

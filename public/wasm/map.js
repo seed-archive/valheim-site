@@ -14,9 +14,8 @@ export function measure(seed) {
 }
 
 /**
- * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the sub-biomes (1 + the sub-biome's
- * number), 1 the swamps by width (1 wide enough for crypts and Bonemass, 2 a strip too narrow), 2 contour lines
- * every 50 m of height (1).
+ * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the contour lines, every 50 m of
+ * height (1).
  * @param {string} seed
  * @param {number} _world
  * @param {number} layer

@@ -40,10 +40,8 @@
         "bosses": "Boss altars",
         "traders": "Traders (possible places)",
         "dungeons": "Dungeons",
-        "other": "Every other place",
-        "subBiomes": "Sub-biomes",
-        "swampWidth": "Swamps: wide enough for crypts",
-        "relief": "Relief (every 50 m)"
+        "resources": "Resources: tar, black metal, soft tissue, drake eggs",
+        "relief": "Contour lines (every 50 m)"
       },
       "places": {
         "start": "The start",
@@ -128,7 +126,6 @@
       "swampWide": "Wide enough for Sunken Crypts and Bonemass",
       "swampNarrow": "Too narrow for Sunken Crypts and Bonemass",
       "subBiomeIs": "Sub-biome: {names}",
-      "swampLegend": "Green: wide enough for Sunken Crypts and Bonemass. Red: a strip too narrow for them.",
       "ruler": "Ruler",
       "help": "Click the map to see what is there; right-click to drop your own pin, kept in this browser. With the ruler on, clicks measure a route.",
       "report": {
@@ -173,7 +170,8 @@
         "bosses": "Boss altar",
         "traders": "Trader",
         "dungeons": "Dungeon",
-        "other": "Place"
+        "other": "Place",
+        "resources": "Resource"
       },
       "possiblePlace": "One of the places the game may put this trader",
       "nearestTitle": "The nearest to the start",

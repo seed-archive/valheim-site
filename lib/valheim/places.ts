@@ -1,4 +1,5 @@
-// How the map groups the game's locations. The Valheim generator gives each
+// How the map groups the game's locations; "other" (ruins, camps, houses) is
+// not drawn. The Valheim generator gives each
 // location type its group and name key (its `legend`); the player's names are
 // in lib/i18n (pages.map.places).
 
@@ -7,6 +8,7 @@ export const PLACE_GROUPS = [
   "bosses",
   "traders",
   "dungeons",
+  "resources",
   "other",
 ] as const;
 export type PlaceGroup = (typeof PLACE_GROUPS)[number];
@@ -17,6 +19,7 @@ export const PLACE_COLOUR: Record<PlaceGroup, string> = {
   bosses: "#e53935",
   traders: "#fdd835",
   dungeons: "#ab47bc",
+  resources: "#43a047",
   other: "#212121",
 };
 

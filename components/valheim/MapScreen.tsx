@@ -21,8 +21,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { useValheimMap } from "@/components/valheim/useValheimMap";
-import { SUB_BIOMES } from "@/lib/valheim/generator";
-import { DEEP_SEA, subBiomeColour } from "@/lib/valheim/palette";
+import { DEEP_SEA } from "@/lib/valheim/palette";
 import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
@@ -179,33 +178,6 @@ export function MapScreen() {
                     />
                   ))}
                 </FormGroup>
-                {layers.swampWidth ? (
-                  <Typography variant="caption">
-                    <FormattedMessage id="pages.map.swampLegend" />
-                  </Typography>
-                ) : null}
-                {layers.subBiomes ? (
-                  <Box sx={{ maxHeight: 160, overflowY: "auto" }}>
-                    {SUB_BIOMES.map((name, i) => (
-                      <Stack
-                        key={name}
-                        direction="row"
-                        spacing={1}
-                        sx={{ alignItems: "center" }}
-                      >
-                        <Box
-                          sx={{
-                            width: 12,
-                            height: 12,
-                            bgcolor: `rgb(${subBiomeColour(i).join(", ")})`,
-                            flexShrink: 0,
-                          }}
-                        />
-                        <Typography variant="caption">{name}</Typography>
-                      </Stack>
-                    ))}
-                  </Box>
-                ) : null}
                 {placing ? (
                   <Typography variant="caption" color="text.secondary">
                     <FormattedMessage id="pages.map.report.placing" />

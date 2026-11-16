@@ -11,7 +11,6 @@ import {
   decodePlaces,
   decodePoint,
   moduleUrl,
-  SUB_BIOMES,
   type Place,
 } from "@/lib/valheim/generator";
 import { placeIcon } from "@/lib/valheim/icons";
@@ -25,6 +24,7 @@ const KICKER_COLOUR: Record<PlaceGroup, string | undefined> = {
   bosses: "#c62828",
   traders: "#a67c00",
   dungeons: "#7b1fa2",
+  resources: "#2e7d32",
   other: undefined,
 };
 
@@ -50,7 +50,7 @@ export function useValheimMap(seed: string | null) {
     nearest: Map<string, number>;
   } | null>(null);
   const palette = useMemo(() => mapPalette(), []);
-  const layers = useMemo(() => overlays(SUB_BIOMES.length), []);
+  const layers = useMemo(() => overlays(), []);
 
   useEffect(() => {
     const c = new MapClient(moduleUrl());
@@ -105,51 +105,54 @@ export function useValheimMap(seed: string | null) {
       return [];
     }
     const start = current.places.find((p) => p.group === "start");
-    return current.places.map((p) => {
-      const lines: string[] = [];
-      if (p.unique) {
-        lines.push(t("pages.map.possiblePlace"));
-      }
-      if (start && p.group !== "start") {
-        const dx = p.x - start.x;
-        const dy = p.y - start.y;
-        lines.push(
-          t("pages.map.fromStart", {
-            km: (Math.hypot(dx, dy) / 1000).toFixed(1),
-            way: t(`pages.map.compass.${compass(dx, dy)}`),
-          }),
-        );
-      }
-      const sea = current.nearest.get(`${p.x},${p.y}`);
-      const card: Card = {
-        kicker: t(`pages.map.kinds.${p.group}`),
-        kickerColour: KICKER_COLOUR[p.group],
-        title: t(`pages.map.places.${p.key}`),
-        meta: `${t(`pages.map.biomes.${BIOME_KEYS[p.biome]}`)} · x ${p.x}, z ${p.y}`,
-        lines,
-        note:
-          sea === undefined
-            ? undefined
-            : {
-                tone: sea > 0 ? "info" : "good",
-                lines: [
-                  t("pages.map.nearestTitle"),
-                  sea > 0
-                    ? t("pages.map.seaOnWay", { sea: (sea / 1000).toFixed(1) })
-                    : t("pages.map.noSea"),
-                ],
-              },
-      };
-      return {
-        layer: p.group,
-        x: p.x,
-        y: p.y,
-        card,
-        ...(p.group === "other"
-          ? { dot: { radius: 3, fill: "#fafafa" } }
-          : { icon: placeIcon(p.group, p.unique) }),
-      };
-    });
+    // Ruins, camps, houses: not drawn (the owner, 2026-11-16).
+    return current.places
+      .filter((p) => p.group !== "other")
+      .map((p) => {
+        const lines: string[] = [];
+        if (p.unique) {
+          lines.push(t("pages.map.possiblePlace"));
+        }
+        if (start && p.group !== "start") {
+          const dx = p.x - start.x;
+          const dy = p.y - start.y;
+          lines.push(
+            t("pages.map.fromStart", {
+              km: (Math.hypot(dx, dy) / 1000).toFixed(1),
+              way: t(`pages.map.compass.${compass(dx, dy)}`),
+            }),
+          );
+        }
+        const sea = current.nearest.get(`${p.x},${p.y}`);
+        const card: Card = {
+          kicker: t(`pages.map.kinds.${p.group}`),
+          kickerColour: KICKER_COLOUR[p.group],
+          title: t(`pages.map.places.${p.key}`),
+          meta: `${t(`pages.map.biomes.${BIOME_KEYS[p.biome]}`)} · x ${p.x}, z ${p.y}`,
+          lines,
+          note:
+            sea === undefined
+              ? undefined
+              : {
+                  tone: sea > 0 ? "info" : "good",
+                  lines: [
+                    t("pages.map.nearestTitle"),
+                    sea > 0
+                      ? t("pages.map.seaOnWay", {
+                          sea: (sea / 1000).toFixed(1),
+                        })
+                      : t("pages.map.noSea"),
+                  ],
+                },
+        };
+        return {
+          layer: p.group,
+          x: p.x,
+          y: p.y,
+          card,
+          icon: placeIcon(p.group, p.unique),
+        };
+      });
   }, [current, t]);
 
   const describe = useCallback(

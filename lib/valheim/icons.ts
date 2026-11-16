@@ -11,6 +11,8 @@ const SHAPES: Partial<Record<PlaceGroup, string>> = {
   bosses: `<path d="M11 1 L21 11 L11 21 L1 11 Z" fill="${PLACE_COLOUR.bosses}" stroke="#111" stroke-width="1.5"/><path d="M6.5 13 L6.5 8.5 L9 10.5 L11 7 L13 10.5 L15.5 8.5 L15.5 13 Z" fill="#fff"/>`,
   // A trader: a gold coin.
   traders: `<circle cx="11" cy="11" r="9" fill="${PLACE_COLOUR.traders}" stroke="#111" stroke-width="1.5"/><circle cx="11" cy="11" r="5" fill="none" stroke="#8d6e00" stroke-width="2"/>`,
+  // A resource: a green drop.
+  resources: `<path d="M11 2 C11 2 4 10 4 14 A7 7 0 0 0 18 14 C18 10 11 2 11 2 Z" fill="${PLACE_COLOUR.resources}" stroke="#111" stroke-width="1.5"/><circle cx="9" cy="14" r="2" fill="#fff" opacity=".7"/>`,
   // A dungeon: a purple mound with a dark door.
   dungeons: `<path d="M2 19 Q11 0 20 19 Z" fill="${PLACE_COLOUR.dungeons}" stroke="#111" stroke-width="1.5"/><path d="M8.5 19 L8.5 13 Q11 10 13.5 13 L13.5 19 Z" fill="#111"/>`,
 };

@@ -58,26 +58,6 @@ export function mapPalette(): Uint8ClampedArray {
   return p;
 }
 
-// A sub-biome's colour: hues spread by the golden angle, so neighbours in the
-// list differ (our own choice).
-export function subBiomeColour(index: number): [number, number, number] {
-  const h = ((index * 137.508) % 360) / 60;
-  const x = 1 - Math.abs((h % 2) - 1);
-  const [r, g, b] =
-    h < 1
-      ? [1, x, 0]
-      : h < 2
-        ? [x, 1, 0]
-        : h < 3
-          ? [0, 1, x]
-          : h < 4
-            ? [0, x, 1]
-            : h < 5
-              ? [x, 0, 1]
-              : [1, 0, x];
-  return [40 + r * 200, 40 + g * 200, 40 + b * 200];
-}
-
 function overlayPalette(
   entries: [number, [number, number, number, number]][],
 ): Uint8ClampedArray {
@@ -88,30 +68,12 @@ function overlayPalette(
   return p;
 }
 
-// The generator's overlay layers and their colours.
-export function overlays(subBiomes: number) {
+// The generator's overlay layers and their colours: the contour lines.
+export function overlays() {
   return [
     {
-      id: "subBiomes",
-      layer: 0,
-      palette: overlayPalette(
-        Array.from({ length: subBiomes }, (_, i) => [
-          i + 1,
-          [...subBiomeColour(i), 120] as [number, number, number, number],
-        ]),
-      ),
-    },
-    {
-      id: "swampWidth",
-      layer: 1,
-      palette: overlayPalette([
-        [1, [40, 200, 70, 150]],
-        [2, [230, 50, 40, 150]],
-      ]),
-    },
-    {
       id: "relief",
-      layer: 2,
+      layer: 0,
       palette: overlayPalette([[1, [40, 30, 20, 170]]]),
     },
   ];
