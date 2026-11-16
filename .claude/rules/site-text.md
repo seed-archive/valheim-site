@@ -32,8 +32,8 @@ The shared rules (the portal's D15 and `seed-archive/docs/seo.md`, the owner, 20
 - The header menu has at most four items, each a visitor's question named the same in every game: Catalog, Guides,
   Tools, Quests — only the ones the section has. The map goes under Tools. More goes into their dropdowns. Below md
   (900 px) the whole menu is in the drawer. About is in the footer, never in the header.
-- The home page links About once from its own text: inline, in the sentence that says what the site does, the anchor
-  text as on the About page.
+- The home page links About once, inline in the home page's lead (as the No Man's Sky site has it), the anchor text
+  as on the About page.
 
 ## Links
 
