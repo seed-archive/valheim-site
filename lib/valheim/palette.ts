@@ -86,7 +86,7 @@ export const TREE_COLOURS: [number, [number, number, number, number]][] = [
 ];
 // The ore layer: 2 an outline, then a class each.
 const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
-  [2, [28, 28, 24, 230]],
+  [2, [16, 16, 20, 255]],
 ];
 // The berries layer: 23 a bush's leaves, then the berries of each kind.
 const BERRY_COLOURS: [number, [number, number, number, number]][] = [
@@ -100,7 +100,7 @@ const BERRY_COLOURS: [number, [number, number, number, number]][] = [
 export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [16, [212, 118, 48, 255]], // copper
   [17, [168, 186, 204, 255]], // tin
-  [18, [96, 150, 214, 255]], // silver: steel blue, to stand out on snow
+  [18, [40, 176, 255, 255]], // silver: bright blue, to stand out on snow and rock
   [19, [146, 62, 40, 255]], // swamp iron (muddy scrap piles)
   [20, [52, 34, 74, 255]], // obsidian
   [21, [120, 204, 92, 255]], // ancient root
@@ -133,7 +133,11 @@ export function overlays() {
     {
       id: "ore",
       layer: 3,
-      palette: overlayPalette([...VEGETATION_SHARED, ...ORE_COLOURS]),
+      palette: overlayPalette([
+        ...VEGETATION_SHARED,
+        [3, [255, 255, 255, 255]], // the ring round silver
+        ...ORE_COLOURS,
+      ]),
     },
     {
       id: "berries",
