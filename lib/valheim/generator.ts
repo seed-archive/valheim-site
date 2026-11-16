@@ -84,6 +84,7 @@ export type SeedMeasures = {
     { nearest: number | null; near: number; island: number }
   >;
   highest: number;
+  route?: Record<string, Record<string, number>>;
 };
 
 // `measure`: numbers in the order of generator.json's paths, nested by them;

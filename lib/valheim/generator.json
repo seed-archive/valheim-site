@@ -371,7 +371,21 @@
     "dungeons.infestedMines.nearest",
     "dungeons.infestedMines.near",
     "dungeons.infestedMines.island",
-    "highest"
+    "highest",
+    "route.firstHome.walk",
+    "route.firstHome.caveShore",
+    "route.swamp.bogWitch",
+    "route.swamp.crypt",
+    "route.mountain.fromBonemass",
+    "route.plains.fromBonemass",
+    "route.plains.villagesClose",
+    "route.plains.villagesRing",
+    "route.mistlands.minePair",
+    "route.mistlands.minePairFromStart",
+    "route.ashlands.fortressesNearFader",
+    "route.ashlands.nearestFortress",
+    "route.ashlands.fortressShore",
+    "route.line.offSum"
   ],
   "subBiomes": [
     "Mushroom",

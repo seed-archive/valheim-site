@@ -41,16 +41,42 @@ const LAND_BIOMES = [
   "mistlands",
 ] as const;
 
+// The route's measures: path under `route`, and how it is read — a distance
+// (shorter is better), a count where more is better, or one where fewer is.
+const ROUTE = [
+  ["firstHome.walk", "km"],
+  ["firstHome.caveShore", "km"],
+  ["swamp.bogWitch", "km"],
+  ["swamp.crypt", "km"],
+  ["mountain.fromBonemass", "km"],
+  ["plains.fromBonemass", "km"],
+  ["plains.villagesClose", "fewer"],
+  ["plains.villagesRing", "more"],
+  ["mistlands.minePair", "km"],
+  ["mistlands.minePairFromStart", "km"],
+  ["ashlands.fortressesNearFader", "more"],
+  ["ashlands.nearestFortress", "km"],
+  ["ashlands.fortressShore", "km"],
+  ["line.offSum", "km"],
+] as const;
+
+function routeValue(route: SeedMeasures["route"], path: string) {
+  const [stage, key] = path.split(".");
+  return route?.[stage]?.[key];
+}
+
 // "Better than N % of seeds": for a distance, being closer; for an area or a
 // count, having more.
 function Beats({
   path,
   value,
   less,
+  count = false,
 }: {
   path: string;
   value: number;
   less: boolean;
+  count?: boolean;
 }) {
   const scan = useContext(ScanContext);
   const share = scan ? shareBeaten(scan, path, value, less) : null;
@@ -70,7 +96,13 @@ function Beats({
       }
     >
       <FormattedMessage
-        id={less ? "pages.map.report.closer" : "pages.map.report.more"}
+        id={
+          less
+            ? count
+              ? "pages.map.report.fewer"
+              : "pages.map.report.closer"
+            : "pages.map.report.more"
+        }
         values={{ n: beats }}
       />
     </Typography>
@@ -259,6 +291,43 @@ function Report({ seed, measures }: Props) {
         of={measures.bosses}
         seed={seed}
       />
+
+      <Typography variant="subtitle2" component="h3">
+        <FormattedMessage id="pages.map.report.route" />
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        <FormattedMessage id="pages.map.report.routeLead" />
+      </Typography>
+      <Table size="small">
+        <TableBody>
+          {ROUTE.map(([path, kind]) => {
+            const v = routeValue(measures.route, path);
+            if (v === undefined) {
+              return null;
+            }
+            return (
+              <TableRow key={path}>
+                <TableCell>
+                  <FormattedMessage
+                    id={`pages.map.report.route_${path.replace(".", "_")}`}
+                  />
+                </TableCell>
+                <TableCell align="right">
+                  {kind === "km" ? <Distance m={v} /> : v}
+                  <Box>
+                    <Beats
+                      path={`route.${path}`}
+                      value={v}
+                      less={kind !== "more"}
+                      count={kind === "fewer"}
+                    />
+                  </Box>
+                </TableCell>
+              </TableRow>
+            );
+          })}
+        </TableBody>
+      </Table>
 
       <Typography variant="subtitle2" component="h3">
         <FormattedMessage id="pages.map.report.traders" />
