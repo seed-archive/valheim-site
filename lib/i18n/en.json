@@ -226,7 +226,8 @@
       "hidePanel": "Hide the panel",
       "showPanel": "Show the panel",
       "showShort": "Show",
-      "seedRule": "Letters and digits, up to 10"
+      "seedRule": "Letters and digits, up to 10",
+      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; the rest shows on the whole map."
     },
     "notFound": {
       "title": "This page does not exist",

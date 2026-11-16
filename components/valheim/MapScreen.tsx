@@ -175,6 +175,9 @@ export function MapScreen() {
           </Tooltip>
         ))}
       </FormGroup>
+      <Typography variant="caption" color="text.secondary">
+        <FormattedMessage id="pages.map.zoomIn" />
+      </Typography>
       {placing ? (
         <Typography variant="caption" color="text.secondary">
           <FormattedMessage id="pages.map.report.placing" />
