@@ -1,3 +1,4 @@
+import generator from "./generator.json";
 // The colours of the Valheim map: the generator's tile is one byte a pixel,
 // `class · 16 + light`, and these palettes turn the bytes into RGBA.
 
@@ -72,34 +73,15 @@ function overlayPalette(
   return p;
 }
 
-// The trees layer: 1 a tree's shadow, 2 a trunk, 3 a birch's trunk, then four shades a kind from 32 on
-// (dark to light), the order the generator draws them in: beech, birch, oak,
-// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree, dead conifer, dead
-// swamp tree. Muted, so the forest
-// sits in the land; oak warm and birch pale, so both stand out.
-const TREE_KINDS: [number, number, number][][] = [
-  [[44, 72, 34], [66, 102, 48], [92, 132, 64], [124, 160, 86]], // beech
-  [[112, 120, 76], [156, 164, 108], [196, 202, 146], [228, 230, 186]], // birch
-  [[74, 66, 26], [116, 98, 38], [160, 128, 52], [204, 162, 74]], // oak
-  [[22, 50, 36], [34, 70, 50], [52, 94, 66], [76, 120, 86]], // fir
-  [[36, 60, 38], [54, 84, 52], [78, 110, 70], [104, 136, 92]], // pine
-  [[52, 44, 30], [74, 64, 44], [92, 108, 58], [122, 138, 78]], // swamp tree: trunk, branches, moss
-  [[92, 74, 46], [150, 132, 56], [196, 178, 74], [226, 210, 112]], // Yggdrasil shoot: twig, leaves
-  [[30, 24, 22], [52, 40, 34], [74, 56, 46], [96, 72, 58]], // Ashlands tree: burnt trunk, branches
-  [[70, 64, 56], [98, 90, 78], [126, 118, 104], [156, 148, 132]], // dead fir or pine
-  [[64, 58, 46], [92, 84, 66], [118, 108, 86], [144, 134, 108]], // dead swamp tree
-];
+// The trees layer: 1 a tree's shadow, then the trees' own colours from 32 on,
+// eight a tree, rendered from the game's meshes and textures (`vh site`).
 export const TREE_COLOURS: [number, [number, number, number, number]][] = [
   [1, [16, 24, 8, 90]],
-  [2, [62, 44, 30, 255]], // trunk
-  [3, [214, 210, 196, 255]], // birch trunk
-  ...TREE_KINDS.flatMap((shades, k) =>
-    shades.map(
-      ([r, g, b], s): [number, [number, number, number, number]] => [
-        32 + k * 4 + s,
-        [r, g, b, 240],
-      ],
-    ),
+  ...(generator.treePalette as number[][]).map(
+    ([r, g, b], i): [number, [number, number, number, number]] => [
+      32 + i,
+      [r, g, b, 255],
+    ],
   ),
 ];
 // The ore layer: 2 an outline, then a class each.
