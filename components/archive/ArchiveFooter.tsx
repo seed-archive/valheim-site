@@ -20,6 +20,9 @@ export function ArchiveFooter() {
           <Link component={NextLink} href="/tools/map" color="inherit">
             <FormattedMessage id="archive.map" />
           </Link>
+          <Link component={NextLink} href="/bugs" color="inherit">
+            <FormattedMessage id="archive.bugs" />
+          </Link>
           <Link href="/privacy" color="inherit">
             <FormattedMessage id="archive.privacy" />
           </Link>

@@ -12,6 +12,7 @@ Seed Archive shares is the portal's `docs/seo.md` (`../seed-archive/docs/seo.md`
 | Tools                | `/tools`                     | the Tools menu item's index                                |
 | Map                  | `/tools/map`                 | the world map of a seed, computed in the visitor's browser |
 | How good is my seed? | `/tools/how-good-is-my-seed` | a seed's measures set against the seed scan                |
+| Bugs                 | `/bugs`                      | world generation bugs a player meets on a seed; in the footer |
 
 A page's address names its menu item (`/guides/…`, `/tools/<tool>`, `/quests/…`), each with an index page and the
 breadcrumb Home › item › page; catalog lists stay at `/<kind>` (the shared `docs/seo.md`, the owner, 2026-11-16). A

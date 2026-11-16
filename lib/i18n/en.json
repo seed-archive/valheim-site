@@ -12,7 +12,8 @@
     "terms": "Terms",
     "releaseNotes": "Release notes",
     "allTools": "All tools",
-    "seedRating": "How good is my seed?"
+    "seedRating": "How good is my seed?",
+    "bugs": "Bugs"
   },
   "pages": {
     "home": {
@@ -228,6 +229,17 @@
     "notFound": {
       "title": "This page does not exist",
       "home": "Back to Valheim"
+    },
+    "bugs": {
+      "title": "World generation bugs",
+      "lead": "<b>Why does a Burial Chamber on my seed have other rooms than on a friend's, on the very same seed?</b> Because the game turns each Burial Chamber at random, apart from the seed, and the turn decides its rooms.",
+      "crypts": {
+        "title": "Burial Chambers differ on the same seed",
+        "how": "The game sets every location down at one of {yaws} turns, {step}° apart, and picks the turn with a random number that the seed does not fix. For most locations the turn changes nothing inside. A Burial Chamber in the Black Forest is different: the turn shifts its dungeon's generator a little, and the generator's position becomes the seed of the dungeon's rooms.",
+        "cores": "So one Burial Chamber on one seed has a few possible layouts, each with its own rooms, chests and surtling cores. Which one a world gets is settled when the chamber is first generated, and stays.",
+        "others": "Sunken Crypts, troll caves, Infested Mines and the other dungeons are not touched by it: their rooms follow from the seed alone.",
+        "maps": "A seed map that shows a single layout for a Burial Chamber shows one of its possible layouts. What a world really holds is in its save, once someone has walked in."
+      }
     }
   }
 }
