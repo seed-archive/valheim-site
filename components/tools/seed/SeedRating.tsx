@@ -63,12 +63,23 @@ export function SeedRating() {
       return;
     }
     let live = true;
-    gen.call<Float32Array>("measure", [seed]).then((raw) => {
-      const measures = decodeMeasures(raw);
-      if (live && measures) {
-        setMeasured({ seed, measures });
-      }
-    });
+    // The quick measures first; then the same with the trees and ore around
+    // the caves, the start and Yagluth, which take seconds more.
+    gen
+      .call<Float32Array>("measure", [seed])
+      .then((raw) => {
+        const measures = decodeMeasures(raw);
+        if (live && measures) {
+          setMeasured({ seed, measures });
+        }
+        return gen.call<Float32Array>("measure_deep", [seed]);
+      })
+      .then((raw) => {
+        const measures = decodeMeasures(raw);
+        if (live && measures) {
+          setMeasured({ seed, measures });
+        }
+      });
     return () => {
       live = false;
     };

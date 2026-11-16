@@ -60,6 +60,18 @@ const ROUTE = [
   ["line.offSum", "km"],
 ] as const;
 
+// The trees and ore measures, under `vegetation`, read the same way.
+const WOOD = [
+  ["copperCaves.count", "more"],
+  ["copperCaves.nearest", "km"],
+  ["copperCaves.veins", "more"],
+  ["copperCaves.oaks", "more"],
+  ["copperCaves.birches", "more"],
+  ["copperCaves.nearestOak", "km"],
+  ["groves.start", "more"],
+  ["groves.yagluth", "more"],
+] as const;
+
 function routeValue(route: SeedMeasures["route"], path: string) {
   const [stage, key] = path.split(".");
   return route?.[stage]?.[key];
@@ -190,6 +202,50 @@ function PlacedRows({
   );
 }
 
+// Rows of measures under one group: a label, the value and how it ranks.
+function MeasureRows({
+  group,
+  rows,
+  of,
+}: {
+  group: "route" | "vegetation";
+  rows: readonly (readonly [string, "km" | "more" | "fewer"])[];
+  of: SeedMeasures["route"];
+}) {
+  return (
+    <Table size="small">
+      <TableBody>
+        {rows.map(([path, kind]) => {
+          const v = routeValue(of, path);
+          if (v === undefined) {
+            return null;
+          }
+          return (
+            <TableRow key={path}>
+              <TableCell>
+                <FormattedMessage
+                  id={`pages.map.report.${group}_${path.replace(".", "_")}`}
+                />
+              </TableCell>
+              <TableCell align="right">
+                {kind === "km" ? <Distance m={v} /> : v}
+                <Box>
+                  <Beats
+                    path={`${group}.${path}`}
+                    value={v}
+                    less={kind !== "more"}
+                    count={kind === "fewer"}
+                  />
+                </Box>
+              </TableCell>
+            </TableRow>
+          );
+        })}
+      </TableBody>
+    </Table>
+  );
+}
+
 type Props = {
   seed: string;
   measures: SeedMeasures | null;
@@ -298,36 +354,25 @@ function Report({ seed, measures }: Props) {
       <Typography variant="body2" color="text.secondary">
         <FormattedMessage id="pages.map.report.routeLead" />
       </Typography>
-      <Table size="small">
-        <TableBody>
-          {ROUTE.map(([path, kind]) => {
-            const v = routeValue(measures.route, path);
-            if (v === undefined) {
-              return null;
-            }
-            return (
-              <TableRow key={path}>
-                <TableCell>
-                  <FormattedMessage
-                    id={`pages.map.report.route_${path.replace(".", "_")}`}
-                  />
-                </TableCell>
-                <TableCell align="right">
-                  {kind === "km" ? <Distance m={v} /> : v}
-                  <Box>
-                    <Beats
-                      path={`route.${path}`}
-                      value={v}
-                      less={kind !== "more"}
-                      count={kind === "fewer"}
-                    />
-                  </Box>
-                </TableCell>
-              </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
+      <MeasureRows group="route" rows={ROUTE} of={measures.route} />
+
+      <Typography variant="subtitle2" component="h3">
+        <FormattedMessage id="pages.map.report.wood" />
+      </Typography>
+      {measures.vegetation ? (
+        <MeasureRows
+          group="vegetation"
+          rows={WOOD}
+          of={measures.vegetation}
+        />
+      ) : (
+        <Box>
+          <Typography variant="body2" gutterBottom>
+            <FormattedMessage id="pages.map.report.woodMeasuring" />
+          </Typography>
+          <LinearProgress />
+        </Box>
+      )}
 
       <Typography variant="subtitle2" component="h3">
         <FormattedMessage id="pages.map.report.traders" />

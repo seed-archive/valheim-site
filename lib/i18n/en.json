@@ -171,7 +171,17 @@
         "route_ashlands_nearestFortress": "Fader to the nearest Charred Fortress",
         "route_ashlands_fortressShore": "That fortress to the sea",
         "route_line_offSum": "Every boss altar off the north–south line, summed",
-        "fewer": "fewer than {n}% of seeds"
+        "fewer": "fewer than {n}% of seeds",
+        "wood": "Copper, oaks and birches",
+        "woodMeasuring": "Placing the trees and ore around the caves, the start and Yagluth…",
+        "vegetation_copperCaves_count": "Troll caves near the start with copper by the entrance",
+        "vegetation_copperCaves_nearest": "The nearest of them",
+        "vegetation_copperCaves_veins": "Copper veins by that cave",
+        "vegetation_copperCaves_oaks": "Oaks around that cave",
+        "vegetation_copperCaves_birches": "Birches around that cave",
+        "vegetation_copperCaves_nearestOak": "That cave to the nearest oak",
+        "vegetation_groves_start": "Oaks and birches around the start",
+        "vegetation_groves_yagluth": "Oaks and birches around Yagluth's altar"
       },
       "tools": "Layers",
       "compass": {
