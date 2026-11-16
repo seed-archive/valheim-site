@@ -204,7 +204,8 @@
         "traders": "Trader",
         "dungeons": "Dungeon",
         "other": "Place",
-        "resources": "Resource"
+        "resources": "Resource",
+        "ore": "Ore"
       },
       "possiblePlace": "One of the places the game may put this trader",
       "nearestTitle": "The nearest to the start",
@@ -214,10 +215,10 @@
         "bosses": "Boss altars",
         "traders": "Where the game may put each trader",
         "dungeons": "Burial Chambers, Sunken Crypts, troll caves, Infested Mines",
-        "resources": "Tar, black metal, soft tissue, drake eggs",
+        "resources": "Tar pits, Fuling villages, drake nests, ancient roots (zoom in for roots)",
         "relief": "Contour lines, every 50 m",
         "trees": "Every tree, drawn as in the game (zoom in)",
-        "ore": "Silver, swamp iron, copper, tin, obsidian, ancient roots, Leviathans (zoom in)",
+        "ore": "What a pickaxe mines: silver, swamp iron, copper, tin, obsidian, giants' remains, Leviathans (zoom in)",
         "fineWood": "Birches and oaks (zoom in)",
         "berries": "Raspberry, blueberry, cloudberry, lingonberry (zoom in)"
       },

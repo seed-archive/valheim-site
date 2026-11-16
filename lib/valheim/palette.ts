@@ -105,6 +105,7 @@ export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [20, [52, 34, 74, 255]], // obsidian
   [21, [120, 204, 92, 255]], // ancient root
   [22, [64, 124, 176, 255]], // Leviathan
+  [23, [226, 218, 196, 255]], // the giants' remains: soft tissue
 ];
 
 // The generator's overlay layers and their colours: the contour lines, the
@@ -137,6 +138,14 @@ export function overlays() {
         ...VEGETATION_SHARED,
         [3, [255, 255, 255, 255]], // the ring round silver
         ...ORE_COLOURS,
+      ]),
+    },
+    {
+      id: "resources",
+      layer: 5,
+      palette: overlayPalette([
+        ...VEGETATION_SHARED,
+        ...ORE_COLOURS.filter(([i]) => i === 21),
       ]),
     },
     {

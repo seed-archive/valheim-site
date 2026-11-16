@@ -24,6 +24,7 @@ const KICKER_COLOUR: Record<PlaceGroup, string | undefined> = {
   traders: "#a67c00",
   dungeons: "#7b1fa2",
   resources: "#2e7d32",
+  ore: "#455a64",
   other: undefined,
 };
 
