@@ -1,21 +1,31 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import dynamic from "next/dynamic";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
+import Divider from "@mui/material/Divider";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
+import IconButton from "@mui/material/IconButton";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
+import ToggleButton from "@mui/material/ToggleButton";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 import { Controller, useForm } from "react-hook-form";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
-import { MAP_LAYERS } from "@/lib/world";
+import { SeedReport } from "@/components/map/SeedReport";
+import type { Focus } from "@/components/map/WorldMap";
+import type { Legend, SeedMeasures } from "@/lib/generator";
+import { PLACE_STYLE, type PlaceGroup } from "@/lib/places";
+import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
 // Leaflet touches `window`, so the map loads in the browser only.
 const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
@@ -34,26 +44,40 @@ type SeedForm = { seed: string };
 export function MapScreen() {
   const intl = useIntl();
   const [cursor, setCursor] = useState<{ x: number; z: number } | null>(null);
-  const { control, handleSubmit, reset } = useForm<SeedForm>({
-    defaultValues: { seed: "" },
-  });
+  const [layers, setLayers] = useState(DEFAULT_LAYERS);
+  const [ruler, setRuler] = useState(false);
+  const [focus, setFocus] = useState<Focus | null>(null);
+  const [legend, setLegend] = useState<Legend | null>(null);
+  const [measures, setMeasures] = useState<SeedMeasures | null>(null);
+  const [placing, setPlacing] = useState(false);
+  // On a narrow screen both panels start closed, so the map shows; a choice
+  // the visitor makes holds.
+  const narrow = useMediaQuery(useTheme().breakpoints.down("md"));
+  const [reportOpen, setReportOpen] = useState<boolean | null>(null);
+  const [toolsOpen, setToolsOpen] = useState<boolean | null>(null);
+  const report = reportOpen ?? !narrow;
+  const tools = toolsOpen ?? !narrow;
 
   // The seed lives in the address, so a map can be shared.
-  useEffect(() => {
-    const seed = new URLSearchParams(window.location.search).get("seed");
-    if (seed) {
-      reset({ seed });
-    }
-  }, [reset]);
+  const router = useRouter();
+  const pathname = usePathname();
+  const seed = useSearchParams().get("seed");
+  const { control, handleSubmit } = useForm<SeedForm>({
+    defaultValues: { seed: seed ?? "" },
+  });
 
   const show = handleSubmit(({ seed }) => {
-    const url = new URL(window.location.href);
-    url.searchParams.set("seed", seed);
-    window.history.replaceState(null, "", url);
+    router.replace(`${pathname}?${new URLSearchParams({ seed })}`, {
+      scroll: false,
+    });
   });
 
   const onCursor = useCallback(
     (point: { x: number; z: number } | null) => setCursor(point),
+    [],
+  );
+  const onFocus = useCallback(
+    (p: { x: number; z: number }) => setFocus({ ...p, at: Date.now() }),
     [],
   );
 
@@ -64,16 +88,28 @@ export function MapScreen() {
         <Typography variant="h1" sx={{ position: "absolute", left: -10000 }}>
           <FormattedMessage id="pages.map.title" />
         </Typography>
-        <WorldMap onCursor={onCursor} />
+        <WorldMap
+          seed={seed}
+          layers={layers}
+          ruler={ruler}
+          focus={focus}
+          onCursor={onCursor}
+          onLegend={setLegend}
+          onMeasures={setMeasures}
+          onPlacing={setPlacing}
+        />
         <Paper
           elevation={3}
           sx={{
             position: "absolute",
-            top: 16,
-            left: 16,
+            top: { xs: 8, md: 16 },
+            left: { xs: 8, md: 16 },
+            right: { xs: 8, md: "auto" },
             p: 2,
             zIndex: 1000,
-            width: 260,
+            width: { md: 260 },
+            maxHeight: { xs: "45%", md: "calc(100% - 32px)" },
+            overflowY: "auto",
           }}
         >
           <Stack component="form" onSubmit={show} spacing={1.5}>
@@ -93,22 +129,141 @@ export function MapScreen() {
                 />
               )}
             />
-            <Button type="submit" variant="contained">
-              <FormattedMessage id="pages.map.show" />
-            </Button>
-            <FormGroup>
-              {MAP_LAYERS.map((layer) => (
-                <FormControlLabel
-                  key={layer}
-                  control={<Checkbox size="small" defaultChecked disabled />}
-                  label={intl.formatMessage({
-                    id: `pages.map.layers.${layer}`,
-                  })}
-                />
-              ))}
-            </FormGroup>
+            <Stack direction="row" spacing={1}>
+              <Button type="submit" variant="contained" sx={{ flexGrow: 1 }}>
+                <FormattedMessage id="pages.map.show" />
+              </Button>
+              {narrow ? (
+                <Button
+                  variant="outlined"
+                  onClick={() => setToolsOpen(!tools)}
+                  aria-expanded={tools}
+                >
+                  <FormattedMessage id="pages.map.tools" />
+                </Button>
+              ) : null}
+            </Stack>
+            {tools ? (
+              <>
+                <FormGroup>
+                  {MAP_LAYERS.map((layer) => (
+                    <FormControlLabel
+                      key={layer}
+                      control={
+                        <Checkbox
+                          size="small"
+                          checked={layers[layer]}
+                          onChange={(_, on) =>
+                            setLayers((now) => ({ ...now, [layer]: on }))
+                          }
+                          sx={
+                            layer in PLACE_STYLE
+                              ? {
+                                  color:
+                                    PLACE_STYLE[layer as PlaceGroup].colour,
+                                }
+                              : undefined
+                          }
+                        />
+                      }
+                      label={intl.formatMessage({
+                        id: `pages.map.layers.${layer}`,
+                      })}
+                    />
+                  ))}
+                </FormGroup>
+                {layers.swampWidth ? (
+                  <Typography variant="caption">
+                    <FormattedMessage id="pages.map.swampLegend" />
+                  </Typography>
+                ) : null}
+                {layers.subBiomes && legend ? (
+                  <Box sx={{ maxHeight: 160, overflowY: "auto" }}>
+                    {legend.subBiomes.map((s) => (
+                      <Stack
+                        key={s.name}
+                        direction="row"
+                        spacing={1}
+                        sx={{ alignItems: "center" }}
+                      >
+                        <Box
+                          sx={{
+                            width: 12,
+                            height: 12,
+                            bgcolor: s.colour,
+                            flexShrink: 0,
+                          }}
+                        />
+                        <Typography variant="caption">{s.name}</Typography>
+                      </Stack>
+                    ))}
+                  </Box>
+                ) : null}
+                <Divider />
+                <ToggleButton
+                  value="ruler"
+                  size="small"
+                  selected={ruler}
+                  onChange={() => setRuler((on) => !on)}
+                >
+                  <FormattedMessage id="pages.map.ruler" />
+                </ToggleButton>
+                <Typography variant="caption" color="text.secondary">
+                  <FormattedMessage id="pages.map.help" />
+                </Typography>
+              </>
+            ) : null}
           </Stack>
         </Paper>
+        {seed ? (
+          <Paper
+            elevation={3}
+            sx={{
+              position: "absolute",
+              top: { md: 16 },
+              bottom: { xs: 8, md: "auto" },
+              right: { xs: report ? 8 : "auto", md: 16 },
+              left: { xs: 8, md: "auto" },
+              zIndex: 1000,
+              width: { md: report ? 380 : "auto" },
+              maxHeight: { xs: "50%", md: "calc(100% - 96px)" },
+              overflowY: "auto",
+              p: report ? 2 : 0.5,
+            }}
+          >
+            <Stack
+              direction="row"
+              sx={{ alignItems: "center", justifyContent: "space-between" }}
+            >
+              {report ? (
+                <Typography variant="h6" component="h2">
+                  <FormattedMessage
+                    id="pages.map.report.title"
+                    values={{ seed }}
+                  />
+                </Typography>
+              ) : null}
+              <IconButton
+                size="small"
+                onClick={() => setReportOpen(!report)}
+                aria-label={intl.formatMessage({
+                  id: report
+                    ? "pages.map.report.hide"
+                    : "pages.map.report.show",
+                })}
+              >
+                {report ? "×" : "☰"}
+              </IconButton>
+            </Stack>
+            {report ? (
+              <SeedReport
+                measures={measures}
+                placing={placing}
+                onFocus={onFocus}
+              />
+            ) : null}
+          </Paper>
+        ) : null}
         {cursor ? (
           <Paper
             elevation={2}

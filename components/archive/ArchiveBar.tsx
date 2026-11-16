@@ -61,8 +61,8 @@ export function ArchiveBar() {
             <FormattedMessage id="archive.game" />
           </Typography>
         </Box>
-        <Button component={Link} href="/map" color="inherit">
-          <FormattedMessage id="archive.map" />
+        <Button component={Link} href="/tools" color="inherit">
+          <FormattedMessage id="archive.tools" />
         </Button>
         {user ? (
           <>

@@ -17,7 +17,7 @@ export function ArchiveFooter() {
     >
       <Container>
         <Stack direction="row" spacing={3}>
-          <Link component={NextLink} href="/map" color="inherit">
+          <Link component={NextLink} href="/tools/map" color="inherit">
             <FormattedMessage id="archive.map" />
           </Link>
           <Link href="/privacy" color="inherit">

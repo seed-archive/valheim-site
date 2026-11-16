@@ -22,7 +22,7 @@ export default function Home() {
         <Typography>
           <FormattedMessage
             id="pages.home.toMap"
-            values={{ link: (text) => <Link href="/map">{text}</Link> }}
+            values={{ link: (text) => <Link href="/tools/map">{text}</Link> }}
           />
         </Typography>
       </Container>
