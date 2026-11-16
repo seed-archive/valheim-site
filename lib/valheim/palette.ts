@@ -74,7 +74,7 @@ function overlayPalette(
 
 // The trees layer: 1 a tree's shadow, 2 a trunk, 3 a birch's trunk, then four shades a kind from 32 on
 // (dark to light), the order the generator draws them in: beech, birch, oak,
-// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree. Muted, so the forest
+// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree, dead conifer. Muted, so the forest
 // sits in the land; oak warm and birch pale, so both stand out.
 const TREE_KINDS: [number, number, number][][] = [
   [[44, 72, 34], [66, 102, 48], [92, 132, 64], [124, 160, 86]], // beech
@@ -85,6 +85,7 @@ const TREE_KINDS: [number, number, number][][] = [
   [[60, 56, 32], [86, 80, 48], [114, 106, 66], [144, 134, 88]], // swamp tree
   [[128, 98, 26], [172, 136, 42], [214, 176, 70], [240, 208, 110]], // Yggdrasil shoot
   [[56, 28, 22], [84, 44, 32], [114, 62, 44], [146, 86, 62]], // Ashlands tree
+  [[70, 64, 56], [98, 90, 78], [126, 118, 104], [156, 148, 132]], // dead fir or pine
 ];
 export const TREE_COLOURS: [number, [number, number, number, number]][] = [
   [1, [16, 24, 8, 90]],
@@ -103,6 +104,17 @@ export const TREE_COLOURS: [number, [number, number, number, number]][] = [
 const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
   [2, [28, 28, 24, 230]],
 ];
+// The ore layers: the map's layer key and the generator's class.
+export const ORE_LAYERS = [
+  ["silver", 18],
+  ["iron", 19],
+  ["copper", 16],
+  ["tin", 17],
+  ["obsidian", 20],
+  ["ancientRoots", 21],
+  ["leviathans", 22],
+] as const;
+
 export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [16, [212, 118, 48, 255]], // copper
   [17, [168, 186, 204, 255]], // tin
@@ -127,10 +139,14 @@ export function overlays() {
       layer: 1,
       palette: overlayPalette(TREE_COLOURS),
     },
-    {
-      id: "ore",
-      layer: 2,
-      palette: overlayPalette([...VEGETATION_SHARED, ...ORE_COLOURS]),
-    },
+    // One layer an ore, numbered as its class.
+    ...ORE_LAYERS.map(([id, cls]) => ({
+      id,
+      layer: cls,
+      palette: overlayPalette([
+        ...VEGETATION_SHARED,
+        ...ORE_COLOURS.filter(([i]) => i === cls),
+      ]),
+    })),
   ];
 }
