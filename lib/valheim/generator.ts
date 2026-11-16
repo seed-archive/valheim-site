@@ -47,7 +47,7 @@ export type PointInfo = {
 };
 
 // `point`: biome, height above the sea, swamp (1, 0, −1), sub-biomes….
-export function decodePoint(raw: Float32Array): PointInfo {
+export function decodePoint(raw: Float64Array): PointInfo {
   return {
     biome: raw[0],
     height: raw[1],

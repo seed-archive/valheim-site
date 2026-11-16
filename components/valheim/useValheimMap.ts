@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useIntl } from "react-intl";
 
 import type { Card } from "@/components/map/card";
-import { MapClient, type Bounds } from "@/components/map/client";
+import { MapClient, type World } from "@/components/map/client";
 import type { Marker } from "@/components/map/Viewer";
 import {
   decodeMeasures,
@@ -39,7 +39,10 @@ export function useValheimMap(seed: string | null) {
     [intl],
   );
   const [client, setClient] = useState<MapClient | null>(null);
-  const [bounds, setBounds] = useState<Bounds | null>(null);
+  // Valheim is one world, number 0, the same disc for every seed.
+  const [world, setWorld] = useState<{ index: number; bounds: World } | null>(
+    null,
+  );
   const [placed, setPlaced] = useState<{
     seed: string;
     places: Place[];
@@ -53,9 +56,9 @@ export function useValheimMap(seed: string | null) {
     const c = new MapClient(moduleUrl());
     let live = true;
     // The viewer starts once the generator answers.
-    c.bounds().then((b) => {
+    c.worlds("").then(([bounds]) => {
       if (live) {
-        setBounds(b);
+        setWorld({ index: 0, bounds });
         setClient(c);
       }
     });
@@ -72,7 +75,7 @@ export function useValheimMap(seed: string | null) {
       return;
     }
     asked.current = seed;
-    client.places(seed).then((raw) => {
+    client.places(seed, 0).then((raw) => {
       if (asked.current !== seed) {
         return;
       }
@@ -154,7 +157,7 @@ export function useValheimMap(seed: string | null) {
       if (!client || !seed) {
         return null;
       }
-      const info = decodePoint(await client.point(seed, x, y));
+      const info = decodePoint(await client.point(seed, 0, x, y));
       return {
         title: t(`pages.map.biomes.${BIOME_KEYS[info.biome]}`),
         meta: `x ${Math.round(x)}, z ${Math.round(y)}`,
@@ -192,7 +195,7 @@ export function useValheimMap(seed: string | null) {
 
   return {
     client,
-    bounds,
+    world,
     palette,
     overlays: layers,
     markers,

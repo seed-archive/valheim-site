@@ -93,7 +93,7 @@ export function MapScreen() {
         <Viewer
           client={world.client}
           seed={seed}
-          bounds={world.bounds}
+          world={world.world}
           palette={world.palette}
           background={DEEP_SEA}
           overlays={world.overlays}

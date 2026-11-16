@@ -8,13 +8,14 @@ const MAX_WORKERS = 6;
 
 type Reply = { id: number; result?: unknown; error?: string };
 
-export type Bounds = {
+// One world of a seed (interface v1): its kind, which the game's page names
+// (Valheim's kind 0 is a disc), and its extent.
+export type World = {
+  kind: number;
   x0: number;
   y0: number;
   x1: number;
   y1: number;
-  // A round world's radius; 0 for a rectangle.
-  radius: number;
 };
 
 export class MapClient {
@@ -72,23 +73,45 @@ export class MapClient {
     });
   }
 
-  async bounds(): Promise<Bounds> {
-    const [x0, y0, x1, y1, radius] = await this.call<Float32Array>(
-      "bounds",
-      [],
-    );
-    return { x0, y0, x1, y1, radius };
+  // The interface's calls (generators.md, "One interface for every game's
+  // map", version 1).
+
+  async worlds(seed: string): Promise<World[]> {
+    const raw = await this.call<Float64Array>("worlds", [seed]);
+    const out: World[] = [];
+    for (let i = 0; i + 4 < raw.length; i += 5) {
+      out.push({
+        kind: raw[i],
+        x0: raw[i + 1],
+        y0: raw[i + 2],
+        x1: raw[i + 3],
+        y1: raw[i + 4],
+      });
+    }
+    return out;
   }
 
-  // One byte a pixel, an index into the game's palette: the top-left pixel
-  // centred at world (x0, y0), `step` units a pixel, rows going down (−y).
-  tile(seed: string, x0: number, y0: number, step: number, size: number) {
-    return this.call<Uint8Array>("tile", [seed, x0, y0, step, size], this.next);
+  // One byte a pixel, an index into the game's palette, 0 for nothing: the
+  // top-left pixel centred at (x0, y0), `step` units a pixel, rows going down.
+  tile(
+    seed: string,
+    world: number,
+    x0: number,
+    y0: number,
+    step: number,
+    size: number,
+  ) {
+    return this.call<Uint8Array>(
+      "tile",
+      [seed, world, x0, y0, step, size],
+      this.next,
+    );
   }
 
   overlay(
     seed: string,
-    kind: number,
+    world: number,
+    layer: number,
     x0: number,
     y0: number,
     step: number,
@@ -96,17 +119,17 @@ export class MapClient {
   ) {
     return this.call<Uint8Array>(
       "overlay",
-      [seed, kind, x0, y0, step, size],
+      [seed, world, layer, x0, y0, step, size],
       this.next,
     );
   }
 
-  places(seed: string) {
-    return this.call<Float32Array>("places", [seed]);
+  places(seed: string, world: number) {
+    return this.call<Float32Array>("places", [seed, world]);
   }
 
-  point(seed: string, x: number, y: number) {
-    return this.call<Float32Array>("point", [seed, x, y]);
+  point(seed: string, world: number, x: number, y: number) {
+    return this.call<Float64Array>("point", [seed, world, x, y]);
   }
 
   close() {

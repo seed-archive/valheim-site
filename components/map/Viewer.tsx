@@ -5,7 +5,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 import { card, type Card } from "./card";
-import type { Bounds, MapClient } from "./client";
+import type { MapClient, World } from "./client";
 
 // The map viewer every game's site shares: pan, zoom, the generator's tiles
 // coloured by the game's palette, its overlays, markers the game describes,
@@ -31,17 +31,23 @@ export type Marker = {
   dot?: { radius: number; fill: string };
 };
 
-export type Overlay = { id: string; kind: number; palette: Uint8ClampedArray };
+export type Overlay = {
+  id: string;
+  layer: number;
+  palette: Uint8ClampedArray;
+};
 
 export type Focus = { x: number; y: number; at: number };
 
 export type ViewerProps = {
   client: MapClient | null;
   seed: string | null;
-  bounds: Bounds | null;
-  // 256 RGBA entries for the tile's bytes.
+  // The world shown: its number in the seed's worlds, and its extent.
+  world: { index: number; bounds: World } | null;
+  // 256 RGBA entries for the tile's bytes; entry 0 (nothing) is usually
+  // transparent, so the background shows.
   palette: Uint8ClampedArray;
-  // What lies beyond the world's edge.
+  // What lies beyond the world.
   background: string;
   overlays: Overlay[];
   // Which overlays and marker layers show, by id.
@@ -65,8 +71,7 @@ class GeneratedLayer extends L.GridLayer {
   constructor(
     private readonly draw: Draw,
     private readonly palette: Uint8ClampedArray,
-    private readonly bounds: Bounds,
-    private readonly background: string | null,
+    private readonly bounds: World,
     zoom: { min: number; max: number },
   ) {
     // A grid layer draws nothing below its own minZoom, which is 0 by default.
@@ -76,15 +81,7 @@ class GeneratedLayer extends L.GridLayer {
   // Whether a tile lies wholly outside the world.
   private outside(x0: number, y0: number, span: number) {
     const b = this.bounds;
-    if (x0 > b.x1 || x0 + span < b.x0 || y0 < b.y0 || y0 - span > b.y1) {
-      return true;
-    }
-    if (b.radius > 0) {
-      const nearX = Math.max(x0, Math.min(0, x0 + span));
-      const nearY = Math.max(y0 - span, Math.min(0, y0));
-      return Math.hypot(nearX, nearY) > b.radius;
-    }
-    return false;
+    return x0 > b.x1 || x0 + span < b.x0 || y0 < b.y0 || y0 - span > b.y1;
   }
 
   protected createTile(coords: L.Coords, done: L.DoneCallback): HTMLElement {
@@ -102,10 +99,6 @@ class GeneratedLayer extends L.GridLayer {
     const x0 = (coords.x * TILE + 0.5) * step;
     const y0 = -(coords.y * TILE + 0.5) * step;
     if (this.outside(x0, y0, TILE * step)) {
-      if (this.background) {
-        ctx.fillStyle = this.background;
-        ctx.fillRect(0, 0, TILE, TILE);
-      }
       setTimeout(() => done(undefined, tile));
       return tile;
     }
@@ -147,7 +140,7 @@ export default function Viewer(props: ViewerProps) {
   const {
     client,
     seed,
-    bounds,
+    world: shown,
     palette,
     background,
     overlays,
@@ -166,6 +159,9 @@ export default function Viewer(props: ViewerProps) {
   useEffect(() => {
     now.current = props;
   });
+
+  const bounds = shown?.bounds ?? null;
+  const index = shown?.index ?? 0;
 
   // The map, once the world's extent is known.
   useEffect(() => {
@@ -213,20 +209,19 @@ export default function Viewer(props: ViewerProps) {
     const zoom = { min: minZoom, max: maxZoom };
     const made: L.Layer[] = [
       new GeneratedLayer(
-        (x0, y0, step) => client.tile(seed, x0, y0, step, TILE),
+        (x0, y0, step) => client.tile(seed, index, x0, y0, step, TILE),
         palette,
         bounds,
-        background,
         zoom,
       ).addTo(world),
     ];
     const fresh: Record<string, L.Layer> = {};
     for (const o of overlays) {
       const layer = new GeneratedLayer(
-        (x0, y0, step) => client.overlay(seed, o.kind, x0, y0, step, TILE),
+        (x0, y0, step) =>
+          client.overlay(seed, index, o.layer, x0, y0, step, TILE),
         o.palette,
         bounds,
-        null,
         zoom,
       );
       fresh[o.id] = layer;
@@ -315,7 +310,7 @@ export default function Viewer(props: ViewerProps) {
       made.forEach((layer) => layer.remove());
       layers.current = {};
     };
-  }, [client, seed, bounds, palette, background, overlays, minZoom, maxZoom]);
+  }, [client, seed, bounds, index, palette, overlays, minZoom, maxZoom]);
 
   // Markers, grouped by layer.
   useEffect(() => {

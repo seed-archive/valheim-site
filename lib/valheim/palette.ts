@@ -88,12 +88,12 @@ function overlayPalette(
   return p;
 }
 
-// The generator's overlay kinds and their colours.
+// The generator's overlay layers and their colours.
 export function overlays(subBiomes: number) {
   return [
     {
       id: "subBiomes",
-      kind: 0,
+      layer: 0,
       palette: overlayPalette(
         Array.from({ length: subBiomes }, (_, i) => [
           i + 1,
@@ -103,7 +103,7 @@ export function overlays(subBiomes: number) {
     },
     {
       id: "swampWidth",
-      kind: 1,
+      layer: 1,
       palette: overlayPalette([
         [1, [40, 200, 70, 150]],
         [2, [230, 50, 40, 150]],
@@ -111,7 +111,7 @@ export function overlays(subBiomes: number) {
     },
     {
       id: "relief",
-      kind: 2,
+      layer: 2,
       palette: overlayPalette([[1, [40, 30, 20, 170]]]),
     },
   ];

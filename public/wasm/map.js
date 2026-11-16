@@ -1,15 +1,4 @@
 /**
- * The world's extent: `[x0, y0, x1, y1, radius]`, metres; a round world gives its radius, a rectangle 0.
- * @returns {Float32Array}
- */
-export function bounds() {
-    const ret = wasm.bounds();
-    var v1 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
-    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
-    return v1;
-}
-
-/**
  * The seed measured the same way as the seed scan (`analysis::measure`): numbers in the order of
  * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start.
  * @param {string} seed
@@ -25,88 +14,111 @@ export function measure(seed) {
 }
 
 /**
- * A layer over the map, one byte a pixel, 0 where it shows nothing: `kind` 0 the sub-biomes (1 + the sub-biome's
+ * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the sub-biomes (1 + the sub-biome's
  * number), 1 the swamps by width (1 wide enough for crypts and Bonemass, 2 a strip too narrow), 2 contour lines
  * every 50 m of height (1).
  * @param {string} seed
- * @param {number} kind
+ * @param {number} _world
+ * @param {number} layer
  * @param {number} x0
  * @param {number} y0
  * @param {number} step
  * @param {number} size
  * @returns {Uint8Array}
  */
-export function overlay(seed, kind, x0, y0, step, size) {
-    const val2 = +kind;
-    const val3 = +x0;
-    const val4 = +y0;
-    const val5 = +step;
-    const val6 = +size;
+export function overlay(seed, _world, layer, x0, y0, step, size) {
+    const val2 = +_world;
+    const val3 = +layer;
+    const val4 = +x0;
+    const val5 = +y0;
+    const val6 = +step;
+    const val7 = +size;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.overlay(ptr0, len0, val2, val3, val4, val5, val6);
-    var v7 = getArrayU8FromWasm0(ret[0], ret[1]).slice();
+    const ret = wasm.overlay(ptr0, len0, val2, val3, val4, val5, val6, val7);
+    var v8 = getArrayU8FromWasm0(ret[0], ret[1]).slice();
     wasm.__wbindgen_free(ret[0], ret[1] * 1, 1);
-    return v7;
+    return v8;
 }
 
 /**
  * Every location of the seed, five numbers each: `kind, x, y, biome, unique`. `kind` is the number of its name key
  * (`analysis::kinds::keys`), `biome` its biome as in [`tile`] (1…9), `unique` 1 for a trader's candidate place.
  * @param {string} seed
+ * @param {number} _world
  * @returns {Float32Array}
  */
-export function places(seed) {
+export function places(seed, _world) {
+    const val2 = +_world;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.places(ptr0, len0);
-    var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    const ret = wasm.places(ptr0, len0, val2);
+    var v3 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
     wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
-    return v2;
+    return v3;
 }
 
 /**
  * What a click reads at one point: `[biome, height above the sea, swamp, sub-biomes…]`; `biome` as in [`tile`],
  * `swamp` 1 wide enough for crypts and Bonemass, 0 a strip, −1 no swamp; then the number of each sub-biome there.
  * @param {string} seed
+ * @param {number} _world
  * @param {number} x
  * @param {number} y
- * @returns {Float32Array}
+ * @returns {Float64Array}
  */
-export function point(seed, x, y) {
-    const val2 = +x;
-    const val3 = +y;
+export function point(seed, _world, x, y) {
+    const val2 = +_world;
+    const val3 = +x;
+    const val4 = +y;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.point(ptr0, len0, val2, val3);
-    var v4 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
-    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
-    return v4;
+    const ret = wasm.point(ptr0, len0, val2, val3, val4);
+    var v5 = getArrayF64FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 8, 8);
+    return v5;
 }
 
 /**
- * The map itself, one byte a pixel: `class · 16 + light`. Class 1…9 is the biome on land (Meadows 1, Swamp 2,
+ * The map itself, one byte a pixel: `class · 16 + light`, 0 beyond the world's edge. Class 1…9 is the biome on land (Meadows 1, Swamp 2,
  * Mountain 3, Black Forest 4, Plains 5, Ashlands 6, Deep North 7, Ocean 8, Mistlands 9), 10…15 the sea by depth
  * (shallow first); light 0…15 runs from shade to sun (`SHADE_RANGE`), with height on land. The page's palette turns
  * the bytes into colours.
  * @param {string} seed
+ * @param {number} _world
  * @param {number} x0
  * @param {number} y0
  * @param {number} step
  * @param {number} size
  * @returns {Uint8Array}
  */
-export function tile(seed, x0, y0, step, size) {
-    const val2 = +x0;
-    const val3 = +y0;
-    const val4 = +step;
-    const val5 = +size;
+export function tile(seed, _world, x0, y0, step, size) {
+    const val2 = +_world;
+    const val3 = +x0;
+    const val4 = +y0;
+    const val5 = +step;
+    const val6 = +size;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
-    const ret = wasm.tile(ptr0, len0, val2, val3, val4, val5);
-    var v6 = getArrayU8FromWasm0(ret[0], ret[1]).slice();
+    const ret = wasm.tile(ptr0, len0, val2, val3, val4, val5, val6);
+    var v7 = getArrayU8FromWasm0(ret[0], ret[1]).slice();
     wasm.__wbindgen_free(ret[0], ret[1] * 1, 1);
-    return v6;
+    return v7;
+}
+
+/**
+ * The worlds of a seed, five numbers each: `kind, x0, y0, x1, y1`. A Valheim seed is one world, kind 0 (a disc), given
+ * as its square; the page knows kind 0 is round.
+ * @param {string} _seed
+ * @returns {Float64Array}
+ */
+export function worlds(_seed) {
+    const ptr0 = passStringToWasm0(_seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.worlds(ptr0, len0);
+    var v2 = getArrayF64FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 8, 8);
+    return v2;
 }
 function __wbg_get_imports() {
     const import0 = {
@@ -131,6 +143,11 @@ function getArrayF32FromWasm0(ptr, len) {
     return getFloat32ArrayMemory0().subarray(ptr / 4, ptr / 4 + len);
 }
 
+function getArrayF64FromWasm0(ptr, len) {
+    ptr = ptr >>> 0;
+    return getFloat64ArrayMemory0().subarray(ptr / 8, ptr / 8 + len);
+}
+
 function getArrayU8FromWasm0(ptr, len) {
     ptr = ptr >>> 0;
     return getUint8ArrayMemory0().subarray(ptr / 1, ptr / 1 + len);
@@ -142,6 +159,14 @@ function getFloat32ArrayMemory0() {
         cachedFloat32ArrayMemory0 = new Float32Array(wasm.memory.buffer);
     }
     return cachedFloat32ArrayMemory0;
+}
+
+let cachedFloat64ArrayMemory0 = null;
+function getFloat64ArrayMemory0() {
+    if (cachedFloat64ArrayMemory0 === null || cachedFloat64ArrayMemory0.byteLength === 0) {
+        cachedFloat64ArrayMemory0 = new Float64Array(wasm.memory.buffer);
+    }
+    return cachedFloat64ArrayMemory0;
 }
 
 let cachedUint8ArrayMemory0 = null;
@@ -210,6 +235,7 @@ function __wbg_finalize_init(instance, module) {
     wasm = instance.exports;
     wasmModule = module;
     cachedFloat32ArrayMemory0 = null;
+    cachedFloat64ArrayMemory0 = null;
     cachedUint8ArrayMemory0 = null;
     wasm.__wbindgen_start();
     return wasm;
