@@ -204,8 +204,7 @@
         "traders": "Trader",
         "dungeons": "Dungeon",
         "other": "Place",
-        "resources": "Resource",
-        "ore": "Ore"
+        "resources": "Resource"
       },
       "possiblePlace": "One of the places the game may put this trader",
       "nearestTitle": "The nearest to the start",
@@ -227,7 +226,23 @@
       "showPanel": "Show the panel",
       "showShort": "Show",
       "seedRule": "Letters and digits, up to 10",
-      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; the rest shows on the whole map."
+      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; the rest shows on the whole map.",
+      "legend": {
+        "silver": "Silver",
+        "iron": "Swamp iron",
+        "copper": "Copper",
+        "tin": "Tin",
+        "obsidian": "Obsidian",
+        "giantRemains": "Giants' remains",
+        "leviathan": "Leviathan",
+        "ancientRoot": "Ancient root",
+        "birch": "Birch",
+        "oak": "Oak",
+        "raspberry": "Raspberry",
+        "blueberry": "Blueberry",
+        "cloudberry": "Cloudberry",
+        "lingonberry": "Lingonberry"
+      }
     },
     "notFound": {
       "title": "This page does not exist",

@@ -9,7 +9,6 @@ export const PLACE_GROUPS = [
   "traders",
   "dungeons",
   "resources",
-  "ore",
   "other",
 ] as const;
 export type PlaceGroup = (typeof PLACE_GROUPS)[number];
@@ -21,7 +20,6 @@ export const PLACE_COLOUR: Record<PlaceGroup, string> = {
   traders: "#fdd835",
   dungeons: "#ab47bc",
   resources: "#43a047",
-  ore: "#78909c",
   other: "#212121",
 };
 

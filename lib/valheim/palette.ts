@@ -155,3 +155,43 @@ export function overlays() {
     },
   ];
 }
+
+// What each mark on the vegetation layers means: the layer's key, then each
+// mark's palette number and its name key (pages.map.legend).
+export const LEGENDS: Record<string, [number, string][]> = {
+  ore: [
+    [18, "silver"],
+    [19, "iron"],
+    [16, "copper"],
+    [17, "tin"],
+    [20, "obsidian"],
+    [23, "giantRemains"],
+    [22, "leviathan"],
+  ],
+  resources: [[21, "ancientRoot"]],
+  fineWood: [
+    [4, "birch"],
+    [5, "oak"],
+  ],
+  berries: [
+    [24, "raspberry"],
+    [25, "blueberry"],
+    [26, "cloudberry"],
+    [27, "lingonberry"],
+  ],
+};
+
+// A legend mark's colour, as CSS.
+export function legendColour(layer: string, mark: number): string {
+  const all: [number, [number, number, number, number]][] =
+    layer === "fineWood"
+      ? [
+          [4, [236, 236, 205, 255]],
+          [5, [214, 140, 44, 255]],
+        ]
+      : layer === "berries"
+        ? BERRY_COLOURS
+        : ORE_COLOURS;
+  const c = all.find(([i]) => i === mark)?.[1] ?? [0, 0, 0, 255];
+  return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+}

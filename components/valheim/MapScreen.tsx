@@ -24,7 +24,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { useValheimMap } from "@/components/valheim/useValheimMap";
-import { DEEP_SEA } from "@/lib/valheim/palette";
+import { DEEP_SEA, LEGENDS, legendColour } from "@/lib/valheim/palette";
 import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 import {
   DEFAULT_LAYERS,
@@ -150,29 +150,66 @@ export function MapScreen() {
       </Typography>
       <FormGroup>
         {MAP_LAYERS.map((layer) => (
-          <Tooltip
-            key={layer}
-            title={intl.formatMessage({ id: `pages.map.layerHints.${layer}` })}
-            placement="right"
-          >
-            <FormControlLabel
-              control={
-                <Checkbox
-                  size="small"
-                  checked={layers[layer]}
-                  onChange={(_, on) =>
-                    setLayers((now) => ({ ...now, [layer]: on }))
-                  }
-                  sx={
-                    layer in PLACE_COLOUR
-                      ? { color: PLACE_COLOUR[layer as PlaceGroup] }
-                      : undefined
-                  }
-                />
-              }
-              label={intl.formatMessage({ id: `pages.map.layers.${layer}` })}
-            />
-          </Tooltip>
+          <Box key={layer}>
+            <Tooltip
+              title={intl.formatMessage({
+                id: `pages.map.layerHints.${layer}`,
+              })}
+              placement="right"
+            >
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    size="small"
+                    checked={layers[layer]}
+                    onChange={(_, on) =>
+                      setLayers((now) => ({ ...now, [layer]: on }))
+                    }
+                    sx={
+                      layer in PLACE_COLOUR
+                        ? { color: PLACE_COLOUR[layer as PlaceGroup] }
+                        : undefined
+                    }
+                  />
+                }
+                label={intl.formatMessage({ id: `pages.map.layers.${layer}` })}
+              />
+            </Tooltip>
+            {layers[layer] && LEGENDS[layer] ? (
+              <Box
+                sx={{
+                  pl: 4,
+                  pb: 0.5,
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  rowGap: 0.25,
+                }}
+              >
+                {LEGENDS[layer].map(([mark, key]) => (
+                  <Stack
+                    key={key}
+                    direction="row"
+                    spacing={0.75}
+                    sx={{ alignItems: "center" }}
+                  >
+                    <Box
+                      sx={{
+                        width: 9,
+                        height: 9,
+                        flexShrink: 0,
+                        transform: "rotate(45deg)",
+                        bgcolor: legendColour(layer, mark),
+                        border: "1.5px solid #101014",
+                      }}
+                    />
+                    <Typography variant="caption">
+                      <FormattedMessage id={`pages.map.legend.${key}`} />
+                    </Typography>
+                  </Stack>
+                ))}
+              </Box>
+            ) : null}
+          </Box>
         ))}
       </FormGroup>
       <Typography variant="caption" color="text.secondary">
