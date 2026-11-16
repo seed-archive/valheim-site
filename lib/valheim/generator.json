@@ -385,7 +385,15 @@
     "route.ashlands.fortressesNearFader",
     "route.ashlands.nearestFortress",
     "route.ashlands.fortressShore",
-    "route.line.offSum"
+    "route.line.offSum",
+    "vegetation.copperCaves.count",
+    "vegetation.copperCaves.nearest",
+    "vegetation.copperCaves.veins",
+    "vegetation.copperCaves.oaks",
+    "vegetation.copperCaves.birches",
+    "vegetation.copperCaves.nearestOak",
+    "vegetation.groves.start",
+    "vegetation.groves.yagluth"
   ],
   "subBiomes": [
     "Mushroom",

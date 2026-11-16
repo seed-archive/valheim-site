@@ -72,21 +72,34 @@ function overlayPalette(
   return p;
 }
 
-// The trees and ore layers number their pixels the same way: 1 a tree's stem,
-// 2 an outline, then a class each (the generator's drawing classes).
-const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
-  [1, [92, 64, 38, 255]],
-  [2, [28, 28, 24, 230]],
+// The trees layer: 1 a crown's shadow, then four shades a kind from 32 on
+// (dark to light), the order the generator draws them in: beech, birch, oak,
+// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree. Muted, so the forest
+// sits in the land; oak warm and birch pale, so both stand out.
+const TREE_KINDS: [number, number, number][][] = [
+  [[44, 72, 34], [66, 102, 48], [92, 132, 64], [124, 160, 86]], // beech
+  [[112, 120, 76], [156, 164, 108], [196, 202, 146], [228, 230, 186]], // birch
+  [[74, 66, 26], [116, 98, 38], [160, 128, 52], [204, 162, 74]], // oak
+  [[22, 50, 36], [34, 70, 50], [52, 94, 66], [76, 120, 86]], // fir
+  [[36, 60, 38], [54, 84, 52], [78, 110, 70], [104, 136, 92]], // pine
+  [[60, 56, 32], [86, 80, 48], [114, 106, 66], [144, 134, 88]], // swamp tree
+  [[128, 98, 26], [172, 136, 42], [214, 176, 70], [240, 208, 110]], // Yggdrasil shoot
+  [[56, 28, 22], [84, 44, 32], [114, 62, 44], [146, 86, 62]], // Ashlands tree
 ];
 export const TREE_COLOURS: [number, [number, number, number, number]][] = [
-  [3, [96, 142, 62, 255]], // beech
-  [4, [236, 236, 205, 255]], // birch
-  [5, [214, 140, 44, 255]], // oak
-  [6, [38, 92, 62, 255]], // fir
-  [7, [74, 116, 72, 255]], // pine
-  [8, [120, 108, 66, 255]], // swamp tree
-  [9, [232, 196, 72, 255]], // Yggdrasil shoot
-  [10, [104, 58, 44, 255]], // Ashlands tree
+  [1, [16, 24, 8, 90]],
+  ...TREE_KINDS.flatMap((shades, k) =>
+    shades.map(
+      ([r, g, b], s): [number, [number, number, number, number]] => [
+        32 + k * 4 + s,
+        [r, g, b, 240],
+      ],
+    ),
+  ),
+];
+// The ore layer: 2 an outline, then a class each.
+const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
+  [2, [28, 28, 24, 230]],
 ];
 export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [16, [212, 118, 48, 255]], // copper
@@ -110,7 +123,7 @@ export function overlays() {
     {
       id: "trees",
       layer: 1,
-      palette: overlayPalette([...VEGETATION_SHARED, ...TREE_COLOURS]),
+      palette: overlayPalette(TREE_COLOURS),
     },
     {
       id: "ore",

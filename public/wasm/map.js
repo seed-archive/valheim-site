@@ -3,7 +3,8 @@ import { load_shapes } from './snippets/web-67aca56aae793faf/inline0.js';
 
 /**
  * The seed measured the same way as the seed scan (`analysis::measure`): numbers in the order of
- * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start.
+ * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start. The `vegetation.*`
+ * measures are NaN here: [`measure_deep`] adds them, seconds later.
  * @param {string} seed
  * @returns {Float32Array}
  */
@@ -11,6 +12,22 @@ export function measure(seed) {
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     const len0 = WASM_VECTOR_LEN;
     const ret = wasm.measure(ptr0, len0);
+    var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v2;
+}
+
+/**
+ * [`measure`] with the `vegetation.*` measures too: copper by the troll caves, oaks and birches by the copper cave,
+ * groves at the start and Yagluth. It places the vegetation of a few hundred zones, so the page asks for it after
+ * the rest.
+ * @param {string} seed
+ * @returns {Float32Array}
+ */
+export function measure_deep(seed) {
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.measure_deep(ptr0, len0);
     var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
     wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
     return v2;
