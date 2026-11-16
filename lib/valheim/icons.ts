@@ -65,17 +65,18 @@ const SIGNS: Record<string, string> = {
   drakeNest: `<ellipse cx="14" cy="14.8" rx="4.6" ry="6" fill="${W}"/>`,
 };
 
-// Every marker is the map pin Google Maps uses (the Material "place" shape: a
-// round head whose sides curve in to a point), in its group's colour, its point
+// Every marker is the map pin Google Maps uses: a round head whose sides
+// swell, then curve in to a point, in its group's colour, its point
 // on the place, with the place's own sign in its head. The viewer centres an
 // icon on its place, so the pin sits in the top half of its square and its
 // point lands in the square's middle.
 const PLACE_PIN =
-  "M12 2 C8.13 2 5 5.13 5 9 C5 14.25 12 22 12 22 C12 22 19 14.25 19 9 C19 5.13 15.87 2 12 2 Z";
+  "M12 2 C8.1 2 5 5.1 5 9 C5 11.4 6.2 13.4 7.6 15.1 C9.2 17.1 11.2 18.9 12 22 C12.8 18.9 14.8 17.1 16.4 15.1 C17.8 13.4 19 11.4 19 9 C19 5.1 15.9 2 12 2 Z";
 // The pin is drawn on a 24-unit grid: head centre (12, 9), radius 7, point
 // (12, 22). On screen it is this many pixels a unit (our own choice).
 const PIN_SCALE = 2;
-const BOX = 80;
+// Room above the head, so its outline and shadow are never cut off.
+const BOX = 96;
 // The sign (drawn on a 28-unit grid around 14, 14) scaled into the head.
 const SIGN_SCALE = 0.5;
 // Signs dark where the pin is light (our own choice).
