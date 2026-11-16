@@ -24,12 +24,23 @@ export function ToolsIndex() {
         <Typography variant="h3" component="h1" gutterBottom>
           <FormattedMessage id="pages.tools.title" />
         </Typography>
-        <Typography>
+        <Typography gutterBottom>
           <FormattedMessage
             id="pages.tools.map"
             values={{
               b: (text) => <b>{text}</b>,
               link: (text) => <Link href="/tools/map">{text}</Link>,
+            }}
+          />
+        </Typography>
+        <Typography>
+          <FormattedMessage
+            id="pages.tools.seedRating"
+            values={{
+              b: (text) => <b>{text}</b>,
+              link: (text) => (
+                <Link href="/tools/how-good-is-my-seed">{text}</Link>
+              ),
             }}
           />
         </Typography>

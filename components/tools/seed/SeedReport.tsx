@@ -3,6 +3,7 @@
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 import Link from "@mui/material/Link";
+import NextLink from "next/link";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -13,10 +14,10 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { FormattedMessage, FormattedNumber } from "react-intl";
 
 import type { Placed, SeedMeasures } from "@/lib/generator";
-import { loadScan, shareBeaten, type Scan } from "@/lib/scan";
+import { loadRanks, shareBeaten, type Ranks } from "@/lib/scan";
 
-// The seed scan's summary, once loaded; until then no rank is shown.
-const ScanContext = createContext<Scan | null>(null);
+// The seed scan's ranks, once loaded; until then no rank is shown.
+const ScanContext = createContext<Ranks | null>(null);
 
 // What a seed is worth, measured the same way as the seed scan and set against
 // it: for each measure, the share of scanned seeds this one beats.
@@ -91,12 +92,12 @@ function PlacedRows({
   kind,
   names,
   of,
-  onFocus,
+  seed,
 }: {
   kind: "bosses" | "traders";
   names: readonly string[];
   of: Record<string, Placed>;
-  onFocus: (p: { x: number; z: number }) => void;
+  seed: string;
 }) {
   return (
     <Table size="small">
@@ -121,8 +122,8 @@ function PlacedRows({
             <TableRow key={name}>
               <TableCell>
                 <Link
-                  component="button"
-                  onClick={() => onFocus(p)}
+                  component={NextLink}
+                  href={mapAt(seed, p)}
                   underline="hover"
                 >
                   <FormattedMessage id={`pages.map.places.${name}`} />
@@ -158,16 +159,20 @@ function PlacedRows({
 }
 
 type Props = {
+  seed: string;
   measures: SeedMeasures | null;
-  placing: boolean;
-  onFocus: (p: { x: number; z: number }) => void;
 };
 
+// The map of this seed, centred on a place.
+function mapAt(seed: string, p: { x: number; z: number }) {
+  return `/tools/map?${new URLSearchParams({ seed, x: String(p.x), z: String(p.z) })}`;
+}
+
 export function SeedReport(props: Props) {
-  // The summary is fetched the first time a report opens.
-  const [scan, setScan] = useState<Scan | null>(null);
+  // The ranks are fetched the first time a report shows.
+  const [scan, setScan] = useState<Ranks | null>(null);
   useEffect(() => {
-    loadScan()
+    loadRanks()
       .then(setScan)
       .catch(() => setScan(null));
   }, []);
@@ -178,18 +183,12 @@ export function SeedReport(props: Props) {
   );
 }
 
-function Report({ measures, placing, onFocus }: Props) {
+function Report({ seed, measures }: Props) {
   if (!measures) {
     return (
       <Box>
         <Typography variant="body2" gutterBottom>
-          <FormattedMessage
-            id={
-              placing
-                ? "pages.map.report.placing"
-                : "pages.map.report.measuring"
-            }
-          />
+          <FormattedMessage id="pages.map.report.measuring" />
         </Typography>
         <LinearProgress />
       </Box>
@@ -261,7 +260,7 @@ function Report({ measures, placing, onFocus }: Props) {
         kind="bosses"
         names={BOSSES}
         of={measures.bosses}
-        onFocus={onFocus}
+        seed={seed}
       />
 
       <Typography variant="subtitle2" component="h3">
@@ -271,7 +270,7 @@ function Report({ measures, placing, onFocus }: Props) {
         kind="traders"
         names={TRADERS}
         of={measures.traders}
-        onFocus={onFocus}
+        seed={seed}
       />
 
       <Typography variant="subtitle2" component="h3">

@@ -1,75 +1,43 @@
 import { BASE_PATH } from "@/lib/site";
 
-// Where one seed stands among the worlds of the seed scan: the share of
-// scanned worlds it beats on one measure. The summary is the Valheim
-// generator's, a static file (public/data, copied on each new scan) fetched
-// only when a seed report opens.
+// Where one seed stands among the worlds of the seed scan, for the seed tool
+// only: the Valheim generator's ranks (public/data/seed-ranks.json, copied on
+// each new scan), per measure 21 points — every fifth percentile — and per
+// flag the share of worlds where it holds.
 
-type Measure = {
-  worlds: number;
-  min?: number;
-  p5?: number;
-  p25?: number;
-  median?: number;
-  p75?: number;
-  p95?: number;
-  max?: number;
-  q?: number[];
-  share?: number;
-};
+export type Ranks = { measures: Record<string, number[] | number> };
 
-export type Scan = { measures: Record<string, Measure> };
+let loading: Promise<Ranks> | null = null;
 
-let loading: Promise<Scan> | null = null;
-
-export function loadScan(): Promise<Scan> {
-  loading ??= fetch(`${BASE_PATH}/data/scan-summary.json`).then((r) => {
+export function loadRanks(): Promise<Ranks> {
+  loading ??= fetch(`${BASE_PATH}/data/seed-ranks.json`).then((r) => {
     if (!r.ok) {
       loading = null;
-      throw new Error(`scan summary: ${r.status}`);
+      throw new Error(`seed ranks: ${r.status}`);
     }
-    return r.json() as Promise<Scan>;
+    return r.json() as Promise<Ranks>;
   });
   return loading;
 }
 
-// The measure's distribution as (value, share of worlds at or below it).
-function steps(m: Measure): [number, number][] {
-  if (m.q) {
-    return m.q.map((v, i) => [v, i / 100]);
-  }
-  const known: [number | undefined, number][] = [
-    [m.min, 0],
-    [m.p5, 0.05],
-    [m.p25, 0.25],
-    [m.median, 0.5],
-    [m.p75, 0.75],
-    [m.p95, 0.95],
-    [m.max, 1],
-  ];
-  return known.filter((s): s is [number, number] => s[0] !== undefined);
-}
-
-// The share of scanned worlds this value beats (0…1), read off the
-// distribution with straight lines between its points: with `less`, worlds
-// whose value is larger (a distance: this seed is closer); otherwise worlds
-// whose value is smaller (an area, a count). Ties beat nobody, so a value many
-// worlds share (no sea on the way) does not claim to beat them. Null when the
-// scan has no such measure.
+// The share of scanned worlds this value beats (0…1), read off the 21 points
+// with straight lines between them: with `less`, worlds whose value is larger
+// (a distance: this seed is closer); otherwise worlds whose value is smaller
+// (an area, a count). Ties beat nobody, so a value many worlds share (no sea on
+// the way) does not claim to beat them. Null when there is no such measure.
 export function shareBeaten(
-  scan: Scan,
+  ranks: Ranks,
   path: string,
   value: number,
   less: boolean,
 ): number | null {
-  const m = scan.measures[path];
-  if (!m) {
+  const q = ranks.measures[path];
+  if (!Array.isArray(q)) {
     return null;
   }
-  const s = steps(m);
+  const s = q.map((v, i): [number, number] => [v, i / (q.length - 1)]);
   if (less) {
-    // The best value there is (no sea at all): many worlds share it, so it
-    // beats none of them, and saying so would mislead.
+    // The best value there is: many worlds share it, so it beats none.
     if (value <= s[0][0]) {
       return null;
     }

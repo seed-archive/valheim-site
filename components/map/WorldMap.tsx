@@ -5,12 +5,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useIntl } from "react-intl";
 
-import {
-  Generator,
-  type Legend,
-  type Pixels,
-  type SeedMeasures,
-} from "@/lib/generator";
+import { Generator, type Legend, type Pixels } from "@/lib/generator";
 import { card, type Card } from "@/lib/card";
 import { placeIcon } from "@/lib/icons";
 import {
@@ -124,7 +119,6 @@ type Props = {
   focus: Focus | null;
   onCursor: (point: { x: number; z: number } | null) => void;
   onLegend: (legend: Legend) => void;
-  onMeasures: (measures: SeedMeasures | null) => void;
   onPlacing: (placing: boolean) => void;
 };
 
@@ -135,7 +129,6 @@ export default function WorldMap({
   focus,
   onCursor,
   onLegend,
-  onMeasures,
   onPlacing,
 }: Props) {
   const intl = useIntl();
@@ -225,7 +218,6 @@ export default function WorldMap({
 
     // Places: every location, grouped; traders as all their candidate places.
     onPlacing(true);
-    onMeasures(null);
     const fresh: Partial<Record<PlaceGroup, L.LayerGroup>> = {};
     PLACE_GROUPS.forEach((g) => (fresh[g] = L.layerGroup()));
     groups.current = fresh;
@@ -291,7 +283,6 @@ export default function WorldMap({
         if (!live) {
           return;
         }
-        onMeasures(m);
         // The nearest altar of each boss and the nearest place of each trader:
         // how much of the straight way is sea.
         for (const placed of [
@@ -432,7 +423,7 @@ export default function WorldMap({
       overlays.current = {};
       groups.current = {};
     };
-  }, [seed, onMeasures, onPlacing]);
+  }, [seed, onPlacing]);
 
   // Layers switched on and off.
   useEffect(() => {

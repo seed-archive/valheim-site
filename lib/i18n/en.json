@@ -10,7 +10,9 @@
     "unavailable": "The archive could not be read.",
     "privacy": "Privacy",
     "terms": "Terms",
-    "releaseNotes": "Release notes"
+    "releaseNotes": "Release notes",
+    "allTools": "All tools",
+    "seedRating": "How good is my seed?"
   },
   "pages": {
     "home": {
@@ -20,7 +22,14 @@
     },
     "tools": {
       "title": "Tools",
-      "map": "<b>How do I see the world of a seed?</b> Type it on the <link>Valheim seed map</link>."
+      "map": "<b>How do I see the world of a seed?</b> Type it on the <link>Valheim seed map</link>.",
+      "seedRating": "<b>Is my seed any good?</b> Type it into <link>How good is my seed?</link> and see how its start island, boss altars, traders and dungeons rank against other worlds."
+    },
+    "seedRating": {
+      "title": "How good is my seed?",
+      "lead": "<b>Is my Valheim seed a good one?</b> Type it below: each measure of its world is set against other worlds — green where this seed does better than most, red where it does worse.",
+      "rate": "Rate",
+      "toMap": "Every place below is on the <link>map of this seed</link>."
     },
     "map": {
       "title": "Valheim seed map",

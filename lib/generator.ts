@@ -22,11 +22,14 @@ export class Generator {
   >();
   private next = 0;
 
-  constructor() {
-    const count = Math.max(
-      1,
-      Math.min(MAX_WORKERS, (navigator.hardwareConcurrency || 2) - 1),
-    );
+  // `workers`: how many; by default as many as the screen's tiles want.
+  constructor(workers?: number) {
+    const count =
+      workers ??
+      Math.max(
+        1,
+        Math.min(MAX_WORKERS, (navigator.hardwareConcurrency || 2) - 1),
+      );
     this.workers = Array.from({ length: count }, () => {
       const worker = new Worker(`${BASE_PATH}/wasm/worker.js`, {
         type: "module",

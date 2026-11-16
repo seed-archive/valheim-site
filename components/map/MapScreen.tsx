@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Box from "@mui/material/Box";
@@ -9,7 +9,6 @@ import Checkbox from "@mui/material/Checkbox";
 import Divider from "@mui/material/Divider";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
-import IconButton from "@mui/material/IconButton";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
@@ -21,9 +20,7 @@ import { Controller, useForm } from "react-hook-form";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
-import { SeedReport } from "@/components/map/SeedReport";
-import type { Focus } from "@/components/map/WorldMap";
-import type { Legend, SeedMeasures } from "@/lib/generator";
+import type { Legend } from "@/lib/generator";
 import { PLACE_COLOUR, type PlaceGroup } from "@/lib/places";
 import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
@@ -46,22 +43,29 @@ export function MapScreen() {
   const [cursor, setCursor] = useState<{ x: number; z: number } | null>(null);
   const [layers, setLayers] = useState(DEFAULT_LAYERS);
   const [ruler, setRuler] = useState(false);
-  const [focus, setFocus] = useState<Focus | null>(null);
   const [legend, setLegend] = useState<Legend | null>(null);
-  const [measures, setMeasures] = useState<SeedMeasures | null>(null);
   const [placing, setPlacing] = useState(false);
   // On a narrow screen both panels start closed, so the map shows; a choice
   // the visitor makes holds.
   const narrow = useMediaQuery(useTheme().breakpoints.down("md"));
-  const [reportOpen, setReportOpen] = useState<boolean | null>(null);
   const [toolsOpen, setToolsOpen] = useState<boolean | null>(null);
-  const report = reportOpen ?? !narrow;
   const tools = toolsOpen ?? !narrow;
 
   // The seed lives in the address, so a map can be shared.
   const router = useRouter();
   const pathname = usePathname();
-  const seed = useSearchParams().get("seed");
+  const params = useSearchParams();
+  const seed = params.get("seed");
+  // A link from the seed tool may centre the map on a place.
+  const px = params.get("x");
+  const pz = params.get("z");
+  const at = useMemo(
+    () =>
+      px !== null && pz !== null
+        ? { x: Number(px), z: Number(pz), at: 0 }
+        : null,
+    [px, pz],
+  );
   const { control, handleSubmit } = useForm<SeedForm>({
     defaultValues: { seed: seed ?? "" },
   });
@@ -76,10 +80,6 @@ export function MapScreen() {
     (point: { x: number; z: number } | null) => setCursor(point),
     [],
   );
-  const onFocus = useCallback(
-    (p: { x: number; z: number }) => setFocus({ ...p, at: Date.now() }),
-    [],
-  );
 
   return (
     <Box sx={{ height: "100dvh", display: "flex", flexDirection: "column" }}>
@@ -92,10 +92,9 @@ export function MapScreen() {
           seed={seed}
           layers={layers}
           ruler={ruler}
-          focus={focus}
+          focus={at}
           onCursor={onCursor}
           onLegend={setLegend}
-          onMeasures={setMeasures}
           onPlacing={setPlacing}
         />
         <Paper
@@ -198,6 +197,11 @@ export function MapScreen() {
                     ))}
                   </Box>
                 ) : null}
+                {placing ? (
+                  <Typography variant="caption" color="text.secondary">
+                    <FormattedMessage id="pages.map.report.placing" />
+                  </Typography>
+                ) : null}
                 <Divider />
                 <ToggleButton
                   value="ruler"
@@ -214,55 +218,6 @@ export function MapScreen() {
             ) : null}
           </Stack>
         </Paper>
-        {seed ? (
-          <Paper
-            elevation={3}
-            sx={{
-              position: "absolute",
-              top: { md: 16 },
-              bottom: { xs: 8, md: "auto" },
-              right: { xs: report ? 8 : "auto", md: 16 },
-              left: { xs: 8, md: "auto" },
-              zIndex: 1000,
-              width: { md: report ? 380 : "auto" },
-              maxHeight: { xs: "50%", md: "calc(100% - 96px)" },
-              overflowY: "auto",
-              p: report ? 2 : 0.5,
-            }}
-          >
-            <Stack
-              direction="row"
-              sx={{ alignItems: "center", justifyContent: "space-between" }}
-            >
-              {report ? (
-                <Typography variant="h6" component="h2">
-                  <FormattedMessage
-                    id="pages.map.report.title"
-                    values={{ seed }}
-                  />
-                </Typography>
-              ) : null}
-              <IconButton
-                size="small"
-                onClick={() => setReportOpen(!report)}
-                aria-label={intl.formatMessage({
-                  id: report
-                    ? "pages.map.report.hide"
-                    : "pages.map.report.show",
-                })}
-              >
-                {report ? "×" : "☰"}
-              </IconButton>
-            </Stack>
-            {report ? (
-              <SeedReport
-                measures={measures}
-                placing={placing}
-                onFocus={onFocus}
-              />
-            ) : null}
-          </Paper>
-        ) : null}
         {cursor ? (
           <Paper
             elevation={2}

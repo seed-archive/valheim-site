@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { useAuth } from "@/components/providers/AuthProvider";
+import { TOOLS } from "@/lib/tools";
 
 // The archive's one header (D15): "Seed Archive", a plain link to the domain's
 // root (another zone, so not next/link), then the game's name, a link to this
@@ -22,6 +23,7 @@ export function ArchiveBar() {
   const { signOut, user } = useAuth();
   const intl = useIntl();
   const [accountMenu, setAccountMenu] = useState<HTMLElement | null>(null);
+  const [toolsMenu, setToolsMenu] = useState<HTMLElement | null>(null);
 
   return (
     <AppBar
@@ -61,9 +63,41 @@ export function ArchiveBar() {
             <FormattedMessage id="archive.game" />
           </Typography>
         </Box>
-        <Button component={Link} href="/tools" color="inherit">
+        <Button
+          color="inherit"
+          onClick={(event) => setToolsMenu(event.currentTarget)}
+          id="tools-button"
+          aria-haspopup="true"
+          aria-controls={toolsMenu ? "tools-menu" : undefined}
+          aria-expanded={toolsMenu ? "true" : undefined}
+        >
           <FormattedMessage id="archive.tools" />
         </Button>
+        <Menu
+          id="tools-menu"
+          anchorEl={toolsMenu}
+          open={Boolean(toolsMenu)}
+          onClose={() => setToolsMenu(null)}
+          slotProps={{ list: { "aria-labelledby": "tools-button" } }}
+        >
+          <MenuItem
+            component={Link}
+            href="/tools"
+            onClick={() => setToolsMenu(null)}
+          >
+            <FormattedMessage id="archive.allTools" />
+          </MenuItem>
+          {TOOLS.map((tool) => (
+            <MenuItem
+              key={tool.href}
+              component={Link}
+              href={tool.href}
+              onClick={() => setToolsMenu(null)}
+            >
+              <FormattedMessage id={tool.id} />
+            </MenuItem>
+          ))}
+        </Menu>
         {user ? (
           <>
             <IconButton
