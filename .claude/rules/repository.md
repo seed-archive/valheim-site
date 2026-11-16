@@ -12,5 +12,7 @@
 - Every word a visitor reads goes through `react-intl` (`lib/i18n/*.json`); long texts will be Markdown.
 - No migrations here: the coordinator moves the migration history into the portal first; the first Valheim table
   (schema `valheim`) is asked of it then. So there is no `supabase/` and no production workflow.
-- Release notes live in the portal (`content/release-notes/valheim.md`, D16), not here.
+- Release notes live in the portal (`content/release-notes/valheim.md`, D16), not here, and carry no version number: the
+  archive has one version for all games, numbered by the coordinator when a release is called (Valheim's opening will
+  be Seed Archive 2.0; portal `docs/releases.md`, Version).
 - The theme is light only, in the No Man's Sky site's colours (Material UI's default light theme), until D14.
