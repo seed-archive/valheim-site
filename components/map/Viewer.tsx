@@ -53,8 +53,9 @@ export type ViewerProps = {
   // Which overlays and marker layers show, by id.
   visible: Record<string, boolean>;
   markers: Marker[];
-  // What a click at (x, y) reads; null shows nothing.
-  describe: (x: number, y: number) => Promise<Card | null>;
+  // What a click at (x, y) reads; without it a click only closes the open
+  // popup.
+  describe?: (x: number, y: number) => Promise<Card | null>;
   ruler: boolean;
   focus: Focus | null;
   // Where own pins are kept in the browser, per seed.
@@ -295,7 +296,7 @@ export default function Viewer(props: ViewerProps) {
           .openTooltip(event.latlng);
         return;
       }
-      now.current.describe(event.latlng.lng, event.latlng.lat).then((c) => {
+      now.current.describe?.(event.latlng.lng, event.latlng.lat).then((c) => {
         if (live && c) {
           L.popup().setLatLng(event.latlng).setContent(card(c)).openOn(world);
         }

@@ -98,7 +98,6 @@ export function MapScreen() {
           overlays={world.overlays}
           visible={layers}
           markers={world.markers}
-          describe={world.describe}
           ruler={ruler}
           focus={at}
           pinsKey="valheim-pins"

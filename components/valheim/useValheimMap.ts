@@ -9,7 +9,6 @@ import type { Marker } from "@/components/map/Viewer";
 import {
   decodeMeasures,
   decodePlaces,
-  decodePoint,
   moduleUrl,
   type Place,
 } from "@/lib/valheim/generator";
@@ -155,38 +154,6 @@ export function useValheimMap(seed: string | null) {
       });
   }, [current, t]);
 
-  const describe = useCallback(
-    async (x: number, y: number): Promise<Card | null> => {
-      if (!client || !seed) {
-        return null;
-      }
-      const info = decodePoint(await client.point(seed, 0, x, y));
-      return {
-        title: t(`pages.map.biomes.${BIOME_KEYS[info.biome]}`),
-        meta: `x ${Math.round(x)}, z ${Math.round(y)}`,
-        lines: [
-          t("pages.map.height", { m: info.height }),
-          ...(info.subBiomes.length
-            ? [t("pages.map.subBiomeIs", { names: info.subBiomes.join(", ") })]
-            : []),
-        ],
-        note: info.swamp
-          ? {
-              tone: info.swamp === "wide" ? "good" : "bad",
-              lines: [
-                t(
-                  info.swamp === "wide"
-                    ? "pages.map.swampWide"
-                    : "pages.map.swampNarrow",
-                ),
-              ],
-            }
-          : undefined,
-      };
-    },
-    [client, seed, t],
-  );
-
   const labels = useMemo(
     () => ({
       pin: t("pages.map.pin"),
@@ -202,7 +169,6 @@ export function useValheimMap(seed: string | null) {
     palette,
     overlays: layers,
     markers,
-    describe,
     labels,
     placing: Boolean(seed) && !current,
   };

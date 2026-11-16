@@ -24,6 +24,9 @@ import {
   type SeedMeasures,
 } from "@/lib/valheim/generator";
 
+// The seed a visitor can rate without typing one: the game's own example.
+const EXAMPLE_SEED = "Valheim";
+
 // The longest seed the game's new-world dialog accepts (World.GenerateSeed
 // makes ten characters; a player may type up to this many).
 const SEED_MAX = 10;
@@ -72,7 +75,8 @@ export function SeedRating() {
   }, [seed]);
 
   const rate = handleSubmit(({ seed }) => {
-    router.replace(`${pathname}?${new URLSearchParams({ seed })}`, {
+    const text = seed.trim() || EXAMPLE_SEED;
+    router.replace(`${pathname}?${new URLSearchParams({ seed: text })}`, {
       scroll: false,
     });
   });
@@ -113,13 +117,14 @@ export function SeedRating() {
           <Controller
             name="seed"
             control={control}
-            rules={{ required: true, maxLength: SEED_MAX }}
+            rules={{ maxLength: SEED_MAX }}
             render={({ field }) => (
               <TextField
                 {...field}
                 size="small"
                 fullWidth
                 label={intl.formatMessage({ id: "pages.map.seed" })}
+                placeholder={EXAMPLE_SEED}
                 slotProps={{
                   htmlInput: { maxLength: SEED_MAX, spellCheck: false },
                   inputLabel: { shrink: true },
