@@ -72,13 +72,50 @@ function overlayPalette(
   return p;
 }
 
-// The generator's overlay layers and their colours: the contour lines.
+// The trees and ore layers number their pixels the same way: 1 a tree's stem,
+// 2 an outline, then a class each (the generator's drawing classes).
+const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
+  [1, [92, 64, 38, 255]],
+  [2, [28, 28, 24, 230]],
+];
+export const TREE_COLOURS: [number, [number, number, number, number]][] = [
+  [3, [96, 142, 62, 255]], // beech
+  [4, [236, 236, 205, 255]], // birch
+  [5, [214, 140, 44, 255]], // oak
+  [6, [38, 92, 62, 255]], // fir
+  [7, [74, 116, 72, 255]], // pine
+  [8, [120, 108, 66, 255]], // swamp tree
+  [9, [232, 196, 72, 255]], // Yggdrasil shoot
+  [10, [104, 58, 44, 255]], // Ashlands tree
+];
+export const ORE_COLOURS: [number, [number, number, number, number]][] = [
+  [16, [212, 118, 48, 255]], // copper
+  [17, [168, 186, 204, 255]], // tin
+  [18, [96, 150, 214, 255]], // silver: steel blue, to stand out on snow
+  [19, [146, 62, 40, 255]], // swamp iron (muddy scrap piles)
+  [20, [52, 34, 74, 255]], // obsidian
+  [21, [120, 204, 92, 255]], // ancient root
+  [22, [64, 124, 176, 255]], // Leviathan
+];
+
+// The generator's overlay layers and their colours: the contour lines, the
+// trees and the ore.
 export function overlays() {
   return [
     {
       id: "relief",
       layer: 0,
       palette: overlayPalette([[1, [40, 30, 20, 170]]]),
+    },
+    {
+      id: "trees",
+      layer: 1,
+      palette: overlayPalette([...VEGETATION_SHARED, ...TREE_COLOURS]),
+    },
+    {
+      id: "ore",
+      layer: 2,
+      palette: overlayPalette([...VEGETATION_SHARED, ...ORE_COLOURS]),
     },
   ];
 }

@@ -10,6 +10,8 @@ export const MAP_LAYERS = [
   "traders",
   "dungeons",
   "resources",
+  "ore",
+  "trees",
   "relief",
 ] as const;
 export type MapLayer = (typeof MAP_LAYERS)[number];
@@ -20,5 +22,7 @@ export const DEFAULT_LAYERS: Record<MapLayer, boolean> = {
   traders: true,
   dungeons: false,
   resources: false,
+  ore: false,
+  trees: false,
   relief: false,
 };

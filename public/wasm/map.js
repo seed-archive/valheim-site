@@ -1,3 +1,6 @@
+import { load_shapes } from './snippets/web-67aca56aae793faf/inline0.js';
+
+
 /**
  * The seed measured the same way as the seed scan (`analysis::measure`): numbers in the order of
  * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start.
@@ -15,7 +18,8 @@ export function measure(seed) {
 
 /**
  * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the contour lines, every 50 m of
- * height (1).
+ * height (1); 1 the trees, drawn as lollipops coloured by kind; 2 the ore, as diamonds (the classes of `build.rs`,
+ * 1 a stem, 2 an outline).
  * @param {string} seed
  * @param {number} _world
  * @param {number} layer
@@ -122,6 +126,13 @@ export function worlds(_seed) {
 function __wbg_get_imports() {
     const import0 = {
         __proto__: null,
+        __wbg_load_shapes_0eab34498a6656cb: function(arg0) {
+            const ret = load_shapes();
+            const ptr1 = passArray8ToWasm0(ret, wasm.__wbindgen_malloc);
+            const len1 = WASM_VECTOR_LEN;
+            getDataViewMemory0().setInt32((arg0 >>> 0) + 4 * 1, len1, true);
+            getDataViewMemory0().setInt32((arg0 >>> 0) + 4 * 0, ptr1, true);
+        },
         __wbindgen_init_externref_table: function() {
             const table = wasm.__wbindgen_externrefs;
             table.set(0, undefined);
@@ -152,6 +163,14 @@ function getArrayU8FromWasm0(ptr, len) {
     return getUint8ArrayMemory0().subarray(ptr / 1, ptr / 1 + len);
 }
 
+let cachedDataViewMemory0 = null;
+function getDataViewMemory0() {
+    if (cachedDataViewMemory0 === null || cachedDataViewMemory0.buffer.detached === true || (cachedDataViewMemory0.buffer.detached === undefined && cachedDataViewMemory0.buffer !== wasm.memory.buffer)) {
+        cachedDataViewMemory0 = new DataView(wasm.memory.buffer);
+    }
+    return cachedDataViewMemory0;
+}
+
 let cachedFloat32ArrayMemory0 = null;
 function getFloat32ArrayMemory0() {
     if (cachedFloat32ArrayMemory0 === null || cachedFloat32ArrayMemory0.byteLength === 0) {
@@ -174,6 +193,13 @@ function getUint8ArrayMemory0() {
         cachedUint8ArrayMemory0 = new Uint8Array(wasm.memory.buffer);
     }
     return cachedUint8ArrayMemory0;
+}
+
+function passArray8ToWasm0(arg, malloc) {
+    const ptr = malloc(arg.length * 1, 1) >>> 0;
+    getUint8ArrayMemory0().set(arg, ptr / 1);
+    WASM_VECTOR_LEN = arg.length;
+    return ptr;
 }
 
 function passStringToWasm0(arg, malloc, realloc) {
@@ -233,6 +259,7 @@ function __wbg_finalize_init(instance, module) {
     wasmInstance = instance;
     wasm = instance.exports;
     wasmModule = module;
+    cachedDataViewMemory0 = null;
     cachedFloat32ArrayMemory0 = null;
     cachedFloat64ArrayMemory0 = null;
     cachedUint8ArrayMemory0 = null;
