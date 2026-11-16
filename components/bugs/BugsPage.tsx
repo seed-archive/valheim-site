@@ -2,7 +2,7 @@
 
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
@@ -14,7 +14,18 @@ const YAW_STEP = 22.5;
 
 // The bugs in the game's world generation a player meets on a seed; each one is
 // proven in the Valheim generator's notes.
+// A heading's id from its words, so any section can be linked (the shared
+// seo.md, Links).
+function slug(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export function BugsPage() {
+  const intl = useIntl();
+  const crypts = intl.formatMessage({ id: "pages.bugs.crypts.title" });
   const bold = (text: React.ReactNode) => <strong>{text}</strong>;
   return (
     <>
@@ -30,8 +41,8 @@ export function BugsPage() {
         <Typography sx={{ mb: 4 }}>
           <FormattedMessage id="pages.bugs.lead" values={{ b: bold }} />
         </Typography>
-        <Typography variant="h5" component="h2" gutterBottom>
-          <FormattedMessage id="pages.bugs.crypts.title" />
+        <Typography variant="h5" component="h2" id={slug(crypts)} gutterBottom>
+          {crypts}
         </Typography>
         <Typography sx={{ mb: 2 }}>
           <FormattedMessage
