@@ -36,9 +36,6 @@ const SEED_MAX = 10;
 
 type SeedForm = { seed: string };
 
-// A click on the map only closes the open popup: what lies at a point is the
-// generator's data for the seed tool, not for the visitor.
-const describeNothing = () => Promise.resolve(null);
 
 // The map page: the map fills everything under the header, its controls sit on
 // it, and there is no footer (the owner, 2026-11-15, as valheim.tools does it;
@@ -106,7 +103,6 @@ export function MapScreen() {
           focus={at}
           pinsKey="valheim-pins"
           labels={world.labels}
-          describe={describeNothing}
           onCursor={onCursor}
         />
         <Paper
