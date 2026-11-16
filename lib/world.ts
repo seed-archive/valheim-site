@@ -25,8 +25,18 @@ export const DEFAULT_LAYERS: Record<MapLayer, boolean> = {
   dungeons: false,
   resources: false,
   ore: false,
-  trees: false,
+  trees: true,
   fineWood: false,
   berries: false,
   relief: false,
 };
+
+// The seed the map and the seed tool show when none is given: the game's own
+// example, the one other seed maps open with too.
+export const EXAMPLE_SEED = "Valheim";
+
+// What the game's new-world dialog lets a player type as a seed: up to ten
+// letters and digits (the start scene's seed field: alphanumeric, a limit of
+// 10; World.GenerateSeed makes ten characters).
+export const SEED_MAX = 10;
+export const SEED_PATTERN = /^[A-Za-z0-9]*$/;

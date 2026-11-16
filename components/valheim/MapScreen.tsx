@@ -26,7 +26,13 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { useValheimMap } from "@/components/valheim/useValheimMap";
 import { DEEP_SEA } from "@/lib/valheim/palette";
 import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
-import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
+import {
+  DEFAULT_LAYERS,
+  EXAMPLE_SEED,
+  MAP_LAYERS,
+  SEED_MAX,
+  SEED_PATTERN,
+} from "@/lib/world";
 
 // Leaflet touches `window`, so the viewer loads in the browser only.
 const Viewer = dynamic(() => import("@seed-archive/map/viewer"), {
@@ -36,10 +42,6 @@ const Viewer = dynamic(() => import("@seed-archive/map/viewer"), {
 // The side panel's width: the seed, the layers and the ruler; the other side
 // is kept for what a place holds.
 const PANEL_WIDTH = 280;
-
-// The longest seed the game's new-world dialog accepts (World.GenerateSeed
-// makes ten characters; a player may type up to this many).
-const SEED_MAX = 10;
 
 type SeedForm = { seed: string };
 
@@ -61,7 +63,8 @@ export function MapScreen() {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
-  const seed = params.get("seed");
+  // No seed in the address: the example seed, so the map is never empty.
+  const seed = params.get("seed") ?? EXAMPLE_SEED;
   // A link from the seed tool may centre the map on a place.
   const px = params.get("x");
   const pz = params.get("z");
@@ -72,8 +75,13 @@ export function MapScreen() {
         : null,
     [px, pz],
   );
-  const { control, handleSubmit } = useForm<SeedForm>({
-    defaultValues: { seed: seed ?? "" },
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<SeedForm>({
+    defaultValues: { seed },
+    mode: "onChange",
   });
 
   const show = handleSubmit(({ seed }) => {
@@ -102,10 +110,16 @@ export function MapScreen() {
       <Controller
         name="seed"
         control={control}
-        rules={{ required: true, maxLength: SEED_MAX }}
-        render={({ field }) => (
+        rules={{ required: true, maxLength: SEED_MAX, pattern: SEED_PATTERN }}
+        render={({ field, fieldState }) => (
           <TextField
             {...field}
+            error={Boolean(fieldState.error)}
+            helperText={
+              fieldState.error
+                ? intl.formatMessage({ id: "pages.map.seedRule" })
+                : undefined
+            }
             size="small"
             label={intl.formatMessage({ id: "pages.map.seed" })}
             sx={{ flexGrow: direction === "row" ? 1 : 0, minWidth: 0 }}
@@ -119,7 +133,8 @@ export function MapScreen() {
       <Button
         type="submit"
         variant="contained"
-        sx={{ whiteSpace: "nowrap", flexShrink: 0 }}
+        disabled={!isValid}
+        sx={{ whiteSpace: "nowrap", flexShrink: 0, alignSelf: "flex-start" }}
       >
         <FormattedMessage
           id={direction === "row" ? "pages.map.showShort" : "pages.map.show"}

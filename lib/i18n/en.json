@@ -224,7 +224,8 @@
       "layersTitle": "Layers",
       "hidePanel": "Hide the panel",
       "showPanel": "Show the panel",
-      "showShort": "Show"
+      "showShort": "Show",
+      "seedRule": "Letters and digits, up to 10"
     },
     "notFound": {
       "title": "This page does not exist",

@@ -17,19 +17,13 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@/components/archive/PageTrail";
 import { SeedReport } from "@/components/tools/seed/SeedReport";
+import { EXAMPLE_SEED, SEED_MAX, SEED_PATTERN } from "@/lib/world";
 import { MapClient } from "@seed-archive/map/client";
 import {
   decodeMeasures,
   moduleUrl,
   type SeedMeasures,
 } from "@/lib/valheim/generator";
-
-// The seed a visitor can rate without typing one: the game's own example.
-const EXAMPLE_SEED = "Valheim";
-
-// The longest seed the game's new-world dialog accepts (World.GenerateSeed
-// makes ten characters; a player may type up to this many).
-const SEED_MAX = 10;
 
 type SeedForm = { seed: string };
 
@@ -41,8 +35,13 @@ export function SeedRating() {
   const pathname = usePathname();
   // The seed lives in the address, so a rating can be shared.
   const seed = useSearchParams().get("seed");
-  const { control, handleSubmit } = useForm<SeedForm>({
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<SeedForm>({
     defaultValues: { seed: seed ?? "" },
+    mode: "onChange",
   });
   const generator = useRef<MapClient | null>(null);
   const [measured, setMeasured] = useState<{
@@ -128,10 +127,16 @@ export function SeedRating() {
           <Controller
             name="seed"
             control={control}
-            rules={{ maxLength: SEED_MAX }}
-            render={({ field }) => (
+            rules={{ maxLength: SEED_MAX, pattern: SEED_PATTERN }}
+            render={({ field, fieldState }) => (
               <TextField
                 {...field}
+                error={Boolean(fieldState.error)}
+                helperText={
+                  fieldState.error
+                    ? intl.formatMessage({ id: "pages.map.seedRule" })
+                    : undefined
+                }
                 size="small"
                 fullWidth
                 label={intl.formatMessage({ id: "pages.map.seed" })}
@@ -143,7 +148,12 @@ export function SeedRating() {
               />
             )}
           />
-          <Button type="submit" variant="contained">
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={!isValid}
+            sx={{ alignSelf: "flex-start" }}
+          >
             <FormattedMessage id="pages.seedRating.rate" />
           </Button>
         </Stack>
