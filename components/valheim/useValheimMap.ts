@@ -16,6 +16,10 @@ import { placeIcon } from "@/lib/valheim/icons";
 import { mapPalette, overlays } from "@/lib/valheim/palette";
 import { BIOME_KEYS, compass, type PlaceGroup } from "@/lib/valheim/places";
 
+// Nothing can be built this near the start: the start location's no-build
+// radius, its exterior radius (the game's StartTemple prefab, m_noBuild).
+const START_NO_BUILD = 25;
+
 // A darker shade of each group's marker colour for the tooltip's label, so it
 // reads on white (our own choice).
 const KICKER_COLOUR: Record<PlaceGroup, string | undefined> = {
@@ -111,6 +115,9 @@ export function useValheimMap(seed: string | null) {
         const lines: string[] = [];
         if (p.unique) {
           lines.push(t("pages.map.possiblePlace"));
+        }
+        if (p.group === "start") {
+          lines.push(t("pages.map.startNoBuild", { m: START_NO_BUILD }));
         }
         if (start && p.group !== "start") {
           const dx = p.x - start.x;

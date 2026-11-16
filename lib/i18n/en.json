@@ -49,7 +49,7 @@
         "berries": "Berries"
       },
       "places": {
-        "start": "The start",
+        "start": "Sacrificial stones",
         "eikthyr": "Eikthyr's altar",
         "theElder": "The Elder's altar",
         "bonemass": "Bonemass's altar",
@@ -242,7 +242,8 @@
         "blueberry": "Blueberry",
         "cloudberry": "Cloudberry",
         "lingonberry": "Lingonberry"
-      }
+      },
+      "startNoBuild": "Nothing can be built within {m} m of the stones"
     },
     "notFound": {
       "title": "This page does not exist",

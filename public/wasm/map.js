@@ -36,7 +36,7 @@ export function measure_deep(seed) {
 /**
  * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the contour lines, every 50 m of
  * height (1); 1 the trees of every biome, drawn from the side by kind; 16–22 one ore each, as diamonds (the classes
- * of `build.rs`; 2 an outline).
+ * of `build.rs`; 2 an outline); 6 the ring round the start where nothing may be built.
  * @param {string} seed
  * @param {number} _world
  * @param {number} layer

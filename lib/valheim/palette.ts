@@ -149,6 +149,15 @@ export function overlays() {
       ]),
     },
     {
+      // The ring round the start where nothing may be built.
+      id: "startArea",
+      layer: 6,
+      palette: overlayPalette([
+        [1, [255, 255, 255, 230]],
+        [2, [255, 255, 255, 50]],
+      ]),
+    },
+    {
       id: "berries",
       layer: 4,
       palette: overlayPalette([...VEGETATION_SHARED, ...BERRY_COLOURS]),

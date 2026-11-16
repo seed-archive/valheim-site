@@ -95,6 +95,8 @@ export function MapScreen() {
     [],
   );
   const world = useValheimMap(seed);
+  // The start's no-build ring is always on, with the start's pin.
+  const visible = useMemo(() => ({ ...layers, startArea: true }), [layers]);
   const placing = world.placing;
 
   // The seed and its button: in a row on a phone's bar, one over the other in
@@ -249,7 +251,7 @@ export function MapScreen() {
           palette={world.palette}
           background={DEEP_SEA}
           overlays={world.overlays}
-          visible={layers}
+          visible={visible}
           markers={world.markers}
           ruler={ruler}
           focus={at}
