@@ -1,19 +1,20 @@
 // The colours of the Valheim map: the generator's tile is one byte a pixel,
 // `class · 16 + light`, and these palettes turn the bytes into RGBA.
 
-// The minimap's biome colours (the game's Minimap fields, as the Valheim
-// generator reads them), by the generator's biome numbers 1…9; Mistlands is the
-// game's code default 0.2 grey.
+// The land's colours by the generator's biome numbers 1…9: the game's own
+// minimap hues, muted and darkened by us so the relief's light and shade read
+// on them (the owner, 2026-11-16); Mistlands lilac-grey instead of the game's
+// near-black, so its relief shows.
 const BIOME_RGB: Record<number, [number, number, number]> = {
-  1: [146, 167, 92], // Meadows
-  2: [163, 114, 88], // Swamp
-  3: [255, 255, 255], // Mountain
-  4: [107, 116, 63], // Black Forest
-  5: [231, 171, 120], // Plains
-  6: [123, 32, 32], // Ashlands
-  7: [255, 255, 255], // Deep North
-  8: [255, 255, 255], // Ocean (as land: shallows above the water)
-  9: [51, 51, 51], // Mistlands
+  1: [138, 156, 96], // Meadows
+  2: [126, 104, 92], // Swamp
+  3: [232, 232, 226], // Mountain
+  4: [84, 102, 62], // Black Forest
+  5: [204, 170, 118], // Plains
+  6: [122, 54, 46], // Ashlands
+  7: [224, 232, 238], // Deep North
+  8: [232, 232, 226], // Ocean (as land: shallows above the water)
+  9: [98, 90, 110], // Mistlands
 };
 
 // The generator's light levels: 16 steps from shade to sun over this range
@@ -29,7 +30,10 @@ function lightOf(level: number) {
 // The sea's colour at a depth from 0 (shallow) to 1 (60 m and deeper): our
 // own ramp from blue-green to deep blue.
 function sea(depth: number): [number, number, number] {
-  return [30 * (1 - depth), 90 * (1 - depth) + 30, 170 - 70 * depth];
+  // The shallowest water a little darker than the generator's own ramp, so
+  // small islets do not stand out in bright rings.
+  const d = 0.12 + depth * 0.88;
+  return [30 * (1 - d), 90 * (1 - d) + 30, 170 - 70 * d];
 }
 
 export const DEEP_SEA = "rgb(0, 30, 100)";
@@ -68,13 +72,22 @@ function overlayPalette(
   return p;
 }
 
-// The generator's overlay layers and their colours: the contour lines.
+// The generator's overlay layers and their colours: the contour lines, and
+// the forest's tree crowns (dark, and lighter on their lit side).
 export function overlays() {
   return [
     {
       id: "relief",
       layer: 0,
       palette: overlayPalette([[1, [40, 30, 20, 170]]]),
+    },
+    {
+      id: "forest",
+      layer: 1,
+      palette: overlayPalette([
+        [1, [36, 58, 34, 200]],
+        [2, [92, 120, 70, 200]],
+      ]),
     },
   ];
 }

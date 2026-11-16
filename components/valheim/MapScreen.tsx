@@ -36,7 +36,6 @@ const SEED_MAX = 10;
 
 type SeedForm = { seed: string };
 
-
 // The map page: the map fills everything under the header, its controls sit on
 // it, and there is no footer (the owner, 2026-11-15, as valheim.tools does it;
 // the coordinator allowed the exception: seed-archive/docs/seo.md, Header and footer).
@@ -81,6 +80,8 @@ export function MapScreen() {
     [],
   );
   const world = useValheimMap(seed);
+  // The forest is part of the map's look, always on.
+  const visible = useMemo(() => ({ ...layers, forest: true }), [layers]);
   const placing = world.placing;
 
   return (
@@ -97,7 +98,7 @@ export function MapScreen() {
           palette={world.palette}
           background={DEEP_SEA}
           overlays={world.overlays}
-          visible={layers}
+          visible={visible}
           markers={world.markers}
           ruler={ruler}
           focus={at}

@@ -15,7 +15,7 @@ export function measure(seed) {
 
 /**
  * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the contour lines, every 50 m of
- * height (1).
+ * height (1); 1 the forest, as tree crowns (1 crown, 2 its lit side) where the game's own minimap shows forest.
  * @param {string} seed
  * @param {number} _world
  * @param {number} layer
