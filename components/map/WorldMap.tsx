@@ -11,6 +11,7 @@ import {
   type Pixels,
   type SeedMeasures,
 } from "@/lib/generator";
+import { card, type Card } from "@/lib/card";
 import { placeIcon } from "@/lib/icons";
 import {
   BIOME_KEYS,
@@ -37,6 +38,16 @@ const OVERLAYS: Partial<Record<MapLayer, number>> = {
   subBiomes: 0,
   swampWidth: 1,
   relief: 2,
+};
+
+// A darker shade of each group's marker colour for the tooltip's label, so it
+// reads on white (our own choice).
+const KICKER_COLOUR: Record<PlaceGroup, string> = {
+  start: "#424242",
+  bosses: "#c62828",
+  traders: "#a67c00",
+  dungeons: "#7b1fa2",
+  other: "#757575",
 };
 
 // Our own choices: own pins and the ruler in colours no biome has.
@@ -227,30 +238,18 @@ export default function WorldMap({
         ([t]) => l.locations[t].prefab === "StartTemple",
       );
       const t = textNow.current;
-      // What a marker says: its name, its biome, how far and which way from
-      // the start; the nearest boss altars and traders add the sea on the way
-      // once the seed is measured.
-      const tip = (lines: string[]) => {
-        const box = document.createElement("div");
-        lines.forEach((line, i) => {
-          const row = document.createElement(i === 0 ? "strong" : "div");
-          row.textContent = line;
-          box.append(row);
-          if (i === 0) {
-            box.append(document.createElement("br"));
-          }
-        });
-        return box;
-      };
-      const byPlace = new Map<string, { marker: L.Layer; lines: string[] }>();
+      // What a marker says: what kind of place, its name, its biome and
+      // coordinates, how far and which way from the start; the nearest boss
+      // altars and traders add a block on the sea on the way once the seed is
+      // measured.
+      const byPlace = new Map<string, { marker: L.Layer; base: Card }>();
       for (const [type, x, z, biome] of items) {
         const { prefab, unique } = l.locations[type];
         const { group, key } = placeKind(prefab);
-        const name = t(`pages.map.places.${key}`);
-        const lines = [
-          unique ? t("pages.map.candidate", { name }) : name,
-          t(`pages.map.biomes.${BIOME_KEYS[biome]}`),
-        ];
+        const lines: string[] = [];
+        if (unique) {
+          lines.push(t("pages.map.possiblePlace"));
+        }
         if (start && group !== "start") {
           const dx = x - start[1];
           const dz = z - start[2];
@@ -261,6 +260,13 @@ export default function WorldMap({
             }),
           );
         }
+        const base: Card = {
+          kicker: t(`pages.map.kinds.${group}`),
+          kickerColour: group === "other" ? undefined : KICKER_COLOUR[group],
+          title: t(`pages.map.places.${key}`),
+          meta: `${t(`pages.map.biomes.${BIOME_KEYS[biome]}`)} · x ${x}, z ${z}`,
+          lines,
+        };
         const marker =
           group === "other"
             ? L.circleMarker([z, x], {
@@ -275,9 +281,9 @@ export default function WorldMap({
                 zIndexOffset: group === "start" ? 1000 : 0,
               });
         marker
-          .bindTooltip(tip(lines), { direction: "top" })
+          .bindTooltip(card(base), { direction: "top" })
           .addTo(fresh[group]!);
-        byPlace.set(`${x},${z}`, { marker, lines });
+        byPlace.set(`${x},${z}`, { marker, base });
       }
       PLACE_GROUPS.forEach((g) => {
         if (g === "start" || layersNow.current[g as MapLayer]) {
@@ -299,14 +305,20 @@ export default function WorldMap({
           const found = byPlace.get(`${placed.x},${placed.z}`);
           if (found) {
             found.marker.setTooltipContent(
-              tip([
-                ...found.lines,
-                placed.sea > 0
-                  ? t("pages.map.nearest", {
-                      sea: (placed.sea / 1000).toFixed(1),
-                    })
-                  : t("pages.map.nearestDry"),
-              ]),
+              card({
+                ...found.base,
+                note: {
+                  tone: placed.sea > 0 ? "info" : "good",
+                  lines: [
+                    t("pages.map.nearestTitle"),
+                    placed.sea > 0
+                      ? t("pages.map.seaOnWay", {
+                          sea: (placed.sea / 1000).toFixed(1),
+                        })
+                      : t("pages.map.noSea"),
+                  ],
+                },
+              }),
             );
           }
         }
@@ -321,18 +333,18 @@ export default function WorldMap({
     const drawPins = () => {
       pins.clearLayers();
       saved.forEach((pin, index) => {
-        const button = document.createElement("button");
-        button.textContent = textNow.current("pages.map.removePin");
-        button.onclick = () => {
-          saved = saved.filter((_, i) => i !== index);
-          writePins(seed, saved);
-          drawPins();
-        };
-        const box = document.createElement("div");
-        box.append(
-          `${textNow.current("pages.map.pin")}: x ${Math.round(pin.x)}, z ${Math.round(pin.z)} `,
-          button,
-        );
+        const box = card({
+          title: textNow.current("pages.map.pin"),
+          meta: `x ${Math.round(pin.x)}, z ${Math.round(pin.z)}`,
+          action: {
+            label: textNow.current("pages.map.removePin"),
+            onClick: () => {
+              saved = saved.filter((_, i) => i !== index);
+              writePins(seed, saved);
+              drawPins();
+            },
+          },
+        });
         L.circleMarker([pin.z, pin.x], {
           radius: 7,
           color: "#000",
@@ -384,28 +396,32 @@ export default function WorldMap({
           return;
         }
         const t = textNow.current;
-        const rows = [
-          t(`pages.map.biomes.${info.biome}`),
-          t("pages.map.height", { m: info.height }),
-          ...(info.biome === "swamp"
-            ? [
-                t(
-                  info.wideSwamp
-                    ? "pages.map.swampWide"
-                    : "pages.map.swampNarrow",
-                ),
-              ]
-            : []),
-          ...(info.subBiomes.length
-            ? [t("pages.map.subBiomeIs", { names: info.subBiomes.join(", ") })]
-            : []),
-          `x ${Math.round(x)}, z ${Math.round(z)}`,
-        ];
-        const box = document.createElement("div");
-        rows.forEach((row) => {
-          const p = document.createElement("div");
-          p.textContent = row;
-          box.append(p);
+        const box = card({
+          title: t(`pages.map.biomes.${info.biome}`),
+          meta: `x ${Math.round(x)}, z ${Math.round(z)}`,
+          lines: [
+            t("pages.map.height", { m: info.height }),
+            ...(info.subBiomes.length
+              ? [
+                  t("pages.map.subBiomeIs", {
+                    names: info.subBiomes.join(", "),
+                  }),
+                ]
+              : []),
+          ],
+          note:
+            info.biome === "swamp"
+              ? {
+                  tone: info.wideSwamp ? "good" : "bad",
+                  lines: [
+                    t(
+                      info.wideSwamp
+                        ? "pages.map.swampWide"
+                        : "pages.map.swampNarrow",
+                    ),
+                  ],
+                }
+              : undefined,
         });
         L.popup().setLatLng(event.latlng).setContent(box).openOn(world);
       });
