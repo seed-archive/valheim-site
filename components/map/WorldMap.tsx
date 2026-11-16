@@ -11,9 +11,11 @@ import {
   type Pixels,
   type SeedMeasures,
 } from "@/lib/generator";
+import { placeIcon } from "@/lib/icons";
 import {
+  BIOME_KEYS,
+  compass,
   PLACE_GROUPS,
-  PLACE_STYLE,
   placeKind,
   type PlaceGroup,
 } from "@/lib/places";
@@ -224,28 +226,58 @@ export default function WorldMap({
       const start = items.find(
         ([t]) => l.locations[t].prefab === "StartTemple",
       );
-      for (const [t, x, z] of items) {
-        const { prefab, unique } = l.locations[t];
+      const t = textNow.current;
+      // What a marker says: its name, its biome, how far and which way from
+      // the start; the nearest boss altars and traders add the sea on the way
+      // once the seed is measured.
+      const tip = (lines: string[]) => {
+        const box = document.createElement("div");
+        lines.forEach((line, i) => {
+          const row = document.createElement(i === 0 ? "strong" : "div");
+          row.textContent = line;
+          box.append(row);
+          if (i === 0) {
+            box.append(document.createElement("br"));
+          }
+        });
+        return box;
+      };
+      const byPlace = new Map<string, { marker: L.Layer; lines: string[] }>();
+      for (const [type, x, z, biome] of items) {
+        const { prefab, unique } = l.locations[type];
         const { group, key } = placeKind(prefab);
-        const style = PLACE_STYLE[group];
-        const name = key ? textNow.current(`pages.map.places.${key}`) : prefab;
-        const far = start
-          ? Math.round(Math.hypot(x - start[1], z - start[2]))
-          : null;
-        const label =
-          (unique ? textNow.current("pages.map.candidate", { name }) : name) +
-          (far !== null && group !== "start"
-            ? ` — ${textNow.current("pages.map.fromStart", { d: far })}`
-            : "");
-        L.circleMarker([z, x], {
-          radius: style.radius,
-          color: "#000",
-          weight: 1,
-          fillColor: style.colour,
-          fillOpacity: unique ? 0.55 : 0.95,
-        })
-          .bindTooltip(label)
+        const name = t(`pages.map.places.${key}`);
+        const lines = [
+          unique ? t("pages.map.candidate", { name }) : name,
+          t(`pages.map.biomes.${BIOME_KEYS[biome]}`),
+        ];
+        if (start && group !== "start") {
+          const dx = x - start[1];
+          const dz = z - start[2];
+          lines.push(
+            t("pages.map.fromStart", {
+              km: (Math.hypot(dx, dz) / 1000).toFixed(1),
+              way: t(`pages.map.compass.${compass(dx, dz)}`),
+            }),
+          );
+        }
+        const marker =
+          group === "other"
+            ? L.circleMarker([z, x], {
+                radius: 3,
+                color: "#000",
+                weight: 1,
+                fillColor: "#fafafa",
+                fillOpacity: 0.9,
+              })
+            : L.marker([z, x], {
+                icon: placeIcon(group, unique),
+                zIndexOffset: group === "start" ? 1000 : 0,
+              });
+        marker
+          .bindTooltip(tip(lines), { direction: "top" })
           .addTo(fresh[group]!);
+        byPlace.set(`${x},${z}`, { marker, lines });
       }
       PLACE_GROUPS.forEach((g) => {
         if (g === "start" || layersNow.current[g as MapLayer]) {
@@ -253,7 +285,32 @@ export default function WorldMap({
         }
       });
       onPlacing(false);
-      gen.measure(seed).then((m) => live && onMeasures(m));
+      gen.measure(seed).then((m) => {
+        if (!live) {
+          return;
+        }
+        onMeasures(m);
+        // The nearest altar of each boss and the nearest place of each trader:
+        // how much of the straight way is sea.
+        for (const placed of [
+          ...Object.values(m.bosses ?? {}),
+          ...Object.values(m.traders ?? {}),
+        ]) {
+          const found = byPlace.get(`${placed.x},${placed.z}`);
+          if (found) {
+            found.marker.setTooltipContent(
+              tip([
+                ...found.lines,
+                placed.sea > 0
+                  ? t("pages.map.nearest", {
+                      sea: (placed.sea / 1000).toFixed(1),
+                    })
+                  : t("pages.map.nearestDry"),
+              ]),
+            );
+          }
+        }
+      });
     });
     PLACE_GROUPS.forEach((g) => made.push(fresh[g]!));
 

@@ -64,8 +64,9 @@ export function overlay(seed, kind, x0, z0, step, size) {
 }
 
 /**
- * Every location of the seed, as `[[type, x, z], …]` in JSON; `type` indexes [`legend`]'s locations. A unique
- * location (a trader) comes as all its candidate places.
+ * Every location of the seed, as `[[type, x, z, biome], …]` in JSON; `type` indexes [`legend`]'s locations, `biome`
+ * is the biome's index in the scan's terrain grid (Meadows 1 … Mistlands 9). A unique location (a trader) comes as
+ * all its candidate places.
  * @param {string} seed
  * @returns {string}
  */
@@ -109,7 +110,8 @@ export function point(seed, x, z) {
 }
 
 /**
- * The map itself: biome colours, water by depth, land shaded by height, as RGBA.
+ * The map itself, as RGBA: biome colours, water by depth, land lit by its slopes (hill shading) and slightly
+ * brighter with height.
  * @param {string} seed
  * @param {number} x0
  * @param {number} z0

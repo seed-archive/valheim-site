@@ -24,7 +24,7 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { SeedReport } from "@/components/map/SeedReport";
 import type { Focus } from "@/components/map/WorldMap";
 import type { Legend, SeedMeasures } from "@/lib/generator";
-import { PLACE_STYLE, type PlaceGroup } from "@/lib/places";
+import { PLACE_COLOUR, type PlaceGroup } from "@/lib/places";
 import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
 // Leaflet touches `window`, so the map loads in the browser only.
@@ -157,10 +157,9 @@ export function MapScreen() {
                             setLayers((now) => ({ ...now, [layer]: on }))
                           }
                           sx={
-                            layer in PLACE_STYLE
+                            layer in PLACE_COLOUR
                               ? {
-                                  color:
-                                    PLACE_STYLE[layer as PlaceGroup].colour,
+                                  color: PLACE_COLOUR[layer as PlaceGroup],
                                 }
                               : undefined
                           }

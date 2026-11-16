@@ -79,7 +79,7 @@ export class Generator {
     return JSON.parse((await this.call(0, "legend", [])) as string);
   }
 
-  async places(seed: string): Promise<[number, number, number][]> {
+  async places(seed: string): Promise<[number, number, number, number][]> {
     return JSON.parse((await this.call(0, "places", [seed])) as string);
   }
 
