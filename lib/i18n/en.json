@@ -37,15 +37,15 @@
       "show": "Show the map",
       "cursor": "x {x}, z {z}",
       "layers": {
-        "bosses": "Boss altars",
-        "traders": "Traders (possible places)",
+        "bosses": "Bosses",
+        "traders": "Traders",
         "dungeons": "Dungeons",
-        "resources": "Resources: tar, black metal, soft tissue, drake eggs",
-        "relief": "Contour lines (every 50 m)",
-        "trees": "Trees of every biome (zoom in)",
-        "ore": "Ore: silver, swamp iron, copper, tin, obsidian, ancient roots, Leviathans (zoom in)",
-        "fineWood": "Fine wood: birches and oaks (zoom in)",
-        "berries": "Berries: raspberry, blueberry, cloudberry, lingonberry (zoom in)"
+        "resources": "Resources",
+        "relief": "Contours",
+        "trees": "Trees",
+        "ore": "Ore",
+        "fineWood": "Fine wood",
+        "berries": "Berries"
       },
       "places": {
         "start": "The start",
@@ -187,7 +187,6 @@
         "route_swamp_fireHole": "Bonemass or his crypt to the nearest surtling fire hole",
         "sectors_abomination": "Bonemass or his crypt to where Abominations spawn"
       },
-      "tools": "Layers",
       "compass": {
         "north": "north",
         "northEast": "north-east",
@@ -209,7 +208,22 @@
       "possiblePlace": "One of the places the game may put this trader",
       "nearestTitle": "The nearest to the start",
       "seaOnWay": "{sea} km of the straight way is sea",
-      "noSea": "No sea on the straight way"
+      "noSea": "No sea on the straight way",
+      "layerHints": {
+        "bosses": "Boss altars",
+        "traders": "Where the game may put each trader",
+        "dungeons": "Burial Chambers, Sunken Crypts, troll caves, Infested Mines",
+        "resources": "Tar, black metal, soft tissue, drake eggs",
+        "relief": "Contour lines, every 50 m",
+        "trees": "Every tree, drawn as in the game (zoom in)",
+        "ore": "Silver, swamp iron, copper, tin, obsidian, ancient roots, Leviathans (zoom in)",
+        "fineWood": "Birches and oaks (zoom in)",
+        "berries": "Raspberry, blueberry, cloudberry, lingonberry (zoom in)"
+      },
+      "layersTitle": "Layers",
+      "hidePanel": "Hide the panel",
+      "showPanel": "Show the panel",
+      "showShort": "Show"
     },
     "notFound": {
       "title": "This page does not exist",

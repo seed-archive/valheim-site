@@ -7,6 +7,11 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import LayersIcon from "@mui/icons-material/Layers";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import Paper from "@mui/material/Paper";
@@ -14,8 +19,6 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import ToggleButton from "@mui/material/ToggleButton";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
 import { Controller, useForm } from "react-hook-form";
 import { FormattedMessage, useIntl } from "react-intl";
 
@@ -29,6 +32,10 @@ import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 const Viewer = dynamic(() => import("@seed-archive/map/viewer"), {
   ssr: false,
 });
+
+// The side panel's width: the seed, the layers and the ruler; the other side
+// is kept for what a place holds.
+const PANEL_WIDTH = 280;
 
 // The longest seed the game's new-world dialog accepts (World.GenerateSeed
 // makes ten characters; a player may type up to this many).
@@ -44,11 +51,11 @@ export function MapScreen() {
   const [cursor, setCursor] = useState<{ x: number; y: number } | null>(null);
   const [layers, setLayers] = useState(DEFAULT_LAYERS);
   const [ruler, setRuler] = useState(false);
-  // On a narrow screen both panels start closed, so the map shows; a choice
-  // the visitor makes holds.
-  const narrow = useMediaQuery(useTheme().breakpoints.down("md"));
-  const [toolsOpen, setToolsOpen] = useState<boolean | null>(null);
-  const tools = toolsOpen ?? !narrow;
+  // A phone shows a bar with the seed and a drawer for the layers, closed at
+  // first so the map shows; a wide screen a side panel, open at first. Which
+  // one shows is CSS's choice (the breakpoint), so it holds from the first paint.
+  const [drawer, setDrawer] = useState(false);
+  const [panel, setPanel] = useState(true);
 
   // The seed lives in the address, so a map can be shared.
   const router = useRouter();
@@ -82,6 +89,97 @@ export function MapScreen() {
   const world = useValheimMap(seed);
   const placing = world.placing;
 
+  // The seed and its button: in a row on a phone's bar, one over the other in
+  // the side panel.
+  const seedForm = (direction: "row" | "column") => (
+    <Stack
+      component="form"
+      onSubmit={show}
+      direction={direction}
+      spacing={1}
+      sx={{ flexGrow: 1 }}
+    >
+      <Controller
+        name="seed"
+        control={control}
+        rules={{ required: true, maxLength: SEED_MAX }}
+        render={({ field }) => (
+          <TextField
+            {...field}
+            size="small"
+            label={intl.formatMessage({ id: "pages.map.seed" })}
+            sx={{ flexGrow: direction === "row" ? 1 : 0, minWidth: 0 }}
+            slotProps={{
+              htmlInput: { maxLength: SEED_MAX, spellCheck: false },
+              inputLabel: { shrink: true },
+            }}
+          />
+        )}
+      />
+      <Button
+        type="submit"
+        variant="contained"
+        sx={{ whiteSpace: "nowrap", flexShrink: 0 }}
+      >
+        <FormattedMessage
+          id={direction === "row" ? "pages.map.showShort" : "pages.map.show"}
+        />
+      </Button>
+    </Stack>
+  );
+
+  const layerList = (
+    <Stack spacing={1.5}>
+      <Typography variant="subtitle2">
+        <FormattedMessage id="pages.map.layersTitle" />
+      </Typography>
+      <FormGroup>
+        {MAP_LAYERS.map((layer) => (
+          <Tooltip
+            key={layer}
+            title={intl.formatMessage({ id: `pages.map.layerHints.${layer}` })}
+            placement="right"
+          >
+            <FormControlLabel
+              control={
+                <Checkbox
+                  size="small"
+                  checked={layers[layer]}
+                  onChange={(_, on) =>
+                    setLayers((now) => ({ ...now, [layer]: on }))
+                  }
+                  sx={
+                    layer in PLACE_COLOUR
+                      ? { color: PLACE_COLOUR[layer as PlaceGroup] }
+                      : undefined
+                  }
+                />
+              }
+              label={intl.formatMessage({ id: `pages.map.layers.${layer}` })}
+            />
+          </Tooltip>
+        ))}
+      </FormGroup>
+      {placing ? (
+        <Typography variant="caption" color="text.secondary">
+          <FormattedMessage id="pages.map.report.placing" />
+        </Typography>
+      ) : null}
+      <Divider />
+      <ToggleButton
+        value="ruler"
+        size="small"
+        selected={ruler}
+        onChange={() => setRuler((on) => !on)}
+      >
+        <FormattedMessage id="pages.map.ruler" />
+      </ToggleButton>
+      <Typography variant="caption" color="text.secondary">
+        <FormattedMessage id="pages.map.help" />
+      </Typography>
+    </Stack>
+  );
+
   return (
     <Box sx={{ height: "100dvh", display: "flex", flexDirection: "column" }}>
       <ArchiveBar />
@@ -107,99 +205,86 @@ export function MapScreen() {
         <Paper
           elevation={3}
           sx={{
+            display: { xs: "block", md: "none" },
             position: "absolute",
-            top: { xs: 8, md: 16 },
-            left: { xs: 8, md: 16 },
-            right: { xs: 8, md: "auto" },
-            p: 2,
+            top: 8,
+            left: 8,
+            right: 8,
+            p: 1,
             zIndex: 1000,
-            width: { md: 260 },
-            maxHeight: { xs: "45%", md: "calc(100% - 32px)" },
-            overflowY: "auto",
           }}
         >
-          <Stack component="form" onSubmit={show} spacing={1.5}>
-            <Controller
-              name="seed"
-              control={control}
-              rules={{ required: true, maxLength: SEED_MAX }}
-              render={({ field }) => (
-                <TextField
-                  {...field}
-                  size="small"
-                  label={intl.formatMessage({ id: "pages.map.seed" })}
-                  slotProps={{
-                    htmlInput: { maxLength: SEED_MAX, spellCheck: false },
-                    inputLabel: { shrink: true },
-                  }}
-                />
-              )}
-            />
-            <Stack direction="row" spacing={1}>
-              <Button type="submit" variant="contained" sx={{ flexGrow: 1 }}>
-                <FormattedMessage id="pages.map.show" />
-              </Button>
-              {narrow ? (
-                <Button
-                  variant="outlined"
-                  onClick={() => setToolsOpen(!tools)}
-                  aria-expanded={tools}
-                >
-                  <FormattedMessage id="pages.map.tools" />
-                </Button>
-              ) : null}
-            </Stack>
-            {tools ? (
-              <>
-                <FormGroup
-                  sx={{ maxHeight: "40vh", overflowY: "auto", flexWrap: "nowrap" }}
-                >
-                  {MAP_LAYERS.map((layer) => (
-                    <FormControlLabel
-                      key={layer}
-                      control={
-                        <Checkbox
-                          size="small"
-                          checked={layers[layer]}
-                          onChange={(_, on) =>
-                            setLayers((now) => ({ ...now, [layer]: on }))
-                          }
-                          sx={
-                            layer in PLACE_COLOUR
-                              ? {
-                                  color: PLACE_COLOUR[layer as PlaceGroup],
-                                }
-                              : undefined
-                          }
-                        />
-                      }
-                      label={intl.formatMessage({
-                        id: `pages.map.layers.${layer}`,
-                      })}
-                    />
-                  ))}
-                </FormGroup>
-                {placing ? (
-                  <Typography variant="caption" color="text.secondary">
-                    <FormattedMessage id="pages.map.report.placing" />
-                  </Typography>
-                ) : null}
-                <Divider />
-                <ToggleButton
-                  value="ruler"
-                  size="small"
-                  selected={ruler}
-                  onChange={() => setRuler((on) => !on)}
-                >
-                  <FormattedMessage id="pages.map.ruler" />
-                </ToggleButton>
-                <Typography variant="caption" color="text.secondary">
-                  <FormattedMessage id="pages.map.help" />
-                </Typography>
-              </>
-            ) : null}
+          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
+            <IconButton
+              onClick={() => setDrawer(true)}
+              aria-label={intl.formatMessage({ id: "pages.map.layersTitle" })}
+            >
+              <LayersIcon />
+            </IconButton>
+            {seedForm("row")}
           </Stack>
         </Paper>
+        <Drawer
+          anchor="left"
+          open={drawer}
+          onClose={() => setDrawer(false)}
+          sx={{ display: { md: "none" } }}
+          slotProps={{ paper: { sx: { width: PANEL_WIDTH, p: 2 } } }}
+        >
+          {layerList}
+        </Drawer>
+        {panel ? (
+          <Paper
+            elevation={3}
+            square
+            sx={{
+              display: { xs: "none", md: "block" },
+              position: "absolute",
+              top: 0,
+              left: 0,
+              bottom: 0,
+              width: PANEL_WIDTH,
+              p: 2,
+              zIndex: 1000,
+              overflowY: "auto",
+            }}
+          >
+            <Stack spacing={2}>
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{ alignItems: "flex-start" }}
+              >
+                {seedForm("column")}
+                <IconButton
+                  onClick={() => setPanel(false)}
+                  aria-label={intl.formatMessage({ id: "pages.map.hidePanel" })}
+                >
+                  <ChevronLeftIcon />
+                </IconButton>
+              </Stack>
+              {layerList}
+            </Stack>
+          </Paper>
+        ) : (
+          <Paper
+            elevation={3}
+            sx={{
+              display: { xs: "none", md: "block" },
+              position: "absolute",
+              top: 16,
+              left: 16,
+              zIndex: 1000,
+            }}
+          >
+            <IconButton
+              onClick={() => setPanel(true)}
+              aria-label={intl.formatMessage({ id: "pages.map.showPanel" })}
+            >
+              <LayersIcon />
+            </IconButton>
+          </Paper>
+        )}
         {cursor ? (
           <Paper
             elevation={2}
