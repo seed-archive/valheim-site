@@ -80,8 +80,6 @@ export function MapScreen() {
     [],
   );
   const world = useValheimMap(seed);
-  // The forest is part of the map's look, always on.
-  const visible = useMemo(() => ({ ...layers, forest: true }), [layers]);
   const placing = world.placing;
 
   return (
@@ -98,7 +96,7 @@ export function MapScreen() {
           palette={world.palette}
           background={DEEP_SEA}
           overlays={world.overlays}
-          visible={visible}
+          visible={layers}
           markers={world.markers}
           ruler={ruler}
           focus={at}

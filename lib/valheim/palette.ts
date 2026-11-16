@@ -72,22 +72,13 @@ function overlayPalette(
   return p;
 }
 
-// The generator's overlay layers and their colours: the contour lines, and
-// the forest's tree crowns (dark, and lighter on their lit side).
+// The generator's overlay layers and their colours: the contour lines.
 export function overlays() {
   return [
     {
       id: "relief",
       layer: 0,
       palette: overlayPalette([[1, [40, 30, 20, 170]]]),
-    },
-    {
-      id: "forest",
-      layer: 1,
-      palette: overlayPalette([
-        [1, [36, 58, 34, 200]],
-        [2, [92, 120, 70, 200]],
-      ]),
     },
   ];
 }
