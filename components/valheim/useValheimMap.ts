@@ -1,0 +1,203 @@
+"use client";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useIntl } from "react-intl";
+
+import type { Card } from "@/components/map/card";
+import { MapClient, type Bounds } from "@/components/map/client";
+import type { Marker } from "@/components/map/Viewer";
+import {
+  decodeMeasures,
+  decodePlaces,
+  decodePoint,
+  moduleUrl,
+  SUB_BIOMES,
+  type Place,
+} from "@/lib/valheim/generator";
+import { placeIcon } from "@/lib/valheim/icons";
+import { mapPalette, overlays } from "@/lib/valheim/palette";
+import { BIOME_KEYS, compass, type PlaceGroup } from "@/lib/valheim/places";
+
+// A darker shade of each group's marker colour for the tooltip's label, so it
+// reads on white (our own choice).
+const KICKER_COLOUR: Record<PlaceGroup, string | undefined> = {
+  start: "#424242",
+  bosses: "#c62828",
+  traders: "#a67c00",
+  dungeons: "#7b1fa2",
+  other: undefined,
+};
+
+// Everything the shared viewer needs for a Valheim seed: the generator's
+// workers, the world's extent, the palettes, the markers with their cards, and
+// what a click reads — in the player's words.
+export function useValheimMap(seed: string | null) {
+  const intl = useIntl();
+  const t = useCallback(
+    (id: string, values?: Record<string, string | number>) =>
+      intl.formatMessage({ id }, values),
+    [intl],
+  );
+  const [client, setClient] = useState<MapClient | null>(null);
+  const [bounds, setBounds] = useState<Bounds | null>(null);
+  const [placed, setPlaced] = useState<{
+    seed: string;
+    places: Place[];
+    // The nearest altar of each boss and place of each trader: sea on the way.
+    nearest: Map<string, number>;
+  } | null>(null);
+  const palette = useMemo(() => mapPalette(), []);
+  const layers = useMemo(() => overlays(SUB_BIOMES.length), []);
+
+  useEffect(() => {
+    const c = new MapClient(moduleUrl());
+    let live = true;
+    // The viewer starts once the generator answers.
+    c.bounds().then((b) => {
+      if (live) {
+        setBounds(b);
+        setClient(c);
+      }
+    });
+    return () => {
+      live = false;
+      c.close();
+    };
+  }, []);
+
+  // A seed's places, then its measures for the nearest ones.
+  const asked = useRef<string | null>(null);
+  useEffect(() => {
+    if (!client || !seed) {
+      return;
+    }
+    asked.current = seed;
+    client.places(seed).then((raw) => {
+      if (asked.current !== seed) {
+        return;
+      }
+      const places = decodePlaces(raw);
+      setPlaced({ seed, places, nearest: new Map() });
+      client.call<Float32Array>("measure", [seed]).then((m) => {
+        const measures = decodeMeasures(m);
+        if (asked.current !== seed || !measures) {
+          return;
+        }
+        const nearest = new Map<string, number>();
+        for (const p of [
+          ...Object.values(measures.bosses),
+          ...Object.values(measures.traders),
+        ]) {
+          nearest.set(`${p.x},${p.z}`, p.sea);
+        }
+        setPlaced({ seed, places, nearest });
+      });
+    });
+  }, [client, seed]);
+
+  const current = placed && placed.seed === seed ? placed : null;
+
+  const markers = useMemo<Marker[]>(() => {
+    if (!current) {
+      return [];
+    }
+    const start = current.places.find((p) => p.group === "start");
+    return current.places.map((p) => {
+      const lines: string[] = [];
+      if (p.unique) {
+        lines.push(t("pages.map.possiblePlace"));
+      }
+      if (start && p.group !== "start") {
+        const dx = p.x - start.x;
+        const dy = p.y - start.y;
+        lines.push(
+          t("pages.map.fromStart", {
+            km: (Math.hypot(dx, dy) / 1000).toFixed(1),
+            way: t(`pages.map.compass.${compass(dx, dy)}`),
+          }),
+        );
+      }
+      const sea = current.nearest.get(`${p.x},${p.y}`);
+      const card: Card = {
+        kicker: t(`pages.map.kinds.${p.group}`),
+        kickerColour: KICKER_COLOUR[p.group],
+        title: t(`pages.map.places.${p.key}`),
+        meta: `${t(`pages.map.biomes.${BIOME_KEYS[p.biome]}`)} · x ${p.x}, z ${p.y}`,
+        lines,
+        note:
+          sea === undefined
+            ? undefined
+            : {
+                tone: sea > 0 ? "info" : "good",
+                lines: [
+                  t("pages.map.nearestTitle"),
+                  sea > 0
+                    ? t("pages.map.seaOnWay", { sea: (sea / 1000).toFixed(1) })
+                    : t("pages.map.noSea"),
+                ],
+              },
+      };
+      return {
+        layer: p.group,
+        x: p.x,
+        y: p.y,
+        card,
+        ...(p.group === "other"
+          ? { dot: { radius: 3, fill: "#fafafa" } }
+          : { icon: placeIcon(p.group, p.unique) }),
+      };
+    });
+  }, [current, t]);
+
+  const describe = useCallback(
+    async (x: number, y: number): Promise<Card | null> => {
+      if (!client || !seed) {
+        return null;
+      }
+      const info = decodePoint(await client.point(seed, x, y));
+      return {
+        title: t(`pages.map.biomes.${BIOME_KEYS[info.biome]}`),
+        meta: `x ${Math.round(x)}, z ${Math.round(y)}`,
+        lines: [
+          t("pages.map.height", { m: info.height }),
+          ...(info.subBiomes.length
+            ? [t("pages.map.subBiomeIs", { names: info.subBiomes.join(", ") })]
+            : []),
+        ],
+        note: info.swamp
+          ? {
+              tone: info.swamp === "wide" ? "good" : "bad",
+              lines: [
+                t(
+                  info.swamp === "wide"
+                    ? "pages.map.swampWide"
+                    : "pages.map.swampNarrow",
+                ),
+              ],
+            }
+          : undefined,
+      };
+    },
+    [client, seed, t],
+  );
+
+  const labels = useMemo(
+    () => ({
+      pin: t("pages.map.pin"),
+      removePin: t("pages.map.removePin"),
+      length: (m: number) => t("pages.map.length", { m }),
+    }),
+    [t],
+  );
+
+  return {
+    client,
+    bounds,
+    palette,
+    overlays: layers,
+    markers,
+    describe,
+    labels,
+    placing: Boolean(seed) && !current,
+  };
+}

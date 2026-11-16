@@ -1,6 +1,4 @@
-import L from "leaflet";
-
-import { PLACE_COLOUR, type PlaceGroup } from "@/lib/places";
+import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 
 // The map's own marker icons: small inline SVGs, one shape per group, so a
 // boss reads as a boss at a glance. Sizes in pixels, our own choice.
@@ -17,20 +15,14 @@ const SHAPES: Partial<Record<PlaceGroup, string>> = {
   dungeons: `<path d="M2 19 Q11 0 20 19 Z" fill="${PLACE_COLOUR.dungeons}" stroke="#111" stroke-width="1.5"/><path d="M8.5 19 L8.5 13 Q11 10 13.5 13 L13.5 19 Z" fill="#111"/>`,
 };
 
-const cache = new Map<string, L.DivIcon>();
-
-export function placeIcon(group: PlaceGroup, faded: boolean): L.DivIcon {
-  const key = `${group}:${faded}`;
-  let icon = cache.get(key);
-  if (!icon) {
-    icon = L.divIcon({
-      className: "",
-      html: `<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 22 22" style="opacity:${faded ? 0.6 : 1};filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))">${SHAPES[group] ?? ""}</svg>`,
-      iconSize: [SIZE, SIZE],
-      iconAnchor: [SIZE / 2, SIZE / 2],
-      tooltipAnchor: [SIZE / 2, 0],
-    });
-    cache.set(key, icon);
-  }
-  return icon;
+// The icon of a group's marker, faded for a trader's candidate place.
+export function placeIcon(
+  group: PlaceGroup,
+  faded: boolean,
+): { html: string; size: number; front: boolean } {
+  return {
+    html: `<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 22 22" style="opacity:${faded ? 0.6 : 1};filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))">${SHAPES[group] ?? ""}</svg>`,
+    size: SIZE,
+    front: group === "start",
+  };
 }

@@ -20,12 +20,14 @@ import { Controller, useForm } from "react-hook-form";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
-import type { Legend } from "@/lib/generator";
-import { PLACE_COLOUR, type PlaceGroup } from "@/lib/places";
+import { useValheimMap } from "@/components/valheim/useValheimMap";
+import { SUB_BIOMES } from "@/lib/valheim/generator";
+import { DEEP_SEA, subBiomeColour } from "@/lib/valheim/palette";
+import { PLACE_COLOUR, type PlaceGroup } from "@/lib/valheim/places";
 import { DEFAULT_LAYERS, MAP_LAYERS } from "@/lib/world";
 
-// Leaflet touches `window`, so the map loads in the browser only.
-const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
+// Leaflet touches `window`, so the viewer loads in the browser only.
+const Viewer = dynamic(() => import("@/components/map/Viewer"), {
   ssr: false,
 });
 
@@ -40,11 +42,9 @@ type SeedForm = { seed: string };
 // the coordinator allowed the exception: seed-archive/docs/seo.md, Header and footer).
 export function MapScreen() {
   const intl = useIntl();
-  const [cursor, setCursor] = useState<{ x: number; z: number } | null>(null);
+  const [cursor, setCursor] = useState<{ x: number; y: number } | null>(null);
   const [layers, setLayers] = useState(DEFAULT_LAYERS);
   const [ruler, setRuler] = useState(false);
-  const [legend, setLegend] = useState<Legend | null>(null);
-  const [placing, setPlacing] = useState(false);
   // On a narrow screen both panels start closed, so the map shows; a choice
   // the visitor makes holds.
   const narrow = useMediaQuery(useTheme().breakpoints.down("md"));
@@ -62,7 +62,7 @@ export function MapScreen() {
   const at = useMemo(
     () =>
       px !== null && pz !== null
-        ? { x: Number(px), z: Number(pz), at: 0 }
+        ? { x: Number(px), y: Number(pz), at: 0 }
         : null,
     [px, pz],
   );
@@ -77,9 +77,11 @@ export function MapScreen() {
   });
 
   const onCursor = useCallback(
-    (point: { x: number; z: number } | null) => setCursor(point),
+    (point: { x: number; y: number } | null) => setCursor(point),
     [],
   );
+  const world = useValheimMap(seed);
+  const placing = world.placing;
 
   return (
     <Box sx={{ height: "100dvh", display: "flex", flexDirection: "column" }}>
@@ -88,14 +90,21 @@ export function MapScreen() {
         <Typography variant="h1" sx={{ position: "absolute", left: -10000 }}>
           <FormattedMessage id="pages.map.title" />
         </Typography>
-        <WorldMap
+        <Viewer
+          client={world.client}
           seed={seed}
-          layers={layers}
+          bounds={world.bounds}
+          palette={world.palette}
+          background={DEEP_SEA}
+          overlays={world.overlays}
+          visible={layers}
+          markers={world.markers}
+          describe={world.describe}
           ruler={ruler}
           focus={at}
+          pinsKey="valheim-pins"
+          labels={world.labels}
           onCursor={onCursor}
-          onLegend={setLegend}
-          onPlacing={setPlacing}
         />
         <Paper
           elevation={3}
@@ -175,11 +184,11 @@ export function MapScreen() {
                     <FormattedMessage id="pages.map.swampLegend" />
                   </Typography>
                 ) : null}
-                {layers.subBiomes && legend ? (
+                {layers.subBiomes ? (
                   <Box sx={{ maxHeight: 160, overflowY: "auto" }}>
-                    {legend.subBiomes.map((s) => (
+                    {SUB_BIOMES.map((name, i) => (
                       <Stack
-                        key={s.name}
+                        key={name}
                         direction="row"
                         spacing={1}
                         sx={{ alignItems: "center" }}
@@ -188,11 +197,11 @@ export function MapScreen() {
                           sx={{
                             width: 12,
                             height: 12,
-                            bgcolor: s.colour,
+                            bgcolor: `rgb(${subBiomeColour(i).join(", ")})`,
                             flexShrink: 0,
                           }}
                         />
-                        <Typography variant="caption">{s.name}</Typography>
+                        <Typography variant="caption">{name}</Typography>
                       </Stack>
                     ))}
                   </Box>
@@ -233,7 +242,7 @@ export function MapScreen() {
             <Typography variant="body2">
               <FormattedMessage
                 id="pages.map.cursor"
-                values={{ x: Math.round(cursor.x), z: Math.round(cursor.z) }}
+                values={{ x: Math.round(cursor.x), z: Math.round(cursor.y) }}
               />
             </Typography>
           </Paper>

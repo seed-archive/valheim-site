@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import { createContext, useContext, useEffect, useState } from "react";
 import { FormattedMessage, FormattedNumber } from "react-intl";
 
-import type { Placed, SeedMeasures } from "@/lib/generator";
+import type { Placed, SeedMeasures } from "@/lib/valheim/generator";
 import { loadRanks, shareBeaten, type Ranks } from "@/lib/scan";
 
 // The seed scan's ranks, once loaded; until then no rank is shown.
@@ -193,9 +193,6 @@ function Report({ seed, measures }: Props) {
         <LinearProgress />
       </Box>
     );
-  }
-  if (measures.error) {
-    return null;
   }
   const sunken = measures.dungeons.sunkenCrypts;
   const burial = measures.dungeons.burialChambers;

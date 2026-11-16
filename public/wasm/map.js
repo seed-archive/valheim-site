@@ -1,58 +1,45 @@
 /**
- * The tables the map needs once: every location type's group and name key (`build.rs`) and whether it is unique (a
- * trader's candidate places), and every sub-biome's name and colour. JSON.
- * @returns {string}
+ * The world's extent: `[x0, y0, x1, y1, radius]`, metres; a round world gives its radius, a rectangle 0.
+ * @returns {Float32Array}
  */
-export function legend() {
-    let deferred1_0;
-    let deferred1_1;
-    try {
-        const ret = wasm.legend();
-        deferred1_0 = ret[0];
-        deferred1_1 = ret[1];
-        return getStringFromWasm0(ret[0], ret[1]);
-    } finally {
-        wasm.__wbindgen_free(deferred1_0, deferred1_1, 1);
-    }
+export function bounds() {
+    const ret = wasm.bounds();
+    var v1 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v1;
 }
 
 /**
- * The seed measured the same way as the seed scan, so the page can say where it stands among the scanned worlds
- * (`analysis::measure`). JSON.
+ * The seed measured the same way as the seed scan (`analysis::measure`): numbers in the order of
+ * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start.
  * @param {string} seed
- * @returns {string}
+ * @returns {Float32Array}
  */
 export function measure(seed) {
-    let deferred2_0;
-    let deferred2_1;
-    try {
-        const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-        const len0 = WASM_VECTOR_LEN;
-        const ret = wasm.measure(ptr0, len0);
-        deferred2_0 = ret[0];
-        deferred2_1 = ret[1];
-        return getStringFromWasm0(ret[0], ret[1]);
-    } finally {
-        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
-    }
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.measure(ptr0, len0);
+    var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v2;
 }
 
 /**
- * A transparent layer over the map, as RGBA: `kind` 0 the sub-biomes (each its own colour), 1 the swamps by width
- * (green where the ground is wide enough for crypts and Bonemass, red on the strips), 2 the relief (contour lines
- * every 50 m of height).
+ * A layer over the map, one byte a pixel, 0 where it shows nothing: `kind` 0 the sub-biomes (1 + the sub-biome's
+ * number), 1 the swamps by width (1 wide enough for crypts and Bonemass, 2 a strip too narrow), 2 contour lines
+ * every 50 m of height (1).
  * @param {string} seed
  * @param {number} kind
  * @param {number} x0
- * @param {number} z0
+ * @param {number} y0
  * @param {number} step
  * @param {number} size
  * @returns {Uint8Array}
  */
-export function overlay(seed, kind, x0, z0, step, size) {
+export function overlay(seed, kind, x0, y0, step, size) {
     const val2 = +kind;
     const val3 = +x0;
-    const val4 = +z0;
+    const val4 = +y0;
     const val5 = +step;
     const val6 = +size;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
@@ -64,64 +51,54 @@ export function overlay(seed, kind, x0, z0, step, size) {
 }
 
 /**
- * Every location of the seed, as `[[type, x, z, biome], …]` in JSON; `type` indexes [`legend`]'s locations, `biome`
- * is the biome's index in the scan's terrain grid (Meadows 1 … Mistlands 9). A unique location (a trader) comes as
- * all its candidate places.
+ * Every location of the seed, five numbers each: `kind, x, y, biome, unique`. `kind` is the number of its name key
+ * (`analysis::kinds::keys`), `biome` its biome as in [`tile`] (1…9), `unique` 1 for a trader's candidate place.
  * @param {string} seed
- * @returns {string}
+ * @returns {Float32Array}
  */
 export function places(seed) {
-    let deferred2_0;
-    let deferred2_1;
-    try {
-        const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-        const len0 = WASM_VECTOR_LEN;
-        const ret = wasm.places(ptr0, len0);
-        deferred2_0 = ret[0];
-        deferred2_1 = ret[1];
-        return getStringFromWasm0(ret[0], ret[1]);
-    } finally {
-        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
-    }
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.places(ptr0, len0);
+    var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v2;
 }
 
 /**
- * What is at one point: biome, height, sub-biomes, and whether a swamp there is wide enough for crypts. JSON.
+ * What a click reads at one point: `[biome, height above the sea, swamp, sub-biomes…]`; `biome` as in [`tile`],
+ * `swamp` 1 wide enough for crypts and Bonemass, 0 a strip, −1 no swamp; then the number of each sub-biome there.
  * @param {string} seed
  * @param {number} x
- * @param {number} z
- * @returns {string}
+ * @param {number} y
+ * @returns {Float32Array}
  */
-export function point(seed, x, z) {
-    let deferred4_0;
-    let deferred4_1;
-    try {
-        const val2 = +x;
-        const val3 = +z;
-        const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-        const len0 = WASM_VECTOR_LEN;
-        const ret = wasm.point(ptr0, len0, val2, val3);
-        deferred4_0 = ret[0];
-        deferred4_1 = ret[1];
-        return getStringFromWasm0(ret[0], ret[1]);
-    } finally {
-        wasm.__wbindgen_free(deferred4_0, deferred4_1, 1);
-    }
+export function point(seed, x, y) {
+    const val2 = +x;
+    const val3 = +y;
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.point(ptr0, len0, val2, val3);
+    var v4 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v4;
 }
 
 /**
- * The map itself, as RGBA: biome colours, water by depth, land lit by its slopes (hill shading) and slightly
- * brighter with height.
+ * The map itself, one byte a pixel: `class · 16 + light`. Class 1…9 is the biome on land (Meadows 1, Swamp 2,
+ * Mountain 3, Black Forest 4, Plains 5, Ashlands 6, Deep North 7, Ocean 8, Mistlands 9), 10…15 the sea by depth
+ * (shallow first); light 0…15 runs from shade to sun (`SHADE_RANGE`), with height on land. The page's palette turns
+ * the bytes into colours.
  * @param {string} seed
  * @param {number} x0
- * @param {number} z0
+ * @param {number} y0
  * @param {number} step
  * @param {number} size
  * @returns {Uint8Array}
  */
-export function tile(seed, x0, z0, step, size) {
+export function tile(seed, x0, y0, step, size) {
     const val2 = +x0;
-    const val3 = +z0;
+    const val3 = +y0;
     const val4 = +step;
     const val5 = +size;
     const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
@@ -149,14 +126,22 @@ function __wbg_get_imports() {
     };
 }
 
+function getArrayF32FromWasm0(ptr, len) {
+    ptr = ptr >>> 0;
+    return getFloat32ArrayMemory0().subarray(ptr / 4, ptr / 4 + len);
+}
+
 function getArrayU8FromWasm0(ptr, len) {
     ptr = ptr >>> 0;
     return getUint8ArrayMemory0().subarray(ptr / 1, ptr / 1 + len);
 }
 
-function getStringFromWasm0(ptr, len) {
-    ptr = ptr >>> 0;
-    return decodeText(getUint8ArrayMemory0().subarray(ptr, ptr + len));
+let cachedFloat32ArrayMemory0 = null;
+function getFloat32ArrayMemory0() {
+    if (cachedFloat32ArrayMemory0 === null || cachedFloat32ArrayMemory0.byteLength === 0) {
+        cachedFloat32ArrayMemory0 = new Float32Array(wasm.memory.buffer);
+    }
+    return cachedFloat32ArrayMemory0;
 }
 
 let cachedUint8ArrayMemory0 = null;
@@ -204,20 +189,6 @@ function passStringToWasm0(arg, malloc, realloc) {
     return ptr;
 }
 
-let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true });
-cachedTextDecoder.decode();
-const MAX_SAFARI_DECODE_BYTES = 2146435072;
-let numBytesDecoded = 0;
-function decodeText(bytes) {
-    numBytesDecoded += bytes.length;
-    if (numBytesDecoded >= MAX_SAFARI_DECODE_BYTES) {
-        cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true });
-        cachedTextDecoder.decode();
-        numBytesDecoded = bytes.length;
-    }
-    return cachedTextDecoder.decode(bytes);
-}
-
 const cachedTextEncoder = new TextEncoder();
 
 if (!('encodeInto' in cachedTextEncoder)) {
@@ -238,6 +209,7 @@ function __wbg_finalize_init(instance, module) {
     wasmInstance = instance;
     wasm = instance.exports;
     wasmModule = module;
+    cachedFloat32ArrayMemory0 = null;
     cachedUint8ArrayMemory0 = null;
     wasm.__wbindgen_start();
     return wasm;

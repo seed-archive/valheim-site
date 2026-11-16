@@ -17,7 +17,12 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@/components/archive/PageTrail";
 import { SeedReport } from "@/components/tools/seed/SeedReport";
-import { Generator, type SeedMeasures } from "@/lib/generator";
+import { MapClient } from "@/components/map/client";
+import {
+  decodeMeasures,
+  moduleUrl,
+  type SeedMeasures,
+} from "@/lib/valheim/generator";
 
 // The longest seed the game's new-world dialog accepts (World.GenerateSeed
 // makes ten characters; a player may type up to this many).
@@ -36,7 +41,7 @@ export function SeedRating() {
   const { control, handleSubmit } = useForm<SeedForm>({
     defaultValues: { seed: seed ?? "" },
   });
-  const generator = useRef<Generator | null>(null);
+  const generator = useRef<MapClient | null>(null);
   const [measured, setMeasured] = useState<{
     seed: string;
     measures: SeedMeasures;
@@ -44,7 +49,7 @@ export function SeedRating() {
 
   useEffect(() => {
     // One worker: a seed is measured once, and no map is drawn here.
-    const gen = new Generator(1);
+    const gen = new MapClient(moduleUrl(), 1);
     generator.current = gen;
     return () => gen.close();
   }, []);
@@ -55,8 +60,9 @@ export function SeedRating() {
       return;
     }
     let live = true;
-    gen.measure(seed).then((measures) => {
-      if (live) {
+    gen.call<Float32Array>("measure", [seed]).then((raw) => {
+      const measures = decodeMeasures(raw);
+      if (live && measures) {
         setMeasured({ seed, measures });
       }
     });

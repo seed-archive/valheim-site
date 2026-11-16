@@ -1,0 +1,410 @@
+{
+  "kinds": [
+    {
+      "group": "start",
+      "key": "start"
+    },
+    {
+      "group": "bosses",
+      "key": "eikthyr"
+    },
+    {
+      "group": "bosses",
+      "key": "theElder"
+    },
+    {
+      "group": "bosses",
+      "key": "bonemass"
+    },
+    {
+      "group": "bosses",
+      "key": "moder"
+    },
+    {
+      "group": "bosses",
+      "key": "yagluth"
+    },
+    {
+      "group": "bosses",
+      "key": "theQueen"
+    },
+    {
+      "group": "bosses",
+      "key": "fader"
+    },
+    {
+      "group": "traders",
+      "key": "haldor"
+    },
+    {
+      "group": "traders",
+      "key": "hildir"
+    },
+    {
+      "group": "traders",
+      "key": "bogWitch"
+    },
+    {
+      "group": "dungeons",
+      "key": "sunkenCrypt"
+    },
+    {
+      "group": "dungeons",
+      "key": "trollCave"
+    },
+    {
+      "group": "dungeons",
+      "key": "frostCave"
+    },
+    {
+      "group": "dungeons",
+      "key": "fortress"
+    },
+    {
+      "group": "dungeons",
+      "key": "hildirCave"
+    },
+    {
+      "group": "dungeons",
+      "key": "hildirCrypt"
+    },
+    {
+      "group": "dungeons",
+      "key": "hildirFortress"
+    },
+    {
+      "group": "dungeons",
+      "key": "burialChamber"
+    },
+    {
+      "group": "dungeons",
+      "key": "infestedMine"
+    },
+    {
+      "group": "other",
+      "key": "abandonedHouse"
+    },
+    {
+      "group": "other",
+      "key": "abandonedFarm"
+    },
+    {
+      "group": "other",
+      "key": "draugrVillage"
+    },
+    {
+      "group": "other",
+      "key": "stoneTower"
+    },
+    {
+      "group": "other",
+      "key": "stoneHouse"
+    },
+    {
+      "group": "other",
+      "key": "ruins"
+    },
+    {
+      "group": "other",
+      "key": "runestone"
+    },
+    {
+      "group": "other",
+      "key": "greydwarfCamp"
+    },
+    {
+      "group": "other",
+      "key": "fulingVillage"
+    },
+    {
+      "group": "other",
+      "key": "standingStones"
+    },
+    {
+      "group": "other",
+      "key": "dolmen"
+    },
+    {
+      "group": "other",
+      "key": "grave"
+    },
+    {
+      "group": "other",
+      "key": "shipwreck"
+    },
+    {
+      "group": "other",
+      "key": "shipSetting"
+    },
+    {
+      "group": "other",
+      "key": "frozenShip"
+    },
+    {
+      "group": "other",
+      "key": "swampHut"
+    },
+    {
+      "group": "other",
+      "key": "well"
+    },
+    {
+      "group": "other",
+      "key": "tarPit"
+    },
+    {
+      "group": "other",
+      "key": "drakeNest"
+    },
+    {
+      "group": "other",
+      "key": "guckTree"
+    },
+    {
+      "group": "other",
+      "key": "bearDen"
+    },
+    {
+      "group": "other",
+      "key": "giantRemains"
+    },
+    {
+      "group": "other",
+      "key": "excavation"
+    },
+    {
+      "group": "other",
+      "key": "dvergrRuins"
+    },
+    {
+      "group": "other",
+      "key": "charredRuins"
+    },
+    {
+      "group": "other",
+      "key": "charredSpawner"
+    },
+    {
+      "group": "other",
+      "key": "fireHole"
+    },
+    {
+      "group": "other",
+      "key": "sulfurArch"
+    },
+    {
+      "group": "other",
+      "key": "lavaLeviathan"
+    },
+    {
+      "group": "other",
+      "key": "voltureNest"
+    },
+    {
+      "group": "other",
+      "key": "morgenHole"
+    },
+    {
+      "group": "other",
+      "key": "placeOfMystery"
+    },
+    {
+      "group": "other",
+      "key": "ancientForge"
+    },
+    {
+      "group": "other",
+      "key": "northRuins"
+    },
+    {
+      "group": "other",
+      "key": "northVillage"
+    },
+    {
+      "group": "other",
+      "key": "northMemorial"
+    },
+    {
+      "group": "other",
+      "key": "icePond"
+    },
+    {
+      "group": "other",
+      "key": "waymarker"
+    },
+    {
+      "group": "other",
+      "key": "lumberCamp"
+    },
+    {
+      "group": "other",
+      "key": "rockClearing"
+    },
+    {
+      "group": "other",
+      "key": "theHole"
+    },
+    {
+      "group": "other",
+      "key": "unnamed"
+    }
+  ],
+  "measures": [
+    "start.x",
+    "start.z",
+    "start.fromCentre",
+    "area.meadows",
+    "area.swamp",
+    "area.mountain",
+    "area.blackForest",
+    "area.plains",
+    "area.ashlands",
+    "area.deepNorth",
+    "area.ocean",
+    "area.mistlands",
+    "land.meadows",
+    "land.swamp",
+    "land.mountain",
+    "land.blackForest",
+    "land.plains",
+    "land.ashlands",
+    "land.deepNorth",
+    "land.ocean",
+    "land.mistlands",
+    "island.area.meadows",
+    "island.area.swamp",
+    "island.area.mountain",
+    "island.area.blackForest",
+    "island.area.plains",
+    "island.area.ashlands",
+    "island.area.deepNorth",
+    "island.area.ocean",
+    "island.area.mistlands",
+    "island.interior.meadows",
+    "island.interior.swamp",
+    "island.interior.mountain",
+    "island.interior.blackForest",
+    "island.interior.plains",
+    "island.interior.ashlands",
+    "island.interior.deepNorth",
+    "island.interior.ocean",
+    "island.interior.mistlands",
+    "bosses.eikthyr.x",
+    "bosses.eikthyr.z",
+    "bosses.eikthyr.d",
+    "bosses.eikthyr.angle",
+    "bosses.eikthyr.offLine",
+    "bosses.eikthyr.sea",
+    "bosses.eikthyr.island",
+    "bosses.theElder.x",
+    "bosses.theElder.z",
+    "bosses.theElder.d",
+    "bosses.theElder.angle",
+    "bosses.theElder.offLine",
+    "bosses.theElder.sea",
+    "bosses.theElder.island",
+    "bosses.bonemass.x",
+    "bosses.bonemass.z",
+    "bosses.bonemass.d",
+    "bosses.bonemass.angle",
+    "bosses.bonemass.offLine",
+    "bosses.bonemass.sea",
+    "bosses.bonemass.island",
+    "bosses.moder.x",
+    "bosses.moder.z",
+    "bosses.moder.d",
+    "bosses.moder.angle",
+    "bosses.moder.offLine",
+    "bosses.moder.sea",
+    "bosses.moder.island",
+    "bosses.yagluth.x",
+    "bosses.yagluth.z",
+    "bosses.yagluth.d",
+    "bosses.yagluth.angle",
+    "bosses.yagluth.offLine",
+    "bosses.yagluth.sea",
+    "bosses.yagluth.island",
+    "bosses.theQueen.x",
+    "bosses.theQueen.z",
+    "bosses.theQueen.d",
+    "bosses.theQueen.angle",
+    "bosses.theQueen.offLine",
+    "bosses.theQueen.sea",
+    "bosses.theQueen.island",
+    "bosses.fader.x",
+    "bosses.fader.z",
+    "bosses.fader.d",
+    "bosses.fader.angle",
+    "bosses.fader.offLine",
+    "bosses.fader.sea",
+    "bosses.fader.island",
+    "traders.haldor.x",
+    "traders.haldor.z",
+    "traders.haldor.d",
+    "traders.haldor.angle",
+    "traders.haldor.offLine",
+    "traders.haldor.sea",
+    "traders.haldor.island",
+    "traders.hildir.x",
+    "traders.hildir.z",
+    "traders.hildir.d",
+    "traders.hildir.angle",
+    "traders.hildir.offLine",
+    "traders.hildir.sea",
+    "traders.hildir.island",
+    "traders.bogWitch.x",
+    "traders.bogWitch.z",
+    "traders.bogWitch.d",
+    "traders.bogWitch.angle",
+    "traders.bogWitch.offLine",
+    "traders.bogWitch.sea",
+    "traders.bogWitch.island",
+    "dungeons.burialChambers.nearest",
+    "dungeons.burialChambers.near",
+    "dungeons.burialChambers.island",
+    "dungeons.sunkenCrypts.nearest",
+    "dungeons.sunkenCrypts.near",
+    "dungeons.sunkenCrypts.island",
+    "dungeons.trollCaves.nearest",
+    "dungeons.trollCaves.near",
+    "dungeons.trollCaves.island",
+    "dungeons.infestedMines.nearest",
+    "dungeons.infestedMines.near",
+    "dungeons.infestedMines.island",
+    "highest"
+  ],
+  "subBiomes": [
+    "Mushroom",
+    "Lantern",
+    "Bones",
+    "Menhir",
+    "Dark Meadows",
+    "Peaceful Meadows",
+    "Dandelion Meadows",
+    "Raspberry Meadows",
+    "Smalltree Meadows",
+    "Birch Meadows",
+    "Troll Black Forest",
+    "Root Black Forest",
+    "Ruin Black Forest",
+    "Rock Black Forest",
+    "Pinetree Black Forest",
+    "Blueberry Black Forest",
+    "Hut Swamp",
+    "Bog Swamp",
+    "Bat Swamp",
+    "Abomination Swamp",
+    "Wolf Mountain",
+    "Drake Mountain",
+    "Fortress Mountain",
+    "Lox Plains",
+    "Goblin Plains",
+    "Death Plains",
+    "Kalhygge Black Forest",
+    "Rockless Mistlands",
+    "Trees Mistlands",
+    "Swords Mistlands",
+    "Hare Mistlands",
+    "BroodSwarm Mistlands"
+  ]
+}

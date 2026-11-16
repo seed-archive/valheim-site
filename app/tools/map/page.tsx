@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 
-import { MapScreen } from "@/components/map/MapScreen";
+import { MapScreen } from "@/components/valheim/MapScreen";
 
 export const metadata: Metadata = {
   title: "Valheim seed map — Seed Archive",
