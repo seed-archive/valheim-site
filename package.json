@@ -9,7 +9,7 @@
     "@mui/icons-material": "9.5.0",
     "@mui/material": "9.5.0",
     "@mui/material-nextjs": "9.5.0",
-    "@seed-archive/map": "github:seed-archive/map#v1.0.0",
+    "@seed-archive/map": "1.0.1",
     "@sentry/core": "11.9.0",
     "@sentry/nextjs": "11.9.0",
     "@supabase/ssr": "0.7.0",
