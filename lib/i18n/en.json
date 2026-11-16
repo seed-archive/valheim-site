@@ -193,7 +193,11 @@
         "route_firstHome_blackForest": "The start to the nearest Black Forest",
         "vegetation_copperCaves_walk": "Start, Eikthyr, the copper cave: the whole walk",
         "vegetation_copperCaves_shore": "The copper cave to the sea",
-        "vegetation_copperCaves_tin": "Tin within reach of the copper cave"
+        "vegetation_copperCaves_tin": "Tin within reach of the copper cave",
+        "bees": "Beehives",
+        "bees_third": "The start to the third nearest beehive",
+        "bees_fourth": "The start to the fourth nearest beehive",
+        "bees_near": "Beehives within a short walk of the start"
       },
       "compass": {
         "north": "north",
@@ -221,7 +225,7 @@
         "bosses": "Boss altars",
         "traders": "Where the game may put each trader",
         "dungeons": "Burial Chambers, Sunken Crypts, troll caves, Infested Mines",
-        "resources": "Tar pits, Fuling villages, drake nests, ancient roots (zoom in for roots)",
+        "resources": "Beehives, tar pits, Fuling villages, drake nests, ancient roots (roots when zoomed in)",
         "relief": "Contour lines, every 50 m",
         "trees": "Every tree, drawn as in the game (zoom in)",
         "ore": "What a pickaxe mines: silver, swamp iron, copper, tin, obsidian, giants' remains, Leviathans (zoom in)",
@@ -233,7 +237,7 @@
       "showPanel": "Show the panel",
       "showShort": "Show",
       "seedRule": "Letters and digits, up to 10",
-      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; the rest shows on the whole map.",
+      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; beehives and the rest show on the whole map.",
       "legend": {
         "silver": "Silver",
         "iron": "Swamp iron",
@@ -248,7 +252,8 @@
         "raspberry": "Raspberry",
         "blueberry": "Blueberry",
         "cloudberry": "Cloudberry",
-        "lingonberry": "Lingonberry"
+        "lingonberry": "Lingonberry",
+        "beehive": "Beehive"
       },
       "startNoBuild": "Nothing can be built within {m} m of the stones"
     },
@@ -280,7 +285,8 @@
         "near": "On half of all seeds his altar is within {median} m of the start; on nine seeds in ten within {most} m.",
         "island": "On {island}% of seeds it stands on the start island. On the rest it is across water, so the first boat comes before the first boss.",
         "skipTitle": "Can you skip Eikthyr?",
-        "skip": "Technically you can walk past him, but not on a run: no antler means no pickaxe and no bronze, and his power, which cuts what running and jumping cost in stamina, carries half the game."
+        "skip": "Technically you can walk past him, but not on a run: no antler means no pickaxe and no bronze, and his power, which cuts what running and jumping cost in stamina, carries half the game.",
+        "bees": "Bees come from beehives in the Meadows' abandoned houses, each house holding one at a {chance}% chance: a run needs three for mead, four on a speedrun. The third nearest hive is usually {third} m from the start, the fourth {fourth} m."
       },
       "blackForest": {
         "title": "The Black Forest: copper, tin and the first home",

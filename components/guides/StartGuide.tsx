@@ -15,9 +15,18 @@ const REACH = 300;
 // The troll caves looked at for copper: the nearest ones to the start (the
 // Valheim generator's choice).
 const CAVES = 10;
+// An abandoned house's chance to hold a beehive, percent (the game's WoodHouse
+// prefabs: the beehive's RandomSpawn).
+const HIVE_CHANCE = 25;
 
 type Props = {
-  eikthyr: { median?: number; most?: number; island?: number };
+  eikthyr: {
+    median?: number;
+    most?: number;
+    island?: number;
+    third?: number;
+    fourth?: number;
+  };
   blackForest: { median?: number; least?: number; island?: number };
   copper: {
     caves?: number;
@@ -105,6 +114,9 @@ export function StartGuide({ eikthyr, blackForest, copper }: Props) {
           : null}
         {eikthyr.island !== undefined
           ? p("pages.start.meadows.island", eikthyr)
+          : null}
+        {known(eikthyr.third, eikthyr.fourth)
+          ? p("pages.start.meadows.bees", { ...eikthyr, chance: HIVE_CHANCE })
           : null}
         {h3("pages.start.meadows.skipTitle")}
         {p("pages.start.meadows.skip", {})}

@@ -24,6 +24,8 @@ export default function StartPage() {
         median: round(percentile("bosses.eikthyr.d", 50)),
         most: round(percentile("bosses.eikthyr.d", 90)),
         island: percent(share("bosses.eikthyr.island")),
+        third: round(percentile("bees.third", 50)),
+        fourth: round(percentile("bees.fourth", 50)),
       }}
       blackForest={{
         median: round(percentile("route.firstHome.blackForest", 50)),

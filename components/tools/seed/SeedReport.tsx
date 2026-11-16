@@ -62,6 +62,13 @@ const ROUTE = [
   ["line.offSum", "km"],
 ] as const;
 
+// The beehives, under `bees`.
+const BEES = [
+  ["third", "km"],
+  ["fourth", "km"],
+  ["near", "more"],
+] as const;
+
 // The trees and ore measures, under `vegetation`, read the same way.
 const WOOD = [
   ["copperCaves.count", "more"],
@@ -220,7 +227,7 @@ function MeasureRows({
   rows,
   of,
 }: {
-  group: "route" | "vegetation" | "sectors";
+  group: "route" | "vegetation" | "sectors" | "bees";
   rows: readonly (readonly [string, "km" | "more" | "fewer"])[];
   of: unknown;
 }) {
@@ -367,6 +374,11 @@ function Report({ seed, measures }: Props) {
         <FormattedMessage id="pages.map.report.routeLead" />
       </Typography>
       <MeasureRows group="route" rows={ROUTE} of={measures.route} />
+
+      <Typography variant="subtitle2" component="h3">
+        <FormattedMessage id="pages.map.report.bees" />
+      </Typography>
+      <MeasureRows group="bees" rows={BEES} of={measures.bees} />
 
       <Typography variant="subtitle2" component="h3">
         <FormattedMessage id="pages.map.report.wood" />

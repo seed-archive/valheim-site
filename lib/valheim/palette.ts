@@ -106,6 +106,7 @@ export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [21, [120, 204, 92, 255]], // ancient root
   [22, [64, 124, 176, 255]], // Leviathan
   [23, [226, 218, 196, 255]], // the giants' remains: soft tissue
+  [28, [250, 196, 30, 255]], // a house with a beehive
 ];
 
 // The generator's overlay layers and their colours: the contour lines, the
@@ -145,7 +146,7 @@ export function overlays() {
       layer: 5,
       palette: overlayPalette([
         ...VEGETATION_SHARED,
-        ...ORE_COLOURS.filter(([i]) => i === 21),
+        ...ORE_COLOURS.filter(([i]) => i === 21 || i === 28),
       ]),
     },
     {
@@ -177,7 +178,10 @@ export const LEGENDS: Record<string, [number, string][]> = {
     [23, "giantRemains"],
     [22, "leviathan"],
   ],
-  resources: [[21, "ancientRoot"]],
+  resources: [
+    [28, "beehive"],
+    [21, "ancientRoot"],
+  ],
   fineWood: [
     [4, "birch"],
     [5, "oak"],
