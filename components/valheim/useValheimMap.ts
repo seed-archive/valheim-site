@@ -150,7 +150,7 @@ export function useValheimMap(seed: string | null) {
           x: p.x,
           y: p.y,
           card,
-          icon: placeIcon(p.group, p.unique),
+          icon: placeIcon(p.group, p.key, p.unique),
         };
       });
   }, [current, t]);
