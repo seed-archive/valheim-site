@@ -376,6 +376,7 @@
     "route.firstHome.caveShore",
     "route.swamp.bogWitch",
     "route.swamp.crypt",
+    "route.swamp.fireHole",
     "route.mountain.fromBonemass",
     "route.plains.fromBonemass",
     "route.plains.villagesClose",
@@ -393,7 +394,8 @@
     "vegetation.copperCaves.birches",
     "vegetation.copperCaves.nearestOak",
     "vegetation.groves.start",
-    "vegetation.groves.yagluth"
+    "vegetation.groves.yagluth",
+    "sectors.abomination"
   ],
   "subBiomes": [
     "Mushroom",

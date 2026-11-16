@@ -48,6 +48,7 @@ const ROUTE = [
   ["firstHome.caveShore", "km"],
   ["swamp.bogWitch", "km"],
   ["swamp.crypt", "km"],
+  ["swamp.fireHole", "km"],
   ["mountain.fromBonemass", "km"],
   ["plains.fromBonemass", "km"],
   ["plains.villagesClose", "fewer"],
@@ -72,9 +73,16 @@ const WOOD = [
   ["groves.yagluth", "more"],
 ] as const;
 
-function routeValue(route: SeedMeasures["route"], path: string) {
-  const [stage, key] = path.split(".");
-  return route?.[stage]?.[key];
+// A measure under a group by its dotted path, if the world has it.
+function routeValue(of: unknown, path: string): number | undefined {
+  let node = of;
+  for (const part of path.split(".")) {
+    node =
+      node && typeof node === "object"
+        ? (node as Record<string, unknown>)[part]
+        : undefined;
+  }
+  return typeof node === "number" ? node : undefined;
 }
 
 // "Better than N % of seeds": for a distance, being closer; for an area or a
@@ -208,9 +216,9 @@ function MeasureRows({
   rows,
   of,
 }: {
-  group: "route" | "vegetation";
+  group: "route" | "vegetation" | "sectors";
   rows: readonly (readonly [string, "km" | "more" | "fewer"])[];
-  of: SeedMeasures["route"];
+  of: unknown;
 }) {
   return (
     <Table size="small">
@@ -360,11 +368,18 @@ function Report({ seed, measures }: Props) {
         <FormattedMessage id="pages.map.report.wood" />
       </Typography>
       {measures.vegetation ? (
-        <MeasureRows
-          group="vegetation"
-          rows={WOOD}
-          of={measures.vegetation}
-        />
+        <>
+          <MeasureRows
+            group="vegetation"
+            rows={WOOD}
+            of={measures.vegetation}
+          />
+          <MeasureRows
+            group="sectors"
+            rows={[["abomination", "km"]] as const}
+            of={measures.sectors}
+          />
+        </>
       ) : (
         <Box>
           <Typography variant="body2" gutterBottom>
