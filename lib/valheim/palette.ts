@@ -74,7 +74,8 @@ function overlayPalette(
 
 // The trees layer: 1 a tree's shadow, 2 a trunk, 3 a birch's trunk, then four shades a kind from 32 on
 // (dark to light), the order the generator draws them in: beech, birch, oak,
-// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree, dead conifer. Muted, so the forest
+// fir, pine, swamp tree, Yggdrasil shoot, Ashlands tree, dead conifer, dead
+// swamp tree. Muted, so the forest
 // sits in the land; oak warm and birch pale, so both stand out.
 const TREE_KINDS: [number, number, number][][] = [
   [[44, 72, 34], [66, 102, 48], [92, 132, 64], [124, 160, 86]], // beech
@@ -83,9 +84,10 @@ const TREE_KINDS: [number, number, number][][] = [
   [[22, 50, 36], [34, 70, 50], [52, 94, 66], [76, 120, 86]], // fir
   [[36, 60, 38], [54, 84, 52], [78, 110, 70], [104, 136, 92]], // pine
   [[60, 56, 32], [86, 80, 48], [114, 106, 66], [144, 134, 88]], // swamp tree
-  [[128, 98, 26], [172, 136, 42], [214, 176, 70], [240, 208, 110]], // Yggdrasil shoot
-  [[56, 28, 22], [84, 44, 32], [114, 62, 44], [146, 86, 62]], // Ashlands tree
+  [[92, 74, 46], [150, 132, 56], [196, 178, 74], [226, 210, 112]], // Yggdrasil shoot: twig, leaves
+  [[30, 24, 22], [52, 40, 34], [74, 56, 46], [96, 72, 58]], // Ashlands tree: burnt trunk, branches
   [[70, 64, 56], [98, 90, 78], [126, 118, 104], [156, 148, 132]], // dead fir or pine
+  [[64, 58, 46], [92, 84, 66], [118, 108, 86], [144, 134, 108]], // dead swamp tree
 ];
 export const TREE_COLOURS: [number, [number, number, number, number]][] = [
   [1, [16, 24, 8, 90]],
@@ -104,16 +106,14 @@ export const TREE_COLOURS: [number, [number, number, number, number]][] = [
 const VEGETATION_SHARED: [number, [number, number, number, number]][] = [
   [2, [28, 28, 24, 230]],
 ];
-// The ore layers: the map's layer key and the generator's class.
-export const ORE_LAYERS = [
-  ["silver", 18],
-  ["iron", 19],
-  ["copper", 16],
-  ["tin", 17],
-  ["obsidian", 20],
-  ["ancientRoots", 21],
-  ["leviathans", 22],
-] as const;
+// The berries layer: 23 a bush's leaves, then the berries of each kind.
+const BERRY_COLOURS: [number, [number, number, number, number]][] = [
+  [23, [70, 112, 52, 255]],
+  [24, [214, 44, 60, 255]], // raspberry
+  [25, [64, 84, 200, 255]], // blueberry
+  [26, [240, 160, 40, 255]], // cloudberry
+  [27, [150, 20, 40, 255]], // lingonberry
+];
 
 export const ORE_COLOURS: [number, [number, number, number, number]][] = [
   [16, [212, 118, 48, 255]], // copper
@@ -139,14 +139,24 @@ export function overlays() {
       layer: 1,
       palette: overlayPalette(TREE_COLOURS),
     },
-    // One layer an ore, numbered as its class.
-    ...ORE_LAYERS.map(([id, cls]) => ({
-      id,
-      layer: cls,
+    {
+      id: "fineWood",
+      layer: 2,
       palette: overlayPalette([
         ...VEGETATION_SHARED,
-        ...ORE_COLOURS.filter(([i]) => i === cls),
+        [4, [236, 236, 205, 255]],
+        [5, [214, 140, 44, 255]],
       ]),
-    })),
+    },
+    {
+      id: "ore",
+      layer: 3,
+      palette: overlayPalette([...VEGETATION_SHARED, ...ORE_COLOURS]),
+    },
+    {
+      id: "berries",
+      layer: 4,
+      palette: overlayPalette([...VEGETATION_SHARED, ...BERRY_COLOURS]),
+    },
   ];
 }

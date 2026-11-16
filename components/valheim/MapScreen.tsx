@@ -151,7 +151,9 @@ export function MapScreen() {
             </Stack>
             {tools ? (
               <>
-                <FormGroup>
+                <FormGroup
+                  sx={{ maxHeight: "40vh", overflowY: "auto", flexWrap: "nowrap" }}
+                >
                   {MAP_LAYERS.map((layer) => (
                     <FormControlLabel
                       key={layer}

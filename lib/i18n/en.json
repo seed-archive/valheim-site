@@ -42,14 +42,10 @@
         "dungeons": "Dungeons",
         "resources": "Resources: tar, black metal, soft tissue, drake eggs",
         "relief": "Contour lines (every 50 m)",
-        "trees": "Trees of every biome: oak amber, birch pale, beech green, conifers dark (zoom in)",
-        "silver": "Silver veins (zoom in)",
-        "iron": "Swamp iron: muddy scrap piles (zoom in)",
-        "copper": "Copper (zoom in)",
-        "tin": "Tin (zoom in)",
-        "obsidian": "Obsidian (zoom in)",
-        "ancientRoots": "Ancient roots: sap (zoom in)",
-        "leviathans": "Leviathans: chitin (zoom in)"
+        "trees": "Trees of every biome (zoom in)",
+        "ore": "Ore: silver, swamp iron, copper, tin, obsidian, ancient roots, Leviathans (zoom in)",
+        "fineWood": "Fine wood: birches and oaks (zoom in)",
+        "berries": "Berries: raspberry, blueberry, cloudberry, lingonberry (zoom in)"
       },
       "places": {
         "start": "The start",
