@@ -1,0 +1,98 @@
+{
+  "ancientForge": {
+    "cx": 7.56,
+    "cz": 4.6,
+    "height": 12.0,
+    "width": 12.0
+  },
+  "bogWitch": {
+    "cx": 15.59,
+    "cz": 15.89,
+    "height": 32.0,
+    "width": 31.38
+  },
+  "bonemass": {
+    "cx": 4.11,
+    "cz": 8.29,
+    "height": 14.5,
+    "width": 8.38
+  },
+  "eikthyr": {
+    "cx": 11.27,
+    "cz": 11.27,
+    "height": 21.38,
+    "width": 22.25
+  },
+  "fader": {
+    "cx": 31.37,
+    "cz": 31.5,
+    "height": 62.88,
+    "width": 62.88
+  },
+  "fortress": {
+    "cx": 29.04,
+    "cz": 26.74,
+    "height": 53.25,
+    "width": 58.25
+  },
+  "fulingOutpost": {
+    "cx": 8.72,
+    "cz": 8.12,
+    "height": 17.0,
+    "width": 17.88
+  },
+  "haldor": {
+    "cx": 11.48,
+    "cz": 10.87,
+    "height": 22.63,
+    "width": 22.88
+  },
+  "hildir": {
+    "cx": 15.63,
+    "cz": 15.76,
+    "height": 31.38,
+    "width": 31.38
+  },
+  "kall": {
+    "cx": 18.36,
+    "cz": 15.92,
+    "height": 22.63,
+    "width": 37.63
+  },
+  "moder": {
+    "cx": 6.29,
+    "cz": 5.82,
+    "height": 12.13,
+    "width": 12.63
+  },
+  "morkhalla": {
+    "cx": 13.01,
+    "cz": 30.62,
+    "height": 43.63,
+    "width": 26.25
+  },
+  "start": {
+    "cx": 12.7,
+    "cz": 15.49,
+    "height": 24.38,
+    "width": 26.5
+  },
+  "theElder": {
+    "cx": 13.78,
+    "cz": 13.98,
+    "height": 27.75,
+    "width": 27.63
+  },
+  "theQueen": {
+    "cx": 18.2,
+    "cz": 11.74,
+    "height": 34.25,
+    "width": 36.5
+  },
+  "yagluth": {
+    "cx": 32.38,
+    "cz": 35.91,
+    "height": 69.75,
+    "width": 66.88
+  }
+}

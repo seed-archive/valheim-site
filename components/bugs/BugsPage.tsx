@@ -6,6 +6,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { slug } from "@/lib/slug";
 
 // How many turns the game picks a location's rotation from, and the step
 // between them (ZoneSystem.PlaceLocations: Random.Range(0, 16) · 22.5°).
@@ -14,18 +15,10 @@ const YAW_STEP = 22.5;
 
 // The bugs in the game's world generation a player meets on a seed; each one is
 // proven in the Valheim generator's notes.
-// A heading's id from its words, so any section can be linked (the shared
-// seo.md, Links).
-function slug(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
 export function BugsPage() {
   const intl = useIntl();
   const crypts = intl.formatMessage({ id: "pages.bugs.crypts.title" });
+  const loot = intl.formatMessage({ id: "pages.bugs.loot.title" });
   const bold = (text: React.ReactNode) => <strong>{text}</strong>;
   return (
     <>
@@ -58,6 +51,21 @@ export function BugsPage() {
         </Typography>
         <Typography sx={{ mb: 2 }}>
           <FormattedMessage id="pages.bugs.crypts.maps" />
+        </Typography>
+        <Typography variant="h5" component="h2" id={slug(loot)} gutterBottom sx={{ mt: 4 }}>
+          {loot}
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage id="pages.bugs.loot.why" values={{ yaws: YAWS }} />
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage id="pages.bugs.loot.exact" values={{ b: bold }} />
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage id="pages.bugs.loot.overYaws" values={{ b: bold, yaws: YAWS }} />
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage id="pages.bugs.loot.atPlay" values={{ b: bold }} />
         </Typography>
       </Container>
       <ArchiveFooter />

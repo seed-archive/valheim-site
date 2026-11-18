@@ -2,8 +2,8 @@
 // beyond it is the edge of the world (the game's WorldGenerator).
 export const WORLD_RADIUS = 10_500;
 
-// What the map can switch on and off, in menu order: places first, then the
-// contour lines drawn over the map. The start is always shown; the game's
+// What the map can switch on and off, in menu order: places and pins first,
+// then the trees and the contour lines drawn over the map. The start is always shown; the game's
 // other small places (ruins, camps, houses) are not drawn.
 export const MAP_LAYERS = [
   "bosses",
@@ -11,9 +11,9 @@ export const MAP_LAYERS = [
   "dungeons",
   "resources",
   "ore",
-  "trees",
   "fineWood",
-  "berries",
+  "spawners",
+  "trees",
   "relief",
 ] as const;
 export type MapLayer = (typeof MAP_LAYERS)[number];
@@ -27,8 +27,8 @@ export const DEFAULT_LAYERS: Record<MapLayer, boolean> = {
   ore: false,
   trees: true,
   fineWood: false,
-  berries: false,
-  relief: false,
+  spawners: false,
+  relief: true,
 };
 
 // The seed the map and the seed tool show when none is given: the game's own

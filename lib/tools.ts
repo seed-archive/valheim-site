@@ -2,4 +2,5 @@
 export const TOOLS = [
   { href: "/tools/map", id: "archive.map" },
   { href: "/tools/how-good-is-my-seed", id: "archive.seedRating" },
+  { href: "/tools/craft-tree", id: "archive.craftTree" },
 ];

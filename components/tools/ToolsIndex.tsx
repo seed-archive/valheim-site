@@ -7,7 +7,7 @@ import { FormattedMessage } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@/components/archive/PageTrail";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
 // The Tools menu item's index: every tool of the section, each in a sentence.
 export function ToolsIndex() {
@@ -41,6 +41,15 @@ export function ToolsIndex() {
               link: (text) => (
                 <Link href="/tools/how-good-is-my-seed">{text}</Link>
               ),
+            }}
+          />
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          <FormattedMessage
+            id="pages.tools.craftTree"
+            values={{
+              b: (text) => <b>{text}</b>,
+              link: (text) => <Link href="/tools/craft-tree">{text}</Link>,
             }}
           />
         </Typography>

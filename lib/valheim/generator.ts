@@ -3,8 +3,8 @@ import { BASE_PATH } from "@/lib/site";
 import type { PlaceGroup } from "@/lib/valheim/places";
 
 // What the Valheim generator's numbers mean. The .wasm returns only numbers
-// (the shared map interface); generator.json, which the generator writes
-// (`vh site`), names them in the same order: place kinds, sub-biomes, and the
+// (the shared map interface); generator.json, which the generator writes,
+// names them in the same order: place kinds, sub-biomes, and the
 // measures of a seed.
 
 // The game's wasm-bindgen glue, as an absolute URL for the map's workers.
@@ -33,6 +33,29 @@ export function decodePlaces(raw: Float32Array): Place[] {
       y: raw[i + 2],
       biome: raw[i + 3],
       unique: raw[i + 4] === 1,
+    });
+  }
+  return out;
+}
+
+// One room of a Fuling village as the Valheim generator lays it out: its
+// prefab, its world position, and its turn in degrees clockwise from above.
+export type CampRoom = {
+  prefab: string;
+  x: number;
+  y: number;
+  yaw: number;
+};
+
+// `camp`: four numbers a room — room, x, y, yaw.
+export function decodeCamp(raw: Float32Array): CampRoom[] {
+  const out: CampRoom[] = [];
+  for (let i = 0; i + 3 < raw.length; i += 4) {
+    out.push({
+      prefab: names.campRooms[raw[i]],
+      x: raw[i + 1],
+      y: raw[i + 2],
+      yaw: raw[i + 3],
     });
   }
   return out;
@@ -88,6 +111,8 @@ export type SeedMeasures = {
   vegetation?: Record<string, Record<string, number>>;
   sectors?: Record<string, number>;
   bees?: Record<string, number>;
+  villages?: Record<string, number>;
+  summons?: Record<string, number>;
 };
 
 // `measure`: numbers in the order of generator.json's paths, nested by them;

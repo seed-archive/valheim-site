@@ -13,19 +13,39 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { FormattedMessage, useIntl } from "react-intl";
 
-import { useAuth } from "@/components/providers/AuthProvider";
-import { GUIDES } from "@/lib/guides";
+import { useAuth } from "@seed-archive/ui/auth";
+import { CATALOG_GROUPS, GUIDE_GROUPS, type Entry } from "@/lib/guides";
 import { TOOLS } from "@/lib/tools";
+
+// The menu items, in the order every game shows them (the shared seo.md,
+// Header and footer: at most four; this section has no Quests); a group with a
+// name is a bold line over its pages.
+const MENUS: {
+  key: string;
+  id: string;
+  groups: { id?: string; entries: Entry[] }[];
+}[] = [
+  { key: "catalog", id: "archive.catalog", groups: CATALOG_GROUPS },
+  { key: "guides", id: "archive.guides", groups: GUIDE_GROUPS },
+  {
+    key: "tools",
+    id: "archive.tools",
+    groups: [{ entries: TOOLS.map((tool) => ({ ...tool, line: "" })) }],
+  },
+];
 
 // The archive's one header (D15): "Seed Archive", a plain link to the domain's
 // root (another zone, so not next/link), then the game's name, a link to this
 // section's home, then the section's own menu, then the archive's account (D13).
+// The indexes of Tools, Guides and Quests are not in the menu: a page's
+// breadcrumbs lead to them.
 export function ArchiveBar() {
   const { signOut, user } = useAuth();
   const intl = useIntl();
   const [accountMenu, setAccountMenu] = useState<HTMLElement | null>(null);
-  const [toolsMenu, setToolsMenu] = useState<HTMLElement | null>(null);
-  const [guidesMenu, setGuidesMenu] = useState<HTMLElement | null>(null);
+  const [open, setOpen] = useState<{ key: string; anchor: HTMLElement } | null>(
+    null,
+  );
 
   return (
     <AppBar
@@ -65,76 +85,58 @@ export function ArchiveBar() {
             <FormattedMessage id="archive.game" />
           </Typography>
         </Box>
-        <Button
-          color="inherit"
-          onClick={(event) => setGuidesMenu(event.currentTarget)}
-          id="guides-button"
-          aria-haspopup="true"
-          aria-controls={guidesMenu ? "guides-menu" : undefined}
-          aria-expanded={guidesMenu ? "true" : undefined}
-        >
-          <FormattedMessage id="archive.guides" />
-        </Button>
-        <Menu
-          id="guides-menu"
-          anchorEl={guidesMenu}
-          open={Boolean(guidesMenu)}
-          onClose={() => setGuidesMenu(null)}
-          slotProps={{ list: { "aria-labelledby": "guides-button" } }}
-        >
-          <MenuItem
-            component={Link}
-            href="/guides"
-            onClick={() => setGuidesMenu(null)}
-          >
-            <FormattedMessage id="archive.allGuides" />
-          </MenuItem>
-          {GUIDES.map((guide) => (
-            <MenuItem
-              key={guide.href}
-              component={Link}
-              href={guide.href}
-              onClick={() => setGuidesMenu(null)}
+        {MENUS.map((menu) => (
+          <Box key={menu.key}>
+            <Button
+              color="inherit"
+              onClick={(event) =>
+                setOpen({ key: menu.key, anchor: event.currentTarget })
+              }
+              id={`${menu.key}-button`}
+              aria-haspopup="true"
+              aria-controls={
+                open?.key === menu.key ? `${menu.key}-menu` : undefined
+              }
+              aria-expanded={open?.key === menu.key ? "true" : undefined}
             >
-              <FormattedMessage id={guide.id} />
-            </MenuItem>
-          ))}
-        </Menu>
-        <Button
-          color="inherit"
-          onClick={(event) => setToolsMenu(event.currentTarget)}
-          id="tools-button"
-          aria-haspopup="true"
-          aria-controls={toolsMenu ? "tools-menu" : undefined}
-          aria-expanded={toolsMenu ? "true" : undefined}
-        >
-          <FormattedMessage id="archive.tools" />
-        </Button>
-        <Menu
-          id="tools-menu"
-          anchorEl={toolsMenu}
-          open={Boolean(toolsMenu)}
-          onClose={() => setToolsMenu(null)}
-          slotProps={{ list: { "aria-labelledby": "tools-button" } }}
-        >
-          <MenuItem
-            component={Link}
-            href="/tools"
-            onClick={() => setToolsMenu(null)}
-          >
-            <FormattedMessage id="archive.allTools" />
-          </MenuItem>
-          {TOOLS.map((tool) => (
-            <MenuItem
-              key={tool.href}
-              component={Link}
-              href={tool.href}
-              onClick={() => setToolsMenu(null)}
+              <FormattedMessage id={menu.id} />
+            </Button>
+            <Menu
+              id={`${menu.key}-menu`}
+              anchorEl={open?.key === menu.key ? open.anchor : null}
+              open={open?.key === menu.key}
+              onClose={() => setOpen(null)}
+              slotProps={{
+                list: { "aria-labelledby": `${menu.key}-button` },
+              }}
             >
-              <FormattedMessage id={tool.id} />
-            </MenuItem>
-          ))}
-        </Menu>
+              {menu.groups.flatMap((group) => [
+                ...(group.id
+                  ? [
+                      <MenuItem
+                        key={group.id}
+                        disabled
+                        sx={{ fontWeight: 700, "&.Mui-disabled": { opacity: 1 } }}
+                      >
+                        <FormattedMessage id={group.id} />
+                      </MenuItem>,
+                    ]
+                  : []),
+                ...group.entries.map((entry) => (
+                  <MenuItem
+                    key={entry.href}
+                    component={Link}
+                    href={entry.href}
+                    onClick={() => setOpen(null)}
+                    sx={group.id ? { pl: 4 } : undefined}
+                  >
+                    <FormattedMessage id={entry.id} />
+                  </MenuItem>
+                )),
+              ])}
+            </Menu>
+          </Box>
+        ))}
         {user ? (
           <>
             <IconButton

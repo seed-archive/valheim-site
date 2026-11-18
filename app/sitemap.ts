@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { CATALOG, GUIDES } from "@/lib/guides";
 import { BASE_PATH } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -11,6 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/map",
     "/tools/how-good-is-my-seed",
     "/bugs",
+    "/catalog",
+    "/guides",
+    ...[...CATALOG, ...GUIDES].map((page) => page.href),
   ].map((path) => ({
     url: `${base}${path}`,
   }));

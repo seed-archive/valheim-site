@@ -15,15 +15,17 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@/components/archive/PageTrail";
-import { SeedReport } from "@/components/tools/seed/SeedReport";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 import { EXAMPLE_SEED, SEED_MAX, SEED_PATTERN } from "@/lib/world";
 import { MapClient } from "@seed-archive/map/client";
+import { StripReport } from "@/components/tools/seed/StripReport";
 import {
   decodeMeasures,
+  decodePlaces,
   moduleUrl,
   type SeedMeasures,
 } from "@/lib/valheim/generator";
+import { BIOMES, find, type Found } from "@/lib/valheim/strip";
 
 type SeedForm = { seed: string };
 
@@ -44,6 +46,7 @@ export function SeedRating() {
     mode: "onChange",
   });
   const generator = useRef<MapClient | null>(null);
+  const [strip, setStrip] = useState<{ seed: string; found: Found[] } | null>(null);
   const [measured, setMeasured] = useState<{
     seed: string;
     measures: SeedMeasures;
@@ -62,10 +65,17 @@ export function SeedRating() {
       return;
     }
     let live = true;
-    // The quick measures first; then the same with the trees and ore around
-    // the caves, the start and Yagluth, which take seconds more.
-    gen
-      .call<Float32Array>("measure", [seed])
+    // The bosses and traders against the strip first, then the measures.
+    const placesOnStrip = async () => {
+      const places = decodePlaces(await gen.call<Float32Array>("places", [seed, 0]));
+      const start = places.find((p) => p.key === "start") ?? { x: 0, y: 0 };
+      const found = BIOMES.flatMap((b) => (b.trader ? [b.boss, b.trader] : [b.boss])).map((k) =>
+        find(start, places.filter((p) => p.key === k), k),
+      );
+      live && setStrip({ seed, found });
+    };
+    placesOnStrip()
+      .then(() => gen.call<Float32Array>("measure", [seed]))
       .then((raw) => {
         const measures = decodeMeasures(raw);
         if (live && measures) {
@@ -177,7 +187,10 @@ export function SeedRating() {
                 }}
               />
             </Typography>
-            <SeedReport seed={seed} measures={current} />
+            <StripReport
+              measures={current}
+              found={strip && strip.seed === seed ? strip.found : null}
+            />
           </Paper>
         ) : null}
       </Container>

@@ -2,9 +2,69 @@ import { load_shapes } from './snippets/web-67aca56aae793faf/inline0.js';
 
 
 /**
- * The seed measured the same way as the seed scan (`analysis::measure`): numbers in the order of
- * `analysis::paths`, which `vh site` writes for the page; empty if the world has no start. The `vegetation.*`
- * measures are NaN here: [`measure_deep`] adds them, seconds later.
+ * @param {string} seed
+ * @param {number} _world
+ * @param {number} x
+ * @param {number} y
+ * @returns {Float32Array}
+ */
+export function camp(seed, _world, x, y) {
+    const val2 = +_world;
+    const val3 = +x;
+    const val4 = +y;
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.camp(ptr0, len0, val2, val3, val4);
+    var v5 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v5;
+}
+
+/**
+ * @param {string} seed
+ * @param {number} _world
+ * @param {number} x
+ * @param {number} y
+ * @returns {Float32Array}
+ */
+export function loot(seed, _world, x, y) {
+    const val2 = +_world;
+    const val3 = +x;
+    const val4 = +y;
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.loot(ptr0, len0, val2, val3, val4);
+    var v5 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v5;
+}
+
+/**
+ * @param {string} seed
+ * @param {number} layers
+ * @param {number} x0
+ * @param {number} y0
+ * @param {number} x1
+ * @param {number} y1
+ * @param {number} step
+ * @returns {Float32Array}
+ */
+export function marks_in(seed, layers, x0, y0, x1, y1, step) {
+    const val2 = +layers;
+    const val3 = +x0;
+    const val4 = +y0;
+    const val5 = +x1;
+    const val6 = +y1;
+    const val7 = +step;
+    const ptr0 = passStringToWasm0(seed, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.marks_in(ptr0, len0, val2, val3, val4, val5, val6, val7);
+    var v8 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+    wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+    return v8;
+}
+
+/**
  * @param {string} seed
  * @returns {Float32Array}
  */
@@ -18,9 +78,6 @@ export function measure(seed) {
 }
 
 /**
- * [`measure`] with the `vegetation.*` measures too: copper by the troll caves, oaks and birches by the copper cave,
- * groves at the start and Yagluth. It places the vegetation of a few hundred zones, so the page asks for it after
- * the rest.
  * @param {string} seed
  * @returns {Float32Array}
  */
@@ -34,9 +91,6 @@ export function measure_deep(seed) {
 }
 
 /**
- * A layer over the map, one byte a pixel, 0 where it shows nothing: `layer` 0 the contour lines, every 50 m of
- * height (1); 1 the trees of every biome, drawn from the side by kind; 16–22 one ore each, as diamonds (the classes
- * of `build.rs`; 2 an outline); 6 the ring round the start where nothing may be built.
  * @param {string} seed
  * @param {number} _world
  * @param {number} layer
@@ -62,8 +116,6 @@ export function overlay(seed, _world, layer, x0, y0, step, size) {
 }
 
 /**
- * Every location of the seed, five numbers each: `kind, x, y, biome, unique`. `kind` is the number of its name key
- * (`analysis::kinds::keys`), `biome` its biome as in [`tile`] (1…9), `unique` 1 for a trader's candidate place.
  * @param {string} seed
  * @param {number} _world
  * @returns {Float32Array}
@@ -79,8 +131,6 @@ export function places(seed, _world) {
 }
 
 /**
- * What a click reads at one point: `[biome, height above the sea, swamp, sub-biomes…]`; `biome` as in [`tile`],
- * `swamp` 1 wide enough for crypts and Bonemass, 0 a strip, −1 no swamp; then the number of each sub-biome there.
  * @param {string} seed
  * @param {number} _world
  * @param {number} x
@@ -100,10 +150,6 @@ export function point(seed, _world, x, y) {
 }
 
 /**
- * The map itself, one byte a pixel: `class · 16 + light`, 0 beyond the world's edge. Class 1…9 is the biome on land (Meadows 1, Swamp 2,
- * Mountain 3, Black Forest 4, Plains 5, Ashlands 6, Deep North 7, Ocean 8, Mistlands 9), 10…15 the sea by depth
- * (shallow first); light 0…15 runs from shade to sun (`SHADE_RANGE`), with height on land. The page's palette turns
- * the bytes into colours.
  * @param {string} seed
  * @param {number} _world
  * @param {number} x0
@@ -127,8 +173,6 @@ export function tile(seed, _world, x0, y0, step, size) {
 }
 
 /**
- * The worlds of a seed, five numbers each: `kind, x0, y0, x1, y1`. A Valheim seed is one world, kind 0 (a disc), given
- * as its square; the page knows kind 0 is round.
  * @param {string} _seed
  * @returns {Float64Array}
  */

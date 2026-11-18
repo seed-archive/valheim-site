@@ -1,0 +1,740 @@
+[
+  {
+    "biome": "swamp",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "swamp",
+      "plains",
+      "mistlands",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 1,
+        "key": "Turnip",
+        "name": "Turnip"
+      }
+    ],
+    "key": "sapling_turnip",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Turnip",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "TurnipSeeds",
+        "name": "Turnip Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "swamp",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "swamp",
+      "plains",
+      "mistlands",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "TurnipSeeds",
+        "name": "Turnip Seeds"
+      }
+    ],
+    "key": "sapling_seedturnip",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Seed-turnip",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Turnip",
+        "name": "Turnip"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "mountain",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 1,
+        "key": "Onion",
+        "name": "Onion"
+      }
+    ],
+    "key": "sapling_onion",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Onion",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "OnionSeeds",
+        "name": "Onion Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "mountain",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "OnionSeeds",
+        "name": "Onion Seeds"
+      }
+    ],
+    "key": "sapling_seedonion",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Seed-onion",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Onion",
+        "name": "Onion"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 1,
+        "key": "Carrot",
+        "name": "Carrot"
+      }
+    ],
+    "key": "sapling_carrot",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Carrot",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "CarrotSeeds",
+        "name": "Carrot Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "CarrotSeeds",
+        "name": "Carrot Seeds"
+      }
+    ],
+    "key": "sapling_seedcarrot",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Seed-carrot",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Carrot",
+        "name": "Carrot"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "plains",
+    "biomes": [
+      "plains"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 2,
+        "key": "Barley",
+        "name": "Barley"
+      }
+    ],
+    "key": "sapling_barley",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Barley",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Barley",
+        "name": "Barley"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "plains",
+    "biomes": [
+      "plains"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 2,
+        "key": "Flax",
+        "name": "Flax"
+      }
+    ],
+    "key": "sapling_flax",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Flax",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Flax",
+        "name": "Flax"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "mistlands",
+    "biomes": [
+      "mistlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 1,
+        "key": "MushroomJotunPuffs",
+        "name": "Jotun Puffs"
+      }
+    ],
+    "key": "sapling_jotunpuffs",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Jotun Puffs Primordia",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "MushroomJotunPuffs",
+        "name": "Jotun Puffs"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "mistlands",
+    "biomes": [
+      "mistlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 1,
+        "key": "MushroomMagecap",
+        "name": "Magecap"
+      }
+    ],
+    "key": "sapling_magecap",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Magecap Primordia",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "MushroomMagecap",
+        "name": "Magecap"
+      }
+    ],
+    "room": 0.800000011920929
+  },
+  {
+    "biome": "deepNorth",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "OatSeeds",
+        "name": "Oat Seeds"
+      }
+    ],
+    "key": "sapling_oat",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Oat Straw",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "OatSeeds",
+        "name": "Oat Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "deepNorth",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "Poteitr",
+        "name": "Poteitr"
+      }
+    ],
+    "key": "sapling_poteitr",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Poteitr",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "PoteitrSeeds",
+        "name": "Seed Poteitr"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "deepNorth",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "Kale",
+        "name": "Kale"
+      }
+    ],
+    "key": "sapling_Kale",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Kale",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "KaleSeeds",
+        "name": "Kale Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "deepNorth",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains",
+      "ashlands"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "KaleSeeds",
+        "name": "Kale Seeds"
+      }
+    ],
+    "key": "sapling_seedkale",
+    "kind": "crop",
+    "minutes": [
+      66.66666666666667,
+      83.33333333333333
+    ],
+    "name": "Seed Kale",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "KaleSeeds",
+        "name": "Kale Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "meadows",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [
+      {
+        "amount": 20.0,
+        "key": "Wood",
+        "name": "Wood"
+      },
+      {
+        "amount": 2.0,
+        "key": "BeechSeeds",
+        "name": "Beech Seeds"
+      }
+    ],
+    "key": "Beech_Sapling",
+    "kind": "tree",
+    "minutes": [
+      50.0,
+      83.33333333333333
+    ],
+    "name": "Beech sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "BeechSeeds",
+        "name": "Beech Seeds"
+      }
+    ],
+    "room": 2.0
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [
+      {
+        "amount": 10.0,
+        "key": "FineWood",
+        "name": "Finewood"
+      },
+      {
+        "amount": 10.0,
+        "key": "Wood",
+        "name": "Wood"
+      },
+      {
+        "amount": 1.0,
+        "key": "BirchSeeds",
+        "name": "Birch Seeds"
+      }
+    ],
+    "key": "Birch_Sapling",
+    "kind": "tree",
+    "minutes": [
+      83.33333333333333,
+      116.66666666666667
+    ],
+    "name": "Birch Sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "BirchSeeds",
+        "name": "Birch Seeds"
+      }
+    ],
+    "room": 2.0
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [
+      {
+        "amount": 25.0,
+        "key": "FineWood",
+        "name": "Finewood"
+      },
+      {
+        "amount": 25.0,
+        "key": "Wood",
+        "name": "Wood"
+      },
+      {
+        "amount": 2.0,
+        "key": "Resin",
+        "name": "Resin"
+      },
+      {
+        "amount": 1.0,
+        "key": "Acorn",
+        "name": "Acorns"
+      },
+      {
+        "amount": 1.0,
+        "key": "Feathers",
+        "name": "Feathers"
+      }
+    ],
+    "key": "Oak_Sapling",
+    "kind": "tree",
+    "minutes": [
+      100.0,
+      133.33333333333334
+    ],
+    "name": "Oak Sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "Acorn",
+        "name": "Acorns"
+      }
+    ],
+    "room": 3.0
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "mountain",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [
+      {
+        "amount": 20.0,
+        "key": "Wood",
+        "name": "Wood"
+      },
+      {
+        "amount": 1.0,
+        "key": "FirCone",
+        "name": "Fir Cone"
+      }
+    ],
+    "key": "FirTree_Sapling",
+    "kind": "tree",
+    "minutes": [
+      50.0,
+      83.33333333333333
+    ],
+    "name": "Fir Sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "FirCone",
+        "name": "Fir Cone"
+      }
+    ],
+    "room": 2.0
+  },
+  {
+    "biome": "blackForest",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [
+      {
+        "amount": 15.0,
+        "key": "RoundLog",
+        "name": "Corewood"
+      },
+      {
+        "amount": 15.0,
+        "key": "Wood",
+        "name": "Wood"
+      }
+    ],
+    "key": "PineTree_Sapling",
+    "kind": "tree",
+    "minutes": [
+      50.0,
+      83.33333333333333
+    ],
+    "name": "Pine Sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "PineCone",
+        "name": "Pine Cone"
+      }
+    ],
+    "room": 2.0
+  },
+  {
+    "biome": "deepNorth",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "mountain",
+      "plains"
+    ],
+    "cultivated": false,
+    "gives": [],
+    "key": "FirTree_big_Sapling",
+    "kind": "tree",
+    "minutes": [
+      50.0,
+      83.33333333333333
+    ],
+    "name": "Timberwood Sapling",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "FirConeFrost",
+        "name": "Timberwood Cone"
+      }
+    ],
+    "room": 2.0
+  },
+  {
+    "biome": "ashlands",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "swamp",
+      "plains",
+      "mistlands",
+      "ashlands",
+      "ocean"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "Vineberry",
+        "name": "Vineberry Cluster"
+      }
+    ],
+    "key": "VineAsh_sapling",
+    "kind": "vine",
+    "minutes": [
+      3.3333333333333335,
+      5.0
+    ],
+    "name": "Ashvine",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "VineberrySeeds",
+        "name": "Vineberry Seeds"
+      }
+    ],
+    "room": 0.5
+  },
+  {
+    "biome": "swamp",
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "swamp",
+      "mountain",
+      "plains",
+      "mistlands",
+      "deepNorth",
+      "ocean"
+    ],
+    "cultivated": true,
+    "gives": [
+      {
+        "amount": 3,
+        "key": "Vineberry",
+        "name": "Vineberry Cluster"
+      }
+    ],
+    "key": "VineGreen_sapling",
+    "kind": "vine",
+    "minutes": [
+      3.3333333333333335,
+      5.0
+    ],
+    "name": "Ivy",
+    "plantWith": [
+      {
+        "amount": 1,
+        "key": "VineGreenSeeds",
+        "name": "Ivy Seeds"
+      }
+    ],
+    "room": 0.5
+  }
+]

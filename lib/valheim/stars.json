@@ -1,0 +1,29 @@
+{
+  "levelUpChance": 10.0,
+  "levels": [
+    {
+      "damage": 1.0,
+      "drops": 1,
+      "health": 1,
+      "level": 1,
+      "percent": 90.0,
+      "stars": 0
+    },
+    {
+      "damage": 1.5,
+      "drops": 2,
+      "health": 2,
+      "level": 2,
+      "percent": 9.0,
+      "stars": 1
+    },
+    {
+      "damage": 2.0,
+      "drops": 4,
+      "health": 3,
+      "level": 3,
+      "percent": 1.0,
+      "stars": 2
+    }
+  ]
+}
