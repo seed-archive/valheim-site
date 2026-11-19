@@ -353,6 +353,25 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "DeerMeat",
+    "made": false,
+    "name": "Deer Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deer",
+        "name": "Deer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 13,
     "key": "TrophyDeer",
     "made": false,
@@ -1079,6 +1098,33 @@
       {
         "key": "Bjorn",
         "name": "Bear"
+      },
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BjornMeat",
+    "made": false,
+    "name": "Bear Meat",
+    "places": [
+      "bearDen",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bjorn",
+        "name": "Bear"
       }
     ],
     "fished": false,
@@ -1344,6 +1390,25 @@
   },
   {
     "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish5",
+        "name": "Trollfish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "CopperOre",
+    "made": false,
+    "name": "Copper Ore",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
     "caughtWith": [],
     "droppedBy": [],
     "fished": false,
@@ -1564,6 +1629,62 @@
       "greydwarfCamp",
       "northVillage"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMinor",
+    "made": true,
+    "name": "Mead Base: Minor Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaMinor",
+    "made": true,
+    "name": "Mead Base: Minor Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBasePoisonResist",
+    "made": true,
+    "name": "Mead Base: Poison Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseTasty",
+    "made": true,
+    "name": "Mead Base: Tasty",
+    "places": [],
     "soldBy": []
   },
   {
@@ -1828,6 +1949,28 @@
     "biome": "blackForest",
     "caughtWith": [
       {
+        "key": "Fish3",
+        "name": "Tuna"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "TinOre",
+    "made": false,
+    "name": "Tin Ore",
+    "places": [
+      "ruins",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
         "key": "Fish5",
         "name": "Trollfish"
       }
@@ -2072,25 +2215,6 @@
   },
   {
     "biome": "swamp",
-    "caughtWith": [
-      {
-        "key": "Fish8",
-        "name": "Coral Cod"
-      }
-    ],
-    "droppedBy": [],
-    "fished": false,
-    "gathered": true,
-    "grown": false,
-    "itemType": 1,
-    "key": "Chitin",
-    "made": false,
-    "name": "Chitin",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
     "caughtWith": [],
     "droppedBy": [],
     "fished": false,
@@ -2100,34 +2224,6 @@
     "key": "FishCooked",
     "made": true,
     "name": "Cooked Fish",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [],
-    "fished": false,
-    "gathered": false,
-    "grown": false,
-    "itemType": 2,
-    "key": "SerpentMeatCooked",
-    "made": true,
-    "name": "Cooked Serpent Meat",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [],
-    "fished": true,
-    "gathered": false,
-    "grown": false,
-    "itemType": 21,
-    "key": "Fish8",
-    "made": false,
-    "name": "Coral Cod",
     "places": [],
     "soldBy": []
   },
@@ -2277,6 +2373,25 @@
   },
   {
     "biome": "swamp",
+    "caughtWith": [
+      {
+        "key": "Fish6",
+        "name": "Giant Herring"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "IronOre",
+    "made": false,
+    "name": "Iron Ore",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
     "caughtWith": [],
     "droppedBy": [],
     "fished": false,
@@ -2346,6 +2461,76 @@
     "soldBy": [
       "BogWitch"
     ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseFrostResist",
+    "made": true,
+    "name": "Mead Base: Frost Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMedium",
+    "made": true,
+    "name": "Mead Base: Medium Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStrength",
+    "made": true,
+    "name": "Mead Base: Troll Endurance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseSwimmer",
+    "made": true,
+    "name": "Mead Base: Vananidir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHasty",
+    "made": true,
+    "name": "Mead base: Ratatosk",
+    "places": [],
+    "soldBy": []
   },
   {
     "biome": "swamp",
@@ -2493,20 +2678,6 @@
     "fished": false,
     "gathered": false,
     "grown": false,
-    "itemType": 1,
-    "key": "FeastOceans_Material",
-    "made": true,
-    "name": "Sailor's Bounty",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [],
-    "fished": false,
-    "gathered": false,
-    "grown": false,
     "itemType": 2,
     "key": "Sausages",
     "made": true,
@@ -2519,18 +2690,27 @@
   {
     "biome": "swamp",
     "caughtWith": [],
-    "droppedBy": [],
+    "droppedBy": [
+      {
+        "key": "BlobElite",
+        "name": "Oozer"
+      }
+    ],
     "fished": false,
-    "gathered": false,
+    "gathered": true,
     "grown": false,
     "itemType": 1,
-    "key": "SpiceOceans",
+    "key": "IronScrap",
     "made": false,
-    "name": "Seafarer's Herbs",
-    "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "name": "Scrap Iron",
+    "places": [
+      "hildirFortress",
+      "infestedMine",
+      "morkhalla",
+      "sunkenCrypt",
+      "theHole"
+    ],
+    "soldBy": []
   },
   {
     "biome": "swamp",
@@ -2547,58 +2727,6 @@
     "soldBy": [
       "BogWitch"
     ]
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [
-      {
-        "key": "Serpent",
-        "name": "Serpent"
-      }
-    ],
-    "fished": false,
-    "gathered": false,
-    "grown": false,
-    "itemType": 1,
-    "key": "SerpentScale",
-    "made": false,
-    "name": "Serpent Scale",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [],
-    "fished": false,
-    "gathered": false,
-    "grown": false,
-    "itemType": 2,
-    "key": "SerpentStew",
-    "made": true,
-    "name": "Serpent Stew",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [
-      {
-        "key": "Serpent",
-        "name": "Serpent"
-      }
-    ],
-    "fished": false,
-    "gathered": false,
-    "grown": false,
-    "itemType": 13,
-    "key": "TrophySerpent",
-    "made": false,
-    "name": "Serpent Trophy",
-    "places": [],
-    "soldBy": []
   },
   {
     "biome": "swamp",
@@ -2697,20 +2825,6 @@
     "key": "Fish5",
     "made": false,
     "name": "Trollfish",
-    "places": [],
-    "soldBy": []
-  },
-  {
-    "biome": "swamp",
-    "caughtWith": [],
-    "droppedBy": [],
-    "fished": true,
-    "gathered": false,
-    "grown": false,
-    "itemType": 21,
-    "key": "Fish3",
-    "made": false,
-    "name": "Tuna",
     "places": [],
     "soldBy": []
   },
@@ -2880,6 +2994,168 @@
     "soldBy": [
       "Haldor"
     ]
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [
+      {
+        "key": "Fish8",
+        "name": "Coral Cod"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Chitin",
+    "made": false,
+    "name": "Chitin",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SerpentMeatCooked",
+    "made": true,
+    "name": "Cooked Serpent Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish8",
+    "made": false,
+    "name": "Coral Cod",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastOceans_Material",
+    "made": true,
+    "name": "Sailor's Bounty",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceOceans",
+    "made": false,
+    "name": "Seafarer's Herbs",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SerpentMeat",
+    "made": false,
+    "name": "Serpent Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SerpentScale",
+    "made": false,
+    "name": "Serpent Scale",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SerpentStew",
+    "made": true,
+    "name": "Serpent Stew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySerpent",
+    "made": false,
+    "name": "Serpent Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish3",
+    "made": false,
+    "name": "Tuna",
+    "places": [],
+    "soldBy": []
   },
   {
     "biome": "mountain",
@@ -3109,6 +3385,20 @@
   {
     "biome": "mountain",
     "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseTamer",
+    "made": true,
+    "name": "Mead Base: Animal Whispers",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
     "droppedBy": [
       {
         "key": "Dragon",
@@ -3261,6 +3551,20 @@
       "charredRuins",
       "morgenHole"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "SilverOre",
+    "made": false,
+    "name": "Silver Ore",
+    "places": [],
     "soldBy": []
   },
   {
@@ -3508,6 +3812,20 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "BarleyWineBase",
+    "made": true,
+    "name": "Barley Wine Base: Fire Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 2,
     "key": "MeadBzerker",
     "made": true,
@@ -3527,6 +3845,46 @@
     "made": true,
     "name": "Black Metal",
     "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [
+      {
+        "key": "Fish7",
+        "name": "Grouper"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Goblin",
+        "name": "Fuling"
+      },
+      {
+        "key": "GoblinBrute",
+        "name": "Fuling Berserker"
+      },
+      {
+        "key": "GoblinShaman",
+        "name": "Fuling Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlackMetalScrap",
+    "made": false,
+    "name": "Black Metal Scrap",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "ruins",
+      "standingStones",
+      "stoneHouse",
+      "stoneTower"
+    ],
     "soldBy": []
   },
   {
@@ -3991,6 +4349,48 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseBugRepellent",
+    "made": true,
+    "name": "Mead Base: Anti-Sting",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaMedium",
+    "made": true,
+    "name": "Mead Base: Medium Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseBzerker",
+    "made": true,
+    "name": "Mead base: Berserkir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 2,
     "key": "MeadStaminaMedium",
     "made": true,
@@ -4168,6 +4568,48 @@
     "places": [
       "yagluth"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LoxPieUncooked",
+    "made": true,
+    "name": "Unbaked Lox Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "VikingCupcakeUncooked",
+    "made": true,
+    "name": "Unbaked Sweetbread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FishAndBreadUncooked",
+    "made": true,
+    "name": "Uncooked Fish 'n' Bread",
+    "places": [],
     "soldBy": []
   },
   {
@@ -4421,6 +4863,26 @@
     "made": true,
     "name": "Cooked Seeker Meat",
     "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "CopperScrap",
+    "made": false,
+    "name": "Copper Scrap",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "theQueen"
+    ],
     "soldBy": []
   },
   {
@@ -4705,6 +5167,62 @@
     "key": "Mandible",
     "made": false,
     "name": "Mandible",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseLightFoot",
+    "made": true,
+    "name": "Mead Base: Lightfoot",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMajor",
+    "made": true,
+    "name": "Mead Base: Major Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseEitrMinor",
+    "made": true,
+    "name": "Mead Base: Minor Eitr",
     "places": [],
     "soldBy": []
   },
@@ -5000,6 +5518,39 @@
   },
   {
     "biome": "mistlands",
+    "caughtWith": [
+      {
+        "key": "Fish9",
+        "name": "Anglerfish"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Dverger",
+        "name": "Dvergr Rogue"
+      },
+      {
+        "key": "DvergerMage",
+        "name": "Dvergr Mage"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Softtissue",
+    "made": false,
+    "name": "Soft Tissue",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
     "caughtWith": [],
     "droppedBy": [],
     "fished": false,
@@ -5056,6 +5607,62 @@
     "places": [
       "giantRemains"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "HoneyGlazedChickenUncooked",
+    "made": true,
+    "name": "Uncooked Honey Glazed Chicken",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeatPlatterUncooked",
+    "made": true,
+    "name": "Uncooked Meat Platter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MisthareSupremeUncooked",
+    "made": true,
+    "name": "Uncooked Misthare Supreme",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MagicallyStuffedShroomUncooked",
+    "made": true,
+    "name": "Uncooked Stuffed Mushroom",
+    "places": [],
     "soldBy": []
   },
   {
@@ -5316,6 +5923,25 @@
       "morkhalla",
       "ruins"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BonemawSerpent",
+        "name": "Bonemaw"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BoneMawSerpentMeat",
+    "made": false,
+    "name": "Bonemaw Meat",
+    "places": [],
     "soldBy": []
   },
   {
@@ -5685,6 +6311,30 @@
     "gathered": true,
     "grown": false,
     "itemType": 1,
+    "key": "FlametalOreNew",
+    "made": false,
+    "name": "Flametal Ore",
+    "places": [
+      "charredRuins",
+      "fortress",
+      "lavaLeviathan",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [
+      {
+        "key": "Fish11",
+        "name": "Magmafish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
     "key": "Grausten",
     "made": false,
     "name": "Grausten",
@@ -5878,6 +6528,34 @@
     "key": "MashedMeat",
     "made": true,
     "name": "Mashed Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseEitrLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Eitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Health",
     "places": [],
     "soldBy": []
   },
@@ -6090,6 +6768,24 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "BronzeScrap",
+    "made": false,
+    "name": "Scrap Bronze",
+    "places": [
+      "fortress",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 2,
     "key": "SizzlingBerryBroth",
     "made": true,
@@ -6189,6 +6885,34 @@
     "places": [
       "sulfurArch"
     ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "PiquantPieUncooked",
+    "made": true,
+    "name": "Uncooked Piquant Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "RoastedCrustPieUncooked",
+    "made": true,
+    "name": "Uncooked Roasted Crust Pie",
+    "places": [],
     "soldBy": []
   },
   {
@@ -6390,6 +7114,412 @@
     "key": "Gold",
     "made": true,
     "name": "Bloodgold",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyChestUncooked",
+    "made": true,
+    "name": "Cast: Breastplate of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumChestUncooked",
+    "made": true,
+    "name": "Cast: Chestpiece of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffOrbofAhriUncooked",
+    "made": true,
+    "name": "Cast: Echo Spike",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageHelmetUncooked",
+    "made": true,
+    "name": "Cast: Headdress of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyHelmetUncooked",
+    "made": true,
+    "name": "Cast: Helmet of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumHelmetUncooked",
+    "made": true,
+    "name": "Cast: Hood of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KeysGoldUncooked",
+    "made": true,
+    "name": "Cast: Intricate Key",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffThunderbloodUncooked",
+    "made": true,
+    "name": "Cast: Lightning Strike",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AtgeirGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Atgeir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AxeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Axe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BowGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Bow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldBucklerGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Buckler",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CrossbowGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Crossbow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KnifeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Dagger",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BattleaxeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greataxe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldTowerGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greatshield",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "THSwordGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greatsword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FistGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Knucklechains",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MaceGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Mace",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldRoundGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Shield",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SledgeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Sledge",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpearGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Spear",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SwordGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Sword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffFrostOrbsUncooked",
+    "made": true,
+    "name": "Cast: Northern Vengeance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageChestUncooked",
+    "made": true,
+    "name": "Cast: Robes of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffSpiritCallerUncooked",
+    "made": true,
+    "name": "Cast: Spirit Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Vanguard",
     "places": [],
     "soldBy": []
   },
@@ -7746,11 +8876,41 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "OvenPancakeUncooked",
+    "made": true,
+    "name": "Oven Pancake Batter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 2,
     "key": "Pancakes",
     "made": true,
     "name": "Pancakes",
     "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GoldOre",
+    "made": false,
+    "name": "Petrified Tissue",
+    "places": [
+      "northRuins"
+    ],
     "soldBy": []
   },
   {
@@ -7783,6 +8943,20 @@
     "key": "TrophyBlob_Morkhalla",
     "made": false,
     "name": "Pulp Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KaleChipsUncooked",
+    "made": true,
+    "name": "Raw Kale Chips",
     "places": [],
     "soldBy": []
   },
@@ -7970,6 +9144,20 @@
     "key": "FirConeFrost",
     "made": false,
     "name": "Timberwood Cone",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BakedPoteitrUncooked",
+    "made": true,
+    "name": "Unbaked Poteitr",
     "places": [],
     "soldBy": []
   }

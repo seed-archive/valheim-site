@@ -5,6 +5,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { useEffect, useState, type ReactNode } from "react";
@@ -16,10 +17,13 @@ import { beaten, measured, score } from "@/lib/valheim/score";
 import {
   ABOUT,
   BIOMES,
+  BONUS,
   ISLAND_FLAGS,
+  islandFlag,
   NEED_OF,
   NEEDS,
   NEUTRAL,
+  PRESENT,
   REACH,
   STRIP_WIDTH,
   YES_NO,
@@ -31,18 +35,14 @@ import {
 // the score, the start island, then each biome in the run's order with its
 // boss on the strip, its trader, the generator's measures of it and a verdict.
 
-// The start island: the Meadows and Eikthyr are its base; every other biome
-// and boss on it is a bonus, the Elder too (missing him is a pity, not a
-// fault).
+// The start island, one row a biome with its boss's altar (the owner,
+// 2026-11-19): the Meadows and the Black Forest are required, the Swamp and
+// the Mountain bonuses; the best seed holds all four and their altars.
 const ISLAND = [
-  { key: "meadows", biome: true, base: true },
-  { key: "blackForest", biome: true, base: false },
-  { key: "swamp", biome: true, base: false },
-  { key: "mountain", biome: true, base: false },
-  { key: "eikthyr", biome: false, base: true },
-  { key: "theElder", biome: false, base: false },
-  { key: "bonemass", biome: false, base: false },
-  { key: "moder", biome: false, base: false },
+  { biome: "meadows", boss: "eikthyr", required: true },
+  { biome: "blackForest", boss: "theElder", required: true },
+  { biome: "swamp", boss: "bonemass", required: false },
+  { biome: "mountain", boss: "moder", required: false },
 ] as const;
 
 // Colours against the scan (the owner, 2026-11-17): green in the best 10 % of
@@ -51,13 +51,6 @@ const GREEN_FROM = 0.9;
 const RED_BELOW = 0.5;
 const colour = (share: number | null) =>
   share === null ? "text.secondary" : share >= GREEN_FROM ? "success.main" : share < RED_BELOW ? "error.main" : "text.secondary";
-
-// A distance under a kilometre is shown in metres (our own choice).
-const METRES_BELOW = 1000;
-
-// A count that is of possible places, not of things standing (the
-// Abomination rolls in them, `walkthrough.md`).
-const POSSIBLE = ["region.bonemass.abominationZones"];
 
 // The values every label may fill: the reaches and the needs.
 const LABEL_VALUES = { ...REACH, ...NEEDS };
@@ -73,13 +66,9 @@ function Row(props: { label: ReactNode; value: ReactNode; color: string }) {
   );
 }
 
-export function StripReport(props: { measures: SeedMeasures | null; found: Found[] | null }) {
+export function StripReport(props: { measures: SeedMeasures | null; complete: boolean; found: Found[] | null }) {
   const intl = useIntl();
   const km = (m: number) => intl.formatNumber(Math.abs(m) / 1000, { maximumFractionDigits: 1 });
-  const distance = (m: number) =>
-    m < METRES_BELOW
-      ? intl.formatMessage({ id: "pages.seedRating.value.m" }, { m: Math.round(m) })
-      : intl.formatMessage({ id: "pages.seedRating.value.km" }, { km: km(m) });
   const byKey = new Map((props.found ?? []).map((f) => [f.key, f]));
   const m = props.measures;
   const v = (path: string) => (m ? measured(m, path) : undefined);
@@ -123,14 +112,18 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
     if (!m) {
       return <FormattedMessage id="pages.seedRating.strip.searching" />;
     }
+    if (PRESENT.includes(meas[0])) {
+      if (x === undefined && !props.complete) {
+        return <FormattedMessage id="pages.seedRating.strip.searching" />;
+      }
+      return <FormattedMessage id={x !== undefined ? "pages.seedRating.value.yes" : "pages.seedRating.value.no"} />;
+    }
     if (x === undefined) {
-      return <FormattedMessage id="pages.seedRating.strip.none" />;
+      // Not yet measured (the deep measures come seconds later) is not "none".
+      return <FormattedMessage id={props.complete ? "pages.seedRating.strip.none" : "pages.seedRating.strip.searching"} />;
     }
     if (YES_NO.includes(meas[0])) {
       return <FormattedMessage id={x ? "pages.seedRating.value.yes" : "pages.seedRating.value.no"} />;
-    }
-    if (POSSIBLE.includes(meas[0])) {
-      return <FormattedMessage id="pages.seedRating.value.possible" values={{ n: x }} />;
     }
     if (ABOUT.includes(meas[0])) {
       return (
@@ -140,20 +133,19 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
         />
       );
     }
-    // The nearest place that can give a Dvergr Extractor, with its building.
-    const kind = meas[0] === "around.theQueen.extractorM" ? v("around.theQueen.extractorKind") : undefined;
-    if (kind !== undefined) {
-      return intl.formatMessage(
-        { id: "pages.seedRating.value.building" },
-        { distance: distance(x), building: intl.formatMessage({ id: `pages.seedRating.extractor.${kind}` }) },
-      );
-    }
-    return meas[1] ? distance(x) : intl.formatNumber(x);
+    // No distances but a boss's altar against the strip (the owner,
+    // 2026-11-19): every other row is a count or a yes or no.
+    return intl.formatNumber(x);
   };
   const tint = (meas: Measure) => {
+    if (PRESENT.includes(meas[0])) {
+      return m && (props.complete || v(meas[0]) !== undefined) ? (v(meas[0]) !== undefined ? "success.main" : "error.main") : "text.secondary";
+    }
+    // Yes green; no red when the run needs it, grey when it is a bonus.
     if (YES_NO.includes(meas[0])) {
       const x = v(meas[0]);
-      return x === undefined || (!x && ISLAND_FLAGS.includes(meas[0])) ? "text.secondary" : x ? "success.main" : "error.main";
+      const bonus = ISLAND_FLAGS.includes(meas[0]) || BONUS.includes(meas[0]);
+      return x === undefined || (!x && bonus) ? "text.secondary" : x ? "success.main" : "error.main";
     }
     if (NEUTRAL.includes(meas[0])) {
       return "text.secondary";
@@ -186,7 +178,7 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
       }
     }
     if (biome === "swamp" && v("region.bonemass.fireHole") !== undefined) {
-      if (v("region.bonemass.bogWitch") === 0) {
+      if (byKey.get("bogWitch") && !byKey.get("bogWitch")?.inStrip) {
         say("witchFar");
       }
       say(v("region.bonemass.fireHole") ? "holesYes" : "holesNo");
@@ -203,6 +195,9 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
         totems,
         need: NEEDS.totems,
       });
+    }
+    if (biome === "mistlands" && v("region.theQueen.enoughFragments") === 0) {
+      say("fragmentsSecond");
     }
     // The parts below most seeds; a joint radius and a yes or no speak for
     // themselves.
@@ -244,20 +239,42 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
       </Typography>
       {m ? (
         <Table size="small">
+          <TableHead>
+            <TableRow>
+              <TableCell>
+                <FormattedMessage id="pages.seedRating.island.biome" />
+              </TableCell>
+              <TableCell>
+                <FormattedMessage id="pages.seedRating.island.onIsland" />
+              </TableCell>
+              <TableCell>
+                <FormattedMessage id="pages.seedRating.island.altar" />
+              </TableCell>
+            </TableRow>
+          </TableHead>
           <TableBody>
             {ISLAND.map((p) => {
-              const on = p.biome ? (m.island.area[p.key] ?? 0) > 0 : Boolean(m.bosses[p.key]?.island);
+              // Present: green. Missing: red when required (the Meadows, the
+              // Black Forest), grey when a bonus (the Swamp, the Mountain).
+              const cell = (on: boolean) => (
+                <TableCell sx={{ color: on ? "success.main" : p.required ? "error.main" : "text.secondary" }}>
+                  <FormattedMessage id={on ? "pages.seedRating.value.yes" : "pages.seedRating.value.no"} />
+                </TableCell>
+              );
               return (
-                <Row
-                  key={p.key}
-                  label={<FormattedMessage id={p.biome ? `pages.map.biomes.${p.key}` : `pages.map.places.${p.key}`} />}
-                  value={
-                    <FormattedMessage
-                      id={on ? (p.base ? "pages.seedRating.island.on" : "pages.seedRating.island.bonus") : "pages.seedRating.island.off"}
-                    />
-                  }
-                  color={on ? "success.main" : p.base ? "error.main" : "text.secondary"}
-                />
+                <TableRow key={p.biome}>
+                  <TableCell>
+                    <FormattedMessage id={`pages.map.biomes.${p.biome}`} />
+                    {p.required ? null : (
+                      <Typography component="span" variant="body2" color="text.secondary">
+                        {" "}
+                        <FormattedMessage id="pages.seedRating.island.optional" />
+                      </Typography>
+                    )}
+                  </TableCell>
+                  {cell((m.island.area[p.biome] ?? 0) > 0)}
+                  {cell(Boolean(m.bosses[p.boss]?.island))}
+                </TableRow>
               );
             })}
           </TableBody>
@@ -271,6 +288,8 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
         const onIsland = boss === "eikthyr" && Boolean(m?.bosses[boss]?.island);
         const bossAt = onIsland ? { ...where(boss, true), color: "success.main" } : where(boss, true);
         const traderAt = trader ? where(trader, false) : null;
+        // Not for the Meadows, which always hold the start.
+        const island = biome === "meadows" ? null : islandFlag(biome, boss);
         const said = verdict(biome, boss, measures);
         return (
           <Box key={biome}>
@@ -283,6 +302,13 @@ export function StripReport(props: { measures: SeedMeasures | null; found: Found
                 <Row label={<FormattedMessage id={`pages.map.places.${boss}`} />} value={bossAt.text} color={bossAt.color} />
                 {trader && traderAt ? (
                   <Row label={<FormattedMessage id={`pages.map.places.${trader}`} />} value={traderAt.text} color={traderAt.color} />
+                ) : null}
+                {island ? (
+                  <Row
+                    label={<FormattedMessage id="pages.seedRating.island.row" />}
+                    value={value([island, false])}
+                    color={tint([island, false])}
+                  />
                 ) : null}
                 {measures.map((meas) => (
                   <Row

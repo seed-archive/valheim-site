@@ -8,6 +8,7 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { SellNote } from "@/components/catalog/SellNote";
 import { serverFormat } from "@/lib/i18n/server";
 import { recipeHref } from "@/lib/valheim/recipes";
+import { RUN_ORDER } from "@/lib/valheim/run-order";
 import crafting from "@/lib/valheim/crafting.json";
 
 // What the crafting page and the build pieces page share: the biomes in the
@@ -19,17 +20,7 @@ const t = (id: string, values?: Record<string, string | number>) =>
 // The biomes in the run's order: an item belongs to the earliest biome where
 // all it takes can be had (the Valheim generator's home biome). What has no
 // home biome (a tool that takes nothing, a piece of a rare find) comes last.
-export const BIOMES = [
-  "meadows",
-  "blackForest",
-  "swamp",
-  "mountain",
-  "plains",
-  "mistlands",
-  "ashlands",
-  "deepNorth",
-  "elsewhere",
-];
+export const BIOMES = [...RUN_ORDER, "elsewhere"];
 
 // A biome's slug as the guides use it (`blackForest` → `black-forest`).
 export const anchor = (biome: string) =>

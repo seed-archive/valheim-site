@@ -577,7 +577,7 @@
   },
   {
     "again": 15.0,
-    "biome": "swamp",
+    "biome": "ocean",
     "eitr": 0.0,
     "feast": false,
     "health": 80.0,
@@ -689,7 +689,7 @@
   },
   {
     "again": 12.5,
-    "biome": "swamp",
+    "biome": "ocean",
     "eitr": 0.0,
     "feast": false,
     "health": 70.0,
@@ -737,7 +737,7 @@
   },
   {
     "again": 25.0,
-    "biome": "swamp",
+    "biome": "ocean",
     "eitr": 0.0,
     "feast": true,
     "health": 45.0,

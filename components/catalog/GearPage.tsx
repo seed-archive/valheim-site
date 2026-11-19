@@ -98,7 +98,7 @@ type Step = {
   };
   resources: { key: string; name: string; amount: number }[];
 };
-// What an item of a tool line gives over the one before it.
+// What an item of its line gives over the one before it.
 type Over = { key: string; name: string; tier: number; damage: Record<string, number> };
 
 // A kind's word: the slot or the skill, or the group for the rest (food,
@@ -165,37 +165,53 @@ function gains(s: Step) {
   ].join(", ");
 }
 
-// Each upgrade step of an item, one block a step: the quality and station
-// level, what it adds, and its materials.
+// An item's upgrades, short enough for a phone (the owner, 2026-11-19): what
+// a step adds is the same at every step (the Valheim generator's gains), so
+// it stands once; then each step with only its station level and materials.
 function upgrades(g: Gear) {
-  return (g.upgrades as Step[]).map((s) => (
-    <Box key={s.quality} sx={{ mb: 1 }}>
-      <Typography variant="body2" component="span" sx={{ display: "block", fontWeight: 500 }}>
-        {t("upgrade.step", { quality: s.quality, station: g.station ?? t("noStation"), level: s.level })}
-      </Typography>
-      <Typography variant="body2" component="span" sx={{ display: "block" }}>
-        {gains(s)}
-      </Typography>
-      <Typography variant="body2" component="span" color="text.secondary" sx={{ display: "block" }}>
-        {s.resources.map((r) => (r.amount > 1 ? `${r.name} × ${r.amount}` : r.name)).join(", ")}
-      </Typography>
-    </Box>
-  ));
+  const steps = g.upgrades as Step[];
+  if (steps.length === 0) {
+    return null;
+  }
+  const each = gains(steps[0]);
+  return (
+    <>
+      {each && (
+        <Typography variant="body2" component="span" sx={{ display: "block", mb: 0.5 }}>
+          {t("upgrade.each", { gains: each })}
+        </Typography>
+      )}
+      {steps.map((s) => (
+        <Typography key={s.quality} variant="body2" component="span" sx={{ display: "block" }}>
+          <Box component="span" sx={{ fontWeight: 500 }}>
+            {t("upgrade.step", { quality: s.quality, level: s.level })}
+          </Box>{" "}
+          <Box component="span" sx={{ color: "text.secondary" }}>
+            {s.resources.map((r) => (r.amount > 1 ? `${r.name} × ${r.amount}` : r.name)).join(", ")}
+          </Box>
+        </Typography>
+      ))}
+    </>
+  );
 }
 
-// What an item of a tool line gives over the one before it: the tool tier and
-// each damage type that changes.
+// What an item of its line (a tool line, or its kind of weapon) gives over the
+// one before it: the tool tier and each damage type that changes. An item
+// that changes no number says nothing.
 function overLine(g: Gear) {
   const o = g.over as Over | null;
   if (!o) {
     return null;
   }
   const parts = [
-    ...(o.tier ? [t("over.tier", { value: o.tier })] : []),
+    ...(o.tier ? [t("over.tier", { value: signed(o.tier) })] : []),
     ...Object.entries(o.damage).map(([k, v]) =>
       t("over.damage", { type: t(`damage.${k}`), value: signed(v) }),
     ),
   ];
+  if (parts.length === 0) {
+    return null;
+  }
   return (
     <Box component="span" sx={{ display: "block", mt: 1 }}>
       {t("over.name", { name: o.name })} {parts.join(", ")}
@@ -268,7 +284,9 @@ function gearTable(list: Gear[]) {
             <TableCell sx={{ width: { md: "17%" } }}>{t("head.stats")}</TableCell>
             <TableCell sx={{ width: { md: "12%" } }}>{t("head.station")}</TableCell>
             <TableCell sx={{ width: { md: "21%" } }}>{t("head.materials")}</TableCell>
-            <TableCell>{t("head.upgrades")}</TableCell>
+            {/* On a phone the table scrolls sideways; the upgrades keep a
+                readable width rather than a column of single words. */}
+            <TableCell sx={{ minWidth: { xs: 240, md: "auto" } }}>{t("head.upgrades")}</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

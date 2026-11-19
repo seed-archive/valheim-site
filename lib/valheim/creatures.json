@@ -343,6 +343,10 @@
           {
             "key": "PiquantPieUncooked",
             "name": "Uncooked Piquant Pie"
+          },
+          {
+            "key": "CookedAsksvinMeat",
+            "name": "Cooked Asksvin Tail"
           }
         ]
       }
@@ -516,6 +520,10 @@
           {
             "key": "SealSoup",
             "name": "Seal Meat Soup"
+          },
+          {
+            "key": "CookedSealBlubber",
+            "name": "Cooked Seal Blubber"
           }
         ]
       }
@@ -993,7 +1001,12 @@
         "min": 2,
         "name": "Bear Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "CookedBjornMeat",
+            "name": "Cooked Bear Meat"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -1255,7 +1268,12 @@
         "min": 2,
         "name": "Bear Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "CookedBjornMeat",
+            "name": "Cooked Bear Meat"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -1616,6 +1634,10 @@
           {
             "key": "TurnipStew",
             "name": "Turnip Stew"
+          },
+          {
+            "key": "CookedMeat",
+            "name": "Cooked Boar Meat"
           }
         ]
       },
@@ -2004,7 +2026,12 @@
         "min": 6,
         "name": "Bonemaw Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "CookedBoneMawSerpentMeat",
+            "name": "Cooked Bonemaw Meat"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -3060,6 +3087,10 @@
           {
             "key": "HoneyGlazedChickenUncooked",
             "name": "Uncooked Honey Glazed Chicken"
+          },
+          {
+            "key": "CookedChickenMeat",
+            "name": "Cooked Chicken Meat"
           }
         ]
       },
@@ -3370,7 +3401,12 @@
         "min": 2,
         "name": "Deer Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "CookedDeerMeat",
+            "name": "Cooked Deer Meat"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -4150,7 +4186,12 @@
         "min": 1,
         "name": "Soft Tissue",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "Eitr",
+            "name": "Refined Eitr"
+          }
+        ]
       },
       {
         "chance": 0.5,
@@ -4268,7 +4309,12 @@
         "min": 1,
         "name": "Soft Tissue",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "Eitr",
+            "name": "Refined Eitr"
+          }
+        ]
       },
       {
         "chance": 0.5,
@@ -4420,7 +4466,12 @@
         "min": 1,
         "name": "Soft Tissue",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "Eitr",
+            "name": "Refined Eitr"
+          }
+        ]
       },
       {
         "chance": 0.5,
@@ -5437,7 +5488,12 @@
         "min": 1,
         "name": "Black Metal Scrap",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "BlackMetal",
+            "name": "Black Metal"
+          }
+        ]
       },
       {
         "chance": 0.10000000149011612,
@@ -5637,7 +5693,12 @@
         "min": 1,
         "name": "Black Metal Scrap",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "BlackMetal",
+            "name": "Black Metal"
+          }
+        ]
       },
       {
         "chance": 0.10000000149011612,
@@ -5801,7 +5862,12 @@
         "min": 3,
         "name": "Black Metal Scrap",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "BlackMetal",
+            "name": "Black Metal"
+          }
+        ]
       },
       {
         "chance": 0.10000000149011612,
@@ -5962,7 +6028,12 @@
         "min": 1,
         "name": "Black Metal Scrap",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "BlackMetal",
+            "name": "Black Metal"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -6687,6 +6758,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -7165,6 +7240,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -7682,6 +7761,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -8076,6 +8159,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -8506,6 +8593,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -8993,6 +9084,10 @@
           {
             "key": "MisthareSupremeUncooked",
             "name": "Uncooked Misthare Supreme"
+          },
+          {
+            "key": "CookedHareMeat",
+            "name": "Cooked Hare Meat"
           }
         ]
       },
@@ -9163,6 +9258,10 @@
           {
             "key": "HoneyGlazedChickenUncooked",
             "name": "Uncooked Honey Glazed Chicken"
+          },
+          {
+            "key": "CookedChickenMeat",
+            "name": "Cooked Chicken Meat"
           }
         ]
       },
@@ -10653,6 +10752,10 @@
           {
             "key": "TurretBolt",
             "name": "Black Metal Missile"
+          },
+          {
+            "key": "Coal",
+            "name": "Coal"
           }
         ]
       },
@@ -11191,6 +11294,10 @@
           {
             "key": "MeatPlatterUncooked",
             "name": "Uncooked Meat Platter"
+          },
+          {
+            "key": "CookedLoxMeat",
+            "name": "Cooked Lox Meat"
           }
         ]
       },
@@ -11464,6 +11571,10 @@
           {
             "key": "SmokedMooseMeat",
             "name": "Smoked Moose Meat"
+          },
+          {
+            "key": "CookedMooseMeat",
+            "name": "Cooked Moose Meat"
           }
         ]
       },
@@ -12012,6 +12123,10 @@
           {
             "key": "MinceMeatSauce",
             "name": "Minced Meat Sauce"
+          },
+          {
+            "key": "NeckTailGrilled",
+            "name": "Grilled Neck Tail"
           }
         ]
       },
@@ -12154,7 +12269,12 @@
         "min": 1,
         "name": "Scrap Iron",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "Iron",
+            "name": "Iron"
+          }
+        ]
       },
       {
         "chance": 0.10000000149011612,
@@ -12561,6 +12681,10 @@
           {
             "key": "SealSoup",
             "name": "Seal Meat Soup"
+          },
+          {
+            "key": "CookedSealBlubber",
+            "name": "Cooked Seal Blubber"
           }
         ]
       }
@@ -12676,6 +12800,10 @@
           {
             "key": "SeekerAspic",
             "name": "Seeker Aspic"
+          },
+          {
+            "key": "CookedBugMeat",
+            "name": "Cooked Seeker Meat"
           }
         ]
       },
@@ -13054,6 +13182,10 @@
           {
             "key": "SeekerAspic",
             "name": "Seeker Aspic"
+          },
+          {
+            "key": "CookedBugMeat",
+            "name": "Cooked Seeker Meat"
           }
         ]
       },
@@ -13264,7 +13396,7 @@
     "weaponSets": []
   },
   {
-    "biome": "swamp",
+    "biome": "ocean",
     "boss": false,
     "chops": null,
     "drops": [
@@ -13293,7 +13425,12 @@
         "min": 6,
         "name": "Serpent Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "SerpentMeatCooked",
+            "name": "Cooked Serpent Meat"
+          }
+        ]
       },
       {
         "chance": 1.0,
@@ -18011,7 +18148,12 @@
         "min": 2,
         "name": "Bear Meat",
         "onePerPlayer": false,
-        "usedIn": []
+        "usedIn": [
+          {
+            "key": "CookedBjornMeat",
+            "name": "Cooked Bear Meat"
+          }
+        ]
       },
       {
         "chance": 0.800000011920929,
@@ -18240,6 +18382,10 @@
           {
             "key": "MashedMeat",
             "name": "Mashed Meat"
+          },
+          {
+            "key": "CookedVoltureMeat",
+            "name": "Cooked Volture Meat"
           }
         ]
       },
@@ -18466,6 +18612,10 @@
           {
             "key": "WolfMeatSkewer",
             "name": "Wolf Skewer"
+          },
+          {
+            "key": "CookedWolfMeat",
+            "name": "Cooked Wolf Meat"
           }
         ]
       },

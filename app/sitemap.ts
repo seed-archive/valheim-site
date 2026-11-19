@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { CATALOG, GUIDES } from "@/lib/guides";
+import { CATALOG, GUIDE_GROUPS, GUIDES } from "@/lib/guides";
 import { BASE_PATH } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/bugs",
     "/catalog",
     "/guides",
+    ...GUIDE_GROUPS.flatMap((group) => (group.href ? [group.href] : [])),
     ...[...CATALOG, ...GUIDES].map((page) => page.href),
   ].map((path) => ({
     url: `${base}${path}`,

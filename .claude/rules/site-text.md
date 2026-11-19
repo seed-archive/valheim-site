@@ -7,8 +7,15 @@ paths:
 
 # Site text
 
-The rules of text shared with the No Man's Sky site, with Valheim's own where the games differ. The one question the
-section answers is not set yet; it is the owner's, when the first pages are written.
+The rules of text shared with the No Man's Sky site, with Valheim's own where the games differ.
+
+**The one question** (the owner, 2026-11-19): the section answers only "how do I reach the end of the game
+fastest?". Every other question on a page derives from it; a number, table or chart that does not help answer it
+does not go on the page.
+
+**Charts** (the owner, 2026-11-19): a chart compares two or more parameters of one thing (the 1st, 3rd and 4th
+Charred Fortress from Fader's altar), never different things on one chart (fortresses with Morgen holes). One
+value is a sentence of text; several unrelated values are a table.
 
 ## A page
 
@@ -24,6 +31,21 @@ section answers is not set yet; it is the owner's, when the first pages are writ
 - Every claim is proven in the Valheim generator's notes. A page states what is known and is silent on the rest: never
   "not researched yet". What only the game can answer stays in the generator's notes and off the page.
 - A page gives the player's tip briefly; the mechanism and the data behind it stay in the generator's notes.
+- A guide's description is its `fact`: the answer of its bold question, 160 characters or fewer, without the game's
+  name (`lib/content.ts` → `readGuide`; from the No Man's Sky section, 2026-11-20).
+- A guide's sections are the questions of `docs/guide-questions.md`, each a heading in the player's words, answered in
+  a line or two, then its table: how often (a share of seeds) or how far (a median and its middle half).
+- A guide ends with a sentence that links the next guide of its section (`docs/guides.md` → The story: A good start →
+  Speedrun → Challenges → Reverse run → Meadows … → Deep North, which leads back to the Challenges). It links in its
+  text to the guides it relies on, the tool that acts on it, and the catalogue list it describes. Every guide is
+  reached from at least two other pages (from the No Man's Sky section, 2026-11-20).
+- **The strip** (the owner, 2026-11-20) is the speedrun's idea: the run goes from the middle south, then north, and
+  keeps to one imaginary line through the start so as not to lose time, leaving it only when the boat must round an
+  island. It is explained once, on the Speedrun guide (`#what-is-the-strip`); every other page that uses it links the
+  word "strip" there. A player who is not running goes wherever he likes, so a guide never treats the strip as the
+  only way.
+- A way of playing other than the speedrun is a footnote, a blockquote opening with the mode in bold
+  (`> **With no map** …`), never a section of its own (`docs/guides.md` → The story).
 
 ## Header and home page
 
@@ -41,6 +63,7 @@ The shared rules (the portal's D15 and `seed-archive/docs/seo.md`, the owner, 20
   "See also" or "See more" rows.
 - No page links to itself in its own text; the header and the footer are the only exception.
 - No links to Reddit (they leak rank). External links only where a page cites a rule.
+- The rest of the rules of links are the portal's `docs/seo.md`; this section's link map is `docs/seo.md` → The links.
 
 ## Words
 

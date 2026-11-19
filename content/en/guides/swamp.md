@@ -1,42 +1,87 @@
 # Swamp
 
-**What does the Swamp give?** Iron, dug from the muck piles of the Sunken Crypts that the Elder's key opens, and Bonemass, whose wishbone finds the Mountain's silver.
+**How do I get through the Swamp fast?** Sail to a big Swamp, not a narrow band along the shore, get twenty iron from a Sunken Crypt and smelt it right there, find Bonemass, and take his wishbone, which finds the Mountain's silver.
 
-## Getting there
+## How do I reach the Swamp?
 
-The Swamp is low, wet ground under black trees, often a short sail from the Black Forest. Bring a [poison resistance mead](/catalog/meads): it is brewed in the Black Forest already, and every blob and leech here poisons. The [seed map](/tools/map) shows the swamps nearest your start and the crypts in them.
+Most likely by boat: the Swamp is seldom on the start island. Bring a [poison resistance mead](/catalog/meads), brewed in the Black Forest already: every blob and leech here poisons.
 
-## Iron from the Sunken Crypts
+| Bonemass's Swamp | How often |
+|---|---|
+| On the start island | {{islandSwamp}}% of seeds |
+| On the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripBonemass}}% of seeds |
 
-A Sunken Crypt's door opens only with the swamp key the Elder drops, which is why he comes first. Inside, the muck piles give iron scrap to a pickaxe, the antler one is enough, and the chests and the floor hold withered bones. Smelt the scrap into iron at the smelter; the stone portal is far ahead, so ore stays where it was dug and travels by boat or cart. What each crypt holds is in [Caves and dungeons](/catalog/dungeons).
-
-## What to make
-
-Iron makes the run's turn: a forge raised a level, the iron mace or sledge for Bonemass, and the iron set of [armour](/catalog/armour). The [weapons](/catalog/weapons) and armour pages compare each in its biome, and the [craft tree](/tools/craft-tree) totals the iron for everything you pick.
-
-## Bonemass
-
-His altar takes {{witheredBones}} withered bones, all from the crypts. He is weak to blunt and frost and shrugs off pierce, so leave the bow: an [iron mace](/catalog/weapons) is the straight fight. Players who would rather not trade blows shoot frost arrows from a stone tower or a tall tree. Both ways, and his numbers, are in [How to kill each boss](/guides/bosses#bonemass).
-
-His wishbone, worn, pings when hidden things are near: that is how a run finds the silver buried in the Mountain. His trophy on its stone at the start lets you block without tiring and takes the edge off blows: see [Trophies](/catalog/trophies).
-
-## How often a seed has it
-
-Build the iron smelter by the crypts: fire holes there give its cores and its coal. The Abomination's roots make the root harnesk, which saves you from the Deathsquito in the Plains.
-
-Everything is counted in Bonemass's own Swamp: a player sweeping it finds what it holds, and need not sail to another.
-
-| What, in Bonemass's own Swamp | How often | As a rule |
+| From the start | As a rule | Middle half of seeds |
 |---|---|---|
-| The Bog Witch | {{swampWitch}}% of seeds | — |
-| Sunken Crypts | {{swampCrypt}}% of seeds | {{swampCrypts}} |
-| Surtlings' fire holes | {{swampHole}}% of seeds | {{swampHoles}} |
-| Possible places for the Abomination to rise | {{swampMedian}}% of seeds | {{swampMedianZones}} |
+| Bonemass's altar, m | {{bonemassM}} | {{bonemassMLow}}–{{bonemassMHigh}} |
 
-The Abomination is not fixed by the seed: each zone of deep Swamp you enter fresh has a {{abominationRoll}}% chance to raise one, and a zone you stand in rolls again only much later. So sweep new ground round the crypts rather than wait: {{sweepZones}} fresh zones give about {{abominationSweep}}%. [Rate your seed](/tools/how-good-is-my-seed) to see its own.
+## Where do I look for the Sunken Crypts?
+
+In a big Swamp. A Sunken Crypt stands only in the Swamp's deep middle, so a narrow Swamp along the shore seldom holds one, and a big one is hard to find. The Elder's swamp key opens its door.
+
+| In Bonemass's own Swamp | How often |
+|---|---|
+| A Sunken Crypt | {{swampCrypt}}% of seeds |
+
+| In Bonemass's own Swamp | As a rule | Middle half of seeds |
+|---|---|---|
+| Sunken Crypts | {{swampCrypts}} | {{swampCryptsLow}}–{{swampCryptsHigh}} |
+| Iron scrap in the crypts' muck piles, about | {{swampIron}} | {{swampIronLow}}–{{swampIronHigh}} |
+
+## How do I get the iron?
+
+Go into the first room at least: dig iron there with the antler pickaxe anyway, and hope for a chest with iron. Twenty iron and the Vegvísir to Bonemass are all a run needs; with luck the crypts end there, and without it you dig and look for the Vegvísir and get your iron meanwhile.
+
+| In a crypt's chest | How often |
+|---|---|
+| Iron scrap, {{cryptIronMin}} to {{cryptIronMax}} | {{cryptChestIron}}% of chests |
+
+## Where do I smelt it?
+
+Right by the crypt: a new smelter and a forge on the Swamp, best by a surtlings' fire hole, which gives both the fuel and the cores. Forge the iron on the spot, most likely into the [iron mace](/catalog/weapons) for Bonemass ({{ironMace}} iron). Without a fire hole and without luck, it is the slow way: a cart of iron to the shore, the iron onto the boat, and home to the first base to smelt.
+
+| In Bonemass's own Swamp | How often |
+|---|---|
+| A surtlings' fire hole | {{swampHole}}% of seeds |
+
+| In Bonemass's own Swamp | As a rule | Middle half of seeds |
+|---|---|---|
+| Surtlings' fire holes | {{swampHoles}} | {{swampHolesLow}}–{{swampHolesHigh}} |
+
+## How do I get the roots for the root harness?
+
+From {{harnessTwo}} Abominations: the harness saves you from the Deathsquito on the Plains, so they are worth finding. Speedrunners skip it and outrun the Deathsquito, which is hard. An Abomination rises from the deep Swamp as you first walk into it, and more in its bog patches: sweep fresh ground round his altar rather than wait where you stand.
+
+| On one sweep of his Swamp | How often |
+|---|---|
+| {{harnessTwo}} Abominations, for the root harness | {{swampHarness}}% of seeds |
+| {{harnessFour}} Abominations, for the harness and the leggings | {{swampHarnessLegs}}% of seeds |
+
+| On one sweep of his Swamp | As a rule | Middle half of seeds |
+|---|---|---|
+| Abominations | {{swampAbominations}} | {{swampAbominationsLow}}–{{swampAbominationsHigh}} |
+
+## How do I find Bonemass?
+
+His altar takes {{witheredBones}} withered bones, from the crypts; his Vegvísir stands in the Swamp's ruins and inside {{vegvisirCrypt}}% of the Sunken Crypts. Killing him is the lesser question: an iron mace, or the speedrunner's way, a shelf built and Bonemass hit from under it ([How to kill each boss](/catalog/bosses#bonemass)). His wishbone, worn, beeps like a metal detector near buried silver, and near the Swamp's buried iron if you are short.
+
+## Where is the Bog Witch?
+
+Often by Bonemass on a big Swamp. No one looks for her, except for the squirrel hamstrings of the Ratatosk mead: [What to buy from the traders](/catalog/traders).
+
+| The Bog Witch | How often |
+|---|---|
+| In Bonemass's own Swamp | {{swampWitch}}% of seeds |
+| On the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripBogWitch}}% of seeds |
+
+> **Speedrunners** stop at the first chest with iron, smelt on the Swamp, kill Bonemass from under a shelf they build over themselves, and skip the root harness: they outrun the Deathsquito on the Plains instead.
+
+> **With no map**, the Swamp is where players first get lost: build wooden footpaths across its water and hoe a road through it, so there is always a line to follow back.
+
+> **With no portals**, the iron goes home by ship, or by cart over hoed ground; stockpile it early, the later biomes need it.
 
 ## Can you skip it?
 
-Yes, at a price. Without the wishbone, silver means digging the Mountain blind, and without iron the forge stays where bronze left it. A run skips the Swamp only on a seed whose silver lies in plain sight.
+At a price: without the wishbone, silver means digging the Mountain blind and hoping Moder's shots dig it out, a poor hope; without iron the forge stays where bronze left it.
 
-Next, the cold: the [Mountain](/guides/mountain).
+Next, the cold and the silver: the [Mountain](/guides/mountain).

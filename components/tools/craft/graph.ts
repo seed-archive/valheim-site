@@ -459,11 +459,10 @@ export function closure(key: string, way: "deps" | "dependents") {
   return out;
 }
 
-// What is on at first: every target and everything it needs at its first
-// quality; the extensions only higher qualities need stay off.
-// What is on at first: the generator's short list (the workbench, the hammer,
-// the flint spear, the spits) and everything it needs; the rest is the
-// visitor's to switch on (the owner, 2026-11-17).
+// What is on at first: the Valheim generator's short list (the campfire, the
+// spits, the torch, the club, the workbench and the hammer) and everything it
+// needs at its first quality; the rest is the visitor's to switch on (the
+// owner, 2026-11-19).
 export const DEFAULT_ON = new Set(
   tree.onByDefault.flatMap((t) => [t, ...closure(t, "deps")]),
 );
@@ -491,6 +490,11 @@ export function maxQualityWith(key: string, on: Set<string>) {
 export function rawTotals(on: Iterable<string>, quality: Map<string, number>) {
   const raw = new Map<string, number>();
   const add = (key: string, qty: number) => {
+    // A resource only the upgrades take (the club's bone fragments) costs
+    // nothing at the first quality.
+    if (qty <= 0) {
+      return;
+    }
     const recipe = recipes[key];
     const conv = converters[key];
     if (recipe) {

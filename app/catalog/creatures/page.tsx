@@ -25,6 +25,7 @@ import fish from "@/lib/valheim/fish.json";
 import materials from "@/lib/valheim/materials.json";
 import places from "@/lib/valheim/places-spawners.json";
 import { placeAnchor } from "@/lib/valheim/places";
+import { RUN_ORDER } from "@/lib/valheim/run-order";
 import { mapHref } from "@/lib/valheim/switches";
 
 export const metadata: Metadata = {
@@ -47,20 +48,9 @@ const materialKeys = new Set(materials.map((m) => m.key));
 // A bait with a recipe links to it; the plain bait is bought from Haldor.
 const crafted = new Set(crafting.gear.map((g) => g.key));
 
-// The biomes in the game's order, then the creatures that come only from
+// The biomes in the run's order, then the creatures that come only from
 // spawners inside places (dungeons, camps, nests).
-const GROUPS = [
-  "meadows",
-  "blackForest",
-  "swamp",
-  "mountain",
-  "plains",
-  "mistlands",
-  "ashlands",
-  "deepNorth",
-  "ocean",
-  "places",
-];
+const GROUPS = [...RUN_ORDER, "places"];
 
 // Where a link to the spawners opens: the world's centre, at the zoom from
 // which the generator draws spawner pins (four metres a pixel, the map's

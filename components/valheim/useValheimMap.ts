@@ -18,7 +18,7 @@ import {
   type Place,
 } from "@/lib/valheim/generator";
 import { placeIcon } from "@/lib/valheim/icons";
-import { mapPalette, overlays } from "@/lib/valheim/palette";
+import { CAMP_BUILDING, mapPalette, overlays } from "@/lib/valheim/palette";
 import { BIOME_KEYS, compass, type PlaceGroup } from "@/lib/valheim/places";
 
 // Nothing can be built this near the start: the start location's no-build
@@ -39,6 +39,10 @@ const KICKER_COLOUR: Record<PlaceGroup, string | undefined> = {
 // The kinds of place whose card offers its loot: the dungeons and the
 // resource places (the camps, the tar pits, the drake nests).
 const LOOT_GROUPS = ["dungeons", "resources"];
+
+// The camps the Valheim generator lays out room by room: the Fuling villages,
+// the Draugr villages and the farms (whose rooms may hold beehives).
+const CAMP_KEYS = Object.keys(CAMP_BUILDING);
 
 // A picture's size in metres and where the place's origin sits in it, from its
 // left and bottom edges (the Valheim generator's renders).
@@ -77,8 +81,12 @@ export function useValheimMap(
     // The nearest altar of each boss and place of each trader: sea on the way.
     nearest: Map<string, number>;
   } | null>(null);
-  // Every Fuling village's rooms as the Valheim generator lays them out.
-  const [camps, setCamps] = useState<{ seed: string; rooms: CampRoom[] } | null>(null);
+  // Every camp's rooms as the Valheim generator lays them out, each with its
+  // camp's kind.
+  const [camps, setCamps] = useState<{
+    seed: string;
+    rooms: (CampRoom & { camp: string })[];
+  } | null>(null);
   const palette = useMemo(() => mapPalette(), []);
   const layers = useMemo(() => overlays(), []);
 
@@ -111,13 +119,19 @@ export function useValheimMap(
       }
       const places = decodePlaces(raw);
       setPlaced({ seed, places, nearest: new Map() });
+      const campPlaces = places.filter((p) => CAMP_KEYS.includes(p.key));
       Promise.all(
-        places
-          .filter((p) => p.key === "fulingVillage")
-          .map((p) => client.call<Float32Array>("camp", [seed, 0, p.x, p.y])),
+        campPlaces.map((p) =>
+          client.call<Float32Array>("camp", [seed, 0, p.x, p.y]),
+        ),
       ).then((all) => {
         if (asked.current === seed) {
-          setCamps({ seed, rooms: all.flatMap(decodeCamp) });
+          setCamps({
+            seed,
+            rooms: all.flatMap((raw, i) =>
+              decodeCamp(raw).map((r) => ({ ...r, camp: campPlaces[i].key })),
+            ),
+          });
         }
       });
       client.call<Float32Array>("measure", [seed]).then((m) => {
@@ -217,7 +231,8 @@ export function useValheimMap(
   // The altars, the traders' camps, the start and the Forge of Potential as the
   // game builds them, rendered from above by the Valheim generator, laid under
   // their pins at true size; unturned, since a seed does not fix a place's turn.
-  // The Fuling villages, whose rooms the seed does lay out, are drawn room by room.
+  // The Fuling and Draugr villages and the farms, whose rooms the seed does lay
+  // out, are drawn room by room on the buildings layer.
   const ground = useMemo<Ground[]>(() => {
     if (!current) {
       return [];
@@ -235,18 +250,21 @@ export function useValheimMap(
           layer: p.group === "start" ? undefined : p.group,
         };
       });
-    // Each Fuling village room by room, turned as the village lays it out.
+    // Each camp room by room, turned as the camp lays it out.
     const rooms =
-      camps && camps.seed === current.seed && !hidden.has("fulingVillage")
+      camps && camps.seed === current.seed
         ? camps.rooms
-            .filter((r) => ROOMS_EXTENTS[r.prefab])
+            .filter(
+              (r) =>
+                ROOMS_EXTENTS[r.prefab] && !hidden.has(CAMP_BUILDING[r.camp]),
+            )
             .map((r) => ({
               url: `${BASE_PATH}/places/rooms/${r.prefab}.png`,
               x: r.x,
               y: r.y,
               ...span(ROOMS_EXTENTS[r.prefab]),
               angle: r.yaw,
-              layer: "resources",
+              layer: "buildings",
             }))
         : [];
     return [...places, ...rooms];

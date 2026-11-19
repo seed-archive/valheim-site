@@ -18563,7 +18563,7 @@
       "vehicle": null
     },
     {
-      "biome": "swamp",
+      "biome": "ocean",
       "comfort": 0,
       "key": "SerpentMeatCooked",
       "name": "Cooked Serpent Meat",
@@ -18571,7 +18571,7 @@
       "resources": [
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "SerpentMeatCooked",
           "name": "Cooked Serpent Meat",
@@ -20043,7 +20043,7 @@
       "vehicle": null
     },
     {
-      "biome": "swamp",
+      "biome": "ocean",
       "comfort": 0,
       "key": "FeastOceans",
       "name": "Sailor's Bounty",
@@ -20051,7 +20051,7 @@
       "resources": [
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "FeastOceans_Material",
           "name": "Sailor's Bounty",
@@ -20175,7 +20175,7 @@
       "vehicle": null
     },
     {
-      "biome": "swamp",
+      "biome": "ocean",
       "comfort": 0,
       "key": "SerpentStew",
       "name": "Serpent Stew",
@@ -20183,7 +20183,7 @@
       "resources": [
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "SerpentStew",
           "name": "Serpent Stew",
@@ -21778,7 +21778,7 @@
     },
     {
       "amount": 20,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "ammo",
       "key": "FishingBaitOcean",
       "kind": "other",
@@ -21799,7 +21799,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [
             {
               "key": "Serpent",
@@ -25577,7 +25577,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Fish3",
           "name": "Tuna",
@@ -25617,7 +25617,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Fish8",
           "name": "Coral Cod",
@@ -33217,7 +33217,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "consumables",
       "key": "SerpentStew",
       "kind": "other",
@@ -33238,7 +33238,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "SerpentMeatCooked",
           "name": "Cooked Serpent Meat",
@@ -37756,7 +37756,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Fish3",
           "name": "Tuna",
@@ -37796,7 +37796,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Fish8",
           "name": "Coral Cod",
@@ -37913,7 +37913,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "materials",
       "key": "FeastOceans_Material",
       "kind": "other",
@@ -37942,7 +37942,7 @@
         },
         {
           "amount": 2,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "SerpentMeatCooked",
           "name": "Cooked Serpent Meat",
@@ -37950,7 +37950,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "SpiceOceans",
           "name": "Seafarer's Herbs",
@@ -39111,7 +39111,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "other",
       "key": "TrinketChitinSwim",
       "kind": "trinket",
@@ -39124,7 +39124,7 @@
       "resources": [
         {
           "amount": 5,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Chitin",
           "name": "Chitin",
@@ -39132,7 +39132,7 @@
         },
         {
           "amount": 5,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [
             {
               "key": "Serpent",
@@ -39145,7 +39145,7 @@
         },
         {
           "amount": 1,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [
             {
               "key": "Serpent",
@@ -41296,7 +41296,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "shields",
       "key": "ShieldSerpentscale",
       "kind": "shield",
@@ -41325,7 +41325,7 @@
         },
         {
           "amount": 8,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [
             {
               "key": "Serpent",
@@ -42258,7 +42258,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "weapons",
       "key": "SpearChitin",
       "kind": "spear",
@@ -42266,7 +42266,14 @@
       "maxQuality": 1,
       "mead": null,
       "name": "Abyssal Harpoon",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": -45.0
+        },
+        "key": "SpearElderbark",
+        "name": "Ancient Bark Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -42279,7 +42286,7 @@
         },
         {
           "amount": 30,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Chitin",
           "name": "Chitin",
@@ -42318,7 +42325,7 @@
     },
     {
       "amount": 1,
-      "biome": "swamp",
+      "biome": "ocean",
       "group": "weapons",
       "key": "KnifeChitin",
       "kind": "knife",
@@ -42326,7 +42333,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Abyssal Razor",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 8.0,
+          "slash": 8.0
+        },
+        "key": "KnifeCopper",
+        "name": "Copper Knife",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -42339,7 +42354,7 @@
         },
         {
           "amount": 20,
-          "biome": "swamp",
+          "biome": "ocean",
           "droppedBy": [],
           "key": "Chitin",
           "name": "Chitin",
@@ -42444,7 +42459,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Ancient Bark Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 20.0
+        },
+        "key": "SpearBronze",
+        "name": "Bronze Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -42809,7 +42831,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Ash Fang",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 10.0,
+          "spirit": -5.0
+        },
+        "key": "BowSpineSnap",
+        "name": "Spinesnap",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -43052,7 +43082,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Battleaxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 5.0,
+          "slash": 40.0
+        },
+        "key": "AxeEarly",
+        "name": "Early Axes",
+        "tier": 1
+      },
       "page": "weapons",
       "resources": [
         {
@@ -43187,7 +43225,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Berserkir Axes",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "slash": 10.0
+        },
+        "key": "BattleaxeSkullSplittur",
+        "name": "Skull Splittur",
+        "tier": 2
+      },
       "page": "weapons",
       "resources": [
         {
@@ -43407,7 +43453,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Black Metal Atgeir",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 40.0
+        },
+        "key": "AtgeirIron",
+        "name": "Iron Atgeir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -43662,7 +43715,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Black Metal Battleaxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "slash": 20.0,
+          "spirit": -30.0
+        },
+        "key": "BattleaxeCrystal",
+        "name": "Crystal Battleaxe",
+        "tier": 1
+      },
       "page": "weapons",
       "resources": [
         {
@@ -43788,7 +43850,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Black Metal Knife",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 9.0,
+          "slash": 9.0,
+          "spirit": -12.0
+        },
+        "key": "KnifeSilver",
+        "name": "Silver Knife",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -44038,7 +44109,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Black Metal Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 20.0,
+          "spirit": -30.0
+        },
+        "key": "SwordSilver",
+        "name": "Silver Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -44159,7 +44238,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Bleeding Berserkir Axes",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "AxeBerzerkr",
+        "name": "Berserkir Axes",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -44693,7 +44777,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Blood Fang",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "BowAshlands",
+        "name": "Ash Fang",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -44814,7 +44903,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Bloodgeon",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "MaceEldner",
+        "name": "Flametal Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -45227,7 +45321,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Bronze Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 23.0
+        },
+        "key": "Club",
+        "name": "Club",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -45485,7 +45586,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Bronze Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 15.0
+        },
+        "key": "SpearFlint",
+        "name": "Flint Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -45643,7 +45751,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Bronze Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 34.0
+        },
+        "key": "SwordWood",
+        "name": "Wooden Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -45805,7 +45920,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Brutal Slayer",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "THSwordSlayer",
+        "name": "Slayer",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -45985,7 +46105,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Carapace Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 40.0
+        },
+        "key": "SpearWolfFang",
+        "name": "Fang Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -46259,7 +46386,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Copper Knife",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 7.0,
+          "slash": 7.0
+        },
+        "key": "KnifeFlint",
+        "name": "Flint Knife",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -46577,7 +46712,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Crystal Battleaxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "slash": 20.0,
+          "spirit": 30.0
+        },
+        "key": "Battleaxe",
+        "name": "Battleaxe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -46844,7 +46988,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Demolisher",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 90.0
+        },
+        "key": "SledgeIron",
+        "name": "Iron Sledge",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -46980,7 +47131,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Draugr Fang",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 5.0,
+          "poison": 5.0
+        },
+        "key": "BowHuntsman",
+        "name": "Huntsman Bow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -47150,7 +47309,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Dundr",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -120.0,
+          "fire": -120.0,
+          "lightning": 20.0
+        },
+        "key": "StaffFireball",
+        "name": "Staff of Embers",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -47314,7 +47482,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Dyrnwyn",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 10.0,
+          "slash": 10.0
+        },
+        "key": "SwordNiedhogg",
+        "name": "Nidhögg",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -47790,7 +47966,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Fang Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 65.0
+        },
+        "key": "SpearChitin",
+        "name": "Abyssal Harpoon",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -47971,7 +48154,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Finewood Bow",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 10.0
+        },
+        "key": "Bow",
+        "name": "Crude Bow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -48109,7 +48299,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Flametal Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 85.0,
+          "pierce": -45.0
+        },
+        "key": "MaceNeedle",
+        "name": "Porcupine",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -48295,7 +48493,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Flesh Rippers",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 35.0
+        },
+        "key": "FistBjornClaw",
+        "name": "Paws of the Bear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -48433,7 +48638,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Flint Axe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "slash": 5.0
+        },
+        "key": "AxeStone",
+        "name": "Stone Axe",
+        "tier": 1
+      },
       "page": "weapons",
       "resources": [
         {
@@ -48882,7 +49095,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Atgeir",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "pierce": -34.0
+        },
+        "key": "AtgeirGold",
+        "name": "Nord Atgeir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49011,7 +49233,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Axe",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "slash": -32.0
+        },
+        "key": "AxeGold",
+        "name": "Nord Axe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49145,7 +49376,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Bow",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "pierce": -32.0
+        },
+        "key": "BowGold",
+        "name": "Nord Bow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -49275,7 +49515,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Crossbow",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "pierce": -32.0
+        },
+        "key": "CrossbowGold",
+        "name": "Nord Crossbow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -49406,7 +49655,17 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Dagger",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 10.0,
+          "frost": 88.0,
+          "pierce": -13.0,
+          "slash": -13.0
+        },
+        "key": "KnifeGold",
+        "name": "Nord Dagger",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49538,7 +49797,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Greataxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "slash": -34.0
+        },
+        "key": "BattleaxeGold",
+        "name": "Nord Greataxe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49672,7 +49940,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Greatsword",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "slash": -24.0
+        },
+        "key": "THSwordGold",
+        "name": "Nord Greatsword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49801,7 +50078,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Knucklechains",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -34.0,
+          "fire": 12.0,
+          "frost": 88.0
+        },
+        "key": "FistGold",
+        "name": "Nord Knucklechains",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -49932,7 +50218,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -28.0,
+          "fire": 12.0,
+          "frost": 88.0
+        },
+        "key": "MaceGold",
+        "name": "Nord Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50061,7 +50356,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Sledge",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -25.0,
+          "fire": 12.0,
+          "frost": 88.0
+        },
+        "key": "SledgeGold",
+        "name": "Nord Sledge",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50190,7 +50494,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "pierce": -22.0
+        },
+        "key": "SpearGold",
+        "name": "Nord Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50319,7 +50632,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostfire Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": 12.0,
+          "frost": 88.0,
+          "slash": -32.0
+        },
+        "key": "SwordGold",
+        "name": "Nord Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50448,7 +50770,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Frostner",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -20.0,
+          "frost": 40.0,
+          "spirit": 20.0
+        },
+        "key": "MaceIron",
+        "name": "Iron Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50636,7 +50967,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Himminafl",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 40.0,
+          "pierce": -20.0
+        },
+        "key": "AtgeirBlackmetal",
+        "name": "Black Metal Atgeir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -50838,7 +51177,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Huntsman Bow",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 10.0
+        },
+        "key": "BowFineWood",
+        "name": "Finewood Bow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -51012,7 +51358,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Iron Atgeir",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 20.0
+        },
+        "key": "AtgeirBronze",
+        "name": "Bronze Atgeir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -51319,7 +51672,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Iron Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 20.0
+        },
+        "key": "MaceBronze",
+        "name": "Bronze Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -51577,7 +51937,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Iron Sledge",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 35.0,
+          "pierce": -5.0
+        },
+        "key": "SledgeStagbreaker",
+        "name": "Stagbreaker",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -51726,7 +52094,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Iron Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 20.0
+        },
+        "key": "SwordBronze",
+        "name": "Bronze Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -51888,7 +52263,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Jotun Bane",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "poison": 40.0,
+          "slash": -20.0
+        },
+        "key": "AxeBlackMetal",
+        "name": "Black Metal Axe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52043,7 +52427,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Klossen",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "MaceEldner",
+        "name": "Flametal Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52306,7 +52697,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Lightning Strike",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": -20.0,
+          "lightning": 300.0,
+          "poison": -20.0
+        },
+        "key": "StaffGreenRoots",
+        "name": "Staff of the Wild",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52516,7 +52916,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Mistwalker",
-      "over": null,
+      "over": {
+        "damage": {
+          "frost": 40.0,
+          "slash": -20.0
+        },
+        "key": "SwordBlackmetal",
+        "name": "Black Metal Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52664,7 +53072,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nidhögg",
-      "over": null,
+      "over": {
+        "damage": {
+          "frost": -40.0,
+          "slash": 60.0
+        },
+        "key": "SwordMistwalker",
+        "name": "Mistwalker",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52807,7 +53223,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nidhögg the Bleeding",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "SwordNiedhogg",
+        "name": "Nidhögg",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -52928,7 +53349,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nidhögg the Primal",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "SwordNiedhogg",
+        "name": "Nidhögg",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53050,7 +53478,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nidhögg the Thundering",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "SwordNiedhogg",
+        "name": "Nidhögg",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53172,7 +53607,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Atgeir",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": -40.0,
+          "pierce": 97.0
+        },
+        "key": "AtgeirHimminAfl",
+        "name": "Himminafl",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53293,7 +53736,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Axe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 20.0,
+          "poison": -40.0,
+          "slash": 96.0
+        },
+        "key": "AxeJotunBane",
+        "name": "Jotun Bane",
+        "tier": 2
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53419,7 +53871,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Bow",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 18.0,
+          "spirit": 10.0
+        },
+        "key": "BowAshlands",
+        "name": "Ash Fang",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -53541,7 +54001,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Crossbow",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 20.0,
+          "pierce": 44.0
+        },
+        "key": "CrossbowRipper",
+        "name": "Ripper",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -53664,7 +54132,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Dagger",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 41.0,
+          "slash": 41.0
+        },
+        "key": "KnifeBlackMetal",
+        "name": "Black Metal Knife",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53788,7 +54264,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Greataxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": -40.0,
+          "slash": 48.0
+        },
+        "key": "AxeBerzerkr",
+        "name": "Berserkir Axes",
+        "tier": -2
+      },
       "page": "weapons",
       "resources": [
         {
@@ -53914,7 +54398,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Greatsword",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 40.0
+        },
+        "key": "THSwordSlayer",
+        "name": "Slayer",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -54040,7 +54531,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Knucklechains",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 114.0,
+          "pierce": -60.0,
+          "slash": -20.0
+        },
+        "key": "FistBjornUndeadClaw",
+        "name": "Vilebone Maulclaws",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -54163,7 +54663,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 35.0
+        },
+        "key": "MaceEldner",
+        "name": "Flametal Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -54284,7 +54791,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Sledge",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 80.0
+        },
+        "key": "SledgeDemolisher",
+        "name": "Demolisher",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -54405,7 +54919,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 35.0
+        },
+        "key": "SpearSplitner",
+        "name": "Splitnir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -54526,7 +55047,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Nord Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "fire": -10.0,
+          "slash": 25.0
+        },
+        "key": "SwordDyrnwyn",
+        "name": "Dyrnwyn",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -55007,7 +55536,17 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Porcupine",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 15.0,
+          "frost": -40.0,
+          "pierce": 45.0,
+          "spirit": -20.0
+        },
+        "key": "MaceSilver",
+        "name": "Frostner",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -55142,7 +55681,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Primal Berserkir Axes",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "AxeBerzerkr",
+        "name": "Berserkir Axes",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -55269,7 +55815,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Primal Slayer",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "THSwordSlayer",
+        "name": "Slayer",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -55391,7 +55944,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Ripper",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 20.0,
+          "pierce": 20.0
+        },
+        "key": "CrossbowArbalest",
+        "name": "Arbalest",
+        "tier": 1
+      },
       "page": "bows",
       "resources": [
         {
@@ -55559,7 +56120,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Root Fang",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "BowAshlands",
+        "name": "Ash Fang",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -55681,7 +56249,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Root Ripper",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "CrossbowRipper",
+        "name": "Ripper",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -55802,7 +56377,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Scourging Slayer",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "THSwordSlayer",
+        "name": "Slayer",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -55992,7 +56574,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Silver Knife",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 5.0,
+          "slash": 5.0,
+          "spirit": 12.0
+        },
+        "key": "KnifeChitin",
+        "name": "Abyssal Razor",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -56181,7 +56772,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Silver Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 20.0,
+          "spirit": 30.0
+        },
+        "key": "SwordIron",
+        "name": "Iron Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -56494,7 +57093,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Skull Splittur",
-      "over": null,
+      "over": {
+        "damage": {
+          "chop": 10.0,
+          "slash": 20.0
+        },
+        "key": "BattleaxeBlackmetal",
+        "name": "Black Metal Battleaxe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -56620,7 +57227,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Slayer",
-      "over": null,
+      "over": {
+        "damage": {
+          "slash": 20.0
+        },
+        "key": "THSwordKrom",
+        "name": "Krom",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -56947,7 +57561,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Spinesnap",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 25.0,
+          "poison": -5.0,
+          "spirit": 5.0
+        },
+        "key": "BowDraugrFang",
+        "name": "Draugr Fang",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -57199,7 +57822,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Splitnir",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 20.0
+        },
+        "key": "SpearCarapace",
+        "name": "Carapace Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -57368,7 +57998,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Splitnir the Bleeding",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "SpearSplitner",
+        "name": "Splitnir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -57489,7 +58124,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Splitnir the Primal",
-      "over": null,
+      "over": {
+        "damage": {
+          "poison": 10.0
+        },
+        "key": "SpearSplitner",
+        "name": "Splitnir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -57611,7 +58253,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Splitnir the Storming",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "SpearSplitner",
+        "name": "Splitnir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -57733,7 +58382,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of Embers",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 120.0,
+          "fire": 120.0,
+          "frost": -30.0
+        },
+        "key": "StaffIceShards",
+        "name": "Staff of Frost",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -57875,7 +58533,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of Fracturing",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 12.0,
+          "fire": 12.0,
+          "lightning": -20.0
+        },
+        "key": "StaffLightning",
+        "name": "Dundr",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -58308,7 +58975,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of the Wild",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 8.0,
+          "fire": -12.0,
+          "poison": 20.0
+        },
+        "key": "StaffClusterbomb",
+        "name": "Staff of Fracturing",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -58792,7 +59468,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Storm Fang",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "BowAshlands",
+        "name": "Ash Fang",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -58914,7 +59597,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Storm Ripper",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "CrossbowRipper",
+        "name": "Ripper",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -59035,7 +59725,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Storm Star",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "MaceEldner",
+        "name": "Flametal Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -59213,7 +59910,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Atgeir",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "pierce": 10.0
+        },
+        "key": "AtgeirGold",
+        "name": "Nord Atgeir",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -59338,7 +60043,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Axe",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "slash": 10.0
+        },
+        "key": "AxeGold",
+        "name": "Nord Axe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -59468,7 +60181,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Bow",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "pierce": 10.0
+        },
+        "key": "BowGold",
+        "name": "Nord Bow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -59594,7 +60315,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Crossbow",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "pierce": 10.0
+        },
+        "key": "CrossbowGold",
+        "name": "Nord Crossbow",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {
@@ -59721,7 +60450,16 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Dagger",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "pierce": 5.0,
+          "slash": 5.0
+        },
+        "key": "KnifeGold",
+        "name": "Nord Dagger",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -59849,7 +60587,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Greataxe",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "slash": 10.0
+        },
+        "key": "BattleaxeGold",
+        "name": "Nord Greataxe",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -59979,7 +60725,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Greatsword",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "slash": 10.0
+        },
+        "key": "THSwordGold",
+        "name": "Nord Greatsword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60104,7 +60858,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Knucklechains",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 8.0,
+          "lightning": 45.0
+        },
+        "key": "FistGold",
+        "name": "Nord Knucklechains",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60231,7 +60993,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Mace",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 10.0,
+          "lightning": 45.0
+        },
+        "key": "MaceGold",
+        "name": "Nord Mace",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60356,7 +61126,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Sledge",
-      "over": null,
+      "over": {
+        "damage": {
+          "blunt": 10.0,
+          "lightning": 45.0
+        },
+        "key": "SledgeGold",
+        "name": "Nord Sledge",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60481,7 +61259,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Spear",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "pierce": 10.0
+        },
+        "key": "SpearGold",
+        "name": "Nord Spear",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60606,7 +61392,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thunderblood Sword",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 45.0,
+          "slash": 10.0
+        },
+        "key": "SwordGold",
+        "name": "Nord Sword",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -60731,7 +61525,14 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Thundering Berserkir Axes",
-      "over": null,
+      "over": {
+        "damage": {
+          "lightning": 10.0
+        },
+        "key": "AxeBerzerkr",
+        "name": "Berserkir Axes",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -61024,7 +61825,15 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Vilebone Maulclaws",
-      "over": null,
+      "over": {
+        "damage": {
+          "pierce": 60.0,
+          "slash": -40.0
+        },
+        "key": "FistFenrirClaw",
+        "name": "Flesh Rippers",
+        "tier": 0
+      },
       "page": "weapons",
       "resources": [
         {
@@ -61353,7 +62162,12 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Wound Ripper",
-      "over": null,
+      "over": {
+        "damage": {},
+        "key": "CrossbowRipper",
+        "name": "Ripper",
+        "tier": 0
+      },
       "page": "bows",
       "resources": [
         {

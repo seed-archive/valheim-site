@@ -1,38 +1,53 @@
 # Mountain
 
-**What does the Mountain give?** Silver and wolf pelts for the forge, and Moder, whose dragon tears build the artisan table that every later stage stands on.
+**How do I get through the Mountain fast?** Climb it only for Moder's death and the silver: on a frost resistance mead, with the wishbone, smelting the silver at her altar and leaving the mountain again.
 
-## Getting there
+## How do I stand the cold?
 
-The Mountain is the snow above the tree line, and every weather there freezes you, day and night. A fire or a shelter alone only softens it to cold; both together lift it, and so does a [frost resistance mead](/catalog/meads), brewed from what the Swamp gives. Bring Bonemass's wishbone and an iron pickaxe. The [seed map](/tools/map) shows the mountains, Moder's altars and the drake nests round them.
+Every weather on the Mountain freezes you, day and night. The wolf fur cape lifts it, but it takes silver, so the first climb is made on a [frost resistance mead](/catalog/meads), brewed from honey and what the Swamp gives ({{frostMeadHoney}} honey a base). A fire under a roof lifts it for a rest.
 
-## Silver, pelts and eggs
+## How do I find the silver?
 
-Silver lies buried: the wishbone pings when you stand above a vein, and only an iron pickaxe or a troll's blows break it. Wolves drop pelts and fangs, drakes drop freeze glands and their trophies, and the frost caves hold Fenris hair, Fenris claws, crystal and red jute; what each cave holds is in [Caves and dungeons](/catalog/dungeons).
+With Bonemass's wishbone: silver lies buried, and the wishbone, worn, beeps above a vein. Only an iron pickaxe breaks it: a troll's blows would, but a troll is not led up a mountain alive.
 
-Ore and metal never pass a wooden portal, and neither do dragon eggs. Smelt the silver near the mountain or carry it down by boat or cart.
-
-## What to make
-
-Silver and wolf pelts make the wolf armour at the forge: the Wolf Hide Chestpiece, the Wolf Hide Trousers and the Drake Helmet, with the Wolf Fur Cape at the workbench. The Fenris set, from Fenris hair, lets you move faster. For Moder, the Draugr Fang is the bow to make. Leave the frost arrows for other targets: she ignores frost. The [armour](/catalog/armour) and [bows](/catalog/bows) pages compare each piece, and the [craft tree](/tools/craft-tree) totals the silver. Cook Wolf Skewers: see [Food and feasts](/catalog/food).
-
-## Moder
-
-Her altar takes {{dragonEggs}} dragon eggs, an egg from every drake nest, and each egg goes to the altar on foot or by boat. She is weak to fire and immune to frost and spirit; the straight fight is the Draugr Fang with poison arrows. Players who would rather not chase her dig a trench against the summoning platform and shoot up when she lands. Both ways, and her numbers, are in [How to kill each boss](/guides/bosses#moder).
-
-She drops dragon tears, and the artisan table is wood and tears: the blast furnace, the windmill, the spinning wheel and the oven are all built at it. Her trophy on its stone at the start makes you faster, lets you carry more, gives a tailwind at sea and takes the edge off frost: see [Trophies](/catalog/trophies).
-
-## How often a seed has it
-
-| What, in Moder's own Mountain | How often | How far, as a rule |
+| By Moder's altar | As a rule | Middle half of seeds |
 |---|---|---|
-| {{moderEggs}} drake nests for her eggs | {{moderNests}}% of seeds | {{moderNestsIn}} |
-| Silver veins within {{silverReach}} m of her altar | — | {{moderSilver}} |
+| Silver veins within {{silverReach}} m | {{moderSilver}} | {{moderSilverLow}}–{{moderSilverHigh}} |
 
-[Rate your seed](/tools/how-good-is-my-seed) to see its own.
+## Are there enough drake nests?
+
+Her Vegvísir stands in the Mountain's tower ruins and in {{vegvisirCave}}% of the frost caves. Her altar takes {{dragonEggs}} dragon eggs, one from every drake nest. The nests stand round her altar, are seen from far and found by chance; the question is whether there are enough, since another mountain for eggs is a long detour.
+
+| In Moder's own Mountain | How often |
+|---|---|
+| {{moderEggs}} drake nests, enough for her eggs | {{moderNests}}% of seeds |
+
+| In Moder's own Mountain | As a rule | Middle half of seeds |
+|---|---|---|
+| Drake nests | {{moderNestsIn}} | {{moderNestsInLow}}–{{moderNestsInHigh}} |
+| The {{moderEggs}}rd nest from her altar, m | {{moderNestM}} | {{moderNestMLow}}–{{moderNestMHigh}} |
+
+## How do I get the silver home?
+
+A cart down a mountain overturns and may break, and may have to go onto a boat, so a smelter is usually built right at Moder's altar, what the run needs is smelted there, and the run leaves the mountain. A Mountain close to the copper base is good. Killing Moder is the lesser question: a bow, or anything ([How to kill each boss](/catalog/bosses#moder)).
+
+| Moder's altar | How often |
+|---|---|
+| On the start island | {{moderIsland}}% of seeds |
+| On the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripModer}}% of seeds |
+
+| From the start | As a rule | Middle half of seeds |
+|---|---|---|
+| Moder's altar, m | {{moderM}} | {{moderMLow}}–{{moderMHigh}} |
+
+> **Speedrunners** climb once, on the mead: Moder, the silver, a smelter at her altar, and down again.
+
+> **With no map**, Moder is the easiest boss to find: a mountain is seen from far off.
+
+> **On a reverse run** Moder cannot be left behind: her tears build the artisan table, the table the blast furnace, and only the blast furnace smelts the Deep North's Bloodgold.
 
 ## Can you skip it?
 
-Only at a heavy price. Without her tears there is no artisan table, so no blast furnace for the Plains' black metal, no spinning wheel and no windmill. Without silver there is no wolf armour now and no Wisplight later.
+Only at a heavy price: without her tears there is no artisan table, so no blast furnace for the Plains' black metal, and without silver no Wisplight later.
 
 Next, the open grass: the [Plains](/guides/plains).

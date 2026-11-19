@@ -39,10 +39,12 @@ import { LootPanel, type LootPlace } from "@/components/valheim/LootPanel";
 import { useValheimMap } from "@/components/valheim/useValheimMap";
 import { moduleUrl } from "@/lib/valheim/generator";
 import {
+  BUILDING_COLOUR,
   DEEP_SEA,
   type Kind,
   KINDS,
   kindKey,
+  kindLabel,
   markColour,
 } from "@/lib/valheim/palette";
 import { markIcon } from "@/lib/valheim/icons";
@@ -85,11 +87,14 @@ const ON_TOP = [18, 19];
 // Workers that compute the marks in view, each a strip of it.
 const MARK_WORKERS = 4;
 
-// A kind's checkbox in its pin's colour: a place's, or a mark's.
+// A kind's checkbox in its pin's colour: a place's, or a mark's; a building's
+// in old timber's.
 function kindColour(layer: string, kind: Kind): string {
   return "pin" in kind
     ? placeColour(layer as PlaceGroup, kind.pin)
-    : markColour(layer, kind.mark);
+    : "mark" in kind
+      ? markColour(layer, kind.mark)
+      : BUILDING_COLOUR;
 }
 
 // The side panel's width: the seed, the layers and the ruler; the other side
@@ -132,13 +137,7 @@ export function MapScreen() {
     [on],
   );
   // A layer's kinds by name, in the visitor's alphabet.
-  const kindName = (kind: Kind) =>
-    intl.formatMessage({
-      id:
-        "pin" in kind
-          ? `pages.map.places.${kind.pin}`
-          : `pages.map.legend.${kind.key}`,
-    });
+  const kindName = (kind: Kind) => intl.formatMessage({ id: kindLabel(kind) });
   const sortedKinds = (layer: string) =>
     [...(KINDS[layer] ?? [])].sort((a, b) =>
       kindName(a).localeCompare(kindName(b), intl.locale),
@@ -478,13 +477,7 @@ export function MapScreen() {
                         }
                         label={
                           <Typography variant="body2" sx={{ pt: 0.75 }}>
-                            <FormattedMessage
-                              id={
-                                "pin" in kind
-                                  ? `pages.map.places.${kind.pin}`
-                                  : `pages.map.legend.${kind.key}`
-                              }
-                            />
+                            <FormattedMessage id={kindLabel(kind)} />
                           </Typography>
                         }
                       />

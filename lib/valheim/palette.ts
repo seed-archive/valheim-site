@@ -18,6 +18,11 @@ const BIOME_RGB: Record<number, [number, number, number]> = {
   9: [98, 90, 110], // Mistlands
 };
 
+// Lava: the generator gives it class 0 at light levels 1…15 (level 0 of class 0
+// is beyond the world's edge). Molten red-orange, our own choice (the owner,
+// 2026-11-19: the Ashlands must show lava, not brown ground).
+const LAVA_RGB: [number, number, number] = [214, 64, 18];
+
 // The generator's light levels: 16 steps from shade to sun over this range
 // (its SHADE_RANGE), and its sea: classes 10…15, depth 0…60 m in six bands.
 const LIGHT = { from: 0.3, to: 1.55, levels: 16 };
@@ -51,6 +56,9 @@ export function mapPalette(): Uint8ClampedArray {
     const light = lightOf(level);
     for (const [biome, rgb] of Object.entries(BIOME_RGB)) {
       put(Number(biome) * 16 + level, rgb, light);
+    }
+    if (level > 0) {
+      put(level, LAVA_RGB, light);
     }
     for (let band = 0; band < WATER_BANDS; band++) {
       put(
@@ -163,8 +171,12 @@ export function overlays() {
 
 // The kinds each layer shows, each with a checkbox of its own under the
 // layer's: a mark the generator draws (its palette number) with its name key
-// (pages.map.legend), or a place's pin by its key (pages.map.places).
-export type Kind = { mark: number; key: string } | { pin: string };
+// (pages.map.legend), a place's pin by its key (pages.map.places), or a kind
+// of building drawn from above by its key (pages.map.legend).
+export type Kind =
+  | { mark: number; key: string }
+  | { pin: string }
+  | { building: string };
 export const KINDS: Record<string, Kind[]> = {
   spawners: [
     { mark: 40, key: "greydwarfNest" },
@@ -240,11 +252,35 @@ export const KINDS: Record<string, Kind[]> = {
     { mark: 4, key: "birch" },
     { mark: 5, key: "oak" },
   ],
+  // Drawn from the game's models, room by room for a camp (the owner,
+  // 2026-11-19).
+  buildings: [
+    { building: "fulingVillages" },
+    { building: "draugrVillages" },
+  ],
 };
 
-// The name key of a kind: a place's, or a mark's.
+// The building kind each camp's rooms are switched with, by the camp's place key.
+export const CAMP_BUILDING: Record<string, string> = {
+  fulingVillage: "fulingVillages",
+  draugrVillage: "draugrVillages",
+  abandonedFarm: "draugrVillages",
+};
+
+// The colour of a building kind's checkbox: the brown of old timber (our own
+// choice).
+export const BUILDING_COLOUR = "#8d6e63";
+
+// The name key of a kind: a place's, a mark's, or a building's.
 export function kindKey(kind: Kind): string {
-  return "pin" in kind ? kind.pin : kind.key;
+  return "pin" in kind ? kind.pin : "building" in kind ? kind.building : kind.key;
+}
+
+// A kind's label in the messages: a place's name, or a legend's entry.
+export function kindLabel(kind: Kind): string {
+  return "pin" in kind
+    ? `pages.map.places.${kind.pin}`
+    : `pages.map.legend.${kindKey(kind)}`;
 }
 
 // A mark's colour, as CSS.

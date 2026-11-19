@@ -1,40 +1,64 @@
 # Deep North
 
-**What to bring to the Deep North?** Frost resistance, or a fire under a roof, against the endless cold; Fader's embers for the Snow Shovel; and the stone portal to carry Bloodgold home.
+**How do I get through the Deep North fast?** Portal to the copper base and sail far north with the feather cape, the grappling hook, your best weapon and a stock of meads, find three Mörkhalla and the Winding Tunnels by Kall, and summon him.
 
-## Getting there
+## How do I get far north fast?
 
-Every weather of the Deep North freezes you, day and night. A fire or a shelter alone only softens it to cold; both together lift it, and so does any frost resistance: a [frost resistance mead](/catalog/meads), or Moder's trophy power from its stone at the start. Build the stone portal on the shore first, since it is the one portal that carries ore and metal home. The [seed map](/tools/map) shows how far the Deep North lies from your start.
+The Ashlands end the run far in the south, so portal to the copper base, somewhere near the map's middle, and sail from there. A Kall near the north–south line through the start is the shorter voyage.
 
-## Bloodgold, timber and frostcores
+| Kall's gate | How often |
+|---|---|
+| On the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripKall}}% of seeds |
 
-Gold ore is mined in the Deep North and smelted into Bloodgold at the blast furnace. Timberwood stands in the open; moose give hide and sinew, seals give pelts, and the Hexen give Nornathread and the moulds of the Caller set. Fryslings drop the frostcores the new stations are built from, and the ice for their fuel is gathered there too. Mörkhalla's chests hold black cores. Who drops what is in [Creatures and what they drop](/catalog/creatures).
-
-## What to make
-
-The Frost Foundry is iron, stone and a frostcore; the Frigid Kiln, stone, frostcore and ice, makes its fuel. A piece of Bloodgold gear is forged at the Black Forge, raised with its extensions, from Bloodgold and the piece's mould, and then cast in the Frost Foundry. The Nord weapons come first; Frostfire Essence and Thunderblood Essence take them further. The Protector, Vanguard and Caller sets are the armour: the [weapons](/catalog/weapons) and [armour](/catalog/armour) pages compare them, and the [craft tree](/tools/craft-tree) totals the Bloodgold.
-
-Embers and seal pelts make the Ember Charge, and embers with flametal make the Snow Shovel for the deepest snow. Cook Seal Meat Soup: see [Food and feasts](/catalog/food). The new pieces are in [Deep North building](/catalog/deep-north-building).
-
-## Kall Fimbulbringer
-
-He fights in phases. In the first and the last he resists fire, frost, lightning and pierce and ignores spirit, so the straight fight is blunt: the Thunderblood Sledge or the Frostfire Sledge. In the middle phase no damage type hurts him. His numbers are in [How to kill each boss](/guides/bosses#kall-fimbulbringer). Unlike the bosses before him, he grants no guardian power.
-
-## How often a seed has it
-
-Kall's altar takes {{maliciousBlood}} Malicious Blood, one from each run through a Mörkhalla, and a Mörkhalla opens with an Intricate Key cast from Bloodgold in its mould. The mould is found only in the Winding Tunnels, the burrows the villages of the Deep North gather round: the Eyeless Ones there drop it, and it turns up when the tunnels' rubble piles and burrow shafts are broken. His blood is then carried home on foot, so his distance from the start counts twice.
-
-| What, round Kall's altar | How often | As a rule |
+| Kall's gate | As a rule | Middle half of seeds |
 |---|---|---|
-| Kall's altar from the start | — | {{kallMedian}} m |
-| {{kallMorkhallaNeed}} Mörkhalla in his Deep North | {{kallMorkhalla}}% of seeds | the first {{kallMorkhallaM}} m from his altar |
-| The Winding Tunnels | — | {{kallHoleM}} m from his altar |
-| All of it | — | within {{kallJointM}} m of his altar |
+| From the start, m | {{kallMedian}} | {{kallMedianLow}}–{{kallMedianHigh}} |
+| From the north–south line through the start, m | {{kallAxisM}} | {{kallAxisMLow}}–{{kallAxisMHigh}} |
 
-[Rate your seed](/tools/how-good-is-my-seed) to see its own.
+## What do I bring?
 
-## Can you skip it?
+The feather cape and the grappling hook from the [Mistlands](/guides/mistlands), the strongest weapon you have found, and some armour. Every weather here freezes you: a [frost resistance mead](/catalog/meads), or a fire under a roof.
 
-Only by ending the run sooner. The Deep North is the last stage, and Kall Fimbulbringer the last boss: a run that stops after Fader or after Yagluth simply belongs to a shorter category.
+## How many meads, and which?
 
-The whole run on one page, as fast as it goes, is the [speedrun](/guides/speedrun).
+This is what the hives at the very start were for: a stock of mead for the last fight: health, stamina and frost resistance. The [meads](/catalog/meads) list each one's base.
+
+## How do I find the three Mörkhalla?
+
+A Mörkhalla is a tower that goes down, not up: jump to its bottom, and look there for the moulds of the weapon that kills Kall, and the blood his gate asks for, one a Mörkhalla. His gate takes {{maliciousBlood}}. His Vegvísir stands at the bottom of every Mörkhalla, and at the memorial.
+
+| By Kall's gate | How often |
+|---|---|
+| {{kallMorkhallaNeed}} Mörkhalla in his Deep North | {{kallMorkhalla}}% of seeds |
+| {{kallMorkhallaNeed}} Mörkhalla within {{bossNearM}} m | {{kallMorkhallaNear}}% of seeds |
+
+| From Kall's gate | As a rule | Middle half of seeds |
+|---|---|---|
+| The first Mörkhalla, m | {{kallMorkhallaM}} | {{kallMorkhallaMLow}}–{{kallMorkhallaMHigh}} |
+| The {{kallMorkhallaNeed}}rd Mörkhalla, m | {{kallMorkhalla3M}} | {{kallMorkhalla3MLow}}–{{kallMorkhalla3MHigh}} |
+
+## How do I find the Winding Tunnels, with the key?
+
+A Mörkhalla opens with an Intricate Key cast from Bloodgold in its mould, and the mould is found only in the Winding Tunnels, the burrows the villages of the Deep North gather round. So four places, and they should lie close together.
+
+| By Kall's gate | How often |
+|---|---|
+| The Winding Tunnels within {{bossNearM}} m | {{kallHoleNear}}% of seeds |
+| The Tunnels and {{kallMorkhallaNeed}} Mörkhalla, all within {{bossNearM}} m | {{kallAllNear}}% of seeds |
+
+| From Kall's gate | As a rule | Middle half of seeds |
+|---|---|---|
+| The Winding Tunnels, m | {{kallHoleM}} | {{kallHoleMLow}}–{{kallHoleMHigh}} |
+| All four places, the farthest, m | {{kallJointM}} | {{kallJointMLow}}–{{kallJointMHigh}} |
+
+> **Speedrunners** portal to the copper base, sail straight north, and bring the meads brewed from the start's hives.
+
+> **With no map**, the snow round you drifts toward the nearest Jotun invasion, faint until about 500 m: keep three invasions going, and it points to the nearest.
+
+> **With no portals**, the whole kit sails north for hours, and the Plains' and Mistlands' outposts are built again near the Deep North.
+
+> **On a reverse run** the Deep North comes first, reached on a raft. Build a roof over a campfire before anything else: fire and shelter together lift the cold, and Timberwood falls to the first axe. Kill seals first, they never fight back and fall to fire; let a living Gammeltroll punch a dead one for petrified tissue; break the wardrobe by a Winding Tunnels entrance for black metal. Everything the Deep North forges waits for Bloodgold, and Bloodgold waits for Moder: she is the one boss a reverse run cannot leave behind.
+
+Killing Kall is the lesser question: with the weapon ([How to kill each boss](/catalog/bosses#kall-fimbulbringer)).
+
+The run ends here. Another way through the same world: [No death, no map, no portals](/guides/other-rules), or the whole game turned round, the [Reverse run](/guides/reverse-run).

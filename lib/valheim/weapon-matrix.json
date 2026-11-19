@@ -616,37 +616,6 @@
     },
     {
       "best": [
-        "sword",
-        "axe",
-        "knife",
-        "club",
-        "spear",
-        "polearm",
-        "bow",
-        "crossbow",
-        "fist"
-      ],
-      "biome": "swamp",
-      "boss": false,
-      "deals": {
-        "poison": 5.0,
-        "slash": 70.0
-      },
-      "key": "Serpent",
-      "multipliers": {
-        "blunt": 1.0,
-        "fire": 0.0,
-        "frost": 1.5,
-        "lightning": 1.0,
-        "pierce": 1.0,
-        "poison": 0.5,
-        "slash": 1.0,
-        "spirit": 0.0
-      },
-      "name": "Serpent"
-    },
-    {
-      "best": [
         "club"
       ],
       "biome": "swamp",
@@ -777,6 +746,37 @@
         "spirit": 1.0
       },
       "name": "Bonemass"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ocean",
+      "boss": false,
+      "deals": {
+        "poison": 5.0,
+        "slash": 70.0
+      },
+      "key": "Serpent",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Serpent"
     },
     {
       "best": [

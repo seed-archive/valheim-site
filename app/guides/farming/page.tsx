@@ -35,10 +35,9 @@ const biomeName = (b: string) => serverFormat(`pages.crafting.biome.${b}`);
 type Plant = (typeof farming)[number];
 type Thing = { key: string; name: string; amount: number };
 
-// The run's order of biomes, the Ocean last.
-const ORDER = [...BIOMES, "ocean"];
+// The run's order of biomes.
 const byRun = (a: Plant, b: Plant) =>
-  ORDER.indexOf(a.biome ?? "elsewhere") - ORDER.indexOf(b.biome ?? "elsewhere") ||
+  BIOMES.indexOf(a.biome ?? "elsewhere") - BIOMES.indexOf(b.biome ?? "elsewhere") ||
   a.name.localeCompare(b.name);
 
 // An item with its icon, a link to the materials catalogue (which says what

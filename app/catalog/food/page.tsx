@@ -17,6 +17,7 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat } from "@/lib/i18n/server";
 import food from "@/lib/valheim/food.json";
 import matrix from "@/lib/valheim/food-matrix.json";
+import { RUN_ORDER } from "@/lib/valheim/run-order";
 
 export const metadata: Metadata = {
   title: "Food and feasts in Valheim — Seed Archive",
@@ -41,16 +42,7 @@ const ROLES = [
 
 // The biomes in the run's order, the columns of the matrix (the Valheim
 // generator names each dish's home biome: the latest of its ingredients').
-const BIOME_ORDER = [
-  "meadows",
-  "blackForest",
-  "swamp",
-  "mountain",
-  "plains",
-  "mistlands",
-  "ashlands",
-  "deepNorth",
-];
+const BIOME_ORDER = RUN_ORDER;
 
 // The three dishes of a role a run eats by the end of a biome (the Valheim
 // generator picks them: food-matrix.json).
@@ -170,24 +162,34 @@ export default function FoodPage() {
                   <TableCell sx={{ whiteSpace: "nowrap", fontWeight: "bold" }}>
                     {t(`who.${role}`)}
                   </TableCell>
+                  {/* The biomes before a kind's first dish (eitr: before the
+                      Mistlands) are one cell that says so, not a row of dashes. */}
+                  {(() => {
+                    const before = BIOME_ORDER.findIndex((_, col) => bestBy(role, col).length > 0);
+                    return before > 0 ? (
+                      <TableCell colSpan={before} sx={{ color: "text.secondary", fontStyle: "italic" }}>
+                        {t("who.notYet")}
+                      </TableCell>
+                    ) : null;
+                  })()}
                   {BIOME_ORDER.map((b, col) => {
                     const three = bestBy(role, col);
-                    const isNew = three.some((d) => d.biome === b);
+                    if (col < BIOME_ORDER.findIndex((_, c) => bestBy(role, c).length > 0)) {
+                      return null;
+                    }
+                    // A line between biomes, no fill (the owner, 2026-11-20: the blue cells drowned their meaning);
+                    // a dish the biome brings is in bold. Each dish takes the same height, its name three lines, so the
+                    // pictures line up across the row.
                     return (
-                      <TableCell
-                        key={b}
-                        sx={{
-                          bgcolor: isNew ? "#eef3fb" : undefined,
-                          color: isNew ? undefined : "text.secondary",
-                          minWidth: 110,
-                        }}
-                      >
+                      <TableCell key={b} sx={{ borderLeft: 1, borderColor: "divider", minWidth: 110 }}>
                         {three.length ? (
                           <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                             {three.map((d) => (
                               <Box key={d.key} sx={{ display: "flex", flexDirection: "column", gap: 0.5 }}>
                                 <ItemIcon item={d.key} />
-                                <Link href={`#${d.key.toLowerCase()}`}>{d.name}</Link>
+                                <Box sx={{ minHeight: "3.9em", lineHeight: 1.3, fontWeight: d.biome === b ? 700 : 400 }}>
+                                  <Link href={`#${d.key.toLowerCase()}`}>{d.name}</Link>
+                                </Box>
                               </Box>
                             ))}
                           </Box>

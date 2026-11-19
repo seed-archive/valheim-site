@@ -1,42 +1,58 @@
 # Plains
 
-**What do the Plains give?** Black metal from the Fulings, barley and flax from their villages, and Yagluth, whose Torn Spirit lights the way through the Mistlands.
+**How do I get through the Plains fast?** Come in the root harness or keep running, find Yagluth and the Fuling villages round him, take five totems from them, and steal or farm their barley and flax.
 
-## Getting there
+## How do I get past the Deathsquitos?
 
-The Plains are open grass held by Fulings, Lox and Deathsquitos. Lox are weak to fire and shrug off blunt, slash and frost, so fire arrows suit them. The [seed map](/tools/map) shows where the Fuling villages and Yagluth's altars stand.
+In the root harness, from the Swamp's Abominations ([Swamp](/guides/swamp)). Speedrunners skip it and outrun the Deathsquito, which is hard.
 
-## Black metal, barley and flax
+## How do I find Yagluth?
 
-Fulings drop black metal scrap, and the blast furnace, built at the artisan table, smelts it into black metal. Like every ore, the scrap stays off the wooden portal. The villages also hold barley, flax and needles; the windmill grinds barley into flour, and the spinning wheel turns flax into linen thread. Plant both at home: see [Farming](/guides/farming). Each village's bonfire room may hold a Fuling totem, and not every village has one, so clear villages until the totems are in hand. Where each material comes from is in [Materials](/catalog/materials).
+His Vegvísir stands in the Plains' standing stones and stone towers.
 
-## What to make
+| Yagluth's altar | How often |
+|---|---|
+| On the start island | {{islandYagluth}}% of seeds |
+| On the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripYagluth}}% of seeds |
 
-Black metal, finewood and linen make the Black Metal Sword, Axe and Atgeir at the forge, and the Black Metal Shield with chains. Iron and linen make the Padded armour; Lox pelts make the Lox fur set at the workbench. The [weapons](/catalog/weapons) and [armour](/catalog/armour) pages compare them, and the [craft tree](/tools/craft-tree) totals the black metal.
+## How do I find five totems?
 
-Flour goes into bread in the oven, and Lox meat into the Lox Meat Pie at the food preparation table: see [Food and feasts](/catalog/food). Brew a Fire Resistance Barley Wine from barley and cloudberries before the Ashlands.
+Best right by Yagluth: a village's bonfire room may hold a totem, and not every village has one, while an outpost tower holds one. His altar takes {{goblinTotems}}. Short of totems, you must find a second Plains, however close Yagluth is, and the villages should be reached without crossing water.
 
-## Yagluth
+| In Yagluth's own Plains | How often |
+|---|---|
+| {{yagluthTotemsNeed}} totems, enough for his altar | {{yagluthTotems}}% of seeds |
 
-His altar takes {{goblinTotems}} Fuling totems, a totem on every holder. He resists fire and pierce and is immune to poison, so leave the bow: a Black Metal Battleaxe or a Crystal Battleaxe is the straight fight. Players who would rather not trade blows break his beam behind a stone pillar, or dig in under his altar. Both ways, and his numbers, are in [How to kill each boss](/guides/bosses#yagluth).
-
-He drops the Torn Spirit, which builds the Wisp Fountain at the stonecutter; its wisps and silver make the Wisplight, a bound wisp that guides you through the thickest mist. His trophy on its stone at the start raises every damage you deal and your farming: see [Trophies](/catalog/trophies).
-
-## How often a seed has it
-
-Yagluth's Fuling villages give two things: his totems and the barley and flax for a farm. Short of totems, you must find a second Plains, however close Yagluth is.
-
-| What, in Yagluth's own Plains | How often | As a rule |
+| In Yagluth's own Plains | As a rule | Middle half of seeds |
 |---|---|---|
-| {{yagluthTotemsNeed}} totems in its villages | {{yagluthTotems}}% of seeds | {{yagluthTotemsIn}} |
-| Fuling villages | — | {{yagluthVillages}}; the first {{yagluthVillageM}} m from his altar |
-| Fuling outposts (towers) | — | {{yagluthTowers}} |
-| Barley plants in its villages, for the farm | — | {{yagluthBarley}} |
-| Flax plants in its villages | — | {{yagluthFlax}} |
+| Totems, in its villages and outposts | {{yagluthTotemsIn}} | {{yagluthTotemsInLow}}–{{yagluthTotemsInHigh}} |
+| Fuling villages | {{yagluthVillages}} | {{yagluthVillagesLow}}–{{yagluthVillagesHigh}} |
+| Fuling outposts (towers) | {{yagluthTowers}} | {{yagluthTowersLow}}–{{yagluthTowersHigh}} |
+| The first village from his altar, m | {{yagluthVillageM}} | {{yagluthVillageMLow}}–{{yagluthVillageMHigh}} |
 
-[Rate your seed](/tools/how-good-is-my-seed) to see its own.
+## Do I fight my way into a village, or slip in?
+
+Both are done: clear it, and the Fulings drop the black metal you need anyway, or slip to the bonfire room, take the totem and run.
+
+## How do I get the barley and flax?
+
+They grow in the villages: kill the Fulings, or steal the crop and run, or grow it afterwards. Whether to set a farm is the question, since growing takes the cultivator and a seed from every plant: see [Farming](/guides/farming).
+
+| In Yagluth's own Plains | As a rule | Middle half of seeds |
+|---|---|---|
+| Barley plants in its villages | {{yagluthBarley}} | {{yagluthBarleyLow}}–{{yagluthBarleyHigh}} |
+| Flax plants in its villages | {{yagluthFlax}} | {{yagluthFlaxLow}}–{{yagluthFlaxHigh}} |
+
+Killing Yagluth is the lesser question: the weapon and a fire resistance mead depend on your level ([How to kill each boss](/catalog/bosses#yagluth)). His Torn Spirit builds the wisp lure for the Mistlands.
+
+> **Speedrunners** come without the root harness and outrun the Deathsquito, slip into the villages for the totems rather than clear them, and grow no farm.
+
+> **With no map**, Yagluth takes the longest of the early bosses: players search a dozen Plains before his Vegvísir.
+
+> **With no portals**, barley and flax grow only here, so farm on the spot or carry the whole harvest home.
 
 ## Can you skip it?
 
-Only by giving up what follows. Black metal goes into the Galdr Table, the eitr refinery and the black metal pickaxe, and the Galdr Table forges the Queen's Sealbreaker. Without the Torn Spirit there is no Wisplight, and the Mistlands are walked blind. 
+Only by giving up what follows: black metal goes into the Galdr Table and the Queen's Sealbreaker, and without the Torn Spirit the Mistlands are walked blind.
+
 Next, the fog: the [Mistlands](/guides/mistlands).

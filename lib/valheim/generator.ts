@@ -38,7 +38,8 @@ export function decodePlaces(raw: Float32Array): Place[] {
   return out;
 }
 
-// One room of a Fuling village as the Valheim generator lays it out: its
+// One room of a camp (a Fuling or Draugr village, a farm) as the Valheim
+// generator lays it out: its
 // prefab, its world position, and its turn in degrees clockwise from above.
 export type CampRoom = {
   prefab: string;

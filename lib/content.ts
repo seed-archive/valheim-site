@@ -3,7 +3,9 @@ import path from "node:path";
 
 import { marked } from "marked";
 
+import { longGuideLinks } from "@/lib/guides";
 import { BASE_PATH } from "@/lib/site";
+import GUIDE_VALUES from "@/lib/valheim/guide-values.json";
 
 // Long text lives in content/<locale>/<name>.md (site-code.md: long texts in
 // Markdown), in the No Man's Sky site's way. These files are ours, so the
@@ -57,7 +59,10 @@ export async function readGuide(
   locale = "en",
 ): Promise<Guide> {
   const file = path.join(process.cwd(), "content", locale, "guides", `${slug}.md`);
-  const text = fill(await readFile(file, "utf8"), values);
+  // GUIDE_VALUES: the game's own numbers the guides' text names (what a recipe
+  // takes, a crypt chest's iron), written by the Valheim generator; the page's
+  // values come after them.
+  const text = fill(await readFile(file, "utf8"), { ...GUIDE_VALUES, ...values });
   const [first, ...rest] = text.split("\n");
   const body = rest.join("\n");
   const lead = body.trim().split("\n")[0] ?? "";
@@ -67,7 +72,7 @@ export async function readGuide(
     .trim();
   return {
     title: first.replace(/^#\s*/, ""),
-    html: withBase(anchorHeadings(await marked.parse(body))),
+    html: withBase(anchorHeadings(await marked.parse(longGuideLinks(body)))),
     fact,
   };
 }

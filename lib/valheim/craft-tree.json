@@ -89,20 +89,25 @@
         "Battleaxe",
         "BowHuntsman",
         "HelmetRoot",
-        "KnifeChitin",
         "PickaxeIron",
         "ShieldBanded",
         "ShieldIronBuckler",
         "ShieldIronTower",
         "ShieldRoots",
-        "ShieldSerpentscale",
         "SledgeIron",
-        "SpearChitin",
         "SpearElderbark",
         "TankardAnniversary",
-        "TrinketChitinSwim",
         "TrinketIronHealth",
         "TrinketIronStamina"
+      ]
+    },
+    {
+      "biome": "ocean",
+      "targets": [
+        "KnifeChitin",
+        "ShieldSerpentscale",
+        "SpearChitin",
+        "TrinketChitinSwim"
       ]
     },
     {
@@ -380,7 +385,7 @@
       }
     },
     {
-      "band": 3,
+      "band": 4,
       "drops": [
         {
           "key": "DragonTear",
@@ -400,7 +405,7 @@
       }
     },
     {
-      "band": 4,
+      "band": 5,
       "drops": [
         {
           "key": "TrophyGoblinKing",
@@ -420,7 +425,7 @@
       }
     },
     {
-      "band": 5,
+      "band": 6,
       "drops": [
         {
           "key": "QueenDrop",
@@ -440,7 +445,7 @@
       }
     },
     {
-      "band": 6,
+      "band": 7,
       "drops": [
         {
           "key": "FaderDrop",
@@ -478,7 +483,7 @@
       }
     },
     {
-      "band": 7,
+      "band": 8,
       "drops": [
         {
           "key": "CrownJewel",
@@ -3616,7 +3621,7 @@
     },
     "Chitin": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Chitin",
@@ -4336,7 +4341,7 @@
     },
     "FeastOceans_Material": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Sailor's Bounty",
@@ -4588,7 +4593,7 @@
     },
     "Fish3": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Tuna",
@@ -4648,7 +4653,7 @@
     },
     "Fish8": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Coral Cod",
@@ -4816,7 +4821,7 @@
     },
     "FishingBaitOcean": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Heavy Fishing Bait",
@@ -5728,7 +5733,7 @@
     },
     "KnifeChitin": {
       "armor": 20.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 40.0,
       "eitrRegen": 0.0,
       "name": "Abyssal Razor",
@@ -7984,7 +7989,7 @@
     },
     "SerpentMeat": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Serpent Meat",
@@ -7996,7 +8001,7 @@
     },
     "SerpentMeatCooked": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Cooked Serpent Meat",
@@ -8008,7 +8013,7 @@
     },
     "SerpentScale": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Serpent Scale",
@@ -8020,7 +8025,7 @@
     },
     "SerpentStew": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Serpent Stew",
@@ -8260,7 +8265,7 @@
     },
     "ShieldSerpentscale": {
       "armor": 300.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 10.0,
       "eitrRegen": 0.0,
       "name": "Serpent Scale Shield",
@@ -8560,7 +8565,7 @@
     },
     "SpearChitin": {
       "armor": 15.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 10.0,
       "eitrRegen": 0.0,
       "name": "Abyssal Harpoon",
@@ -8764,7 +8769,7 @@
     },
     "SpiceOceans": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Seafarer's Herbs",
@@ -9520,7 +9525,7 @@
     },
     "TrinketChitinSwim": {
       "armor": 10.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 0.0,
       "eitrRegen": 0.0,
       "name": "Fins of Destiny",
@@ -9940,7 +9945,7 @@
     },
     "TrophySerpent": {
       "armor": 5.0,
-      "biome": "swamp",
+      "biome": "ocean",
       "damage": 10.0,
       "eitrRegen": 0.0,
       "name": "Serpent Trophy",
@@ -10354,10 +10359,12 @@
     "piece_MeadCauldron"
   ],
   "onByDefault": [
+    "fire_pit",
+    "piece_cookingstation",
+    "Torch",
+    "Club",
     "piece_workbench",
-    "Hammer",
-    "SpearFlint",
-    "piece_cookingstation"
+    "Hammer"
   ],
   "pieceCount": {
     "piece_cookingstation": 5
@@ -10820,7 +10827,7 @@
       "tool": "Feaster"
     },
     "FeastOceans": {
-      "biome": "swamp",
+      "biome": "ocean",
       "name": "Sailor's Bounty",
       "resources": [
         {
@@ -11903,7 +11910,7 @@
       "tool": "Feaster"
     },
     "SerpentMeatCooked": {
-      "biome": "swamp",
+      "biome": "ocean",
       "name": "Cooked Serpent Meat",
       "resources": [
         {

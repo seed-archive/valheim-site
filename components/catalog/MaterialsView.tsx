@@ -14,6 +14,7 @@ import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { recipeHref } from "@/lib/valheim/recipes";
+import { RUN_ORDER } from "@/lib/valheim/run-order";
 import { SellNote } from "@/components/catalog/SellNote";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
 import bosses from "@/lib/valheim/bosses.json";
@@ -24,18 +25,8 @@ import traders from "@/lib/valheim/traders.json";
 const t = (id: string, values?: Record<string, string | number>) =>
   serverFormat(`pages.materials.${id}`, values);
 
-// The biomes in the run's order (the Valheim generator's home biomes); a
-// material no source gives comes last.
-const BIOMES = [
-  "meadows",
-  "blackForest",
-  "swamp",
-  "mountain",
-  "plains",
-  "mistlands",
-  "ashlands",
-  "deepNorth",
-];
+// The biomes in the run's order; a material no source gives comes last.
+const BIOMES = RUN_ORDER;
 const ELSEWHERE = "elsewhere";
 const biomeAt = (b: string | null) => {
   const i = BIOMES.indexOf(b ?? "");
@@ -244,7 +235,7 @@ export function MaterialsView(props: {
                           <TableCell>{sources(m)}</TableCell>
                           <TableCell>
                             {bossOf(m) ? (
-                              <Link href={`/guides/bosses#${bossSlug(bossOf(m)!.name)}`}>
+                              <Link href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}>
                                 {t("power")}
                               </Link>
                             ) : null}

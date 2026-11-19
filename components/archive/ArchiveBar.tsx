@@ -23,7 +23,7 @@ import { TOOLS } from "@/lib/tools";
 const MENUS: {
   key: string;
   id: string;
-  groups: { id?: string; entries: Entry[] }[];
+  groups: { id?: string; href?: string; entries: Entry[] }[];
 }[] = [
   { key: "catalog", id: "archive.catalog", groups: CATALOG_GROUPS },
   { key: "guides", id: "archive.guides", groups: GUIDE_GROUPS },
@@ -113,13 +113,26 @@ export function ArchiveBar() {
               {menu.groups.flatMap((group) => [
                 ...(group.id
                   ? [
-                      <MenuItem
-                        key={group.id}
-                        disabled
-                        sx={{ fontWeight: 700, "&.Mui-disabled": { opacity: 1 } }}
-                      >
-                        <FormattedMessage id={group.id} />
-                      </MenuItem>,
+                      group.href ? (
+                        // A section with a page of its own: its name opens it.
+                        <MenuItem
+                          key={group.id}
+                          component={Link}
+                          href={group.href}
+                          onClick={() => setOpen(null)}
+                          sx={{ fontWeight: 700 }}
+                        >
+                          <FormattedMessage id={group.id} />
+                        </MenuItem>
+                      ) : (
+                        <MenuItem
+                          key={group.id}
+                          disabled
+                          sx={{ fontWeight: 700, "&.Mui-disabled": { opacity: 1 } }}
+                        >
+                          <FormattedMessage id={group.id} />
+                        </MenuItem>
+                      ),
                     ]
                   : []),
                 ...group.entries.map((entry) => (

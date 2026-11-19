@@ -2,12 +2,15 @@
 // beyond it is the edge of the world (the game's WorldGenerator).
 export const WORLD_RADIUS = 10_500;
 
-// What the map can switch on and off, in menu order: places and pins first,
-// then the trees and the contour lines drawn over the map. The start is always shown; the game's
-// other small places (ruins, camps, houses) are not drawn.
+// What the map can switch on and off, in menu order: the three on by default
+// first (the bosses, the traders, the buildings drawn from above; the owner,
+// 2026-11-19), then the other places and pins, then the trees and the contour
+// lines drawn over the map. The start is always shown; the game's other small
+// places (ruins, towers) are not drawn.
 export const MAP_LAYERS = [
   "bosses",
   "traders",
+  "buildings",
   "dungeons",
   "resources",
   "ore",
@@ -24,6 +27,8 @@ export const DEFAULT_LAYERS: Record<MapLayer, boolean> = {
   traders: true,
   dungeons: false,
   resources: false,
+  // The villages and farms drawn from above (the owner, 2026-11-19).
+  buildings: true,
   ore: false,
   trees: true,
   fineWood: false,

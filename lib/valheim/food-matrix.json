@@ -12,6 +12,11 @@
         "MinceMeatSauce"
       ],
       [
+        "Sausages",
+        "BlackSoup",
+        "FishCooked"
+      ],
+      [
         "SerpentStew",
         "SerpentMeatCooked",
         "Sausages"
@@ -61,6 +66,11 @@
         "QueensJam"
       ],
       [
+        "TurnipStew",
+        "CarrotSoup",
+        "QueensJam"
+      ],
+      [
         "Eyescream",
         "OnionSoup",
         "TurnipStew"
@@ -95,6 +105,7 @@
       [],
       [],
       [],
+      [],
       [
         "SeekerAspic",
         "YggdrasilPorridge",
@@ -116,6 +127,10 @@
   {
     "cells": [
       [
+        "Mushroom"
+      ],
+      [
+        "BoarJerky",
         "Mushroom"
       ],
       [

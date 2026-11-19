@@ -1,5 +1,71 @@
 # Guides: the structure (draft, 2026-11-17, waiting for the owner)
 
+## The menu: built 2026-11-19 (uncommitted)
+
+Agreed with the owner the same day, after the proposal below: **two guides, two stories**, as sections like the No
+Man's Sky menu's; Challenges first (the owner left the order to the session: the menu opens where a run opens, with
+A good start), Biomes second.
+- **Biomes**: Meadows, Black Forest, Swamp, Mountain, Plains, Mistlands, Ashlands, Deep North; each page answers its
+  biome's questions (`guide-questions.md`).
+- **Challenges**: A good start (new, `/guides/a-good-start`: the start island's table moved out of the Meadows and
+  the first run out), Speedrun, Challenges (no death, no map, no portals, your own rules; one page or one a
+  challenge is still the owner's to say), Reverse run.
+- **Moved to the catalogue**: Bosses (`/catalog/bosses`, World group) and Comfort (`/catalog/comfort`, Your base
+  group); every link to them follows. Not released, so no redirects.
+- **Out of the menu, to be folded in**: Farming into the Plains, the Forge of Potential into the Mountain; their pages
+  stay at their addresses until then.
+- `lib/guides.ts` → `GUIDE_GROUPS` (`archive.groupBiomes`, `archive.groupChallenges`).
+- **Section pages** (the owner, 2026-11-20, as No Man's Sky): each section is a contents page, `/guides/challenges` and
+  `/guides/biomes`, its guides under it (`/guides/biomes/swamp`); breadcrumb Home › Guides › section › guide
+  (`sectionOf` in `lib/guides.ts`, used by `MarkdownGuide`); a section's name in the menu opens its page. The text
+  keeps short links, `/guides/<slug>`, made long by `longGuideLinks` when a guide is read. The old Challenges guide
+  (no death, no map, no portals) took the slug `other-rules`, since its section took `/guides/challenges`. Farming and
+  the Forge of Potential stay at `/guides/<slug>` until they are folded in.
+
+## The story: rebuilt 2026-11-19 (uncommitted)
+
+The owner, 2026-11-19: the story runs from the Challenges through the Biomes; each page answers its questions
+(`guide-questions.md`), each question a heading in the player's words, its answer in a line or two, then its table:
+how often (a share of seeds) or how far (a median and its middle half). The chain: A good start → Speedrun →
+Challenges → Reverse run → Meadows → … → Deep North, which ends back at the Challenges.
+
+- **Every number from the Valheim generator** (wired 2026-11-20, the owner; the draft file is gone). The scan's
+  shares and spreads come from `vh guides` (`lib/valheim/seed-stats.json`); the game's own numbers the text names
+  (what a recipe or piece takes, a Sunken Crypt chest's iron) from `vh site` (`lib/valheim/guide-values.json`), merged
+  into every guide by `readGuide`. Rows the generator cannot measure honestly were dropped: what rests on random
+  spawns (birds and Seekers near the Queen), on luck (an extractor stolen), on no measure yet (the copper base to
+  Moder, stone towers by the start, a "big" Swamp, totems within 1 km, villages without water, a root at the Plains'
+  edge) or on judgement (how many meads, how many core stands). "From the north–south line through the start" is the
+  generator's `offLine`.
+- **"never" on A good start** (the owner, 2026-11-19): the Mistlands, Ashlands and Deep North rows read "never"
+  instead of 0 %. The Valheim generator's notes trace why it is the game's rule, not chance: the Mistlands begin
+  6,000 m from the world's centre, the Ashlands and the Deep North far beyond, and the start stands at the centre.
+- **Where do I go first** (the owner, 2026-11-19): Eikthyr, then the Elder, and only then Bonemass and Moder, the
+  scouting done along the way; its table gives all four altars from the start.
+- **Footnotes by way of playing** (the owner, 2026-11-19): a blockquote opening with the mode in bold
+  (`> **Speedrunners** …`), drawn as a side note by `MarkdownGuide`, at the end of a biome's questions. Speedrun notes
+  are on all eight biomes; No map, No portals and Reverse run follow from the research
+  (the Valheim generator's notes, play modes), the reverse run only where it differs, above all the Deep North.
+- **No charts yet.** No page has the "How often a seed has it" section any more, so `MarkdownGuide`'s charts draw
+  nothing; the next pass decides the charts by the owner's rule (several values of one thing, `site-text.md`), then
+  `ShareChart` and `SpreadChart` are kept or deleted.
+
+### The proposal as written (superseded)
+
+The owner, 2026-11-19: the menu first, then the pages. The guides tell one story, the run, answering the site's one
+question ("how do I reach the end fastest", `.claude/rules/site-text.md`) with the questions of each biome
+(`guide-questions.md`): "I went looking for this, it was there on so many seeds at such a distance, it was or was not
+mine, I went on". Modelled on the No Man's Sky section's menu (its `docs/seo.md` → The story the site tells): the
+menu reads as one trip, each group is a bold line, each page's last sentence leads to the next page of its group.
+
+| Group | Pages, in order | What it is |
+|---|---|---|
+| **The run** | Speedrun (the overview: what a run is, the route boss by boss, the run-wide odds), A good start (new: the start island and the scouting run, taken out of the Meadows guide), Meadows, Black Forest, Swamp, Mountain, Plains, Mistlands, Ashlands, Deep North | the story; each biome page answers its questions in order, each with its table or chart; the Deep North's last line leads back to the overview |
+| **Other ways to play** | Reverse run, Challenges (no death, no map, no portals, your own rules) | out of the story: they change the rules of the run |
+| **Topics** | Bosses, Forge of Potential, Farming, Comfort | reference the chapters link to; no part of the story |
+
+Open for the owner: the Speedrun page first as the overview, or last as the summary; the name "A good start".
+
 The owner, 2026-11-17: a guide tells the story of a run through the world, focused on speed, quality and quantity
 ("faster, higher, stronger"). The catalogue is the reference a guide links to; the tools (the map, the seed rating,
 the craft tree) are what a guide sends the player to use. First the structure, then the text, then the links.

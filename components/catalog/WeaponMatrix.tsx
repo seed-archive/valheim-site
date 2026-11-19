@@ -59,7 +59,7 @@ function ByBiome(props: { head: React.ReactNode; cells: (c: Row) => React.ReactN
                   <TableCell sx={{ whiteSpace: "nowrap", fontWeight: c.boss ? 700 : undefined }}>
                     {c.boss ? (
                       // The bosses guide's headings are its anchors, made from their words.
-                      <Link href={`/guides/bosses#${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{c.name}</Link>
+                      <Link href={`/catalog/bosses#${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{c.name}</Link>
                     ) : (
                       <Link href={`/catalog/creatures#${c.key.toLowerCase()}`}>{c.name}</Link>
                     )}

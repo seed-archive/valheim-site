@@ -13,18 +13,93 @@ Seed Archive shares is the portal's `docs/seo.md` (`../seed-archive/docs/seo.md`
 | Map                  | `/tools/map`                 | the world map of a seed, computed in the visitor's browser |
 | How good is my seed? | `/tools/how-good-is-my-seed` | a seed's measures set against the seed scan                |
 | Guides               | `/guides`                    | the guides' index, reached by breadcrumbs only (not in the menu; the owner, 2026-11-16)               |
-| How to kill each boss | `/guides/bosses`            | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way |
-| The Meadows guide    | `/guides/meadows`            | Eikthyr, the antler pickaxe, beehives and fine wood by the start; numbers from the seed scan |
-| The Black Forest guide | `/guides/black-forest`     | copper and tin at a troll cave, bronze, the Elder and his swamp key, Haldor; numbers from the seed scan |
+| How to kill each boss | `/catalog/bosses`           | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way (moved from the guides 2026-11-19) |
+| Challenges (section) | `/guides/challenges`, its guides `/guides/challenges/{a-good-start,speedrun,other-rules,reverse-run}` | the run's story: a good start, the speedrun's route, no death, no map, no portals, the reverse run (`docs/guides.md` → The menu) |
+| Biomes (section)     | `/guides/biomes`, its guides `/guides/biomes/<biome>`, Meadows to Deep North | each biome's questions in the run's order, with how often and how far; footnotes for the other ways of playing |
+| What to break        | `/catalog/breakables`        | the objects worth smashing: metal, hides, jute, chains, coins, moulds, the chance a break gives each, where they stand (Materials group, 2026-11-20) |
+| Comfort              | `/catalog/comfort`           | the best piece of each kind, and how long Rested lasts (moved from the guides 2026-11-19) |
 | Bugs                 | `/bugs`                      | world generation bugs a player meets on a seed; in the footer |
 
 A page's address names its menu item (`/catalog/<kind>`, `/guides/…`, `/tools/<tool>`), each with an index page and
 the breadcrumb Home › item › page (the shared `docs/seo.md`, the owner, 2026-11-16). The section has no Quests menu
 (the owner, 2026-11-17): "Where to go first" repeated the Meadows and Black Forest guides and was removed, and the
-bosses moved to the guides. A
+bosses moved to the guides, then on 2026-11-19 to the catalogue. A
 full-screen tool such as the map keeps only the header: no breadcrumb, no footer.
 
 Until the section has its first real pages, every page is `noindex` (`app/layout.tsx`).
+
+## The site map
+
+Taken over from the No Man's Sky section's rules, 2026-11-20, as the owner asked; its own story is in its `docs/seo.md`.
+
+**The story the site tells** (the owner, 2026-11-19): how to reach the end of the game fastest
+(`.claude/rules/site-text.md` → The one question). The Guides menu reads as one trip: the Challenges section first,
+from a good start through the speedrun to the other rules, then the Biomes in the run's order; each guide's closing
+sentence leads to the next (`docs/guides.md` → The story). The Catalog is the reference a guide links to, the Tools
+are what a guide sends the player to use.
+
+**The rule of the menu's order.** The Biomes run in the order a run meets them: Meadows, Black Forest, Swamp,
+Mountain, Plains, Mistlands, Ashlands, Deep North. A later change of the order keeps it or says why it breaks it.
+
+**Section pages** (the owner, 2026-11-20, as the No Man's Sky menu has): each section of the Guides is a page of its
+own, `/guides/challenges` and `/guides/biomes`, a contents list of its guides, and the guides stand under it
+(`docs/guides.md` → The menu). A section page's `<title>` is `<Section> guides for Valheim — Seed Archive`.
+
+## The semantic core
+
+Primary and secondary queries by page, the order by judgement, not measured search volume (as in the No Man's Sky
+section). To be checked against search suggestions and Search Console once the section is indexed.
+
+| Page | Primary query | Secondary |
+|---|---|---|
+| `/` | valheim seed map | valheim seeds; best valheim seed |
+| `/tools/map` | valheim seed map | valheim world map; boss altar locations; trader locations |
+| `/tools/how-good-is-my-seed` | best valheim seed | valheim seed checker; good starting seed |
+| `/tools/craft-tree` | valheim progression | what to craft first; valheim crafting order |
+| `/guides` | valheim guides | valheim walkthrough |
+| a-good-start | valheim best start | starting island; where to go first in valheim |
+| speedrun | valheim speedrun | speedrun route; speedrun seed |
+| `/guides/challenges` | valheim challenges | valheim speedrun; hardcore |
+| `/guides/biomes` | valheim biomes | valheim biome order; valheim walkthrough |
+| other-rules | valheim no map | no portals; hardcore; no death |
+| reverse-run | valheim reverse run | deep north first; bosses backwards |
+| meadows | eikthyr location | valheim beehive; antler pickaxe |
+| black-forest | valheim copper | troll cave; the elder location; haldor location; surtling cores |
+| swamp | valheim iron | sunken crypt; abomination; root harness; bonemass location; bog witch |
+| mountain | valheim silver | drake nests; dragon eggs; moder location |
+| plains | fuling totems | yagluth location; barley and flax |
+| mistlands | infested mines | sealbreaker; dvergr extractor; eitr; the queen |
+| ashlands | charred fortress | bell fragments; fader; drakkar |
+| deep-north | valheim deep north | morkhalla; intricate key; kall summon |
+| `/catalog/bosses` | valheim bosses | boss order; how to summon each boss |
+| `/catalog/creatures` | valheim creatures | creature drops |
+| `/catalog/traders` | valheim traders | haldor items; hildir; bog witch |
+| `/catalog/breakables` | valheim what to break | fenris hair; ancient pot; red jute; how to get silver |
+
+**The game's name** once a page, in its `<title>`: `<title> in Valheim — Seed Archive`; the bold question, the
+headings and the `fact` do not repeat it (`.claude/rules/site-text.md`).
+
+## The links
+
+- **External.** Only where a page cites a rule (the speedrun's categories on speedrun.com) or credits a player
+  (`/credits` on the portal).
+- **Tools and guides.** How good is my seed? ↔ a-good-start, speedrun and every biome (each biome's "Rate your seed");
+  the seed map ↔ a-good-start, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun.
+- **Guides and catalogue.** Each biome guide links the bosses page at its boss (`/catalog/bosses#<boss>`), the
+  traders page where it names a trader, and the meads, weapons and materials it relies on; the catalogue links back
+  from a boss's trophy and a creature's drops.
+- **The prefix and the anchors.** `withBase` in `lib/content.ts` prefixes the Markdown's links; `anchorHeadings` gives
+  every heading its id, so a guide's question is linkable.
+
+## How to review before a release
+
+The shared steps of the portal's `docs/seo.md` first, with `<slug>` = `valheim`, then:
+
+1. Check each changed page against its row in the core above: the primary query in the title, the lead and the
+   description.
+2. Check the text rules of `.claude/rules/site-text.md`: the forbidden words, no sample sizes, no named places on
+   guides, no typed numbers, every claim proven in the Valheim generator's notes.
+3. Add a page's row to the core when a page is added, and its links to the link map.
 
 ## Regrouping (2026-11-17)
 

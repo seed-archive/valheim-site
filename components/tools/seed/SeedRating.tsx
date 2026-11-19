@@ -35,21 +35,24 @@ export function SeedRating() {
   const intl = useIntl();
   const router = useRouter();
   const pathname = usePathname();
-  // The seed lives in the address, so a rating can be shared.
-  const seed = useSearchParams().get("seed");
+  // The seed lives in the address, so a rating can be shared; without one the
+  // example seed is filled in and rated at once (the owner, 2026-11-19).
+  const seed = useSearchParams().get("seed") ?? EXAMPLE_SEED;
   const {
     control,
     handleSubmit,
     formState: { isValid },
   } = useForm<SeedForm>({
-    defaultValues: { seed: seed ?? "" },
+    defaultValues: { seed },
     mode: "onChange",
   });
   const generator = useRef<MapClient | null>(null);
   const [strip, setStrip] = useState<{ seed: string; found: Found[] } | null>(null);
+  // `complete` once the deep measures (the vegetation's, seconds later) are in.
   const [measured, setMeasured] = useState<{
     seed: string;
     measures: SeedMeasures;
+    complete: boolean;
   } | null>(null);
 
   useEffect(() => {
@@ -79,14 +82,14 @@ export function SeedRating() {
       .then((raw) => {
         const measures = decodeMeasures(raw);
         if (live && measures) {
-          setMeasured({ seed, measures });
+          setMeasured({ seed, measures, complete: false });
         }
         return gen.call<Float32Array>("measure_deep", [seed]);
       })
       .then((raw) => {
         const measures = decodeMeasures(raw);
         if (live && measures) {
-          setMeasured({ seed, measures });
+          setMeasured({ seed, measures, complete: true });
         }
       });
     return () => {
@@ -189,6 +192,7 @@ export function SeedRating() {
             </Typography>
             <StripReport
               measures={current}
+              complete={Boolean(measured && measured.seed === seed && measured.complete)}
               found={strip && strip.seed === seed ? strip.found : null}
             />
           </Paper>

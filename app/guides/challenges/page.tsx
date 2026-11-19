@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
 
-import { MarkdownGuide } from "@/components/guides/MarkdownGuide";
-import { readGuide } from "@/lib/content";
-import { SUMMONS } from "@/lib/valheim/summons";
+import { GuidesIndex } from "@/components/guides/GuidesIndex";
+import { GUIDE_GROUPS } from "@/lib/guides";
 
-const guide = () => readGuide("challenges", SUMMONS);
+export const metadata: Metadata = {
+  title: "Challenges guides for Valheim — Seed Archive",
+  description:
+    "A good start, the speedrun's route, no death, no map, no portals and the reverse run: the run's story under each rule.",
+  alternates: { canonical: "/guides/challenges" },
+};
 
-export async function generateMetadata(): Promise<Metadata> {
-  const { fact } = await guide();
-  return {
-    title: "Challenges in Valheim — Seed Archive",
-    description: fact,
-    alternates: { canonical: "/guides/challenges" },
-  };
-}
-
-export default async function ChallengesPage() {
-  return <MarkdownGuide guide={await guide()} crumb="archive.guideChallenges" />;
+// The Challenges section's contents page: its guides, each in a sentence.
+export default function ChallengesPage() {
+  return (
+    <GuidesIndex
+      name="archive.groupChallenges"
+      title="archive.groupChallenges"
+      groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/challenges").map((g) => ({ entries: g.entries }))}
+      parent={{ name: "archive.guides", href: "/guides" }}
+    />
+  );
 }
