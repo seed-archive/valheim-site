@@ -45,7 +45,9 @@ export default function Home() {
             id="pages.home.lead"
             values={{
               basics: (text) => <Link href="/guides/basics">{text}</Link>,
-              biomes: (text) => <Link href="/guides/biomes">{text}</Link>,
+              deepNorth: (text) => (
+                <Link href="/guides/biomes/deep-north">{text}</Link>
+              ),
               map: (text) => <Link href="/tools/map">{text}</Link>,
               rating: (text) => (
                 <Link href="/tools/how-good-is-my-seed">{text}</Link>

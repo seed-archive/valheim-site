@@ -74,7 +74,7 @@
   "pages": {
     "home": {
       "title": "Valheim seeds",
-      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. <biomes>Eight lands</biomes> lie ahead, from the soft Meadows to the Deep North. Valheim never tells you the odds. We do, from your <basics>first steps</basics> to the end. Want it harder? Take on the <challenges>challenges</challenges>. Every weapon, food and boss waits in the <catalog>catalog</catalog>. Drop your seed on the <map>map</map> and see your whole world before you sail, or find out <rating>how good your seed is</rating>.",
+      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft Meadows to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do, from your <basics>first steps</basics> to the end. Want it harder? Take on the <challenges>challenges</challenges>. Every weapon, food and boss waits in the <catalog>catalog</catalog>. Drop your seed on the <map>map</map> and see your whole world before you sail, or find out <rating>how good your seed is</rating>.",
       "new": "New",
       "biome": {
         "meadows": {
