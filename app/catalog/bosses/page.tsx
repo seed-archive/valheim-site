@@ -20,7 +20,7 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
 import { effectText, joined, type Effect } from "@/lib/valheim/effects";
 import bosses from "@/lib/valheim/bosses.json";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 
 export const metadata: Metadata = {
   title: "How to kill each boss in Valheim — Seed Archive",
@@ -43,22 +43,35 @@ type Phase = Boss["phases"][number];
 // A boss's anchor (`the-elder`, `kall-fimbulbringer`).
 const slug = (b: Boss) => b.name.toLowerCase().replace(/[^a-z]+/g, "-");
 // A multiplier as the change it makes to a hit: 2 → +100 %, 0.5 → −50 %.
-const percent = (m: number) => `${m > 1 ? "+" : "−"}${Math.round(Math.abs(m - 1) * 100)} %`;
+const percent = (m: number) =>
+  `${m > 1 ? "+" : "−"}${Math.round(Math.abs(m - 1) * 100)} %`;
 
 // What hurts a boss more and what less, from its first phase (the game's
 // damage modifiers): weak, resisted, immune.
 function modifiers(p: Phase) {
   const mods = Object.entries(p.modifiers as Record<string, number>);
-  const list = (pick: (m: number) => boolean, show: (k: string, m: number) => string) =>
+  const list = (
+    pick: (m: number) => boolean,
+    show: (k: string, m: number) => string,
+  ) =>
     mods
       .filter(([, m]) => pick(m))
       .sort((a, b) => b[1] - a[1])
       .map(([k, m]) => show(k, m))
       .join(", ");
   return {
-    weak: list((m) => m > 1, (k, m) => `${damage(k)} ${percent(m)}`),
-    resists: list((m) => m > 0 && m < 1, (k, m) => `${damage(k)} ${percent(m)}`),
-    immune: list((m) => m === 0, (k) => damage(k)),
+    weak: list(
+      (m) => m > 1,
+      (k, m) => `${damage(k)} ${percent(m)}`,
+    ),
+    resists: list(
+      (m) => m > 0 && m < 1,
+      (k, m) => `${damage(k)} ${percent(m)}`,
+    ),
+    immune: list(
+      (m) => m === 0,
+      (k) => damage(k),
+    ),
   };
 }
 
@@ -68,6 +81,35 @@ const attacks = (p: Phase) =>
     .sort((a, b) => b[1] - a[1])
     .map(([k, v]) => `${damage(k)} ${v}`)
     .join(", ");
+
+// The time a campfire alone takes to burn a phase down (the Valheim generator's
+// `fire`, seconds against the boss's own healing), or that it never does.
+const burn = (fire: number | null) =>
+  fire === null
+    ? t("fire.never")
+    : t("fire.time", { minutes: Math.max(1, Math.round(fire / 60)) });
+
+// A phase that brings back earlier bosses (Kall's second): their aspects.
+type Aspect = Phase & { key: string; name: string; blast: number };
+const aspectsOf = (p: Phase): Aspect[] =>
+  "aspects" in p ? (p.aspects as Aspect[]) : [];
+// The summary table's anchor: an aspect takes damage as its boss does (the
+// same modifiers in the Valheim generator's data), so Kall's second phase
+// sends the reader there instead of repeating them.
+const SUMMARY = "all-bosses";
+// Each aspect's boss (the game's prefab names), so the text names the boss the
+// reader finds in the table.
+const ASPECT_OF: Record<string, string> = {
+  Aspect_Eikthyr: "Eikthyr",
+  Aspect_Elder: "gd_king",
+  Aspect_Bonemass: "Bonemass",
+  Aspect_Moder: "Dragon",
+  Aspect_Yagluth: "GoblinKing",
+  Aspect_SeekerQueen: "SeekerQueen",
+  Aspect_Fader: "Fader",
+};
+const aspectName = (a: Aspect) =>
+  bosses.find((b) => b.key === ASPECT_OF[a.key])?.name ?? a.name;
 
 // One row of facts: a label and its value.
 function Fact(props: { label: string; children: ReactNode }) {
@@ -82,7 +124,11 @@ export default function BossesPage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
@@ -97,7 +143,7 @@ export default function BossesPage() {
           <b>{t("question")}</b> {t("lead")}
         </Typography>
 
-        <TableContainer sx={{ mb: 2 }}>
+        <TableContainer id={SUMMARY} sx={{ mb: 2, scrollMarginTop: BAR }}>
           <Table size="small">
             <TableHead>
               <TableRow>
@@ -105,12 +151,15 @@ export default function BossesPage() {
                 <TableCell>{t("head.biome")}</TableCell>
                 <TableCell align="right">{t("head.health")}</TableCell>
                 <TableCell>{t("head.weak")}</TableCell>
+                <TableCell>{t("head.resists")}</TableCell>
+                <TableCell>{t("head.immune")}</TableCell>
                 <TableCell>{t("head.best")}</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {bosses.map((b) => {
                 const best = b.best[0];
+                const m = modifiers(b.phases[0]);
                 return (
                   <TableRow key={b.key}>
                     <TableCell>
@@ -120,11 +169,13 @@ export default function BossesPage() {
                     <TableCell align="right">
                       {b.phases.reduce((s, p) => s + p.health, 0)}
                     </TableCell>
-                    <TableCell>{modifiers(b.phases[0]).weak || "—"}</TableCell>
+                    <TableCell>{m.weak || "—"}</TableCell>
+                    <TableCell>{m.resists || "—"}</TableCell>
+                    <TableCell>{m.immune || "—"}</TableCell>
                     <TableCell>
                       {best ? (
                         <>
-                          <Link href={recipeHref(best.key)}>{best.name}</Link>
+                          <RowLink item={best.key}>{best.name}</RowLink>
                           {best.ammo ? ` + ${best.ammo.name}` : ""}
                         </>
                       ) : (
@@ -141,10 +192,22 @@ export default function BossesPage() {
         {bosses.map((b) => {
           const id = slug(b);
           return (
-            <Box key={b.key} component="section" id={id} sx={{ scrollMarginTop: BAR }}>
+            <Box
+              key={b.key}
+              component="section"
+              id={id}
+              sx={{ scrollMarginTop: BAR }}
+            >
               <AnchorHeading
                 id={id}
-                sx={{ position: "sticky", top: BAR, zIndex: 2, mt: 4, py: 1, bgcolor: "background.default" }}
+                sx={{
+                  position: "sticky",
+                  top: BAR,
+                  zIndex: 2,
+                  mt: 4,
+                  py: 1,
+                  bgcolor: "background.default",
+                }}
               >
                 {b.name}
               </AnchorHeading>
@@ -158,9 +221,32 @@ export default function BossesPage() {
                       </Typography>
                     ) : null}
                     <Fact label={t("fact.health")}>{p.health}</Fact>
-                    {m.weak ? <Fact label={t("fact.weak")}>{m.weak}</Fact> : null}
-                    {m.resists ? <Fact label={t("fact.resists")}>{m.resists}</Fact> : null}
-                    {m.immune ? <Fact label={t("fact.immune")}>{m.immune}</Fact> : null}
+                    {p.immune ? (
+                      <Typography sx={{ mb: 1 }}>
+                        {t("aspects.lead", {
+                          count: aspectsOf(p).length,
+                          atOnce: "atOnce" in p ? Number(p.atOnce) : 1,
+                          blast: aspectsOf(p)[0]?.blast ?? 0,
+                          health: aspectsOf(p)
+                            .map((a) => `${aspectName(a)} ${a.health}`)
+                            .join(", "),
+                        })}{" "}
+                        <Link href={`#${SUMMARY}`}>{t("aspects.link")}</Link>.
+                      </Typography>
+                    ) : (
+                      <>
+                        {m.weak ? (
+                          <Fact label={t("fact.weak")}>{m.weak}</Fact>
+                        ) : null}
+                        {m.resists ? (
+                          <Fact label={t("fact.resists")}>{m.resists}</Fact>
+                        ) : null}
+                        {m.immune ? (
+                          <Fact label={t("fact.immune")}>{m.immune}</Fact>
+                        ) : null}
+                        <Fact label={t("fact.fire")}>{burn(p.fire)}</Fact>
+                      </>
+                    )}
                     {attacks(p) ? (
                       <Fact label={t("fact.attacks")}>
                         {attacks(p)}
@@ -175,7 +261,9 @@ export default function BossesPage() {
               </Typography>
               {b.power ? (
                 <>
-                  <Typography sx={{ mb: 1, fontStyle: "italic" }}>{b.power.text}</Typography>
+                  <Typography sx={{ mb: 1, fontStyle: "italic" }}>
+                    {b.power.text}
+                  </Typography>
                   <Box component="ul" sx={{ mt: 0, mb: 1, pl: 3 }}>
                     {joined(b.power.effects as Effect[]).map((e, i) => (
                       <li key={i}>
@@ -196,15 +284,17 @@ export default function BossesPage() {
               <Typography variant="h6" component="h3" sx={{ mt: 2, mb: 1 }}>
                 {t("direct.title")}
               </Typography>
-              <Typography sx={{ mb: 1 }}>{t("direct.text", { biome: biomeName(b.biome) })}</Typography>
+              <Typography sx={{ mb: 1 }}>
+                {t("direct.text", { biome: biomeName(b.biome) })}
+              </Typography>
               {b.best.map((w) => (
                 <Box key={w.key}>
                   <ItemIcon item={w.key}>
-                    <Link href={recipeHref(w.key)}>{w.name}</Link>
+                    <RowLink item={w.key}>{w.name}</RowLink>
                     {w.ammo ? (
                       <>
                         {" + "}
-                        <Link href={recipeHref(w.ammo.key)}>{w.ammo.name}</Link>
+                        <RowLink item={w.ammo.key}>{w.ammo.name}</RowLink>
                       </>
                     ) : null}
                     {": "}

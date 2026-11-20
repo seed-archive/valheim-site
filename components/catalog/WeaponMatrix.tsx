@@ -7,6 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 
+import { RowLink } from "@/components/catalog/RowLink";
 import { serverFormat } from "@/lib/i18n/server";
 import matrix from "@/lib/valheim/weapon-matrix.json";
 
@@ -22,14 +23,18 @@ const t = (id: string, values?: Record<string, string | number>) =>
 // A kind's name: the crafting catalogue's, where two-handed kinds carry ".2h".
 const TWO_HANDED = ["polearm", "fist"];
 const kindName = (kind: string) =>
-  serverFormat(`pages.crafting.kind.${TWO_HANDED.includes(kind) ? `${kind}.2h` : kind}`);
+  serverFormat(
+    `pages.crafting.kind.${TWO_HANDED.includes(kind) ? `${kind}.2h` : kind}`,
+  );
 
 // A cell's look: weak green, resistant red, immune grey (the catalogue's colours).
 function tone(m: number) {
   if (m === 0) {
     return { color: "text.disabled" };
   }
-  return m > 1 ? { bgcolor: "#e8f5e9", color: "#1b5e20" } : { bgcolor: "#ffebee", color: "#b71c1c" };
+  return m > 1
+    ? { bgcolor: "#e8f5e9", color: "#1b5e20" }
+    : { bgcolor: "#ffebee", color: "#b71c1c" };
 }
 
 type Row = (typeof matrix.creatures)[number];
@@ -38,7 +43,11 @@ const TYPES = matrix.types as DamageType[];
 const BIOMES = [...new Set(matrix.creatures.map((c) => c.biome))];
 
 // One table: a head row, then each biome's heading row and its creatures.
-function ByBiome(props: { head: React.ReactNode; cells: (c: Row) => React.ReactNode; columns: number }) {
+function ByBiome(props: {
+  head: React.ReactNode;
+  cells: (c: Row) => React.ReactNode;
+  columns: number;
+}) {
   return (
     <TableContainer sx={{ mb: 2 }}>
       <Table size="small">
@@ -48,7 +57,10 @@ function ByBiome(props: { head: React.ReactNode; cells: (c: Row) => React.ReactN
         <TableBody>
           {BIOMES.map((biome) => [
             <TableRow key={biome}>
-              <TableCell colSpan={props.columns} sx={{ fontWeight: "bold", bgcolor: "action.hover" }}>
+              <TableCell
+                colSpan={props.columns}
+                sx={{ fontWeight: "bold", bgcolor: "action.hover" }}
+              >
                 {serverFormat(`pages.crafting.biome.${biome}`)}
               </TableCell>
             </TableRow>,
@@ -56,12 +68,23 @@ function ByBiome(props: { head: React.ReactNode; cells: (c: Row) => React.ReactN
               .filter((c) => c.biome === biome)
               .map((c) => (
                 <TableRow key={c.key}>
-                  <TableCell sx={{ whiteSpace: "nowrap", fontWeight: c.boss ? 700 : undefined }}>
+                  <TableCell
+                    sx={{
+                      whiteSpace: "nowrap",
+                      fontWeight: c.boss ? 700 : undefined,
+                    }}
+                  >
                     {c.boss ? (
                       // The bosses guide's headings are its anchors, made from their words.
-                      <Link href={`/catalog/bosses#${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{c.name}</Link>
+                      <Link
+                        href={`/catalog/bosses#${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                      >
+                        {c.name}
+                      </Link>
                     ) : (
-                      <Link href={`/catalog/creatures#${c.key.toLowerCase()}`}>{c.name}</Link>
+                      <RowLink item={c.key} creature>
+                        {c.name}
+                      </RowLink>
                     )}
                   </TableCell>
                   {props.cells(c)}
@@ -84,11 +107,18 @@ export function WeaponMatrix() {
   // The kinds of each damage type, as one line: "Slash: sword, axe…".
   const byType = TYPES.map((type) => ({
     type,
-    kinds: matrix.kinds.filter((k) => k.type === type).map((k) => kindName(k.kind)),
+    kinds: matrix.kinds
+      .filter((k) => k.type === type)
+      .map((k) => kindName(k.kind)),
   })).filter((g) => g.kinds.length > 0);
   return (
     <>
-      <Typography variant="h4" component="h2" id="what-hurts-each-creature" sx={{ mt: 4, mb: 1 }}>
+      <Typography
+        variant="h4"
+        component="h2"
+        id="what-hurts-each-creature"
+        sx={{ mt: 4, mb: 1 }}
+      >
         {t("hurts.title")}
       </Typography>
       <Typography sx={{ mb: 1 }}>{t("hurts.lead")}</Typography>
@@ -96,7 +126,8 @@ export function WeaponMatrix() {
         {byType.map((g, i) => (
           <span key={g.type}>
             {i > 0 ? " " : ""}
-            <b>{serverFormat(`pages.crafting.damage.${g.type}`)}:</b> {g.kinds.join(", ")}.
+            <b>{serverFormat(`pages.crafting.damage.${g.type}`)}:</b>{" "}
+            {g.kinds.join(", ")}.
           </span>
         ))}
       </Typography>
@@ -111,19 +142,30 @@ export function WeaponMatrix() {
           ...TYPES.map((type) => {
             const m = c.multipliers[type];
             return (
-              <TableCell key={type} align="center" sx={m === 1 ? undefined : tone(m)}>
+              <TableCell
+                key={type}
+                align="center"
+                sx={m === 1 ? undefined : tone(m)}
+              >
                 {m === 1 ? "" : m === 0 ? t("immune") : `×${m}`}
               </TableCell>
             );
           }),
           <TableCell key="best" sx={{ minWidth: 180 }}>
-            {c.best.length === matrix.kinds.length ? t("any") : c.best.map(kindName).join(", ")}
+            {c.best.length === matrix.kinds.length
+              ? t("any")
+              : c.best.map(kindName).join(", ")}
           </TableCell>,
         ]}
       />
       <Typography sx={{ mb: 4 }}>{t("hurts.fire")}</Typography>
 
-      <Typography variant="h4" component="h2" id="what-each-creature-hits-with" sx={{ mt: 4, mb: 1 }}>
+      <Typography
+        variant="h4"
+        component="h2"
+        id="what-each-creature-hits-with"
+        sx={{ mt: 4, mb: 1 }}
+      >
         {t("deals.title")}
       </Typography>
       <Typography sx={{ mb: 2 }}>{t("deals.lead")}</Typography>
@@ -142,7 +184,8 @@ export function WeaponMatrix() {
         }
       />
       <Typography sx={{ mb: 4 }}>
-        {t("deals.pierce")} <Link href="/catalog/armour">{t("deals.armour")}</Link>.
+        {t("deals.pierce")}{" "}
+        <Link href="/catalog/armour">{t("deals.armour")}</Link>.
       </Typography>
     </>
   );

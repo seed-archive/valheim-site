@@ -13,7 +13,8 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
+import { MATERIAL_KINDS } from "@/lib/valheim/recipes";
 import { RUN_ORDER } from "@/lib/valheim/run-order";
 import { SellNote } from "@/components/catalog/SellNote";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
@@ -42,7 +43,10 @@ const anchor = (biome: string) =>
 
 // Everything each material goes into: every recipe and build piece that takes
 // it, earliest biome first.
-const usedIn = new Map<string, { key: string; name: string; biome: string | null }[]>();
+const usedIn = new Map<
+  string,
+  { key: string; name: string; biome: string | null }[]
+>();
 for (const r of [...crafting.gear, ...crafting.building]) {
   for (const m of r.resources) {
     const list = usedIn.get(m.key) ?? [];
@@ -54,11 +58,14 @@ for (const r of [...crafting.gear, ...crafting.building]) {
 }
 usedIn.forEach((list) =>
   list.sort(
-    (a, b) => biomeAt(a.biome) - biomeAt(b.biome) || a.name.localeCompare(b.name),
+    (a, b) =>
+      biomeAt(a.biome) - biomeAt(b.biome) || a.name.localeCompare(b.name),
   ),
 );
 
-const traderName = new Map(traders.traders.map((x) => [x.key, x.name ?? x.key]));
+const traderName = new Map(
+  traders.traders.map((x) => [x.key, x.name ?? x.key]),
+);
 
 type Material = (typeof materials)[number];
 
@@ -70,9 +77,9 @@ function sources(m: Material) {
   }
   if (m.made) {
     parts.push(
-      <Link key="made" href={recipeHref(m.key)}>
+      <RowLink key="made" item={m.key}>
         {t("made")}
-      </Link>,
+      </RowLink>,
     );
   }
   if (m.gathered) {
@@ -89,16 +96,16 @@ function sources(m: Material) {
   // players fish).
   m.caughtWith.forEach((f) =>
     parts.push(
-      <Link key={`with-${f.key}`} href={`/catalog/creatures#${f.key.toLowerCase()}`}>
+      <RowLink key={`with-${f.key}`} item={f.key} creature>
         {t("caughtWith", { fish: f.name })}
-      </Link>,
+      </RowLink>,
     ),
   );
   m.droppedBy.forEach((c) =>
     parts.push(
-      <Link key={c.key} href={`/catalog/creatures#${c.key.toLowerCase()}`}>
+      <RowLink key={c.key} item={c.key} creature>
         {c.name}
-      </Link>,
+      </RowLink>,
     ),
   );
   m.soldBy.forEach((s) =>
@@ -131,8 +138,7 @@ function sources(m: Material) {
 // start altar.
 const BOSS_KEYS = new Set(bosses.map((b) => b.key));
 const bossSlug = (name: string) => name.toLowerCase().replace(/[^a-z]+/g, "-");
-const bossOf = (m: Material) =>
-  m.droppedBy.find((c) => BOSS_KEYS.has(c.key));
+const bossOf = (m: Material) => m.droppedBy.find((c) => BOSS_KEYS.has(c.key));
 
 // The section of the bosses' trophies, and a section's heading.
 const BOSSES_SECTION = "bosses";
@@ -141,15 +147,8 @@ const heading = (biome: string) =>
     ? t("bossTrophies")
     : serverFormat(`pages.crafting.biome.${biome}`);
 
-// The game's item types a page keeps to (`ItemDrop.ItemData.ItemType`).
-const KINDS = {
-  // Materials, fish and the like, not what a gear page or the food page holds.
-  raw: (m: Material) =>
-    [1, 16, 21].includes(m.itemType ?? 0) && !GEAR_KEYS.has(m.key),
-  trophies: (m: Material) => m.itemType === 13,
-};
-// Made items with a catalogue page of their own (weapons, armour, meads…).
-const GEAR_KEYS = new Set(crafting.gear.filter((g) => g.page).map((g) => g.key));
+// The game's item types a page keeps to, shared with the links (`recipes.ts`).
+const KINDS = MATERIAL_KINDS;
 
 // A catalogue page of materials: those of `kind`, in biome sections, with
 // where each comes from and what it goes into; its words are `pages.<words>`.
@@ -162,8 +161,7 @@ export function MaterialsView(props: {
   const all = materials.filter(KINDS[props.kind]);
   // On the trophies page the bosses' trophies come first, in a section of
   // their own (the owner, 2026-11-17), and leave their biomes.
-  const first =
-    props.kind === "trophies" ? all.filter((m) => bossOf(m)) : [];
+  const first = props.kind === "trophies" ? all.filter((m) => bossOf(m)) : [];
   const list = all.filter((m) => !first.includes(m));
   const groups = [
     { biome: BOSSES_SECTION, list: first },
@@ -199,9 +197,7 @@ export function MaterialsView(props: {
             .map((g, i) => (
               <span key={g.biome}>
                 {i > 0 ? " · " : ""}
-                <Link href={`#${anchor(g.biome)}`}>
-                  {heading(g.biome)}
-                </Link>
+                <Link href={`#${anchor(g.biome)}`}>{heading(g.biome)}</Link>
               </span>
             ))}
         </Typography>
@@ -235,7 +231,9 @@ export function MaterialsView(props: {
                           <TableCell>{sources(m)}</TableCell>
                           <TableCell>
                             {bossOf(m) ? (
-                              <Link href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}>
+                              <Link
+                                href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
+                              >
                                 {t("power")}
                               </Link>
                             ) : null}
@@ -243,9 +241,7 @@ export function MaterialsView(props: {
                             {uses.map((u, i) => (
                               <span key={u.key}>
                                 {i > 0 ? ", " : ""}
-                                <Link href={recipeHref(u.key)}>
-                                  {u.name}
-                                </Link>
+                                <RowLink item={u.key}>{u.name}</RowLink>
                               </span>
                             ))}
                           </TableCell>

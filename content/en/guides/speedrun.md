@@ -1,18 +1,22 @@
 # Speedrun
 
-**How to finish Valheim fast?** Find the iron and the silver first, then make only what the next boss needs, let creatures cut and mine for you, and sail as little as you can, above all back with a load.
+**How do I speedrun to the end?** Race for iron, forge only what the next boss asks, let monsters chop and mine for you, and sail as little as you can, above all home with a load.
 
-## What counts as a run
+## What counts as a speedrun?
 
-The community times Valheim as All Bosses: Classic ends with Yagluth, the later categories add the Queen, Fader and Kall Fimbulbringer. Each comes on a random seed or a set one, and glitchless allows playing a boss's mind but not clipping through walls. The categories, their rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim). The player whose runs taught this guide is in the [credits](/credits).
+You have crossed all eight lands at your own pace; now cross them against the clock. Runners race in All Bosses: Classic stops the timer when Yagluth falls, and the later categories push on through the Queen, Fader and Kall Fimbulbringer. Each runs on a random seed or a set one, and glitchless lets you outwit a boss but never clip through a wall. Few bosses force the order: an altar wants its offering and nothing else, but the withered bones lie behind the Elder's key, silver wants the iron pickaxe, and the north's key wants Moder's tears and Fader's embers, the gates the [Reverse run](/guides/reverse-run#what-does-each-boss-open-and-how-do-i-get-round-it) lists. Within them the route below is simply the shortest. For Classic, the [Plains](/guides/plains) are the last of the Biomes you need to see. The categories, their rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim), and the runner whose runs taught this guide stands in the [credits](/credits).
 
 ## What is the strip?
 
-A run starts in the middle of the world, goes south to the Ashlands and then north to the Deep North. To lose as little time as it can, it keeps to one imaginary line through the start, north to south, and does not turn aside: the strip, {{stripM}} m wide. What stands in it lies on the road; what stands beside it costs a detour, and every detour is time. The strip is a rule of thumb, not a wall: when the boat has to round an island, the run leaves it, and comes back.
+Your run starts in the middle of the world, drops south to the Ashlands, then turns and climbs to the Deep North. The fastest way to do that is to stop wandering: draw one imaginary line through the start, north to south, and keep to it. That line, {{stripM}} m wide, is the strip. Whatever stands in it lies on your road; whatever stands beside it is a detour, and every detour is time off the clock. It is a rule of thumb, not a wall: when the boat has to round an island, you leave the strip and come back.
 
-The other guides use it the same way: "on the road" there means in this strip.
+The other guides mean the same thing by "on the road": near this line through the start. It is your line, not the world's. Off the clock you round the island, or go anywhere you like; a [reverse run](/guides/reverse-run) sails north first, keeps to no strip at all and goes where the shore is.
+
+> **With no map**, the coast and the roads you built become your line, and the strip's shares mean little: what counts is what you can see and reach from them.
 
 ## How much of the route is on the road?
+
+Only Eikthyr waits on the road on almost every seed. After him, every boss stands beside it more often than not, Moder and the Queen worst of all, so no run escapes without a few detours planned in.
 
 | On the road, in the strip | How often |
 |---|---|
@@ -24,43 +28,120 @@ The other guides use it the same way: "on the road" there means in this strip.
 | The Queen's altar | {{stripQueen}}% of seeds |
 | Fader's altar | {{stripFader}}% of seeds |
 | Kall's gate | {{stripKall}}% of seeds |
-| All {{allBosses}} at once | {{stripAllBosses}}% of seeds |
-| All {{allTraders}} traders: Haldor, Hildir and the Bog Witch | {{stripAllTraders}}% of seeds |
 
-| In the strip | As a rule | Middle half of seeds |
+Chart: share
+
+As a rule, {{stripBosses}} of the {{allBosses}} altars fall inside your strip; on the middle half of seeds, between {{stripBossesLow}} and {{stripBossesHigh}}.
+
+### How far off the road is each boss?
+
+A boss just beside the strip costs you a short walk. One far beside it costs a sail. Here is the price of every detour, in the order you meet the bosses.
+
+| From the line through the start | As a rule | Middle half of seeds |
 |---|---|---|
-| Bosses' altars, of {{allBosses}} | {{stripBosses}} | {{stripBossesLow}}–{{stripBossesHigh}} |
+| Eikthyr's altar, m | {{eikthyrAxisM}} | {{eikthyrAxisMLow}}–{{eikthyrAxisMHigh}} |
+| The Elder's altar, m | {{elderAxisM}} | {{elderAxisMLow}}–{{elderAxisMHigh}} |
+| Bonemass's altar, m | {{bonemassAxisM}} | {{bonemassAxisMLow}}–{{bonemassAxisMHigh}} |
+| Moder's altar, m | {{moderAxisM}} | {{moderAxisMLow}}–{{moderAxisMHigh}} |
+| Yagluth's altar, m | {{yagluthAxisM}} | {{yagluthAxisMLow}}–{{yagluthAxisMHigh}} |
+| The Queen's gate, m | {{queenAxisM}} | {{queenAxisMLow}}–{{queenAxisMHigh}} |
+| Fader's altar, m | {{faderAxisM}} | {{faderAxisMLow}}–{{faderAxisMHigh}} |
+| Kall's gate, m | {{kallAxisM}} | {{kallAxisMLow}}–{{kallAxisMHigh}} |
 
-So a run leaves the road for some bosses as a rule: pick the seed whose altars beside it stand close.
+Chart: spread
 
-## The route, boss by boss
+What waits round the last two bosses, and so what a detour there will find, is on the [Ashlands](/guides/ashlands) and [Deep North](/guides/deep-north) guides.
 
-Each chapter of the [Biomes](/guides/meadows) is one leg of it, with its own questions and its own odds.
+The best speedrun seed is simply the one with short detours. [How good is my seed?](/tools/how-good-is-my-seed) measures them on yours.
 
-**Eikthyr**, for speed: his power cuts the stamina running costs, so the scouting goes faster. [Meadows](/guides/meadows).
+## How long is the route for my category?
 
-**The Elder**, at a troll cave with copper and tin: the base of the run. [Black Forest](/guides/black-forest).
+Add the legs up, altar to altar in the run's order: from the start by Eikthyr to the troll cave of your copper base, then the Elder, Bonemass, Moder and Yagluth, on to the Queen, Fader and Kall. Below is what you walk and sail to each category's last boss, in straight lines: a floor no run can beat.
 
-**Bonemass**, for iron and the wishbone that finds silver. [Swamp](/guides/swamp).
+| The route, from the start to | As a rule | Middle half of seeds |
+|---|---|---|
+| Yagluth, Classic, m | {{routeClassicM}} | {{routeClassicMLow}}–{{routeClassicMHigh}} |
+| The Queen, Mistlands, m | {{routeMistlandsM}} | {{routeMistlandsMLow}}–{{routeMistlandsMHigh}} |
+| Fader, Ashlands, m | {{routeAshlandsM}} | {{routeAshlandsMLow}}–{{routeAshlandsMHigh}} |
+| Kall, Deep North, m | {{routeDeepNorthM}} | {{routeDeepNorthMLow}}–{{routeDeepNorthMHigh}} |
 
-**Moder**, for silver, carried home or smelted on her mountain. [Mountain](/guides/mountain).
+Chart: spread
 
-**Yagluth**, with {{goblinTotems}} Fuling totems from the villages by him. [Plains](/guides/plains).
+The last leg is the killer: the gap between the last two rows is the voyage from Fader to Kall alone.
 
-**The Queen**, through the mist, with the Infested Mines by her. [Mistlands](/guides/mistlands).
+## What is the speedrun route, boss by boss?
+
+Each guide of the [Biomes](/guides/biomes) is one leg of the route, with its own questions and its own odds.
+
+**Eikthyr**, for speed: burn him with campfires and he drops fast, and his power cuts what running costs you in stamina, so the scouting of [A good start](/guides/a-good-start) goes quicker. [Meadows](/guides/meadows).
+
+**The Elder**, after the copper base, a troll cave with copper and tin by its mouth. [Black Forest](/guides/black-forest).
+
+**Bonemass**, for iron, and for the wishbone that sniffs out silver. [Swamp](/guides/swamp).
+
+**Moder**, for silver, smelted right at her altar and carried down as bars: a cart on her slopes overturns. [Mountain](/guides/mountain).
+
+**Yagluth**, with {{goblinTotems}} Fuling totems taken from the villages near him. [Plains](/guides/plains).
+
+**The Queen**, through the mist, with the Infested Mines beside her. [Mistlands](/guides/mistlands).
 
 **Fader**, with the bells of the Charred Fortresses. [Ashlands](/guides/ashlands).
 
-**Kall Fimbulbringer**, far north, with the Mörkhalla by him. [Deep North](/guides/deep-north).
+**Kall Fimbulbringer**, far north: the Winding Tunnels first, for the key's mould, then the Mörkhalla near him, whose ice sends the invasions south for his blood. [Deep North](/guides/deep-north).
 
-## Saving time
+How each fight goes, blow by blow, is on [How to kill each boss](/catalog/bosses).
 
-**Let creatures do the work.** A troll's blows reach a bronze tool's tier and more: lured past birches and oaks it fells fine wood, and on copper it mines. The Elder's blows fell the plain trees round his altar. Later a Seeker Soldier breaks black marble and Yggdrasil wood. The rules allow it.
+## Which traders are worth the stop?
 
-**Skip what changes nothing.** The bronze pickaxe mines nothing the antler one does not; the Early Axes cut fine wood without bronze, from axe heads found in the Meadows' abandoned houses.
+A trader earns a stop only when he stands on your way. Haldor sells Megingjord, the belt that lets you carry more and so cuts your trips with metal; the Bog Witch sells the squirrel hamstrings for the Tonic of Ratatosk. What each sells, and for how much, is on [What to buy from the traders](/catalog/traders).
 
-**Eat to the clock.** Three food slots last as long as the run and no longer, so a run cooks only what it will eat: [Food and feasts](/catalog/food) gives each dish's duration.
+| On the road, in the strip | How often |
+|---|---|
+| Hildir | {{stripHildir}}% of seeds |
+| Haldor | {{stripHaldor}}% of seeds |
+| The Bog Witch | {{stripBogWitch}}% of seeds |
+| All {{allTraders}} at once | {{stripAllTraders}}% of seeds |
 
-**Plan before the pickaxe.** The [craft tree](/tools/craft-tree) is the run on one page: switch on what you will make, and it lists every station level and the raw materials it all takes, biome by biome.
+Chart: share
 
-Next, the same world with one rule more: [No death, no map, no portals](/guides/other-rules).
+When one stands beside the road, this is how far you go for him:
+
+| From the line through the start | As a rule | Middle half of seeds |
+|---|---|---|
+| Hildir, m | {{hildirAxisM}} | {{hildirAxisMLow}}–{{hildirAxisMHigh}} |
+| Haldor, m | {{haldorAxisM}} | {{haldorAxisMLow}}–{{haldorAxisMHigh}} |
+| The Bog Witch, m | {{bogWitchAxisM}} | {{bogWitchAxisMLow}}–{{bogWitchAxisMHigh}} |
+
+Chart: spread
+
+## How much metal does a run spend?
+
+Less than you fear. Classic's gates take no metal at all: every summon up to Yagluth is found, not forged. The later gates eat into the Galdr Table, the Black Forge, the Drakkar and the Deep North's stations, and each category's bare bill, gate by gate, is on [How much metal a run takes](/guides/how-much-metal). On top of the gates, a run to Kall spends only a little, on the tools that gather and the one weapon it makes:
+
+| A run to Kall, with the iron mace, the iron pickaxe and the Wisplight | Metal |
+|---|---|
+| Iron | {{runIron}} |
+| Silver | {{runSilver}} |
+| Black metal | {{runBlackMetal}} |
+
+> **At leisure**, the same page shows the other extreme: every armour set and weapon of each age raised to its top quality, {{kitAllIron}} iron and {{kitAllSilver}} silver in all.
+
+## How do I save time?
+
+**Let creatures do the work.** A troll's blows hit at a bronze tool's tier and above: lure one past birches and oaks and it fells fine wood for you; lead it over copper and it mines. The Elder's blows fell the plain trees round his altar. Later a Seeker Soldier breaks black marble and Yggdrasil wood. The rules allow all of it.
+
+**Skip what changes nothing.** The bronze pickaxe mines nothing the antler one cannot. The Early Axe cuts fine wood without any bronze, from axe heads you find in the Meadows' abandoned houses.
+
+**Hang each power for its leg.** A trophy's power lasts {{powerSeconds}} s and comes back after {{powerCooldownSeconds}} s, so spend each where it pays: Eikthyr's on the scouting, the Elder's while you chop and mine without a troll, Moder's tailwind on the long sail north. Every power is on [Trophies](/catalog/trophies).
+
+**Close each army fast.** A boss's raids begin when the boss before him falls and end when he does, so a quick dash from altar to altar leaves each army little time to come at you. Wolves, skeletons and the rest stay once they have come; the [Raids](/catalog/events) page says what opens and ends each.
+
+**Eat to the clock.** Cook only what the run will eat before it ends: [Food and feasts](/catalog/food) gives each dish's duration.
+
+**Hunt to the recipe.** In the Deep North one seal gives the {{emberChargePelts}} pelts of one batch of {{emberCharges}} Ember Charges, and the charges crack the petrified trolls whose tissue makes Kall's key. Kill one seal for each batch you need, and not one more.
+
+**Plan before the pickaxe.** The [craft tree](/tools/craft-tree) is the whole run on one page: switch on what you will make, and it lists every station level and every raw material it takes, biome by biome, so you know how much you must carry before you set out.
+
+> **With no death**, saving time turns round, and the troll you used as a lumberjack becomes the risk: a cave troll comes with a star on {{starOneSpawnerNormal}}% of spawns, {{starOneSpawnerVeryHard}}% on Very hard, and a star makes its blows {{starDamage1}}% as hard before the Combat setting multiplies them again. The safe run spends that time on a pickaxe, the Root Harnesk and every skill at its top; [Hard, Very hard and Hardcore](/guides/hardcore#how-often-do-creatures-come-starred) gives the rest.
+
+Beat the clock, and the world is not done with you: next it takes away your second life, your map or your portals, one at a time or all at once, in [No death, no map, no portals](/guides/other-rules).

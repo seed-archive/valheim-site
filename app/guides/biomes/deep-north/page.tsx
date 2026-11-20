@@ -10,7 +10,7 @@ const guide = () => readGuide("deep-north", { ...SUMMONS, ...SEED_STATS });
 export async function generateMetadata(): Promise<Metadata> {
   const { fact } = await guide();
   return {
-    title: "What to bring to the Deep North in Valheim — Seed Archive",
+    title: "Deep North in Valheim — Seed Archive",
     description: fact,
     alternates: { canonical: "/guides/biomes/deep-north" },
   };

@@ -6,7 +6,7 @@ import { GUIDE_GROUPS } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Guides in Valheim — Seed Archive",
   description:
-    "Each biome, fighting, and your base: what a run needs and where it comes from.",
+    "The basics every player needs first, the eight biomes in the order you meet them, and the challenges that play the same world other ways.",
   alternates: { canonical: "/guides" },
 };
 

@@ -7,7 +7,7 @@ import { AnchorHeading } from "@/components/catalog/AnchorHeading";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { SellNote } from "@/components/catalog/SellNote";
 import { serverFormat } from "@/lib/i18n/server";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 import { RUN_ORDER } from "@/lib/valheim/run-order";
 import crafting from "@/lib/valheim/crafting.json";
 
@@ -34,18 +34,20 @@ export const searchText = (...parts: (string | null | undefined)[]) =>
 
 // A seasonal piece or recipe's note: the dates the game lets it be made
 // (`seasons` of the Valheim generator's crafting data, (day, month)).
-const MONTH = new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" });
+const MONTH = new Intl.DateTimeFormat("en", {
+  month: "short",
+  timeZone: "UTC",
+});
 const day = ([d, m]: number[]) =>
   `${d} ${MONTH.format(new Date(Date.UTC(2000, m - 1, 1)))}`;
 export function seasonNote(season: string | null | undefined) {
   const s = season
-    ? (crafting.seasons as Record<string, { start: number[]; end: number[] }>)[season]
+    ? (crafting.seasons as Record<string, { start: number[]; end: number[] }>)[
+        season
+      ]
     : undefined;
   return s ? t("season", { from: day(s.start), to: day(s.end) }) : null;
 }
-
-// Every item with a recipe: a material made by one links to it.
-const crafted = new Set(crafting.gear.map((g) => g.key));
 
 type Resource = (typeof crafting.gear)[number]["resources"][number];
 
@@ -61,15 +63,7 @@ export function material(r: Resource) {
   return (
     <Box key={r.key}>
       <ItemIcon item={r.key}>
-        <Link
-          href={
-            crafted.has(r.key)
-              ? recipeHref(r.key)
-              : `/catalog/materials#${r.key.toLowerCase()}`
-          }
-        >
-          {r.name}
-        </Link>
+        <RowLink item={r.key}>{r.name}</RowLink>
         {r.amount > 1 ? ` × ${r.amount}` : ""}
         <SellNote item={r.key} />
       </ItemIcon>
@@ -109,7 +103,9 @@ export function BiomeSections<T extends { biome: string | null }>(props: {
           // biome's heading.
           sx={{
             scrollMarginTop: BAR,
-            "& tr[id]": { scrollMarginTop: { xs: BAR.xs + 48, sm: BAR.sm + 48 } },
+            "& tr[id]": {
+              scrollMarginTop: { xs: BAR.xs + 48, sm: BAR.sm + 48 },
+            },
           }}
         >
           <AnchorHeading

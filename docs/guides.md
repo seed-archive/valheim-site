@@ -10,6 +10,15 @@ A good start), Biomes second.
 - **Challenges**: A good start (new, `/guides/a-good-start`: the start island's table moved out of the Meadows and
   the first run out), Speedrun, Challenges (no death, no map, no portals, your own rules; one page or one a
   challenge is still the owner's to say), Reverse run.
+- **Three sections** (the owner, 2026-11-20: A good start, where to build and the metal are not challenges):
+  **Basics** (`/guides/basics`: A good start, Where to build your base, How much metal a run takes, Boss arenas),
+  **Biomes**, **Challenges** (Speedrun, No death no map no portals, Hard Very hard and Hardcore, Reverse run), in
+  that order in `GUIDE_GROUPS` and in the story; not released, so no redirects from the old addresses.
+- **Four new Challenges pages** (now three in Basics and Boss arenas there too) (the owner, 2026-11-20: "All four", from the guide forum's menu step, drafts in the
+  Valheim generator's notes): the chain is A good start → Where to build your base → How much metal a run takes →
+  Speedrun → No death, no map, no portals → Hard, Very hard and Hardcore → Boss arenas → Reverse run. In the menu
+  (`GUIDE_GROUPS`) and routed under `/guides/challenges/`; their text is in `content/en/guides/`, checked against
+  the drafts' Unproven notes (unproven lines and rows without data left out), every number from the generator.
 - **Moved to the catalogue**: Bosses (`/catalog/bosses`, World group) and Comfort (`/catalog/comfort`, Your base
   group); every link to them follows. Not released, so no redirects.
 - **Out of the menu, to be folded in**: Farming into the Plains, the Forge of Potential into the Mountain; their pages
@@ -48,7 +57,12 @@ Challenges → Reverse run → Meadows → … → Deep North, which ends back a
   (the Valheim generator's notes, play modes), the reverse run only where it differs, above all the Deep North.
   **At leisure** and **With no death** added by the owner on 2026-11-20, from the guide forum's drafts
   (`.claude/rules/site-text.md` → A page).
-- **No charts yet.** No page has the "How often a seed has it" section any more, so `MarkdownGuide`'s charts draw
+- **Charts by marker** (2026-11-20): a table followed by a line `Chart: share` or `Chart: spread` gets its chart
+  with its table in the shared `ChartBlock` of `@seed-archive/ui` (from 1.4.0, the owner: chart and table in one,
+  with a switch), its spec built on the server by `MarkdownGuide` → `tableChart`; the line is not shown. Share: kind
+  "bars", the row's first percentage on the whole 0–100 scale; spread: kind "spread", the median and middle half on
+  one axis. The guide forum writes the markers.
+- **No charts yet** (superseded by the markers above). No page has the "How often a seed has it" section any more, so `MarkdownGuide`'s charts draw
   nothing; the next pass decides the charts by the owner's rule (several values of one thing, `site-text.md`), then
   `ShareChart` and `SpreadChart` are kept or deleted.
 

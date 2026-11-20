@@ -9,9 +9,9 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
+import { RowLink } from "@/components/catalog/RowLink";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { serverFormat } from "@/lib/i18n/server";
 import events from "@/lib/valheim/events.json";
@@ -46,19 +46,30 @@ function row(r: Raid) {
       <TableCell>
         <b>{r.name}</b>
         {r.nearBase ? null : (
-          <Typography variant="caption" color="text.secondary" sx={{ display: "block" }}>
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={{ display: "block" }}
+          >
             {t("anywhere")}
           </Typography>
         )}
       </TableCell>
-      <TableCell>{r.opens.length > 0 ? r.opens.map(keyText).join(", ") : t("fromStart")}</TableCell>
-      <TableCell>{r.ends.length > 0 ? r.ends.map(keyText).join(", ") : t("never")}</TableCell>
-      <TableCell sx={{ whiteSpace: "nowrap" }}>{t("minutes", { m: Math.round((r.seconds / 60) * 10) / 10 })}</TableCell>
+      <TableCell>
+        {r.opens.length > 0 ? r.opens.map(keyText).join(", ") : t("fromStart")}
+      </TableCell>
+      <TableCell>
+        {r.ends.length > 0 ? r.ends.map(keyText).join(", ") : t("never")}
+      </TableCell>
+      <TableCell sx={{ whiteSpace: "nowrap" }}>
+        {t("minutes", { m: Math.round((r.seconds / 60) * 10) / 10 })}
+      </TableCell>
       <TableCell>
         {r.spawn.map((s) => (
           <Box key={s.key}>
-            <Link href={`/catalog/creatures#${s.key.toLowerCase()}`}>{s.name}</Link>
-            {" "}
+            <RowLink item={s.key} creature>
+              {s.name}
+            </RowLink>{" "}
             {t("atOnce", { n: s.max })}
           </Box>
         ))}
@@ -72,7 +83,11 @@ export default function EventsPage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
@@ -84,7 +99,11 @@ export default function EventsPage() {
           {t("title")}
         </Typography>
         <Typography sx={{ mb: 2 }}>
-          <b>{t("question")}</b> {t("answer", { minutes: events.intervalMinutes, chance: events.chance })}
+          <b>{t("question")}</b>{" "}
+          {t("answer", {
+            minutes: events.intervalMinutes,
+            chance: events.chance,
+          })}
         </Typography>
         <Typography sx={{ mb: 2 }}>{t("how")}</Typography>
         <TableContainer>
@@ -102,7 +121,12 @@ export default function EventsPage() {
             <TableBody>{ordered.map(row)}</TableBody>
           </Table>
         </TableContainer>
-        <Typography variant="h5" component="h2" id="jotun-invasion" sx={{ mt: 5, mb: 1 }}>
+        <Typography
+          variant="h5"
+          component="h2"
+          id="jotun-invasion"
+          sx={{ mt: 5, mb: 1 }}
+        >
           {t("invasion.title")}
         </Typography>
         <Typography sx={{ mb: 2 }}>{t("invasion.text")}</Typography>

@@ -9,7 +9,6 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import type { Metadata } from "next";
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
@@ -26,7 +25,7 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat } from "@/lib/i18n/server";
 import comfort from "@/lib/valheim/comfort.json";
 import crafting from "@/lib/valheim/crafting.json";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 
 export const metadata: Metadata = {
   title: "Comfort in Valheim — Seed Archive",
@@ -53,7 +52,9 @@ const NO_KIND = "none";
 const pieceOf = new Map(crafting.building.map((b) => [b.key, b]));
 const stationOf = new Map(crafting.building.map((b) => [b.name, b]));
 const later = (a: string | null, b: string | null) =>
-  BIOMES.indexOf(biomeOf({ biome: a })) >= BIOMES.indexOf(biomeOf({ biome: b })) ? a : b;
+  BIOMES.indexOf(biomeOf({ biome: a })) >= BIOMES.indexOf(biomeOf({ biome: b }))
+    ? a
+    : b;
 const groups = comfort.groups.map((g) => ({
   group: g.group,
   pieces: g.pieces.map((p) => {
@@ -61,7 +62,9 @@ const groups = comfort.groups.map((g) => ({
     const station = p.station ? stationOf.get(p.station) : undefined;
     return {
       ...p,
-      biome: station ? later(b?.biome ?? null, station.biome) : (b?.biome ?? null),
+      biome: station
+        ? later(b?.biome ?? null, station.biome)
+        : (b?.biome ?? null),
       season: b?.season ?? null,
     };
   }),
@@ -99,7 +102,9 @@ const withNew = reach.map((r, i) => {
   const added = r.picked
     .map((p) => {
       if (p.group === NO_KIND) {
-        return before.some((q) => q.key === p.key) ? null : { ...p, gain: p.comfort };
+        return before.some((q) => q.key === p.key)
+          ? null
+          : { ...p, gain: p.comfort };
       }
       const old = before.find((q) => q.group === p.group)?.comfort ?? 0;
       return p.comfort > old ? { ...p, gain: p.comfort - old } : null;
@@ -121,7 +126,9 @@ function groupTable(pieces: Piece[]) {
       <Table size="small" sx={{ tableLayout: { md: "fixed" } }}>
         <TableHead>
           <TableRow>
-            <TableCell sx={{ width: { md: "60%" } }}>{t("head.piece")}</TableCell>
+            <TableCell sx={{ width: { md: "60%" } }}>
+              {t("head.piece")}
+            </TableCell>
             <TableCell align="right" sx={{ width: { md: "15%" } }}>
               {t("head.comfort")}
             </TableCell>
@@ -133,7 +140,7 @@ function groupTable(pieces: Piece[]) {
             <TableRow key={p.key}>
               <TableCell>
                 <ItemIcon item={p.key}>
-                  <Link href={recipeHref(p.key)}>{p.name}</Link>
+                  <RowLink item={p.key}>{p.name}</RowLink>
                   {p.litOnly || p.season ? (
                     <Typography
                       component="span"
@@ -164,7 +171,14 @@ function Section(props: { id: string; title: string; children: ReactNode }) {
     <Box component="section" id={props.id} sx={{ scrollMarginTop: BAR }}>
       <AnchorHeading
         id={props.id}
-        sx={{ position: "sticky", top: BAR, zIndex: 2, mt: 4, py: 1, bgcolor: "background.default" }}
+        sx={{
+          position: "sticky",
+          top: BAR,
+          zIndex: 2,
+          mt: 4,
+          py: 1,
+          bgcolor: "background.default",
+        }}
       >
         {props.title}
       </AnchorHeading>
@@ -198,13 +212,18 @@ export default function ComfortPage() {
 
         <Section id="by-biome" title={t("byBiome.title")}>
           <Typography sx={{ mb: 2 }}>
-            {t("byBiome.text", { most: most.level, minutes: rested(most.level) })}
+            {t("byBiome.text", {
+              most: most.level,
+              minutes: rested(most.level),
+            })}
           </Typography>
           <TableContainer sx={{ mb: 2 }}>
             <Table size="small" sx={{ tableLayout: { md: "fixed" } }}>
               <TableHead>
                 <TableRow>
-                  <TableCell sx={{ width: { md: "16%" } }}>{t("head.biome")}</TableCell>
+                  <TableCell sx={{ width: { md: "16%" } }}>
+                    {t("head.biome")}
+                  </TableCell>
                   <TableCell align="right" sx={{ width: { md: "10%" } }}>
                     {t("head.comfort")}
                   </TableCell>
@@ -227,7 +246,7 @@ export default function ComfortPage() {
                       {r.added.map((p) => (
                         <Box key={p.key}>
                           <ItemIcon item={p.key}>
-                            <Link href={recipeHref(p.key)}>{p.name}</Link> +{p.gain}
+                            <RowLink item={p.key}>{p.name}</RowLink> +{p.gain}
                           </ItemIcon>
                         </Box>
                       ))}

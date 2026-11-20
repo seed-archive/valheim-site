@@ -15,7 +15,7 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
 import crafting from "@/lib/valheim/crafting.json";
 import traders from "@/lib/valheim/traders.json";
@@ -85,13 +85,11 @@ function forWhat(g: Good) {
         {g.usedIn.map((u, i) => (
           <span key={u.key}>
             {i > 0 ? ", " : ""}
-            <Link href={recipeHref(u.key)}>{u.name}</Link>
+            <RowLink item={u.key}>{u.name}</RowLink>
             {u.then ? (
               <>
                 {" → "}
-                <Link href={recipeHref(u.then.key)}>
-                  {u.then.name}
-                </Link>
+                <RowLink item={u.then.key}>{u.then.name}</RowLink>
               </>
             ) : null}
           </span>
@@ -101,7 +99,12 @@ function forWhat(g: Good) {
   }
   if (g.text) {
     parts.push(
-      <Typography key="text" component="span" variant="body2" color="text.secondary">
+      <Typography
+        key="text"
+        component="span"
+        variant="body2"
+        color="text.secondary"
+      >
         {g.text}
       </Typography>,
     );
@@ -138,7 +141,12 @@ const essentialCoins = essentials.reduce((s, r) => s + r.price, 0);
 function hildirQuest() {
   return (
     <>
-      <Typography variant="h5" component="h3" id="hildir-quest" sx={{ mt: 3, mb: 1 }}>
+      <Typography
+        variant="h5"
+        component="h3"
+        id="hildir-quest"
+        sx={{ mt: 3, mb: 1 }}
+      >
         {t("quest.title")}
       </Typography>
       <Typography sx={{ mb: 2 }}>{t("quest.text")}</Typography>
@@ -162,7 +170,9 @@ function hildirQuest() {
                 </TableCell>
                 <TableCell>{q.dungeon}</TableCell>
                 <TableCell>
-                  {q.biome ? serverFormat(`pages.crafting.biome.${q.biome}`) : "—"}
+                  {q.biome
+                    ? serverFormat(`pages.crafting.biome.${q.biome}`)
+                    : "—"}
                 </TableCell>
                 <TableCell>{q.guard}</TableCell>
                 <TableCell align="right">{q.health}</TableCell>
@@ -224,14 +234,27 @@ export default function TradersPage() {
                     <TableCell>
                       {one ? (
                         <ItemIcon item={one.key ?? ""}>
-                          <Link href={`#${one.key?.toLowerCase()}`}>{one.name}</Link>
+                          <Link href={`#${one.key?.toLowerCase()}`}>
+                            {one.name}
+                          </Link>
                           {one.stack > 1 ? ` × ${one.stack}` : ""}
                         </ItemIcon>
                       ) : (
                         <>
-                          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mb: 0.5 }}>
+                          <Box
+                            sx={{
+                              display: "flex",
+                              flexWrap: "wrap",
+                              gap: 0.5,
+                              mb: 0.5,
+                            }}
+                          >
                             {goods.map(({ good }) => (
-                              <Link key={good.key} href={`#${good.key?.toLowerCase()}`} title={good.name ?? ""}>
+                              <Link
+                                key={good.key}
+                                href={`#${good.key?.toLowerCase()}`}
+                                title={good.name ?? ""}
+                              >
                                 <ItemIcon item={good.key ?? ""} />
                               </Link>
                             ))}
@@ -245,7 +268,10 @@ export default function TradersPage() {
                     <TableCell>
                       {one
                         ? appears(one)
-                        : goods.map(({ good }) => appears(good)).filter((x, i, a) => a.indexOf(x) === i).join(", ")}
+                        : goods
+                            .map(({ good }) => appears(good))
+                            .filter((x, i, a) => a.indexOf(x) === i)
+                            .join(", ")}
                     </TableCell>
                     <TableCell>
                       {one ? forWhat(one) : t(`essential.for.${row}`)}
@@ -345,9 +371,7 @@ export default function TradersPage() {
                         {(usedIn.get(v.key) ?? []).map((u, i) => (
                           <span key={u.key}>
                             {i > 0 ? ", " : ""}
-                            <Link href={recipeHref(u.key)}>
-                              {u.name}
-                            </Link>
+                            <RowLink item={u.key}>{u.name}</RowLink>
                           </span>
                         ))}
                         .

@@ -39,8 +39,12 @@
           "pierce": 20.0
         },
         "breaks": true,
+        "fire": 51.0,
         "health": 500.0,
-        "modifiers": {}
+        "immune": false,
+        "modifiers": {},
+        "regen": 0.14,
+        "summons": []
       }
     ],
     "power": {
@@ -111,12 +115,28 @@
           "pierce": 35.0
         },
         "breaks": true,
+        "fire": 129.0,
         "health": 2500.0,
+        "immune": false,
         "modifiers": {
           "fire": 2.0,
           "poison": 0.0,
           "spirit": 0.0
-        }
+        },
+        "regen": 0.69,
+        "summons": [
+          {
+            "count": [15, 15],
+            "most": 30,
+            "of": [
+              {
+                "health": 20.0,
+                "key": "TentaRoot",
+                "name": "Root"
+              }
+            ]
+          }
+        ]
       }
     ],
     "power": {
@@ -130,10 +150,7 @@
           "key": "damage",
           "value": {
             "percent": 60.0,
-            "types": [
-              "chop",
-              "pickaxe"
-            ]
+            "types": ["chop", "pickaxe"]
           }
         }
       ],
@@ -183,7 +200,9 @@
           "poison": 130.0
         },
         "breaks": true,
+        "fire": 4500.0,
         "health": 5000.0,
+        "immune": false,
         "modifiers": {
           "blunt": 1.5,
           "fire": 0.25,
@@ -191,7 +210,26 @@
           "pierce": 0.25,
           "poison": 0.0,
           "slash": 0.5
-        }
+        },
+        "regen": 1.39,
+        "summons": [
+          {
+            "count": [4, 4],
+            "most": 8,
+            "of": [
+              {
+                "health": 40.0,
+                "key": "Skeleton",
+                "name": "Skeleton"
+              },
+              {
+                "health": 50.0,
+                "key": "Blob",
+                "name": "Blob"
+              }
+            ]
+          }
+        ]
       }
     ],
     "power": {
@@ -209,27 +247,21 @@
           "key": "resist",
           "value": {
             "percent": -25.0,
-            "types": [
-              "blunt"
-            ]
+            "types": ["blunt"]
           }
         },
         {
           "key": "resist",
           "value": {
             "percent": -25.0,
-            "types": [
-              "slash"
-            ]
+            "types": ["slash"]
           }
         },
         {
           "key": "resist",
           "value": {
             "percent": -25.0,
-            "types": [
-              "pierce"
-            ]
+            "types": ["pierce"]
           }
         }
       ],
@@ -289,12 +321,16 @@
           "slash": 110.0
         },
         "breaks": true,
+        "fire": 581.0,
         "health": 7500.0,
+        "immune": false,
         "modifiers": {
           "fire": 1.5,
           "frost": 0.0,
           "spirit": 0.0
-        }
+        },
+        "regen": 2.08,
+        "summons": []
       }
     ],
     "power": {
@@ -316,9 +352,7 @@
           "key": "resist",
           "value": {
             "percent": -50.0,
-            "types": [
-              "frost"
-            ]
+            "types": ["frost"]
           }
         }
       ],
@@ -368,12 +402,16 @@
           "lightning": 65.0
         },
         "breaks": true,
+        "fire": 4500.0,
         "health": 10000.0,
+        "immune": false,
         "modifiers": {
           "fire": 0.5,
           "pierce": 0.25,
           "poison": 0.0
-        }
+        },
+        "regen": 2.78,
+        "summons": []
       }
     ],
     "power": {
@@ -408,9 +446,7 @@
           "key": "resist",
           "value": {
             "percent": -50.0,
-            "types": [
-              "lightning"
-            ]
+            "types": ["lightning"]
           }
         }
       ],
@@ -465,11 +501,27 @@
           "slash": 130.0
         },
         "breaks": true,
+        "fire": 1915.0,
         "health": 12500.0,
+        "immune": false,
         "modifiers": {
           "pierce": 0.5,
           "spirit": 0.0
-        }
+        },
+        "regen": 3.47,
+        "summons": [
+          {
+            "count": [1, 1],
+            "most": 30,
+            "of": [
+              {
+                "health": 20.0,
+                "key": "SeekerBrood",
+                "name": "Seeker Brood"
+              }
+            ]
+          }
+        ]
       }
     ],
     "power": {
@@ -487,9 +539,7 @@
           "key": "resist",
           "value": {
             "percent": -50.0,
-            "types": [
-              "poison"
-            ]
+            "types": ["poison"]
           }
         }
       ],
@@ -540,12 +590,33 @@
           "spirit": 60.0
         },
         "breaks": true,
+        "fire": null,
         "health": 25000.0,
+        "immune": false,
         "modifiers": {
           "fire": 0.0,
           "pierce": 0.5,
           "spirit": 0.0
-        }
+        },
+        "regen": 6.94,
+        "summons": [
+          {
+            "count": [1, 1],
+            "most": 7,
+            "of": [
+              {
+                "health": 50.0,
+                "key": "Charred_Melee_Fader",
+                "name": "Summoned Charred Warrior"
+              },
+              {
+                "health": 50.0,
+                "key": "Charred_Archer_Fader",
+                "name": "Summoned Charred Warrior"
+              }
+            ]
+          }
+        ]
       }
     ],
     "power": {
@@ -559,9 +630,7 @@
           "key": "resist",
           "value": {
             "percent": -50.0,
-            "types": [
-              "fire"
-            ]
+            "types": ["fire"]
           }
         }
       ],
@@ -578,13 +647,7 @@
       },
       "source": {
         "each": 1,
-        "enough": [
-          0.0,
-          0.0,
-          0.63,
-          0.988,
-          1.0
-        ],
+        "enough": [0.0, 0.0, 0.63, 0.988, 1.0],
         "location": "CharredFortress",
         "max": 4,
         "min": 2,
@@ -630,19 +693,225 @@
           "pierce": 125.0
         },
         "breaks": true,
+        "fire": 4500.0,
         "health": 10000.0,
+        "immune": false,
         "modifiers": {
           "fire": 0.5,
           "frost": 0.5,
           "lightning": 0.5,
           "pierce": 0.5,
           "spirit": 0.0
-        }
+        },
+        "regen": 2.78,
+        "summons": []
       },
       {
+        "aspects": [
+          {
+            "after": null,
+            "attacks": {
+              "lightning": 150.0,
+              "pierce": 150.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 327.0,
+            "health": 3000.0,
+            "immune": false,
+            "key": "Aspect_Eikthyr",
+            "modifiers": {},
+            "name": "Aspect of the Lightning Stag",
+            "next": ["Aspect_Elder", "Aspect_Bonemass"],
+            "regen": 0.83,
+            "summons": []
+          },
+          {
+            "after": "Aspect_Eikthyr",
+            "attacks": {
+              "blunt": 150.0,
+              "pierce": 80.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 82.0,
+            "health": 1600.0,
+            "immune": false,
+            "key": "Aspect_Elder",
+            "modifiers": {
+              "fire": 2.0,
+              "poison": 0.0,
+              "spirit": 0.0
+            },
+            "name": "Aspect of the Living Forest",
+            "next": ["Aspect_Moder"],
+            "regen": 0.44,
+            "summons": [
+              {
+                "count": [15, 15],
+                "most": 30,
+                "of": [
+                  {
+                    "health": 20.0,
+                    "key": "Aspect_TentaRoot",
+                    "name": "Root"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "after": "Aspect_Eikthyr",
+            "attacks": {
+              "blunt": 100.0,
+              "poison": 200.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 778.0,
+            "health": 1600.0,
+            "immune": false,
+            "key": "Aspect_Bonemass",
+            "modifiers": {
+              "blunt": 1.5,
+              "fire": 0.25,
+              "frost": 1.5,
+              "pierce": 0.25,
+              "poison": 0.0,
+              "slash": 0.5
+            },
+            "name": "Aspect of the Writhing Dead",
+            "next": ["Aspect_Yagluth"],
+            "regen": 0.44,
+            "summons": [
+              {
+                "count": [4, 4],
+                "most": 8,
+                "of": [
+                  {
+                    "health": 40.0,
+                    "key": "Skeleton_aspect",
+                    "name": "Skeleton"
+                  },
+                  {
+                    "health": 50.0,
+                    "key": "BlobAspect",
+                    "name": "Blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "after": "Aspect_Elder",
+            "attacks": {
+              "frost": 180.0,
+              "pierce": 150.0,
+              "slash": 160.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 103.0,
+            "health": 1500.0,
+            "immune": false,
+            "key": "Aspect_Moder",
+            "modifiers": {
+              "fire": 1.5,
+              "frost": 0.0,
+              "spirit": 0.0
+            },
+            "name": "Aspect of the Dragon Mother",
+            "next": ["Aspect_SeekerQueen"],
+            "regen": 0.42,
+            "summons": []
+          },
+          {
+            "after": "Aspect_Bonemass",
+            "attacks": {
+              "fire": 75.0,
+              "lightning": 90.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 375.0,
+            "health": 1700.0,
+            "immune": false,
+            "key": "Aspect_Yagluth",
+            "modifiers": {
+              "fire": 0.5,
+              "pierce": 0.25,
+              "poison": 0.0
+            },
+            "name": "Aspect of the Twisted Soul",
+            "next": ["Aspect_Fader"],
+            "regen": 0.47,
+            "summons": []
+          },
+          {
+            "after": "Aspect_Moder",
+            "attacks": {
+              "blunt": 40.0,
+              "pierce": 150.0,
+              "poison": 100.0,
+              "slash": 130.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": 178.0,
+            "health": 1700.0,
+            "immune": false,
+            "key": "Aspect_SeekerQueen",
+            "modifiers": {
+              "pierce": 0.5,
+              "spirit": 0.0
+            },
+            "name": "Aspect of the Crawling Matriarch",
+            "next": [],
+            "regen": 0.47,
+            "summons": [
+              {
+                "count": [1, 1],
+                "most": 30,
+                "of": [
+                  {
+                    "health": 20.0,
+                    "key": "SeekerBrood",
+                    "name": "Seeker Brood"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "after": "Aspect_Yagluth",
+            "attacks": {
+              "fire": 50.0,
+              "pierce": 180.0,
+              "spirit": 50.0
+            },
+            "blast": 1000.0,
+            "breaks": true,
+            "fire": null,
+            "health": 1700.0,
+            "immune": false,
+            "key": "Aspect_Fader",
+            "modifiers": {
+              "fire": 0.0,
+              "pierce": 0.5,
+              "spirit": 0.0
+            },
+            "name": "Aspect of the Emerald Flame",
+            "next": [],
+            "regen": 0.47,
+            "summons": []
+          }
+        ],
+        "atOnce": 2,
         "attacks": {},
         "breaks": false,
+        "fire": null,
         "health": 7000.0,
+        "immune": true,
         "modifiers": {
           "blunt": 0.0,
           "fire": 0.0,
@@ -652,7 +921,9 @@
           "poison": 0.0,
           "slash": 0.0,
           "spirit": 0.0
-        }
+        },
+        "regen": 0.0,
+        "summons": []
       },
       {
         "attacks": {
@@ -661,14 +932,30 @@
           "frost": 50.0
         },
         "breaks": true,
+        "fire": null,
         "health": 30000.0,
+        "immune": false,
         "modifiers": {
           "fire": 0.5,
           "frost": 0.5,
           "lightning": 0.5,
           "pierce": 0.5,
           "spirit": 0.0
-        }
+        },
+        "regen": 8.33,
+        "summons": [
+          {
+            "count": [9, 9],
+            "most": 30,
+            "of": [
+              {
+                "health": 80.0,
+                "key": "Tendril",
+                "name": "Tendril"
+              }
+            ]
+          }
+        ]
       }
     ],
     "power": null,

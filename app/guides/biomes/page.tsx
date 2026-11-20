@@ -6,7 +6,7 @@ import { GUIDE_GROUPS } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Biome guides for Valheim — Seed Archive",
   description:
-    "Each biome in the run's order, Meadows to the Deep North: what to find, how often a seed has it, and how far it lies.",
+    "The eight lands in the order you meet them, Meadows to the Deep North: what each asks of you, where it hides it, and how far your seed puts it.",
   alternates: { canonical: "/guides/biomes" },
 };
 
@@ -16,7 +16,9 @@ export default function BiomesPage() {
     <GuidesIndex
       name="archive.groupBiomes"
       title="archive.groupBiomes"
-      groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/biomes").map((g) => ({ entries: g.entries }))}
+      groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/biomes").map(
+        (g) => ({ entries: g.entries }),
+      )}
       parent={{ name: "archive.guides", href: "/guides" }}
     />
   );

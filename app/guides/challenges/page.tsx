@@ -6,7 +6,7 @@ import { GUIDE_GROUPS } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Challenges guides for Valheim — Seed Archive",
   description:
-    "A good start, the speedrun's route, no death, no map, no portals and the reverse run: the run's story under each rule.",
+    "The same world played other ways: the speedrun, no death, no map, no portals, Hard and Hardcore, and the reverse run from the Deep North.",
   alternates: { canonical: "/guides/challenges" },
 };
 
@@ -16,7 +16,9 @@ export default function ChallengesPage() {
     <GuidesIndex
       name="archive.groupChallenges"
       title="archive.groupChallenges"
-      groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/challenges").map((g) => ({ entries: g.entries }))}
+      groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/challenges").map(
+        (g) => ({ entries: g.entries }),
+      )}
       parent={{ name: "archive.guides", href: "/guides" }}
     />
   );

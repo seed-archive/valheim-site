@@ -19,7 +19,7 @@ import { BAR, BIOMES } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat } from "@/lib/i18n/server";
 import farming from "@/lib/valheim/farming.json";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 
 export const metadata: Metadata = {
   title: "Farming in Valheim — Seed Archive",
@@ -37,8 +37,8 @@ type Thing = { key: string; name: string; amount: number };
 
 // The run's order of biomes.
 const byRun = (a: Plant, b: Plant) =>
-  BIOMES.indexOf(a.biome ?? "elsewhere") - BIOMES.indexOf(b.biome ?? "elsewhere") ||
-  a.name.localeCompare(b.name);
+  BIOMES.indexOf(a.biome ?? "elsewhere") -
+    BIOMES.indexOf(b.biome ?? "elsewhere") || a.name.localeCompare(b.name);
 
 // An item with its icon, a link to the materials catalogue (which says what
 // it goes into), and "× n" past one.
@@ -46,7 +46,7 @@ function material(x: Thing) {
   return (
     <Box key={x.key}>
       <ItemIcon item={x.key}>
-        <Link href={`/catalog/materials#${x.key.toLowerCase()}`}>{x.name}</Link>
+        <RowLink item={x.key}>{x.name}</RowLink>
         {x.amount > 1 ? ` × ${x.amount}` : ""}
       </ItemIcon>
     </Box>
@@ -59,7 +59,8 @@ function material(x: Thing) {
 // whose piece the game names `sapling_seed…` (a carrot and its seeds give
 // each other, so the name tells which is which).
 const first = (x: unknown[]) => (x[0] as Thing | undefined)?.key;
-const isSeedPlant = (p: Plant) => p.key.toLowerCase().startsWith("sapling_seed");
+const isSeedPlant = (p: Plant) =>
+  p.key.toLowerCase().startsWith("sapling_seed");
 const seedPlantOf = (crop: Plant, list: Plant[]) =>
   isSeedPlant(crop)
     ? undefined
@@ -74,7 +75,9 @@ const seedPlantOf = (crop: Plant, list: Plant[]) =>
 // and a vine's differ from both (Birch Sapling: Birch Seeds → fine wood).
 function plantTable(list: Plant[], named: boolean) {
   const seeds = new Map(list.map((p) => [p.key, seedPlantOf(p, list)]));
-  const seedPlants = new Set([...seeds.values()].filter(Boolean).map((s) => s!.key));
+  const seedPlants = new Set(
+    [...seeds.values()].filter(Boolean).map((s) => s!.key),
+  );
   const rows = list.filter((p) => !seedPlants.has(p.key));
   const anySeeds = rows.some((p) => seeds.get(p.key));
   return (
@@ -94,47 +97,52 @@ function plantTable(list: Plant[], named: boolean) {
           {[...rows].sort(byRun).map((p) => {
             const s = seeds.get(p.key);
             return (
-            <TableRow key={p.key} id={p.key.toLowerCase()}>
-              {named ? (
+              <TableRow key={p.key} id={p.key.toLowerCase()}>
+                {named ? (
+                  <TableCell>
+                    <ItemIcon item={p.key}>
+                      <RowLink item={p.key}>{p.name}</RowLink>
+                    </ItemIcon>
+                  </TableCell>
+                ) : null}
+                <TableCell>{(p.plantWith as Thing[]).map(material)}</TableCell>
                 <TableCell>
-                  <ItemIcon item={p.key}>
-                    <Link href={recipeHref(p.key)}>{p.name}</Link>
-                  </ItemIcon>
+                  {p.gives.length > 0
+                    ? (p.gives as Thing[]).map(material)
+                    : "—"}
                 </TableCell>
-              ) : null}
-              <TableCell>{(p.plantWith as Thing[]).map(material)}</TableCell>
-              <TableCell>
-                {p.gives.length > 0 ? (p.gives as Thing[]).map(material) : "—"}
-              </TableCell>
-              {anySeeds ? (
-                <TableCell>
-                  {s ? (
-                    <>
-                      {/* What is planted for seeds is the harvest, said once in
+                {anySeeds ? (
+                  <TableCell>
+                    {s ? (
+                      <>
+                        {/* What is planted for seeds is the harvest, said once in
                           "Gives"; only kale is planted with its seeds again. */}
-                      {first(s.plantWith) !== first(p.gives) ? (
-                        <>
-                          {(s.plantWith as Thing[]).map(material)}
-                          <Typography variant="caption" color="text.secondary">
-                            {t("seedsGive")}
-                          </Typography>
-                        </>
-                      ) : null}
-                      {(s.gives as Thing[]).map(material)}
-                    </>
-                  ) : (
-                    "—"
-                  )}
+                        {first(s.plantWith) !== first(p.gives) ? (
+                          <>
+                            {(s.plantWith as Thing[]).map(material)}
+                            <Typography
+                              variant="caption"
+                              color="text.secondary"
+                            >
+                              {t("seedsGive")}
+                            </Typography>
+                          </>
+                        ) : null}
+                        {(s.gives as Thing[]).map(material)}
+                      </>
+                    ) : (
+                      "—"
+                    )}
+                  </TableCell>
+                ) : null}
+                <TableCell sx={{ whiteSpace: "nowrap" }}>
+                  {t("minutes", {
+                    min: Math.round(p.minutes[0]),
+                    max: Math.round(p.minutes[1]),
+                  })}
                 </TableCell>
-              ) : null}
-              <TableCell sx={{ whiteSpace: "nowrap" }}>
-                {t("minutes", {
-                  min: Math.round(p.minutes[0]),
-                  max: Math.round(p.minutes[1]),
-                })}
-              </TableCell>
-              <TableCell>{p.biomes.map(biomeName).join(", ")}</TableCell>
-            </TableRow>
+                <TableCell>{p.biomes.map(biomeName).join(", ")}</TableCell>
+              </TableRow>
             );
           })}
         </TableBody>
@@ -149,7 +157,14 @@ function Section(props: { id: string; title: string; children: ReactNode }) {
     <Box component="section" id={props.id} sx={{ scrollMarginTop: BAR }}>
       <AnchorHeading
         id={props.id}
-        sx={{ position: "sticky", top: BAR, zIndex: 2, mt: 4, py: 1, bgcolor: "background.default" }}
+        sx={{
+          position: "sticky",
+          top: BAR,
+          zIndex: 2,
+          mt: 4,
+          py: 1,
+          bgcolor: "background.default",
+        }}
       >
         {props.title}
       </AnchorHeading>
@@ -163,7 +178,11 @@ export default function FarmingPage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
@@ -181,7 +200,8 @@ export default function FarmingPage() {
 
         <Section id="crops" title={t("crops.title")}>
           <Typography sx={{ mb: 2 }}>
-            {t("crops.text")} <Link href="/catalog/materials">{t("crops.materials")}</Link>.
+            {t("crops.text")}{" "}
+            <Link href="/catalog/materials">{t("crops.materials")}</Link>.
           </Typography>
           {plantTable(of("crop"), false)}
         </Section>

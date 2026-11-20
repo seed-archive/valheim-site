@@ -22,6 +22,14 @@ playing does not go on the page.
 Charred Fortress from Fader's altar), never different things on one chart (fortresses with Morgen holes). One
 value is a sentence of text; several unrelated values are a table.
 
+**The voice** (the owner, 2026-11-20, after reading the start island text: "written for complete idiots"): we write
+for living people, who come to use the section as a reference and stay for the story; text that explains the
+obvious makes them close the site. Even where the facts are tables, the prose must be a pleasure to read: a
+gripping story of a Viking running through the biomes one after another, told to the reader as "you", with stakes,
+pace and a little wit; every sentence gives a reason, a choice or a consequence the reader did not know, never what
+the game already tells them or what the heading already says. The facts, the numbers, the tables and the structure
+stay; only the telling changes.
+
 ## A page
 
 - Every page has one `<h1>`. A menu label equals the `<h1>` of the page it opens.
@@ -40,8 +48,10 @@ value is a sentence of text; several unrelated values are a table.
   name (`lib/content.ts` → `readGuide`; from the No Man's Sky section, 2026-11-20).
 - A guide's sections are the questions of `docs/guide-questions.md`, each a heading in the player's words, answered in
   a line or two, then its table: how often (a share of seeds) or how far (a median and its middle half).
-- A guide ends with a sentence that links the next guide of its section (`docs/guides.md` → The story: A good start →
-  Speedrun → Challenges → Reverse run → Meadows … → Deep North, which leads back to the Challenges). It links in its
+- A guide ends with a sentence that links the next guide (`docs/guides.md` → The menu; the owner, 2026-11-20, three
+  sections): Basics (A good start → Where to build your base → How much metal a run takes → Boss arenas) → Biomes
+  (Meadows … → Deep North) → Challenges (Speedrun → No death, no map, no portals → Hard, Very hard and Hardcore →
+  Reverse run, which leads back to A good start). It links in its
   text to the guides it relies on, the tool that acts on it, and the catalogue list it describes. Every guide is
   reached from at least two other pages (from the No Man's Sky section, 2026-11-20).
 - **The strip** (the owner, 2026-11-20) is the speedrun's idea: the run goes from the middle south, then north, and

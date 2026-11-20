@@ -13,7 +13,7 @@ import Link from "next/link";
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 import { SellNote } from "@/components/catalog/SellNote";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
@@ -22,7 +22,6 @@ import crafting from "@/lib/valheim/crafting.json";
 import events from "@/lib/valheim/events.json";
 import stars from "@/lib/valheim/stars.json";
 import fish from "@/lib/valheim/fish.json";
-import materials from "@/lib/valheim/materials.json";
 import places from "@/lib/valheim/places-spawners.json";
 import { placeAnchor } from "@/lib/valheim/places";
 import { RUN_ORDER } from "@/lib/valheim/run-order";
@@ -40,10 +39,6 @@ type Creature = (typeof creatures)[number];
 // A fish's largest depth at or above this means "no limit" (the game's own
 // placeholder for open water, the Tuna's 999 m).
 const DEEP_WATER = 999;
-
-// A drop that is a crafting material links to its row in the materials
-// catalogue.
-const materialKeys = new Set(materials.map((m) => m.key));
 
 // A bait with a recipe links to it; the plain bait is bought from Haldor.
 const crafted = new Set(crafting.gear.map((g) => g.key));
@@ -102,7 +97,10 @@ const groupOf = (c: Creature) =>
 function livesIn(c: Creature) {
   const seen = new Map<string, string>();
   for (const p of places) {
-    const made = [...p.spawners.flatMap((s) => s.creatures), ...p.roomCreatures];
+    const made = [
+      ...p.spawners.flatMap((s) => s.creatures),
+      ...p.roomCreatures,
+    ];
     if (!made.includes(c.key)) {
       continue;
     }
@@ -157,17 +155,26 @@ const every = (o: OpenSpawn) =>
 function sourceLine(s: Sources) {
   const regular = s.openWorld.filter((o) => !o.rare);
   const rare = s.openWorld.filter((o) => o.rare);
-  const minutes = [...new Set(s.respawns.map((r) => r.minutes))].sort((a, b) => a - b);
+  const minutes = [...new Set(s.respawns.map((r) => r.minutes))].sort(
+    (a, b) => a - b,
+  );
   // A day entry and a night entry alike read the same: each once.
   const rareParts = [...new Set(rare.map(every))];
-  const later = [...rareParts, ...(s.raids.length > 0 ? [t("sources.raids")] : [])].join("; ");
+  const later = [
+    ...rareParts,
+    ...(s.raids.length > 0 ? [t("sources.raids")] : []),
+  ].join("; ");
   let text: string;
   if (s.verdict === "renews") {
     const parts = [
-      minutes.length > 0 ? t("sources.respawns", { minutes: minutes.join(t("sources.or")) }) : null,
+      minutes.length > 0
+        ? t("sources.respawns", { minutes: minutes.join(t("sources.or")) })
+        : null,
       s.once.length > 0 ? t("sources.once") : null,
       s.areas.length > 0 ? t("sources.areas") : null,
-      regular.length > 0 ? t("sources.open", { biomes: biomeNames(regular) }) : null,
+      regular.length > 0
+        ? t("sources.open", { biomes: biomeNames(regular) })
+        : null,
       ...rareParts,
       s.raids.length > 0 ? t("sources.raids") : null,
     ].filter((p) => p !== null);
@@ -210,7 +217,11 @@ function raidSpan(r: Raid, minLevel: number, maxLevel: number) {
     r.ends.length > 0
       ? t("sources.raidUntil", { keys: r.ends.map(keyText).join(", ") })
       : t("sources.raidForGood"),
-    minLevel > 1 ? t("sources.raidStars") : maxLevel > 1 ? t("sources.raidMayStar") : null,
+    minLevel > 1
+      ? t("sources.raidStars")
+      : maxLevel > 1
+        ? t("sources.raidMayStar")
+        : null,
   ]
     .filter((p) => p !== null)
     .join(", ");
@@ -248,7 +259,12 @@ export default function CreaturesPage() {
         <Typography sx={{ mb: 2 }}>
           <b>{t("question")}</b> {t("lead")}
         </Typography>
-        <Typography variant="h5" component="h2" id="stars" sx={{ mt: 4, mb: 1 }}>
+        <Typography
+          variant="h5"
+          component="h2"
+          id="stars"
+          sx={{ mt: 4, mb: 1 }}
+        >
           {t("stars.title")}
         </Typography>
         <Typography variant="body2" sx={{ mb: 1 }}>
@@ -366,7 +382,9 @@ export default function CreaturesPage() {
                       {livesIn(c).map(([name, anchor], i) => (
                         <span key={anchor}>
                           {i > 0 ? ", " : ""}
-                          <Link href={`/catalog/dungeons#${anchor}`}>{name}</Link>
+                          <Link href={`/catalog/dungeons#${anchor}`}>
+                            {name}
+                          </Link>
                         </span>
                       ))}
                       .
@@ -374,7 +392,9 @@ export default function CreaturesPage() {
                   ) : null}
                   {`pages.creatures.notes.${c.key}` in serverMessages ? (
                     <Typography variant="body2" sx={{ mb: 1 }}>
-                      {t(`notes.${c.key}`, { weaponSets: c.weaponSets?.length ?? 0 })}
+                      {t(`notes.${c.key}`, {
+                        weaponSets: c.weaponSets?.length ?? 0,
+                      })}
                     </Typography>
                   ) : null}
                   {sourcesOf(c).verdict ? (
@@ -392,7 +412,11 @@ export default function CreaturesPage() {
                           return (
                             <span key={r.key}>
                               {i > 0 ? "; " : ""}
-                              <Link href={`/catalog/events#${r.key.toLowerCase()}`}>{raid.name}</Link>
+                              <Link
+                                href={`/catalog/events#${r.key.toLowerCase()}`}
+                              >
+                                {raid.name}
+                              </Link>
                               {` (${raidSpan(raid, r.minLevel, r.maxLevel)})`}
                             </span>
                           );
@@ -427,13 +451,7 @@ export default function CreaturesPage() {
                             <TableRow key={d.key}>
                               <TableCell id={`drop-${d.key.toLowerCase()}`}>
                                 <ItemIcon item={d.key}>
-                                  {materialKeys.has(d.key) ? (
-                                    <Link href={`/catalog/materials#${d.key.toLowerCase()}`}>
-                                      {d.name}
-                                    </Link>
-                                  ) : (
-                                    d.name
-                                  )}
+                                  <RowLink item={d.key}>{d.name}</RowLink>
                                 </ItemIcon>
                               </TableCell>
                               <TableCell>{amount(d.min, d.max)}</TableCell>
@@ -444,11 +462,7 @@ export default function CreaturesPage() {
                                 {d.usedIn.map((u, i) => (
                                   <span key={u.key}>
                                     {i > 0 ? ", " : ""}
-                                    <Link
-                                      href={recipeHref(u.key)}
-                                    >
-                                      {u.name}
-                                    </Link>
+                                    <RowLink item={u.key}>{u.name}</RowLink>
                                   </span>
                                 ))}
                                 <SellNote item={d.key} />
@@ -476,14 +490,17 @@ export default function CreaturesPage() {
                                 {s.pieces.map((p, i) => (
                                   <span key={p.key}>
                                     {i > 0 ? ", " : ""}
-                                    <Link href={recipeHref(p.key)}>{p.name}</Link>
+                                    <RowLink item={p.key}>{p.name}</RowLink>
                                   </span>
                                 ))}
                               </TableCell>
                               <TableCell>
                                 {/* A set whose quality 1 takes none of this creature's drops needs it only to upgrade. */}
                                 {s.kills > 0
-                                  ? t("sets.kills", { n: s.kills, drop: s.by.name })
+                                  ? t("sets.kills", {
+                                      n: s.kills,
+                                      drop: s.by.name,
+                                    })
                                   : "—"}
                               </TableCell>
                               <TableCell>
@@ -499,10 +516,13 @@ export default function CreaturesPage() {
                       </Table>
                       <Typography variant="caption" color="text.secondary">
                         {t("sets.note")}
-                        {sourcesOf(c).verdict === "runsOut" || sourcesOf(c).verdict === "fixed"
+                        {sourcesOf(c).verdict === "runsOut" ||
+                        sourcesOf(c).verdict === "fixed"
                           ? ` ${
                               sourcesOf(c).perPlace
-                                ? t("sets.runsOut", { n: sourcesOf(c).perPlace ?? 0 })
+                                ? t("sets.runsOut", {
+                                    n: sourcesOf(c).perPlace ?? 0,
+                                  })
                                 : t("sets.runsOutRooms")
                             }`
                           : null}
@@ -515,7 +535,12 @@ export default function CreaturesPage() {
           );
         })}
 
-        <Typography variant="h4" component="h2" id="fishing" sx={{ mt: 6, mb: 1 }}>
+        <Typography
+          variant="h4"
+          component="h2"
+          id="fishing"
+          sx={{ mt: 6, mb: 1 }}
+        >
           {t("fish.title")}
         </Typography>
         <Typography sx={{ mb: 2 }}>{t("fish.text")}</Typography>
@@ -540,23 +565,29 @@ export default function CreaturesPage() {
                     {/* The biomes the game spawns it in, in water this deep or more; or the caves it lies in. */}
                     {f.biomes.length > 0
                       ? t("fish.where", {
-                          biomes: f.biomes.map((b) => serverFormat(`pages.crafting.biome.${b}`)).join(", "),
+                          biomes: f.biomes
+                            .map((b) =>
+                              serverFormat(`pages.crafting.biome.${b}`),
+                            )
+                            .join(", "),
                           water: f.water ?? 0,
                         })
-                      : f.dungeons.map((d) => serverFormat(`pages.map.places.${d}`)).join(", ")}
+                      : f.dungeons
+                          .map((d) => serverFormat(`pages.map.places.${d}`))
+                          .join(", ")}
                   </TableCell>
                   <TableCell>
                     {f.baits.map((b) => (
                       <ItemIcon key={b.key} item={b.key}>
-                        <Link
-                          href={
-                            crafted.has(b.key)
-                              ? recipeHref(b.key)
-                              : `/catalog/traders#${b.key.toLowerCase()}`
-                          }
-                        >
-                          {b.name}
-                        </Link>
+                        {crafted.has(b.key) ? (
+                          <RowLink item={b.key}>{b.name}</RowLink>
+                        ) : (
+                          <Link
+                            href={`/catalog/traders#${b.key.toLowerCase()}`}
+                          >
+                            {b.name}
+                          </Link>
+                        )}
                       </ItemIcon>
                     ))}
                   </TableCell>
@@ -570,13 +601,7 @@ export default function CreaturesPage() {
                     {f.extras.map((x) => (
                       <Box key={x.key}>
                         <ItemIcon item={x.key}>
-                          {materialKeys.has(x.key) ? (
-                            <Link href={`/catalog/materials#${x.key.toLowerCase()}`}>
-                              {x.name}
-                            </Link>
-                          ) : (
-                            x.name
-                          )}
+                          <RowLink item={x.key}>{x.name}</RowLink>
                         </ItemIcon>
                       </Box>
                     ))}

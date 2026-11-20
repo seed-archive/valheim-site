@@ -9,14 +9,13 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat } from "@/lib/i18n/server";
 import breakables from "@/lib/valheim/breakables.json";
-import { recipeHref } from "@/lib/valheim/recipes";
+import { RowLink } from "@/components/catalog/RowLink";
 
 export const metadata: Metadata = {
   title: "What to break in Valheim — Seed Archive",
@@ -25,7 +24,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalog/breakables" },
 };
 
-const t = (id: string, values?: Record<string, string | number>) => serverFormat(`pages.breakables.${id}`, values);
+const t = (id: string, values?: Record<string, string | number>) =>
+  serverFormat(`pages.breakables.${id}`, values);
 
 // The objects worth breaking, one row each (the Valheim generator's
 // `breakables.json`): its name, what one break gives with the chance, and the
@@ -34,7 +34,11 @@ export default function BreakablesPage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
@@ -65,30 +69,42 @@ export default function BreakablesPage() {
                     {r.metals.map((m) => (
                       <Box key={m.key} sx={{ mb: 0.5 }}>
                         <ItemIcon item={m.key}>
-                          {m.group ? t(`group.${m.group}`) : <Link href={recipeHref(m.key)}>{m.name}</Link>}
+                          {m.group ? (
+                            t(`group.${m.group}`)
+                          ) : (
+                            <RowLink item={m.key}>{m.name}</RowLink>
+                          )}
                           {" ×"}
                           {/* A table may hold a max below its min; the game then gives the min. */}
                           {m.max <= m.min ? m.min : `${m.min}–${m.max}`}
                           {", "}
                           {m.chance === m.chanceMax
                             ? t("chance", { n: m.chance })
-                            : t("chanceRange", { low: m.chance, high: m.chanceMax })}
+                            : t("chanceRange", {
+                                low: m.chance,
+                                high: m.chanceMax,
+                              })}
                         </ItemIcon>
                       </Box>
                     ))}
                   </TableCell>
                   <TableCell>
                     {/* A place the map has no name for ("unnamed") is left out. */}
-                    {r.places.filter((p) => p.key !== "unnamed").map((p, i) => (
-                      <span key={p.key}>
-                        {i > 0 ? ", " : ""}
-                        {serverFormat(`pages.map.places.${p.key}`)}
-                        <Box component="span" sx={{ color: "text.secondary" }}>
-                          {" "}
-                          {p.always ? t("always") : t("sometimes")}
-                        </Box>
-                      </span>
-                    ))}
+                    {r.places
+                      .filter((p) => p.key !== "unnamed")
+                      .map((p, i) => (
+                        <span key={p.key}>
+                          {i > 0 ? ", " : ""}
+                          {serverFormat(`pages.map.places.${p.key}`)}
+                          <Box
+                            component="span"
+                            sx={{ color: "text.secondary" }}
+                          >
+                            {" "}
+                            {p.always ? t("always") : t("sometimes")}
+                          </Box>
+                        </span>
+                      ))}
                   </TableCell>
                 </TableRow>
               ))}
