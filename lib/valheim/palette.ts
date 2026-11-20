@@ -14,7 +14,9 @@ const BIOME_RGB: Record<number, [number, number, number]> = {
   5: [204, 170, 118], // Plains
   6: [122, 54, 46], // Ashlands
   7: [224, 232, 238], // Deep North
-  8: [232, 232, 226], // Ocean (as land: shallows above the water)
+  // Class 8 is the Ashlands' own sea: the generator reddens it from the
+  // border inward as the game's map does; the red is our own choice.
+  8: [150, 34, 24],
   9: [98, 90, 110], // Mistlands
 };
 
@@ -174,9 +176,7 @@ export function overlays() {
 // (pages.map.legend), a place's pin by its key (pages.map.places), or a kind
 // of building drawn from above by its key (pages.map.legend).
 export type Kind =
-  | { mark: number; key: string }
-  | { pin: string }
-  | { building: string };
+  { mark: number; key: string } | { pin: string } | { building: string };
 export const KINDS: Record<string, Kind[]> = {
   spawners: [
     { mark: 40, key: "greydwarfNest" },
@@ -254,10 +254,7 @@ export const KINDS: Record<string, Kind[]> = {
   ],
   // Drawn from the game's models, room by room for a camp (the owner,
   // 2026-11-19).
-  buildings: [
-    { building: "fulingVillages" },
-    { building: "draugrVillages" },
-  ],
+  buildings: [{ building: "fulingVillages" }, { building: "draugrVillages" }],
 };
 
 // The building kind each camp's rooms are switched with, by the camp's place key.
@@ -273,7 +270,11 @@ export const BUILDING_COLOUR = "#8d6e63";
 
 // The name key of a kind: a place's, a mark's, or a building's.
 export function kindKey(kind: Kind): string {
-  return "pin" in kind ? kind.pin : "building" in kind ? kind.building : kind.key;
+  return "pin" in kind
+    ? kind.pin
+    : "building" in kind
+      ? kind.building
+      : kind.key;
 }
 
 // A kind's label in the messages: a place's name, or a legend's entry.
