@@ -32,8 +32,9 @@ Until the section has its first real pages, every page is `noindex` (`app/layout
 
 Taken over from the No Man's Sky section's rules, 2026-11-20, as the owner asked; its own story is in its `docs/seo.md`.
 
-**The story the site tells** (the owner, 2026-11-19): how to reach the end of the game fastest
-(`.claude/rules/site-text.md` → The one question). The Guides menu reads as one trip: the Challenges section first,
+**The story the site tells** (the owner, 2026-11-19, widened 2026-11-20): the usual game as the baseline, each way
+of playing in its own section where it needs one, the speedrun among them (`.claude/rules/site-text.md` → The
+baseline and the ways of playing). The Guides menu reads as one trip: the Challenges section first,
 from a good start through the speedrun to the other rules, then the Biomes in the run's order; each guide's closing
 sentence leads to the next (`docs/guides.md` → The story). The Catalog is the reference a guide links to, the Tools
 are what a guide sends the player to use.

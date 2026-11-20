@@ -9,9 +9,14 @@ paths:
 
 The rules of text shared with the No Man's Sky site, with Valheim's own where the games differ.
 
-**The one question** (the owner, 2026-11-19): the section answers only "how do I reach the end of the game
-fastest?". Every other question on a page derives from it; a number, table or chart that does not help answer it
-does not go on the page.
+**The baseline and the ways of playing** (the owner, 2026-11-20, replacing "the one question" of 2026-11-19): a
+guide tells the usual game first, the path the developers meant, as its baseline. Each other way of playing (the
+speedrun, no death on a harder world, no map, no portals, the reverse run, the builder at leisure) needs its own
+information, not only a remark: where it needs it, it gets a section of its own with a heading in its player's
+words, a short description and its table. Those sections are woven into the page's story where they belong, never
+told as "everyone does this, and the speedrunner does otherwise". A short remark stays a footnote; never a pile of
+footnotes under one table: when several gather, they become a section. A number, table or chart that helps no way of
+playing does not go on the page.
 
 **Charts** (the owner, 2026-11-19): a chart compares two or more parameters of one thing (the 1st, 3rd and 4th
 Charred Fortress from Fader's altar), never different things on one chart (fortresses with Morgen holes). One
@@ -44,8 +49,12 @@ value is a sentence of text; several unrelated values are a table.
   island. It is explained once, on the Speedrun guide (`#what-is-the-strip`); every other page that uses it links the
   word "strip" there. A player who is not running goes wherever he likes, so a guide never treats the strip as the
   only way.
-- A way of playing other than the speedrun is a footnote, a blockquote opening with the mode in bold
-  (`> **With no map** …`), never a section of its own (`docs/guides.md` → The story).
+- A short remark for one way of playing is a footnote, a blockquote opening with the mode in bold
+  (`> **With no map** …`); what a way of playing needs beyond a remark is a section (The baseline and the ways of
+  playing, above; `docs/guides.md` → The story). The labels (the owner,
+  2026-11-20, adding the last two from the guide forum): **Speedrunners**, **With no map**, **With no portals**,
+  **On a reverse run**, **At leisure** (the builder who plays the whole game slowly), **With no death** (the
+  hardcore player, safe and on a harder world).
 
 ## Header and home page
 

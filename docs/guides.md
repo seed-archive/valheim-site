@@ -46,6 +46,8 @@ Challenges → Reverse run → Meadows → … → Deep North, which ends back a
   (`> **Speedrunners** …`), drawn as a side note by `MarkdownGuide`, at the end of a biome's questions. Speedrun notes
   are on all eight biomes; No map, No portals and Reverse run follow from the research
   (the Valheim generator's notes, play modes), the reverse run only where it differs, above all the Deep North.
+  **At leisure** and **With no death** added by the owner on 2026-11-20, from the guide forum's drafts
+  (`.claude/rules/site-text.md` → A page).
 - **No charts yet.** No page has the "How often a seed has it" section any more, so `MarkdownGuide`'s charts draw
   nothing; the next pass decides the charts by the owner's rule (several values of one thing, `site-text.md`), then
   `ShareChart` and `SpreadChart` are kept or deleted.

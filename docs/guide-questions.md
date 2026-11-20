@@ -1,6 +1,9 @@
 # The questions each biome guide answers (draft for the owner, 2026-11-19)
 
-The site answers one question: **how do I reach the end of the game fastest?** (`.claude/rules/site-text.md`). A biome
+The questions below were written for the speedrun (2026-11-19). Since 2026-11-20 the guides tell the usual game as
+the baseline and give each way of playing its own section where it needs one (`.claude/rules/site-text.md` → The
+baseline and the ways of playing); the questions stay the speedrun's part. As written then: the site answers one
+question: **how do I reach the end of the game fastest?** A biome
 guide answers it for its biome: **how do I get through this biome fastest?** That means getting what the biome's boss
 asks for, making what the next biome needs, and killing the boss. The questions below are that question cut into the
 steps a run takes, in their order. A row the guide holds today that answers none of them leaves the page.
