@@ -74,7 +74,7 @@
   "pages": {
     "home": {
       "title": "Valheim seeds",
-      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft Meadows to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do: the chance that a chest, a nest or a seed gives you what you need, how far the nearest one lies, and what turns into what, every number read from the game itself. See that world before you sail on the <map>Valheim seed map</map>, ask <rating>How good is my seed?</rating> how it ranks, play it other ways in the <challenges>challenges</challenges>, or look up any weapon, food or boss in the <catalog>catalog</catalog>.",
+      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft Meadows to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do, from the <basics>first steps</basics> to every one of the <biomes>eight lands</biomes>, down the harder roads of the <challenges>challenges</challenges>, and through every <catalog>weapon, food and boss</catalog>. Drop your seed on the <map>map</map> and see your whole world before you sail, or find out <rating>how good your seed is</rating>.",
       "new": "New",
       "biome": {
         "meadows": {

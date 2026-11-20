@@ -44,6 +44,8 @@ export default function Home() {
           <FormattedMessage
             id="pages.home.lead"
             values={{
+              basics: (text) => <Link href="/guides/basics">{text}</Link>,
+              biomes: (text) => <Link href="/guides/biomes">{text}</Link>,
               deepNorth: (text) => (
                 <Link href="/guides/biomes/deep-north">{text}</Link>
               ),
