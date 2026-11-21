@@ -45,6 +45,8 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Mountain.** Climb by day, and clear the drakes round Moder's altar before you summon her: the drakes of a nest rise once and do not come back.
 
+**Plains.** Clear one Fuling village by day and make it your camp before you look for the next. A village's shamans and its first Fulings rise from spawners that fire once; set down a workbench and a campfire, and while they stand nothing new rises inside their reach, from the village or from the open Plains. Two pieces stay under the {{raidBasePieces}} that call most raids, so the camp draws none. Fulings still walk in from outside: it is a place to rest and mend, not a wall.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
@@ -89,6 +91,8 @@ Find the shore first and keep the base by it: any coast leads home. Then build t
 
 **Mountain.** Climb: from the top the drake nests show from far off, and they stand round Moder's altar. The top is your lookout, and a fire at her altar marks the way down.
 
+**Plains.** Steer for the standing stones and the stone towers of every Plains you land on: only they hold Yagluth's Vegvísir, and a tower pays a totem besides.
+
 ## How do I play with no portals?
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
@@ -119,6 +123,8 @@ The far south costs most: the [Drakkar](/catalog/ships), the one ship that cross
 **Black Forest.** The cores a usual game spends on a pair of portals are yours to keep: you need only the kiln and the smelter, but again at every new base. The Elder's wood comes home on a cart or under sail, so what matters is whether his altar stands on your home's own land: one of his altars does on {{homeElderOnLand}}% of seeds, {{homeElderM}} m from home as a rule.
 
 **Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip.
+
+**Plains.** Barley and flax grow only here, so set the farm on the spot or carry the whole harvest home.
 
 > **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 

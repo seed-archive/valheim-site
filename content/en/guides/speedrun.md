@@ -151,7 +151,13 @@ Hang her trophy before the long sails: her power speeds you on foot, lets you ca
 
 She cannot be skipped: every All Bosses category, Classic included, counts her, and without her tears there is no artisan table, so no blast furnace for the Plains' black metal.
 
-**Yagluth**, with {{goblinTotems}} Fuling totems taken from the villages near him. [Plains](/guides/plains).
+### Plains
+
+Yagluth takes {{goblinTotems}} Fuling totems, and you take them the cheapest way: raid the towers first, since an outpost always holds its totem, slip into the villages only for the rest, and pocket the black metal of the Fulings you cut down on the way. Outrun the Deathsquitos or shoot them; the Root Harnesk is a comfort you may not have.
+
+Classic, the shortest category, stops the clock here: it ends at his altar.
+
+Going on, the Plains cannot be skipped: black metal goes into the Galdr Table and the Queen's Sealbreaker, and without Yagluth's Torn Spirit you walk the Mistlands blind in the mist.
 
 **The Queen**, through the mist, with the Infested Mines beside her. [Mistlands](/guides/mistlands).
 
