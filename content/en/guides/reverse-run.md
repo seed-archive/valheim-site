@@ -160,6 +160,17 @@ Chart: spread
 
 The seals on the shore. They never fight back and are weak to fire, so fires under and round a seal kill it with no weapon at all, and its pelts are the half of every Ember Charge that is not Fader's. The moose fights back and falls to fire too; tamed with lingonberries, it is meat without end. The Gammeltroll is the one creature here no fire hurts: walk round it until you have a weapon. Enjoy the quiet while it lasts. The Krigen and the Hexen roam the open world only once a Krigen or a Hexen has died somewhere, and from then on they raid your bases until Kall falls, so the first Jotun you kill is a choice.
 
+Fire is the weapon you start with, and this is what it does to each:
+
+| Creature | Health | Fire |
+|---|---|---|
+| Seal | {{fireSealHealth}} | weak |
+| Elaking | {{fireElakingHealth}} | weak |
+| Moose | {{fireMooseHealth}} | weak |
+| Hexen | {{fireHexenHealth}} | weak |
+| Barka | {{fireBarkaHealth}} | weak |
+| Gammeltroll | {{fireTrollHealth}} | immune |
+
 | For the first key's tissue | How many |
 |---|---|
 | Ember Charges from {{emberChargePelts}} seal pelts and {{emberChargeEmbers}} ember | {{emberCharges}} |

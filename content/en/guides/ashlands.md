@@ -4,28 +4,19 @@
 
 ## Which boat crosses the sea?
 
-The Drakkar, and no other. The sea of the south boils: it burns every boat that sails it, the more the longer the boat is on it, and the Drakkar is the one hull that lands whole. Fader's altar lies {{homeFaderM}} m from home as a rule ({{homeFaderMLow}}–{{homeFaderMHigh}} m on the middle half of seeds), so this is a long voyage, and its last stretch is over burning water.
-
-| The Drakkar takes | |
-|---|---|
-| Iron nails | {{drakkarNails}} |
-| Ceramic plates, from the Queen's artisan press | {{drakkarPlates}} |
-| Fine wood | {{drakkarFineWood}} |
-| Yggdrasil wood | {{drakkarYggdrasil}} |
-
-Every row is a land you have already left: iron from the Swamp, fine wood from home, plates and Yggdrasil wood from the Mistlands. Build it at your own shore, where all of it already lies.
+The Drakkar, and no other. The sea of the south boils: it burns every boat that sails it, the more the longer the boat is on it, and the Drakkar is the one hull that lands whole. Fader's altar lies {{homeFaderM}} m from home as a rule ({{homeFaderMLow}}–{{homeFaderMHigh}} m on the middle half of seeds), so this is a long voyage, and its last stretch is over burning water. Sail it south from home in the ship you built after the Queen.
 
 ## Where do I land, and what do I build first?
 
-Land by day, near ruins, with a portal left standing somewhere behind you outside the Ashlands. Then build before you fight: a workbench, a portal, a stonecutter and a shield generator, fed with bones, whose dome stops the burning rain. Build in stone, and in grausten once you have it; wood burns here. Put a roof over every piece: ash wears away whatever stands uncovered. A straight tower of grausten stands {{buildHeightGrausten}} m.
+You arrive weak here because nothing in the Ashlands comes alone. The Charred come in waves, warriors, marksmen and warlocks, and they resist the arrow and the flame; the Morgen resists every blade and point you own; Asksvin, Fallen Valkyries and Voltures join in. Lava kills within seconds. Leave the feather cape off, since it doubles fire, and drink the fire resistance wine before a fight, not in it.
 
-You arrive weak here in a new way: nothing in the Ashlands is alone. The Charred come in waves, warriors, marksmen and warlocks, and they resist the arrow and the flame; the Morgen resists every blade and point you own; the Asksvin charge; the Valkyries fall on you from above. Lava kills within seconds. Leave the feather cape off, since it doubles fire, and drink the fire resistance wine before a fight, not in it. Fight by day from behind your walls, and be home at dusk, when the waves grow.
+So you build before you fight. Land by day, near ruins, with a portal left standing somewhere behind you outside the Ashlands. Raise a workbench, a portal, a stonecutter and a shield generator, fed with bones, whose dome stops the burning rain. Build in stone, and in grausten once you have it; wood burns here. Put a roof over every piece: ash wears away whatever stands uncovered. Then fight by day from behind your walls, and be home at dusk.
 
 ## How do I make flametal, and a portal that carries metal?
 
-Flametal ore lies in three places: the spires that stand in the lava, the Charred's ruins, and the fortresses. The spires stand in lava and are mined from it; the ruins and the fortress chests ask only for a fight. One written guide mines the spires first and another never does, and both finish the land. The blast furnace smelts the ore.
+Flametal ore lies in three places: the spires that stand in the lava, the Charred's ruins, and the fortresses. The spires stand in lava and are mined from it; the ruins and the fortress chests ask only for a fight. Players differ on the spires. Mining them gives flametal before the first fortress, at the lava's risk; skipping them works because the ruins and a first fortress give enough for the armour. The blast furnace smelts the ore either way.
 
-The first flametal is your armour and your way into the fortresses. Three sets are made here: the flametal armour, heavy; the set of Ask, light, from {{killsAsksvinAsk}} Asksvin and the lox pelts you kept; and the robes of Embla, for magic. The pieces are on the [armour](/catalog/armour) page.
+The first flametal is your armour and your way into the fortresses. Three sets are made here: the flametal armour, heavy; the set of Ask, light, from {{killsAsksvinAsk}} Asksvin and lox pelts from the Plains; and the robes of Embla, for magic. The pieces are on the [armour](/catalog/armour) page.
 
 Then the stone portal, the one portal that carries ore and metal:
 
@@ -35,7 +26,7 @@ Then the stone portal, the one portal that carries ore and metal:
 | Grausten | {{stonePortalGrausten}} | {{stonePortalPairGrausten}} |
 | Molten cores | {{stonePortalCores}} | {{stonePortalPairCores}} |
 
-The molten cores are the only hard part, and a Charred Fortress always holds {{fortCoreStands}} stands of them; the Morgen's holes hold more. Build one portal here and one at home, and then one at every base that has metal waiting: from this day no bar sails again.
+Of the three, only the molten cores take finding: a Charred Fortress always holds {{fortCoreStands}} stands of them, and the Morgen's holes hold them too. Build one portal here, one at home and one at every other base: from then on metal travels by portal.
 
 ## How do I find a Charred Fortress?
 
@@ -49,7 +40,7 @@ By walking out from Fader's altar. A fortress sends a green beam up through the 
 
 Even the first is past the beam's reach as a rule, at {{faderFortM}} m, so you walk toward them rather than wait to see one. The [seed map](/tools/map) shows the fortresses of your own seed.
 
-There are two ways in, and both cost {{ramFlametal}} flametal: the battering ram breaks the outer wall and then the tower, and the catapult throws whoever stands in it over the wall. Inside, break the Charred's spawners before you fight what they made, then the warlocks. The fortress's altar holds the bell fragments, its stands the molten cores, and Fader's Vegvísir stands there too. A fortress taken with its gate left whole is stone walls already built, if you want a second base.
+There are three ways in. The battering ram breaks the outer wall and then the tower, and the catapult throws whoever stands in it over the wall; each costs {{ramFlametal}} flametal. The third costs none: shoot the ballistae off the corners and climb in. Inside, break the Charred's spawners before you fight what they made, then the warlocks. The fortress's altar holds the bell fragments, its stands the molten cores, and Fader's Vegvísir stands there too. A fortress taken with its gate left whole is stone walls already built, if you want a second base.
 
 ## How many fortresses give enough bell fragments?
 

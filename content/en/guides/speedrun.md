@@ -185,7 +185,13 @@ A fortress costs you neither ram nor catapult: a ladder over the wall onto the t
 
 The Ashlands cannot be skipped on the way to the Deep North: only the embers of Fader's pyre break the petrified trolls, whose tissue is the north's Bloodgold.
 
-**Kall Fimbulbringer**, far north: the Winding Tunnels first, for the key's mould, then the Mörkhalla near him, whose ice sends the invasions south for his blood. [Deep North](/guides/deep-north).
+### Deep North
+
+The Ashlands end your run far in the south, so portal to your copper base near the map's middle and sail north from there; the voyage's length comes down to how far Kall stands from the north–south line through the start: {{kallAxisM}} m as a rule, {{kallAxisMLow}}–{{kallAxisMHigh}} m on the middle half of seeds. On {{stripKall}}% of seeds he stands in the [strip](#what-is-the-strip).
+
+The order is the Winding Tunnels first, for the key's mould, then the Mörkhalla near him. Then save the trips: break all {{kallMorkhallaNeed}} Malicious Ices in one sweep of the Mörkhalla, portal south, take the cores, and sail north once more.
+
+Kall is the last boss, so the north is never skipped by a run that goes to him; every All Bosses category before Deep North stops short of the snow.
 
 How each fight goes, blow by blow, is on [How to kill each boss](/catalog/bosses).
 

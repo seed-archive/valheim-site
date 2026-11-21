@@ -49,6 +49,10 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Mistlands.** Set a torch in every mine room you clear, so its Seekers stay dead, and come by day: the mist's Seekers carry more stars at night.
 
+**Deep North.** Until Kall falls, two raids stalk the north: the Jotnar, once the first Krigen or Hexen dies, and the Eyeless Ones, once the first of them does. Neither can start unless {{raidBasePieces}} base pieces stand around you, so sleep with a campfire and a bed and nothing else: {{raidSafePieces}} pieces call no raid. Keep the workbench and the portal more than {{raidClearM}} m from the bed, and remember that a hooded lantern counts as a base piece too.
+
+A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance mead, hold {{kallRetryBlood}} bloods spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
@@ -105,6 +109,14 @@ Find the shore first and keep the base by it: any coast leads home. Then build t
 
 A Dvergr lighthouse stands in her Mistlands on {{queenLighthouseIn}}% of seeds.
 
+**Deep North.** The snow shows the way: wherever you stand, its flakes drift toward a live invasion, and inside one there are none. With several standing they may lead you to a farther one rather than the nearest, so clear the one they show and follow again. In the north the land does the rest. A village means the Winding Tunnels are close, every Mörkhalla's end room holds Kall's Vegvísir, and Yggdrasil's branch hangs fixed in the sky. Raise a stave tower of Timberwood over the gate, roofed or not, and it stands through every storm as your lighthouse.
+
+| By Kall's gate | How often |
+|---|---|
+| A Deep North village within {{bossNearM}} m | {{kallVillageNear}}% of seeds |
+| The Winding Tunnels within {{bossNearM}} m | {{kallHoleNear}}% of seeds |
+| {{kallMorkhallaNeed}} Mörkhalla within {{bossNearM}} m | {{kallMorkhallaNear}}% of seeds |
+
 ## How do I play with no portals?
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
@@ -147,6 +159,8 @@ The far south costs most: the [Drakkar](/catalog/ships), the one ship that cross
 | The narrowest sea between the Ashlands and other land, m | {{ashGapM}} | {{ashGapMLow}}–{{ashGapMHigh}} |
 | From the nearest Ashlands coast to Fader's altar, m | {{altarShoreFader}} | {{altarShoreFaderLow}}–{{altarShoreFaderHigh}} |
 | From the nearest Ashlands coast to the Charred Fortress nearest Fader, m | {{fortShore}} | {{fortShoreLow}}–{{fortShoreHigh}} |
+
+**Deep North.** The ship hauls the whole workshop from your last base: the blast furnace's materials, the Black Forge's with its extensions, the frost foundry's iron, and everything a camp on the snow is built from.
 
 > **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 
