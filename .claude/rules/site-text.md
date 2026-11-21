@@ -49,7 +49,11 @@ fermenter eats: "просто формула, чтобы мы показывал
 stands under the data** (the owner, 2026-11-21, the archive's `.claude/guides/guide-method.md`): under a table, a
 sentence or two say what to take, keep or skip and why, with the numbers that decide it; a number the tables lack
 is computed by the Valheim generator, never guessed. A chapter ends with its conclusion, the way into the next
-chapter inside it.
+chapter inside it. **The three-row rule is judged by its place, never an absolute** (the owner, 2026-11-21, of the
+catalogue: "нужно очень сильно смотреть по месту применения… не будем возводить это правило в абсолют"): it is
+written for a guide's prose, where a small table stands in for telling. A reference that draws one table a group
+(the catalogue's table a biome, a creature's drops) keeps its tables whatever their length: there the same shape
+on every page is worth more than the count of rows.
 
 **The ledger** (the owner, 2026-11-21): before a chapter is written, the Valheim generator's notes get its ledger:
 what the player has when he arrives, what he does in order, what he has when he leaves. A chapter starts from the
