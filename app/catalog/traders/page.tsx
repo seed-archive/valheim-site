@@ -209,89 +209,6 @@ export default function TradersPage() {
           <b>{t("question")}</b> {t("answer")}
         </Typography>
 
-        <Typography variant="h4" component="h2" id="buy" sx={{ mt: 5, mb: 1 }}>
-          {t("essential.title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          {t("essential.text", { coins: essentialCoins })}
-        </Typography>
-        <TableContainer sx={{ mb: 2 }}>
-          <Table size="small">
-            <TableHead>
-              <TableRow>
-                <TableCell>{t("head.item")}</TableCell>
-                <TableCell>{t("head.trader")}</TableCell>
-                <TableCell align="right">{t("head.price")}</TableCell>
-                <TableCell>{t("head.appears")}</TableCell>
-                <TableCell>{t("head.for")}</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {essentials.map(({ row, goods, trader, price }) => {
-                const one = goods.length === 1 ? goods[0].good : null;
-                return (
-                  <TableRow key={row}>
-                    <TableCell>
-                      {one ? (
-                        <ItemIcon item={one.key ?? ""}>
-                          <Link href={`#${one.key?.toLowerCase()}`}>
-                            {one.name}
-                          </Link>
-                          {one.stack > 1 ? ` × ${one.stack}` : ""}
-                        </ItemIcon>
-                      ) : (
-                        <>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              flexWrap: "wrap",
-                              gap: 0.5,
-                              mb: 0.5,
-                            }}
-                          >
-                            {goods.map(({ good }) => (
-                              <Link
-                                key={good.key}
-                                href={`#${good.key?.toLowerCase()}`}
-                                title={good.name ?? ""}
-                              >
-                                <ItemIcon item={good.key ?? ""} />
-                              </Link>
-                            ))}
-                          </Box>
-                          {t(`essential.row.${row}`)}
-                        </>
-                      )}
-                    </TableCell>
-                    <TableCell>{trader}</TableCell>
-                    <TableCell align="right">{price}</TableCell>
-                    <TableCell>
-                      {one
-                        ? appears(one)
-                        : goods
-                            .map(({ good }) => appears(good))
-                            .filter((x, i, a) => a.indexOf(x) === i)
-                            .join(", ")}
-                    </TableCell>
-                    <TableCell>
-                      {one ? forWhat(one) : t(`essential.for.${row}`)}
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-              <TableRow>
-                <TableCell colSpan={2}>
-                  <b>{t("essential.total")}</b>
-                </TableCell>
-                <TableCell align="right">
-                  <b>{essentialCoins}</b>
-                </TableCell>
-                <TableCell colSpan={2} />
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-
         {traders.traders.map((trader) => (
           <section key={trader.key}>
             <Typography
@@ -380,6 +297,91 @@ export default function TradersPage() {
                   </TableCell>
                 </TableRow>
               ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+
+        {/* The runner's shelf comes last: the page is the usual player's, and
+            the Speedrun guide links here (`#buy`). */}
+        <Typography variant="h4" component="h2" id="buy" sx={{ mt: 5, mb: 1 }}>
+          {t("essential.title")}
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          {t("essential.text", { coins: essentialCoins })}
+        </Typography>
+        <TableContainer sx={{ mb: 2 }}>
+          <Table size="small">
+            <TableHead>
+              <TableRow>
+                <TableCell>{t("head.item")}</TableCell>
+                <TableCell>{t("head.trader")}</TableCell>
+                <TableCell align="right">{t("head.price")}</TableCell>
+                <TableCell>{t("head.appears")}</TableCell>
+                <TableCell>{t("head.for")}</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {essentials.map(({ row, goods, trader, price }) => {
+                const one = goods.length === 1 ? goods[0].good : null;
+                return (
+                  <TableRow key={row}>
+                    <TableCell>
+                      {one ? (
+                        <ItemIcon item={one.key ?? ""}>
+                          <Link href={`#${one.key?.toLowerCase()}`}>
+                            {one.name}
+                          </Link>
+                          {one.stack > 1 ? ` × ${one.stack}` : ""}
+                        </ItemIcon>
+                      ) : (
+                        <>
+                          <Box
+                            sx={{
+                              display: "flex",
+                              flexWrap: "wrap",
+                              gap: 0.5,
+                              mb: 0.5,
+                            }}
+                          >
+                            {goods.map(({ good }) => (
+                              <Link
+                                key={good.key}
+                                href={`#${good.key?.toLowerCase()}`}
+                                title={good.name ?? ""}
+                              >
+                                <ItemIcon item={good.key ?? ""} />
+                              </Link>
+                            ))}
+                          </Box>
+                          {t(`essential.row.${row}`)}
+                        </>
+                      )}
+                    </TableCell>
+                    <TableCell>{trader}</TableCell>
+                    <TableCell align="right">{price}</TableCell>
+                    <TableCell>
+                      {one
+                        ? appears(one)
+                        : goods
+                            .map(({ good }) => appears(good))
+                            .filter((x, i, a) => a.indexOf(x) === i)
+                            .join(", ")}
+                    </TableCell>
+                    <TableCell>
+                      {one ? forWhat(one) : t(`essential.for.${row}`)}
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
+              <TableRow>
+                <TableCell colSpan={2}>
+                  <b>{t("essential.total")}</b>
+                </TableCell>
+                <TableCell align="right">
+                  <b>{essentialCoins}</b>
+                </TableCell>
+                <TableCell colSpan={2} />
+              </TableRow>
             </TableBody>
           </Table>
         </TableContainer>

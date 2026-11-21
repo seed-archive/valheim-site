@@ -32,8 +32,8 @@
     "guideSpeedrunnersStart": "A speedrunner's start",
     "guideMeadows": "Meadows",
     "guideBlackForest": "Black Forest",
-    "guideBosses": "Bosses",
-    "guideTraders": "Traders",
+    "guideBosses": "How to kill each boss",
+    "guideTraders": "What to buy from the traders",
     "guideDeepNorth": "Deep North",
     "guideSwamp": "Swamp",
     "guideMountain": "Mountain",
@@ -62,10 +62,10 @@
     "guideFurniture": "Furniture",
     "guideDeepNorthBuilding": "Deep North building",
     "guideShips": "Ships and carts",
-    "guideOtherPieces": "Other pieces",
+    "guideOtherPieces": "Other build pieces",
     "guideCreatures": "Creatures",
     "guideFarming": "Farming",
-    "guideFood": "Food",
+    "guideFood": "Food and feasts",
     "guideComfort": "Comfort",
     "guideDungeons": "Caves and dungeons",
     "guideMaterials": "Materials",
@@ -660,6 +660,9 @@
       "never": "Never",
       "minutes": "{m} min",
       "atOnce": "up to {n} at once",
+      "spawner": {
+        "charred": "Charred spawner"
+      },
       "head": {
         "raid": "Raid",
         "opens": "Starts after",
@@ -1013,6 +1016,7 @@
         }
       },
       "rooms": "Its rooms can hold:",
+      "variant": "{n}",
       "head": {
         "variant": "Variant",
         "spawner": "Spawner",
@@ -1598,7 +1602,7 @@
       "thenServed": "{at}, then served on a tray",
       "who": {
         "title": "Who eats what",
-        "matrix": "The three best dishes of each kind a run can make by the end of each biome: eat all three, since different dishes always stack. A dish in bold is new in that biome; the others are still the best of an earlier one.",
+        "matrix": "The three best dishes of each kind you can make by the end of each biome: eat all three, since different dishes always stack. A dish in bold is new in that biome; the others are still the best of an earlier one.",
         "again": "When to eat again:",
         "againText": "a dish can be eaten again once half its time has passed, and it still gives about four fifths of its value then. Eat each again at its half and the three slots stay nearly full.",
         "health": "Melee: health",

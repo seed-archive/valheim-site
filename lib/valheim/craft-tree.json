@@ -468,13 +468,7 @@
         "name": "Bell",
         "source": {
           "each": 1,
-          "enough": [
-            0.0,
-            0.0,
-            0.63,
-            0.988,
-            1.0
-          ],
+          "enough": [0.0, 0.0, 0.63, 0.988, 1.0],
           "location": "CharredFortress",
           "max": 4,
           "min": 2,
@@ -13296,7 +13290,7 @@
     },
     "darkwood_beam_67": {
       "biome": "plains",
-      "name": "piece_darkwoodbeam67",
+      "name": "Darkwood Beam 67°",
       "resources": [
         {
           "amount": 2,
@@ -27939,9 +27933,7 @@
       ]
     },
     "piece_artisanstation": {
-      "extensions": [
-        "artisan_ext1"
-      ]
+      "extensions": ["artisan_ext1"]
     },
     "piece_cauldron": {
       "extensions": [

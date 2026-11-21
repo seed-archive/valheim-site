@@ -40,11 +40,11 @@ const SPAWNERS_AT = { x: 0, y: 0, zoom: -2 };
 
 // A kind of spawner by the map's name for it.
 const kindName = (kind: string) => serverFormat(`pages.map.legend.${kind}`);
-// A place by the map's name for it, or its prefab when the map has none.
-const placeName = (p: Place) =>
-  `pages.map.places.${p.key}` in serverMessages && p.key !== "unnamed"
-    ? serverFormat(`pages.map.places.${p.key}`)
-    : p.prefab;
+// A place by the map's name for it. A place the map does not name stands in
+// no world a seed makes, or only as a part of another place, and is left out.
+const named = (p: Place) =>
+  p.key !== "unnamed" && `pages.map.places.${p.key}` in serverMessages;
+const placeName = (p: Place) => serverFormat(`pages.map.places.${p.key}`);
 
 // Creatures by their prefab, each a link to its entry; variants under one
 // name (two Draugr prefabs) are named once.
@@ -64,7 +64,7 @@ function creatureLinks(keys: string[]) {
 // one entry, its variants listed in it.
 function grouped(section: string) {
   const byName = new Map<string, Place[]>();
-  for (const p of places.filter((p) => p.kind === section)) {
+  for (const p of places.filter((p) => p.kind === section && named(p))) {
     const name = placeName(p);
     byName.set(name, [...(byName.get(name) ?? []), p]);
   }
@@ -72,6 +72,16 @@ function grouped(section: string) {
 }
 
 export default function DungeonsPage() {
+  // One name may stand in two sections (the Ruins that are a camp and the
+  // ruins that are not): the first keeps the anchor other pages link, the
+  // second takes its section's.
+  const anchors = new Set<string>();
+  const anchorOf = (section: string, name: string) => {
+    const anchor = placeAnchor(name);
+    const id = anchors.has(anchor) ? `${section}-${anchor}` : anchor;
+    anchors.add(id);
+    return id;
+  };
   return (
     <>
       <ArchiveBar />
@@ -103,7 +113,9 @@ export default function DungeonsPage() {
             >
               {t(`section.${section}.title`)}
             </Typography>
-            <Typography sx={{ mb: 2 }}>{t(`section.${section}.text`)}</Typography>
+            <Typography sx={{ mb: 2 }}>
+              {t(`section.${section}.text`)}
+            </Typography>
             {grouped(section).map(([name, variants]) => {
               const roomCreatures = [
                 ...new Set(variants.flatMap((v) => v.roomCreatures)),
@@ -113,7 +125,7 @@ export default function DungeonsPage() {
                   <Typography
                     variant="h6"
                     component="h3"
-                    id={placeAnchor(name)}
+                    id={anchorOf(section, name)}
                     sx={{ mt: 3 }}
                   >
                     {name}
@@ -139,11 +151,15 @@ export default function DungeonsPage() {
                           </TableRow>
                         </TableHead>
                         <TableBody>
-                          {variants.flatMap((v) =>
+                          {variants.flatMap((v, i) =>
                             v.spawners.map((s) => (
-                              <TableRow key={`${v.prefab}-${s.kind}-${s.percent}`}>
+                              <TableRow
+                                key={`${v.prefab}-${s.kind}-${s.percent}`}
+                              >
                                 {variants.length > 1 ? (
-                                  <TableCell>{v.prefab}</TableCell>
+                                  <TableCell>
+                                    {t("variant", { n: i + 1 })}
+                                  </TableCell>
                                 ) : null}
                                 <TableCell>{kindName(s.kind)}</TableCell>
                                 <TableCell>

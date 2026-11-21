@@ -40,6 +40,27 @@ const ordered = [...events.events].sort(
   (a, b) => Number(b.ends.length > 0) - Number(a.ends.length > 0),
 );
 
+// Who comes, a line a name: two prefabs of one name (the Elaking and the one
+// that carries a lantern) are one creature to a player, so their numbers add.
+type Comer = {
+  key: string;
+  name: string | null;
+  spawner: string | null;
+  max: number;
+};
+function comers(r: Raid) {
+  const out: Comer[] = [];
+  for (const s of r.spawn as Comer[]) {
+    const same = out.find((o) => o.name !== null && o.name === s.name);
+    if (same) {
+      same.max += s.max;
+    } else {
+      out.push({ ...s });
+    }
+  }
+  return out;
+}
+
 function row(r: Raid) {
   return (
     <TableRow key={r.key} id={r.key.toLowerCase()}>
@@ -65,11 +86,15 @@ function row(r: Raid) {
         {t("minutes", { m: Math.round((r.seconds / 60) * 10) / 10 })}
       </TableCell>
       <TableCell>
-        {r.spawn.map((s) => (
+        {comers(r).map((s) => (
           <Box key={s.key}>
-            <RowLink item={s.key} creature>
-              {s.name}
-            </RowLink>{" "}
+            {s.name === null ? (
+              t(`spawner.${s.spawner}`)
+            ) : (
+              <RowLink item={s.key} creature>
+                {s.name}
+              </RowLink>
+            )}{" "}
             {t("atOnce", { n: s.max })}
           </Box>
         ))}

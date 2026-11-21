@@ -2,10 +2,7 @@
   "chance": 20.0,
   "events": [
     {
-      "biomes": [
-        "meadows",
-        "blackForest"
-      ],
+      "biomes": ["meadows", "blackForest"],
       "end": "The creatures are calming down",
       "ends": [
         {
@@ -23,22 +20,20 @@
           "every": 20.0,
           "key": "Neck",
           "max": 2,
-          "name": "Neck"
+          "name": "Neck",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Boar",
           "max": 2,
-          "name": "Boar"
+          "name": "Boar",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "plains"],
       "end": "The horde is retreating",
       "ends": [
         {
@@ -61,29 +56,27 @@
           "every": 10.0,
           "key": "Goblin",
           "max": 8,
-          "name": "Fuling"
+          "name": "Fuling",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "GoblinBrute",
           "max": 2,
-          "name": "Fuling Berserker"
+          "name": "Fuling Berserker",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "GoblinShaman",
           "max": 1,
-          "name": "Fuling Shaman"
+          "name": "Fuling Shaman",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
       "end": "The forest rests again",
       "ends": [
         {
@@ -106,33 +99,34 @@
           "every": 5.0,
           "key": "Greydwarf",
           "max": 6,
-          "name": "Greydwarf"
+          "name": "Greydwarf",
+          "spawner": null
         },
         {
           "every": 5.0,
           "key": "Greyling",
           "max": 4,
-          "name": "Greyling"
+          "name": "Greyling",
+          "spawner": null
         },
         {
           "every": 5.0,
           "key": "Greydwarf_Shaman",
           "max": 1,
-          "name": "Greydwarf Shaman"
+          "name": "Greydwarf Shaman",
+          "spawner": null
         },
         {
           "every": 5.0,
           "key": "Greydwarf_Elite",
           "max": 1,
-          "name": "Greydwarf Brute"
+          "name": "Greydwarf Brute",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "mountain",
-        "plains"
-      ],
+      "biomes": ["mountain", "plains"],
       "end": "The hunt is over",
       "ends": [],
       "key": "wolves",
@@ -150,7 +144,8 @@
           "every": 2.0,
           "key": "Wolf",
           "max": 6,
-          "name": "Wolf"
+          "name": "Wolf",
+          "spawner": null
         }
       ]
     },
@@ -180,24 +175,20 @@
           "every": 10.0,
           "key": "Skeleton",
           "max": 20,
-          "name": "Skeleton"
+          "name": "Skeleton",
+          "spawner": null
         },
         {
           "every": 15.0,
           "key": "Skeleton_Poison",
           "max": 1,
-          "name": "Rancid Remains"
+          "name": "Rancid Remains",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "mountain",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
       "end": "The smell is gone",
       "ends": [
         {
@@ -220,24 +211,20 @@
           "every": 5.0,
           "key": "Draugr",
           "max": 3,
-          "name": "Draugr"
+          "name": "Draugr",
+          "spawner": null
         },
         {
           "every": 5.0,
           "key": "Skeleton",
           "max": 6,
-          "name": "Skeleton"
+          "name": "Skeleton",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "mountain",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
       "end": "The cold wind is gone",
       "ends": [
         {
@@ -260,17 +247,13 @@
           "every": 10.0,
           "key": "Hatchling",
           "max": 3,
-          "name": "Drake"
+          "name": "Drake",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
       "end": "The smell is gone",
       "ends": [],
       "key": "blobs",
@@ -288,23 +271,20 @@
           "every": 2.0,
           "key": "Blob",
           "max": 5,
-          "name": "Blob"
+          "name": "Blob",
+          "spawner": null
         },
         {
           "every": 10.0,
           "key": "BlobElite",
           "max": 2,
-          "name": "Oozer"
+          "name": "Oozer",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
       "end": "The shaking begins to fade",
       "ends": [],
       "key": "foresttrolls",
@@ -326,17 +306,13 @@
           "every": 20.0,
           "key": "Troll",
           "max": 2,
-          "name": "Troll"
+          "name": "Troll",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
       "end": "The smell is fading",
       "ends": [],
       "key": "surtlings",
@@ -358,18 +334,13 @@
           "every": 2.0,
           "key": "Surtling",
           "max": 4,
-          "name": "Surtling"
+          "name": "Surtling",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "meadows",
-        "blackForest",
-        "swamp",
-        "mountain",
-        "plains"
-      ],
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
       "end": "They have been banished, for now...",
       "ends": [],
       "key": "ghosts",
@@ -387,13 +358,15 @@
           "every": 10.0,
           "key": "Ghost",
           "max": 3,
-          "name": "Ghost"
+          "name": "Ghost",
+          "spawner": null
         },
         {
           "every": 10.0,
           "key": "Wraith",
           "max": 2,
-          "name": "Wraith"
+          "name": "Wraith",
+          "spawner": null
         }
       ]
     },
@@ -430,14 +403,13 @@
           "every": 10.0,
           "key": "Bat",
           "max": 10,
-          "name": "Bat"
+          "name": "Bat",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "mistlands"
-      ],
+      "biomes": ["mistlands"],
       "end": "Good bye Gjall",
       "ends": [
         {
@@ -460,24 +432,20 @@
           "every": 40.0,
           "key": "Gjall",
           "max": 1,
-          "name": "Gjall"
+          "name": "Gjall",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Tick",
           "max": 4,
-          "name": "Tick"
+          "name": "Tick",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "blackForest",
-        "plains",
-        "mistlands",
-        "ashlands",
-        "deepNorth"
-      ],
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
       "end": "The search is over",
       "ends": [
         {
@@ -500,19 +468,22 @@
           "every": 35.0,
           "key": "Seeker",
           "max": 3,
-          "name": "Seeker"
+          "name": "Seeker",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "SeekerBrood",
           "max": 8,
-          "name": "Seeker Brood"
+          "name": "Seeker Brood",
+          "spawner": null
         },
         {
           "every": 100.0,
           "key": "SeekerBrute",
           "max": 1,
-          "name": "Seeker Soldier"
+          "name": "Seeker Soldier",
+          "spawner": null
         }
       ]
     },
@@ -543,27 +514,31 @@
       "spawn": [
         {
           "every": 100.0,
-          "key": "Skeleton_Hildir_nochest",
+          "key": "Skeleton_Hildir",
           "max": 1,
-          "name": "Skeleton_Hildir_nochest"
+          "name": "Brenna",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Skeleton",
           "max": 4,
-          "name": "Skeleton"
+          "name": "Skeleton",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Skeleton_Meadows",
           "max": 3,
-          "name": "Skeleton"
+          "name": "Skeleton",
+          "spawner": null
         },
         {
           "every": 100.0,
           "key": "Skeleton_Poison",
           "max": 1,
-          "name": "Rancid Remains"
+          "name": "Rancid Remains",
+          "spawner": null
         }
       ]
     },
@@ -594,21 +569,24 @@
       "spawn": [
         {
           "every": 100.0,
-          "key": "Fenring_Cultist_Hildir_nochest",
+          "key": "Fenring_Cultist_Hildir",
           "max": 1,
-          "name": "Fenring_Cultist_Hildir_nochest"
+          "name": "Geirrhafa",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Fenring",
           "max": 3,
-          "name": "Fenring"
+          "name": "Fenring",
+          "spawner": null
         },
         {
           "every": 100.0,
           "key": "Fenring_Cultist",
           "max": 1,
-          "name": "Cultist"
+          "name": "Cultist",
+          "spawner": null
         }
       ]
     },
@@ -639,32 +617,29 @@
       "spawn": [
         {
           "every": 100.0,
-          "key": "GoblinBruteBros_nochest",
+          "key": "GoblinBruteBros",
           "max": 1,
-          "name": "GoblinBruteBros_nochest"
+          "name": "Zil & Thungr",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "Goblin",
           "max": 4,
-          "name": "Fuling"
+          "name": "Fuling",
+          "spawner": null
         },
         {
           "every": 100.0,
           "key": "GoblinBrute",
           "max": 1,
-          "name": "Fuling Berserker"
+          "name": "Fuling Berserker",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "blackForest",
-        "plains",
-        "mistlands",
-        "ashlands",
-        "deepNorth"
-      ],
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
       "end": "The army retreats",
       "ends": [
         {
@@ -687,30 +662,27 @@
           "every": 50.0,
           "key": "Charred_Melee",
           "max": 2,
-          "name": "Charred Warrior"
+          "name": "Charred Warrior",
+          "spawner": null
         },
         {
           "every": 40.0,
           "key": "Charred_Twitcher",
           "max": 3,
-          "name": "Charred Twitcher"
+          "name": "Charred Twitcher",
+          "spawner": null
         },
         {
           "every": 50.0,
           "key": "Charred_Archer",
           "max": 3,
-          "name": "Charred Marksman"
+          "name": "Charred Marksman",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "blackForest",
-        "plains",
-        "mistlands",
-        "ashlands",
-        "deepNorth"
-      ],
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
       "end": "The dead lie still once more",
       "ends": [
         {
@@ -733,20 +705,20 @@
           "every": 60.0,
           "key": "Spawner_CharredStone_event",
           "max": 3,
-          "name": "Spawner_CharredStone_event"
+          "name": null,
+          "spawner": "charred"
         },
         {
           "every": 40.0,
           "key": "Charred_Twitcher",
           "max": 3,
-          "name": "Charred Twitcher"
+          "name": "Charred Twitcher",
+          "spawner": null
         }
       ]
     },
     {
-      "biomes": [
-        "deepNorth"
-      ],
+      "biomes": ["deepNorth"],
       "end": "They return to their burrows...",
       "ends": [
         {
@@ -769,19 +741,22 @@
           "every": 40.0,
           "key": "ElakingMole",
           "max": 2,
-          "name": "Eyeless One"
+          "name": "Eyeless One",
+          "spawner": null
         },
         {
           "every": 15.0,
           "key": "Elaking",
           "max": 10,
-          "name": "Elaking"
+          "name": "Elaking",
+          "spawner": null
         },
         {
           "every": 20.0,
           "key": "ElakingLantern",
           "max": 3,
-          "name": "Elaking"
+          "name": "Elaking",
+          "spawner": null
         }
       ]
     },
@@ -817,13 +792,15 @@
           "every": 40.0,
           "key": "JotunWarrior",
           "max": 3,
-          "name": "Krigen"
+          "name": "Krigen",
+          "spawner": null
         },
         {
           "every": 30.0,
           "key": "Elaking",
           "max": 3,
-          "name": "Elaking"
+          "name": "Elaking",
+          "spawner": null
         }
       ]
     }

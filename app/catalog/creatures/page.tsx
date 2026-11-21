@@ -101,13 +101,16 @@ function livesIn(c: Creature) {
       ...p.spawners.flatMap((s) => s.creatures),
       ...p.roomCreatures,
     ];
-    if (!made.includes(c.key)) {
+    // A place the map does not name stands in no world a seed makes, or only
+    // as a part of another place: the dungeons page leaves it out too.
+    if (
+      !made.includes(c.key) ||
+      p.key === "unnamed" ||
+      !(`pages.map.places.${p.key}` in serverMessages)
+    ) {
       continue;
     }
-    const name =
-      `pages.map.places.${p.key}` in serverMessages && p.key !== "unnamed"
-        ? serverFormat(`pages.map.places.${p.key}`)
-        : p.prefab;
+    const name = serverFormat(`pages.map.places.${p.key}`);
     seen.set(name, placeAnchor(name));
   }
   return [...seen.entries()];
@@ -449,7 +452,7 @@ export default function CreaturesPage() {
                         <TableBody>
                           {c.drops.map((d) => (
                             <TableRow key={d.key}>
-                              <TableCell id={`drop-${d.key.toLowerCase()}`}>
+                              <TableCell>
                                 <ItemIcon item={d.key}>
                                   <RowLink item={d.key}>{d.name}</RowLink>
                                 </ItemIcon>

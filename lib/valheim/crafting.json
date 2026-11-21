@@ -5224,6 +5224,64 @@
     },
     {
       "biome": "plains",
+      "comfort": 0,
+      "key": "darkwood_beam_67",
+      "name": "Darkwood Beam 67°",
+      "page": "deep-north-building",
+      "resources": [
+        {
+          "amount": 2,
+          "biome": "meadows",
+          "droppedBy": [
+            {
+              "key": "BogWitchKvastur",
+              "name": "Kvastur"
+            },
+            {
+              "key": "Greydwarf",
+              "name": "Greydwarf"
+            },
+            {
+              "key": "Greydwarf_Elite",
+              "name": "Greydwarf Brute"
+            },
+            {
+              "key": "Greydwarf_Shaman",
+              "name": "Greydwarf Shaman"
+            }
+          ],
+          "key": "Wood",
+          "name": "Wood",
+          "perLevel": 0
+        },
+        {
+          "amount": 1,
+          "biome": "plains",
+          "droppedBy": [
+            {
+              "key": "BlobTar",
+              "name": "Growth"
+            }
+          ],
+          "key": "Tar",
+          "name": "Tar",
+          "perLevel": 0
+        }
+      ],
+      "season": null,
+      "station": "Workbench",
+      "tool": "Hammer",
+      "uses": [
+        {
+          "material": "wood",
+          "use": "support",
+          "value": 100
+        }
+      ],
+      "vehicle": null
+    },
+    {
+      "biome": "plains",
       "comfort": 2,
       "key": "piece_chair03",
       "name": "Darkwood Chair",
@@ -17674,64 +17732,6 @@
         {
           "slots": 3,
           "use": "storage"
-        }
-      ],
-      "vehicle": null
-    },
-    {
-      "biome": "plains",
-      "comfort": 0,
-      "key": "darkwood_beam_67",
-      "name": "piece_darkwoodbeam67",
-      "page": "deep-north-building",
-      "resources": [
-        {
-          "amount": 2,
-          "biome": "meadows",
-          "droppedBy": [
-            {
-              "key": "BogWitchKvastur",
-              "name": "Kvastur"
-            },
-            {
-              "key": "Greydwarf",
-              "name": "Greydwarf"
-            },
-            {
-              "key": "Greydwarf_Elite",
-              "name": "Greydwarf Brute"
-            },
-            {
-              "key": "Greydwarf_Shaman",
-              "name": "Greydwarf Shaman"
-            }
-          ],
-          "key": "Wood",
-          "name": "Wood",
-          "perLevel": 0
-        },
-        {
-          "amount": 1,
-          "biome": "plains",
-          "droppedBy": [
-            {
-              "key": "BlobTar",
-              "name": "Growth"
-            }
-          ],
-          "key": "Tar",
-          "name": "Tar",
-          "perLevel": 0
-        }
-      ],
-      "season": null,
-      "station": "Workbench",
-      "tool": "Hammer",
-      "uses": [
-        {
-          "material": "wood",
-          "use": "support",
-          "value": 100
         }
       ],
       "vehicle": null
@@ -33755,9 +33755,7 @@
               "key": "resist",
               "value": {
                 "percent": -50.0,
-                "types": [
-                  "fire"
-                ]
+                "types": ["fire"]
               }
             }
           ],
@@ -36192,9 +36190,7 @@
               "key": "resist",
               "value": {
                 "percent": -50.0,
-                "types": [
-                  "frost"
-                ]
+                "types": ["frost"]
               }
             }
           ],
@@ -36994,9 +36990,7 @@
               "key": "resist",
               "value": {
                 "percent": -75.0,
-                "types": [
-                  "poison"
-                ]
+                "types": ["poison"]
               }
             }
           ],
@@ -37286,27 +37280,21 @@
               "key": "resist",
               "value": {
                 "percent": 50.0,
-                "types": [
-                  "slash"
-                ]
+                "types": ["slash"]
               }
             },
             {
               "key": "resist",
               "value": {
                 "percent": 50.0,
-                "types": [
-                  "blunt"
-                ]
+                "types": ["blunt"]
               }
             },
             {
               "key": "resist",
               "value": {
                 "percent": 50.0,
-                "types": [
-                  "pierce"
-                ]
+                "types": ["pierce"]
               }
             }
           ],
@@ -62280,34 +62268,16 @@
   ],
   "seasons": {
     "Halloween": {
-      "end": [
-        6.0,
-        11.0
-      ],
-      "start": [
-        1.0,
-        10.0
-      ]
+      "end": [6.0, 11.0],
+      "start": [1.0, 10.0]
     },
     "Midsummer": {
-      "end": [
-        6.0,
-        7.0
-      ],
-      "start": [
-        1.0,
-        6.0
-      ]
+      "end": [6.0, 7.0],
+      "start": [1.0, 6.0]
     },
     "Yule": {
-      "end": [
-        6.0,
-        1.0
-      ],
-      "start": [
-        1.0,
-        12.0
-      ]
+      "end": [6.0, 1.0],
+      "start": [1.0, 12.0]
     }
   }
 }
