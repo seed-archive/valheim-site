@@ -4,7 +4,7 @@ The lines of Valheim's opening, for the portal's `content/release-notes/valheim.
 `docs/releases.md` → What the release notes say). They cannot stand in the portal yet: its build refuses notes for
 a section that is not in `GAMES` (`lib/releaseNotes.ts`), and Valheim is still in `COMING`. The coordinator moves
 them there in the same commit that moves Valheim into `GAMES`, and writes the heading: the day and the archive's
-version (Valheim opens as 2.0).
+version (Valheim opened as 1.5, live on 2026-11-21).
 
 ## Ready on the section's side (2026-11-21)
 
@@ -33,7 +33,7 @@ Done by Infrastructure on 2026-11-21, uncommitted on the portal's `dev` where it
 ## The lines
 
 ```markdown
-## <day Month year>: version 2.0
+## <day Month year>: version 1.5
 
 Valheim opens at [seedarchive.gg/valheim](/valheim).
 
