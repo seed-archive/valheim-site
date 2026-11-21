@@ -1,4 +1,4 @@
-# Rewriting the guides: the guideline and the plan (draft 3, 2026-11-21, agreed point by point, waiting for the owner's last word)
+# Rewriting the guides: the guideline and the plan (approved by the owner, 2026-11-21)
 
 The owner, 2026-11-21, after reading half of the Meadows guide: "write the guideline first, I approve it, then you
 rewrite every page". Draft 2 followed a full second reading: all seventeen guides with their 167 tables, the
