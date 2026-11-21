@@ -1,57 +1,73 @@
-# Rewriting the guides: the guideline and the plan (draft 2, 2026-11-21, waiting for the owner)
+# Rewriting the guides: the guideline and the plan (draft 3, 2026-11-21, agreed point by point, waiting for the owner's last word)
 
 The owner, 2026-11-21, after reading half of the Meadows guide: "write the guideline first, I approve it, then you
-rewrite every page"; then, with a new model: "go through the guides again and update the plan". Draft 2 replaces
-draft 1. It rests on a full second reading: all seventeen guides with their 167 tables, the list of questions the
-guides were built from, and the Valheim generator's notes on how the game is played. Once approved, its rules
-replace the conflicting ones in `.claude/rules/site-text.md` and `docs/guides.md`.
+rewrite every page". Draft 2 followed a full second reading: all seventeen guides with their 167 tables, the
+questions the guides were built from, and the Valheim generator's notes on how the game is played. Draft 3 is that
+plan as the owner and the session agreed it the same day, point by point. Once approved, its rules replace the
+conflicting ones in `.claude/rules/site-text.md` and `docs/guides.md`.
 
-## What the owner decides
+## Agreed with the owner
 
-1. **The chapters are written anew for the usual player**, from a sourced account of the usual game, not edited from
-   the present pages (What the reading found, 1).
-2. **Which statistics a chapter keeps.** Proposed: those that tell what the world will give and how much to expect
-   (enough drake nests, totems, iron in the crypts); those that only tell how long the way is (distance from the
-   start, "on the start island", the strip) leave the chapters for the speedrun pages and the seed tool.
-3. **The ways of playing leave the biome chapters** for their own pages. This reverses the rule of 2026-11-20
-   ("woven into the page's story where they belong").
-4. **"Can you skip it?" leaves the chapters** too: skipping is the speedrun's and the reverse run's question.
-5. **The order of the menu**: the saga starts in the Meadows; the Basics become references; "A good start" is renamed
+1. **The frame changes.** The guides were built from the speedrun's questions ("a biome is passed, not explored")
+   and only re-voiced for the usual player. The chapters are derived again from the usual player's question: **how
+   do I explore this biome?**
+2. **The speedrun stays a large part of the section, not its main line.** The site has a tool for the runner, and
+   his run is the minimum every other way of playing is measured against. It gets its own pages, as do no death, no
+   map, no portals, a harder world and the reverse run.
+3. **We do not repeat the raven.** The game's own raven tells a player to pick up flint, build a workbench, eat,
+   sleep in a bed. The home page already says it: the raven gives the hints, we give the odds. A chapter tells what
+   the raven does not: what the land holds, how much of it, how far it lies, what to expect and what to choose.
+4. **Two homes, two sets of distances.**
+   - The usual player settles in the Meadows on open ground by the water, where he later builds his boat and sails
+     from. For the measures, his home is the sea shore nearest the Sacrificial Stones. Not the stones themselves:
+     nothing is gained by building there.
+   - The speedrunner's base is a small one in the Black Forest, by a troll cave with copper.
+
+   Every "how far" is counted from the home of the reader it is written for.
+5. **Tables.** A table of one row is never made. A table of two rows becomes a sentence. A table has three rows or
+   more of one kind, under the heading it answers.
+6. **The other ways of playing leave the chapters** and are told on their own pages, biome by biome. This is a
+   trial the owner agreed to ("let us try"): the Speedrun page must cover all eight biomes without drowning in
+   tables. With the one-row and two-row tables gone, it may hold. If it does not, the page is split, or the notes
+   return to the chapters, on the owner's word after he has read the first sample.
+7. **"Can you skip it?" leaves the chapters**: it is the speedrun's and the reverse run's question.
+8. **The menu.** The saga starts in the Meadows. The Basics become references. "A good start" is renamed
    "A speedrunner's start" and moves to the Challenges, before Speedrun.
-6. **Two gates before the bulk of the work**: the owner reads the eight ledgers (about ten lines a biome) before any
-   chapter is written, and reads the Meadows chapter before the other seven.
+9. **Two readings by the owner before the bulk of the work.**
+   - First the eight ledgers: for each biome about ten lines saying what the player arrives with, what he does there
+     in order, and what he leaves with. They are cheap to read, and a wrong turn in them costs a line to fix, not a
+     page.
+   - Then the Meadows chapter, together with the Meadows' part of the speedrun and the other ways of playing, so the
+     trial of point 6 is judged on a real page.
+
+   The other seven biomes are written only after both.
 
 ## What the reading found
 
-1. **The pages were never written for the usual player.** The questions they answer were written for the speedrun
-   (2026-11-19: "a biome is passed, not explored"). The next day the baseline became the usual game, and the pages
-   were re-voiced, not re-derived. The generator's notes tell the speedrun stage by stage and the usual game in one
-   sentence. So a chapter tells a player at his own pace what a run measures, and leaves out what he lives by:
-   - the Meadows chapter has an altar's distance, hive counts and a trader, and no shelter, bed, food or armour; the
-     words "bed" and "flint" stand nowhere in the first three chapters;
-   - the Black Forest gives its "race" section eight tables and the whole usual game twelve;
-   - every chapter asks "What do I need from …?" and "Can you skip …?", a runner's two questions.
-
-   This is why the owner's remarks keep returning: each fix patched a sentence, and the frame stayed the runner's.
-2. **The story was bent to fit the data.** The scan measures from the start, so the text settles the player "by the
+1. **The pages were never written for the usual player.** Their questions were the speedrun's (2026-11-19). The
+   next day the baseline became the usual game, and the pages were re-voiced, not derived again. The generator's
+   notes tell the speedrun stage by stage and the usual game in one sentence. Every chapter still asks the runner's
+   two questions, "What do I need from …?" and "Can you skip …?", and the Black Forest gives its "race" section
+   eight tables against twelve for the whole usual game. So each of the owner's remarks fixed a sentence, and the
+   frame stayed the runner's.
+2. **The story was bent to fit the data.** The scan measured from the start, so the text settled the player "by the
    stones" on six pages (Meadows, Black Forest, Mountain, Deep North, A good start, Where to build your base). No
-   source says players build there. The game's own raven says only "wherever home may be".
-3. **A page is a pile of answers, not a story.** The rule asks for "each question answered in a line or two, then
+   source says players build there.
+3. **A page is a pile of answers, not a story.** The rule asked for "each question answered in a line or two, then
    its table", so every section starts from nothing. The Meadows build the first home three times. The Basics come
    before the Meadows in the menu and open with "You are back from your first walk out".
 4. **Tables stand in for telling.** 167 tables on seventeen pages; 14 have one row and 57 have two; "of seeds"
    stands 216 times. Tables are parked under headings they do not answer: the carapace armour's kills under "Does a
-   cleared mine stay clear?", the Asksvin's under "How do I build Fader's arena?", the lox's under "Can a cleared
-   village be my camp?".
+   cleared mine stay clear?", the Asksvin's under "How do I build Fader's arena?".
 5. **Six ways of playing on every page**: 65 footnotes, and a section for the racer, the reverse run, no map, no
-   portals or one life on seven of the eight biomes.
+   portals or one life on seven of the eight biomes. The owner asked for the notes; on the page they outgrew the
+   story they were notes to.
 6. **Sentences that do not tell.**
    - A sum left to the reader: "empty it within {{hiveHoneyMax}} × {{hiveSeconds}} s".
    - Wit in place of the fact: "A troll cave's own trolls never got the message"; "it is no chore; it is shopping".
    - An answer that is not one: "Where is Yagluth's altar?" is answered "Expect a long road".
    - A reason made up to carry a number: the home "among the birches and oaks", "since the portal and the Karve will
      want" fine wood.
-   - A question no player asks: "Is Hildir worth looking for?", "Where do the Plains meet the Mistlands?".
 7. **No one owned the whole page.** Personas wrote sections, a judge reconciled them, a style pass changed
    sentences, an SEO pass changed headings. No one read a page top to bottom as its reader.
 
@@ -59,14 +75,14 @@ replace the conflicting ones in `.claude/rules/site-text.md` and `docs/guides.md
 
 ### The source comes first
 
-- **The usual game is written down before it is told.** For each biome the generator's notes get an account of how
-  a player at his own pace lives it, each fact with its source:
-  - the game's own guidance, which names the path its makers meant (the raven's texts: arm yourself, eat, shelter by
-    a fire and make a bed before the first boss);
+- **The usual game is written down before it is told.** The generator's notes keep the speedrun's account under its
+  own name and get a new account of the usual game, biome by biome: how a player at his own pace explores the land.
+  Each fact has its source:
   - the game's data, which the catalogue already holds: what each biome gives, what is made from it and at which
-    station, what its creatures do and what hurts them, its food;
-  - players' written guides and wikis, read as text by a `web-reader`, for what players in fact do: where they
-    settle, in what order they take a biome's tasks.
+    station, what its creatures do and what hurts them;
+  - players' written guides and wikis, read as text by a `web-reader`: where players settle, in what order they take
+    a biome's tasks.
+- The raven's texts are read too, as the list of what a chapter leaves out (Agreed, 3).
 - Nothing is claimed because it suits a measure. Where sources disagree, the chapter gives the choice and what
   follows from each side.
 
@@ -78,19 +94,17 @@ replace the conflicting ones in `.claude/rules/site-text.md` and `docs/guides.md
   - what he has when he leaves.
 - A chapter starts from the previous chapter's exit and never contradicts it. Each event happens once: a home is
   built once, a boss dies once, a thing is made once.
-- The owner reads the eight ledgers together before any chapter is written. A wrong turn costs him a line to
-  correct, not a page.
 
 ### The chapter's spine
 
 A biome chapter follows the order the player lives it. Headings stay questions in the player's words, but each
 continues the one before:
 
-1. **Arriving**: what this land does to a newcomer, and what he must have before stepping in.
-2. **Living here**: what changes for his home or camp, only where the biome changes it (the first shelter, the
-   smelter, the farm, the roofed foothold).
-3. **What the land gives**: its materials, what they become, its food. The catalogue holds the lists; the chapter
-   says what to make first and why, and links the list once.
+1. **Arriving**: what this land does to a newcomer, and what he should have before stepping in.
+2. **Living here**: what changes for his home or camp, only where the biome changes it (the smelter, the farm, the
+   roofed foothold).
+3. **What the land holds**: its places, materials and food; how much the world gives and how far from home. The
+   catalogue holds the lists; the chapter says what matters first and why, and links the list once.
 4. **The boss**: finding him, his offering, getting ready, the fight in a line, what his trophy and his drop open.
 5. **Leaving**: what he carries into the next chapter, and the link to it.
 
@@ -98,20 +112,23 @@ continues the one before:
 
 - **A fact earns its place by a decision of this reader.** What changes nothing he does here goes to the page of the
   player it serves, or nowhere.
-- **One value is a sentence.** A table has three rows or more of one kind, compared; two values are a sentence. A
-  chart has two points or more of one thing. One table a question at most, under the heading it answers.
-- **Statistics** as decided above (What the owner decides, 2). A share that is all but always or never is a
-  sentence without a number.
-- **No distance from the start** after the first walk out, and no home "by the stones": the chapter speaks of "your
-  home" and never places it.
+- **Numbers are the site's part of the bargain**, so a chapter keeps them: what the world gives, how much to expect,
+  how far it lies from the usual player's home. What only a runner weighs (the strip, a detour, a reset, what shares
+  the start island) is told on the runner's pages.
+- **One value is a sentence, two values are a sentence.** Tables as agreed (Agreed, 5). A chart has two points or
+  more of one thing.
+- **A share that is all but always or never** is a sentence without a number.
 - **A sum is done for the reader**: the page gives the result, never the formula.
+- **The home is placed once**, in the Meadows chapter: open ground by the sea. Later chapters say "your home".
 
 ### The ways of playing
 
-- Each lives on its own page: Speedrun, A speedrunner's start, No death, no map, no portals, Hard, Very hard and
-  Hardcore, Reverse run. They take the race sections, the "coming from the north" sections, the skipping and the
-  footnotes, ordered biome by biome.
-- A biome chapter carries none of it. Its last lines link the speedrun's leg of that biome once.
+- Each has its own pages: Speedrun and A speedrunner's start; No death, no map, no portals; Hard, Very hard and
+  Hardcore; Reverse run. They take the race sections, the "coming from the north" sections, the skipping and the
+  footnotes, told biome by biome in the same order as the chapters.
+- The Speedrun page is the runner's own saga through the eight biomes, on the same rules as a chapter: his base, his
+  distances, his tables of three rows or more.
+- A chapter's last lines link the speedrun's part of that biome once.
 
 ### The voice
 
@@ -120,7 +137,7 @@ continues the one before:
   know. Wit never replaces the fact it stands on.
 - A link is the reader's next step: one link to a page in a page, where he needs it.
 - The rest of `site-text.md` stays: the bold question and its answer, one h1, numbers from the data, the words, no
-  counts, no named places. The bold questions are asked again for the usual player ("What do I do in …?") and
+  counts, no named places. The bold questions are asked again for the usual player ("How do I explore …?") and
   checked against the semantic core in `docs/seo.md`.
 
 ## The check before a page is shown
@@ -130,12 +147,13 @@ no:
 
 1. Does anything happen twice (built, killed, found, made)?
 2. Does a sentence assume what the ledger does not give, or contradict an earlier chapter?
-3. Is there speedrun matter: a boat avoided, a clock, the strip, a detour, a reset, the base cave, a skipped boss?
-4. Is the home placed anywhere, or a distance counted from the start after the first walk out?
+3. Is there another reader's matter: a clock, the strip, a detour, a reset, the base cave, a skipped boss?
+4. Is the home placed anywhere but the Meadows chapter, or a distance counted from anywhere but the reader's home?
 5. Is there a table under three rows, a chart of one point, a table under a heading it does not answer?
 6. Is there a claim without its source in the generator's notes?
 7. Is there a number that changes nothing this reader does?
-8. Does a sentence say what the game shows, repeat its heading, or leave a sum to the reader?
+8. Does a sentence say what the raven or the game's screen already tells, repeat its heading, or leave a sum to the
+   reader?
 9. Does a joke or a figure of speech stand where a fact should?
 10. Does a link not lead to the reader's next step, or stand twice?
 11. Does the bold answer promise what the page then tells, in that order?
@@ -147,29 +165,30 @@ this list, so every later page is checked for it.
 
 ## The plan
 
-| Step | What | Gate |
+| Step | What | The owner |
 |---|---|---|
-| 1 | The owner approves this guideline; the method goes to the coordinator for the other games (`guide-method.md`) | the owner |
+| 1 | This plan approved; the method goes to the coordinator for the other games (`guide-method.md`) | approves |
 | 2 | The rules move into `site-text.md` and `docs/guides.md`; the rules they replace are removed | |
-| 3 | The usual game, sourced, in the generator's notes: the raven's texts (read), the game's data by biome, players' written guides | |
-| 4 | The eight ledgers | the owner reads them |
-| 5 | The Meadows chapter, through the check | the owner reads it |
-| 6 | Black Forest to Deep North, in order, each through the check | |
-| 7 | The ways of playing: Speedrun and A speedrunner's start take what the chapters gave up; then No death, no map, no portals; Hard, Very hard and Hardcore; Reverse run | |
-| 8 | The Basics as references: Where to build your base, How much metal a run takes, Boss arenas; Forge of Potential | |
-| 9 | The menu, the links between pages, the measures the generator no longer writes for the guides | |
+| 3 | The generator's notes: the speedrun's account takes its own name; the usual game is written anew, biome by biome, with its sources | |
+| 4 | The eight ledgers | reads them |
+| 5 | The measures: the usual player's home becomes the sea shore nearest the stones, and every "from home" is counted from it; the runner's stay counted from his copper base; recounted on the trial worlds | starts the big recount on M1 when he chooses |
+| 6 | The Meadows chapter, with the Meadows' part of Speedrun, A speedrunner's start and the other ways of playing, through the check | reads them, and judges the trial of separate pages |
+| 7 | Black Forest to Deep North, in order, each with its part of the other pages, each through the check | |
+| 8 | The pages of the ways of playing made whole: Speedrun and A speedrunner's start; No death, no map, no portals; Hard, Very hard and Hardcore; Reverse run | |
+| 9 | The Basics as references: Where to build your base, How much metal a run takes, Boss arenas; Forge of Potential | |
+| 10 | The menu, the links between pages, the measures the guides no longer use | |
 
 ## Page by page
 
 | Page | What happens to it |
 |---|---|
-| Meadows … Deep North | Written anew from the ledgers on the chapter's spine. Their race sections, "coming from the north" sections, footnotes and skipping go to the ways of playing; most "of seeds" tables go to Speedrun or leave. |
-| A good start | Renamed A speedrunner's start, moved to the Challenges. Its usual-player sections ("Where do I build my home?", "Where are my first nights safe?") leave: the first is Where to build your base's, the second Boss arenas'. |
-| Speedrun | Gains each biome's leg from the chapters, biome by biome. Split in two if it grows too long, with the owner. |
-| No death, no map, no portals | Gains the chapters' footnotes for its three rules, biome by biome. |
+| Meadows … Deep North | Written anew from the ledgers on the chapter's spine, for the player who explores. Their race sections, "coming from the north" sections, footnotes and skipping go to the ways of playing. Their distances are counted from the usual home. |
+| A good start | Renamed A speedrunner's start, moved to the Challenges. It keeps what the start island holds and the first loop; its usual-player sections leave. |
+| Speedrun | Becomes the runner's saga through the eight biomes, with each biome's leg from the chapters. Split if it grows too long, on the owner's word. |
+| No death, no map, no portals | Gains the chapters' notes for its three rules, biome by biome. |
 | Hard, Very hard and Hardcore | Stays a reference; its sentences go through the check. |
 | Reverse run | Gains the chapters' "coming from the north" sections. |
-| Where to build your base | Rewritten from what players weigh when they settle (the sea, the hauls, the raids), without a home "by the stones"; its no-portals half goes to No death, no map, no portals. |
-| How much metal a run takes | Stays a reference: the full kit by age for the usual player; the category's least metal goes to Speedrun. |
+| Where to build your base | Rewritten from what players weigh when they settle (open ground, the sea, the hauls, the raids); its no-portals half goes to No death, no map, no portals. |
+| How much metal a run takes | Stays a reference: the full kit by age; the category's least metal goes to Speedrun. |
 | Boss arenas | Stays a reference; its opening no longer pretends to follow a chapter. |
-| Forge of Potential | Stays; folded into the Mountain chapter's Leaving if the owner still wants it there. |
+| Forge of Potential | Stays as it is. |
