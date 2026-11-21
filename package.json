@@ -11,7 +11,7 @@
     "@mui/material-nextjs": "9.5.0",
     "@mui/x-charts": "9.17.0",
     "@seed-archive/map": "1.6.0",
-    "@seed-archive/ui": "1.4.1",
+    "@seed-archive/ui": "1.4.2",
     "@sentry/core": "11.9.0",
     "@sentry/nextjs": "11.9.0",
     "@supabase/ssr": "0.7.0",
