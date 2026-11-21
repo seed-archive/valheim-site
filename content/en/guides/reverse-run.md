@@ -84,6 +84,10 @@ The north cannot give everything, so the run comes back south, and the start isl
 
 Chart: share
 
+## What do I fetch from the Black Forest?
+
+The cores, the coal and the fine wood. A reverse run starts in the north but smelts with what grows here: the north's ore wants the smelter, the charcoal kiln for its coal and the blast furnace, and their cores come from the Burial Chambers. The furnace takes {{furnaceFineWood}} fine wood too, from the birches and oaks. Leave a portal here before sailing north, and the cores and the coal follow you through it.
+
 ## How do I live through the first night?
 
 Every weather of the Deep North freezes you, day and night: no health coming back, stamina slower, and a little damage every second until you die. A fire alone or a roof alone softens it to cold; both together lift it, and so does any frost resistance.

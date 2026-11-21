@@ -1,37 +1,50 @@
 # Black Forest
 
-**What do I need from the Black Forest?** Copper and tin for bronze, surtling cores to smelt them: rob the Burial Chambers, haul the ore home, then hunt down the Elder.
+**How do I explore the Black Forest?** Keep to its edge with a torch until the copper there is bronze on your back, then comb the whole forest: its chambers, towers and nests give you the cores, the Elder's place and his seeds along the way.
 
-## Where is the Black Forest from home?
+## What kills a newcomer in the Black Forest?
 
-Just past your door: with the antler pickaxe on your belt, this age's ore is a walk, not a voyage, since the dark trees always start on the start island itself, the land your feet and a river's swim reach ([A good start](/guides/a-good-start#what-is-on-my-starting-island)), and the Elder's altar waits a long walk beyond them. Everything this age asks of you lies under those trees, and everything you take from them goes back to the smelter by the stones.
+Nearly everything, at first. The raven tells you to turn back until Eikthyr is dead, and even then you step under the trees in leather. Greydwarfs come in packs, their brutes with them, and their shamans spit poison. A bear takes little from a club or an arrow. A troll outlasts and outhits everything you have met.
 
-| The Black Forest | How often |
-|---|---|
-| On the start island | {{islandBlackForest}}% of seeds |
+Each has a weakness you already carry. Fire hurts every Greydwarf badly, so the torch in your hand is a weapon here, and a campfire at a mining site keeps them off your back. The bear fears fire too. The troll is weak to pierce: the flint spear and the bow, from farther than its arm reaches.
 
-| From the start | As a rule | Middle half of seeds |
-|---|---|---|
-| The Elder's altar, m | {{elderMedian}} | {{elderMedianLow}}–{{elderMedianHigh}} |
+Your home stays on the Meadows shore. For the first days the forest is a place you walk into and out of.
 
 ## Where do I get copper and tin?
 
-Copper by the troll caves, tin at the water's edge. A bar of [bronze](/catalog/materials#bronze) is {{bronzeCopper}} copper and {{bronzeTin}} tin, and the antler pickaxe from Eikthyr breaks both. Of the {{caves}} troll caves nearest the start, {{copperCaves}} have copper veins by their mouths as a rule, the nearest {{copperNearest}} m from the start. Neither metal waits at your door: copper stands within {{baseChambersReach}} m of home on only {{homeCopperMidAny}}% of seeds and tin on {{homeTinMidAny}}%, but a walk of {{bossNearM}} m opens a whole mine.
+Where the raven says: copper in great deposits in the forest's ground, tin along its shores. A bar of bronze is {{bronzeCopper}} copper and {{bronzeTin}} tin, and the antler pickaxe breaks both. Within {{bossNearM}} m of home lie {{homeCopperFar}} copper deposits as a rule ({{homeCopperFarLow}}–{{homeCopperFarHigh}} on the middle half of seeds) and {{homeTinFar}} tin deposits ({{homeTinFarLow}}–{{homeTinFarHigh}}).
 
-| Within {{bossNearM}} m of home | As a rule | Middle half of seeds |
-|---|---|---|
-| Copper veins | {{homeCopperFar}} | {{homeCopperFarLow}}–{{homeCopperFarHigh}} |
-| Tin deposits | {{homeTinFar}} | {{homeTinFarLow}}–{{homeTinFarHigh}} |
+Take the nearest of both first: this is the ore that stops the forest killing you. The whole Bronze Age, with every piece raised to its top, the forge's upgrades, the Karve's nails and the cart's, takes {{bronzeBill}} bars, which is {{bronzeCopperBill}} copper ore, about {{bronzeVeins}} deposits. So the copper by your home never runs short. What costs you is the carrying: ore passes no portal, and every load goes home on your back, then on a cart, then in a boat along the shore your house stands on.
 
-Ore never passes a portal, so every load goes home on your back, on a cart or in the boat's hold: the closer the veins, the more evenings you spend at the forge instead of on the road.
+## Where do I get the surtling cores?
 
-## How much copper for the whole Bronze Age?
+From the Burial Chambers, which stand only in the Black Forest. Without cores there is no bronze: the ore is smelted in a smelter, and the smelter burns the charcoal of a kiln.
 
-More than one cave gives. One cave's veins make a run's bronze; a home's is several times that. The bronze kit raised to its top takes {{kitBronzeBronze}} bronze bars. Add the forge's upgrades and the bars hammered into the Karve's {{karveNails}} bronze nails and the cart's {{cartNails}}, many nails to a bar, and the whole age takes {{bronzeBill}} bars: {{bronzeCopperBill}} copper ore, about {{bronzeVeins}} veins. When one cave's veins run out the next is seldom far. [How much metal a run takes](/guides/how-much-metal) counts the later ages.
+| What the cores build | Surtling cores |
+|---|---|
+| The charcoal kiln | {{kilnCores}} |
+| The smelter | {{smelterCores}} |
+| A pair of portals | {{coresPortalPair}} |
+
+Build the kiln and the smelter from the first chamber's cores, at home, and leave the portals for the second chamber: {{coresNeed}} cores are the whole bill, and one chamber does not always hold them all. Inside, the skeletons break under a club and resist a spear, so change weapons at the door.
+
+## Bronze, troll leather or bear hide?
+
+The first bars are yours to spend, and there are two choices in them. The first is tools or armour. Tools make the next load quicker: the bronze axe fells what the flint axe cannot, and {{cartNails}} bronze nails make the cart. Armour makes the next blow survivable, and on a harder world, where one blow ends you, it comes first.
+
+The second is which armour. All three sets of the forest are worn at the same stage:
+
+| The set | Armour | Weight | Slows you | Made of |
+|---|---|---|---|---|
+| Bronze, three pieces | {{bronzeSetArmour}} | {{bronzeSetWeight}} | {{bronzeSetSlow}}% | {{bronzeSetBronze}} bronze, at the forge |
+| Troll leather, three pieces and the cape | {{trollSetArmour}} | {{trollSetWeight}} | no | {{trollSetHides}} troll hides, at the workbench |
+| Bear, three pieces | {{bearSetArmour}} | {{bearSetWeight}} | no | {{bearSetHides}} bear hides, at the workbench |
+
+Bronze stops the most and costs the most: {{bronzeSetBronze}} bars you smelted, and {{bronzeSetSlow}}% of your speed for as long as you wear it. Troll leather stops less, weighs less, slows nothing, and takes no metal at all, so every bar stays for tools, nails and weapons; its price is {{killsTroll}} trolls, and the whole set worn together adds its own bonus. The bear set asks for {{killsBear}} bears instead, and no metal either. Players who value their bronze wear the troll; players who expect to be hit wear the bronze. The pieces are on the [armour](/catalog/armour) page.
 
 ## Are the troll caves dangerous?
 
-The copper sits at a troll's front door. The forest's own trolls carry no star within {{starMinDistanceTroll}} m of the world's centre, but a cave's trolls roll their stars wherever the cave stands. They rise once and never come back: kill them, and the veins are yours in peace. How much a harder world raises the stars is in [Hard, Very hard and Hardcore](/guides/hardcore).
+Their trolls are the same trolls, and may be worse. The forest's own trolls carry no star within {{starMinDistanceTroll}} m of the world's centre, where you live, but a cave's trolls roll their stars wherever the cave stands:
 
 | A cave's troll | One star | Two stars |
 |---|---|---|
@@ -39,174 +52,42 @@ The copper sits at a troll's front door. The forest's own trolls carry no star w
 | Hard | {{starOneSpawnerHard}}% | {{starTwoSpawnerHard}}% |
 | Very hard | {{starOneSpawnerVeryHard}}% | {{starTwoSpawnerVeryHard}}% |
 
-Trolls also come to you. Once a troll has died and the Elder is dead, [the troll raid](/catalog/events) keeps coming to your home for good, so have walls up before his last blow lands; what your pieces keep from spawning, and how far, is in [Which pieces make the ground a base?](/guides/boss-arenas#which-pieces-make-the-ground-a-base).
+Whatever the setting, look before you wake it, and fight it with the spear or the bow from where it cannot reach. A cave's trolls rise once and never come back: kill them, and the cave is yours for good.
 
-> **With no death**, fight a cave's troll only on your own terms: a starred troll is the Black Forest's heaviest blow.
+## What does the whole forest hold?
 
-## Where do I get the surtling cores?
-
-From the Burial Chambers, which stand only in the Black Forest. The usual game takes {{coresNeed}}: the charcoal kiln and the smelter, without which there is no bronze, and a pair of portals. The start island's chambers hold {{islandCores}} as a rule, enough for every station a home will build, and the usual {{coresNeed}} on {{islandCoresEnough}}% of seeds. None of it lies in your garden: a Burial Chamber almost never stands within {{baseChambersReach}} m of home, so the cores are a trip of their own under the trees.
+In bronze or troll leather the forest stops being a place you run from, and now you comb all of it. What you are looking for, counted from your door:
 
 | From home | As a rule | Middle half of seeds |
 |---|---|---|
-| The first Burial Chamber, m | {{homeChamberM}} | {{homeChamberMLow}}–{{homeChamberMHigh}} |
+| The first Burial Chamber, m | {{homeBurialChamberM}} | {{homeBurialChamberMLow}}–{{homeBurialChamberMHigh}} |
 | The chamber that brings the cores to {{coresNeed}}, m | {{homeCoresWalkM}} | {{homeCoresWalkMLow}}–{{homeCoresWalkMHigh}} |
+| The nearest troll cave, m | {{homeTrollCaveM}} | {{homeTrollCaveMLow}}–{{homeTrollCaveMHigh}} |
+| The place Haldor may stand, m | {{homeHaldorM}} | {{homeHaldorMLow}}–{{homeHaldorMHigh}} |
+| The Elder's altar, m | {{homeElderM}} | {{homeElderMLow}}–{{homeElderMHigh}} |
 
-| What the cores build | Surtling cores |
-|---|---|
-| The charcoal kiln | {{kilnCores}} |
-| The smelter | {{smelterCores}} |
-| A pair of portals | {{coresPortalPair}} |
-| The blast furnace | {{furnaceCores}} |
-
-| On the start island | As a rule | Middle half of seeds |
-|---|---|---|
-| Surtling cores in the Burial Chambers, about | {{islandCores}} | {{islandCoresLow}}–{{islandCoresHigh}} |
-
-> **With no portals**, you need only the kiln and the smelter, but again at every new base.
-
-## Where do I get the ancient seeds?
-
-From the Greydwarf nests: a broken nest drops them, and a Greydwarf brute now and then. The Elder's altar takes {{ancientSeeds}}, and {{ancientSeedsNeed}} nests are the usual harvest for them; the nearest Greydwarf camp lies {{startCampM}} m from home as a rule ([A good start](/guides/a-good-start#where-are-my-first-nights-safe)). Break the nests nearest your hall first: no campfire or workbench stops a nest from spawning.
-
-| Greydwarf camps from home | As a rule | Middle half of seeds |
-|---|---|---|
-| Camps within {{bossNearM}} m | {{homeCamps}} | {{homeCampsLow}}–{{homeCampsHigh}} |
-| The third camp, m | {{homeCamp3M}} | {{homeCamp3MLow}}–{{homeCamp3MHigh}} |
-
-The third camp stands within {{bossNearM}} m of home on {{homeCamp3Near}}% of seeds, so the round for the seeds seldom takes you farther from your hall than that.
-
-## Where is the Elder's altar?
-
-Killing him is not the question; finding him is. His Vegvísir stands in the Black Forest's ruins and stone towers, and in {{vegvisirChamber}}% of Burial Chambers, so climb every tower you pass; once you know where he is, go straight there. Fire is his weakness ([How to kill each boss](/catalog/bosses#the-elder)). His blows fell plain trees by the score, so a portal by his altar turns him into a sawmill that sends the wood home.
-
-| The Elder's altar | How often |
-|---|---|
-| The nearest altar, on the start island | {{elderIsland}}% of seeds |
-| One of his altars, on the start island | {{homeElderOnLand}}% of seeds |
-
-Sharing your island is not living next door: his altar almost never stands within {{bossNearM}} m of home, so the fight is a journey, and a portal by the altar the way back.
+The cores are a walk and the Elder is a journey: {{homeCoresWalkM}} m to the last core, {{homeElderM}} m to his altar as a rule. So the forest between is combed on the way to him. Climb every stone tower you pass, since the towers and {{vegvisirChamber}}% of the Burial Chambers hold his Vegvísir. Break every Greydwarf nest you meet: a broken nest drops the ancient seeds his altar takes, {{ancientSeeds}} of them, and you will have them before you go looking. The [seed map](/tools/map) shows the chambers, the caves and his altar on your own seed.
 
 ## Where do I get fine wood?
 
-From birches and oaks, the same groves as the [Meadows](/guides/meadows)' first home. An Early Axe from the axe heads in the Meadows' ruins fells them, or a bronze axe once the forge is hot; the Elder fells only plain trees. Fine wood is the portal's, the bow's and the Karve's, so this is the wood that gets you off the island.
+From birches and oaks. The Early Axes from the Meadows' old houses fell them, and so does the bronze axe; within {{startWoodM}} m of home grow {{homeBirches}} birches and {{homeOaks}} oaks as a rule, which is why the open ground by your house is worth keeping: an oak can be planted there.
 
-| Round the start | As a rule | Middle half of seeds |
-|---|---|---|
-| Birches within {{startWoodM}} m | {{startBirches}} | {{startBirchesLow}}–{{startBirchesHigh}} |
-| Oaks within {{startWoodM}} m | {{startOaks}} | {{startOaksLow}}–{{startOaksHigh}} |
+Fine wood is what gets you off your own land. It makes the finewood bow, the pair of portals that turns the long way to the Elder into one step back, and the Karve, with {{karveNails}} bronze nails, at your own shore.
 
-## How many trolls and bears for a set at its top?
+## What do I grow and brew before I leave?
 
-More than the caves will give you. A troll cave gives at most two trolls, once; the rest come from the forest slowly, or with the troll raid. A starred kill drops double with one star and fourfold with two. The sets themselves are in [Armour](/catalog/armour), their creatures in [Creatures](/catalog/creatures).
-
-| Armour set | Kills, to wear it | Kills, at its top |
-|---|---|---|
-| Troll leather | {{killsTroll}} | {{killsTrollTop}} |
-| Bear | {{killsBear}} | {{killsBearTop}} |
+Carrots and mead. The cultivator, a bronze tool, turns the forest's wild carrot seeds into a garden by your house. The fermenter turns the honey of your hives into mead, and the one to brew first is poison resistance: the Greydwarf shaman's spit is poison, and so is nearly everything in the Swamp that comes next. The recipes are on the [meads](/catalog/meads) page.
 
 ## Where is Haldor?
 
-Hoped for on the way to the Elder, never hunted for: the nearest place Haldor can stand lies {{haldorMedian}} m from the start as a rule ({{haldorMedianLow}}–{{haldorMedianHigh}} m on the middle half of seeds). Buy what the coins allow, above all Megingjord, the belt that lets you carry far more ([What to buy from the traders](/catalog/traders)).
+Somewhere in a Black Forest, the raven says, and he can say no more: nothing in the world points to the trader. You meet him while you comb the forest, or you do not. The coins from the Burial Chambers are for him, and the first thing they buy is Megingjord, the belt that lets you carry far more; the rest of his goods are on [What to buy from the traders](/catalog/traders).
 
-| Haldor | How often |
-|---|---|
-| On the start island | {{haldorIsland}}% of seeds |
+## Where is the Elder's altar?
 
-> **With no map**, Haldor is found by luck: circle the start in widening rings and search every Black Forest before sailing past it. Climb the stone towers, which hold the Elder's Vegvísir, and raise your own tower on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
+Where his Vegvísir shows it, and on {{homeElderOnLand}}% of seeds on your home's own land, a walk with no water in it. On the other seeds the Karve comes first.
 
-## Racing: which troll cave becomes my base?
+He is very weak to fire, so the fight is the finewood bow and fire arrows. His roots reach farther than your bow, and the stone pillars round his altar are the one thing he cannot break: shoot from behind them. Set a portal by the altar before you light the first arrow. It is your way home, and his stomp fells the trees round him by the score, so the same portal carries the wood home. Every way to kill him is on [How to kill each boss](/catalog/bosses#the-elder).
 
-For the speedrunner, who does not settle by the stones. His copper base is a troll cave on the shore, with copper veins by its mouth and tin at the water's edge, and the cave is the mine: a troll that rises inside or by the entrance breaks the veins for you. Build the hall on open ground in sight of it, and the boat on the water facing it when the time comes to sail. [Where to build your base](/guides/where-to-build) weighs the other places.
+His death gives you the swamp key, and for a while after you call on his trophy your axe and pickaxe bite harder. The Greydwarfs stop raiding your home. The trolls start: once a troll has died and the Elder is dead, their raid comes for good, so have walls up before he dies.
 
-| The base | How often |
-|---|---|
-| The sea within {{caveReach}} m of the cave | {{baseShore}}% of seeds |
-
-| From the start | As a rule | Middle half of seeds |
-|---|---|---|
-| The base cave, m | {{baseM}} | {{baseMLow}}–{{baseMHigh}} |
-
-### Making the cave safe
-
-You sleep by the cave every night, so its trolls are the first thing to settle. Your pieces keep the open world's creatures off ([Which pieces make the ground a base?](/guides/boss-arenas#which-pieces-make-the-ground-a-base)), but nothing you build stops a Greydwarf nest, so set the hall where no camp stands near. The nearest Greydwarf camp lies {{baseCampM}} m from the base cave as a rule ({{baseCampMLow}}–{{baseCampMHigh}} m on the middle half of seeds).
-
-| No Greydwarf camp within … of the base cave | How often |
-|---|---|
-| {{campReachClose}} m | {{baseNoCampClose}}% of seeds |
-| {{caveReach}} m | {{baseNoCamp}}% of seeds |
-| {{campReachFar}} m | {{baseNoCampFar}}% of seeds |
-
-Chart: share
-
-### The troll as miner and lumberjack
-
-Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself.
-
-> **With no death**, do not use a troll as your miner: leave the cave's troll alone and mine the copper with your own pickaxe. Once the copper is out, lead it to the nearest birches and let it fell the fine wood. On some seeds none grow by the cave, and the start's groves are the nearer harvest.
-
-| By the base | As a rule | Middle half of seeds |
-|---|---|---|
-| Copper veins within {{caveReach}} m | {{baseCopper}} | {{baseCopperLow}}–{{baseCopperHigh}} |
-| Tin within {{baseTinReach}} m | {{baseTin}} | {{baseTinLow}}–{{baseTinHigh}} |
-| Birches in the best group within {{baseBirchReach}} m | {{birchGroup}} | {{birchGroupLow}}–{{birchGroupHigh}} |
-
-| Copper veins round the base cave, within | As a rule | Middle half of seeds |
-|---|---|---|
-| {{caveReach}} m | {{baseCopper}} | {{baseCopperLow}}–{{baseCopperHigh}} |
-| {{baseChambersReach}} m | {{baseCopperMid}} | {{baseCopperMidLow}}–{{baseCopperMidHigh}} |
-| {{bossNearM}} m | {{baseCopperFar}} | {{baseCopperFarLow}}–{{baseCopperFarHigh}} |
-
-Chart: spread
-
-### The loop round the cave
-
-Settle at the cave, circle it once for the cores and the seeds, and go on to the Elder: the farther the place that completes each need, the longer the loop. On the [strip](/guides/speedrun#what-is-the-strip), every row below is a reason to keep a seed or reset it.
-
-| Cores in the Burial Chambers within {{baseChambersReach}} m of the base | How often |
-|---|---|
-| {{coresNoPortal}}, for the kiln and the smelter | {{baseCoresNoPortal}}% of seeds |
-| {{coresNeed}}, with a pair of portals | {{baseCoresEnough}}% of seeds |
-
-Chart: share
-
-| Within {{baseChambersReach}} m of the base | As a rule | Middle half of seeds |
-|---|---|---|
-| Burial Chambers | {{baseChambers}} | {{baseChambersLow}}–{{baseChambersHigh}} |
-| Surtling cores in them, about | {{baseCores}} | {{baseCoresLow}}–{{baseCoresHigh}} |
-
-The Greydwarf camps for the Elder's seeds, {{ancientSeedsNeed}} of them, stand within {{baseChambersReach}} m of the base on {{baseCampsThree}}% of seeds.
-
-| From the base cave | As a rule | Middle half of seeds |
-|---|---|---|
-| The first Burial Chamber, m | {{baseChamberM}} | {{baseChamberMLow}}–{{baseChamberMHigh}} |
-| The chamber that brings the cores to {{coresNeed}}, m | {{baseCoresWalkM}} | {{baseCoresWalkMLow}}–{{baseCoresWalkMHigh}} |
-| The third Greydwarf camp, m | {{baseCamp3M}} | {{baseCamp3MLow}}–{{baseCamp3MHigh}} |
-| The Elder's altar, m | {{legBaseElderM}} | {{legBaseElderMLow}}–{{legBaseElderMHigh}} |
-| The nearest place Haldor can stand, m | {{baseHaldorM}} | {{baseHaldorMLow}}–{{baseHaldorMHigh}} |
-
-Chart: spread
-
-On {{baseElderNear}}% of seeds the Elder stands within {{bossNearM}} m of the base cave, and on {{baseAllNear}}% the whole loop does too, the cores, the seeds and the Elder. At the end of it, burn him with fire arrows or a ring of campfires, and leave a portal by his altar only if his wood is wanted at home.
-
-> **With no map**, raise your lookout on the highest ground by the base cave, {{baseHighM}} m above the sea as a rule.
-
-## Coming from the north, what do I fetch here?
-
-A [reverse run](/guides/reverse-run) starts in the north but smelts with what grows here: the north's ore wants the smelter, the charcoal kiln for its coal, and the blast furnace, and their cores come from the Burial Chambers. The furnace takes fine wood too, from the birches and oaks. Leave a portal here before sailing north, and the cores and the coal follow you through it.
-
-| The north's smelting, from the Black Forest | Least |
-|---|---|
-| Surtling cores: smelter, kiln and blast furnace | {{coresFurnaceNeed}} |
-| The same and a pair of portals | {{coresFurnacePortalNeed}} |
-| Fine wood for the blast furnace | {{furnaceFineWood}} |
-
-## How do I bring the Elder's wood home with no portals?
-
-On a cart or under sail, so what matters is whether his altar stands on your home's own land, with no sea between, and how long the cart road is: one of his altars shares the start island on {{homeElderOnLand}}% of seeds, almost never within {{bossNearM}} m of home, and from the start the Elder lies {{elderMedian}} m away as a rule. The rules of a world without portals are on [No death, no map, no portals](/guides/other-rules).
-
-## Can you skip the Elder?
-
-At a cost: his key opens the Sunken Crypts, and behind their doors lie the withered bones that summon Bonemass and the crypts' iron. The [reverse run](/guides/reverse-run) leaves him for late anyway and pays for it in time.
-
-Every troll cave, copper vein, tin deposit and birch of your seed is on the [seed map](/tools/map), and [How good is my seed?](/tools/how-good-is-my-seed) sets your own seed against these numbers. Next, iron and the bones for Bonemass: the [Swamp](/guides/swamp).
+You leave the forest in bronze or in troll leather, with a smelter and a forge at home, a garden, a fermenter, portals and a boat on your own shore. The key in your pack opens the Sunken Crypts, and the iron in them is the next thing that will keep you alive: the [Swamp](/guides/swamp). On the clock the forest is one troll cave and a loop round it, and the [Speedrun](/guides/speedrun#black-forest) tells that.

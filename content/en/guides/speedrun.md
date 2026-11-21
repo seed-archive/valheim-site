@@ -85,7 +85,45 @@ Take the hives only from the houses you rob on that walk, and turn aside for non
 
 Skipping Eikthyr costs more than the walk to him. Without his antler nothing mines before bronze, so a troll's blows must do the digging at every vein, and without his power every step costs full stamina.
 
-**The Elder**, after the copper base, a troll cave with copper and tin by its mouth. [Black Forest](/guides/black-forest).
+### Black Forest
+
+You do not settle by the stones. Your copper base is a troll cave on the shore, with copper veins by its mouth and tin at the water's edge, and the cave is the mine: a troll that rises inside or by the entrance breaks the veins for you. Build the hall on open ground in sight of it, and the boat on the water facing it when the time comes to sail. The base cave lies {{baseM}} m from the start as a rule ({{baseMLow}}–{{baseMHigh}} m on the middle half of seeds), and the sea lies within {{caveReach}} m of it on {{baseShore}}% of seeds.
+
+**Making the cave safe.** You sleep by the cave every night, so its trolls are the first thing to settle. Your pieces keep the open world's creatures off ([Boss arenas](/guides/boss-arenas#which-pieces-make-the-ground-a-base)), but nothing you build stops a Greydwarf nest, so set the hall where no camp stands near. The nearest Greydwarf camp lies {{baseCampM}} m from the base cave as a rule ({{baseCampMLow}}–{{baseCampMHigh}} m on the middle half of seeds).
+
+| No Greydwarf camp within … of the base cave | How often |
+|---|---|
+| {{campReachClose}} m | {{baseNoCampClose}}% of seeds |
+| {{caveReach}} m | {{baseNoCamp}}% of seeds |
+| {{campReachFar}} m | {{baseNoCampFar}}% of seeds |
+
+Chart: share
+
+**The troll as miner and lumberjack.** Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself: {{baseTin}} deposits lie within {{baseTinReach}} m of the cave as a rule ({{baseTinLow}}–{{baseTinHigh}}). Once the copper is out, lead the troll to the nearest birches and let it fell the fine wood; the best group within {{baseBirchReach}} m holds {{birchGroup}} birches as a rule ({{birchGroupLow}}–{{birchGroupHigh}}). On some seeds none grow by the cave, and the start's groves are the nearer harvest.
+
+| Copper veins round the base cave, within | As a rule | Middle half of seeds |
+|---|---|---|
+| {{caveReach}} m | {{baseCopper}} | {{baseCopperLow}}–{{baseCopperHigh}} |
+| {{baseChambersReach}} m | {{baseCopperMid}} | {{baseCopperMidLow}}–{{baseCopperMidHigh}} |
+| {{bossNearM}} m | {{baseCopperFar}} | {{baseCopperFarLow}}–{{baseCopperFarHigh}} |
+
+Chart: spread
+
+**The loop round the cave.** Settle at the cave, circle it once for the cores and the seeds, and go on to the Elder: the farther the place that completes each need, the longer the loop. On the [strip](#what-is-the-strip), every number here is a reason to keep a seed or reset it. The Burial Chambers within {{baseChambersReach}} m of the base hold the {{coresNoPortal}} cores of a kiln and a smelter on {{baseCoresNoPortal}}% of seeds, and the {{coresNeed}} that add a pair of portals on {{baseCoresEnough}}%; as a rule {{baseChambers}} chambers stand there, with about {{baseCores}} cores in them. The Greydwarf camps for the Elder's seeds, {{ancientSeedsNeed}} of them, stand within the same reach on {{baseCampsThree}}% of seeds.
+
+| From the base cave | As a rule | Middle half of seeds |
+|---|---|---|
+| The first Burial Chamber, m | {{baseChamberM}} | {{baseChamberMLow}}–{{baseChamberMHigh}} |
+| The chamber that brings the cores to {{coresNeed}}, m | {{baseCoresWalkM}} | {{baseCoresWalkMLow}}–{{baseCoresWalkMHigh}} |
+| The third Greydwarf camp, m | {{baseCamp3M}} | {{baseCamp3MLow}}–{{baseCamp3MHigh}} |
+| The Elder's altar, m | {{legBaseElderM}} | {{legBaseElderMLow}}–{{legBaseElderMHigh}} |
+| The nearest place Haldor can stand, m | {{baseHaldorM}} | {{baseHaldorMLow}}–{{baseHaldorMHigh}} |
+
+Chart: spread
+
+On {{baseElderNear}}% of seeds the Elder stands within {{bossNearM}} m of the base cave, and on {{baseAllNear}}% the whole loop does too, the cores, the seeds and the Elder. At the end of it, burn him with fire arrows or a ring of campfires, and leave a portal by his altar only if his wood is wanted at home.
+
+Skipping the Elder has its price: his key opens the Sunken Crypts, and behind their doors lie the withered bones that summon Bonemass and the crypts' iron.
 
 **Bonemass**, for iron, and for the wishbone that sniffs out silver. [Swamp](/guides/swamp).
 
