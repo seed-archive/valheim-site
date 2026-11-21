@@ -1,10 +1,10 @@
 # Deep North
 
-**How do I explore the Deep North?** Sail north, cross the ice on foot and camp in a village by Kall's gate; bomb a petrified troll for Bloodgold, take the key's mould from the Winding Tunnels, open {{kallMorkhallaNeed}} Mörkhalla, then go south for the blood their ice sends there.
+**How do I explore the Deep North?** Sail north, cross the ice on foot and camp in a village by Kall's gate; bomb a petrified troll for Bloodgold, take the key's mould from the Winding Tunnels, open {{kallMorkhallaNeed}} Mörkhalla, go south for the blood their ice sends there, and bring it back to his gate.
 
 ## How do I get far north?
 
-By sea, from home: Kall's gate lies {{homeKallM}} m from your door as a rule ({{homeKallMLow}}–{{homeKallMHigh}} m on the middle half of seeds), at the other end of the world from the Ashlands. This sea does not burn. What stops a boat here is the ice along the shore: it cannot be sailed through, so you leave the boat at its edge and walk. Break the floating sheets as you cross them. They are ice, and the keys will want ice.
+By sea, from home: Kall's gate lies {{homeKallM}} m from your door as a rule ({{homeKallMLow}}–{{homeKallMHigh}} m on the middle half of seeds), at the other end of the world from the Ashlands. This sea does not burn. What stops a boat here is the ice along the shore: it cannot be sailed through, so you leave the boat at its edge and walk. Break the floating sheets as you cross them: they give ice, and the making of the keys takes ice.
 
 | The landing nearest Kall | As a rule | Middle half of seeds |
 |---|---|---|
@@ -20,7 +20,7 @@ Pack for a land that gives you neither embers nor a forge. The embers of the Ete
 
 You arrive weak because the land itself kills you. Every weather here freezes, by day and by night; your health stops coming back and drains to nothing. Any frost-resistant cape ends that, or a frost resistance mead; they do not add up, so with the cape on the mead is wasted. Under the ground the rule changes: the Winding Tunnels are not cold at all, a Mörkhalla is only cold, so a campfire is enough inside one, and Kall's prison freezes as hard as the open snow.
 
-Snow refuses whatever you try to build on bare ground. It takes a piece on a rock, on the floor of a village house, or on ground the hoe has cleared, so the camp goes in a village: an old house, mended with Timberwood, the land's own wood, which your first axe fells. What stands uncovered the heavy snow wears down; a roof stops that, and the stave pieces of Timberwood never take snow damage at all. A straight stack of them stands {{buildHeightStave}} m.
+Snow refuses whatever you try to build on bare ground. It takes a piece on a rock, on the floor of a village house, or on ground the hoe has cleared, so the camp goes in a village: an old house, mended with Timberwood, the land's own wood, which your first axe fells. What stands uncovered the heavy snow wears down; a roof stops that, and the stave pieces of Timberwood never take snow damage at all.
 
 | From Kall's gate | As a rule | Middle half of seeds |
 |---|---|---|
@@ -31,11 +31,11 @@ Snow refuses whatever you try to build on bare ground. It takes a piece on a roc
 
 The whole hunt stays within {{kallJointM}} m of his gate as a rule, so one walled camp in the village nearest it serves every trip. Nothing grows in the north, but the village granaries hold kale, oat and potato seeds for the farm at home.
 
-One choice comes early. The Jotnar, the Krigen and the Hexen, walk the open snow and raid your camp only after the first of them has died; until then the land is quieter than it looks. The moulds of the north's weapons are theirs, so you will kill one sooner or later. Sooner gives you the moulds and the raids together; later gives you time to wall the camp first.
+One choice comes early. The Jotnar, both the Krigen and the Hexen, walk the open snow and raid your camp only after the first of them has died; until then the land is quieter than it looks. The moulds of the north's weapons are theirs, so you will kill one sooner or later. Sooner gives you the moulds and the raids together; later gives you time to wall the camp first.
 
 ## Where does the Bloodgold come from?
 
-From the petrified trolls: stone arms and legs half buried in the snow. No pickaxe breaks them. The Ember Charge does: {{emberChargePelts}} seal pelts and {{emberChargeEmbers}} ember from the Pyre make {{emberCharges}} of them at a workbench. The seals lie on the shore and never fight back, so the first Bloodgold costs you nothing but the embers you brought.
+From the petrified trolls, stone arms and legs half buried in the snow, and they are the hard part of the north: no pickaxe breaks them, and nothing that lives here does either. Only the Ember Charge does: {{emberChargePelts}} seal pelts and {{emberChargeEmbers}} ember from the Pyre make {{emberCharges}} of them at a workbench. The seals lie on the shore and never fight back, so the pelts are the easy half; the embers are the half you had to bring.
 
 Part of the rubble is petrified tissue, and the blast furnace smelts it into Bloodgold. A leg holds about {{tissueLeg}} tissue and an arm {{tissueArm}}, so one leg is every key you need. The nearest petrified troll lies {{kallFracM}} m from Kall's gate as a rule.
 
@@ -43,7 +43,7 @@ Tissue and Bloodgold pass no wooden portal. So the blast furnace and the Black F
 
 ## How do I find the Winding Tunnels, with the moulds?
 
-Under an empty timber hall. The Deep North's villages stand near the Tunnels or near each other, so a village in sight means an entrance is close; Kall's part of the north holds {{kallTunnelsIn}} Winding Tunnels as a rule, {{kallTunnelsNear}} of them within {{bossNearM}} m of his gate.
+Under an empty timber hall. The Deep North's villages stand near the Tunnels or near each other, so a village in sight means an entrance is close; the Deep North round Kall holds {{kallTunnelsIn}} Winding Tunnels as a rule, {{kallTunnelsNear}} of them within {{bossNearM}} m of his gate.
 
 The mould of the Intricate Key lies below. The Eyeless One drops it {{eyelessMouldChance}}% of the time it dies; it wakes only when you come close, so you choose the moment. Its first death starts the Eyeless raids on your camp. The Tunnels' rubble and wardrobe shafts hold moulds too, and iron scrap, and a shaft keeps calling Elaking until it is broken: break every one you pass.
 
@@ -79,7 +79,7 @@ All {{kallMorkhallaNeed}} stand within {{bossNearM}} m of his gate on {{kallMork
 
 ## Do I have to go back south for the blood?
 
-Yes, and this is the land's last turn. No Mörkhalla holds the blood Kall's gate asks for. Breaking a Mörkhalla's Malicious Ice sets a Jotun invasion loose in one of the middle lands, the Meadows, the Black Forest, the Swamp, the Mountain or the Plains, and the invasion's core breaks into one Malicious Blood. Where it lands is drawn the moment the ice breaks, so no seed can tell you in advance; the game's own bounds are these:
+Yes. No Mörkhalla holds the blood Kall's gate asks for. Breaking a Mörkhalla's Malicious Ice sets a Jotun invasion loose in one of the middle lands, the Meadows, the Black Forest, the Swamp, the Mountain or the Plains, and the invasion's core breaks into one Malicious Blood. Where it lands is drawn the moment the ice breaks, so no seed can tell you in advance; the game's own bounds are these:
 
 | A Jotun invasion | m |
 |---|---|
@@ -88,7 +88,7 @@ Yes, and this is the land's last turn. No Mörkhalla holds the blood Kall's gate
 | Never within this of a player | {{invasionPlayerM}} |
 | At least this from another invasion | {{invasionApartM}} |
 
-Up to {{invasionsAtOnce}} invasions stand at once, so break the ice of all {{kallMorkhallaNeed}} Mörkhalla before you turn south, and clear the invasions in one trip through your old portals. You know one by its frozen weather and the Jotnar round it. Its core calls starred Krigen and Hexen for as long as you stand near, and no wall stops them: break the core and it ends. Stay for the Hexen all the same: now and then one drops a finished key.
+Up to {{invasionsAtOnce}} invasions stand at once, so break the ice of all {{kallMorkhallaNeed}} Mörkhalla before you turn south, and clear the invasions in one trip through your old portals. You know one by its frozen weather and the Jotnar round it. Its core calls starred Krigen and Hexen for as long as you stand near, and no wall stops them. The invasion ends when the core breaks, so kill a Hexen or two before you break it: now and then one drops a finished key.
 
 ## What do I forge before Kall?
 
@@ -101,14 +101,14 @@ The gear of the north is cast, not hammered: a mould from the Jotnar, Bloodgold,
 | Of the Vanguard, from seals | {{killsSeal}} | {{killsSealTop}} |
 | Of the Vanguard, from Elaking | {{killsElaking}} | {{killsElakingTop}} |
 
-The Caller's set is the mage's; the other two differ in what you hunt for them, as the table shows. A moose tamed with lingonberries is meat that does not run out. The pieces are on the [armour](/catalog/armour) page.
+The Caller's set is the mage's. Between the other two the hunting decides: the Protector's takes {{killsMooseProtector}} moose, each of which fights back, and the Vanguard's takes {{killsSeal}} seals, which do not, or {{killsElaking}} Elaking from the Tunnels. A moose can also be tamed with lingonberries and kept. The pieces are on the [armour](/catalog/armour) page.
 
 ## How do I summon and kill Kall?
 
 Pour {{maliciousBlood}} Malicious Blood into the bowls outside his prison and the gate opens; Kall is already waiting inside. Fall, and every new try costs {{kallRetryBlood}} more blood, which is {{kallRetryBlood}} more invasions. The prison freezes and lets you build nothing, so the portal stands outside.
 
-The fight has three parts, and each is a different creature: one dies and the next rises. Nothing ever staggers him, not damage and not a parry, and he has no weak spot. The first Kall swings chains. He takes half from pierce, fire, frost and lightning and nothing from spirit, so the work is done with blunt or slash, and by your own hand. The second Kall stands still and cannot be hurt by anything you carry. Instead the earlier bosses come back as aspects, seven of them, never more than two at once: Eikthyr first, and after him two lines side by side, the Elder, Moder and the Queen in one, Bonemass, Yagluth and Fader in the other. Each aspect's death takes a seventh of the second Kall's health, so the seventh death kills him. Each aspect keeps its boss's nature: fire burns the Elder's and Moder's, blunt and frost break Bonemass's, arrows glance off Yagluth's, and Eikthyr's is the only one a parry staggers. The third Kall has far more health than the first and the same resistances, and his chains now carry fire and frost: this is the fire the feather cape would double, so drink a fire resistance mead when he rises. The phases, attack by attack, are on [How to kill each boss](/catalog/bosses#kall-fimbulbringer).
+The fight has three parts, and each is a different creature: one dies and the next rises. Nothing ever staggers him, not damage and not a parry, and he has no weak spot. The first Kall swings chains. He takes half from pierce, fire, frost and lightning and nothing from spirit, so the work is done with blunt or slash, and no tame or summons does it for you. The second Kall stands still and cannot be hurt by anything you carry. Instead the earlier bosses come back as aspects, seven of them, never more than two at once: Eikthyr first, and after him two lines side by side, the Elder, Moder and the Queen in one, Bonemass, Yagluth and Fader in the other. Each aspect's death takes a seventh of the second Kall's health, so the seventh death kills him. Each aspect keeps its boss's nature: fire burns the Elder's and Moder's, blunt and frost break Bonemass's, arrows do little to Bonemass's and Yagluth's, and Eikthyr's is the only one a parry staggers. The third Kall has far more health than the first and the same resistances, and his blows now carry fire as well as frost: drink the fire resistance wine when he rises. The phases, attack by attack, are on [How to kill each boss](/catalog/bosses#kall-fimbulbringer).
 
 He drops no trophy. He drops the Crown Jewel, for the Crown of Valheim, and the Sacrificial Blood, and the blood is the last thing the game asks you to carry. No portal takes it: not the wooden one, not the stone one, not a world set to let everything through, and the game gives no warning before the portal refuses. It goes home by boat and on foot, to the stones where the Valkyrie set you down, and laying it there ends the saga.
 
-With Kall dead, the Jotnar and the Eyeless stop raiding, and the camp by his gate can grow into a home. The world is still there: the same seed, played by harder rules, begins again in the [Challenges](/guides/challenges). On the clock the north is one sweep of the Mörkhalla and one trip south, and the [Speedrun](/guides/speedrun#deep-north) tells it.
+With Kall dead, the Jotnar and the Eyeless stop raiding, and the camp by his gate needs no guard. The world is still there: the same seed, played by harder rules, begins again in the [Challenges](/guides/challenges). On the clock the north is one sweep of the Mörkhalla and one trip south, and the [Speedrun](/guides/speedrun#deep-north) tells it.
