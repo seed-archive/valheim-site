@@ -15,18 +15,20 @@ version (Valheim opens as 2.0).
 - The section is open to search engines: the layout's `robots: { index: false }` is gone, and the sitemap now holds
   the craft tree, Farming and the Forge of Potential, which it lacked.
 - Nine guides' bold answers were cut to 160 characters, since a guide's description is its bold answer.
+- Next.js and `eslint-config-next` 16.4.3 → 16.4.6, as the other sites (Infrastructure: 16.4.3 has the
+  SecurityFatalError). `NEXT_PUBLIC_BASE_URL=https://seedarchive.gg/valheim npm run build` passes, and the built
+  sitemap and robots name seedarchive.gg.
+- No migrations: the section has no tables of its own yet, so no `supabase/` (`.claude/rules/repository.md`).
 - Left as it was, for the owner: the seed map and How good is my seed? have no `<h1>` in the served HTML (the map
   is a full-screen tool; the seed tool draws its heading in the browser); the home page's description is 41
   characters.
 
 ## What the coordinator does (not this repository)
 
-- Moves Valheim from `COMING` to `GAMES` in the portal's `lib/games.ts`, with its zone, the Valheim project's
-  production address on Vercel.
-- The Valheim project's Production environment: `NEXT_PUBLIC_BASE_URL` (`https://seedarchive.gg/valheim`, which the
-  sitemap, robots and canonical addresses read; without it they name localhost) and Sentry's variables
-  (`.claude/rules/architecture.md` → Sentry).
-- These lines into the portal's `content/release-notes/valheim.md`, with the day and the version.
+Done by Infrastructure on 2026-11-21, uncommitted on the portal's `dev` where it says so: the Vercel project
+`valheim-site` with `NEXT_PUBLIC_BASE_URL`; Valheim in the portal's `GAMES`; these lines as the portal's
+`content/release-notes/valheim.md`. Waiting on the owner: the project's Git link and `NPM_RC`. Sentry's variables
+(`.claude/rules/architecture.md` → Sentry) are the coordinator's to confirm. The push of `dev` is the owner's word.
 
 ## The lines
 
