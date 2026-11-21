@@ -43,8 +43,9 @@ island) is the runner's pages'.
 **Tables and charts** (the owner, 2026-11-19 and 2026-11-21): one value is a sentence, and so are two. A table has
 three rows or more of one kind and stands under the heading it answers; a table of one row is never made. A chart
 compares two or more parameters of one thing (the 1st, 3rd and 4th Charred Fortress from Fader's altar), never
-different things on one chart (fortresses with Morgen holes). A sum is done for the reader: the page gives the
-result, never the formula. A share that is all but always or never is a sentence without a number. **A conclusion
+different things on one chart (fortresses with Morgen holes). A sum is done for the reader: the page never leaves him
+one to work out. A formula may stand with its result, to show how we count (the owner, 2026-11-21, of the hives a
+fermenter eats: "просто формула, чтобы мы показывали, как мы считаем"). A share that is all but always or never is a sentence without a number. **A conclusion
 stands under the data** (the owner, 2026-11-21, the archive's `.claude/guides/guide-method.md`): under a table, a
 sentence or two say what to take, keep or skip and why, with the numbers that decide it; a number the tables lack
 is computed by the Valheim generator, never guessed. A chapter ends with its conclusion, the way into the next

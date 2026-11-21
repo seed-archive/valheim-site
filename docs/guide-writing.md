@@ -123,7 +123,8 @@ A choice is analysed, never made for the reader: each side's reasons with the nu
 - **One value is a sentence, two values are a sentence.** Tables as agreed (Agreed, 5). A chart has two points or
   more of one thing.
 - **A share that is all but always or never** is a sentence without a number.
-- **A sum is done for the reader**: the page gives the result, never the formula.
+- **A sum is done for the reader**: the page never leaves him one to work out. A formula may stand with its
+  result, to show how we count (the owner, 2026-11-21: the hives a fermenter eats).
 - **A conclusion stands under the data** (the owner, 2026-11-21, first said for No Man's Sky; the archive's
   `.claude/guides/guide-method.md`, point 6): under a table, a sentence or two say what to take, keep or skip, and
   why, with the numbers that decide it. A number the tables do not hold is computed by the generator, never

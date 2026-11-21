@@ -45,6 +45,8 @@ As many as one fermenter eats. The honey is for the meads you will brew once the
 | 2 | {{hivesFor2}} |
 | 3 | {{hivesFor3}} |
 
+How we count it: a mead base takes {{meadHoneyNeed}} honey, a hive makes one honey every {{hiveSeconds}} s, by day and by night, and a fermenter takes {{fermentSeconds}} s over one base. So one fermenter eats {{meadHoneyNeed}} × {{hiveSeconds}} ÷ {{fermentSeconds}} = {{hivesFor1}} hives' honey.
+
 Stop at {{hivesFor1}}. They keep one fermenter busy, and a second fermenter on the same hives only waits a little for its honey; nothing in the game asks for mead faster than that. Take one more if a house on your way holds it, and never walk for the {{hivesFor2}} a second fermenter would want. A hive holds {{hiveHoneyMax}} honey and then stops, so empty it whenever you pass.
 
 ## Where is Eikthyr's altar?
