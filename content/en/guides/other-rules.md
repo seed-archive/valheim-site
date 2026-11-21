@@ -140,6 +140,14 @@ The far south costs most: the [Drakkar](/catalog/ships), the one ship that cross
 
 **Mistlands.** The sap is carried, so the root's base is your Mistlands home: set it at the edge with the Plains, for the crops, if a root stands there.
 
+**Ashlands.** Landing here is the hardest step of a game without portals, and it starts on the last island north of the Ashlands: a full base there, fed by the Plains and the Mistlands. From it you cross in the Drakkar, or you bridge the sea with a stone walkway to the shore. On land, raise a walled yard of earth first, then take a cleared fortress as your base. Trees do not grow in the Ashlands, so carry the wood, and carry a spare Drakkar's materials too: with no portal the sea is your only way home, and only the Drakkar crosses it whole. The stone portal is no way out for you: everything comes in by sea or over your bridge.
+
+| The crossing | As a rule | Middle half of seeds |
+|---|---|---|
+| The narrowest sea between the Ashlands and other land, m | {{ashGapM}} | {{ashGapMLow}}–{{ashGapMHigh}} |
+| From the nearest Ashlands coast to Fader's altar, m | {{altarShoreFader}} | {{altarShoreFaderLow}}–{{altarShoreFaderHigh}} |
+| From the nearest Ashlands coast to the Charred Fortress nearest Fader, m | {{fortShore}} | {{fortShoreLow}}–{{fortShoreHigh}} |
+
 > **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 
 ## I play slowly and build: what comes for my home?

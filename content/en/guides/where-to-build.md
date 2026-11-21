@@ -102,6 +102,6 @@ The best no-portals base stands where the biomes it needs touch: fewer trips, le
 
 It is a rare find: Bonemass's Swamp borders a Mountain on only {{meetSwampMountain}}% of seeds; as a rule the nearest Mountain lies {{meetAltarMMountain}} m from his altar ({{meetAltarMMountainLow}}–{{meetAltarMMountainHigh}} m on the middle half of seeds).
 
-The road ends on the boiling sea, and landing there with no portal is the hardest step of all: the [Ashlands](/guides/ashlands#how-do-i-land-in-the-ashlands-with-no-portal) guide walks you through it.
+The road ends on the boiling sea, and landing there with no portal is the hardest step of all: [No death, no map, no portals](/guides/other-rules#what-changes-biome-by-biome-with-no-portals) walks you through it.
 
 The walls are up and the routes are drawn. Before the first voyage for ore, count what the whole road will cost you in bars: [How much metal a run takes](/guides/how-much-metal).

@@ -167,7 +167,23 @@ Let a Seeker Soldier do the mining: lead it so its ram and slam land on a giant'
 
 The Mistlands cannot be skipped if you mean to go on: the Black Forge, built with the mines' black cores, forges Fader's bells and casts the Intricate Key, and the Drakkar takes Yggdrasil wood and the ceramic plates that only the Queen's drop makes possible.
 
-**Fader**, with the bells of the Charred Fortresses. [Ashlands](/guides/ashlands).
+### Ashlands
+
+You come for Fader and the north's embers and nothing else: no foothold, no portal, no second trip. Where his altar lies near the water, the Drakkar beaches a short walk from the fight, and the run spends no time crossing burning ground.
+
+| Fader's altar | How often |
+|---|---|
+| Within {{faderShoreNearM}} m of the coast | {{faderShoreNear}}% of seeds |
+| Within {{faderShoreFarM}} m of the coast | {{faderShoreFar}}% of seeds |
+| Within {{bossNearM}} m of the coast | {{faderShore1000}}% of seeds |
+
+Chart: share
+
+His altar lies on the road, in the [strip](#what-is-the-strip), on {{stripFader}}% of seeds, and {{faderAxisM}} m from the north–south line through the start as a rule ({{faderAxisMLow}}–{{faderAxisMHigh}} m on the middle half of seeds).
+
+A fortress costs you neither ram nor catapult: a ladder over the wall onto the tower, down through the hole in its roof to the bell fragments, then the tower dug under from four sides until a chest falls out on one of them, while the creatures falling in are killed. Build the Eternal Pyre the moment Fader falls, so its embers are ready for the north's charges, and carry home only the flametal the Black Forge asks.
+
+The Ashlands cannot be skipped on the way to the Deep North: only the embers of Fader's pyre break the petrified trolls, whose tissue is the north's Bloodgold.
 
 **Kall Fimbulbringer**, far north: the Winding Tunnels first, for the key's mould, then the Mörkhalla near him, whose ice sends the invasions south for his blood. [Deep North](/guides/deep-north).
 

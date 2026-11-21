@@ -37,7 +37,7 @@ Every boss of the usual order opens a door. Played backwards, each door is got r
 | Bonemass's withered bones | the Elder's key to the Sunken Crypts | the Elder first, even backwards |
 | A pickaxe | Eikthyr's hard antler | a troll's blows mine copper and tin for you; or one short walk to Eikthyr first |
 
-Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him takes only the raft's wood, leather scraps and resin. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
+Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him takes only the raft's wood, leather scraps and resin. Fader you meet before the weapons that suit him: he takes no fire and only half of pierce, so the fires that serve you everywhere else do nothing to him; bring blunt or slash. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
 
 ## What does the first key cost?
 
