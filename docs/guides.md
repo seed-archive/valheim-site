@@ -1,5 +1,18 @@
 # Guides: the structure (draft, 2026-11-17, waiting for the owner)
 
+**Superseded in part, 2026-11-21** (the owner approved the rewrite, `guide-writing.md`): the guides are written
+anew. What holds now is `.claude/rules/site-text.md` → The reader and his question, and the menu below as changed
+here; "The story" and "A biome guide: one chapter of the run" on this page describe the pages being replaced.
+
+## The menu from 2026-11-21 (to be built with the rewrite)
+
+- **Biomes** first: Meadows … Deep North, the saga of the usual player, each chapter answering "how do I explore
+  this biome?".
+- **Basics**, references the chapters send to: Where to build your base, How much metal a run takes, Boss arenas.
+- **Challenges**, the other ways of playing, each told biome by biome: A speedrunner's start (was A good start),
+  Speedrun, No death, no map, no portals, Hard, Very hard and Hardcore, Reverse run.
+- Not released, so no redirects from the old addresses.
+
 ## The menu: built 2026-11-19 (uncommitted)
 
 Agreed with the owner the same day, after the proposal below: **two guides, two stories**, as sections like the No
@@ -118,7 +131,7 @@ speed (what saves time), quality (the best a run has by then) and quantity (how 
 4. **Food and meads** of the biome. Links: Food, Meads.
 5. **The boss**: the summon and where it comes from, the altar's distance (scan), the straight fight in one line and
    the other way in one line. Links: How to kill each boss (its anchor), Trophies (its power).
-6. **Can you skip it?**: the cost of skipping, never a yes or no (walkthrough.md → Skipping).
+6. **Can you skip it?**: the cost of skipping, never a yes or no (the Valheim generator's notes on skipping).
 7. **Next**: one sentence leading to the next chapter.
 
 ## Speedrun

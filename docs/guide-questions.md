@@ -1,5 +1,10 @@
 # The questions each biome guide answers (draft for the owner, 2026-11-19)
 
+**From 2026-11-21 these are the Speedrun page's questions only** (the owner approved the rewrite,
+`guide-writing.md`): they were written for the speedrun, and the biome chapters built on them told the usual player
+a runner's story. The chapters are written anew from the usual player's question, "how do I explore this biome?";
+this list stays as the source of the runner's pages.
+
 The questions below were written for the speedrun (2026-11-19). Since 2026-11-20 the guides tell the usual game as
 the baseline and give each way of playing its own section where it needs one (`.claude/rules/site-text.md` → The
 baseline and the ways of playing); the questions stay the speedrun's part. As written then: the site answers one
