@@ -88,6 +88,20 @@ Chart: share
 
 The cores, the coal and the fine wood. A reverse run starts in the north but smelts with what grows here: the north's ore wants the smelter, the charcoal kiln for its coal and the blast furnace, and their cores come from the Burial Chambers. The furnace takes {{furnaceFineWood}} fine wood too, from the birches and oaks. Leave a portal here before sailing north, and the cores and the coal follow you through it.
 
+## Where is the iron without the Elder's key?
+
+In what you break on the way. Without his key a Sunken Crypt's door stays shut, and its chests and piles with it. The north asks for iron all the same, {{firstKeyIron}} for its own stations alone, the blast furnace, the frost foundry, the Black Forge's extensions with the Vice's mechanical springs, and the stonecutter ([What to break](/catalog/breakables)).
+
+| Breaking for iron, outside the crypts | One break gives iron |
+|---|---|
+| A frost cave's wooden gate, an iron bar | {{ironFrostGate}}% of breaks |
+| An Ashlands pot, an iron bar | {{ironAshPot}}% of breaks |
+| The Winding Tunnels' rubble, iron scrap | {{ironTunnelRubble}}% of breaks |
+| The Winding Tunnels' wardrobe shafts, iron scrap | {{ironTunnelShaft}}% of breaks |
+| A Mörkhalla's weapon stand, iron scrap | {{ironMorkStand}}% of breaks |
+
+The Winding Tunnels come before the Mörkhalla anyway, for the key's mould, so clear their rubble as you go. What the Swamp still gives you is its leeches: every leech drops a bloodbag, and a [frost resistance mead](/catalog/meads#meadfrostresist)'s base takes {{frostMeadBloodbags}} of them.
+
 ## How do I live through the first night?
 
 Every weather of the Deep North freezes you, day and night: no health coming back, stamina slower, and a little damage every second until you die. A fire alone or a roof alone softens it to cold; both together lift it, and so does any frost resistance.

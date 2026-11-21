@@ -59,6 +59,6 @@ The altar takes {{deerTrophies}} deer trophies. A deer outruns a club, so stalk 
 
 From one of his hard antlers and {{pickaxeWood}} wood at the workbench. It is the only pickaxe until bronze, and it breaks the copper and the tin that bronze is made of.
 
-His trophy goes on its stone among the Sacrificial Stones, and from then on his power is yours to call: {{eikthyrPowerPercent}}% less stamina for running, jumping and swimming, for {{eikthyrPowerMinutes}} minutes, ready again {{eikthyrPowerCooldownMinutes}} minutes after you called it. While he lived, his Necks and boars came for your walls now and then; that ends with him.
+His trophy goes on its stone among the Sacrificial Stones, and from then on his power is yours to call: {{eikthyrPowerPercent}}% less stamina for running, jumping and swimming, for {{powerMinutes}} minutes, ready again {{powerCooldownMinutes}} minutes after you called it. While he lived, his Necks and boars came for your walls now and then; that ends with him.
 
 You leave the Meadows with a home on the shore, leather on your back, a spear or a bow in hand, hives by the door, a pickaxe and a power that makes every walk cheaper. All of it was made where nothing could really hurt you. Not far from your door the trees close in, and under them everything can: the copper that buys your next armour lies at the edge of the [Black Forest](/guides/black-forest). Racing the clock, the Meadows are only a road to that copper, and the [Speedrun](/guides/speedrun#meadows) tells it.

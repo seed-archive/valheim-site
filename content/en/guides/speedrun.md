@@ -125,7 +125,23 @@ On {{baseElderNear}}% of seeds the Elder stands within {{bossNearM}} m of the ba
 
 Skipping the Elder has its price: his key opens the Sunken Crypts, and behind their doors lie the withered bones that summon Bonemass and the crypts' iron.
 
-**Bonemass**, for iron, and for the wishbone that sniffs out silver. [Swamp](/guides/swamp).
+### Swamp
+
+You want the mace, the pickaxe and the boss in one trip, then out. Stop digging once the chests and piles give the mace's iron and the pickaxe's, and count on a second visit for the stations: one more crypt then is quicker than a long dig now. A run to Kall spends {{runIron}} iron in all, the mace and the pickaxe included ([How much metal does a run spend?](#how-much-metal-does-a-run-spend)); the least a run to Kall needs, its gates alone, is {{leastIronDeepNorth}}.
+
+Smelt where the ore lies. A smelter and a forge by the crypt, fed by a surtlings' fire hole's coal and cores, turn the scrap into the mace on the spot, and best of all when the crypt by the fire hole is also the one by his altar, so the iron and the boss are one trip.
+
+| From Bonemass's altar | As a rule | Middle half of seeds |
+|---|---|---|
+| The nearest Sunken Crypt, m | {{bonemassCryptM}} | {{bonemassCryptMLow}}–{{bonemassCryptMHigh}} |
+| The nearest surtlings' fire hole, m | {{bonemassHoleM}} | {{bonemassHoleMLow}}–{{bonemassHoleMHigh}} |
+| From that crypt to its nearest fire hole, m | {{cryptHoleM}} | {{cryptHoleMLow}}–{{cryptHoleMHigh}} |
+
+With no fire hole near, it is the bad case: the scrap rides by cart and boat to the copper base's smelter. His Swamp seldom spares you that sail: it lies on the copper base's own land, no sea between, on only {{swampOnBaseLand}}% of seeds.
+
+Bonemass himself goes down quicker under a shelf: build a roof, get under it and hit him from below. Skip the Root Harnesk on a small Swamp rather than leave for a second one: on the Plains a bow in hand kills a Deathsquito with one arrow.
+
+Skipping the Swamp has its price: without the wishbone, silver means digging the Mountain blind and hoping Moder's shots dig it out, a poor hope; without iron the forge stays where bronze left it, and the iron pickaxe never comes.
 
 **Moder**, for silver, smelted right at her altar and carried down as bars: a cart on her slopes overturns. [Mountain](/guides/mountain).
 

@@ -41,6 +41,8 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Black Forest.** Fight a cave's troll only on your own terms: a starred troll is the forest's heaviest blow. Never use a troll as your miner; leave the cave's troll alone and mine the copper with your own pickaxe.
 
+**Swamp.** Sweep for the Root Harnesk before you ring Bonemass's altar: the ring that keeps the Draugr from rising stops the Abominations rising too.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
@@ -81,6 +83,8 @@ Find the shore first and keep the base by it: any coast leads home. Then build t
 
 **Black Forest.** Haldor is found by luck: circle your home in widening rings and search every Black Forest before you sail past it. Climb the stone towers, which hold the Elder's Vegvísir, and raise a tower of your own on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
 
+**Swamp.** The road home is the one you laid yourself: build it as you go in, not when you want out.
+
 ## How do I play with no portals?
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
@@ -109,6 +113,8 @@ The far south costs most: the [Drakkar](/catalog/ships), the one ship that cross
 ### What changes biome by biome with no portals?
 
 **Black Forest.** The cores a usual game spends on a pair of portals are yours to keep: you need only the kiln and the smelter, but again at every new base. The Elder's wood comes home on a cart or under sail, so what matters is whether his altar stands on your home's own land: one of his altars does on {{homeElderOnLand}}% of seeds, {{homeElderM}} m from home as a rule.
+
+**Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip.
 
 > **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 

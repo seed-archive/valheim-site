@@ -2,34 +2,19 @@ import type { Metadata } from "next";
 
 import { MarkdownGuide } from "@/components/guides/MarkdownGuide";
 import { readGuide } from "@/lib/content";
-import BOSSES from "@/lib/valheim/bosses.json";
 import SEED_STATS from "@/lib/valheim/seed-stats.json";
 import { SUMMONS } from "@/lib/valheim/summons";
 
 // The antler pickaxe's recipe: wood beside the antler (the game's
 // Recipe_PickaxeAntler).
 const PICKAXE_WOOD = 10;
-const SECONDS_A_MINUTE = 60;
-
-// Eikthyr's power as the Valheim generator read it from the game: how much
-// less stamina running costs, how long it lasts and when it is ready again.
-function eikthyrPower() {
-  const power = BOSSES.find((boss) => boss.key === "Eikthyr")?.power;
-  const run = power?.effects.find((effect) => effect.key === "runStamina");
-  return {
-    eikthyrPowerPercent: Math.abs(Number(run?.value)),
-    eikthyrPowerMinutes: Number(power?.seconds) / SECONDS_A_MINUTE,
-    eikthyrPowerCooldownMinutes: Number(power?.cooldown) / SECONDS_A_MINUTE,
-  };
-}
 
 // The seed scan's numbers come finished from the Valheim generator
-// (`seed-stats.json`); nothing is computed here but minutes from seconds.
+// (`seed-stats.json`); nothing is computed here.
 const guide = () =>
   readGuide("meadows", {
     ...SUMMONS,
     ...SEED_STATS,
-    ...eikthyrPower(),
     pickaxeWood: PICKAXE_WOOD,
   });
 
