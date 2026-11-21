@@ -1,0 +1,348 @@
+[
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBait",
+        "name": "Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Amber",
+        "name": "Amber"
+      },
+      {
+        "key": "Stone",
+        "name": "Stone"
+      }
+    ],
+    "key": "Fish1",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Perch",
+    "water": 1.5
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitDeepNorth",
+        "name": "Frosty Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "deepNorth"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "CarrotSeeds",
+        "name": "Carrot Seeds"
+      },
+      {
+        "key": "Silver",
+        "name": "Silver"
+      }
+    ],
+    "key": "Fish10",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Northern Salmon",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitAshlands",
+        "name": "Hot Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "ashlands"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "FlametalOreNew",
+        "name": "Flametal Ore"
+      },
+      {
+        "key": "Grausten",
+        "name": "Grausten"
+      },
+      {
+        "key": "SurtlingCore",
+        "name": "Surtling Core"
+      }
+    ],
+    "key": "Fish11",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Magmafish",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitMistlands",
+        "name": "Misty Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "mistlands",
+      "ocean"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Ooze",
+        "name": "Ooze"
+      },
+      {
+        "key": "Sap",
+        "name": "Sap"
+      }
+    ],
+    "key": "Fish12",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Pufferfish",
+    "water": 6.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBait",
+        "name": "Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "meadows",
+      "blackForest",
+      "plains"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "AmberPearl",
+        "name": "Amber Pearl"
+      },
+      {
+        "key": "Flint",
+        "name": "Flint"
+      }
+    ],
+    "key": "Fish2",
+    "maxDepth": 4.0,
+    "minDepth": 2.0,
+    "name": "Pike",
+    "water": 2.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitOcean",
+        "name": "Heavy Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "ocean"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Ruby",
+        "name": "Ruby"
+      },
+      {
+        "key": "TinOre",
+        "name": "Tin Ore"
+      }
+    ],
+    "key": "Fish3",
+    "maxDepth": 999.0,
+    "minDepth": 4.0,
+    "name": "Tuna",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitCave",
+        "name": "Cold Fishing Bait"
+      }
+    ],
+    "biomes": [],
+    "dungeons": [
+      "frostCave",
+      "hildirCave"
+    ],
+    "extras": [
+      {
+        "key": "Coins",
+        "name": "Coins"
+      },
+      {
+        "key": "Obsidian",
+        "name": "Obsidian"
+      }
+    ],
+    "key": "Fish4_cave",
+    "maxDepth": 1.0,
+    "minDepth": 0.5,
+    "name": "Tetra",
+    "water": null
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitForest",
+        "name": "Mossy Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "blackForest"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "CopperOre",
+        "name": "Copper Ore"
+      },
+      {
+        "key": "TrollHide",
+        "name": "Troll Hide"
+      }
+    ],
+    "key": "Fish5",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Trollfish",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitSwamp",
+        "name": "Sticky Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "swamp"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Chain",
+        "name": "Chain"
+      },
+      {
+        "key": "IronOre",
+        "name": "Iron Ore"
+      }
+    ],
+    "key": "Fish6",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Giant Herring",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitPlains",
+        "name": "Stingy Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "plains"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Barley",
+        "name": "Barley"
+      },
+      {
+        "key": "BlackMetalScrap",
+        "name": "Black Metal Scrap"
+      }
+    ],
+    "key": "Fish7",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Grouper",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitOcean",
+        "name": "Heavy Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "ocean"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "Chitin",
+        "name": "Chitin"
+      },
+      {
+        "key": "OnionSeeds",
+        "name": "Onion Seeds"
+      }
+    ],
+    "key": "Fish8",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Coral Cod",
+    "water": 5.0
+  },
+  {
+    "baits": [
+      {
+        "chance": 1.0,
+        "key": "FishingBaitMistlands",
+        "name": "Misty Fishing Bait"
+      }
+    ],
+    "biomes": [
+      "mistlands"
+    ],
+    "dungeons": [],
+    "extras": [
+      {
+        "key": "JuteBlue",
+        "name": "Blue Jute"
+      },
+      {
+        "key": "Softtissue",
+        "name": "Soft Tissue"
+      }
+    ],
+    "key": "Fish9",
+    "maxDepth": 3.0,
+    "minDepth": 1.5,
+    "name": "Anglerfish",
+    "water": 5.0
+  }
+]

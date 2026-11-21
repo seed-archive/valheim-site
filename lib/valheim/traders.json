@@ -1,0 +1,1439 @@
+{
+  "hildir": [
+    {
+      "biome": "blackForest",
+      "chest": "chest_hildir1",
+      "chestName": "Hildir's Brass Chest",
+      "dungeon": "Smouldering Tomb",
+      "guard": "Brenna",
+      "health": 1200.0,
+      "opens": 11
+    },
+    {
+      "biome": "mountain",
+      "chest": "chest_hildir2",
+      "chestName": "Hildir's Silver Chest",
+      "dungeon": "Howling Cavern",
+      "guard": "Geirrhafa",
+      "health": 3700.0,
+      "opens": 9
+    },
+    {
+      "biome": "plains",
+      "chest": "chest_hildir3",
+      "chestName": "Hildir's Bronze Chest",
+      "dungeon": "Sealed Tower",
+      "guard": "Zil & Thungr",
+      "health": 4200.0,
+      "opens": 10
+    }
+  ],
+  "traders": [
+    {
+      "goods": [
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetYule",
+          "name": "Yule Hat",
+          "places": 0,
+          "price": 100,
+          "requires": null,
+          "stack": 1,
+          "text": "A red cap in the style of house gnomes.",
+          "usedIn": []
+        },
+        {
+          "armor": 2.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetDverger",
+          "name": "Dverger Circlet",
+          "places": 0,
+          "price": 620,
+          "requires": null,
+          "stack": 1,
+          "text": "A portable perpetual lightsource for the dungeon explorer.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": 150.0,
+          "effect": "Increase max carry weight.",
+          "essential": "belt",
+          "key": "BeltStrength",
+          "name": "Megingjord",
+          "places": 0,
+          "price": 950,
+          "requires": null,
+          "stack": 1,
+          "text": "Gives the wearer superhuman strength.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": "The Elder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "YmirRemains",
+          "name": "Ymir Flesh",
+          "places": 0,
+          "price": 120,
+          "requires": "defeated_gdking",
+          "stack": 1,
+          "text": "The earthy remains of the giant Ymir.",
+          "usedIn": [
+            {
+              "key": "MaceSilver",
+              "name": "Frostner",
+              "then": null
+            },
+            {
+              "key": "SledgeIron",
+              "name": "Iron Sledge",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "FishingRod",
+          "name": "Fishing Rod",
+          "places": 0,
+          "price": 350,
+          "requires": null,
+          "stack": 1,
+          "text": "Standard issue dvergr fishing rod.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "FishingBait",
+          "name": "Fishing Bait",
+          "places": 0,
+          "price": 10,
+          "requires": null,
+          "stack": 20,
+          "text": "Common dvergr fishing bait. Fishing rod sold separately.",
+          "usedIn": [
+            {
+              "key": "FishingBaitAshlands",
+              "name": "Hot Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitCave",
+              "name": "Cold Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitDeepNorth",
+              "name": "Frosty Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitForest",
+              "name": "Mossy Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitMistlands",
+              "name": "Misty Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitOcean",
+              "name": "Heavy Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitPlains",
+              "name": "Stingy Fishing Bait",
+              "then": null
+            },
+            {
+              "key": "FishingBaitSwamp",
+              "name": "Sticky Fishing Bait",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "The Elder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "Thunderstone",
+          "name": "Thunder Stone",
+          "places": 0,
+          "price": 50,
+          "requires": "defeated_gdking",
+          "stack": 1,
+          "text": "It is crackling with energy.",
+          "usedIn": [
+            {
+              "key": "incinerator",
+              "name": "Obliterator",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Yagluth",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ChickenEgg",
+          "name": "Egg",
+          "places": 0,
+          "price": 1500,
+          "requires": "defeated_goblinking",
+          "stack": 1,
+          "text": "Keep it warm to see what comes out.. but what came first, really?",
+          "usedIn": [
+            {
+              "key": "CookedEgg",
+              "name": "Cooked Egg",
+              "then": null
+            },
+            {
+              "key": "MushroomOmelette",
+              "name": "Mushroom Omelette",
+              "then": null
+            },
+            {
+              "key": "Pancakes",
+              "name": "Pancakes",
+              "then": null
+            },
+            {
+              "key": "VikingCupcakeUncooked",
+              "name": "Unbaked Sweetbread",
+              "then": {
+                "key": "VikingCupcake",
+                "name": "Frosted Sweetbread"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "BarrelRings",
+          "name": "Barrel Hoops",
+          "places": 0,
+          "price": 100,
+          "requires": null,
+          "stack": 3,
+          "text": "These metal rings are perfectly round, suitable for holding a barrel together. Just add wood!",
+          "usedIn": [
+            {
+              "key": "piece_chest_barrel",
+              "name": "Barrel",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Moder",
+          "carry": null,
+          "effect": null,
+          "essential": "pockets",
+          "key": "invslot1",
+          "name": "Wider Pockets",
+          "places": 0,
+          "price": 1000,
+          "requires": "defeated_dragon",
+          "stack": 1,
+          "text": "A convenient belt pouch to store your items.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": "The Queen",
+          "carry": null,
+          "effect": null,
+          "essential": "pockets",
+          "key": "invslot2",
+          "name": "Deeper Pockets",
+          "places": 0,
+          "price": 2000,
+          "requires": "defeated_queen",
+          "stack": 1,
+          "text": "A practical belt bag to store your items.",
+          "usedIn": []
+        }
+      ],
+      "key": "Haldor",
+      "name": "Haldor"
+    },
+    {
+      "goods": [
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "CandleWick",
+          "name": "Candle Wick",
+          "places": 0,
+          "price": 100,
+          "requires": null,
+          "stack": 50,
+          "text": "Steep these in something flammable for a long lasting and cosy light source.",
+          "usedIn": [
+            {
+              "key": "Candle_resin",
+              "name": "Resin Candle",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Moder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ScytheHandle",
+          "name": "Scythe Handle",
+          "places": 0,
+          "price": 200,
+          "requires": "defeated_dragon",
+          "stack": 1,
+          "text": "A sturdy base for a tool.",
+          "usedIn": [
+            {
+              "key": "Scythe",
+              "name": "Scythe",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "MeadTrollPheromones",
+          "name": "Love Potion",
+          "places": 0,
+          "price": 110,
+          "requires": null,
+          "stack": 5,
+          "text": "An intense musk permeates the air around this bottle.",
+          "usedIn": [
+            {
+              "key": "MeadTrollPheromones",
+              "name": "Love Potion",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Moder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "MushroomBzerker",
+          "name": "Toadstool",
+          "places": 0,
+          "price": 85,
+          "requires": "defeated_dragon",
+          "stack": 1,
+          "text": "Some say you can eat everything you find in the forest. That is not the case with this mushroom.",
+          "usedIn": [
+            {
+              "key": "MeadBaseBzerker",
+              "name": "Mead base: Berserkir",
+              "then": {
+                "key": "MeadBzerker",
+                "name": "Berserkir Mead"
+              }
+            },
+            {
+              "key": "MushroomBzerker",
+              "name": "Toadstool",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Moder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "FragrantBundle",
+          "name": "Fragrant Bundle",
+          "places": 0,
+          "price": 140,
+          "requires": "defeated_dragon",
+          "stack": 5,
+          "text": "These plants carry a strong but pleasant scent. However, it's possible that not all creatures agree...",
+          "usedIn": [
+            {
+              "key": "MeadBaseBugRepellent",
+              "name": "Mead Base: Anti-Sting",
+              "then": {
+                "key": "MeadBugRepellent",
+                "name": "Anti-Sting Concoction"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "FreshSeaweed",
+          "name": "Fresh Seaweed",
+          "places": 0,
+          "price": 75,
+          "requires": null,
+          "stack": 5,
+          "text": "The saltwater scent of this plant makes you think of the wide open ocean.",
+          "usedIn": [
+            {
+              "key": "MeadBaseSwimmer",
+              "name": "Mead Base: Vananidir",
+              "then": {
+                "key": "MeadSwimmer",
+                "name": "Draught of Vananidir"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": "hamstring",
+          "key": "CuredSquirrelHamstring",
+          "name": "Cured Squirrel Hamstring",
+          "places": 0,
+          "price": 80,
+          "requires": null,
+          "stack": 5,
+          "text": "Elastic and strong. This tendon must have come from a quick and agile animal.",
+          "usedIn": [
+            {
+              "key": "MeadBaseHasty",
+              "name": "Mead base: Ratatosk",
+              "then": {
+                "key": "MeadHasty",
+                "name": "Tonic of Ratatosk"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "PowderedDragonEgg",
+          "name": "Powdered Dragon Eggshells",
+          "places": 0,
+          "price": 120,
+          "requires": null,
+          "stack": 5,
+          "text": "Dragon egg is a hard and difficult material to work with, yet here it has been ground to a fine, glittering dust...",
+          "usedIn": [
+            {
+              "key": "MeadBaseStrength",
+              "name": "Mead Base: Troll Endurance",
+              "then": {
+                "key": "MeadStrength",
+                "name": "Mead of Troll Endurance"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "PungentPebbles",
+          "name": "Pungent Pebbles",
+          "places": 0,
+          "price": 125,
+          "requires": null,
+          "stack": 5,
+          "text": null,
+          "usedIn": [
+            {
+              "key": "MeadBaseTamer",
+              "name": "Mead Base: Animal Whispers",
+              "then": {
+                "key": "MeadTamer",
+                "name": "Brew of Animal Whispers"
+              }
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "VineGreenSeeds",
+          "name": "Ivy Seeds",
+          "places": 0,
+          "price": 65,
+          "requires": null,
+          "stack": 3,
+          "text": "These unassuming seeds can grow into vines that might overtake entire buildings.",
+          "usedIn": [
+            {
+              "key": "VineGreen_sapling",
+              "name": "Ivy",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": "tray",
+          "key": "Feaster",
+          "name": "Serving Tray",
+          "places": 120,
+          "price": 140,
+          "requires": null,
+          "stack": 1,
+          "text": "Set the table with whatever food and drink you fancy, and impress your guests with a delicious feast.\n\nOnce a feast has been eaten of, it won't return any resources if dismantled.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": "The Elder",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceForests",
+          "name": "Woodland Herb Blend",
+          "places": 0,
+          "price": 120,
+          "requires": "defeated_gdking",
+          "stack": 5,
+          "text": "Thyme and marjoram carefully harvested and dried, before being mixed together. This blend will turn even the most basic of ingredients into a delicious feast.",
+          "usedIn": [
+            {
+              "key": "FeastBlackforest_Material",
+              "name": "Black Forest Buffet Platter",
+              "then": null
+            },
+            {
+              "key": "FeastMeadows_Material",
+              "name": "Whole Roasted Meadow Boar",
+              "then": null
+            },
+            {
+              "key": "FeastSwamps_Material",
+              "name": "Swamp Dweller's Delight",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Serpent",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceOceans",
+          "name": "Seafarer's Herbs",
+          "places": 0,
+          "price": 130,
+          "requires": "defeated_serpent",
+          "stack": 5,
+          "text": "The sour tang of sorrel, mixed with something the herbalist would rather not disclose, is well suitable for fish. Any fisherfolk worth their salt would do well to keep this blend near, in case of a good catch!",
+          "usedIn": [
+            {
+              "key": "FeastOceans_Material",
+              "name": "Sailor's Bounty",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Moder",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceMountains",
+          "name": "Mountain Peak Pepper Powder",
+          "places": 0,
+          "price": 140,
+          "requires": "defeated_dragon",
+          "stack": 5,
+          "text": "Only the most seasoned herbalist can find the pepperwood tree and harvest its leaves and bark. After careful preparation it's ready to be added to food, and is sure to give it some warming heat.",
+          "usedIn": [
+            {
+              "key": "FeastMountains_Material",
+              "name": "Hearty Mountain Logger's Stew",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Yagluth",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpicePlains",
+          "name": "Grasslands Herbalist Harvest",
+          "places": 0,
+          "price": 160,
+          "requires": "defeated_goblinking",
+          "stack": 5,
+          "text": "This blend utilises all aspects of the lovage plant, a rarity in the tenth world. Roots, leaves and seeds have all been gathered, and then mixed together in the perfect quantity.",
+          "usedIn": [
+            {
+              "key": "FeastPlains_Material",
+              "name": "Plains Pie Picnic",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "The Queen",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceMistlands",
+          "name": "Herbs of the Hidden Hills",
+          "places": 0,
+          "price": 180,
+          "requires": "defeated_queen",
+          "stack": 5,
+          "text": "A good herbalist knows exactly where to go to find ramsons, but she won't tell you the secrets of her trade! Still, if you have the coin for it you may treat yourself to this blend of finely harvested ramson bulbs and leaves.",
+          "usedIn": [
+            {
+              "key": "FeastMistlands_Material",
+              "name": "Mushrooms Galore á la Mistlands",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Fader",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceAshlands",
+          "name": "Fiery Spice Powder",
+          "places": 0,
+          "price": 200,
+          "requires": "defeated_fader",
+          "stack": 5,
+          "text": "Whatever spices have been used in this blend, they must come from someplace hot. And as if that wasn't enough, they have also been dried and smoked before being ground into a fine powder.",
+          "usedIn": [
+            {
+              "key": "FeastAshlands_Material",
+              "name": "Ashlands Gourmet Bowl",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "Kall Fimbulbringer",
+          "carry": null,
+          "effect": null,
+          "essential": "spices",
+          "key": "SpiceDeepNorth",
+          "name": "Seasoning of the Gourd",
+          "places": 0,
+          "price": 220,
+          "requires": "defeated_frozenking_p3",
+          "stack": 5,
+          "text": "Using cinnamon bark and ginger root, with a touch of nutmeg, the herbalist has travelled far to create this fine and warming blend of spices.",
+          "usedIn": [
+            {
+              "key": "FeastDeepNorth_Material",
+              "name": "Northern Morning Fare",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": "The Elder",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "BlobVial",
+          "name": "Corked Vial",
+          "places": 0,
+          "price": 150,
+          "requires": "defeated_gdking",
+          "stack": 5,
+          "text": "Thick enough to contain something volatile, yet fragile enough to be shattered.",
+          "usedIn": [
+            {
+              "key": "BombBlob_Frost",
+              "name": "Blob Bomb: Frost",
+              "then": null
+            },
+            {
+              "key": "BombBlob_Lava",
+              "name": "Blob Bomb: Lava",
+              "then": null
+            },
+            {
+              "key": "BombBlob_Morkhalla",
+              "name": "Blob Bomb: Pulp",
+              "then": null
+            },
+            {
+              "key": "BombBlob_Poison",
+              "name": "Blob Bomb: Poison",
+              "then": null
+            },
+            {
+              "key": "BombBlob_PoisonElite",
+              "name": "Blob Bomb: Elite Poison",
+              "then": null
+            },
+            {
+              "key": "BombBlob_Tar",
+              "name": "Blob Bomb: Tar",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": 1.0,
+          "boss": "Writhan",
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetRootCrown",
+          "name": "Crown of Roots",
+          "places": 0,
+          "price": 3000,
+          "requires": "defeated_writhan",
+          "stack": 1,
+          "text": "A painful, yet intricate headpiece.",
+          "usedIn": []
+        }
+      ],
+      "key": "BogWitch",
+      "name": "The Bog Witch"
+    },
+    {
+      "goods": [
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress2",
+          "name": "Brown Dress with Shawl",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A brown dress, with a matching shawl around the shoulders. Warm and stylish!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress3",
+          "name": "Brown Dress with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A fancy brown dress, with beads and silver fibula brooches. Excellent for a feast!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress5",
+          "name": "Blue Dress with Shawl",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A blue dress, with a green shawl around the shoulders. Warm and stylish!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress6",
+          "name": "Blue Dress with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A fancy blue dress, with beads and bronze fibula brooches. Excellent for a feast!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress8",
+          "name": "Yellow Dress with Shawl",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A yellow dress, with a purple shawl around the shoulders. Warm and stylish!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress9",
+          "name": "Yellow Dress with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A fancy yellow dress, with beads and silver fibula brooches. Excellent for a feast!",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress10",
+          "name": "Simple Undyed Dress",
+          "places": 0,
+          "price": 250,
+          "requires": null,
+          "stack": 1,
+          "text": "A simple dress for everyday wear.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic2",
+          "name": "Blue Tunic with Cape",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A blue tunic, worn with a fashionable cape made from fine brown wool.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic3",
+          "name": "Blue Tunic with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A blue tunic worn with beads and silver jewelry. Sure to attract attention from other vikings.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic5",
+          "name": "Red Tunic with Cape",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A red tunic, worn with a fashionable cape made from fine green wool.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic6",
+          "name": "Red Tunic with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A red tunic worn with beads and bronze jewelry. Sure to attract attention from other vikings.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic8",
+          "name": "Yellow Tunic with Cape",
+          "places": 0,
+          "price": 450,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A yellow tunic, worn with a fashionable cape made from fine purple wool.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic9",
+          "name": "Yellow Tunic with Beads",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A yellow tunic worn with beads and silver jewelry. Sure to attract attention from other vikings.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic10",
+          "name": "Simple Undyed Tunic",
+          "places": 0,
+          "price": 250,
+          "requires": null,
+          "stack": 1,
+          "text": "A simple tunic for everyday wear.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress1",
+          "name": "Plain Brown Dress",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain brown dress, worn over a blue underdress.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress4",
+          "name": "Plain Blue Dress",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain blue dress, worn over a red underdress.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorDress7",
+          "name": "Plain Yellow Dress",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain yellow dress, worn over a green underdress.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic1",
+          "name": "Plain Blue Tunic",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain blue tunic, brightly dyed.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic4",
+          "name": "Plain Red Tunic",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain red tunic, brightly dyed.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorTunic7",
+          "name": "Plain Yellow Tunic",
+          "places": 0,
+          "price": 350,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A plain yellow tunic, brightly dyed.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorHarvester1",
+          "name": "Harvest Tunic",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "When working the fields, it's important to dress accordingly. A shorter tunic lets in a cool breeze.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "ArmorHarvester2",
+          "name": "Harvest Dress",
+          "places": 0,
+          "price": 550,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "When working the fields, it's important to dress accordingly. This long dress keeps your knees covered while you work.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat1",
+          "name": "Blue Tied Headscarf",
+          "places": 0,
+          "price": 200,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A blue practical headscarf.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat2",
+          "name": "Green Twisted Headscarf",
+          "places": 0,
+          "price": 250,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A fancy green headscarf.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat3",
+          "name": "Brown Fur Cap",
+          "places": 0,
+          "price": 200,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "A warm fur cap, made from the finest leather.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat4",
+          "name": "Extravagant Green Cap",
+          "places": 0,
+          "price": 250,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A warm cap for special occasions.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat5",
+          "name": "Simple Red Cap",
+          "places": 0,
+          "price": 150,
+          "requires": null,
+          "stack": 1,
+          "text": "A simple yet fashionable red cap.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat6",
+          "name": "Yellow Tied Headscarf",
+          "places": 0,
+          "price": 250,
+          "requires": "Hildir2",
+          "stack": 1,
+          "text": "A practical yellow headscarf.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat7",
+          "name": "Red Twisted Headscarf",
+          "places": 0,
+          "price": 300,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A fancy red headscarf.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat8",
+          "name": "Grey Fur Cap",
+          "places": 0,
+          "price": 300,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A warm fur cap, made from the finest wool.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat9",
+          "name": "Extravagant Orange Cap",
+          "places": 0,
+          "price": 300,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": "A warm cap for special occasions.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetHat10",
+          "name": "Simple Purple Cap",
+          "places": 0,
+          "price": 150,
+          "requires": null,
+          "stack": 1,
+          "text": "A simple yet fashionable purple cap.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetStrawHat",
+          "name": "Straw Hat",
+          "places": 0,
+          "price": 300,
+          "requires": "Hildir1",
+          "stack": 1,
+          "text": "The perfect way to avoid sunstroke.",
+          "usedIn": []
+        },
+        {
+          "armor": 1.0,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "HelmetSweatBand",
+          "name": "Headband",
+          "places": 0,
+          "price": 175,
+          "requires": null,
+          "stack": 1,
+          "text": "It feels a bit...moist.",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "FireworksRocket_White",
+          "name": "Basic Fireworks",
+          "places": 0,
+          "price": 50,
+          "requires": "Hildir3",
+          "stack": 1,
+          "text": null,
+          "usedIn": [
+            {
+              "key": "FireworksRocket_Blue",
+              "name": "Blue Fireworks",
+              "then": null
+            },
+            {
+              "key": "FireworksRocket_Cyan",
+              "name": "Cyan Fireworks",
+              "then": null
+            },
+            {
+              "key": "FireworksRocket_Green",
+              "name": "Green Fireworks",
+              "then": null
+            },
+            {
+              "key": "FireworksRocket_Purple",
+              "name": "Purple Fireworks",
+              "then": null
+            },
+            {
+              "key": "FireworksRocket_Red",
+              "name": "Red Fireworks",
+              "then": null
+            },
+            {
+              "key": "FireworksRocket_Yellow",
+              "name": "Yellow Fireworks",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "Sparkler",
+          "name": "Sparkler",
+          "places": 0,
+          "price": 150,
+          "requires": null,
+          "stack": 1,
+          "text": "It's a stick that sparkles. Pretty!",
+          "usedIn": []
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "Ironpit",
+          "name": "Iron Pit",
+          "places": 0,
+          "price": 75,
+          "requires": null,
+          "stack": 1,
+          "text": "An empty vessel waiting to be filled with firewood and kindling.",
+          "usedIn": [
+            {
+              "key": "fire_pit_iron",
+              "name": "Iron Fire Pit",
+              "then": null
+            }
+          ]
+        },
+        {
+          "armor": null,
+          "boss": null,
+          "carry": null,
+          "effect": null,
+          "essential": null,
+          "key": "BarberKit",
+          "name": "Barber Kit",
+          "places": 0,
+          "price": 600,
+          "requires": null,
+          "stack": 1,
+          "text": "A kit fit for the finest of barbers.",
+          "usedIn": [
+            {
+              "key": "piece_barber",
+              "name": "Barber Station",
+              "then": null
+            }
+          ]
+        }
+      ],
+      "key": "Hildir",
+      "name": "Hildir"
+    }
+  ],
+  "valuables": [
+    {
+      "key": "AncientGemstoneBlack",
+      "name": "Draumyx",
+      "text": "A dark, opaque gem with a smooth and polished surface.",
+      "value": 175
+    },
+    {
+      "key": "AncientGemstonePurple",
+      "name": "Veydris",
+      "text": "A rich purple stone, suitable for royalty.",
+      "value": 135
+    },
+    {
+      "key": "AncientGemstoneOrange",
+      "name": "Solryth",
+      "text": "A vibrant orange stone, like a summer sunset.",
+      "value": 95
+    },
+    {
+      "key": "AncientGemstoneGreen",
+      "name": "Grimvarn",
+      "text": "A striking green gem, the colour reminiscent of deep forests.",
+      "value": 55
+    },
+    {
+      "key": "SilverNecklace",
+      "name": "Silver Necklace",
+      "text": "Valuable",
+      "value": 30
+    },
+    {
+      "key": "Ruby",
+      "name": "Ruby",
+      "text": "Valuable",
+      "value": 20
+    },
+    {
+      "key": "AmberPearl",
+      "name": "Amber Pearl",
+      "text": "Valuable",
+      "value": 10
+    },
+    {
+      "key": "AncientCoin",
+      "name": "Ancient Coin",
+      "text": "A relic of a lost age. Its surface still bears the trace of mysterious symbols.",
+      "value": 10
+    },
+    {
+      "key": "Amber",
+      "name": "Amber",
+      "text": "Valuable",
+      "value": 5
+    }
+  ]
+}

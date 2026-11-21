@@ -1,0 +1,3 @@
+{
+  "extends": ["github>seed-archive/renovate-config"]
+}

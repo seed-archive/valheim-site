@@ -1,0 +1,204 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import NextLink from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import { Controller, useForm } from "react-hook-form";
+import { FormattedMessage, useIntl } from "react-intl";
+
+import { ArchiveBar } from "@/components/archive/ArchiveBar";
+import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { PageTrail } from "@seed-archive/ui/page-trail";
+import { EXAMPLE_SEED, SEED_MAX, SEED_PATTERN } from "@/lib/world";
+import { MapClient } from "@seed-archive/map/client";
+import { StripReport } from "@/components/tools/seed/StripReport";
+import {
+  decodeMeasures,
+  decodePlaces,
+  moduleUrl,
+  type SeedMeasures,
+} from "@/lib/valheim/generator";
+import { BIOMES, find, type Found } from "@/lib/valheim/strip";
+
+type SeedForm = { seed: string };
+
+// How good is my seed: the visitor types a seed, the Valheim generator in the
+// browser measures that world, and each measure is set against the seed scan.
+export function SeedRating() {
+  const intl = useIntl();
+  const router = useRouter();
+  const pathname = usePathname();
+  // The seed lives in the address, so a rating can be shared; without one the
+  // example seed is filled in and rated at once (the owner, 2026-11-19).
+  const seed = useSearchParams().get("seed") ?? EXAMPLE_SEED;
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<SeedForm>({
+    defaultValues: { seed },
+    mode: "onChange",
+  });
+  const generator = useRef<MapClient | null>(null);
+  const [strip, setStrip] = useState<{ seed: string; found: Found[] } | null>(null);
+  // `complete` once the deep measures (the vegetation's, seconds later) are in.
+  const [measured, setMeasured] = useState<{
+    seed: string;
+    measures: SeedMeasures;
+    complete: boolean;
+  } | null>(null);
+
+  useEffect(() => {
+    // One worker: a seed is measured once, and no map is drawn here.
+    const gen = new MapClient(moduleUrl(), 1);
+    generator.current = gen;
+    return () => gen.close();
+  }, []);
+
+  useEffect(() => {
+    const gen = generator.current;
+    if (!gen || !seed) {
+      return;
+    }
+    let live = true;
+    // The bosses and traders against the strip first, then the measures.
+    const placesOnStrip = async () => {
+      const places = decodePlaces(await gen.call<Float32Array>("places", [seed, 0]));
+      const start = places.find((p) => p.key === "start") ?? { x: 0, y: 0 };
+      const found = BIOMES.flatMap((b) => (b.trader ? [b.boss, b.trader] : [b.boss])).map((k) =>
+        find(start, places.filter((p) => p.key === k), k),
+      );
+      live && setStrip({ seed, found });
+    };
+    placesOnStrip()
+      .then(() => gen.call<Float32Array>("measure", [seed]))
+      .then((raw) => {
+        const measures = decodeMeasures(raw);
+        if (live && measures) {
+          setMeasured({ seed, measures, complete: false });
+        }
+        return gen.call<Float32Array>("measure_deep", [seed]);
+      })
+      .then((raw) => {
+        const measures = decodeMeasures(raw);
+        if (live && measures) {
+          setMeasured({ seed, measures, complete: true });
+        }
+      });
+    return () => {
+      live = false;
+    };
+  }, [seed]);
+
+  const rate = handleSubmit(({ seed }) => {
+    const text = seed.trim() || EXAMPLE_SEED;
+    router.replace(`${pathname}?${new URLSearchParams({ seed: text })}`, {
+      scroll: false,
+    });
+  });
+
+  const current = measured && measured.seed === seed ? measured.measures : null;
+
+  return (
+    <>
+      <ArchiveBar />
+      <Container
+        component="main"
+        maxWidth="md"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
+        <PageTrail
+          steps={[
+            { name: <FormattedMessage id="archive.home" />, href: "/" },
+            { name: <FormattedMessage id="archive.tools" />, href: "/tools" },
+            { name: <FormattedMessage id="archive.seedRating" /> },
+          ]}
+        />
+        <Typography variant="h3" component="h1" gutterBottom>
+          <FormattedMessage id="pages.seedRating.title" />
+        </Typography>
+        <Typography gutterBottom>
+          <FormattedMessage
+            id="pages.seedRating.lead"
+            values={{ b: (text) => <b>{text}</b> }}
+          />
+        </Typography>
+        <Stack
+          component="form"
+          onSubmit={rate}
+          direction="row"
+          spacing={1}
+          sx={{ my: 3, maxWidth: 420 }}
+        >
+          <Controller
+            name="seed"
+            control={control}
+            rules={{ maxLength: SEED_MAX, pattern: SEED_PATTERN }}
+            render={({ field, fieldState }) => (
+              <TextField
+                {...field}
+                error={Boolean(fieldState.error)}
+                helperText={
+                  fieldState.error
+                    ? intl.formatMessage({ id: "pages.map.seedRule" })
+                    : undefined
+                }
+                size="small"
+                fullWidth
+                label={intl.formatMessage({ id: "pages.map.seed" })}
+                placeholder={EXAMPLE_SEED}
+                slotProps={{
+                  htmlInput: { maxLength: SEED_MAX, spellCheck: false },
+                  inputLabel: { shrink: true },
+                }}
+              />
+            )}
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            disabled={!isValid}
+            sx={{ alignSelf: "flex-start" }}
+          >
+            <FormattedMessage id="pages.seedRating.rate" />
+          </Button>
+        </Stack>
+        {seed ? (
+          <Paper variant="outlined" sx={{ p: { xs: 2, md: 3 } }}>
+            <Typography variant="h5" component="h2" gutterBottom>
+              <FormattedMessage id="pages.map.report.title" values={{ seed }} />
+            </Typography>
+            <Typography gutterBottom>
+              <FormattedMessage
+                id="pages.seedRating.toMap"
+                values={{
+                  link: (text) => (
+                    <Link
+                      component={NextLink}
+                      href={`/tools/map?${new URLSearchParams({ seed })}`}
+                    >
+                      {text}
+                    </Link>
+                  ),
+                }}
+              />
+            </Typography>
+            <StripReport
+              measures={current}
+              complete={Boolean(measured && measured.seed === seed && measured.complete)}
+              found={strip && strip.seed === seed ? strip.found : null}
+            />
+          </Paper>
+        ) : null}
+      </Container>
+      <ArchiveFooter />
+    </>
+  );
+}

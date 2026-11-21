@@ -1,0 +1,2347 @@
+[
+  {
+    "key": "greydwarfCamp",
+    "kind": "place",
+    "prefab": "Greydwarf_camp1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Greydwarf",
+          "Greydwarf_Elite",
+          "Greydwarf_Shaman"
+        ],
+        "kind": "greydwarfNest",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "grave",
+    "kind": "place",
+    "prefab": "Grave1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Draugr",
+          "Draugr_Elite",
+          "Draugr_Ranged"
+        ],
+        "kind": "draugr",
+        "percent": 100
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton_Swamps"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "ruins",
+    "kind": "place",
+    "prefab": "SwampRuin1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr_Elite"
+        ],
+        "kind": "draugr",
+        "percent": 32
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Draugr"
+        ],
+        "kind": "draugr",
+        "percent": 50
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr",
+          "Draugr_Elite",
+          "Draugr_Ranged"
+        ],
+        "kind": "draugr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "ruins",
+    "kind": "place",
+    "prefab": "SwampRuin2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr_Elite"
+        ],
+        "kind": "draugr",
+        "percent": 32
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Draugr"
+        ],
+        "kind": "draugr",
+        "percent": 50
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr",
+          "Draugr_Elite",
+          "Draugr_Ranged"
+        ],
+        "kind": "draugr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "fireHole",
+    "kind": "place",
+    "prefab": "FireHole",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Surtling"
+        ],
+        "kind": "surtlings",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "runestone",
+    "kind": "place",
+    "prefab": "Runestone_Draugr",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Draugr"
+        ],
+        "kind": "draugr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "burialChamber",
+    "kind": "dungeon",
+    "prefab": "Crypt2",
+    "roomCreatures": [
+      "Ghost",
+      "Skeleton",
+      "Skeleton_Poison"
+    ],
+    "roomKinds": [
+      "ghosts",
+      "skeletons"
+    ],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "stoneHouse",
+    "kind": "place",
+    "prefab": "StoneHouse1_heath",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "stoneHouse",
+    "kind": "place",
+    "prefab": "StoneHouse2_heath",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "ruins",
+    "kind": "place",
+    "prefab": "Ruin3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "fulingOutpost",
+    "kind": "place",
+    "prefab": "StoneTower1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 27
+      },
+      {
+        "count": 6,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 54
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTower3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 27
+      },
+      {
+        "count": 10,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 54
+      }
+    ]
+  },
+  {
+    "key": "standingStones",
+    "kind": "place",
+    "prefab": "StoneHenge1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 25
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "standingStones",
+    "kind": "place",
+    "prefab": "StoneHenge2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 25
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "standingStones",
+    "kind": "place",
+    "prefab": "StoneHenge3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 25
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "standingStones",
+    "kind": "place",
+    "prefab": "StoneHenge4",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "standingStones",
+    "kind": "place",
+    "prefab": "StoneHenge5",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 41
+      }
+    ]
+  },
+  {
+    "key": "trollCave",
+    "kind": "place",
+    "prefab": "TrollCave02",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Troll"
+        ],
+        "kind": "trolls",
+        "percent": 33
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Troll"
+        ],
+        "kind": "trolls",
+        "percent": 75
+      }
+    ]
+  },
+  {
+    "key": "sunkenCrypt",
+    "kind": "dungeon",
+    "prefab": "SunkenCrypt4",
+    "roomCreatures": [
+      "Blob",
+      "Draugr",
+      "Draugr_Elite",
+      "Draugr_Ranged"
+    ],
+    "roomKinds": [
+      "blobs",
+      "draugr"
+    ],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "BlobElite"
+        ],
+        "kind": "blobs",
+        "percent": 30
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr"
+        ],
+        "kind": "draugr",
+        "percent": 30
+      }
+    ]
+  },
+  {
+    "key": "dolmen",
+    "kind": "place",
+    "prefab": "Dolmen01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton_Meadows_noarcher"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "dolmen",
+    "kind": "place",
+    "prefab": "Dolmen02",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton_Meadows_noarcher"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "dolmen",
+    "kind": "place",
+    "prefab": "Dolmen03",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton_Meadows_noarcher"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "burialChamber",
+    "kind": "dungeon",
+    "prefab": "Crypt3",
+    "roomCreatures": [
+      "Ghost",
+      "Skeleton",
+      "Skeleton_Poison"
+    ],
+    "roomKinds": [
+      "ghosts",
+      "skeletons"
+    ],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "burialChamber",
+    "kind": "dungeon",
+    "prefab": "Crypt4",
+    "roomCreatures": [
+      "Ghost",
+      "Skeleton",
+      "Skeleton_Poison"
+    ],
+    "roomKinds": [
+      "ghosts",
+      "skeletons"
+    ],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut4",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr_Ranged"
+        ],
+        "kind": "draugr",
+        "percent": 20
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Draugr_Ranged"
+        ],
+        "kind": "draugr",
+        "percent": 30
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Draugr"
+        ],
+        "kind": "draugr",
+        "percent": 75
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut5",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "well",
+    "kind": "place",
+    "prefab": "SwampWell1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Draugr_Elite"
+        ],
+        "kind": "draugr",
+        "percent": 32
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins04",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 9
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 33
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins05",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 12,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 11
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 17
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 33
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins03",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 6,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 33
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins07",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 13
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 25
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins08",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 13
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins09",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 17
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 33
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins10",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 13
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "shipSetting",
+    "kind": "place",
+    "prefab": "ShipSetting01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton_Meadows_noarcher"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "drakeNest",
+    "kind": "place",
+    "prefab": "DrakeNest01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Hatchling"
+        ],
+        "kind": "drakes",
+        "percent": 66
+      }
+    ]
+  },
+  {
+    "key": "abandonedHouse",
+    "kind": "place",
+    "prefab": "AbandonedLogCabin02",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "StoneGolem"
+        ],
+        "kind": "golems",
+        "percent": 10
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "StoneGolem"
+        ],
+        "kind": "golems",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "abandonedHouse",
+    "kind": "place",
+    "prefab": "AbandonedLogCabin03",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "StoneGolem"
+        ],
+        "kind": "golems",
+        "percent": 10
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "abandonedHouse",
+    "kind": "place",
+    "prefab": "AbandonedLogCabin04",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "StoneGolem"
+        ],
+        "kind": "golems",
+        "percent": 10
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "runestone",
+    "kind": "place",
+    "prefab": "Runestone_Boars",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 8,
+        "creatures": [
+          "Boar"
+        ],
+        "kind": "boars",
+        "percent": 50
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Boar"
+        ],
+        "kind": "boars",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "ruins",
+    "kind": "place",
+    "prefab": "CombatRuin01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 7,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 7,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "frostCave",
+    "kind": "dungeon",
+    "prefab": "MountainCave02",
+    "roomCreatures": [
+      "Bat",
+      "Fenring_Cultist",
+      "Fenring_Cultist_Hildir",
+      "StoneGolem",
+      "Ulv"
+    ],
+    "roomKinds": [
+      "bats",
+      "cultists",
+      "golems",
+      "ulvs"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower1_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 5,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower1_ruined_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 2
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 3
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 9
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 19
+      },
+      {
+        "count": 3,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower1_ruined_new2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower2_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 5,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower3_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_GuardTower3_ruined_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_Lighthouse1_new",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 5,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "excavation",
+    "kind": "place",
+    "prefab": "Mistlands_Excavation1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 6,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 33
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 66
+      }
+    ]
+  },
+  {
+    "key": "excavation",
+    "kind": "place",
+    "prefab": "Mistlands_Excavation2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 5,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 33
+      },
+      {
+        "count": 5,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 66
+      }
+    ]
+  },
+  {
+    "key": "excavation",
+    "kind": "place",
+    "prefab": "Mistlands_Excavation3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_Harbour1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 13
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 25
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 66
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Dverger"
+        ],
+        "kind": "dvergr",
+        "percent": 75
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_RockSpire1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 75
+      }
+    ]
+  },
+  {
+    "key": "giantRemains",
+    "kind": "place",
+    "prefab": "Mistlands_Giant1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 5,
+        "creatures": [
+          "Tick"
+        ],
+        "kind": "ticks",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "infestedMine",
+    "kind": "dungeon",
+    "prefab": "Mistlands_DvergrTownEntrance1",
+    "roomCreatures": [
+      "Seeker",
+      "SeekerBrute",
+      "Tick"
+    ],
+    "roomKinds": [
+      "seekers",
+      "ticks"
+    ],
+    "spawners": [
+      {
+        "count": 5,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "infestedMine",
+    "kind": "dungeon",
+    "prefab": "Mistlands_DvergrTownEntrance2",
+    "roomCreatures": [
+      "Seeker",
+      "SeekerBrute",
+      "Tick"
+    ],
+    "roomKinds": [
+      "seekers",
+      "ticks"
+    ],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "theQueen",
+    "kind": "dungeon",
+    "prefab": "Mistlands_DvergrBossEntrance1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "Seeker"
+        ],
+        "kind": "seekers",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "dvergrRuins",
+    "kind": "place",
+    "prefab": "Mistlands_RoadPost1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Dverger",
+          "DvergerMage"
+        ],
+        "kind": "dvergr",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "hildirCave",
+    "kind": "dungeon",
+    "prefab": "Hildir_cave",
+    "roomCreatures": [
+      "Bat",
+      "Fenring_Cultist_Hildir",
+      "Ulv"
+    ],
+    "roomKinds": [
+      "bats",
+      "cultists",
+      "ulvs"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "hildirCrypt",
+    "kind": "dungeon",
+    "prefab": "Hildir_crypt",
+    "roomCreatures": [
+      "Ghost",
+      "Skeleton",
+      "Skeleton_Hildir"
+    ],
+    "roomKinds": [
+      "ghosts",
+      "skeletons"
+    ],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "hildirFortress",
+    "kind": "dungeon",
+    "prefab": "Hildir_plainsfortress",
+    "roomCreatures": [
+      "Goblin",
+      "GoblinArcher",
+      "GoblinBruteBros",
+      "GoblinShaman"
+    ],
+    "roomKinds": [
+      "fulings"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "placeOfMystery",
+    "kind": "place",
+    "prefab": "PlaceofMystery1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Charred_Archer",
+          "Charred_Mage",
+          "Charred_Melee",
+          "Charred_Twitcher"
+        ],
+        "kind": "charred",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "placeOfMystery",
+    "kind": "place",
+    "prefab": "PlaceofMystery2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Charred_Archer",
+          "Charred_Mage",
+          "Charred_Melee",
+          "Charred_Twitcher"
+        ],
+        "kind": "charred",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "placeOfMystery",
+    "kind": "place",
+    "prefab": "PlaceofMystery3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Charred_Archer",
+          "Charred_Mage",
+          "Charred_Melee",
+          "Charred_Melee_Dyrnwyn",
+          "Charred_Twitcher"
+        ],
+        "kind": "charred",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "fortress",
+    "kind": "place",
+    "prefab": "CharredFortress",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 6,
+        "creatures": [
+          "Charred_Archer",
+          "Charred_Mage"
+        ],
+        "kind": "charred",
+        "percent": 60
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "piece_Charred_Balista"
+        ],
+        "kind": "charred",
+        "percent": 80
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "Charred_Archer",
+          "Charred_Mage",
+          "Charred_Melee"
+        ],
+        "kind": "charred",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "charredSpawner",
+    "kind": "place",
+    "prefab": "CharredStone_Spawner",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Charred_Melee",
+          "Charred_Twitcher"
+        ],
+        "kind": "charred",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "voltureNest",
+    "kind": "place",
+    "prefab": "VoltureNest",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Volture"
+        ],
+        "kind": "voltures",
+        "percent": 25
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Volture"
+        ],
+        "kind": "voltures",
+        "percent": 50
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Volture"
+        ],
+        "kind": "voltures",
+        "percent": 75
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "Volture"
+        ],
+        "kind": "voltures",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "charredRuins",
+    "kind": "place",
+    "prefab": "CharredTowerRuins1_dvergr",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "DvergerAshlands"
+        ],
+        "kind": "dvergr",
+        "percent": 75
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "DvergerAshlands"
+        ],
+        "kind": "dvergr",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "charredRuins",
+    "kind": "place",
+    "prefab": "CharredTowerRuins3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Charred_Melee",
+          "Charred_Twitcher"
+        ],
+        "kind": "charred",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "morgenHole",
+    "kind": "place",
+    "prefab": "MorgenHole1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Morgen"
+        ],
+        "kind": "morgens",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "morgenHole",
+    "kind": "place",
+    "prefab": "MorgenHole2",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Morgen"
+        ],
+        "kind": "morgens",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "morgenHole",
+    "kind": "place",
+    "prefab": "MorgenHole3",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Morgen"
+        ],
+        "kind": "morgens",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "bogWitch",
+    "kind": "place",
+    "prefab": "BogWitch_Camp",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "BogWitchKvastur"
+        ],
+        "kind": "otherCreatures",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "unnamed",
+    "kind": "place",
+    "prefab": "TheDarkestHole",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Ghost_old"
+        ],
+        "kind": "ghosts",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "theHole",
+    "kind": "dungeon",
+    "prefab": "TheHole01",
+    "roomCreatures": [
+      "Elaking",
+      "ElakingLantern",
+      "ElakingMole"
+    ],
+    "roomKinds": [
+      "otherCreatures"
+    ],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "ShadowPerson"
+        ],
+        "kind": "ghosts",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "morkhalla",
+    "kind": "dungeon",
+    "prefab": "MorkBorg",
+    "roomCreatures": [
+      "BlobMork",
+      "DvergerDeepNorth",
+      "GoblinDeepNorth",
+      "JotunWarrior",
+      "JotunWarriorDualWield",
+      "JotunWitch"
+    ],
+    "roomKinds": [
+      "blobs",
+      "dvergr",
+      "fulings",
+      "otherCreatures"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "unnamed",
+    "kind": "dungeon",
+    "prefab": "HalfBurried_ForestCrypt",
+    "roomCreatures": [
+      "Skeleton"
+    ],
+    "roomKinds": [
+      "skeletons"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "unnamed",
+    "kind": "place",
+    "prefab": "FimbulLocation01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "JotunWarrior",
+          "JotunWarriorDualWield",
+          "JotunWitch"
+        ],
+        "kind": "otherCreatures",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "bearDen",
+    "kind": "place",
+    "prefab": "BearCave",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Bjorn_sleeping"
+        ],
+        "kind": "bears",
+        "percent": 75
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins09_sunk",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 2,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 8
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins10_sunk",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Skeleton"
+        ],
+        "kind": "skeletons",
+        "percent": 6
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut1_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut2_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "swampHut",
+    "kind": "place",
+    "prefab": "SwampHut3_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "Wraith"
+        ],
+        "kind": "wraiths",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "key": "stoneTower",
+    "kind": "place",
+    "prefab": "StoneTowerRuins05_leet",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 15,
+        "creatures": [
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 33
+      },
+      {
+        "count": 5,
+        "creatures": [
+          "Skeleton",
+          "Skeleton_Mountains"
+        ],
+        "kind": "skeletons",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "unnamed",
+    "kind": "place",
+    "prefab": "GoblinHut01",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 3,
+        "creatures": [
+          "Goblin"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "unnamed",
+    "kind": "place",
+    "prefab": "GoblinHut02",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 10
+      },
+      {
+        "count": 4,
+        "creatures": [
+          "Goblin",
+          "GoblinShaman"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "key": "unnamed",
+    "kind": "place",
+    "prefab": "GoblinHut03",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinBrute"
+        ],
+        "kind": "fulings",
+        "percent": 10
+      },
+      {
+        "count": 6,
+        "creatures": [
+          "Goblin",
+          "GoblinShaman"
+        ],
+        "kind": "fulings",
+        "percent": 50
+      },
+      {
+        "count": 1,
+        "creatures": [
+          "GoblinArcher"
+        ],
+        "kind": "fulings",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit1_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 7,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit2_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 7,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "tarPit",
+    "kind": "place",
+    "prefab": "TarPit3_1",
+    "roomCreatures": [],
+    "roomKinds": [],
+    "spawners": [
+      {
+        "count": 4,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 50
+      },
+      {
+        "count": 2,
+        "creatures": [
+          "BlobTar"
+        ],
+        "kind": "blobs",
+        "percent": 100
+      }
+    ]
+  },
+  {
+    "key": "charredRuins",
+    "kind": "camp",
+    "prefab": "AshlandRuins",
+    "roomCreatures": [
+      "Morgen"
+    ],
+    "roomKinds": [
+      "morgens"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "ruins",
+    "kind": "camp",
+    "prefab": "FortressRuins",
+    "roomCreatures": [
+      "Charred_Twitcher",
+      "Morgen"
+    ],
+    "roomKinds": [
+      "morgens",
+      "twitchers"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "fulingVillage",
+    "kind": "camp",
+    "prefab": "GoblinCamp2",
+    "roomCreatures": [
+      "Goblin",
+      "GoblinArcher",
+      "GoblinBrute",
+      "GoblinShaman"
+    ],
+    "roomKinds": [
+      "fulings"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "fulingVillage",
+    "kind": "camp",
+    "prefab": "GoblinCamp2_1",
+    "roomCreatures": [
+      "Goblin",
+      "GoblinArcher",
+      "GoblinBrute",
+      "GoblinShaman"
+    ],
+    "roomKinds": [
+      "fulings"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "northVillage",
+    "kind": "camp",
+    "prefab": "NorthVillage",
+    "roomCreatures": [
+      "ShadowPerson"
+    ],
+    "roomKinds": [
+      "ghosts"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "abandonedFarm",
+    "kind": "camp",
+    "prefab": "WoodFarm1",
+    "roomCreatures": [
+      "Boar"
+    ],
+    "roomKinds": [
+      "boars"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "draugrVillage",
+    "kind": "camp",
+    "prefab": "WoodVillage1",
+    "roomCreatures": [
+      "Draugr",
+      "Draugr_Elite",
+      "Draugr_Ranged"
+    ],
+    "roomKinds": [
+      "draugr"
+    ],
+    "spawners": []
+  },
+  {
+    "key": "draugrVillage",
+    "kind": "camp",
+    "prefab": "WoodVillage2",
+    "roomCreatures": [
+      "Draugr",
+      "Draugr_Elite",
+      "Draugr_Ranged"
+    ],
+    "roomKinds": [
+      "draugr"
+    ],
+    "spawners": []
+  }
+]

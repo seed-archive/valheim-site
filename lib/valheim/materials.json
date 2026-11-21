@@ -1,0 +1,9164 @@
+[
+  {
+    "biome": "meadows",
+    "caughtWith": [
+      {
+        "key": "Fish2",
+        "name": "Pike"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AmberPearl",
+    "made": false,
+    "name": "Amber Pearl",
+    "places": [
+      "abandonedHouse",
+      "burialChamber",
+      "dolmen",
+      "grave",
+      "hildirCrypt",
+      "hildirFortress",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "stoneTower",
+      "sunkenCrypt",
+      "trollCave",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "BarberKit",
+    "made": false,
+    "name": "Barber Kit",
+    "places": [],
+    "soldBy": [
+      "Hildir"
+    ]
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FireworksRocket_White",
+    "made": false,
+    "name": "Basic Fireworks",
+    "places": [],
+    "soldBy": [
+      "Hildir"
+    ]
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "BeechSeeds",
+    "made": false,
+    "name": "Beech Seeds",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Boar",
+        "name": "Boar"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "RawMeat",
+    "made": false,
+    "name": "Boar Meat",
+    "places": [
+      "runestone"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Boar",
+        "name": "Boar"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBoar",
+    "made": false,
+    "name": "Boar Trophy",
+    "places": [
+      "runestone"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Skeleton",
+        "name": "Skeleton"
+      },
+      {
+        "key": "Skeleton_Poison",
+        "name": "Rancid Remains"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "BoneFragments",
+    "made": false,
+    "name": "Bone Fragments",
+    "places": [
+      "abandonedHouse",
+      "bearDen",
+      "burialChamber",
+      "dolmen",
+      "fortress",
+      "frostCave",
+      "fulingVillage",
+      "grave",
+      "hildirCave",
+      "hildirCrypt",
+      "hildirFortress",
+      "morgenHole",
+      "northMemorial",
+      "ruins",
+      "shipSetting",
+      "stoneTower",
+      "tarPit",
+      "trollCave",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [
+      {
+        "key": "Fish4_cave",
+        "name": "Tetra"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Dverger",
+        "name": "Dvergr Rogue"
+      },
+      {
+        "key": "DvergerDeepNorth",
+        "name": "Imprisoned Dvergr"
+      },
+      {
+        "key": "DvergerMage",
+        "name": "Dvergr Mage"
+      },
+      {
+        "key": "Goblin",
+        "name": "Fuling"
+      },
+      {
+        "key": "GoblinBrute",
+        "name": "Fuling Berserker"
+      },
+      {
+        "key": "GoblinDeepNorth",
+        "name": "Captive Fuling"
+      },
+      {
+        "key": "GoblinShaman",
+        "name": "Fuling Shaman"
+      },
+      {
+        "key": "Troll",
+        "name": "Troll"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Coins",
+    "made": false,
+    "name": "Coins",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "burialChamber",
+      "charredRuins",
+      "dolmen",
+      "draugrVillage",
+      "dvergrRuins",
+      "excavation",
+      "fortress",
+      "frostCave",
+      "fulingOutpost",
+      "fulingVillage",
+      "grave",
+      "hildirCave",
+      "hildirCrypt",
+      "hildirFortress",
+      "infestedMine",
+      "lumberCamp",
+      "morgenHole",
+      "northHomestead",
+      "northVillage",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "standingStones",
+      "stoneHouse",
+      "stoneTower",
+      "sunkenCrypt",
+      "swampHut",
+      "trollCave",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedMeat",
+    "made": true,
+    "name": "Cooked Boar Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedDeerMeat",
+    "made": true,
+    "name": "Cooked Deer Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AxeHead1",
+    "made": false,
+    "name": "Curious Axe Head",
+    "places": [
+      "abandonedHouse"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Dandelion",
+    "made": false,
+    "name": "Dandelion",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "fulingVillage",
+      "greydwarfCamp"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deer",
+        "name": "Deer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DeerHide",
+    "made": false,
+    "name": "Deer Hide",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "ruins",
+      "stoneTower",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deer",
+        "name": "Deer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DeerMeat",
+    "made": false,
+    "name": "Deer Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deer",
+        "name": "Deer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDeer",
+    "made": false,
+    "name": "Deer Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Draugr_Elite",
+        "name": "Draugr Elite"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDraugrElite",
+    "made": false,
+    "name": "Draugr Elite Trophy",
+    "places": [
+      "grave",
+      "northVillage",
+      "ruins",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Draugr",
+        "name": "Draugr"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDraugr",
+    "made": false,
+    "name": "Draugr Trophy",
+    "places": [
+      "grave",
+      "ruins",
+      "runestone",
+      "sunkenCrypt",
+      "swampHut"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Eikthyr",
+        "name": "Eikthyr"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyEikthyr",
+    "made": false,
+    "name": "Eikthyr Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Draugr",
+        "name": "Draugr"
+      },
+      {
+        "key": "Draugr_Elite",
+        "name": "Draugr Elite"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Entrails",
+    "made": false,
+    "name": "Entrails",
+    "places": [
+      "frostCave",
+      "grave",
+      "hildirCave",
+      "morgenHole",
+      "ruins",
+      "runestone",
+      "sunkenCrypt",
+      "swampHut",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Chicken",
+        "name": "Chicken"
+      },
+      {
+        "key": "Hen",
+        "name": "Hen"
+      },
+      {
+        "key": "Volture",
+        "name": "Volture"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Feathers",
+    "made": true,
+    "name": "Feathers",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "burialChamber",
+      "charredRuins",
+      "draugrVillage",
+      "hildirCrypt",
+      "lumberCamp",
+      "northHomestead",
+      "northVillage",
+      "rockClearing",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "standingStones",
+      "stoneHouse",
+      "stoneTower",
+      "swampHut",
+      "trollCave",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [
+      {
+        "key": "Fish2",
+        "name": "Pike"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Flint",
+    "made": false,
+    "name": "Flint",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "draugrVillage",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "NeckTailGrilled",
+    "made": true,
+    "name": "Grilled Neck Tail",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Eikthyr",
+        "name": "Eikthyr"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "HardAntler",
+    "made": false,
+    "name": "Hard Antler",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Honey",
+    "made": true,
+    "name": "Honey",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "bearDen",
+      "draugrVillage",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Ironpit",
+    "made": false,
+    "name": "Iron Pit",
+    "places": [],
+    "soldBy": [
+      "Hildir"
+    ]
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bat",
+        "name": "Bat"
+      },
+      {
+        "key": "Boar",
+        "name": "Boar"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LeatherScraps",
+    "made": false,
+    "name": "Leather Scraps",
+    "places": [
+      "ruins",
+      "runestone",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "Mushroom",
+    "made": false,
+    "name": "Mushroom",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "start"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AxeHead2",
+    "made": false,
+    "name": "Mysterious Axe Head",
+    "places": [
+      "abandonedHouse"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Neck",
+        "name": "Neck"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "NeckTail",
+    "made": false,
+    "name": "Neck Tail",
+    "places": [
+      "haldor",
+      "hildir",
+      "kall",
+      "northMemorial"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Neck",
+        "name": "Neck"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyNeck",
+    "made": false,
+    "name": "Neck Trophy",
+    "places": [
+      "haldor",
+      "hildir",
+      "kall",
+      "northMemorial"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "QueenBee",
+    "made": false,
+    "name": "Queen Bee",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "bearDen",
+      "draugrVillage",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "Raspberry",
+    "made": false,
+    "name": "Raspberries",
+    "places": [
+      "abandonedFarm",
+      "start"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BogWitchKvastur",
+        "name": "Kvastur"
+      },
+      {
+        "key": "Greydwarf",
+        "name": "Greydwarf"
+      },
+      {
+        "key": "Greydwarf_Shaman",
+        "name": "Greydwarf Shaman"
+      },
+      {
+        "key": "Greyling",
+        "name": "Greyling"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Resin",
+    "made": false,
+    "name": "Resin",
+    "places": [
+      "abandonedHouse",
+      "bogWitch",
+      "greydwarfCamp",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "StoneRock",
+    "made": false,
+    "name": "Rock",
+    "places": [
+      "rockClearing"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [
+      {
+        "key": "Fish3",
+        "name": "Tuna"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Ruby",
+    "made": false,
+    "name": "Ruby",
+    "places": [
+      "abandonedHouse",
+      "burialChamber",
+      "frostCave",
+      "grave",
+      "hildirCave",
+      "hildirCrypt",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "stoneTower",
+      "sunkenCrypt",
+      "trollCave",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SilverNecklace",
+    "made": false,
+    "name": "Silver Necklace",
+    "places": [
+      "burialChamber",
+      "frostCave",
+      "grave",
+      "hildirCave",
+      "hildirCrypt",
+      "morgenHole",
+      "northMemorial",
+      "shipSetting",
+      "shipwreck",
+      "standingStones",
+      "theHole",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Skeleton",
+        "name": "Skeleton"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySkeleton",
+    "made": false,
+    "name": "Skeleton Trophy",
+    "places": [
+      "abandonedHouse",
+      "burialChamber",
+      "dolmen",
+      "grave",
+      "hildirCrypt",
+      "ruins",
+      "shipSetting",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [
+      {
+        "key": "Fish1",
+        "name": "Perch"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Greydwarf",
+        "name": "Greydwarf"
+      },
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      },
+      {
+        "key": "StoneGolem",
+        "name": "Stone Golem"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Stone",
+    "made": false,
+    "name": "Stone",
+    "places": [
+      "abandonedHouse",
+      "bogWitch",
+      "dolmen",
+      "fortress",
+      "frostCave",
+      "fulingVillage",
+      "grave",
+      "greydwarfCamp",
+      "haldor",
+      "lavaLeviathan",
+      "northMemorial",
+      "northRuins",
+      "northVillage",
+      "shipSetting",
+      "start",
+      "theHole",
+      "trollCave",
+      "waymarker"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BogWitchKvastur",
+        "name": "Kvastur"
+      },
+      {
+        "key": "Greydwarf",
+        "name": "Greydwarf"
+      },
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      },
+      {
+        "key": "Greydwarf_Shaman",
+        "name": "Greydwarf Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Wood",
+    "made": false,
+    "name": "Wood",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "bearDen",
+      "bogWitch",
+      "burialChamber",
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "frostCave",
+      "fulingOutpost",
+      "fulingVillage",
+      "greydwarfCamp",
+      "hildirCave",
+      "hildirCrypt",
+      "hildirFortress",
+      "infestedMine",
+      "lumberCamp",
+      "morkhalla",
+      "northVillage",
+      "runestone",
+      "start",
+      "stoneTower",
+      "sunkenCrypt",
+      "theHole",
+      "theQueen",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Acorn",
+    "made": false,
+    "name": "Acorns",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "AncientSeed",
+    "made": false,
+    "name": "Ancient Seed",
+    "places": [
+      "greydwarfCamp"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "BarrelRings",
+    "made": false,
+    "name": "Barrel Hoops",
+    "places": [],
+    "soldBy": [
+      "Haldor"
+    ]
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bjorn",
+        "name": "Bear"
+      },
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BjornHide",
+    "made": false,
+    "name": "Bear Hide",
+    "places": [
+      "bearDen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bjorn",
+        "name": "Bear"
+      },
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BjornMeat",
+    "made": false,
+    "name": "Bear Meat",
+    "places": [
+      "bearDen",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bjorn",
+        "name": "Bear"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BjornPaw",
+    "made": false,
+    "name": "Bear Paw",
+    "places": [
+      "bearDen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bjorn",
+        "name": "Bear"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBjorn",
+    "made": false,
+    "name": "Bear Trophy",
+    "places": [
+      "bearDen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "BirchSeeds",
+    "made": false,
+    "name": "Birch Seeds",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "Blueberries",
+    "made": false,
+    "name": "Blueberries",
+    "places": [
+      "bearDen",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "BoarJerky",
+    "made": true,
+    "name": "Boar Jerky",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Skeleton_Hildir",
+        "name": "Brenna"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySkeletonHildir",
+    "made": false,
+    "name": "Brenna Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Bronze",
+    "made": true,
+    "name": "Bronze",
+    "places": [
+      "charredRuins",
+      "frostCave",
+      "hildirCave",
+      "morgenHole",
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BronzeNails",
+    "made": true,
+    "name": "Bronze Nails",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinShaman",
+        "name": "Fuling Shaman"
+      },
+      {
+        "key": "Greydwarf_Shaman",
+        "name": "Greydwarf Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Pukeberries",
+    "made": false,
+    "name": "Bukeperries",
+    "places": [
+      "greydwarfCamp"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 2,
+    "key": "Carrot",
+    "made": false,
+    "name": "Carrot",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish10",
+        "name": "Northern Salmon"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 1,
+    "key": "CarrotSeeds",
+    "made": false,
+    "name": "Carrot Seeds",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CarrotSoup",
+    "made": true,
+    "name": "Carrot Soup",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Surtling",
+        "name": "Surtling"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Coal",
+    "made": true,
+    "name": "Coal",
+    "places": [
+      "fireHole",
+      "frostCave",
+      "hildirCave",
+      "morkhalla",
+      "ruins",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedBjornMeat",
+    "made": true,
+    "name": "Cooked Bear Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Copper",
+    "made": true,
+    "name": "Copper",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish5",
+        "name": "Trollfish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "CopperOre",
+    "made": false,
+    "name": "Copper Ore",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "RoundLog",
+    "made": false,
+    "name": "Corewood",
+    "places": [
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "DeerStew",
+    "made": true,
+    "name": "Deer Stew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Ghost",
+        "name": "Ghost"
+      },
+      {
+        "key": "Ghost_old",
+        "name": "The Void"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Ectoplasm",
+    "made": false,
+    "name": "Ectoplasm",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "FineWood",
+    "made": false,
+    "name": "Finewood",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "frostCave",
+      "hildirCave",
+      "lumberCamp",
+      "northVillage",
+      "shipwreck",
+      "theHole",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "FirCone",
+    "made": false,
+    "name": "Fir Cone",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 9,
+    "key": "FishingBait",
+    "made": false,
+    "name": "Fishing Bait",
+    "places": [
+      "frostCave"
+    ],
+    "soldBy": [
+      "Haldor"
+    ]
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Ghost",
+        "name": "Ghost"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGhost",
+    "made": false,
+    "name": "Ghost Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGreydwarfBrute",
+    "made": false,
+    "name": "Greydwarf Brute Trophy",
+    "places": [
+      "greydwarfCamp",
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf",
+        "name": "Greydwarf"
+      },
+      {
+        "key": "Greydwarf_Elite",
+        "name": "Greydwarf Brute"
+      },
+      {
+        "key": "Greydwarf_Shaman",
+        "name": "Greydwarf Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GreydwarfEye",
+    "made": false,
+    "name": "Greydwarf Eye",
+    "places": [
+      "greydwarfCamp",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Shaman",
+        "name": "Greydwarf Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGreydwarfShaman",
+    "made": false,
+    "name": "Greydwarf Shaman Trophy",
+    "places": [
+      "greydwarfCamp"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf",
+        "name": "Greydwarf"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGreydwarf",
+    "made": false,
+    "name": "Greydwarf Trophy",
+    "places": [
+      "greydwarfCamp",
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMinor",
+    "made": true,
+    "name": "Mead Base: Minor Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaMinor",
+    "made": true,
+    "name": "Mead Base: Minor Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBasePoisonResist",
+    "made": true,
+    "name": "Mead Base: Poison Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseTasty",
+    "made": true,
+    "name": "Mead Base: Tasty",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MinceMeatSauce",
+    "made": true,
+    "name": "Minced Meat Sauce",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadHealthMinor",
+    "made": true,
+    "name": "Minor Healing Mead",
+    "places": [
+      "charredRuins",
+      "infestedMine",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadStaminaMinor",
+    "made": true,
+    "name": "Minor Stamina Mead",
+    "places": [
+      "charredRuins",
+      "infestedMine",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish1",
+    "made": false,
+    "name": "Perch",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish2",
+    "made": false,
+    "name": "Pike",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "PineCone",
+    "made": false,
+    "name": "Pine Cone",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadPoisonResist",
+    "made": true,
+    "name": "Poison Resistance Mead",
+    "places": [
+      "infestedMine"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "PulledBear",
+    "made": true,
+    "name": "Pulled Bear",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "QueensJam",
+    "made": true,
+    "name": "Queen's Jam",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Skeleton_Poison",
+        "name": "Rancid Remains"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySkeletonPoison",
+    "made": false,
+    "name": "Rancid Remains Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish11",
+        "name": "Magmafish"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Surtling",
+        "name": "Surtling"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SurtlingCore",
+    "made": false,
+    "name": "Surtling Core",
+    "places": [
+      "burialChamber",
+      "dvergrRuins",
+      "fireHole",
+      "hildirCrypt",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadTasty",
+    "made": true,
+    "name": "Tasty Mead",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "morgenHole",
+      "northVillage",
+      "theHole",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "gd_king",
+        "name": "The Elder"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyTheElder",
+    "made": false,
+    "name": "The Elder Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Thistle",
+    "made": false,
+    "name": "Thistle",
+    "places": [
+      "rockClearing"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Tin",
+    "made": true,
+    "name": "Tin",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish3",
+        "name": "Tuna"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "TinOre",
+    "made": false,
+    "name": "Tin Ore",
+    "places": [
+      "ruins",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [
+      {
+        "key": "Fish5",
+        "name": "Trollfish"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Troll",
+        "name": "Troll"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "TrollHide",
+    "made": false,
+    "name": "Troll Hide",
+    "places": [
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Troll",
+        "name": "Troll"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyFrostTroll",
+    "made": false,
+    "name": "Troll Trophy",
+    "places": [
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MushroomYellow",
+    "made": false,
+    "name": "Yellow Mushroom",
+    "places": [
+      "bearDen",
+      "burialChamber",
+      "hildirCrypt",
+      "sunkenCrypt",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Abomination",
+        "name": "Abomination"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyAbomination",
+    "made": false,
+    "name": "Abomination Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "ElderBark",
+    "made": false,
+    "name": "Ancient Bark",
+    "places": [
+      "grave",
+      "ruins",
+      "sunkenCrypt"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastBlackforest_Material",
+    "made": true,
+    "name": "Black Forest Buffet Platter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "BlackSoup",
+    "made": true,
+    "name": "Black Soup",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Blob",
+        "name": "Blob"
+      },
+      {
+        "key": "BlobElite",
+        "name": "Oozer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBlob",
+    "made": false,
+    "name": "Blob Trophy",
+    "places": [
+      "sunkenCrypt"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Leech",
+        "name": "Leech"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Bloodbag",
+    "made": false,
+    "name": "Bloodbag",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Bonemass",
+        "name": "Bonemass"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBonemass",
+    "made": false,
+    "name": "Bonemass Trophy",
+    "places": [
+      "bonemass"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CandleWick",
+    "made": false,
+    "name": "Candle Wick",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [
+      {
+        "key": "Fish6",
+        "name": "Giant Herring"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Wraith",
+        "name": "Wraith"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Chain",
+    "made": false,
+    "name": "Chain",
+    "places": [
+      "dvergrRuins",
+      "excavation",
+      "grave",
+      "hildirFortress",
+      "morkhalla",
+      "ruins",
+      "sunkenCrypt",
+      "swampHut"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "FishCooked",
+    "made": true,
+    "name": "Cooked Fish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlobVial",
+    "made": false,
+    "name": "Corked Vial",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CuredSquirrelHamstring",
+    "made": false,
+    "name": "Cured Squirrel Hamstring",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadSwimmer",
+    "made": true,
+    "name": "Draught of Vananidir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FreshSeaweed",
+    "made": false,
+    "name": "Fresh Seaweed",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadFrostResist",
+    "made": true,
+    "name": "Frost Resistance Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish6",
+    "made": false,
+    "name": "Giant Herring",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Abomination",
+        "name": "Abomination"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Guck",
+    "made": false,
+    "name": "Guck",
+    "places": [
+      "guckTree"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Iron",
+    "made": true,
+    "name": "Iron",
+    "places": [
+      "charredRuins",
+      "frostCave",
+      "hildirCave",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "IronNails",
+    "made": true,
+    "name": "Iron Nails",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [
+      {
+        "key": "Fish6",
+        "name": "Giant Herring"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "IronOre",
+    "made": false,
+    "name": "Iron Ore",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "VineGreenSeeds",
+    "made": false,
+    "name": "Ivy Seeds",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BogWitchKvastur",
+        "name": "Kvastur"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyKvastur",
+    "made": false,
+    "name": "Kvastur",
+    "places": [
+      "bogWitch"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Leech",
+        "name": "Leech"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyLeech",
+    "made": false,
+    "name": "Leech Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadTrollPheromones",
+    "made": false,
+    "name": "Love Potion",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseFrostResist",
+    "made": true,
+    "name": "Mead Base: Frost Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMedium",
+    "made": true,
+    "name": "Mead Base: Medium Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStrength",
+    "made": true,
+    "name": "Mead Base: Troll Endurance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseSwimmer",
+    "made": true,
+    "name": "Mead Base: Vananidir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHasty",
+    "made": true,
+    "name": "Mead base: Ratatosk",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadStrength",
+    "made": true,
+    "name": "Mead of Troll Endurance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadHealthMedium",
+    "made": true,
+    "name": "Medium Healing Mead",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "ShocklateSmoothie",
+    "made": true,
+    "name": "Muckshake",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [
+      {
+        "key": "Fish12",
+        "name": "Pufferfish"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Blob",
+        "name": "Blob"
+      },
+      {
+        "key": "BlobElite",
+        "name": "Oozer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Ooze",
+    "made": false,
+    "name": "Ooze",
+    "places": [
+      "sunkenCrypt"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "PowderedDragonEgg",
+    "made": false,
+    "name": "Powdered Dragon Eggshells",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "PungentPebbles",
+    "made": false,
+    "name": "Pungent Pebbles",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FishRaw",
+    "made": true,
+    "name": "Raw Fish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Abomination",
+        "name": "Abomination"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Root",
+    "made": false,
+    "name": "Root",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Sausages",
+    "made": true,
+    "name": "Sausages",
+    "places": [
+      "infestedMine"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobElite",
+        "name": "Oozer"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "IronScrap",
+    "made": false,
+    "name": "Scrap Iron",
+    "places": [
+      "hildirFortress",
+      "infestedMine",
+      "morkhalla",
+      "sunkenCrypt",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceDeepNorth",
+    "made": false,
+    "name": "Seasoning of the Gourd",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SharpeningStone",
+    "made": true,
+    "name": "Sharpening Stone",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "ruins",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Surtling",
+        "name": "Surtling"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySurtling",
+    "made": false,
+    "name": "Surtling Trophy",
+    "places": [
+      "fireHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastSwamps_Material",
+    "made": true,
+    "name": "Swamp Dweller's Delight",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Thunderstone",
+    "made": false,
+    "name": "Thunder Stone",
+    "places": [],
+    "soldBy": [
+      "Haldor"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadHasty",
+    "made": true,
+    "name": "Tonic of Ratatosk",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish5",
+    "made": false,
+    "name": "Trollfish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 1,
+    "key": "Turnip",
+    "made": false,
+    "name": "Turnip",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 1,
+    "key": "TurnipSeeds",
+    "made": false,
+    "name": "Turnip Seeds",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "TurnipStew",
+    "made": true,
+    "name": "Turnip Stew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastMeadows_Material",
+    "made": true,
+    "name": "Whole Roasted Meadow Boar",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "WitheredBone",
+    "made": false,
+    "name": "Withered Bone",
+    "places": [
+      "grave",
+      "ruins",
+      "sunkenCrypt"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceForests",
+    "made": false,
+    "name": "Woodland Herb Blend",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Wraith",
+        "name": "Wraith"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyWraith",
+    "made": false,
+    "name": "Wraith Trophy",
+    "places": [
+      "swampHut"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Writhan",
+        "name": "Writhan"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WrithanRoots",
+    "made": false,
+    "name": "Writhan Roots",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Writhan",
+        "name": "Writhan"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyWrithan",
+    "made": false,
+    "name": "Writhan Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "YmirRemains",
+    "made": false,
+    "name": "Ymir Flesh",
+    "places": [],
+    "soldBy": [
+      "Haldor"
+    ]
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [
+      {
+        "key": "Fish8",
+        "name": "Coral Cod"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Chitin",
+    "made": false,
+    "name": "Chitin",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SerpentMeatCooked",
+    "made": true,
+    "name": "Cooked Serpent Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish8",
+    "made": false,
+    "name": "Coral Cod",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastOceans_Material",
+    "made": true,
+    "name": "Sailor's Bounty",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceOceans",
+    "made": false,
+    "name": "Seafarer's Herbs",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SerpentMeat",
+    "made": false,
+    "name": "Serpent Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SerpentScale",
+    "made": false,
+    "name": "Serpent Scale",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SerpentStew",
+    "made": true,
+    "name": "Serpent Stew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Serpent",
+        "name": "Serpent"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySerpent",
+    "made": false,
+    "name": "Serpent Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ocean",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish3",
+    "made": false,
+    "name": "Tuna",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadTamer",
+    "made": true,
+    "name": "Brew of Animal Whispers",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedWolfMeat",
+    "made": true,
+    "name": "Cooked Wolf Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "StoneGolem",
+        "name": "Stone Golem"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Crystal",
+    "made": false,
+    "name": "Crystal",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "hildirCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fenring_Cultist",
+        "name": "Cultist"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyCultist",
+    "made": false,
+    "name": "Cultist Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Dragon",
+        "name": "Moder"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "DragonTear",
+    "made": false,
+    "name": "Dragon Tear",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hatchling",
+        "name": "Drake"
+      },
+      {
+        "key": "TheHive",
+        "name": "TheHive"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyHatchling",
+    "made": false,
+    "name": "Drake Trophy",
+    "places": [
+      "drakeNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Eyescream",
+    "made": true,
+    "name": "Eyescream",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fenring",
+        "name": "Fenring"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyFenring",
+    "made": false,
+    "name": "Fenring Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WolfClaw",
+    "made": false,
+    "name": "Fenris Claw",
+    "places": [
+      "frostCave",
+      "hildirCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WolfHairBundle",
+    "made": false,
+    "name": "Fenris Hair",
+    "places": [
+      "frostCave",
+      "hildirCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hatchling",
+        "name": "Drake"
+      },
+      {
+        "key": "TheHive",
+        "name": "TheHive"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FreezeGland",
+    "made": false,
+    "name": "Freeze Gland",
+    "places": [
+      "drakeNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fenring_Cultist_Hildir",
+        "name": "Geirrhafa"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyCultist_Hildir",
+    "made": false,
+    "name": "Geirrhafa Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseTamer",
+    "made": true,
+    "name": "Mead Base: Animal Whispers",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Dragon",
+        "name": "Moder"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDragonQueen",
+    "made": false,
+    "name": "Moder Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish10",
+    "made": false,
+    "name": "Northern Salmon",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [
+      {
+        "key": "Fish4_cave",
+        "name": "Tetra"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Obsidian",
+    "made": false,
+    "name": "Obsidian",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "hildirCave",
+      "stoneTower",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 2,
+    "key": "Onion",
+    "made": false,
+    "name": "Onion",
+    "places": [
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [
+      {
+        "key": "Fish8",
+        "name": "Coral Cod"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 1,
+    "key": "OnionSeeds",
+    "made": false,
+    "name": "Onion Seeds",
+    "places": [
+      "abandonedHouse",
+      "stoneTower",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "OnionSoup",
+    "made": true,
+    "name": "Onion Soup",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fenring_Cultist",
+        "name": "Cultist"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "JuteRed",
+    "made": false,
+    "name": "Red Jute",
+    "places": [
+      "frostCave",
+      "hildirCave",
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [
+      {
+        "key": "Fish10",
+        "name": "Northern Salmon"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Silver",
+    "made": true,
+    "name": "Silver",
+    "places": [
+      "charredRuins",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "SilverOre",
+    "made": false,
+    "name": "Silver Ore",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "StoneGolem",
+        "name": "Stone Golem"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySGolem",
+    "made": false,
+    "name": "Stone Golem Trophy",
+    "places": [
+      "abandonedHouse"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish4_cave",
+    "made": false,
+    "name": "Tetra",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Ulv",
+        "name": "Ulv"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyUlv",
+    "made": false,
+    "name": "Ulv Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fenring",
+        "name": "Fenring"
+      },
+      {
+        "key": "Ulv",
+        "name": "Ulv"
+      },
+      {
+        "key": "Wolf",
+        "name": "Wolf"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WolfFang",
+    "made": false,
+    "name": "Wolf Fang",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "WolfJerky",
+    "made": true,
+    "name": "Wolf Jerky",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Wolf",
+        "name": "Wolf"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WolfMeat",
+    "made": false,
+    "name": "Wolf Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Wolf",
+        "name": "Wolf"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "WolfPelt",
+    "made": false,
+    "name": "Wolf Pelt",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "WolfMeatSkewer",
+    "made": true,
+    "name": "Wolf Skewer",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Wolf",
+        "name": "Wolf"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyWolf",
+    "made": false,
+    "name": "Wolf Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish9",
+    "made": false,
+    "name": "Anglerfish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadBugRepellent",
+    "made": true,
+    "name": "Anti-Sting Concoction",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [
+      {
+        "key": "Fish7",
+        "name": "Grouper"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 1,
+    "key": "Barley",
+    "made": false,
+    "name": "Barley",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "morkhalla",
+      "northVillage",
+      "ruins",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "BarleyFlour",
+    "made": true,
+    "name": "Barley Flour",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BarleyWineBase",
+    "made": true,
+    "name": "Barley Wine Base: Fire Resistance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadBzerker",
+    "made": true,
+    "name": "Berserkir Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlackMetal",
+    "made": true,
+    "name": "Black Metal",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [
+      {
+        "key": "Fish7",
+        "name": "Grouper"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Goblin",
+        "name": "Fuling"
+      },
+      {
+        "key": "GoblinBrute",
+        "name": "Fuling Berserker"
+      },
+      {
+        "key": "GoblinShaman",
+        "name": "Fuling Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlackMetalScrap",
+    "made": false,
+    "name": "Black Metal Scrap",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "ruins",
+      "standingStones",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "BloodPudding",
+    "made": true,
+    "name": "Blood Pudding",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Bread",
+    "made": true,
+    "name": "Bread",
+    "places": [
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BreadDough",
+    "made": true,
+    "name": "Bread Dough",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Chicken",
+        "name": "Chicken"
+      },
+      {
+        "key": "Hen",
+        "name": "Hen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ChickenMeat",
+    "made": false,
+    "name": "Chicken Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "Cloudberry",
+    "made": false,
+    "name": "Cloudberries",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedChickenMeat",
+    "made": true,
+    "name": "Cooked Chicken Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedEgg",
+    "made": true,
+    "name": "Cooked Egg",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedLoxMeat",
+    "made": true,
+    "name": "Cooked Lox Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deathsquito",
+        "name": "Deathsquito"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDeathsquito",
+    "made": false,
+    "name": "Deathsquito Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "ChickenEgg",
+    "made": false,
+    "name": "Egg",
+    "places": [
+      "hildirFortress"
+    ],
+    "soldBy": [
+      "Haldor"
+    ]
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "BarleyWine",
+    "made": true,
+    "name": "Fire Resistance Barley Wine",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "FishAndBread",
+    "made": true,
+    "name": "Fish 'n' Bread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "FishWraps",
+    "made": true,
+    "name": "Fish Wraps",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 1,
+    "key": "Flax",
+    "made": false,
+    "name": "Flax",
+    "places": [
+      "fulingVillage",
+      "morkhalla",
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FragrantBundle",
+    "made": false,
+    "name": "Fragrant Bundle",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "VikingCupcake",
+    "made": true,
+    "name": "Frosted Sweetbread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinBrute",
+        "name": "Fuling Berserker"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblinBrute",
+    "made": false,
+    "name": "Fuling Berserker Trophy",
+    "places": [
+      "northVillage",
+      "standingStones"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinShaman",
+        "name": "Fuling Shaman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblinShaman",
+    "made": false,
+    "name": "Fuling Shaman Trophy",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Goblin",
+        "name": "Fuling"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblin",
+    "made": false,
+    "name": "Fuling Trophy",
+    "places": [
+      "fulingOutpost",
+      "ruins",
+      "standingStones",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish7",
+    "made": false,
+    "name": "Grouper",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobTar",
+        "name": "Growth"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGrowth",
+    "made": false,
+    "name": "Growth Trophy",
+    "places": [
+      "tarPit"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastMountains_Material",
+    "made": true,
+    "name": "Hearty Mountain Logger's Stew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LinenThread",
+    "made": true,
+    "name": "Linen Thread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Lox",
+        "name": "Lox"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LoxMeat",
+    "made": false,
+    "name": "Lox Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "LoxPie",
+    "made": true,
+    "name": "Lox Meat Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Lox",
+        "name": "Lox"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LoxPelt",
+    "made": false,
+    "name": "Lox Pelt",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Lox",
+        "name": "Lox"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyLox",
+    "made": false,
+    "name": "Lox Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseBugRepellent",
+    "made": true,
+    "name": "Mead Base: Anti-Sting",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaMedium",
+    "made": true,
+    "name": "Mead Base: Medium Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseBzerker",
+    "made": true,
+    "name": "Mead base: Berserkir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadStaminaMedium",
+    "made": true,
+    "name": "Medium Stamina Mead",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceMountains",
+    "made": false,
+    "name": "Mountain Peak Pepper Powder",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Deathsquito",
+        "name": "Deathsquito"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Needle",
+    "made": false,
+    "name": "Needle",
+    "places": [
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "ruins",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish12",
+    "made": false,
+    "name": "Pufferfish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "RottenMeat",
+    "made": false,
+    "name": "Rotten Meat",
+    "places": [
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "ScytheHandle",
+    "made": false,
+    "name": "Scythe Handle",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobTar",
+        "name": "Growth"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Tar",
+    "made": false,
+    "name": "Tar",
+    "places": [
+      "tarPit"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinBruteBros",
+        "name": "Zil & Thungr"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblinBruteBrosBrute",
+    "made": false,
+    "name": "Thungr Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MushroomBzerker",
+    "made": false,
+    "name": "Toadstool",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinKing",
+        "name": "Yagluth"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "YagluthDrop",
+    "made": false,
+    "name": "Torn Spirit",
+    "places": [
+      "yagluth"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "LoxPieUncooked",
+    "made": true,
+    "name": "Unbaked Lox Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "VikingCupcakeUncooked",
+    "made": true,
+    "name": "Unbaked Sweetbread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FishAndBreadUncooked",
+    "made": true,
+    "name": "Uncooked Fish 'n' Bread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "UndeadBjornRibcage",
+    "made": false,
+    "name": "Vile Ribcage",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Unbjorn",
+        "name": "Vile"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBjornUndead",
+    "made": false,
+    "name": "Vile Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Wisp",
+    "made": true,
+    "name": "Wisp",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinKing",
+        "name": "Yagluth"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblinKing",
+    "made": false,
+    "name": "Yagluth Trophy",
+    "places": [
+      "yagluth"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Gjall",
+        "name": "Gjall"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Bilebag",
+    "made": false,
+    "name": "Bilebag",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlackCore",
+    "made": false,
+    "name": "Black Core",
+    "places": [
+      "infestedMine",
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Dverger",
+        "name": "Dvergr Rogue"
+      },
+      {
+        "key": "DvergerMage",
+        "name": "Dvergr Mage"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "BlackMarble",
+    "made": false,
+    "name": "Black Marble",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "northVillage",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Tick",
+        "name": "Tick"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GiantBloodSack",
+    "made": false,
+    "name": "Blood Clot",
+    "places": [
+      "giantRemains"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [
+      {
+        "key": "Fish9",
+        "name": "Anglerfish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "JuteBlue",
+    "made": false,
+    "name": "Blue Jute",
+    "places": [
+      "dvergrRuins",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seeker",
+        "name": "Seeker"
+      },
+      {
+        "key": "SeekerBrute",
+        "name": "Seeker Soldier"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Carapace",
+    "made": false,
+    "name": "Carapace",
+    "places": [
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CeramicPlate",
+    "made": true,
+    "name": "Ceramic Plate",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedHareMeat",
+    "made": true,
+    "name": "Cooked Hare Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedBugMeat",
+    "made": true,
+    "name": "Cooked Seeker Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "CopperScrap",
+    "made": false,
+    "name": "Copper Scrap",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DvergrNeedle",
+    "made": false,
+    "name": "Dvergr Extractor",
+    "places": [
+      "dvergrRuins",
+      "excavation"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 15,
+    "key": "Lantern",
+    "made": true,
+    "name": "Dvergr Lantern",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Dverger",
+        "name": "Dvergr Rogue"
+      },
+      {
+        "key": "DvergerDeepNorth",
+        "name": "Imprisoned Dvergr"
+      },
+      {
+        "key": "DvergerMage",
+        "name": "Dvergr Mage"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyDvergr",
+    "made": false,
+    "name": "Dvergr Trophy",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Gjall",
+        "name": "Gjall"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGjall",
+    "made": false,
+    "name": "Gjall Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpicePlains",
+    "made": false,
+    "name": "Grasslands Herbalist Harvest",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hare",
+        "name": "Hare"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "HareMeat",
+    "made": false,
+    "name": "Hare Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hare",
+        "name": "Hare"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyHare",
+    "made": false,
+    "name": "Hare Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "HoneyGlazedChicken",
+    "made": true,
+    "name": "Honey Glazed Chicken",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Hook",
+    "made": false,
+    "name": "Hook",
+    "places": [
+      "dvergrRuins",
+      "infestedMine"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 2,
+    "key": "MushroomJotunPuffs",
+    "made": false,
+    "name": "Jotun Puffs",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadLightfoot",
+    "made": true,
+    "name": "Lightfoot Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadStaminaLingering",
+    "made": true,
+    "name": "Lingering Stamina Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 2,
+    "key": "MushroomMagecap",
+    "made": false,
+    "name": "Magecap",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hive",
+        "name": "Hive"
+      },
+      {
+        "key": "SeekerQueen",
+        "name": "The Queen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "QueenDrop",
+    "made": false,
+    "name": "Majestic Carapace",
+    "places": [
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadHealthMajor",
+    "made": true,
+    "name": "Major Healing Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "SeekerBrute",
+        "name": "Seeker Soldier"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Mandible",
+    "made": false,
+    "name": "Mandible",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseLightFoot",
+    "made": true,
+    "name": "Mead Base: Lightfoot",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseStaminaLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Stamina",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthMajor",
+    "made": true,
+    "name": "Mead Base: Major Healing",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseEitrMinor",
+    "made": true,
+    "name": "Mead Base: Minor Eitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeatPlatter",
+    "made": true,
+    "name": "Meat Platter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MechanicalSpring",
+    "made": true,
+    "name": "Mechanical Spring",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadEitrMinor",
+    "made": true,
+    "name": "Minor Eitr Mead",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MisthareSupreme",
+    "made": true,
+    "name": "Misthare Supreme",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MushroomOmelette",
+    "made": true,
+    "name": "Mushroom Omelette",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastPlains_Material",
+    "made": true,
+    "name": "Plains Pie Picnic",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Eitr",
+    "made": true,
+    "name": "Refined Eitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "SeekerBrood",
+        "name": "Seeker Brood"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "RoyalJelly",
+    "made": false,
+    "name": "Royal Jelly",
+    "places": [
+      "infestedMine"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Salad",
+    "made": true,
+    "name": "Salad",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [
+      {
+        "key": "Fish12",
+        "name": "Pufferfish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Sap",
+    "made": true,
+    "name": "Sap",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hare",
+        "name": "Hare"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ScaleHide",
+    "made": false,
+    "name": "Scale Hide",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DvergrKeyFragment",
+    "made": false,
+    "name": "Sealbreaker Fragment",
+    "places": [
+      "infestedMine"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SeekerAspic",
+    "made": true,
+    "name": "Seeker Aspic",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seeker",
+        "name": "Seeker"
+      },
+      {
+        "key": "SeekerBrute",
+        "name": "Seeker Soldier"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BugMeat",
+    "made": false,
+    "name": "Seeker Meat",
+    "places": [
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "SeekerBrute",
+        "name": "Seeker Soldier"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySeekerBrute",
+    "made": false,
+    "name": "Seeker Soldier Trophy",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seeker",
+        "name": "Seeker"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySeeker",
+    "made": false,
+    "name": "Seeker Trophy",
+    "places": [
+      "dvergrRuins",
+      "excavation",
+      "infestedMine",
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldCore",
+    "made": true,
+    "name": "Shield Core",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [
+      {
+        "key": "Fish9",
+        "name": "Anglerfish"
+      }
+    ],
+    "droppedBy": [
+      {
+        "key": "Dverger",
+        "name": "Dvergr Rogue"
+      },
+      {
+        "key": "DvergerMage",
+        "name": "Dvergr Mage"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Softtissue",
+    "made": false,
+    "name": "Soft Tissue",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "excavation",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MagicallyStuffedShroom",
+    "made": true,
+    "name": "Stuffed Mushroom",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Hive",
+        "name": "Hive"
+      },
+      {
+        "key": "SeekerQueen",
+        "name": "The Queen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySeekerQueen",
+    "made": false,
+    "name": "The Queen Trophy",
+    "places": [
+      "theQueen"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Tick",
+        "name": "Tick"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyTick",
+    "made": false,
+    "name": "Tick Trophy",
+    "places": [
+      "giantRemains"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "HoneyGlazedChickenUncooked",
+    "made": true,
+    "name": "Uncooked Honey Glazed Chicken",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeatPlatterUncooked",
+    "made": true,
+    "name": "Uncooked Meat Platter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MisthareSupremeUncooked",
+    "made": true,
+    "name": "Uncooked Misthare Supreme",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MagicallyStuffedShroomUncooked",
+    "made": true,
+    "name": "Uncooked Stuffed Mushroom",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "YggdrasilPorridge",
+    "made": true,
+    "name": "Yggdrasil Porridge",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "YggdrasilWood",
+    "made": false,
+    "name": "Yggdrasil Wood",
+    "places": [
+      "dvergrRuins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 4,
+    "key": "BowAshlands",
+    "made": true,
+    "name": "Ash Fang",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Blackwood",
+    "made": false,
+    "name": "Ashwood",
+    "places": [
+      "charredRuins",
+      "fortress",
+      "lumberCamp",
+      "morgenHole",
+      "northHomestead",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Asksvin",
+        "name": "Asksvin"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AskBladder",
+    "made": false,
+    "name": "Asksvin Bladder",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Asksvin",
+        "name": "Asksvin"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AskHide",
+    "made": false,
+    "name": "Asksvin Hide",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AsksvinCarrionNeck",
+    "made": false,
+    "name": "Asksvin Neck",
+    "places": [
+      "morgenHole",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AsksvinCarrionPelvic",
+    "made": false,
+    "name": "Asksvin Pelvis",
+    "places": [
+      "morgenHole",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AsksvinCarrionRibcage",
+    "made": false,
+    "name": "Asksvin Ribcage",
+    "places": [
+      "morgenHole",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AsksvinCarrionSkull",
+    "made": false,
+    "name": "Asksvin Skull",
+    "places": [
+      "morgenHole",
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Asksvin",
+        "name": "Asksvin"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AsksvinMeat",
+    "made": false,
+    "name": "Asksvin Tail",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Asksvin",
+        "name": "Asksvin"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyAsksvin",
+    "made": false,
+    "name": "Asksvin Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BellFragment",
+    "made": false,
+    "name": "Bell Fragment",
+    "places": [
+      "fortress"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "AxeBerzerkr",
+    "made": true,
+    "name": "Berserkir Axes",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GemstoneRed",
+    "made": false,
+    "name": "Bloodstone",
+    "places": [
+      "fortress",
+      "morkhalla",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BonemawSerpent",
+        "name": "Bonemaw"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BoneMawSerpentMeat",
+    "made": false,
+    "name": "Bonemaw Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BonemawSerpent",
+        "name": "Bonemaw"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BonemawSerpentTooth",
+    "made": false,
+    "name": "Bonemaw Tooth",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BonemawSerpent",
+        "name": "Bonemaw"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBonemawSerpent",
+    "made": false,
+    "name": "Bonemaw Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "FallenValkyrie",
+        "name": "Fallen Valkyrie"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CelestialFeather",
+    "made": false,
+    "name": "Celestial Feather",
+    "places": [
+      "fortress",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "CharcoalResin",
+    "made": false,
+    "name": "Charcoal Resin",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Charred_Archer",
+        "name": "Charred Marksman"
+      },
+      {
+        "key": "Charred_Mage",
+        "name": "Charred Warlock"
+      },
+      {
+        "key": "Charred_Melee",
+        "name": "Charred Warrior"
+      },
+      {
+        "key": "Charred_Twitcher",
+        "name": "Charred Twitcher"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CharredBone",
+    "made": false,
+    "name": "Charred Bone",
+    "places": [
+      "charredRuins",
+      "charredSpawner",
+      "fortress",
+      "morgenHole",
+      "placeOfMystery",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CharredCogwheel",
+    "made": false,
+    "name": "Charred Cogwheel",
+    "places": [
+      "fortress"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Charredskull",
+    "made": false,
+    "name": "Charred Skull",
+    "places": [
+      "charredRuins",
+      "charredSpawner",
+      "fortress",
+      "placeOfMystery",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedAsksvinMeat",
+    "made": true,
+    "name": "Cooked Asksvin Tail",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedBoneMawSerpentMeat",
+    "made": true,
+    "name": "Cooked Bonemaw Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedVoltureMeat",
+    "made": true,
+    "name": "Cooked Volture Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DyrnwynBladeFragment",
+    "made": false,
+    "name": "Dyrnwyn Blade Fragment",
+    "places": [
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Charred_Melee_Dyrnwyn",
+        "name": "Lord Reto"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DyrnwynHiltFragment",
+    "made": false,
+    "name": "Dyrnwyn Hilt Fragment",
+    "places": [
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "DyrnwynTipFragment",
+    "made": false,
+    "name": "Dyrnwyn Tip Fragment",
+    "places": [
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FaderEmber",
+    "made": true,
+    "name": "Embers",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fader",
+        "name": "Fader"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyFader",
+    "made": false,
+    "name": "Fader Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "FallenValkyrie",
+        "name": "Fallen Valkyrie"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyFallenValkyrie",
+    "made": false,
+    "name": "Fallen Valkyrie Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Fiddleheadfern",
+    "made": false,
+    "name": "Fiddlehead",
+    "places": [
+      "charredRuins",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "FierySvinstew",
+    "made": true,
+    "name": "Fiery Svinstew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FlametalNew",
+    "made": true,
+    "name": "Flametal",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "MaceEldner",
+    "made": true,
+    "name": "Flametal Mace",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [
+      {
+        "key": "Fish11",
+        "name": "Magmafish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "FlametalOreNew",
+    "made": false,
+    "name": "Flametal Ore",
+    "places": [
+      "charredRuins",
+      "fortress",
+      "lavaLeviathan",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [
+      {
+        "key": "Fish11",
+        "name": "Magmafish"
+      }
+    ],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Grausten",
+    "made": false,
+    "name": "Grausten",
+    "places": [
+      "charredRuins",
+      "charredSpawner",
+      "fader",
+      "fortress",
+      "morkhalla",
+      "placeOfMystery",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceMistlands",
+    "made": false,
+    "name": "Herbs of the Hidden Hills",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GemstoneBlue",
+    "made": false,
+    "name": "Iolite",
+    "places": [
+      "fortress",
+      "morkhalla",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GemstoneGreen",
+    "made": false,
+    "name": "Jade",
+    "places": [
+      "fortress",
+      "morkhalla",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Fader",
+        "name": "Fader"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FaderDrop",
+    "made": false,
+    "name": "Kindled Ribs",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobLava",
+        "name": "Lava Blob"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBlob_Lava",
+    "made": false,
+    "name": "Lava Blob Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadEitrLingering",
+    "made": true,
+    "name": "Lingering Eitr Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeadHealthLingering",
+    "made": true,
+    "name": "Lingering Healing Mead",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": true,
+    "gathered": false,
+    "grown": false,
+    "itemType": 21,
+    "key": "Fish11",
+    "made": false,
+    "name": "Magmafish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MarinatedGreens",
+    "made": true,
+    "name": "Marinated Greens",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Charred_Archer",
+        "name": "Charred Marksman"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyCharredArcher",
+    "made": false,
+    "name": "Marksman Trophy",
+    "places": [
+      "fortress",
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MashedMeat",
+    "made": true,
+    "name": "Mashed Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseEitrLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Eitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MeadBaseHealthLingering",
+    "made": true,
+    "name": "Mead Base: Lingering Health",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoltenCore",
+    "made": false,
+    "name": "Molten Core",
+    "places": [
+      "fortress",
+      "morgenHole",
+      "placeOfMystery",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Morgen",
+        "name": "Morgen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MorgenHeart",
+    "made": false,
+    "name": "Morgen Heart",
+    "places": [
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Morgen",
+        "name": "Morgen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MorgenSinew",
+    "made": false,
+    "name": "Morgen Sinew",
+    "places": [
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Morgen",
+        "name": "Morgen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyMorgen",
+    "made": false,
+    "name": "Morgen Trophy",
+    "places": [
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastMistlands_Material",
+    "made": true,
+    "name": "Mushrooms Galore á la Mistlands",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "SwordNiedhogg",
+    "made": true,
+    "name": "Nidhögg",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "PiquantPie",
+    "made": true,
+    "name": "Piquant Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Pot_Shard_Green",
+    "made": false,
+    "name": "Pot Shard",
+    "places": [
+      "charredRuins",
+      "morgenHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobLava",
+        "name": "Lava Blob"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "ProustitePowder",
+    "made": false,
+    "name": "Proustite Powder",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 4,
+    "key": "CrossbowRipper",
+    "made": true,
+    "name": "Ripper",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "RoastedCrustPie",
+    "made": true,
+    "name": "Roasted Crust Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "ScorchingMedley",
+    "made": true,
+    "name": "Scorching Medley",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BronzeScrap",
+    "made": false,
+    "name": "Scrap Bronze",
+    "places": [
+      "fortress",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SizzlingBerryBroth",
+    "made": true,
+    "name": "Sizzling Berry Broth",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "THSwordSlayer",
+    "made": true,
+    "name": "Slayer",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "MushroomSmokePuff",
+    "made": false,
+    "name": "Smoke Puff",
+    "places": [
+      "charredRuins",
+      "ruins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SparklingShroomshake",
+    "made": true,
+    "name": "Sparkling Shroomshake",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SpicyMarmalade",
+    "made": true,
+    "name": "Spicy Marmalade",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "SpearSplitner",
+    "made": true,
+    "name": "Splitnir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobLava",
+        "name": "Lava Blob"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SulfurStone",
+    "made": false,
+    "name": "Sulfur",
+    "places": [
+      "sulfurArch"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "PiquantPieUncooked",
+    "made": true,
+    "name": "Uncooked Piquant Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "RoastedCrustPieUncooked",
+    "made": true,
+    "name": "Uncooked Roasted Crust Pie",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Vineberry",
+    "made": false,
+    "name": "Vineberry Cluster",
+    "places": [
+      "charredRuins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "VineberrySeeds",
+    "made": false,
+    "name": "Vineberry Seeds",
+    "places": [
+      "charredRuins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Volture",
+        "name": "Volture"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "VoltureEgg",
+    "made": false,
+    "name": "Volture Egg",
+    "places": [
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Volture",
+        "name": "Volture"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "VoltureMeat",
+    "made": false,
+    "name": "Volture Meat",
+    "places": [
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Volture",
+        "name": "Volture"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyVolture",
+    "made": false,
+    "name": "Volture Trophy",
+    "places": [
+      "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Charred_Mage",
+        "name": "Charred Warlock"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyCharredMage",
+    "made": false,
+    "name": "Warlock Trophy",
+    "places": [
+      "fortress",
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "ashlands",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Charred_Melee",
+        "name": "Charred Warrior"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyCharredMelee",
+    "made": false,
+    "name": "Warrior Trophy",
+    "places": [
+      "charredRuins",
+      "charredSpawner",
+      "fortress",
+      "placeOfMystery"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastAshlands_Material",
+    "made": true,
+    "name": "Ashlands Gourmet Bowl",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "BakedPoteitr",
+    "made": true,
+    "name": "Baked Poteitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Barka",
+        "name": "Barka"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBarka",
+    "made": false,
+    "name": "Barka Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Gold",
+    "made": true,
+    "name": "Bloodgold",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyChestUncooked",
+    "made": true,
+    "name": "Cast: Breastplate of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumChestUncooked",
+    "made": true,
+    "name": "Cast: Chestpiece of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffOrbofAhriUncooked",
+    "made": true,
+    "name": "Cast: Echo Spike",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageHelmetUncooked",
+    "made": true,
+    "name": "Cast: Headdress of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyHelmetUncooked",
+    "made": true,
+    "name": "Cast: Helmet of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumHelmetUncooked",
+    "made": true,
+    "name": "Cast: Hood of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KeysGoldUncooked",
+    "made": true,
+    "name": "Cast: Intricate Key",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffThunderbloodUncooked",
+    "made": true,
+    "name": "Cast: Lightning Strike",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AtgeirGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Atgeir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "AxeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Axe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BowGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Bow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldBucklerGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Buckler",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CrossbowGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Crossbow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KnifeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Dagger",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BattleaxeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greataxe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldTowerGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greatshield",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "THSwordGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Greatsword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FistGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Knucklechains",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MaceGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Mace",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ShieldRoundGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Shield",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SledgeGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Sledge",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpearGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Spear",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SwordGoldUncooked",
+    "made": true,
+    "name": "Cast: Nord Sword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffFrostOrbsUncooked",
+    "made": true,
+    "name": "Cast: Northern Vengeance",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageChestUncooked",
+    "made": true,
+    "name": "Cast: Robes of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "StaffSpiritCallerUncooked",
+    "made": true,
+    "name": "Cast: Spirit Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMageLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldHeavyLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ArmorGoldMediumLegsUncooked",
+    "made": true,
+    "name": "Cast: Trousers of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedMooseMeat",
+    "made": true,
+    "name": "Cooked Moose Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "CookedSealBlubber",
+    "made": true,
+    "name": "Cooked Seal Blubber",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "FrozenKing_p3",
+        "name": "Kall Fimbulbringer"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "CrownJewel",
+    "made": false,
+    "name": "Crown Jewel",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobMork",
+        "name": "Shapeless Pulp"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "OozeMork",
+    "made": false,
+    "name": "Dead Pulp",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Elaking",
+        "name": "Elaking"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "ElakingHairBundle",
+    "made": false,
+    "name": "Elaking Hair Bundle",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Elaking",
+        "name": "Elaking"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyElaking",
+    "made": false,
+    "name": "Elaking Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "ElakingMole",
+        "name": "Eyeless One"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyMole",
+    "made": false,
+    "name": "Eyeless One Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SpiceAshlands",
+    "made": false,
+    "name": "Fiery Spice Powder",
+    "places": [],
+    "soldBy": [
+      "BogWitch"
+    ]
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "FishSoup",
+    "made": true,
+    "name": "Fish Soup",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Frysling",
+        "name": "Frysling"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FrostCore",
+    "made": false,
+    "name": "Frostcore",
+    "places": [
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "OrbFrostFire",
+    "made": false,
+    "name": "Frostfire Essence",
+    "places": [
+      "northMemorial"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Barka",
+        "name": "Barka"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BarkaBranch",
+    "made": false,
+    "name": "Frozen Branch",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWitch",
+        "name": "Hexen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyJotunWitch",
+    "made": false,
+    "name": "Hexen Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Frozen",
+        "name": "Greydwarf"
+      },
+      {
+        "key": "Greydwarf_Shaman_Frozen",
+        "name": "Greydwarf Shaman"
+      },
+      {
+        "key": "Skeleton_DeepNorth",
+        "name": "Skeleton"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Ice",
+    "made": false,
+    "name": "Ice",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 2,
+    "key": "Kale",
+    "made": false,
+    "name": "Kale",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "KaleChips",
+    "made": true,
+    "name": "Kale Chips",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": true,
+    "itemType": 1,
+    "key": "KaleSeeds",
+    "made": false,
+    "name": "Kale Seeds",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyJotunWarrior",
+    "made": false,
+    "name": "Krigen Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Leatherstraps",
+    "made": false,
+    "name": "Leather Straps",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinDeepNorth",
+        "name": "Captive Fuling"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 2,
+    "key": "Lingonberry",
+    "made": false,
+    "name": "Lingonberries",
+    "places": [
+      "morkhalla",
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Lingondricka",
+    "made": true,
+    "name": "Lingonberry Juice",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "ElakingMole",
+        "name": "Eyeless One"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoleClaws",
+    "made": false,
+    "name": "Long Claws",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "GlowWorm",
+    "made": false,
+    "name": "Luminous Larva",
+    "places": [
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MooseKebab",
+    "made": true,
+    "name": "Meat In Bread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "MeatballsMashedPoteitr",
+    "made": true,
+    "name": "Meatballs and Poteitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Moose",
+        "name": "Moose"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MooseHide",
+    "made": false,
+    "name": "Moose Hide",
+    "places": [
+      "morkhalla"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Moose",
+        "name": "Moose"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MooseMeat",
+    "made": false,
+    "name": "Moose Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Moose",
+        "name": "Moose"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MooseSinew",
+    "made": false,
+    "name": "Moose Sinew",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Moose",
+        "name": "Moose"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyMoose",
+    "made": false,
+    "name": "Moose Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorGoldChest",
+    "made": false,
+    "name": "Mould: Breastplate of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmormediumChest",
+    "made": false,
+    "name": "Mould: Chestpiece of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldStaffOrbofAhri",
+    "made": false,
+    "name": "Mould: Echo Spike",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWitch",
+        "name": "Hexen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorMageHelmet",
+    "made": false,
+    "name": "Mould: Headdress of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorGoldHelmet",
+    "made": false,
+    "name": "Mould: Helmet of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorMediumHelmet",
+    "made": false,
+    "name": "Mould: Hood of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Elaking",
+        "name": "Elaking"
+      },
+      {
+        "key": "ElakingMole",
+        "name": "Eyeless One"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldKeys",
+    "made": false,
+    "name": "Mould: Intricate Key",
+    "places": [
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldStaffthunderblood",
+    "made": false,
+    "name": "Mould: Lightning Strike",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldAtgeir",
+    "made": false,
+    "name": "Mould: Nord Atgeir",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldAxe",
+    "made": false,
+    "name": "Mould: Nord Axe",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldBow",
+    "made": false,
+    "name": "Mould: Nord Bow",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldShieldBuckler",
+    "made": false,
+    "name": "Mould: Nord Buckler",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldCrossbow",
+    "made": false,
+    "name": "Mould: Nord Crossbow",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldKnife",
+    "made": false,
+    "name": "Mould: Nord Dagger",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldAxe2H",
+    "made": false,
+    "name": "Mould: Nord Greataxe",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldShieldTower",
+    "made": false,
+    "name": "Mould: Nord Greatshield",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldSword2H",
+    "made": false,
+    "name": "Mould: Nord Greatsword",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldFistweapon",
+    "made": false,
+    "name": "Mould: Nord Knucklechains",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldMace",
+    "made": false,
+    "name": "Mould: Nord Mace",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldShieldRound",
+    "made": false,
+    "name": "Mould: Nord Shield",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldMace2H",
+    "made": false,
+    "name": "Mould: Nord Sledge",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldSpear",
+    "made": false,
+    "name": "Mould: Nord Spear",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldSword",
+    "made": false,
+    "name": "Mould: Nord Sword",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldStafffrostorbs",
+    "made": false,
+    "name": "Mould: Northern Vengeance",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWitch",
+        "name": "Hexen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorMageChest",
+    "made": false,
+    "name": "Mould: Robes of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldStaffspiritcaller",
+    "made": false,
+    "name": "Mould: Spirit Caller",
+    "places": [
+      "morkhalla",
+      "northMemorial",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWitch",
+        "name": "Hexen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorMageLegs",
+    "made": false,
+    "name": "Mould: Trousers of the Caller",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorGoldLegs",
+    "made": false,
+    "name": "Mould: Trousers of the Protector",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWarrior",
+        "name": "Krigen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "MoldArmorMediumLegs",
+    "made": false,
+    "name": "Mould: Trousers of the Vanguard",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "AtgeirGold",
+    "made": true,
+    "name": "Nord Atgeir",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "AxeGold",
+    "made": true,
+    "name": "Nord Axe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 4,
+    "key": "BowGold",
+    "made": true,
+    "name": "Nord Bow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 4,
+    "key": "CrossbowGold",
+    "made": true,
+    "name": "Nord Crossbow",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "KnifeGold",
+    "made": true,
+    "name": "Nord Dagger",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "BattleaxeGold",
+    "made": true,
+    "name": "Nord Greataxe",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "THSwordGold",
+    "made": true,
+    "name": "Nord Greatsword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "FistGold",
+    "made": true,
+    "name": "Nord Knucklechains",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "MaceGold",
+    "made": true,
+    "name": "Nord Mace",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 14,
+    "key": "SledgeGold",
+    "made": true,
+    "name": "Nord Sledge",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "SpearGold",
+    "made": true,
+    "name": "Nord Spear",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 3,
+    "key": "SwordGold",
+    "made": true,
+    "name": "Nord Sword",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "JotunWitch",
+        "name": "Hexen"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "NornThread",
+    "made": false,
+    "name": "Nornathread",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "FeastDeepNorth_Material",
+    "made": true,
+    "name": "Northern Morning Fare",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 16,
+    "key": "OatFlour",
+    "made": true,
+    "name": "Oat Flour",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "OatMilk",
+    "made": true,
+    "name": "Oat Milk",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "OatSeeds",
+    "made": false,
+    "name": "Oat Seeds",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "OatmealLingonberryJam",
+    "made": true,
+    "name": "Oatmeal",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 2,
+    "key": "Oat",
+    "made": true,
+    "name": "Oats",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "OvenPancake",
+    "made": true,
+    "name": "Oven Pancake",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "OvenPancakeUncooked",
+    "made": true,
+    "name": "Oven Pancake Batter",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "Pancakes",
+    "made": true,
+    "name": "Pancakes",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "GoldOre",
+    "made": false,
+    "name": "Petrified Tissue",
+    "places": [
+      "northRuins"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": true,
+    "itemType": 2,
+    "key": "Poteitr",
+    "made": false,
+    "name": "Poteitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "BlobMork",
+        "name": "Shapeless Pulp"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyBlob_Morkhalla",
+    "made": false,
+    "name": "Pulp Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "KaleChipsUncooked",
+    "made": true,
+    "name": "Raw Kale Chips",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seal",
+        "name": "Seal"
+      },
+      {
+        "key": "Seal_Pup",
+        "name": "Baby Seal"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SealBlubber",
+    "made": false,
+    "name": "Seal Blubber",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SealSoup",
+    "made": true,
+    "name": "Seal Meat Soup",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seal",
+        "name": "Seal"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "SealHide",
+    "made": false,
+    "name": "Seal Pelt",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Seal",
+        "name": "Seal"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophySeal",
+    "made": false,
+    "name": "Seal Trophy",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "PoteitrSeeds",
+    "made": false,
+    "name": "Seed Poteitr",
+    "places": [
+      "northVillage"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SmokedFish",
+    "made": true,
+    "name": "Smoked Fish",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 2,
+    "key": "SmokedMooseMeat",
+    "made": true,
+    "name": "Smoked Moose Meat",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "Greydwarf_Frozen",
+        "name": "Greydwarf"
+      }
+    ],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 3,
+    "key": "Snowball",
+    "made": true,
+    "name": "Snowball",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "OrbThunderBlood",
+    "made": false,
+    "name": "Thunderblood Essence",
+    "places": [
+      "northMemorial"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Frostwood",
+    "made": false,
+    "name": "Timberwood",
+    "places": [
+      "lumberCamp",
+      "morkhalla",
+      "northVillage",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "FirConeFrost",
+    "made": false,
+    "name": "Timberwood Cone",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "BakedPoteitrUncooked",
+    "made": true,
+    "name": "Unbaked Poteitr",
+    "places": [],
+    "soldBy": []
+  }
+]

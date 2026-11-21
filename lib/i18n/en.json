@@ -1,0 +1,1629 @@
+{
+  "archive": {
+    "chart": {
+      "chart": "Chart",
+      "table": "Table",
+      "share": "Share of seeds"
+    },
+    "title": "Seed Archive",
+    "game": "Valheim",
+    "home": "Home",
+    "tools": "Tools",
+    "map": "Map",
+    "account": "Account",
+    "signOut": "Sign out",
+    "unavailable": "The archive could not be read.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "releaseNotes": "Release notes",
+    "seedRating": "How good is my seed?",
+    "craftTree": "Craft tree",
+    "bugs": "Bugs",
+    "guides": "Guides",
+    "catalog": "Catalog",
+    "groupWorld": "World",
+    "groupGear": "Gear",
+    "groupFood": "Food and drink",
+    "groupMaterials": "Materials",
+    "groupBase": "Your base",
+    "groupBiomes": "Biomes",
+    "groupChallenges": "Challenges",
+    "groupBasics": "Basics",
+    "guideSpeedrunnersStart": "A speedrunner's start",
+    "guideMeadows": "Meadows",
+    "guideBlackForest": "Black Forest",
+    "guideBosses": "How to kill each boss",
+    "guideTraders": "What to buy from the traders",
+    "guideDeepNorth": "Deep North",
+    "guideSwamp": "Swamp",
+    "guideMountain": "Mountain",
+    "guidePlains": "Plains",
+    "guideMistlands": "Mistlands",
+    "guideAshlands": "Ashlands",
+    "guideWeapons": "Weapons",
+    "guideDamage": "Damage types",
+    "guideEvents": "Raids",
+    "guideOtherRules": "No death, no map, no portals",
+    "guideForge": "Forge of Potential",
+    "guideSpeedrun": "Speedrun",
+    "guideReverseRun": "Reverse run",
+    "guideWhereToBuild": "Where to build your base",
+    "guideHowMuchMetal": "How much metal a run takes",
+    "guideHardcore": "Hard, Very hard and Hardcore",
+    "guideBossArenas": "Boss arenas",
+    "guideBows": "Bows, crossbows and arrows",
+    "guideArmour": "Armour",
+    "guideToolsCatalog": "Tools",
+    "guideMeads": "Meads",
+    "guideTrophies": "Trophies",
+    "guideStations": "Crafting stations",
+    "guideWoodBuilding": "Wood building",
+    "guideStoneBuilding": "Stone building",
+    "guideFurniture": "Furniture",
+    "guideDeepNorthBuilding": "Deep North building",
+    "guideShips": "Ships and carts",
+    "guideOtherPieces": "Other build pieces",
+    "guideCreatures": "Creatures",
+    "guideFarming": "Farming",
+    "guideFood": "Food and feasts",
+    "guideComfort": "Comfort",
+    "guideDungeons": "Caves and dungeons",
+    "guideMaterials": "Materials",
+    "guideBreakables": "What to break"
+  },
+  "pages": {
+    "home": {
+      "title": "Valheim seeds",
+      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft <meadows>Meadows</meadows> to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do, from your <basics>first steps</basics> to the end. Want it harder? Take on the <challenges>challenges</challenges>. Whichever road you take, every weapon, meal and boss you meet on it waits in the <catalog>catalog</catalog>. And before you set sail, drop your <map>seed on the map</map> and find out if it is <rating>good enough</rating> to grow into Yggdrasil.",
+      "new": "New",
+      "biome": {
+        "meadows": {
+          "name": "Meadows",
+          "hook": "Where every game begins: Eikthyr, the hives in the houses you rob, the first pickaxe."
+        },
+        "black-forest": {
+          "name": "Black Forest",
+          "hook": "Copper, tin and the Elder, and the trolls that guard all three."
+        },
+        "swamp": {
+          "name": "Swamp",
+          "hook": "Iron sleeps in the Sunken Crypts, and so do the bones that wake Bonemass."
+        },
+        "mountain": {
+          "name": "Mountain",
+          "hook": "Silver under the snow, wolves on the slopes, Moder's eggs on the peaks."
+        },
+        "plains": {
+          "name": "Plains",
+          "hook": "Black metal, Fuling villages and the totems Yagluth asks for."
+        },
+        "mistlands": {
+          "name": "Mistlands",
+          "hook": "Black cores in the mist, and the Queen beneath it."
+        },
+        "ashlands": {
+          "name": "Ashlands",
+          "hook": "A sea that burns your boat, fortresses of the Charred, and Fader."
+        },
+        "deep-north": {
+          "name": "Deep North",
+          "hook": "The newest land: Kall waits at its end and calls back every boss before him."
+        }
+      }
+    },
+    "tools": {
+      "title": "Tools",
+      "map": "<b>How do I see the world of a seed?</b> Type it on the <link>Valheim seed map</link>.",
+      "seedRating": "<b>Is my seed any good?</b> Type it into <link>How good is my seed?</link> and see how its start island, boss altars, traders and dungeons rank against other worlds.",
+      "craftTree": "<b>How much wood and ore does my run need?</b> Switch on what you will build in the <link>Craft tree</link>."
+    },
+    "craftTree": {
+      "title": "Craft tree",
+      "question": "How much wood and ore does my run need?",
+      "answer": "Switch off what you skip; the column counts the raw materials the rest takes, with one station of each kind.",
+      "resources": "Raw materials",
+      "how": {
+        "bands": "Each band is a biome; a card stands in the first biome where it can be made, below what it needs. A line runs from what is needed to what needs it.",
+        "click": "A click switches a card off and everything that needs it, or on and everything it needs. A group's name switches the whole set.",
+        "stations": "A station's level is 1 plus its extensions, any of them. Only the campfire, the spits, the torch, the club, the workbench and the hammer are on at first; switch on what you will make, and the stations and extensions it needs come on with it.",
+        "quality": "The numbers on a card are its quality: picking 3 adds the upgrade materials and the station level it needs.",
+        "column": "The column sums the raw materials of everything on, with the slots and weight to carry them."
+      },
+      "carry": "{slots} inventory slots, {weight} weight",
+      "order": {
+        "amount": "Most first",
+        "name": "A–Z",
+        "biome": "By biome"
+      },
+      "noBiome": "Found elsewhere",
+      "group": {
+        "armour": "{station}: armour",
+        "weapons": "{station}: tools and weapons",
+        "staffs": "{station}: staffs",
+        "byHand": "By hand"
+      },
+      "biome": {
+        "meadows": "Meadows",
+        "blackForest": "Black Forest",
+        "swamp": "Swamp",
+        "ocean": "Ocean",
+        "mountain": "Mountain",
+        "plains": "Plains",
+        "mistlands": "Mistlands",
+        "ashlands": "Ashlands",
+        "deepNorth": "Deep North"
+      }
+    },
+    "seedRating": {
+      "title": "How good is my seed?",
+      "lead": "<b>Is my Valheim seed a good one?</b> Type it below: it is rated for a fair run through every biome, from 0 to 100 — green where this seed is among the best tenth of seeds, red where it is worse than most.",
+      "rate": "Rate",
+      "strip": {
+        "title": "How fast a run goes here",
+        "lead": "A run goes from the start along one line, north or south. The bosses should stand in a strip {km} km wide through the start; what a biome gives is counted in the boss's own biome, and in metres only where it must stand right beside something.",
+        "north": "In the strip, {km} km north",
+        "south": "In the strip, {km} km south",
+        "outside": "Not in the strip: the nearest is {km} km away, {aside} km beside it",
+        "none": "None in this world",
+        "searching": "Looking…"
+      },
+      "score": {
+        "total": "{n} / 100"
+      },
+      "measure": {
+        "bees_near": "Beehives within 1000 m of the start",
+        "vegetation_start_birches": "Birches within {start} m of the start",
+        "vegetation_start_oaks": "Oaks within {start} m of the start",
+        "vegetation_base_copper": "Copper veins within {copper} m of the base",
+        "vegetation_base_shore": "The sea within {copper} m of the base",
+        "vegetation_base_tin": "Tin on the shore within {tin} m of the base",
+        "vegetation_base_birches": "Birches within {birch} m of the base, for the portal",
+        "vegetation_base_greydwarfNests": "Greydwarf nests in this forest",
+        "around_kall_morkhallaNear": "{morkhalla} Mörkhalla within {bossNear} m of Kall",
+        "around_kall_holeNear": "The Winding Tunnels within {bossNear} m of Kall",
+        "region_bonemass_crypt": "Sunken Crypts in his Swamp",
+        "region_bonemass_fireHole": "Surtlings' fire holes in his Swamp",
+        "vegetation_base_chambers": "Burial Chambers within {chambers} m of the base",
+        "region_bonemass_abominationsMet": "Abominations a sweep of his Swamp meets",
+        "region_moder_drakeNest": "Drake nests in her Mountain",
+        "vegetation_moder_silver": "Silver veins in her Mountain, within {silver} m of her altar",
+        "region_yagluth_enoughTotems": "Enough totems in his Plains for the altar",
+        "region_theQueen_enoughFragments": "Enough Sealbreaker fragments in her Mistlands",
+        "region_theQueen_blackCores": "Black core stands in her Mistlands",
+        "region_start_cores": "Surtling cores on the start island (need {cores})",
+        "vegetation_base_cores": "Surtling cores in those chambers (need {cores})",
+        "region_bonemass_scrap": "Scrap piles in the Sunken Crypts of his Swamp",
+        "region_bonemass_iron": "Iron scrap from those piles",
+        "around_theQueen_rootNear": "A Yggdrasil root within {queenNear} m of the Queen",
+        "around_theQueen_extractor": "Places that can give a Dvergr Extractor within {extractor} m of the Queen",
+        "region_yagluth_totems": "Totems in the villages and outposts of his Plains",
+        "region_yagluth_village": "Fuling villages in his Plains",
+        "region_yagluth_tower": "Fuling outposts in his Plains",
+        "region_yagluth_barley": "Barley in those villages",
+        "region_yagluth_flax": "Flax in those villages",
+        "joint_base": "A troll cave with two copper veins and tin by it",
+        "around_theQueen_giantNear": "A giant's remains within {queenNear} m of the Queen",
+        "around_fader_fortressesNear": "{fortresses} Charred Fortresses within {bossNear} m of Fader",
+        "around_fader_morgenHolesNear": "{morgenHoles} Morgen holes within {bossNear} m of Fader"
+      },
+      "verdict": {
+        "offStrip": "{boss} is off the strip: the run turns aside for it.",
+        "noCopperCave": "No troll cave on the way has copper by it: a troll must be led to the copper, which is hard.",
+        "baseGood": "A troll cave with copper in sight of the sea makes the base: the ship is built there and the iron ferried back.",
+        "baseInland": "The troll cave with copper is out of sight of the sea: the iron is carried overland to the base.",
+        "coresFar": "No Burial Chamber near the base: the surtling cores are carried far.",
+        "witchFar": "The Bog Witch is off the strip: the run must go far for her and will likely skip her.",
+        "holesYes": "Fire holes in his Swamp give the smelter its cores and coal.",
+        "holesNo": "No fire holes in his Swamp: cores and coal come from elsewhere, and more wood is felled.",
+        "abomination": "The Abomination is a roll, not a place: every fresh zone of deep Swamp you enter may raise one, so sweep new ground round the crypts.",
+        "eggsOne": "Her Mountain holds the drake nests for her eggs.",
+        "eggsMore": "Her Mountain holds too few drake nests: the eggs come from another Mountain.",
+        "plainsEnough": "Yagluth's own Plains holds {villages} Fuling villages and {towers} outposts, {totems} totems — enough for the altar, with crops for a farm, in one Plains.",
+        "plainsSecond": "Yagluth's own Plains holds {villages} Fuling villages and {towers} outposts, {totems} totems of {need} — the run must find a second Plains, so this seed is weak here even if Yagluth is close.",
+        "fragmentsSecond": "Her own Mistlands holds too few Sealbreaker fragments: the run must clear mines in a second Mistlands.",
+        "far": "{what} is farther than on most seeds.",
+        "fewer": "{what}: fewer than on most seeds."
+      },
+      "island": {
+        "title": "The start island",
+        "lead": "What a run reaches before its first boat. The Meadows and the Black Forest with their altars belong on it; the Swamp and the Mountain with theirs are a bonus. The best seed holds all four.",
+        "biome": "Biome",
+        "onIsland": "On the start island",
+        "altar": "Boss altar on it",
+        "optional": "(a bonus)",
+        "row": "On the start island",
+        "on": "On the island",
+        "bonus": "On the island: a bonus",
+        "off": "Not on the island"
+      },
+      "value": {
+        "yes": "Yes",
+        "no": "No",
+        "about": "about {n} ({least} to {most})"
+      },
+      "toMap": "Every place below is on the <link>map of this seed</link>."
+    },
+    "map": {
+      "title": "Valheim seed map",
+      "seed": "Seed",
+      "show": "Show the map",
+      "cursor": "x {x}, y {y}",
+      "layers": {
+        "bosses": "Bosses",
+        "traders": "Traders",
+        "dungeons": "Dungeons",
+        "resources": "Resources",
+        "buildings": "Buildings",
+        "relief": "Contours",
+        "trees": "Trees",
+        "ore": "Ore",
+        "fineWood": "Fine wood",
+        "spawners": "Spawners"
+      },
+      "places": {
+        "start": "Sacrificial stones",
+        "eikthyr": "Eikthyr's altar",
+        "theElder": "The Elder's altar",
+        "bonemass": "Bonemass's altar",
+        "moder": "Moder's altar",
+        "yagluth": "Yagluth's altar",
+        "theQueen": "The Queen's gate",
+        "fader": "Fader's altar",
+        "haldor": "Haldor",
+        "hildir": "Hildir",
+        "bogWitch": "The Bog Witch",
+        "burialChamber": "Burial Chambers",
+        "sunkenCrypt": "Sunken Crypt",
+        "trollCave": "Troll cave",
+        "frostCave": "Frost cave",
+        "infestedMine": "Infested Mine",
+        "fortress": "Charred Fortress",
+        "hildirCave": "Howling Cavern (Hildir's chest)",
+        "hildirCrypt": "Smouldering Tomb (Hildir's chest)",
+        "hildirFortress": "Sealed Tower (Hildir's chest)",
+        "abandonedHouse": "Abandoned house",
+        "abandonedFarm": "Abandoned farm",
+        "draugrVillage": "Draugr village",
+        "stoneTower": "Stone tower ruins",
+        "stoneHouse": "Stone house ruins",
+        "ruins": "Ruins",
+        "runestone": "Runestone",
+        "greydwarfCamp": "Greydwarf camp",
+        "fulingVillage": "Fuling village",
+        "standingStones": "Standing stones",
+        "dolmen": "Dolmen",
+        "grave": "Grave",
+        "shipwreck": "Shipwreck",
+        "shipSetting": "Stone ship setting",
+        "frozenShip": "Frozen ship",
+        "swampHut": "Swamp hut",
+        "well": "Well",
+        "tarPit": "Tar pit",
+        "drakeNest": "Drake nest with an egg",
+        "guckTree": "Guck tree",
+        "bearDen": "Bear den",
+        "giantRemains": "Giant's remains",
+        "excavation": "Dvergr excavation",
+        "dvergrRuins": "Dvergr ruins",
+        "charredRuins": "Charred ruins",
+        "charredSpawner": "Charred stones",
+        "fireHole": "Fire hole",
+        "sulfurArch": "Sulfur arch",
+        "lavaLeviathan": "Lava leviathan",
+        "voltureNest": "Volture nest",
+        "morgenHole": "Morgen hole",
+        "placeOfMystery": "Place of mystery",
+        "ancientForge": "Ancient forge",
+        "northRuins": "Deep North ruins",
+        "northVillage": "Deep North village",
+        "northMemorial": "Deep North memorial",
+        "icePond": "Ice pond",
+        "waymarker": "Waymarker",
+        "lumberCamp": "Lumber camp",
+        "rockClearing": "Rock clearing",
+        "theHole": "Winding Tunnels",
+        "kall": "Kall's altar",
+        "morkhalla": "Mörkhalla",
+        "fulingOutpost": "Fuling outpost",
+        "northHomestead": "Abandoned homestead",
+        "unnamed": "A place"
+      },
+      "biomes": {
+        "meadows": "Meadows",
+        "blackForest": "Black Forest",
+        "swamp": "Swamp",
+        "mountain": "Mountain",
+        "plains": "Plains",
+        "mistlands": "Mistlands",
+        "ashlands": "Ashlands",
+        "deepNorth": "Deep North",
+        "ocean": "Ocean"
+      },
+      "fromStart": "{km} km {way} of the start",
+      "loot": {
+        "open": "Click to see what it holds",
+        "close": "Close",
+        "nothing": "Nothing to take here.",
+        "range": "{n} ({least} to {most})",
+        "exact": "Stands there",
+        "exactLead": "Fixed by the seed.",
+        "overYaws": "Stands there, by its turn",
+        "overYawsLead": "This dungeon is built one of sixteen ways; the mean, and the least and the most of them.",
+        "atPlay": "Rolled when you take it",
+        "atPlayLead": "Chests and what breaks are rolled in play: the mean.",
+        "why": "Exact or not: <a>Why the map's loot is an average</a>.",
+        "items": {
+          "Amber": "Amber",
+          "AncientCoin": "Ancient Coin",
+          "AncientGemstoneBlack": "Draumyx",
+          "AncientGemstoneGreen": "Grimvarn",
+          "AncientGemstoneOrange": "Solryth",
+          "AncientGemstonePurple": "Veydris",
+          "AtgeirWood": "Wooden Atgeir",
+          "AxeWood": "Wooden Axe",
+          "BattleaxeWood": "Wooden Battleaxe",
+          "BeltStrength": "Megingjord",
+          "BjornMeat": "Bear Meat",
+          "BlackMetalScrap": "Black Metal Scrap",
+          "BloodGoldKey": "Intricate Key",
+          "BoneMawSerpentMeat": "Bonemaw Meat",
+          "BronzeScrap": "Scrap Bronze",
+          "CopperOre": "Copper Ore",
+          "CopperScrap": "Copper Scrap",
+          "CryptKey": "Swamp Key",
+          "DeerMeat": "Deer Meat",
+          "DragonEgg": "Dragon Egg",
+          "FeastAshlands": "Ashlands Gourmet Bowl",
+          "FeastBlackforest": "Black Forest Buffet Platter",
+          "FeastMeadows": "Whole Roasted Meadow Boar",
+          "FeastMistlands": "Mushrooms Galore á la Mistlands",
+          "FeastMountains": "Hearty Mountain Logger's Stew",
+          "FeastOceans": "Sailor's Bounty",
+          "FeastPlains": "Plains Pie Picnic",
+          "FeastSwamps": "Swamp Dweller's Delight",
+          "FishAnglerRaw": "Raw Fish",
+          "FishingRod": "Fishing Rod",
+          "FlametalOreNew": "Flametal Ore",
+          "FrozenKingDrop": "Sacrificial Blood",
+          "GoblinTotem": "Fuling Totem",
+          "GoldOre": "Petrified Tissue",
+          "HatefulBlood": "Malicious Blood",
+          "HelmetDverger": "Dverger Circlet",
+          "HelmetYule": "Yule Hat",
+          "HildirKey_forestcrypt": "Hildir's Brass Key",
+          "HildirKey_mountaincave": "Hildir's Silver Key",
+          "HildirKey_plainsfortress": "Hildir's Bronze Key",
+          "IronOre": "Iron Ore",
+          "IronScrap": "Scrap Iron",
+          "KnifeVoid": "Voidcaller",
+          "KnifeWood": "Wooden Knife",
+          "Lantern_DN": "Salvaged Lantern",
+          "MaceWood": "Wooden Mace",
+          "MemorialCoal": "Memorial Coal",
+          "MushroomBlue": "Blue Mushroom",
+          "SerpentMeat": "Serpent Meat",
+          "ShieldIronSquare": "Iron Shield",
+          "SilverOre": "Silver Ore",
+          "SledgeCheat": "Cheat sledge",
+          "SledgeWood": "Wooden Sledge",
+          "Softtissue": "Soft Tissue",
+          "SpearWood": "Wooden Spear",
+          "SwordCheat": "Cheat sword",
+          "THSwordWood": "Wooden Greatsword",
+          "Tankard_dvergr": "Dvergr Tankard",
+          "TinOre": "Tin Ore",
+          "TrophyBlob_Frost": "Frost Blob Trophy",
+          "TrophyGoblinBruteBrosShaman": "Zil Trophy",
+          "Upgrader0Armor": "Wooden Protection Idol",
+          "Upgrader0Weapon": "Wooden Battle Idol",
+          "Upgrader1Armor": "Bronze Protection Idol",
+          "Upgrader1Weapon": "Bronze Battle Idol",
+          "Upgrader2Armor": "Iron Protection Idol",
+          "Upgrader2Weapon": "Iron Battle Idol",
+          "Upgrader3Armor": "Silver Protection Idol",
+          "Upgrader3Weapon": "Silver Battle Idol",
+          "Upgrader4Armor": "Black Metal Protection Idol",
+          "Upgrader4Weapon": "Black Metal Battle Idol",
+          "Upgrader5Armor": "Black Marble Protection Idol",
+          "Upgrader5Weapon": "Black Marble Battle Idol",
+          "Upgrader6Armor": "Flametal Protection Idol",
+          "Upgrader6Weapon": "Flametal Battle Idol",
+          "Upgrader7Armor": "Bloodgold Protection Idol",
+          "Upgrader7Weapon": "Bloodgold Battle Idol",
+          "Wishbone": "Wishbone",
+          "chest_hildir1": "Hildir's Brass Chest",
+          "chest_hildir2": "Hildir's Silver Chest",
+          "chest_hildir3": "Hildir's Bronze Chest"
+        }
+      },
+      "pin": "Your pin",
+      "removePin": "Remove",
+      "length": "{m} m",
+      "height": "{m} m above the sea",
+      "swampWide": "Wide enough for Sunken Crypts and Bonemass",
+      "swampNarrow": "Too narrow for Sunken Crypts and Bonemass",
+      "subBiomeIs": "Sub-biome: {names}",
+      "ruler": "Ruler",
+      "help": "Click the map to see what is there; right-click to drop your own pin, kept in this browser. With the ruler on, clicks measure a route.",
+      "report": {
+        "title": "Seed {seed}",
+        "hide": "Hide the report",
+        "show": "Show the report",
+        "placing": "Placing every location of this world…",
+        "measuring": "Measuring this world…",
+        "lead": "Every number is set against the seeds we computed: green where this seed does better than most, red where it does worse.",
+        "bosses": "Boss altars nearest the start",
+        "traders": "Traders' nearest possible places",
+        "distance": "Straight",
+        "sea": "Of it, sea",
+        "onIsland": "On the start island",
+        "closer": "closer than {n}% of seeds",
+        "more": "more than {n}% of seeds",
+        "dungeons": "Dungeons",
+        "nearestSunken": "Nearest Sunken Crypt",
+        "sunkenNear": "Sunken Crypts within 3 km",
+        "burialNear": "Burial Chambers within 3 km",
+        "trollNear": "Troll caves within 3 km",
+        "mountains": "Mountains",
+        "highest": "The highest point: {m} m above the sea.",
+        "route": "The route, stage by stage",
+        "routeLead": "What a run needs at each stage, measured from the boss altars nearest the start.",
+        "route_firstHome_walk": "The first home: start, Eikthyr, the troll cave nearest him",
+        "route_firstHome_caveShore": "That troll cave to the sea",
+        "route_swamp_bogWitch": "Bonemass to the Bog Witch",
+        "route_swamp_crypt": "Bonemass to the nearest Sunken Crypt",
+        "route_mountain_fromBonemass": "Bonemass to Moder",
+        "route_plains_fromBonemass": "Bonemass to Yagluth",
+        "route_plains_villagesClose": "Fuling villages right at Yagluth's altar",
+        "route_plains_villagesRing": "Fuling villages around Yagluth, at a walk",
+        "route_mistlands_minePair": "The two closest Infested Mines, apart",
+        "route_mistlands_minePairFromStart": "The farther of those two from the start",
+        "route_ashlands_fortressesNearFader": "Charred Fortresses within reach of Fader",
+        "route_ashlands_nearestFortress": "Fader to the nearest Charred Fortress",
+        "route_ashlands_fortressShore": "That fortress to the sea",
+        "route_line_offSum": "Every boss altar off the north–south line, summed",
+        "fewer": "fewer than {n}% of seeds",
+        "wood": "Copper, wood and Abominations",
+        "woodMeasuring": "Placing the trees and ore around the caves, the start and Yagluth…",
+        "vegetation_copperCaves_count": "Troll caves near the start with copper by the entrance",
+        "vegetation_copperCaves_nearest": "The nearest of them",
+        "vegetation_copperCaves_veins": "Copper veins by that cave",
+        "vegetation_copperCaves_oaks": "Oaks around that cave",
+        "vegetation_copperCaves_birches": "Birches around that cave",
+        "vegetation_copperCaves_nearestOak": "That cave to the nearest oak",
+        "vegetation_groves_start": "Oaks and birches around the start",
+        "vegetation_groves_yagluth": "Oaks and birches around Yagluth's altar",
+        "route_swamp_fireHole": "Bonemass or his crypt to the nearest surtling fire hole",
+        "sectors_abomination": "Bonemass or his crypt to where Abominations spawn",
+        "route_firstHome_blackForest": "The start to the nearest Black Forest",
+        "vegetation_copperCaves_walk": "Start, Eikthyr, the copper cave: the whole walk",
+        "vegetation_copperCaves_shore": "The copper cave to the sea",
+        "vegetation_copperCaves_tin": "Tin within reach of the copper cave",
+        "bees": "Beehives",
+        "bees_third": "The start to the third nearest beehive",
+        "bees_fourth": "The start to the fourth nearest beehive",
+        "bees_near": "Beehives within a short walk of the start",
+        "villages": "Fuling villages around Yagluth",
+        "villages_barley": "Barley in them",
+        "villages_flax": "Flax in them",
+        "villages_totems": "Fuling totems in them",
+        "summons": "Summoning Moder and Yagluth",
+        "summonsLead": "Moder's altar takes three dragon eggs, one from each drake nest; Yagluth's takes five Fuling totems from the villages around it.",
+        "summons_moderEggs": "Moder's altar to its third nearest drake nest",
+        "summons_moderNests": "Drake nests within 1 km of Moder's altar",
+        "summons_yagluthTotems": "Yagluth's altar to the farthest village needed for five totems",
+        "summons_yagluthVillages": "Fuling villages to clear for five totems"
+      },
+      "compass": {
+        "north": "north",
+        "northEast": "north-east",
+        "east": "east",
+        "southEast": "south-east",
+        "south": "south",
+        "southWest": "south-west",
+        "west": "west",
+        "northWest": "north-west"
+      },
+      "kinds": {
+        "start": "Start",
+        "landmark": "One in the world",
+        "bosses": "Boss altar",
+        "traders": "Trader",
+        "dungeons": "Dungeon",
+        "other": "Place",
+        "resources": "Resource"
+      },
+      "possiblePlace": "One of the places the game may put it: there is one in each world",
+      "nearestTitle": "The nearest to the start",
+      "seaOnWay": "{sea} km of the straight way is sea",
+      "noSea": "No sea on the straight way",
+      "layerHints": {
+        "bosses": "Boss altars",
+        "traders": "Where the game may put each trader",
+        "dungeons": "Burial Chambers, Sunken Crypts, troll caves, Infested Mines",
+        "resources": "Tar pits, Fuling villages with their barley, flax and totems, drake nests (one egg each), beehives, ancient roots and berries",
+        "buildings": "Fuling villages, Draugr villages and farms, seen from above (zoom in)",
+        "relief": "Contour lines, every 50 m",
+        "trees": "Every tree, drawn as in the game (zoom in)",
+        "ore": "What a pickaxe mines: silver, swamp iron, copper, tin, obsidian, giants' remains, Leviathans (zoom in)",
+        "fineWood": "Birches and oaks (zoom in)",
+        "spawners": "Where creatures come from: the spawners inside camps, ruins, caves, crypts and their rooms, and the swamps where Abominations rise (zoom in)"
+      },
+      "layersTitle": "Layers",
+      "hidePanel": "Hide the panel",
+      "showPanel": "Show the panel",
+      "showShort": "Show",
+      "seedRule": "Letters and digits, up to 10",
+      "zoomIn": "Ore, trees, roots, berries and fine wood show when you zoom in close; beehives and every pin show on the whole map.",
+      "legend": {
+        "fulingVillages": "Fuling villages",
+        "draugrVillages": "Draugr villages and farms",
+        "silver": "Silver",
+        "iron": "Swamp iron",
+        "copper": "Copper",
+        "tin": "Tin",
+        "obsidian": "Obsidian",
+        "giantRemains": "Giants' remains",
+        "leviathan": "Leviathan",
+        "ancientRoot": "Ancient root",
+        "birch": "Birch",
+        "oak": "Oak",
+        "raspberry": "Raspberry",
+        "blueberry": "Blueberry",
+        "cloudberry": "Cloudberry",
+        "lingonberry": "Lingonberry",
+        "beehive": "Beehive",
+        "barley": "Barley field",
+        "flax": "Flax field",
+        "totem": "Fuling totem",
+        "greydwarfNest": "Greydwarf nests",
+        "skeletons": "Skeletons",
+        "boars": "Boars",
+        "trolls": "Trolls",
+        "bears": "Bears",
+        "draugr": "Draugr",
+        "wraiths": "Wraiths",
+        "blobs": "Blobs",
+        "golems": "Stone golems",
+        "fulings": "Fulings",
+        "seekers": "Seekers",
+        "ticks": "Ticks",
+        "dvergr": "Dvergr",
+        "charred": "The Charred",
+        "voltures": "Voltures",
+        "morgens": "Morgens",
+        "ghosts": "Ghosts",
+        "abominations": "Abominations",
+        "bats": "Bats",
+        "cultists": "Cultists",
+        "ulvs": "Ulvs",
+        "twitchers": "Twitchers",
+        "otherCreatures": "Other creatures",
+        "fenrings": "Fenrings",
+        "drakes": "Drakes",
+        "valkyries": "Fallen Valkyries",
+        "writhans": "Writhans",
+        "leeches": "Leeches",
+        "surtlings": "Surtlings",
+        "fryslings": "Fryslings"
+      },
+      "startNoBuild": "Nothing can be built within {m} m of the stones",
+      "pickCount": {
+        "barley": "{n} barley",
+        "flax": "{n} flax",
+        "raspberry": "A stand of {n} bushes",
+        "blueberry": "A stand of {n} bushes",
+        "cloudberry": "A stand of {n} bushes",
+        "lingonberry": "A stand of {n} bushes",
+        "spawners": "{n} spawners here"
+      },
+      "foldKinds": "Hide the kinds",
+      "unfoldKinds": "Show the kinds",
+      "spawnersInRooms": "In its rooms"
+    },
+    "notFound": {
+      "title": "This page does not exist",
+      "home": "Back to Valheim"
+    },
+    "bugs": {
+      "title": "World generation bugs",
+      "lead": "<b>Why does a Burial Chamber on my seed have other rooms than on a friend's, on the very same seed?</b> Because the game turns each Burial Chamber and Sunken Crypt at random, apart from the seed, and the turn decides its rooms.",
+      "crypts": {
+        "title": "Burial Chambers and Sunken Crypts differ on the same seed",
+        "how": "The game sets every location down at one of {yaws} turns, {step}° apart, and picks the turn with a random number that the seed does not fix. For most locations the turn changes nothing inside. A Burial Chamber in the Black Forest and a Sunken Crypt in the Swamp are different: the turn shifts the dungeon's generator a little, and the generator's position becomes the seed of the dungeon's rooms.",
+        "cores": "So one crypt on one seed has a few possible layouts, each with its own rooms, chests, surtling cores and scrap piles. Which one a world gets is settled when the crypt is first generated, and stays.",
+        "others": "Troll caves, frost caves, Infested Mines and the other dungeons are not touched by it: their rooms follow from the seed alone.",
+        "maps": "A seed map that shows a single layout for a crypt shows one of its possible layouts. What a world really holds is in its save, once someone has walked in."
+      },
+      "loot": {
+        "title": "Why the map's loot is an average",
+        "why": "Click a dungeon or a camp on the map and its panel lists what it holds. Some numbers there are exact, others are averages, for two reasons: the turn of the crypts above, and chests that roll their contents only when opened. The panel sorts every line into one of three groups.",
+        "exact": "<b>Stands there.</b> Fixed by the seed: the same in every world made from it, so the number is exact.",
+        "overYaws": "<b>Stands there, by its turn.</b> What stands in a Burial Chamber or a Sunken Crypt: its rooms' cores and scrap piles. The crypt is built one of {yaws} ways, so the panel gives the average of them, with the fewest and the most a crypt of that place can have. Your world holds one of those layouts.",
+        "atPlay": "<b>Rolled when you take it.</b> Chests, and what drops from things you break, are rolled by the game when you open or break them, not when the world is made. No map can know them; the panel gives the average the game's own odds give."
+      }
+    },
+    "catalog": {
+      "title": "Catalog"
+    },
+    "events": {
+      "title": "Raids",
+      "question": "What raids my base, and when does it stop?",
+      "answer": "Every {minutes} minutes, while you are near a base, the game rolls a {chance}% chance of a raid from those your world has opened. A raid tied to the bosses comes only between one boss and the next, so killing the next one ends it for good.",
+      "how": "Every other raid stays once opened. And you outlast a raid rather than clear it: each kind of creature keeps coming back up to the most it can have at once, a fresh one for each you kill, until the raid's time runs out.",
+      "invasion": {
+        "title": "The Jotun Invasion",
+        "text": "This one is no raid on your base but an event of the world, and you start it yourself: break the Malicious Ice in the halls of a Mörkhalla in the Deep North and the Jotuns advance. Up to three stand at once, each a frozen patch of the Meadows, the Black Forest, the Swamp, the Mountain or the Plains, far from the world's centre and marked on your map; with no map, a trail of particles leads you to the nearest. Each holds until you break the Malicious Ice or the Orb of Fimbulvinter at its heart and the Jotuns retreat. Their own raid, the Jotuns at your base, begins once you have killed a Jotun and ends only with Kall Fimbulbringer."
+      },
+      "anywhere": "Also away from a base",
+      "fromStart": "From the start",
+      "never": "Never",
+      "minutes": "{m} min",
+      "atOnce": "up to {n} at once",
+      "spawner": {
+        "charred": "Charred spawner"
+      },
+      "head": {
+        "raid": "Raid",
+        "opens": "Starts after",
+        "ends": "Ends after",
+        "lasts": "Lasts",
+        "who": "Who comes",
+        "where": "Where"
+      },
+      "key": {
+        "KilledTroll": "Killing a troll",
+        "killed_surtling": "Killing a surtling",
+        "KilledBat": "Killing a bat",
+        "elakingmole_defeated": "Killing an Eyeless One",
+        "jotun_killed": "Killing a Jotun",
+        "hildir1": "Bringing Hildir her first chest",
+        "hildir2": "Bringing Hildir her second chest",
+        "hildir3": "Bringing Hildir her third chest"
+      }
+    },
+    "trophies": {
+      "title": "Trophies",
+      "question": "What is each trophy for?",
+      "answer": "A boss's trophy goes back to the Sacrificial Stones: hung on its stone there, it gives you that boss's power. Every trophy stands under the first biome its creature lives in, with who drops it and what it goes into."
+    },
+    "materials": {
+      "title": "Materials",
+      "question": "Where does it come from, and what is it for?",
+      "answer": "Each crafting material under the first biome that gives it: where you find it, and every recipe it goes into in any biome, so you know what to keep before a later biome asks for it. Gear, food, meads and trophies are on pages of their own.",
+      "power": "Power at the Sacrificial Stones",
+      "bossTrophies": "Bosses' trophies",
+      "head": {
+        "material": "Material",
+        "from": "Where from",
+        "into": "Goes into"
+      },
+      "grown": "grown with the cultivator",
+      "made": "made",
+      "gathered": "gathered in the open",
+      "fished": "caught on its bait",
+      "caughtWith": "sometimes caught with {fish}",
+      "more": "{count} more places"
+    },
+    "buildPieces": {
+      "note": {
+        "piece_TrainingDummy": "Every hit on it raises your weapon skill just as a hit on a creature does, so you can train at home in safety."
+      },
+      "head": {
+        "piece": "Piece",
+        "uses": "What it is for",
+        "stationNearby": "Station nearby",
+        "materials": "Materials"
+      },
+      "use": {
+        "station": "Crafting station",
+        "extension": "Raises the {station} one level",
+        "converter": "Turns materials into others",
+        "producer": "Makes {items} by itself",
+        "bed": "Bed: sleep, and the spawn point",
+        "comfort": "Comfort {value}",
+        "fire": "Fire, burns {fuel}",
+        "light": "Light, burns {fuel}",
+        "lamp": "Light",
+        "storage": "Storage, slots: {slots}",
+        "portal": "Portal",
+        "portalMetal": "Portal that lets metal through",
+        "ship": "Ship",
+        "cart": "Cart",
+        "map": "Shares the map",
+        "seat": "Seat",
+        "display": "Shows an item",
+        "incinerator": "Destroys what is put in it",
+        "sign": "Sign to write on",
+        "training": "Training target",
+        "roof": "Roof",
+        "wall": "Wall",
+        "floor": "Floor",
+        "stairs": "Stairs",
+        "door": "Door or window",
+        "support": "Holds up to {value} ({material})",
+        "ward": "Ward, guards {value} m around it",
+        "shield": "Shield over the base",
+        "turret": "Turret, holds {value} ammo",
+        "trap": "Trap",
+        "siege": "Siege engine",
+        "defence": "Defence",
+        "decoration": "Decoration",
+        "crafting": "Crafting"
+      },
+      "material": {
+        "wood": "wood",
+        "stone": "stone",
+        "iron": "iron",
+        "hardwood": "hardwood",
+        "marble": "black marble",
+        "ashstone": "grausten",
+        "ancient": "ancient",
+        "ice": "ice",
+        "timberwood": "timber"
+      }
+    },
+    "effects": {
+      "runStamina": "Stamina for running {v} %",
+      "jumpStamina": "Stamina for jumping {v} %",
+      "swimStamina": "Stamina for swimming {v} %",
+      "sneakStamina": "Stamina for sneaking {v} %",
+      "attackStamina": "Stamina for attacking {v} %",
+      "blockStamina": "Stamina for blocking {v} %",
+      "dodgeStamina": "Stamina for dodging {v} %",
+      "blockStaminaFlat": "Stamina for each block {v}",
+      "stagger": "Stagger resistance {v} %",
+      "speed": "Movement speed {v} %",
+      "jump": "Jump height {v} %",
+      "healthRegen": "Health regeneration {v} %",
+      "staminaRegen": "Stamina regeneration {v} %",
+      "eitrRegen": "Eitr regeneration {v} %",
+      "healthOverTime": "Heals {v} health over {seconds} s",
+      "staminaOverTime": "Restores {v} stamina over {seconds} s",
+      "eitrOverTime": "Restores {v} eitr over {seconds} s",
+      "carry": "Carry weight {v}",
+      "tailwind": "The wind always behind the sail",
+      "taming": "Animals tame faster",
+      "damage": "{types} damage {v} %",
+      "damageAll": "All damage {v} %",
+      "skill": "{skill} skill {v}",
+      "resist": "{types} damage taken {v} %",
+      "skillName": {
+        "farming": "Farming",
+        "run": "Run"
+      }
+    },
+    "breakables": {
+      "question": "What is worth smashing?",
+      "answer": "The Ashlands' pots, the one thing that breaks into silver; in the frost caves, the wooden gates for iron bars, the braziers for bronze and the hangings for Fenris hair; in the Mörkhalla, what drops hides, jute, chains and coins; and the Dvergr's furniture for scrap and surtling cores.",
+      "head": {
+        "object": "What to break",
+        "gives": "One break gives",
+        "where": "Where it stands"
+      },
+      "chance": "{n}% of breaks",
+      "chanceRange": "{low}–{high}% of breaks",
+      "always": "(always)",
+      "sometimes": "(sometimes)",
+      "note": "\"Sometimes\" means the object stands in a part of the place that some seeds build and others leave out.",
+      "object": {
+        "brazier": "Brazier",
+        "dvergrProps": "Dvergr furniture and timber",
+        "dvergrPickaxe": "Dvergr pickaxe",
+        "wallSpikes": "Fortress wall spikes",
+        "weaponStand": "Weapon stand",
+        "barrel": "Barrel",
+        "rugs": "Rugs and banners",
+        "bedroll": "Bedroll",
+        "morkhallaFurniture": "Benches, stools and tables",
+        "rubble": "Rubble",
+        "trainingDummy": "Training dummy",
+        "coalPile": "Pile of coal",
+        "fulingTrash": "Fuling trash pile",
+        "fulingRoof": "Fuling roofs and banners",
+        "hangingCloth": "Hanging cloth",
+        "hairHanging": "Hanging hair",
+        "caveFurniture": "Chairs and tables",
+        "shipwreck": "Shipwreck boards",
+        "carrion": "Asksvin carrion",
+        "bed": "Bed",
+        "prepTable": "Preparation table",
+        "tankard": "Tankard",
+        "trophyStand": "Item stand with a trophy",
+        "seekerEgg": "Seeker egg",
+        "marblePost": "Black marble post",
+        "bellAltar": "Bell fragment altar",
+        "morgenPile": "Morgen's pile",
+        "wagon": "Wagon"
+      },
+      "group": {
+        "moulds": "A mould",
+        "ancientItems": "An ancient item for the Forge of Potential"
+      }
+    },
+    "meads": {
+      "title": "Meads",
+      "question": "What does each mead do?",
+      "lead": "Every mead and potion by biome: what drinking it does and for how long, then what the mead ketill takes for its base. That cost buys several bottles, not one: the fermenter turns each base into a few.",
+      "hives": {
+        "title": "How many beehives a fermenter needs:",
+        "text": "a mead base takes {honey} honey, a hive makes one honey every {hive} seconds, and a fermenter turns a base every {ferment} seconds, so one fermenter that never stands idle takes {honey} × {hive} ÷ {ferment} = {hives} hives."
+      },
+      "head": {
+        "mead": "Mead",
+        "effect": "What it does",
+        "base": "Base, at the mead ketill"
+      },
+      "lasts": "Lasts {minutes} min",
+      "makes": "The fermenter makes {count}"
+    },
+    "stations": {
+      "title": "Crafting stations",
+      "question": "What to build first?",
+      "lead": "A workbench, then a forge for bronze. A station levels up with the upgrades you build beside it, and better gear asks for a higher level, so plan the upgrades with the station: every station and upgrade by biome."
+    },
+    "woodBuilding": {
+      "title": "Wood building",
+      "question": "What does a wooden house take?",
+      "lead": "A workbench within reach, then whatever each piece costs: every wooden wall, floor, roof, beam, door and stair the hammer raises by one, by biome."
+    },
+    "stoneBuilding": {
+      "title": "Stone building",
+      "question": "What does a stone house take?",
+      "lead": "A stonecutter within reach, then whatever each piece costs: every stone, marble and grausten piece the hammer raises by one, by biome."
+    },
+    "furniture": {
+      "title": "Furniture",
+      "question": "What furniture can you build?",
+      "lead": "Every bed, chair, table, chest, banner, rug and light the hammer builds, by biome. Before you fill a hall, check the comfort page: only the best piece of each kind counts toward your rest."
+    },
+    "deepNorthBuilding": {
+      "title": "Deep North building",
+      "question": "What does the hammer's Deep North tab hold?",
+      "lead": "Roofs, walls and furniture that the game keeps apart from the wood and stone ones, with what each costs."
+    },
+    "ships": {
+      "title": "Ships and carts",
+      "question": "Which ship to build?",
+      "lead": "The raft, the Karve, the Longship or the Drakkar, the cart and the siege engines: what each takes to build, by biome."
+    },
+    "otherPieces": {
+      "title": "Other build pieces",
+      "question": "What else does the hammer build?",
+      "lead": "Portals, fires, stacks, piles, adornments, and the training dummy that trains your weapon skill at home, by biome."
+    },
+    "crafting": {
+      "colours": "Within a biome, green is the best and red the worst: of each damage type among the weapons, of armour among the armour, of block among the shields. Green also marks the best eitr regen and any armour that makes you faster; red, a speed penalty heavier than usual for its kind.",
+      "nothing": "Nothing matches.",
+      "copied": "Link copied",
+      "biome": {
+        "meadows": "Meadows",
+        "blackForest": "Black Forest",
+        "swamp": "Swamp",
+        "mountain": "Mountain",
+        "plains": "Plains",
+        "mistlands": "Mistlands",
+        "ashlands": "Ashlands",
+        "deepNorth": "Deep North",
+        "ocean": "Ocean",
+        "elsewhere": "Any time"
+      },
+      "group": {
+        "weapons": "Weapons",
+        "shields": "Shields",
+        "armour": "Armour",
+        "ammo": "Arrows, bolts and missiles",
+        "tools": "Tools",
+        "consumables": "Food, meads and potions",
+        "materials": "Materials",
+        "other": "Other"
+      },
+      "head": {
+        "item": "Item",
+        "stats": "Stats",
+        "station": "Station",
+        "materials": "Materials",
+        "upgrades": "Each upgrade"
+      },
+      "upgrade": {
+        "each": "Each step: {gains}",
+        "step": "Quality {quality}, level {level}:",
+        "armor": "Armour +{value}",
+        "durability": "Durability +{value}",
+        "block": "Block power +{value}",
+        "deflection": "Block force +{value}",
+        "damage": "{type} +{value}"
+      },
+      "over": {
+        "name": "Over the {name}:",
+        "tier": "tier {value}",
+        "damage": "{type} {value}"
+      },
+      "search": "Search by name, material or station",
+      "kind": {
+        "axe": "Axe",
+        "axe.2h": "Two-handed axe",
+        "bloodStaff.2h": "Blood magic staff",
+        "bow": "Bow",
+        "cape": "Cape",
+        "chest": "Chest",
+        "club": "Club",
+        "club.2h": "Sledge",
+        "crossbow": "Crossbow",
+        "elementalStaff.2h": "Elemental magic staff",
+        "farming.2h": "Farming tool",
+        "fist.2h": "Fists",
+        "helmet": "Helmet",
+        "knife": "Knife",
+        "knife.2h": "Dual knives",
+        "legs": "Legs",
+        "pickaxe.2h": "Pickaxe",
+        "polearm.2h": "Atgeir",
+        "shield": "Shield",
+        "spear": "Spear",
+        "sword": "Sword",
+        "sword.2h": "Two-handed sword",
+        "tool.farming": "Farming tool",
+        "tool.other": "Build tool",
+        "torch": "Torch",
+        "trinket": "Trinket",
+        "utility": "Utility"
+      },
+      "damage": {
+        "damage": "Damage",
+        "blunt": "Blunt",
+        "slash": "Slash",
+        "pierce": "Pierce",
+        "chop": "Chop",
+        "pickaxe": "Mining",
+        "fire": "Fire",
+        "frost": "Frost",
+        "lightning": "Lightning",
+        "poison": "Poison",
+        "spirit": "Spirit"
+      },
+      "stat": {
+        "armor": "Armour {value}",
+        "block": "Block {value}",
+        "tier": "Tier {value}",
+        "durability": "Durability {value}",
+        "movement": "Speed {value} %",
+        "eitrRegen": "Eitr regen {value} %",
+        "weight": "Weight {value}",
+        "quality": "Quality up to {value}",
+        "set": "Set of {value}"
+      },
+      "stationLevel": "{station}, level {level}",
+      "noStation": "By hand",
+      "season": "Only {from} – {to}"
+    },
+    "dungeons": {
+      "title": "Caves and dungeons",
+      "question": "Which creatures live where?",
+      "lead": "Know what waits inside before you walk in: every cave, dungeon and camp that holds creatures, which stand there, how many, and how likely each is on your seed.",
+      "section": {
+        "dungeon": {
+          "title": "Dungeons",
+          "text": "Behind the door your seed picks the rooms, and the rooms pick the creatures, so two dungeons of one kind need not hold the same foes."
+        },
+        "camp": {
+          "title": "Camps",
+          "text": "Out in the open your seed lays out the huts and fences round a centre, and the creatures stand among them."
+        },
+        "place": {
+          "title": "Caves and other places",
+          "text": "Built the same every time. A creature that stands there only by chance was rolled once, when your world was made, so one that is missing never turns up later."
+        }
+      },
+      "rooms": "Its rooms can hold:",
+      "variant": "{n}",
+      "head": {
+        "variant": "Variant",
+        "spawner": "Spawner",
+        "creatures": "Creatures",
+        "count": "How many",
+        "chance": "Chance",
+        "map": "Map"
+      },
+      "mapLink": "On the map"
+    },
+    "comfort": {
+      "title": "Comfort",
+      "question": "How do I raise comfort?",
+      "lead": "Rest under a roof by one piece of each kind: a fire, a bed, a chair, a table, a banner and the rest. Only the best piece of each kind counts, so a throne beside a chair adds only the throne.",
+      "rule": {
+        "title": "How comfort counts",
+        "rested": "Rested lasts {base} minutes at comfort 1, and {per} minute more for each level above it.",
+        "sum": "Comfort starts at {base}; a roof over you adds {shelter}. Then every piece within ten metres adds its comfort.",
+        "groups": "Pieces come in kinds: fires, beds, chairs, tables, banners, carpets, displays, decor, garlands, lanterns and leisure. Of each kind only the piece with the most comfort counts. A piece of no kind counts once, however many stand.",
+        "lit": "A fire counts only while it burns. An item stand is a display: it gives its comfort empty, and a trophy hung on it adds nothing."
+      },
+      "byBiome": {
+        "title": "Comfort by biome",
+        "text": "How far your base's comfort climbs with what you can build by each biome: the best piece of each kind so far, plus every piece of no kind. Build all of it and comfort reaches {most}, and Rested lasts {minutes} minutes."
+      },
+      "minutes": "{minutes} min",
+      "head": {
+        "biome": "Biome",
+        "rested": "Rested",
+        "added": "What it adds",
+        "piece": "Piece",
+        "comfort": "Comfort"
+      },
+      "group": {
+        "none": "No kind: each counts once",
+        "fire": "Fires",
+        "bed": "Beds",
+        "banner": "Banners",
+        "chair": "Chairs",
+        "table": "Tables",
+        "carpet": "Carpets",
+        "display": "Displays",
+        "decor": "Decor",
+        "garland": "Garlands",
+        "lantern": "Lanterns",
+        "leisure": "Leisure"
+      },
+      "litMark": "While lit"
+    },
+    "guides": {
+      "title": "Guides",
+      "middleHalf": "Middle half",
+      "spreadLegend": "The dark mark and the bold number: as a rule. The bar and the brackets: the middle half of seeds.",
+      "meadows": "<b>How do I explore the Meadows?</b> <link>Meadows</link>: a home on the shore, the first gear from boar and deer, the bees of the old houses, and Eikthyr's antlers.",
+      "blackForest": "<b>How do I explore the Black Forest?</b> <link>Black Forest</link>: copper and cores at its edge until you wear bronze or hide, then its towers, chambers and nests on the way to the Elder.",
+      "bosses": "<b>How do I kill each boss?</b> <link>How to kill each boss</link>: the hardest-hitting weapon you can make by then, the way round a straight fight, and the power its trophy gives.",
+      "traders": "<b>What to buy from the traders?</b> <link>What to buy from the traders</link>: everything Haldor, Hildir and the Bog Witch sell, and what each good is for.",
+      "deepNorth": "<b>How do I explore the Deep North?</b> <link>Deep North</link>: a camp in a village by Kall's gate, Bloodgold from the petrified trolls, the keys that open the Mörkhalla, the blood from the south, and Kall phase by phase.",
+      "swamp": "<b>How do I explore the Swamp?</b> <link>Swamp</link>: a camp on dry ground, the first iron from the nearest Sunken Crypt, then every crypt, the Abominations' roots and Bonemass.",
+      "mountain": "<b>How do I explore the Mountain?</b> <link>Mountain</link>: a climb on frost mead, the first silver into a wolf fur cape, then the drake nests and Moder.",
+      "plains": "<b>How do I explore the Plains?</b> <link>Plains</link>: a walled base by the sea, the smallest Fuling village for barley, flax and black metal, then the totems and Yagluth.",
+      "mistlands": "<b>How do I explore the Mistlands?</b> <link>Mistlands</link>: the Dvergr as allies, the Infested Mines for cores and the Sealbreaker, a Dvergr extractor for sap, and the Queen.",
+      "ashlands": "<b>How do I explore the Ashlands?</b> <link>Ashlands</link>: the Drakkar over the burning sea, a roofed foothold, the stone portal that carries metal, and the Charred Fortresses for Fader's bells.",
+      "damage": "<b>What hurts each creature?</b> <link>Damage types</link>: the weapon kind to bring against every creature and boss, and the resistance to wear against what it deals.",
+      "weapons": "<b>Which weapon to use?</b> <link>Weapons</link>: swords, axes, maces, knives, spears, atgeirs, fists and staffs by biome, what each is for and its damage.",
+      "bows": "<b>Which bow and which arrows?</b> <link>Bows, crossbows and arrows</link>: why the arrow sets the damage type, and every bow, bolt and bomb by biome.",
+      "armour": "<b>Which armour to wear?</b> <link>Armour</link>: helmets, chest and leg pieces, capes, shields and trinkets by biome.",
+      "toolsCatalog": "<b>Which tools to make?</b> <link>Tools</link>: pickaxes, the hammer, the hoe, the cultivator, saddles and fishing bait.",
+      "events": "<b>What raids my base, and when does it stop?</b> <link>Raids</link>: what opens each raid, what ends it, and who comes.",
+      "forge": "<b>Can you upgrade gear past its last level?</b> <link>Forge of Potential</link>: the idols, the odds, and why the answer is fixed.",
+      "otherRules": "<b>How do I play with no death, no map or no portals?</b> <link>No death, no map, no portals</link>: one thing taken from the usual game at a time, what each rule makes you plan for, and how the rules stack.",
+      "speedrunnersStart": "<b>Is this seed worth the run?</b> <link>A speedrunner's start</link>: what the start island holds, the first loop from Eikthyr to Moder leg by leg, and the tests a seed must pass before you keep it.",
+      "speedrun": "<b>How do I speedrun to the end?</b> <link>Speedrun</link>: forge only what the next boss asks, let monsters chop and mine for you, and sail as little as you can.",
+      "reverseRun": "<b>How do I play backwards, the Deep North first?</b> <link>Reverse run</link>: a raft north, a camp by the Winding Tunnels, and the gates that send you south for Moder and Fader.",
+      "whereToBuild": "<b>Where do I build the home I keep all game?</b> <link>Where to build your base</link>: the open sea for the boat, how far each metal lies from home, which of them sail, where a bridge spares the voyage, and what the raids make of it.",
+      "howMuchMetal": "<b>How much iron do I need?</b> <link>How much metal a run takes</link>: the iron and silver of a full kit at top quality, the least the bosses' gates ask, and whether your seed holds it.",
+      "hardcore": "<b>What does Very hard or the Hardcore preset change?</b> <link>Hard, Very hard and Hardcore</link>: softer blows from you and harder ones from them, more stars, earlier raids, and the Hardcore death.",
+      "bossArenas": "<b>How do I build a boss arena that nothing spawns into?</b> <link>Boss arenas</link>: why walls count for nothing, the ring of fires and stations round the altar, and the nests no ring stops.",
+      "meads": "<b>What does each mead do?</b> <link>Meads</link>: what each bottle does and for how long, and what its base costs at the mead ketill.",
+      "trophies": "<b>What is each trophy for?</b> <link>Trophies</link>: who drops it, what it goes into, and the power a boss's trophy gives at the Sacrificial Stones.",
+      "stations": "<b>What to build first?</b> <link>Crafting stations</link>: a workbench, then a forge, and every upgrade that levels them up.",
+      "woodBuilding": "<b>What does a wooden house take?</b> <link>Wood building</link>: every wall, floor, roof, beam, door and stair, and what each costs.",
+      "stoneBuilding": "<b>What does a stone house take?</b> <link>Stone building</link>: every stone, marble and grausten piece, and what each costs.",
+      "furniture": "<b>What furniture can you build?</b> <link>Furniture</link>: beds, chairs, tables, chests, banners, rugs and lights by biome.",
+      "deepNorthBuilding": "<b>What does the hammer's Deep North tab hold?</b> <link>Deep North building</link>: the roofs, walls and furniture the game keeps in a tab of their own.",
+      "ships": "<b>Which ship to build?</b> <link>Ships and carts</link>: the raft to the Drakkar, the cart and the siege engines, and what each takes.",
+      "otherPieces": "<b>What else does the hammer build?</b> <link>Other build pieces</link>: portals, fires, stacks and the training dummy.",
+      "creatures": "<b>What does each creature drop, and what is it for?</b> <link>Creatures</link>: health, weak spots, drops and the recipes they go into, by biome.",
+      "dungeons": "<b>Which creatures live where?</b> <link>Caves and dungeons</link>: who waits in each cave, dungeon and camp, and how likely on your seed.",
+      "materials": "<b>Where does it come from, and what is it for?</b> <link>Materials</link>: where to find each crafting material, and every recipe it goes into.",
+      "breakables": "<b>What is worth smashing?</b> <link>What to break</link>: the pots, gates, braziers, hangings and furniture that drop metal, hides, jute, chains, coins and moulds, and how often.",
+      "farming": "<b>How to farm?</b> <link>Farming</link>.",
+      "comfort": "<b>How do I raise comfort?</b> <link>Comfort</link>: the best piece of each kind, and how long Rested lasts.",
+      "food": "<b>What to eat?</b> <link>Food and feasts</link>: the best dishes for a melee fighter, an archer and a mage by each biome, and when to eat again."
+    },
+    "meadows": {
+      "title": "Meadows",
+      "lead": "<b>What do I need from the Meadows?</b> Eikthyr's antler, for the only pickaxe before bronze, and the beehives of the abandoned houses and the Draugr villages.",
+      "eikthyr": {
+        "title": "Eikthyr",
+        "summon": "His altar takes {trophies} deer trophies: hunt deer on the way to it.",
+        "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
+        "island": "On {island}% of seeds it stands on the start island; on the rest the first boat comes before the first boss.",
+        "power": "Hang his trophy on the sacrificial stones at the start for his power: running and jumping cost less stamina, which carries half the game.",
+        "skipTitle": "Can you skip Eikthyr?",
+        "skip": "Technically yes, but not on a run: without his antler there is no pickaxe, so no copper, no tin and no bronze, and without his power every run and jump costs full stamina."
+      },
+      "pickaxe": {
+        "title": "The antler pickaxe",
+        "text": "Eikthyr drops hard antlers. One antler and {wood} wood at a workbench make the antler pickaxe, the only pickaxe until bronze: it mines copper and tin."
+      },
+      "bees": {
+        "title": "Beehives",
+        "why": "Beehives stand in the Meadows' abandoned houses, each house holding one at a {chance}% chance, and in the Draugr villages and farms, where several can stand together. A mead base takes {honey} honey, so a run takes three hives home for mead, four on a speedrun.",
+        "far": "The third nearest hive is usually {third} m from the start, the fourth {fourth} m.",
+        "near": "Within {reach} m of the start there are usually {near} hives."
+      },
+      "wood": {
+        "title": "Fine wood by the start",
+        "text": "Fine wood comes only from birches and oaks. Within {reach} m of the start there are usually {groves} of them.",
+        "earlyAxes": "They want an axe of the bronze axe's tier, but the <b>Early Axes</b> get there without bronze: a Curious axe head and a Mysterious axe head, both from chests of the Meadows' abandoned houses, and wood at the workbench."
+      },
+      "map": "Every beehive, birch and oak of your seed is on the <link>Valheim seed map</link>, under Resources and Fine wood.",
+      "next": "After Eikthyr the way goes into the Black Forest: <link>Black Forest</link>."
+    },
+    "blackForest": {
+      "title": "Black Forest",
+      "lead": "<b>What do I need from the Black Forest?</b> Copper and tin for bronze, best from a troll cave by the shore, and the Elder's swamp key, which opens the Sunken Crypts.",
+      "reach": {
+        "title": "Getting there",
+        "near": "The start sits in a ring of Meadows: the nearest Black Forest is usually {median} m away, and rarely nearer than {least} m.",
+        "island": "On {island}% of seeds the start island has Black Forest of its own."
+      },
+      "bronze": {
+        "title": "Copper, tin and bronze",
+        "recipe": "A bar of bronze is {copper} copper and {tin} tin at the forge. The bronze pickaxe takes {bars} bars and {coreWood} core wood: {allCopper} copper and {allTin} tin before the next pickaxe.",
+        "cave": "Settle at a troll cave: the ledge at its mouth is flat ground, which the Black Forest rarely gives, and {veins} copper veins or more by the entrance are the sign to stop there.",
+        "caves": "Of the {all} troll caves nearest the start, usually {caves} have that much copper by the entrance; the nearest of them is usually {nearest} m from the start.",
+        "tin": "Tin grows only at the water's edge. Within {reach} m of that cave there are usually {tin} tin deposits, and the cave is usually {shore} m from the sea: copper and tin in one trip, and the boat at the door.",
+        "walk": "The whole way of the first days, from the start by Eikthyr's altar to that cave, is usually {walk} m.",
+        "birches": "Within {reach} m of it there are usually {birches} birches, for fine wood."
+      },
+      "wood": {
+        "title": "Wood without an axe",
+        "text": "A troll fells trees, the birches and oaks of fine wood included, and mines copper, tin and even silver: lure it past them. The Elder's blows fell the plain trees round his altar, not the birches and oaks. Between them they cut the wood a run needs, so the axe can wait."
+      },
+      "elder": {
+        "title": "The Elder",
+        "summon": "His altar takes {seeds} ancient seeds. Greydwarf nests drop them, and they stand in the Greydwarf camps of the Black Forest; a Greydwarf brute drops one now and then.",
+        "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
+        "island": "On {island}% of seeds it stands on the start island.",
+        "key": "He drops the swamp key, which opens the door of a Sunken Crypt.",
+        "skipTitle": "Can you skip the Elder?",
+        "skip": "Yes, as everything in the game can be skipped: players tired of speedruns even play it in reverse, from the Deep North back to the Meadows. The cost is time and nerve: without his key the door of a Sunken Crypt stays closed to you."
+      },
+      "haldor": {
+        "title": "Haldor",
+        "near": "Haldor the trader lives in the Black Forest; his camp is usually {median} m from the start, and on {island}% of seeds on the start island."
+      },
+      "map": "Every troll cave, copper vein, tin deposit and birch of your seed is on the <link>Valheim seed map</link>, under Dungeons, Ore and Fine wood."
+    },
+    "bosses": {
+      "title": "How to kill each boss",
+      "question": "How do I kill each boss?",
+      "lead": "Two ways for each, never only one: the weapon that hurts it most of what you can make by then, and the way players win without a straight fight, with fire where the boss burns. Under each, its health, its weaknesses, how long a campfire takes to burn it down and what its attacks deal; Kall phase by phase.",
+      "head": {
+        "boss": "Boss",
+        "biome": "Biome",
+        "health": "Health",
+        "weak": "Weak",
+        "resists": "Resists",
+        "immune": "Immune",
+        "best": "Best weapon"
+      },
+      "phase": "Phase {n}",
+      "fact": {
+        "health": "Health",
+        "weak": "Weak to",
+        "resists": "Resists",
+        "immune": "Immune to",
+        "attacks": "Attacks deal",
+        "fire": "In a campfire"
+      },
+      "fire": {
+        "time": "a campfire alone burns it down in about {minutes} min, if it stays in the flames",
+        "never": "a campfire never kills it: it heals faster than the fire burns, or takes no fire"
+      },
+      "aspects": {
+        "lead": "He takes no damage from you in this phase. He brings back the {count} earlier bosses as aspects, at most {atOnce} at a time, Eikthyr's first; each aspect's death strikes him for {blast}, so all must die. An aspect's health is its own (that of {health}), but each takes damage just as its boss does, and blunt is never weaker than full on any of them: what hurts each is in",
+        "link": "the table at the top"
+      },
+      "breaks": "They fell trees and break rock",
+      "direct": {
+        "title": "The straight fight",
+        "text": "What you can make by the {biome} that hits it hardest, one hit counted after its weaknesses and resistances; a bow with the best arrow of the time, a crossbow with the best bolt:"
+      },
+      "hit": "{hit} a hit",
+      "power": {
+        "title": "The power of the trophy",
+        "how": "Hang the trophy on its stone at the Sacrificial Stones: once you call the power it lasts {minutes} min, and you can call it again after {cooldown} min.",
+        "none": "The game gives no power for this trophy."
+      },
+      "tip": {
+        "Dragon": "She fights in the air and lands only now and then, so bring a bow. The table ranks poison arrows first because it counts a hit's whole damage, but poison trickles in over a few seconds; fire, which she is weak to, lands at once, so fire arrows serve as well."
+      },
+      "other": {
+        "title": "The other way",
+        "Eikthyr": "Circle the big rocks round his altar and shoot from behind them: the rocks stop his charge, though not his stomp.",
+        "gd_king": "Ring his platform and the gaps between the pillars with campfires: fire hurts him double, and he burns as he walks over them while you shoot from behind a pillar. Or dig under the altar: its platform is a roof he cannot break, room for a workbench and a portal.",
+        "Bonemass": "Shoot him from above, from a stone tower or a high tree, with frost arrows; level the ground round the altar with a hoe first, so you can move and leeches keep away.",
+        "Dragon": "Dig a trench against the side of her summoning platform, which cannot be broken, and stay in it: when she lands, her breath and claws do not reach you, and you shoot straight up. Bring a lot of arrows.",
+        "GoblinKing": "Speedrunners circle him: stay close, keep running round to his back from the first blow to the last, and he turns too slowly to hit you. If you would rather shoot, keep a stone pillar between you and him and step out to fire: breaking his line of sight stops his beam.",
+        "SeekerQueen": "The vestibule at her entrance is safe: she does not attack you there and nothing spawns there, so build your rest and repairs just outside.",
+        "Fader": "Summon two trolls with the Trollstav and stay out of his reach: he fights them and leaves you alone while you do not hit him. Or dig two pits side by side and leave the ground between them as the wall, never a built one: he breaks pieces, not earth, and when he cannot reach you it is a piece he goes for. Line his pit with Ashwood stakewalls: they hurt him, but each wears out after a few hits and breaks when he walks into it, so keep repairing them from your side. Nothing can be dug by his altar: lead him out of his arena to the pits first.",
+        "FrozenKing": "Fight each phase with what it is open to. The first and the third take half from pierce, fire, frost and lightning, so bows, spears and staffs do half: bring the heaviest blunt or slash weapon you have, and expect no stagger and no opening in either. In the second, leave him be and kill the aspects as they come: blunt hurts every one in full, the Elder's and Moder's burn, and Bonemass's and Yagluth's shrug off pierce."
+      }
+    },
+    "traders": {
+      "title": "What to buy from the traders",
+      "question": "What to buy from the traders?",
+      "answer": "Haldor's Megingjord and his extra inventory rows carry more of every haul; the Bog Witch's serving tray and spices turn your cooking into feasts; Hildir sells clothes and hats, more of them with every chest you bring her back.",
+      "about": {
+        "Haldor": "He trades in the Black Forest: gear and the extra inventory rows, with more on his shelf as the bosses fall.",
+        "BogWitch": "She trades in the Swamp, in what your cooking and potions need: the serving tray for feasts, each biome's spice and the ingredients of meads.",
+        "Hildir": "She trades in the Meadows, in clothes and hats, and puts out more each time you bring back one of her chests."
+      },
+      "head": {
+        "item": "Item",
+        "price": "Coins",
+        "trader": "Trader",
+        "appears": "On sale",
+        "for": "What it is for",
+        "value": "Coins each",
+        "about": "About it"
+      },
+      "sell": {
+        "title": "What the traders buy",
+        "text": "These are all a trader will buy, each for a fixed number of coins. A few also go into recipes, so think before you sell them; the rest are good for nothing but coins, and coins are good for nothing but the goods above."
+      },
+      "sellsFor": "sells for {value} coins",
+      "quest": {
+        "title": "Hildir's quest",
+        "text": "Hildir is the only trader with a quest. Three of her chests were stolen, and each now lies in a dungeon of its own: kill its guard and the chest drops. Every chest you bring her back puts more of her goods on sale.",
+        "head": {
+          "chest": "Chest",
+          "dungeon": "Dungeon",
+          "biome": "Biome",
+          "guard": "Guard",
+          "health": "Guard's health",
+          "opens": "Goods it opens"
+        }
+      },
+      "writhan": "One of her goods waits on a kill instead of a chest: the Crown of Roots goes on sale only after you kill a Writhan, a rare creature of the Swamp and no boss.",
+      "essential": {
+        "title": "Speedrunners: what is the least I must buy?",
+        "text": "A race buys only these and walks past every other shelf: together they cost {coins} coins, and a runner who has them needs no more.",
+        "total": "Together",
+        "row": {
+          "spices": "A spice for each biome's feast",
+          "pockets": "Wider and Deeper Pockets"
+        },
+        "for": {
+          "spices": "No feast without its biome's spice; each goes on sale after that biome's boss.",
+          "pockets": "One more inventory row each."
+        }
+      },
+      "always": "From the start",
+      "currency": "Currency only.",
+      "carry": "+{weight} carry weight",
+      "armor": "{armor} armour",
+      "places": "Sets down {count} kinds of",
+      "placesWhat": "food and feasts",
+      "afterBoss": "After {boss}",
+      "goesInto": "Goes into",
+      "requires": {
+        "Hildir1": "After Hildir's first chest",
+        "Hildir2": "After Hildir's second chest",
+        "Hildir3": "After Hildir's third chest"
+      }
+    },
+    "deepNorth": {
+      "title": "Deep North",
+      "lead": "<b>What to bring to the Deep North?</b> The Grappling Hook and the Feather cape, both made in the Mistlands: the hook climbs, the cape falls without harm.",
+      "hook": {
+        "title": "The Grappling Hook",
+        "recipe": "Its recipe appears when you pick up a Hook from a Dvergr chest in an Infested Mine. It takes {yggdrasil} Yggdrasil wood, {eitr} refined eitr, {mandibles} mandibles and {hooks} Hook at the black forge.",
+        "use": "It pulls you up the Mistlands' cliffs and into the raised entrance of a Deep North tower, and up a floor when mobs close in."
+      },
+      "cape": {
+        "title": "The Feather cape",
+        "recipe": "{feathers} feathers, {scaleHide} scale hide and {eitr} refined eitr at the Galdr Table.",
+        "use": "It slows a fall so a misstep costs nothing: jump down inside a tower instead of crossing it. It burns easily, so keep it away from fire."
+      },
+      "tower": {
+        "title": "Mörkhalla",
+        "text": "The Deep North's tower. An Intricate Key, used up at the door, opens it; the key's mould lies in the Winding Tunnels under the abandoned villages."
+      },
+      "reverse": {
+        "title": "Starting in the Deep North",
+        "text": "Nothing stops a ship from sailing there first, and the biome appears only in ground nobody has explored. But its progress needs embers from Fader, the Ashlands' boss, so a run that starts in the north still comes back south for them."
+      }
+    },
+    "swamp": {
+      "lead": "<b>What does the Swamp give?</b> Iron, from the scrap piles of the Sunken Crypts, which only the Elder's key opens; Bonemass, summoned with withered bones, drops the wishbone that finds silver.",
+      "crypts": {
+        "title": "Sunken Crypts",
+        "a": "Iron comes from the muddy scrap piles inside the crypts. The door takes the key the Elder drops.",
+        "b": "Surtlings near the crypts give the cores a smelter and a charcoal kiln need, so a crypt with fire holes by it saves a trip."
+      },
+      "bonemass": {
+        "title": "Bonemass",
+        "a": "His altar takes withered bones, found in the crypts. He is weak to blunt damage: a mace, from a raised platform with a roof.",
+        "b": "His wishbone points to silver ore buried in the mountains. A run can skip him and dig the mountains long enough to find silver without it."
+      },
+      "danger": {
+        "title": "Poison and water",
+        "a": "Blobs and leeches poison; a poison resistance mead makes the swamp bearable."
+      },
+      "title": "Swamp"
+    },
+    "mountain": {
+      "lead": "<b>What does the Mountain give?</b> Silver, found with Bonemass's wishbone and mined with an iron pickaxe; Moder's altar takes three drake eggs from the nests on the cliffs.",
+      "cold": {
+        "title": "Cold",
+        "a": "The cold hurts without frost resistance: a wolf cape or a frost resistance mead."
+      },
+      "silver": {
+        "title": "Silver",
+        "a": "Silver lies under the snow; the wishbone sounds over it and an iron pickaxe mines it."
+      },
+      "moder": {
+        "title": "Moder",
+        "a": "Her altar takes drake eggs from the nests on the mountain; best is a mountain that holds both. She is weak to fire: bonfires round the place she lands.",
+        "b": "Her drop lets the player sail against the wind."
+      },
+      "title": "Mountain"
+    },
+    "plains": {
+      "lead": "<b>What do the Plains give?</b> Black metal and the Fulings' totems from their villages, and barley and flax for bread and linen; Yagluth's altar takes five totems.",
+      "villages": {
+        "title": "Fuling villages",
+        "a": "Fuling villages hold black metal scrap, totems, and barley and flax growing wild: the seeds of the Plains' farm.",
+        "b": "Deathsquitos strike from the air; a block or a shield handles them."
+      },
+      "yagluth": {
+        "title": "Yagluth",
+        "a": "His altar takes five Fuling totems, so a run clears villages near it."
+      },
+      "title": "Plains"
+    },
+    "mistlands": {
+      "lead": "<b>What do the Mistlands give?</b> Black marble, Yggdrasil wood and eitr; the Infested Mines hold the Queen's way in and the Hook for the Grappling Hook.",
+      "terrain": {
+        "title": "Cliffs and mist",
+        "a": "The ground is cliffs under mist. The Feather cape removes fall damage and the Grappling Hook climbs, both made here."
+      },
+      "soldier": {
+        "title": "The Seeker Soldier",
+        "a": "Its blows break black marble and Yggdrasil shoots, which otherwise want black metal tools: stand so it hits them for you."
+      },
+      "queen": {
+        "title": "The Queen",
+        "a": "Her roar calls Seekers and brood; keep the pillars between you and her."
+      },
+      "title": "Mistlands"
+    },
+    "ashlands": {
+      "lead": "<b>What do the Ashlands give?</b> Flametal and ashwood; Fader, summoned with three bells, drops the embers the Deep North needs.",
+      "lava": {
+        "title": "Lava",
+        "a": "Lava runs over the ground away from the biome's edges; the map shows it."
+      },
+      "fader": {
+        "title": "Fader",
+        "a": "His altar takes three bells. The Ashwood stakewall pierces whatever touches it."
+      },
+      "morgen": {
+        "title": "Morgen",
+        "a": "Morgen's blows break trees and rock of the Ashlands."
+      },
+      "title": "Ashlands"
+    },
+    "weapons": {
+      "title": "Weapons",
+      "question": "Which weapon to use?",
+      "lead": "A sword when you attack, a mace when you hold your ground, and the mace again on the hardest settings, where it is the favourite; an atgeir against crowds, a knife from the shadows, fists if they are your style. Every one by biome, with its damage, station and materials.",
+      "damageLink": "Before you choose, see which damage type hurts your next foe most, and what it hits back with, on"
+    },
+    "damage": {
+      "title": "Damage types",
+      "question": "What hurts each creature?",
+      "lead": "Every creature and boss by biome: the damage types it takes harder or softer, so you know which weapon kind to bring, and the damage it deals back, so you know which resistance to wear.",
+      "hurts": {
+        "title": "What hurts each creature",
+        "lead": "A weak spot multiplies the hit, a resistance divides it. Each weapon kind deals mostly one type:",
+        "fire": "Fire is the weakness you meet most often: in the Black Forest and the Mountain most creatures take it harder, which is why speedrunners burn them with campfires. Drop the habit at the Mistlands: there and in the Ashlands no creature is weak to fire, and in the Ashlands most resist it."
+      },
+      "deals": {
+        "title": "What each creature hits with",
+        "lead": "The strongest blow of each damage type a creature can deal, before your armour: wear the resistance to its type.",
+        "pierce": "Pierce is what the bosses hit you with, all but Bonemass and Yagluth, and the Deathsquito of the Plains stings with nothing else. The Root Harnesk is the one chest piece that halves pierce, so wear it against them; it takes fire harder, though, so leave it at home for Yagluth. Every armour piece is on",
+        "armour": "Armour"
+      },
+      "creature": "Creature",
+      "best": "Hit it with",
+      "any": "any weapon",
+      "immune": "immune",
+      "boss": "boss"
+    },
+    "bows": {
+      "title": "Bows, crossbows and arrows",
+      "question": "Which bow and which arrows?",
+      "lead": "The arrow, not the bow, sets the damage type: a bow's damage adds to its arrow's, so fire arrows for what burns, frost for what freezes. Every bow, crossbow, arrow, bolt and bomb by biome."
+    },
+    "armour": {
+      "title": "Armour",
+      "question": "Which armour to wear?",
+      "lead": "Every helmet, chest piece, leg piece, cape, shield and trinket by biome, with its armour, block and effects. Mind the speed as well as the armour: some pieces slow you more than usual for their kind, and a few make you faster."
+    },
+    "toolsCatalog": {
+      "title": "Tools",
+      "question": "Which tools to make?",
+      "lead": "Pickaxes, the hammer, the hoe and the cultivator, torches and lanterns, saddles and fishing bait, by biome."
+    },
+    "creatures": {
+      "title": "Creatures",
+      "question": "What does each creature drop, and what is it for?",
+      "lead": "Hunt with a recipe in mind: every creature by biome, its health, what hurts it, what it drops and every recipe each drop goes into.",
+      "health": "Health {n}",
+      "damage": {
+        "blunt": "Blunt",
+        "slash": "Slash",
+        "pierce": "Pierce",
+        "fire": "Fire",
+        "frost": "Frost",
+        "lightning": "Lightning",
+        "poison": "Poison",
+        "spirit": "Spirit"
+      },
+      "head": {
+        "drop": "Drop",
+        "amount": "Amount",
+        "chance": "Chance",
+        "usedIn": "Used in"
+      },
+      "group": {
+        "meadows": "Meadows",
+        "blackForest": "Black Forest",
+        "swamp": "Swamp",
+        "mountain": "Mountain",
+        "plains": "Plains",
+        "mistlands": "Mistlands",
+        "ashlands": "Ashlands",
+        "deepNorth": "Deep North",
+        "ocean": "Ocean",
+        "places": "In dungeons, camps and nests"
+      },
+      "mapBefore": "Where it stands on your seed: its spawners on the ",
+      "mapLink": "Valheim seed map",
+      "livesIn": "Stands in: ",
+      "chops": "Its blows fell trees up to tool tier {tier} ({damage} chopping).",
+      "mines": "Its blows break rock and ore up to tool tier {tier} ({damage} mining).",
+      "sets": {
+        "head": {
+          "set": "Armour set",
+          "kills": "Kills to make it",
+          "top": "Kills to its top quality"
+        },
+        "kills": "about {n}, for the {drop}",
+        "top": "about {n} to quality {quality}, for the {drop}",
+        "note": "Kills of this creature without stars, on average, for its own drops alone; a starred one drops more, so it takes fewer.",
+        "runsOut": "Not every kill can come from its places: each gives at most {n}, once a world.",
+        "runsOutRooms": "Not every kill can come from its places: each gives it once a world."
+      },
+      "sources": {
+        "from": "Comes from: {parts}.",
+        "respawns": "spawners that bring it back {minutes} minutes after the last one is gone",
+        "once": "its places, once a world",
+        "areas": "nests that keep spawning while they stand",
+        "open": "the open {biomes}",
+        "openEvery": "the open {biomes}, a {chance}% chance every {minutes} minutes",
+        "raids": "raids",
+        "or": " or ",
+        "fixed": "Its places give a fixed number, {n} a place, once a world; the rest come from {rest}.",
+        "fixedRooms": "Its places give a fixed number, once a world; the rest come from {rest}.",
+        "runsOut": "It runs out: its places give it once a world, and nothing brings it back.",
+        "rare": "Comes only from {rest}.",
+        "renews": "It comes back.",
+        "nightOnly": "It comes only at night and leaves at dawn.",
+        "nightMore": "More of it come at night.",
+        "starsAtNight": "At night it can have more stars.",
+        "starsFrom": "In the open world it has stars only beyond {m} m from the world's centre.",
+        "raidsBefore": "Raids: ",
+        "raidAfter": "after {keys}",
+        "raidFromStart": "from the start",
+        "raidUntil": "until {keys}",
+        "raidForGood": "for good",
+        "raidStars": "with one or two stars",
+        "raidMayStar": "sometimes with stars"
+      },
+      "stars": {
+        "title": "Stars",
+        "text": "A star means more health, harder hits and more drops. Each star is a roll, mostly at {chance}% (nests and a few spawners differ), rolled again for the second; a few creatures roll only far from the world's centre, and a night spawn may allow more stars than the day's. A raid's creatures come without stars, except the Ticks and the escorts of Hildir's guards. Your world's settings and some biome patches change the chance.",
+        "head": {
+          "stars": "Stars",
+          "health": "Health",
+          "damage": "Damage",
+          "drops": "Drops",
+          "share": "Of those that can have two"
+        },
+        "times": "×{n}",
+        "share": "{n}%",
+        "note": "Drops: both the chance and the amount of each drop."
+      },
+      "fish": {
+        "title": "Fishing",
+        "text": "Haldor sells the rod and plain bait; every other bait is plain bait and a trophy, so the creatures you hunt decide which fish you can catch. Every fish goes into raw fish, and that is what the dishes take.",
+        "head": {
+          "fish": "Fish",
+          "where": "Where",
+          "bait": "Bait",
+          "depth": "Swims at",
+          "extras": "Sometimes brings"
+        },
+        "where": "{biomes}, in water {water} m deep or more",
+        "depth": "{min}–{max} m",
+        "deeper": "{min} m and deeper"
+      },
+      "notes": {
+        "Troll": "A troll cave often holds a troll inside and sometimes one more by its entrance; neither comes back once killed. One troll in {weaponSets} carries a log: it reaches farther but never throws, while an unarmed troll punches, slams and hurls rocks from afar; otherwise they are the same troll, with the same health and drops. Kill a troll and the Elder, and trolls can raid your base. Pierce hurts them most, so bring a spear or arrows. They break walls, so no trap holds one, but lure one past trees and copper and it fells and mines for you.",
+        "Bjorn": "Wall a bear in on flat ground with a campfire under it and it burns; keep repairing the fire and the walls while it does.",
+        "Serpent": "A sea monster: it hunts ships in the deep ocean.",
+        "BonemawSerpent": "A sea monster: it hunts ships in the waters of the Ashlands."
+      }
+    },
+    "farming": {
+      "title": "Farming",
+      "question": "How to farm?",
+      "lead": "Every crop, tree and vine the cultivator plants: what it is planted with, what it gives, how long it grows and where it grows.",
+      "cultivator": "The cultivator turns ground into a field and plants. A crop grows only on cultivated ground and only in the biomes listed beside it; a seed from one biome often grows in others, but not always where it was found.",
+      "minutes": "{min}–{max} min",
+      "head": {
+        "plant": "Plant",
+        "with": "Planted with",
+        "gives": "Gives",
+        "grows": "Grows",
+        "where": "Grows in",
+        "seeds": "Planted, the harvest gives"
+      },
+      "seedsGive": "planted, gives",
+      "crops": {
+        "title": "Crops",
+        "text": "A crop is planted with its seed and gives its harvest. Where the seeds do not come back with it, plant one of the harvest (or a seed, for kale) and it grows into seeds: one find keeps a field going. What each harvest goes into is on its row in",
+        "materials": "Materials"
+      },
+      "trees": {
+        "title": "Trees",
+        "text": "A sapling grows on any ground; what a grown tree gives when felled is its average."
+      },
+      "vines": {
+        "title": "Vines",
+        "text": "Vines grow fastest of all and give vineberries."
+      }
+    },
+    "food": {
+      "title": "Food and feasts",
+      "question": "What to eat?",
+      "answer": "Health dishes for a melee fighter, stamina dishes for an archer, eitr dishes for a mage; a feast fills one slot with all three.",
+      "basics": "You eat up to three different dishes at once; each raises health, stamina or eitr and regenerates health while it lasts.",
+      "head": {
+        "dish": "Dish",
+        "biome": "Biome",
+        "health": "Health",
+        "stamina": "Stamina",
+        "eitr": "Eitr",
+        "regen": "Regen",
+        "minutes": "Minutes",
+        "again": "Eat again after",
+        "made": "Made at"
+      },
+      "stationLevel": "{station}, level {level}",
+      "thenCooked": "{at}, then cooked",
+      "thenServed": "{at}, then served on a tray",
+      "who": {
+        "title": "Who eats what",
+        "matrix": "The three best dishes of each kind you can make by the end of each biome: eat all three, since different dishes always stack. A dish in bold is new in that biome; the others are still the best of an earlier one.",
+        "again": "When to eat again:",
+        "againText": "a dish can be eaten again once half its time has passed, and it still gives about four fifths of its value then. Eat each again at its half and the three slots stay nearly full.",
+        "health": "Melee: health",
+        "stamina": "Archer: stamina",
+        "eitr": "Mage: eitr",
+        "balanced": "Mixed: both",
+        "notYet": "No dish of this kind before the biome where the row starts: eitr food begins in the Mistlands, with magic.",
+        "feast": "Feasts:",
+        "feastText": "health and stamina, and eitr from the Mistlands on, in one slot and for the longest time."
+      },
+      "role": {
+        "health": "Health dishes",
+        "stamina": "Stamina dishes",
+        "eitr": "Eitr dishes",
+        "balanced": "Balanced dishes"
+      },
+      "feasts": {
+        "title": "Feasts",
+        "text": "Make a feast at the food preparation table and set it down on a serving tray, and the whole group eats from it.",
+        "tray": "Buy the serving tray from the Bog Witch."
+      }
+    }
+  }
+}

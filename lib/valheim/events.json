@@ -1,0 +1,809 @@
+{
+  "chance": 20.0,
+  "events": [
+    {
+      "biomes": ["meadows", "blackForest"],
+      "end": "The creatures are calming down",
+      "ends": [
+        {
+          "boss": "Eikthyr",
+          "key": "defeated_eikthyr"
+        }
+      ],
+      "key": "army_eikthyr",
+      "name": "Eikthyr rallies the creatures of the forest",
+      "nearBase": true,
+      "opens": [],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 20.0,
+          "key": "Neck",
+          "max": 2,
+          "name": "Neck",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Boar",
+          "max": 2,
+          "name": "Boar",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "plains"],
+      "end": "The horde is retreating",
+      "ends": [
+        {
+          "boss": "Yagluth",
+          "key": "defeated_goblinking"
+        }
+      ],
+      "key": "army_goblin",
+      "name": "The horde is attacking!",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Moder",
+          "key": "defeated_dragon"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 10.0,
+          "key": "Goblin",
+          "max": 8,
+          "name": "Fuling",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "GoblinBrute",
+          "max": 2,
+          "name": "Fuling Berserker",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "GoblinShaman",
+          "max": 1,
+          "name": "Fuling Shaman",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
+      "end": "The forest rests again",
+      "ends": [
+        {
+          "boss": "The Elder",
+          "key": "defeated_gdking"
+        }
+      ],
+      "key": "army_theelder",
+      "name": "The forest is moving...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Eikthyr",
+          "key": "defeated_eikthyr"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 5.0,
+          "key": "Greydwarf",
+          "max": 6,
+          "name": "Greydwarf",
+          "spawner": null
+        },
+        {
+          "every": 5.0,
+          "key": "Greyling",
+          "max": 4,
+          "name": "Greyling",
+          "spawner": null
+        },
+        {
+          "every": 5.0,
+          "key": "Greydwarf_Shaman",
+          "max": 1,
+          "name": "Greydwarf Shaman",
+          "spawner": null
+        },
+        {
+          "every": 5.0,
+          "key": "Greydwarf_Elite",
+          "max": 1,
+          "name": "Greydwarf Brute",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["mountain", "plains"],
+      "end": "The hunt is over",
+      "ends": [],
+      "key": "wolves",
+      "name": "You are being hunted...",
+      "nearBase": false,
+      "opens": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 2.0,
+          "key": "Wolf",
+          "max": 6,
+          "name": "Wolf",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands"
+      ],
+      "end": "The skeletons are tired of fighting",
+      "ends": [],
+      "key": "skeletons",
+      "name": "A skeleton surprise!",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 10.0,
+          "key": "Skeleton",
+          "max": 20,
+          "name": "Skeleton",
+          "spawner": null
+        },
+        {
+          "every": 15.0,
+          "key": "Skeleton_Poison",
+          "max": 1,
+          "name": "Rancid Remains",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
+      "end": "The smell is gone",
+      "ends": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "key": "army_bonemass",
+      "name": "A foul smell from the swamp...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "The Elder",
+          "key": "defeated_gdking"
+        }
+      ],
+      "seconds": 150.0,
+      "spawn": [
+        {
+          "every": 5.0,
+          "key": "Draugr",
+          "max": 3,
+          "name": "Draugr",
+          "spawner": null
+        },
+        {
+          "every": 5.0,
+          "key": "Skeleton",
+          "max": 6,
+          "name": "Skeleton",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
+      "end": "The cold wind is gone",
+      "ends": [
+        {
+          "boss": "Moder",
+          "key": "defeated_dragon"
+        }
+      ],
+      "key": "army_moder",
+      "name": "A cold wind blows from the mountains",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 150.0,
+      "spawn": [
+        {
+          "every": 10.0,
+          "key": "Hatchling",
+          "max": 3,
+          "name": "Drake",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
+      "end": "The smell is gone",
+      "ends": [],
+      "key": "blobs",
+      "name": "A foul smell from the swamp...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 2.0,
+          "key": "Blob",
+          "max": 5,
+          "name": "Blob",
+          "spawner": null
+        },
+        {
+          "every": 10.0,
+          "key": "BlobElite",
+          "max": 2,
+          "name": "Oozer",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
+      "end": "The shaking begins to fade",
+      "ends": [],
+      "key": "foresttrolls",
+      "name": "The ground is shaking",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "KilledTroll"
+        },
+        {
+          "boss": "The Elder",
+          "key": "defeated_gdking"
+        }
+      ],
+      "seconds": 80.0,
+      "spawn": [
+        {
+          "every": 20.0,
+          "key": "Troll",
+          "max": 2,
+          "name": "Troll",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "plains"],
+      "end": "The smell is fading",
+      "ends": [],
+      "key": "surtlings",
+      "name": "There's a smell of sulfur in the air...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "killed_surtling"
+        },
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 2.0,
+          "key": "Surtling",
+          "max": 4,
+          "name": "Surtling",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
+      "end": "They have been banished, for now...",
+      "ends": [],
+      "key": "ghosts",
+      "name": "You feel a chill down your spine...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 150.0,
+      "spawn": [
+        {
+          "every": 10.0,
+          "key": "Ghost",
+          "max": 3,
+          "name": "Ghost",
+          "spawner": null
+        },
+        {
+          "every": 10.0,
+          "key": "Wraith",
+          "max": 2,
+          "name": "Wraith",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands",
+        "ashlands",
+        "deepNorth",
+        "ocean"
+      ],
+      "end": "The cauldron calms",
+      "ends": [],
+      "key": "bats",
+      "name": "You stirred the cauldron",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "KilledBat"
+        },
+        {
+          "boss": "Bonemass",
+          "key": "defeated_bonemass"
+        }
+      ],
+      "seconds": 120.0,
+      "spawn": [
+        {
+          "every": 10.0,
+          "key": "Bat",
+          "max": 10,
+          "name": "Bat",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["mistlands"],
+      "end": "Good bye Gjall",
+      "ends": [
+        {
+          "boss": "The Queen",
+          "key": "defeated_queen"
+        }
+      ],
+      "key": "army_gjall",
+      "name": "What's up, Gjall?!",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Yagluth",
+          "key": "defeated_goblinking"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 40.0,
+          "key": "Gjall",
+          "max": 1,
+          "name": "Gjall",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Tick",
+          "max": 4,
+          "name": "Tick",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
+      "end": "The search is over",
+      "ends": [
+        {
+          "boss": "The Queen",
+          "key": "defeated_queen"
+        }
+      ],
+      "key": "army_seekers",
+      "name": "They sought you out",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "Yagluth",
+          "key": "defeated_goblinking"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 35.0,
+          "key": "Seeker",
+          "max": 3,
+          "name": "Seeker",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "SeekerBrood",
+          "max": 8,
+          "name": "Seeker Brood",
+          "spawner": null
+        },
+        {
+          "every": 100.0,
+          "key": "SeekerBrute",
+          "max": 1,
+          "name": "Seeker Soldier",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands",
+        "ashlands",
+        "deepNorth",
+        "ocean"
+      ],
+      "end": "She got burnt",
+      "ends": [],
+      "key": "hildirboss1",
+      "name": "She's hot on your tail!",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "hildir1"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 100.0,
+          "key": "Skeleton_Hildir",
+          "max": 1,
+          "name": "Brenna",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Skeleton",
+          "max": 4,
+          "name": "Skeleton",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Skeleton_Meadows",
+          "max": 3,
+          "name": "Skeleton",
+          "spawner": null
+        },
+        {
+          "every": 100.0,
+          "key": "Skeleton_Poison",
+          "max": 1,
+          "name": "Rancid Remains",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands",
+        "ashlands",
+        "deepNorth",
+        "ocean"
+      ],
+      "end": "You can chill out",
+      "ends": [],
+      "key": "hildirboss2",
+      "name": "You get the chills...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "hildir2"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 100.0,
+          "key": "Fenring_Cultist_Hildir",
+          "max": 1,
+          "name": "Geirrhafa",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Fenring",
+          "max": 3,
+          "name": "Fenring",
+          "spawner": null
+        },
+        {
+          "every": 100.0,
+          "key": "Fenring_Cultist",
+          "max": 1,
+          "name": "Cultist",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands",
+        "ashlands",
+        "deepNorth",
+        "ocean"
+      ],
+      "end": "You broke the code...again",
+      "ends": [],
+      "key": "hildirboss3",
+      "name": "They were bros, man",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "hildir3"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 100.0,
+          "key": "GoblinBruteBros",
+          "max": 1,
+          "name": "Zil & Thungr",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "Goblin",
+          "max": 4,
+          "name": "Fuling",
+          "spawner": null
+        },
+        {
+          "every": 100.0,
+          "key": "GoblinBrute",
+          "max": 1,
+          "name": "Fuling Berserker",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
+      "end": "The army retreats",
+      "ends": [
+        {
+          "boss": "Fader",
+          "key": "defeated_fader"
+        }
+      ],
+      "key": "army_charred",
+      "name": "The undead army marches",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "The Queen",
+          "key": "defeated_queen"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 50.0,
+          "key": "Charred_Melee",
+          "max": 2,
+          "name": "Charred Warrior",
+          "spawner": null
+        },
+        {
+          "every": 40.0,
+          "key": "Charred_Twitcher",
+          "max": 3,
+          "name": "Charred Twitcher",
+          "spawner": null
+        },
+        {
+          "every": 50.0,
+          "key": "Charred_Archer",
+          "max": 3,
+          "name": "Charred Marksman",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["blackForest", "plains", "mistlands", "ashlands", "deepNorth"],
+      "end": "The dead lie still once more",
+      "ends": [
+        {
+          "boss": "Fader",
+          "key": "defeated_fader"
+        }
+      ],
+      "key": "army_charredspawners",
+      "name": "The dead have been summoned",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": "The Queen",
+          "key": "defeated_queen"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 60.0,
+          "key": "Spawner_CharredStone_event",
+          "max": 3,
+          "name": null,
+          "spawner": "charred"
+        },
+        {
+          "every": 40.0,
+          "key": "Charred_Twitcher",
+          "max": 3,
+          "name": "Charred Twitcher",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": ["deepNorth"],
+      "end": "They return to their burrows...",
+      "ends": [
+        {
+          "boss": "Kall Fimbulbringer",
+          "key": "defeated_frozenking_p3"
+        }
+      ],
+      "key": "army_elakingar",
+      "name": "They emerge from below...",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "elakingmole_defeated"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 40.0,
+          "key": "ElakingMole",
+          "max": 2,
+          "name": "Eyeless One",
+          "spawner": null
+        },
+        {
+          "every": 15.0,
+          "key": "Elaking",
+          "max": 10,
+          "name": "Elaking",
+          "spawner": null
+        },
+        {
+          "every": 20.0,
+          "key": "ElakingLantern",
+          "max": 3,
+          "name": "Elaking",
+          "spawner": null
+        }
+      ]
+    },
+    {
+      "biomes": [
+        "meadows",
+        "blackForest",
+        "swamp",
+        "mountain",
+        "plains",
+        "mistlands",
+        "deepNorth"
+      ],
+      "end": "The Jotun withdraw",
+      "ends": [
+        {
+          "boss": "Kall Fimbulbringer",
+          "key": "defeated_frozenking_p3"
+        }
+      ],
+      "key": "army_jotuns",
+      "name": "The Jotun have found you",
+      "nearBase": true,
+      "opens": [
+        {
+          "boss": null,
+          "key": "jotun_killed"
+        }
+      ],
+      "seconds": 90.0,
+      "spawn": [
+        {
+          "every": 40.0,
+          "key": "JotunWarrior",
+          "max": 3,
+          "name": "Krigen",
+          "spawner": null
+        },
+        {
+          "every": 30.0,
+          "key": "Elaking",
+          "max": 3,
+          "name": "Elaking",
+          "spawner": null
+        }
+      ]
+    }
+  ],
+  "intervalMinutes": 46.0
+}

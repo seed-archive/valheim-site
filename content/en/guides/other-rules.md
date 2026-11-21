@@ -1,0 +1,213 @@
+# No death, no map, no portals
+
+**How do I play with no death, no map or no portals?** Take one thing from the usual game at a time: each rule changes what you plan for, and the rules stack, as the game's own presets stack them.
+
+Clock or no clock, the usual game has been generous: it hands you a map, portals and deaths that only set you back. Each rule here takes one of those gifts away, and the new-world screen bundles them: the Hardcore preset takes the hardest combat, more raids, a death that wipes your skills and destroys what you carry, the map, and the boss portals; the Immersive preset takes the map and the portals and adds fire hazards. Take a preset whole, or pick the rules one by one.
+
+## How do I play with no death?
+
+One life for the whole game, the hardcore player's rule: the first death ends it. The game has no one-life switch, so it is your own rule; pair it with a harder Combat setting if you like ([Hard, Very hard and Hardcore](/guides/hardcore)). From then on let your base do the guarding, and never fight what you can wall out.
+
+### What does a harder world change?
+
+You hit softer, they hit harder and come starred more often, but their health stays as it is, and they grow faster and larger only outside dungeons. The star is what to fear: one takes a creature to {{starHealth1}}% of its health and {{starDamage1}}% of its blows, two to {{starHealth2}}% and {{starDamage2}}%. Near home the open world spares you: Boars and Necks come starred only beyond {{starMinDistanceBoar}} m of the world's centre and Trolls beyond {{starMinDistanceTroll}} m, while a nest's creatures may come starred anywhere. [Hard, Very hard and Hardcore](/guides/hardcore) gives every Combat setting number by number, the chance of a star from every source, and all that each preset switches on.
+
+Meet every danger with its resistance on: the [meads](/catalog/meads) list them, and [How to kill each boss](/catalog/bosses) gives each boss the way that keeps you out of its reach. Most bosses hit with pierce, and the Swamp's Root Harnesk is the one piece of [armour](/catalog/armour) that resists it. The player who taught this run is in the [credits](/credits).
+
+> **Speedrunners** race this rule too: the Immortal board of speedrun.com's category extensions times runs with no death, the Deep North included.
+
+### Where am I safe?
+
+Inside your own base, and only there. A campfire, a hearth, a bed, a standing torch, a portal, a ward and nearly every station make the ground round them a base, lit or not; walls, floors, roofs and chests do not. The base is all of those rings together, nothing else: no count of pieces and no distance from a workbench. Inside it no creature of the open world rises, no raider appears, and no spawner placed in a ruin or a dungeon fires for as long as the base stands. [Boss arenas](/guides/boss-arenas#which-pieces-make-the-ground-a-base) gives each piece's reach and lays the rings round each altar.
+
+One thing ignores the ring: a nest. A Greydwarf nest, a bone pile or a Charred spawner keeps spawning inside any base, so break every one near your arena before the fight.
+
+### What comes back after I clear it?
+
+A place you cleared stays clear only for a time, counted from when its last creature was seen alive:
+
+| Cleared place | Its creatures come back after |
+|---|---|
+| A Surtlings' fire hole | {{respawnFireHoleMin}} min |
+| A Sunken Crypt's skeletons, a tar pit | {{respawnCryptMin}} min |
+| The Mistlands' Seekers | {{respawnSeekerMin}} min |
+| A troll cave, a Morgen hole, a frost cave's Ulvs | never |
+
+A nest renews for as long as it stands, so the one place you can make safe for good is the one you broke the nests round.
+
+### What changes biome by biome with one life?
+
+**Meadows.** Raise your spear, your club and your blocking on a training dummy before Eikthyr, and fight him inside a ring of campfires, where no Neck or boar rises during the fight.
+
+**Black Forest.** Fight a cave's troll only on your own terms: a starred troll is the forest's heaviest blow. Never use a troll as your miner; leave the cave's troll alone and mine the copper with your own pickaxe.
+
+**Swamp.** Sweep for the Root Harnesk before you ring Bonemass's altar: the ring that keeps the Draugr from rising stops the Abominations rising too.
+
+**Mountain.** Climb by day, and clear the drakes round Moder's altar before you summon her: the drakes of a nest rise once and do not come back.
+
+**Plains.** Clear one Fuling village by day and make it your camp before you look for the next. A village's shamans and its first Fulings rise from spawners that fire once; set down a workbench and a campfire, and while they stand nothing new rises inside their reach, from the village or from the open Plains. Two pieces stay under the {{raidBasePieces}} that call most raids, so the camp draws none. Fulings still walk in from outside: it is a place to rest and mend, not a wall.
+
+**Mistlands.** Set a torch in every mine room you clear, so its Seekers stay dead, and come by day: the mist's Seekers carry more stars at night.
+
+**Deep North.** Until Kall falls, two raids stalk the north: the Jotnar, once the first Krigen or Hexen dies, and the Eyeless Ones, once the first of them does. Neither can start unless {{raidBasePieces}} base pieces stand around you, so sleep with a campfire and a bed and nothing else: {{raidSafePieces}} pieces call no raid. Keep the workbench and the portal more than {{raidClearM}} m from the bed, and remember that a hooded lantern counts as a base piece too.
+
+A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance mead, hold {{kallRetryBlood}} bloods spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
+
+> **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
+
+## How do I find my way with no map?
+
+A setting of the world switches off the map and the minimap. Learn the [seed map](/tools/map) by heart before you start, or play blind: either way there is no [strip](/guides/speedrun#what-is-the-strip) to keep to, and you go where the world's pointers send you. Players read a Vegvísir and let the camera turn slowly toward its boss, the mouse left alone. The branch of Yggdrasil in the sky hangs fixed in the world, not over you: from anywhere its line runs east-north-east to west-south-west, and standing under its tip you are near the start. Players add the sun, which rises in the east, stands in the south at noon and sets in the west, and the hammer's preview, which keeps the facing you last gave a piece: once a Vegvísir has turned you, set a workbench's preview toward the boss and check it as you walk.
+
+Every boss is found by a stone: Eikthyr's stands at the start, Kall's in every Mörkhalla, the rest in their biomes' ruins and dungeons, and a [dungeon](/catalog/dungeons) is a pointer as good as a ruin:
+
+| The dungeon holds its boss's Vegvísir | How often |
+|---|---|
+| A Burial Chamber (the Elder) | {{vegvisirChamber}}% of them |
+| A Sunken Crypt (Bonemass) | {{vegvisirCrypt}}% of them |
+| A frost cave (Moder) | {{vegvisirCave}}% of them |
+| An Infested Mine (the Queen) | {{vegvisirMine}}% of them |
+| A Mörkhalla (Kall) | {{vegvisirMork}}% of them |
+
+Chart: share
+
+The ruins, towers and standing stones hold the rest, though only some of each kind hold a stone, so search on past an empty one. How far the nearest stone lies tells you how long the hunt will be:
+
+| From the start to the nearest stone of | As a rule, m | Middle half of seeds |
+|---|---|---|
+| The Elder | {{vegvisirElderM}} | {{vegvisirElderMLow}}–{{vegvisirElderMHigh}} |
+| Bonemass | {{vegvisirBonemassM}} | {{vegvisirBonemassMLow}}–{{vegvisirBonemassMHigh}} |
+| Moder | {{vegvisirModerM}} | {{vegvisirModerMLow}}–{{vegvisirModerMHigh}} |
+| Yagluth | {{vegvisirYagluthM}} | {{vegvisirYagluthMLow}}–{{vegvisirYagluthMHigh}} |
+| Fader | {{vegvisirFaderM}} | {{vegvisirFaderMLow}}–{{vegvisirFaderMHigh}} |
+
+Chart: spread
+
+The [Jotun Invasion](/catalog/events#jotun-invasion) is the hardest find of all: once you break the Malicious Ice in the Deep North, it stands far out in the world, where a map would have marked it. The game leaves you one clue: the snow drifts toward the invasion, so walk with the wind.
+
+### What do I build so I never get lost?
+
+Find the shore first and keep the base by it: any coast leads home. Then build the way back. Players lay wooden footpaths over the Swamp's water, hoe and pave roads that all lead to the spawn, double their torch lines on the way out and leave single ones for a dead end, and set a sign on every shore they land on and every shore they leave. A road you meet anywhere is then a road home. Build for the ground, not the sky: even a Charred Fortress's beam, taller than any tower you can raise, is sure to show only within {{sightBeamM}} m, and not much farther.
+
+### What changes biome by biome with no map?
+
+**Black Forest.** Haldor is found by luck: circle your home in widening rings and search every Black Forest before you sail past it. Climb the stone towers, which hold the Elder's Vegvísir, and raise a tower of your own on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
+
+**Swamp.** The road home is the one you laid yourself: build it as you go in, not when you want out.
+
+**Mountain.** Climb: from the top the drake nests show from far off, and they stand round Moder's altar. The top is your lookout, and a fire at her altar marks the way down.
+
+**Plains.** Steer for the standing stones and the stone towers of every Plains you land on: only they hold Yagluth's Vegvísir, and a tower pays a totem besides.
+
+**Mistlands.** The Queen is the hardest boss to find without a map, and the mist steals the sky and Yggdrasil with it, so you steer by what you lay down and what the Dvergr built. Lay lines of wisp torches, doubled for the way out and single for a dead end, mine the ridges flat into a road, and keep to the ground you have cleared. Come in from the edge with the Plains, where the sky still shows, and if a root stands near it, make it your home.
+
+| From the Queen's gate, the nearest | As a rule | Middle half of seeds |
+|---|---|---|
+| Edge of her Mistlands, m | {{queenEdgeM}} | {{queenEdgeMLow}}–{{queenEdgeMHigh}} |
+| Edge with the Plains, m | {{meetAltarMPlains}} | {{meetAltarMPlainsLow}}–{{meetAltarMPlainsHigh}} |
+| Dvergr lighthouse, m | {{queenLighthouseM}} | {{queenLighthouseMLow}}–{{queenLighthouseMHigh}} |
+
+A Dvergr lighthouse stands in her Mistlands on {{queenLighthouseIn}}% of seeds.
+
+**Deep North.** The snow shows the way: wherever you stand, its flakes drift toward a live invasion, and inside one there are none. With several standing they may lead you to a farther one rather than the nearest, so clear the one they show and follow again. In the north the land does the rest. A village means the Winding Tunnels are close, every Mörkhalla's end room holds Kall's Vegvísir, and Yggdrasil's branch hangs fixed in the sky. Raise a stave tower of Timberwood over the gate, roofed or not, and it stands through every storm as your lighthouse.
+
+| By Kall's gate | How often |
+|---|---|
+| A Deep North village within {{bossNearM}} m | {{kallVillageNear}}% of seeds |
+| The Winding Tunnels within {{bossNearM}} m | {{kallHoleNear}}% of seeds |
+| {{kallMorkhallaNeed}} Mörkhalla within {{bossNearM}} m | {{kallMorkhallaNear}}% of seeds |
+
+## How do I play with no portals?
+
+A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
+
+Players who play this way move outward rather than back: a base in each biome with a bed in it, a starter kit of surtling cores, {{stonecutterIron}} iron for a stonecutter and copper for a forge, carts dropped onto the ship for room, and a spare ship, since a lost one strands you. Every boss's trophy still goes back to the Sacrificial Stones, so keep one road or dock to the start. What your start island holds is walked to, not sailed, which makes the island's count on [A speedrunner's start](/guides/a-speedrunners-start) worth more here than anywhere:
+
+| On the start island | How often |
+|---|---|
+| The Black Forest | {{islandBlackForest}}% of seeds |
+| The Mountain | {{islandMountain}}% of seeds |
+| The Swamp | {{islandSwamp}}% of seeds |
+| The Elder's altar | {{islandElder}}% of seeds |
+| Moder's altar | {{islandModer}}% of seeds |
+
+The rest is sailed, there and back with the load: Bonemass's altar lies {{bonemassM}} m from the start as a rule ({{bonemassMLow}}–{{bonemassMHigh}} m on the middle half of seeds) and Moder's {{moderM}} m ({{moderMLow}}–{{moderMHigh}} m).
+
+The far south costs most: the [Drakkar](/catalog/ships), the one ship that crosses the Ashlands' sea, is built from the Swamp's iron and the Mistlands' wood and plates ([Which boat crosses the sea?](/guides/ashlands#which-boat-crosses-the-sea)), every piece of it brought to one shipyard by boat, so count your trips before you cast off.
+
+> **Speedrunners** lose little on metal, which never ported, and much on the last leg: the portal back to the copper base is what takes a run north, so with none the whole way to the Deep North is sailed from the Ashlands.
+
+### Where does the cart road meet the boat?
+
+At the shore nearest each altar and each ore. Every step from the boat is a step you haul: a short walk is a short haul, a long one is a cart road you build first.
+
+| From the altar to the open sea's shore | As a rule | Middle half of seeds |
+|---|---|---|
+| The Elder's, m | {{altarShoreElder}} | {{altarShoreElderLow}}–{{altarShoreElderHigh}} |
+| Bonemass's, m | {{altarShoreBonemass}} | {{altarShoreBonemassLow}}–{{altarShoreBonemassHigh}} |
+| Moder's, m | {{altarShoreModer}} | {{altarShoreModerLow}}–{{altarShoreModerHigh}} |
+| Yagluth's, m | {{altarShoreYagluth}} | {{altarShoreYagluthLow}}–{{altarShoreYagluthHigh}} |
+| The Queen's, m | {{altarShoreQueen}} | {{altarShoreQueenLow}}–{{altarShoreQueenHigh}} |
+| Kall's gate, m | {{altarShoreKall}} | {{altarShoreKallLow}}–{{altarShoreKallHigh}} |
+
+Chart: spread
+
+Two of these are roads: Moder's altar, {{altarShoreModer}} m up her mountain as a rule, and Kall's gate, {{altarShoreKall}} m over the snow. Yagluth's and the Queen's stand all but on the beach, {{altarShoreYagluth}} m and {{altarShoreQueen}} m, so the base for each is the boat's own landing.
+
+| From the ore to the open sea's shore | As a rule | Middle half of seeds |
+|---|---|---|
+| Iron: the Sunken Crypt nearest Bonemass, m | {{cryptShore}} | {{cryptShoreLow}}–{{cryptShoreHigh}} |
+| Silver: the veins by Moder, m | {{silverShore}} | {{silverShoreLow}}–{{silverShoreHigh}} |
+| Black marble and fragments: the Infested Mine nearest the Queen, m | {{mineShore}} | {{mineShoreLow}}–{{mineShoreHigh}} |
+
+Chart: spread
+
+Silver is the haul that wants a road: {{silverShore}} m of mountainside as a rule, against {{cryptShore}} m for the iron and {{mineShore}} m for the mine. Players set the smelter up there, by Moder's altar, and bring the bars down.
+
+### What changes biome by biome with no portals?
+
+**Black Forest.** The cores a usual game spends on a pair of portals are yours to keep: you need only the kiln and the smelter, but again at every new base. The Elder's wood comes home on a cart or under sail, so what matters is whether his altar stands on your home's own land: one of his altars does on {{homeElderOnLand}}% of seeds, {{homeElderM}} m from home as a rule.
+
+**Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip. A Swamp that touches a Mountain would give iron and silver from one base, and it is a rare find: Bonemass's Swamp borders a Mountain on only {{meetSwampMountain}}% of seeds, and as a rule the nearest Mountain lies {{meetAltarMMountain}} m from his altar ({{meetAltarMMountainLow}}–{{meetAltarMMountainHigh}} m on the middle half of seeds).
+
+**Plains.** Barley and flax grow only here, so set the farm on the spot or carry the whole harvest home.
+
+**Mistlands.** The sap is carried, so the root's base is your Mistlands home: set it at the edge with the Plains, for the crops, if a root stands there.
+
+**Ashlands.** Landing here is the hardest step of a game without portals, and it starts on the last island north of the Ashlands: a full base there, fed by the Plains and the Mistlands. From it you cross in the Drakkar, or you bridge the sea with a stone walkway to the shore. On land, raise a walled yard of earth first, then take a cleared fortress as your base. Trees do not grow in the Ashlands, so carry the wood, and carry a spare Drakkar's materials too: with no portal the sea is your only way home, and only the Drakkar crosses it whole. The stone portal is no way out for you: everything comes in by sea or over your bridge.
+
+| The crossing | As a rule | Middle half of seeds |
+|---|---|---|
+| The narrowest sea between the Ashlands and other land, m | {{ashGapM}} | {{ashGapMLow}}–{{ashGapMHigh}} |
+| From the nearest Ashlands coast to Fader's altar, m | {{altarShoreFader}} | {{altarShoreFaderLow}}–{{altarShoreFaderHigh}} |
+| From the nearest Ashlands coast to the Charred Fortress nearest Fader, m | {{fortShore}} | {{fortShoreLow}}–{{fortShoreHigh}} |
+
+**Deep North.** The ship hauls the whole workshop from your last base: the blast furnace's materials, the Black Forge's with its extensions, the frost foundry's iron, and everything a camp on the snow is built from.
+
+> **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
+
+## I play slowly and build: what comes for my home?
+
+The raids, and the reward for staying: a hall with one piece of every kind of [comfort](/catalog/comfort) keeps you rested longest. A home is a base by the game's own count: {{raidBasePieces}} base pieces within {{raidBaseM}} m of you, a campfire, a bed and a workbench, are what most raids wait for, and a builder is always home. The rings that keep the open world out, under Where am I safe? above, also keep the raiders from rising inside: they appear {{raidMinM}} to {{raidMaxM}} m from you, just outside, and walk in. So wall the ring, not the house. And with portals or without, you sail every bar of your metal home, so set the home where [Where to build your base](/guides/where-to-build) says the hauls are short. How often the world rolls a raid is its Raids setting, and [Hard, Very hard and Hardcore](/guides/hardcore#how-often-do-raids-come) gives each one's clock.
+
+A boss's army stops for good when that boss dies; the rest never do:
+
+| Raid | Stops for good when |
+|---|---|
+| Eikthyr's army | Eikthyr dies |
+| The Elder's | the Elder dies |
+| Bonemass's | Bonemass dies |
+| Moder's | Moder dies |
+| The Fulings' | Yagluth dies |
+| The Seekers' and the Gjall's | the Queen dies |
+| The Charred | Fader dies |
+| The Jotnar | Kall dies |
+| Trolls, wolves, skeletons, blobs, ghosts, Surtlings, bats, Hildir's | never |
+
+The [raids](/catalog/events) list what each brings. The ones that never stop are why a builder's walls are worth their stone.
+
+## Can I make my own rules?
+
+These are the common rules, and communities keep their own lists of challenges, with house rules, records and runs to join. The boldest turns the whole order round and starts in the cold, on the [Reverse run](/guides/reverse-run). Pick one, stack two, or make a rule of your own and play the world again.
+
+A harder world stacks on every rule here, so the next page gives what each setting changes, number by number: [Hard, Very hard and Hardcore](/guides/hardcore).

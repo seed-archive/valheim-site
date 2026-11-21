@@ -1,0 +1,1758 @@
+{
+  "baseMinutes": 8.0,
+  "groups": [
+    {
+      "group": "none",
+      "pieces": [
+        {
+          "comfort": 1,
+          "key": "piece_maypole",
+          "litOnly": false,
+          "name": "Maypole",
+          "resources": [
+            {
+              "amount": 10,
+              "name": "Wood"
+            },
+            {
+              "amount": 4,
+              "name": "Dandelion"
+            },
+            {
+              "amount": 4,
+              "name": "Thistle"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_xmastree",
+          "litOnly": false,
+          "name": "Yule Tree",
+          "resources": [
+            {
+              "amount": 10,
+              "name": "Wood"
+            },
+            {
+              "amount": 1,
+              "name": "Fir Cone"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "fire",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "hearth",
+          "litOnly": true,
+          "name": "Hearth",
+          "resources": [
+            {
+              "amount": 15,
+              "name": "Stone"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_brazierfloor02",
+          "litOnly": false,
+          "name": "Blue Standing Brazier",
+          "resources": [
+            {
+              "amount": 5,
+              "name": "Bronze"
+            },
+            {
+              "amount": 5,
+              "name": "Greydwarf Eye"
+            },
+            {
+              "amount": 3,
+              "name": "Fenris Claw"
+            }
+          ],
+          "station": "Forge"
+        },
+        {
+          "comfort": 1,
+          "key": "bonfire",
+          "litOnly": false,
+          "name": "Bonfire",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Surtling Core"
+            },
+            {
+              "amount": 5,
+              "name": "Ancient Bark"
+            },
+            {
+              "amount": 5,
+              "name": "Finewood"
+            },
+            {
+              "amount": 5,
+              "name": "Corewood"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "fire_pit",
+          "litOnly": true,
+          "name": "Campfire",
+          "resources": [
+            {
+              "amount": 5,
+              "name": "Stone"
+            },
+            {
+              "amount": 2,
+              "name": "Wood"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_brazierceiling01",
+          "litOnly": true,
+          "name": "Hanging Brazier",
+          "resources": [
+            {
+              "amount": 5,
+              "name": "Bronze"
+            },
+            {
+              "amount": 2,
+              "name": "Coal"
+            },
+            {
+              "amount": 1,
+              "name": "Chain"
+            }
+          ],
+          "station": "Forge"
+        },
+        {
+          "comfort": 1,
+          "key": "fire_pit_iron",
+          "litOnly": true,
+          "name": "Iron Fire Pit",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Iron Pit"
+            },
+            {
+              "amount": 1,
+              "name": "Wood"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_brazierfloor01",
+          "litOnly": true,
+          "name": "Standing Brazier",
+          "resources": [
+            {
+              "amount": 5,
+              "name": "Bronze"
+            },
+            {
+              "amount": 2,
+              "name": "Coal"
+            },
+            {
+              "amount": 3,
+              "name": "Fenris Claw"
+            }
+          ],
+          "station": "Forge"
+        }
+      ]
+    },
+    {
+      "group": "bed",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "piece_bed02",
+          "litOnly": false,
+          "name": "Dragon Bed",
+          "resources": [
+            {
+              "amount": 40,
+              "name": "Finewood"
+            },
+            {
+              "amount": 7,
+              "name": "Deer Hide"
+            },
+            {
+              "amount": 4,
+              "name": "Wolf Pelt"
+            },
+            {
+              "amount": 10,
+              "name": "Feathers"
+            },
+            {
+              "amount": 15,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "ashwood_bed",
+          "litOnly": false,
+          "name": "Ashwood Bed",
+          "resources": [
+            {
+              "amount": 8,
+              "name": "Ashwood"
+            },
+            {
+              "amount": 2,
+              "name": "Lox Pelt"
+            },
+            {
+              "amount": 2,
+              "name": "Asksvin Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "bed",
+          "litOnly": false,
+          "name": "Bed",
+          "resources": [
+            {
+              "amount": 8,
+              "name": "Wood"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "banner",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "piece_cloth_hanging_door_blue2",
+          "litOnly": false,
+          "name": "Blue Jute Curtain",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Blue Jute"
+            },
+            {
+              "amount": 1,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_cloth_hanging_door_blue",
+          "litOnly": false,
+          "name": "Blue Jute Drapes",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Blue Jute"
+            },
+            {
+              "amount": 1,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_cloth_hanging_door",
+          "litOnly": false,
+          "name": "Red Jute Curtain",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Red Jute"
+            },
+            {
+              "amount": 1,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner01",
+          "litOnly": false,
+          "name": "Black Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 4,
+              "name": "Coal"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner02",
+          "litOnly": false,
+          "name": "Blue Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 4,
+              "name": "Blueberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner06",
+          "litOnly": false,
+          "name": "Blue, Red and White Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Blueberries"
+            },
+            {
+              "amount": 2,
+              "name": "Raspberries"
+            },
+            {
+              "amount": 1,
+              "name": "Cloudberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner05",
+          "litOnly": false,
+          "name": "Green Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Guck"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner10",
+          "litOnly": false,
+          "name": "Orange Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Carrot"
+            },
+            {
+              "amount": 3,
+              "name": "Cloudberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner09",
+          "litOnly": false,
+          "name": "Purple Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Blueberries"
+            },
+            {
+              "amount": 3,
+              "name": "Raspberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner04",
+          "litOnly": false,
+          "name": "Red Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Bloodbag"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner11",
+          "litOnly": false,
+          "name": "White Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Coal"
+            },
+            {
+              "amount": 4,
+              "name": "Cloudberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner07",
+          "litOnly": false,
+          "name": "White and Blue Striped Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Blueberries"
+            },
+            {
+              "amount": 3,
+              "name": "Cloudberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner03",
+          "litOnly": false,
+          "name": "White and Red Striped Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 4,
+              "name": "Raspberries"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_banner08",
+          "litOnly": false,
+          "name": "Yellow Banner",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Leather Scraps"
+            },
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 4,
+              "name": "Dandelion"
+            },
+            {
+              "amount": 2,
+              "name": "Coal"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "chair",
+      "pieces": [
+        {
+          "comfort": 3,
+          "key": "piece_moose_throne",
+          "litOnly": false,
+          "name": "Antler Throne",
+          "resources": [
+            {
+              "amount": 15,
+              "name": "Timberwood"
+            },
+            {
+              "amount": 1,
+              "name": "Moose Trophy"
+            },
+            {
+              "amount": 5,
+              "name": "Moose Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 3,
+          "key": "piece_blackmarble_throne",
+          "litOnly": false,
+          "name": "Black Marble Throne",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Black Marble"
+            },
+            {
+              "amount": 4,
+              "name": "Scale Hide"
+            },
+            {
+              "amount": 2,
+              "name": "Deer Hide"
+            },
+            {
+              "amount": 5,
+              "name": "Copper"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 3,
+          "key": "piece_bone_throne",
+          "litOnly": false,
+          "name": "Bone Throne",
+          "resources": [
+            {
+              "amount": 15,
+              "name": "Charred Bone"
+            },
+            {
+              "amount": 4,
+              "name": "Flametal"
+            },
+            {
+              "amount": 20,
+              "name": "Grausten"
+            },
+            {
+              "amount": 3,
+              "name": "Charred Skull"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 3,
+          "key": "piece_throne01",
+          "litOnly": false,
+          "name": "Raven Throne",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Finewood"
+            },
+            {
+              "amount": 10,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 3,
+          "key": "piece_throne02",
+          "litOnly": false,
+          "name": "Stone Throne",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Stone"
+            },
+            {
+              "amount": 2,
+              "name": "Deer Hide"
+            },
+            {
+              "amount": 2,
+              "name": "Wolf Pelt"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_chair_runed",
+          "litOnly": false,
+          "name": "Carved Chair",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Timberwood"
+            },
+            {
+              "amount": 1,
+              "name": "Moose Sinew"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_chair03",
+          "litOnly": false,
+          "name": "Darkwood Chair",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Tar"
+            },
+            {
+              "amount": 5,
+              "name": "Iron Nails"
+            },
+            {
+              "amount": 1,
+              "name": "Deer Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_chair02",
+          "litOnly": false,
+          "name": "Wood Chair",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "MeadBugRepellent",
+          "litOnly": false,
+          "name": "Anti-Sting Concoction",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Anti-Sting Concoction"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_blackwood_bench01",
+          "litOnly": false,
+          "name": "Ashwood Bench",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Ashwood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "MeadBzerker",
+          "litOnly": false,
+          "name": "Berserkir Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Berserkir Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_blackmarble_bench",
+          "litOnly": false,
+          "name": "Black Marble Bench",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Black Marble"
+            },
+            {
+              "amount": 3,
+              "name": "Copper"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 1,
+          "key": "MeadTamer",
+          "litOnly": false,
+          "name": "Brew of Animal Whispers",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Brew of Animal Whispers"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_bench_runed",
+          "litOnly": false,
+          "name": "Carved Bench",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Timberwood"
+            },
+            {
+              "amount": 1,
+              "name": "Moose Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "MeadSwimmer",
+          "litOnly": false,
+          "name": "Draught of Vananidir",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Draught of Vananidir"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadFrostResist",
+          "litOnly": false,
+          "name": "Frost Resistance Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Frost Resistance Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadLightfoot",
+          "litOnly": false,
+          "name": "Lightfoot Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Lightfoot Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadEitrLingering",
+          "litOnly": false,
+          "name": "Lingering Eitr Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Lingering Eitr Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadHealthLingering",
+          "litOnly": false,
+          "name": "Lingering Healing Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Lingering Healing Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadStaminaLingering",
+          "litOnly": false,
+          "name": "Lingering Stamina Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Lingering Stamina Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadTrollPheromones",
+          "litOnly": false,
+          "name": "Love Potion",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Love Potion"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadHealthMajor",
+          "litOnly": false,
+          "name": "Major Healing Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Major Healing Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadStrength",
+          "litOnly": false,
+          "name": "Mead of Troll Endurance",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Mead of Troll Endurance"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadHealthMedium",
+          "litOnly": false,
+          "name": "Medium Healing Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Medium Healing Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadStaminaMedium",
+          "litOnly": false,
+          "name": "Medium Stamina Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Medium Stamina Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadEitrMinor",
+          "litOnly": false,
+          "name": "Minor Eitr Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Minor Eitr Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadHealthMinor",
+          "litOnly": false,
+          "name": "Minor Healing Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Minor Healing Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadStaminaMinor",
+          "litOnly": false,
+          "name": "Minor Stamina Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Minor Stamina Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadPoisonResist",
+          "litOnly": false,
+          "name": "Poison Resistance Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Poison Resistance Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_logbench01",
+          "litOnly": false,
+          "name": "Sitting Log",
+          "resources": [
+            {
+              "amount": 2,
+              "name": "Corewood"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_chair",
+          "litOnly": false,
+          "name": "Stool",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "MeadTasty",
+          "litOnly": false,
+          "name": "Tasty Mead",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Tasty Mead"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "MeadHasty",
+          "litOnly": false,
+          "name": "Tonic of Ratatosk",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Tonic of Ratatosk"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_bench01",
+          "litOnly": false,
+          "name": "Wood Bench",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "table",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "piece_table_runed",
+          "litOnly": false,
+          "name": "Long Carved Table",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Timberwood"
+            },
+            {
+              "amount": 2,
+              "name": "Tar"
+            },
+            {
+              "amount": 20,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_table_oak",
+          "litOnly": false,
+          "name": "Long Heavy Table",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Tar"
+            },
+            {
+              "amount": 20,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_table_round",
+          "litOnly": false,
+          "name": "Round Table",
+          "resources": [
+            {
+              "amount": 10,
+              "name": "Finewood"
+            },
+            {
+              "amount": 2,
+              "name": "Tar"
+            },
+            {
+              "amount": 20,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_blackmarble_table",
+          "litOnly": false,
+          "name": "Black Marble Table",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Black Marble"
+            },
+            {
+              "amount": 3,
+              "name": "Copper"
+            }
+          ],
+          "station": "Stonecutter"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_table_runed_small",
+          "litOnly": false,
+          "name": "Square Carved Table",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Timberwood"
+            },
+            {
+              "amount": 1,
+              "name": "Tar"
+            },
+            {
+              "amount": 6,
+              "name": "Iron Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_table",
+          "litOnly": false,
+          "name": "Table",
+          "resources": [
+            {
+              "amount": 6,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "carpet",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "rug_Bjorn",
+          "litOnly": false,
+          "name": "Bearskin Rug",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Bear Hide"
+            },
+            {
+              "amount": 2,
+              "name": "Bear Paw"
+            },
+            {
+              "amount": 1,
+              "name": "Bear Trophy"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "rug_fur",
+          "litOnly": false,
+          "name": "Lox Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Lox Pelt"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "rug_moose",
+          "litOnly": false,
+          "name": "Moose Hide Carpet",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Moose Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "rug_wolf",
+          "litOnly": false,
+          "name": "Wolf Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Wolf Pelt"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "rug_asksvin",
+          "litOnly": false,
+          "name": "Asksvin Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Asksvin Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "jute_carpet_blue",
+          "litOnly": false,
+          "name": "Blue Jute Carpet",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Blue Jute"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "rug_deer",
+          "litOnly": false,
+          "name": "Deer Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Deer Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "rug_hare",
+          "litOnly": false,
+          "name": "Hare Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Scale Hide"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "jute_carpet",
+          "litOnly": false,
+          "name": "Red Jute Carpet",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Red Jute"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "rug_seal",
+          "litOnly": false,
+          "name": "Sealskin Rug",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Seal Pelt"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "rug_straw",
+          "litOnly": false,
+          "name": "Straw",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Barley"
+            },
+            {
+              "amount": 1,
+              "name": "Flax"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "display",
+      "pieces": [
+        {
+          "comfort": 1,
+          "key": "ArmorStand",
+          "litOnly": false,
+          "name": "Armour Stand",
+          "resources": [
+            {
+              "amount": 8,
+              "name": "Finewood"
+            },
+            {
+              "amount": 4,
+              "name": "Iron Nails"
+            },
+            {
+              "amount": 2,
+              "name": "Leather Scraps"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "itemstand",
+          "litOnly": false,
+          "name": "Item Stand",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Bronze Nails"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "itemstandh",
+          "litOnly": false,
+          "name": "Item Stand",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Bronze Nails"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "decor",
+      "pieces": [
+        {
+          "comfort": 1,
+          "key": "piece_asksvinskeleton",
+          "litOnly": false,
+          "name": "Asksvin Skeleton",
+          "resources": [
+            {
+              "amount": 50,
+              "name": "Bone Fragments"
+            },
+            {
+              "amount": 1,
+              "name": "Asksvin Neck"
+            },
+            {
+              "amount": 1,
+              "name": "Asksvin Pelvis"
+            },
+            {
+              "amount": 1,
+              "name": "Asksvin Ribcage"
+            },
+            {
+              "amount": 1,
+              "name": "Asksvin Skull"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_pot2",
+          "litOnly": false,
+          "name": "Large Green Pot",
+          "resources": [
+            {
+              "amount": 5,
+              "name": "Pot Shard"
+            },
+            {
+              "amount": 1,
+              "name": "Charcoal Resin"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_pot1",
+          "litOnly": false,
+          "name": "Medium Green Pot",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Pot Shard"
+            },
+            {
+              "amount": 1,
+              "name": "Charcoal Resin"
+            }
+          ],
+          "station": null
+        },
+        {
+          "comfort": 1,
+          "key": "piece_pot3",
+          "litOnly": false,
+          "name": "Small Green Pot",
+          "resources": [
+            {
+              "amount": 3,
+              "name": "Pot Shard"
+            },
+            {
+              "amount": 1,
+              "name": "Charcoal Resin"
+            }
+          ],
+          "station": null
+        }
+      ]
+    },
+    {
+      "group": "garland",
+      "pieces": [
+        {
+          "comfort": 1,
+          "key": "piece_FairylightGarland",
+          "litOnly": false,
+          "name": "Fey Lights",
+          "resources": [
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Thistle"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_CelebrationGarland",
+          "litOnly": false,
+          "name": "Flower Garland",
+          "resources": [
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Dandelion"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_mistletoe",
+          "litOnly": false,
+          "name": "Mistletoe",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Red Jute"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_xmasgarland",
+          "litOnly": false,
+          "name": "Yule Garland",
+          "resources": [
+            {
+              "amount": 2,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Pine Cone"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_xmascrown",
+          "litOnly": false,
+          "name": "Yule Wreath",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Pine Cone"
+            },
+            {
+              "amount": 1,
+              "name": "Red Jute"
+            },
+            {
+              "amount": 1,
+              "name": "Finewood"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    },
+    {
+      "group": "lantern",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "piece_jackoturnip",
+          "litOnly": false,
+          "name": "Jack-o-turnip",
+          "resources": [
+            {
+              "amount": 4,
+              "name": "Turnip"
+            },
+            {
+              "amount": 2,
+              "name": "Resin"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_Lavalantern",
+          "litOnly": false,
+          "name": "Lava Lantern",
+          "resources": [
+            {
+              "amount": 1,
+              "name": "Flametal"
+            },
+            {
+              "amount": 1,
+              "name": "Proustite Powder"
+            },
+            {
+              "amount": 1,
+              "name": "Sulfur"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 2,
+          "key": "piece_snowlantern",
+          "litOnly": false,
+          "name": "Snow Lantern",
+          "resources": [
+            {
+              "amount": 8,
+              "name": "Snowball"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_dvergr_lantern_pole",
+          "litOnly": false,
+          "name": "Dvergr Pole Lantern",
+          "resources": [
+            {
+              "amount": 3,
+              "name": "Copper"
+            },
+            {
+              "amount": 1,
+              "name": "Dvergr Lantern"
+            },
+            {
+              "amount": 1,
+              "name": "Chain"
+            }
+          ],
+          "station": "Black Forge"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_dvergr_lantern",
+          "litOnly": false,
+          "name": "Dvergr Wall Lantern",
+          "resources": [
+            {
+              "amount": 2,
+              "name": "Copper"
+            },
+            {
+              "amount": 1,
+              "name": "Dvergr Lantern"
+            },
+            {
+              "amount": 1,
+              "name": "Chain"
+            }
+          ],
+          "station": "Black Forge"
+        }
+      ]
+    },
+    {
+      "group": "leisure",
+      "pieces": [
+        {
+          "comfort": 2,
+          "key": "piece_bathtub",
+          "litOnly": true,
+          "name": "Hot Tub",
+          "resources": [
+            {
+              "amount": 20,
+              "name": "Wood"
+            },
+            {
+              "amount": 6,
+              "name": "Tar"
+            },
+            {
+              "amount": 10,
+              "name": "Iron"
+            },
+            {
+              "amount": 8,
+              "name": "Stone"
+            }
+          ],
+          "station": "Workbench"
+        },
+        {
+          "comfort": 1,
+          "key": "piece_barber",
+          "litOnly": false,
+          "name": "Barber Station",
+          "resources": [
+            {
+              "amount": 10,
+              "name": "Finewood"
+            },
+            {
+              "amount": 1,
+              "name": "Barber Kit"
+            },
+            {
+              "amount": 5,
+              "name": "Bronze Nails"
+            },
+            {
+              "amount": 5,
+              "name": "Troll Hide"
+            }
+          ],
+          "station": "Workbench"
+        }
+      ]
+    }
+  ],
+  "minutesPerLevel": 1.0
+}

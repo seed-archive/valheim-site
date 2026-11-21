@@ -1,0 +1,1579 @@
+[
+  {
+    "id": "Ancient Pot",
+    "key": "ashland_pot1_green",
+    "metals": [
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "Bronze",
+        "max": 1,
+        "min": 1,
+        "name": "Bronze"
+      },
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "Iron",
+        "max": 1,
+        "min": 1,
+        "name": "Iron"
+      },
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "Silver",
+        "max": 1,
+        "min": 1,
+        "name": "Silver"
+      },
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "MeadHealthMinor",
+        "max": 1,
+        "min": 1,
+        "name": "Minor Healing Mead"
+      },
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "MeadStaminaMinor",
+        "max": 1,
+        "min": 1,
+        "name": "Minor Stamina Mead"
+      },
+      {
+        "chance": 14.0,
+        "chanceMax": 14.0,
+        "group": null,
+        "key": "MeadTasty",
+        "max": 1,
+        "min": 1,
+        "name": "Tasty Mead"
+      },
+      {
+        "chance": 8.0,
+        "chanceMax": 8.0,
+        "group": "ancientItems",
+        "key": "ancientItems",
+        "max": 1,
+        "min": 1,
+        "name": null
+      }
+    ],
+    "name": "Ancient Pot",
+    "nameKey": null,
+    "places": [
+      {
+        "always": false,
+        "key": "charredRuins",
+        "sometimes": true
+      },
+      {
+        "always": false,
+        "key": "morgenHole",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "wallSpikes",
+    "key": "Ashlands_Fortress_Wall_Spikes",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "BronzeScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Bronze"
+      }
+    ],
+    "name": null,
+    "nameKey": "wallSpikes",
+    "places": [
+      {
+        "always": true,
+        "key": "fortress",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "carrion",
+    "key": "asksvin_carrion",
+    "metals": [
+      {
+        "chance": 3.0,
+        "chanceMax": 3.0,
+        "group": null,
+        "key": "AsksvinCarrionSkull",
+        "max": 1,
+        "min": 1,
+        "name": "Asksvin Skull"
+      },
+      {
+        "chance": 3.0,
+        "chanceMax": 3.0,
+        "group": null,
+        "key": "AsksvinCarrionRibcage",
+        "max": 1,
+        "min": 1,
+        "name": "Asksvin Ribcage"
+      },
+      {
+        "chance": 3.0,
+        "chanceMax": 3.0,
+        "group": null,
+        "key": "AsksvinCarrionPelvic",
+        "max": 1,
+        "min": 1,
+        "name": "Asksvin Pelvis"
+      },
+      {
+        "chance": 3.0,
+        "chanceMax": 3.0,
+        "group": null,
+        "key": "AsksvinCarrionNeck",
+        "max": 1,
+        "min": 1,
+        "name": "Asksvin Neck"
+      }
+    ],
+    "name": null,
+    "nameKey": "carrion",
+    "places": [
+      {
+        "always": true,
+        "key": "morgenHole",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "voltureNest",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "barrel",
+    "key": "barrell",
+    "metals": [
+      {
+        "chance": 31.0,
+        "chanceMax": 31.0,
+        "group": null,
+        "key": "Blueberries",
+        "max": 4,
+        "min": 2,
+        "name": "Blueberries"
+      },
+      {
+        "chance": 31.0,
+        "chanceMax": 31.0,
+        "group": null,
+        "key": "DeerHide",
+        "max": 3,
+        "min": 2,
+        "name": "Deer Hide"
+      },
+      {
+        "chance": 31.0,
+        "chanceMax": 31.0,
+        "group": null,
+        "key": "GreydwarfEye",
+        "max": 4,
+        "min": 2,
+        "name": "Greydwarf Eye"
+      },
+      {
+        "chance": 31.0,
+        "chanceMax": 31.0,
+        "group": null,
+        "key": "LeatherScraps",
+        "max": 3,
+        "min": 2,
+        "name": "Leather Scraps"
+      },
+      {
+        "chance": 31.0,
+        "chanceMax": 31.0,
+        "group": null,
+        "key": "TinOre",
+        "max": 3,
+        "min": 2,
+        "name": "Tin Ore"
+      }
+    ],
+    "name": null,
+    "nameKey": "barrel",
+    "places": [
+      {
+        "always": true,
+        "key": "ruins",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "marblePost",
+    "key": "blackmarble_post01",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "BlackMarble",
+        "max": 1,
+        "min": 1,
+        "name": "Black Marble"
+      }
+    ],
+    "name": null,
+    "nameKey": "marblePost",
+    "places": [
+      {
+        "always": true,
+        "key": "dvergrRuins",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "excavation",
+        "sometimes": false
+      },
+      {
+        "always": true,
+        "key": "infestedMine",
+        "sometimes": false
+      },
+      {
+        "always": true,
+        "key": "theQueen",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Hexahedric Pulp",
+    "key": "BlobMorkBig",
+    "metals": [
+      {
+        "chance": 36.0,
+        "chanceMax": 36.0,
+        "group": null,
+        "key": "IronScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Iron"
+      },
+      {
+        "chance": 63.0,
+        "chanceMax": 63.0,
+        "group": null,
+        "key": "Lingonberry",
+        "max": 1,
+        "min": 1,
+        "name": "Lingonberries"
+      },
+      {
+        "chance": 63.0,
+        "chanceMax": 63.0,
+        "group": null,
+        "key": "OozeMork",
+        "max": 1,
+        "min": 1,
+        "name": "Dead Pulp"
+      }
+    ],
+    "name": "Hexahedric Pulp",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "bellAltar",
+    "key": "Charred_altar_bellfragment",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "BellFragment",
+        "max": 1,
+        "min": 1,
+        "name": "Bell Fragment"
+      }
+    ],
+    "name": null,
+    "nameKey": "bellAltar",
+    "places": [
+      {
+        "always": true,
+        "key": "fortress",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "hangingCloth",
+    "key": "cloth_hanging_door",
+    "metals": [
+      {
+        "chance": 20.0,
+        "chanceMax": 50.0,
+        "group": null,
+        "key": "JuteRed",
+        "max": 1,
+        "min": 1,
+        "name": "Red Jute"
+      }
+    ],
+    "name": null,
+    "nameKey": "hangingCloth",
+    "places": [
+      {
+        "always": true,
+        "key": "frostCave",
+        "sometimes": false
+      },
+      {
+        "always": true,
+        "key": "hildirCave",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "seekerEgg",
+    "key": "CreepProp_egg_hanging01",
+    "metals": [
+      {
+        "chance": 50.0,
+        "chanceMax": 50.0,
+        "group": null,
+        "key": "SeekerBrood",
+        "max": 1,
+        "min": 1,
+        "name": "SeekerBrood"
+      }
+    ],
+    "name": null,
+    "nameKey": "seekerEgg",
+    "places": [
+      {
+        "always": false,
+        "key": "infestedMine",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Ancient Coffin",
+    "key": "crypt_skeleton_chest",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "Skeleton",
+        "max": 1,
+        "min": 1,
+        "name": "Skeleton"
+      }
+    ],
+    "name": "Ancient Coffin",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "hildirCrypt",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Iron Gate",
+    "key": "dungeon_sunkencrypt_irongate_rusty",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "IronScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Iron"
+      }
+    ],
+    "name": "Iron Gate",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "hildirFortress",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "dvergrProps",
+    "key": "dvergrprops_banner",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "JuteBlue",
+        "max": 1,
+        "min": 1,
+        "name": "Blue Jute"
+      },
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      },
+      {
+        "chance": 33.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "CopperScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Copper Scrap"
+      },
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "MeadTasty",
+        "max": 1,
+        "min": 1,
+        "name": "Tasty Mead"
+      },
+      {
+        "chance": 75.0,
+        "chanceMax": 75.0,
+        "group": null,
+        "key": "Chain",
+        "max": 1,
+        "min": 1,
+        "name": "Chain"
+      },
+      {
+        "chance": 63.0,
+        "chanceMax": 63.0,
+        "group": null,
+        "key": "SurtlingCore",
+        "max": 1,
+        "min": 1,
+        "name": "Surtling Core"
+      }
+    ],
+    "name": null,
+    "nameKey": "dvergrProps",
+    "places": [
+      {
+        "always": true,
+        "key": "dvergrRuins",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "theQueen",
+        "sometimes": false
+      },
+      {
+        "always": true,
+        "key": "charredRuins",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "excavation",
+        "sometimes": false
+      },
+      {
+        "always": false,
+        "key": "infestedMine",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Crate",
+    "key": "dvergrprops_crate",
+    "metals": [
+      {
+        "chance": 88.0,
+        "chanceMax": 88.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      },
+      {
+        "chance": 88.0,
+        "chanceMax": 88.0,
+        "group": null,
+        "key": "Softtissue",
+        "max": 4,
+        "min": 2,
+        "name": "Soft Tissue"
+      },
+      {
+        "chance": 88.0,
+        "chanceMax": 88.0,
+        "group": null,
+        "key": "FlametalOreNew",
+        "max": 1,
+        "min": 1,
+        "name": "Flametal Ore"
+      }
+    ],
+    "name": "Crate",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "dvergrRuins",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "excavation",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "charredRuins",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Dvergr Component Crate",
+    "key": "dvergrprops_crate_long",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "DvergrNeedle",
+        "max": 1,
+        "min": 1,
+        "name": "Dvergr Extractor"
+      }
+    ],
+    "name": "Dvergr Component Crate",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "dvergrRuins",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "excavation",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "dvergrPickaxe",
+    "key": "dvergrprops_pickaxe",
+    "metals": [
+      {
+        "chance": 50.0,
+        "chanceMax": 50.0,
+        "group": null,
+        "key": "IronScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Iron"
+      }
+    ],
+    "name": null,
+    "nameKey": "dvergrPickaxe",
+    "places": [
+      {
+        "always": false,
+        "key": "infestedMine",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Pile of Rubble",
+    "key": "elaking_trashpile",
+    "metals": [
+      {
+        "chance": 12.0,
+        "chanceMax": 12.0,
+        "group": null,
+        "key": "IronScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Iron"
+      },
+      {
+        "chance": 12.0,
+        "chanceMax": 12.0,
+        "group": null,
+        "key": "SilverNecklace",
+        "max": 1,
+        "min": 1,
+        "name": "Silver Necklace"
+      },
+      {
+        "chance": 83.0,
+        "chanceMax": 83.0,
+        "group": "moulds",
+        "key": "moulds",
+        "max": 1,
+        "min": 1,
+        "name": null
+      }
+    ],
+    "name": "Pile of Rubble",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Fenris Hair",
+    "key": "fenrirhide_hanging",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "WolfHairBundle",
+        "max": 2,
+        "min": 1,
+        "name": "Fenris Hair"
+      }
+    ],
+    "name": "Fenris Hair",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "frostCave",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "hildirCave",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "fulingRoof",
+    "key": "goblin_banner",
+    "metals": [
+      {
+        "chance": 63.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "DeerHide",
+        "max": 1,
+        "min": 1,
+        "name": "Deer Hide"
+      }
+    ],
+    "name": null,
+    "nameKey": "fulingRoof",
+    "places": [
+      {
+        "always": true,
+        "key": "fulingOutpost",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "stoneTower",
+        "sometimes": true
+      },
+      {
+        "always": false,
+        "key": "unnamed",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "hildirFortress",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "fulingTrash",
+    "key": "goblin_trashpile",
+    "metals": [
+      {
+        "chance": 54.0,
+        "chanceMax": 54.0,
+        "group": "ancientItems",
+        "key": "ancientItems",
+        "max": 1,
+        "min": 1,
+        "name": null
+      }
+    ],
+    "name": null,
+    "nameKey": "fulingTrash",
+    "places": [
+      {
+        "always": true,
+        "key": "hildirFortress",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "hairHanging",
+    "key": "hanging_hairstrands",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "WolfHairBundle",
+        "max": 1,
+        "min": 1,
+        "name": "Fenris Hair"
+      }
+    ],
+    "name": null,
+    "nameKey": "hairHanging",
+    "places": [
+      {
+        "always": false,
+        "key": "frostCave",
+        "sometimes": true
+      },
+      {
+        "always": false,
+        "key": "hildirCave",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "morgenPile",
+    "key": "morgenhole_pile",
+    "metals": [
+      {
+        "chance": 74.0,
+        "chanceMax": 74.0,
+        "group": null,
+        "key": "RottenMeat",
+        "max": 0,
+        "min": 1,
+        "name": "Rotten Meat"
+      },
+      {
+        "chance": 74.0,
+        "chanceMax": 74.0,
+        "group": null,
+        "key": "Softtissue",
+        "max": 2,
+        "min": 1,
+        "name": "Soft Tissue"
+      },
+      {
+        "chance": 8.0,
+        "chanceMax": 8.0,
+        "group": "ancientItems",
+        "key": "ancientItems",
+        "max": 1,
+        "min": 1,
+        "name": null
+      }
+    ],
+    "name": null,
+    "nameKey": "morgenPile",
+    "places": [
+      {
+        "always": true,
+        "key": "morgenHole",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "rugs",
+    "key": "Morkhalla_Banner1",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "JuteRed",
+        "max": 1,
+        "min": 1,
+        "name": "Red Jute"
+      }
+    ],
+    "name": null,
+    "nameKey": "rugs",
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "bedroll",
+    "key": "Morkhalla_Bedroll1",
+    "metals": [
+      {
+        "chance": 42.0,
+        "chanceMax": 42.0,
+        "group": null,
+        "key": "LoxPelt",
+        "max": 1,
+        "min": 1,
+        "name": "Lox Pelt"
+      },
+      {
+        "chance": 42.0,
+        "chanceMax": 42.0,
+        "group": null,
+        "key": "WolfPelt",
+        "max": 1,
+        "min": 1,
+        "name": "Wolf Pelt"
+      },
+      {
+        "chance": 42.0,
+        "chanceMax": 42.0,
+        "group": null,
+        "key": "MooseHide",
+        "max": 1,
+        "min": 1,
+        "name": "Moose Hide"
+      },
+      {
+        "chance": 42.0,
+        "chanceMax": 42.0,
+        "group": null,
+        "key": "AskHide",
+        "max": 1,
+        "min": 1,
+        "name": "Asksvin Hide"
+      }
+    ],
+    "name": null,
+    "nameKey": "bedroll",
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "morkhallaFurniture",
+    "key": "Morkhalla_Bench",
+    "metals": [
+      {
+        "chance": 63.0,
+        "chanceMax": 81.0,
+        "group": null,
+        "key": "Chain",
+        "max": 1,
+        "min": 1,
+        "name": "Chain"
+      }
+    ],
+    "name": null,
+    "nameKey": "morkhallaFurniture",
+    "places": [
+      {
+        "always": false,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "coalPile",
+    "key": "Morkhalla_coal_pile_memorial",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "MemorialCoal",
+        "max": 1,
+        "min": 1,
+        "name": "Memorial Coal"
+      }
+    ],
+    "name": null,
+    "nameKey": "coalPile",
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Campfire",
+    "key": "Morkhalla_firepit",
+    "metals": [
+      {
+        "chance": 85.0,
+        "chanceMax": 85.0,
+        "group": null,
+        "key": "MemorialCoal",
+        "max": 1,
+        "min": 1,
+        "name": "Memorial Coal"
+      }
+    ],
+    "name": "Campfire",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "rubble",
+    "key": "Morkhalla_Rubble1",
+    "metals": [
+      {
+        "chance": 81.0,
+        "chanceMax": 81.0,
+        "group": null,
+        "key": "AncientCoin",
+        "max": 1,
+        "min": 1,
+        "name": "Ancient Coin"
+      }
+    ],
+    "name": null,
+    "nameKey": "rubble",
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "trainingDummy",
+    "key": "Morkhalla_Trainingdummy1",
+    "metals": [
+      {
+        "chance": 63.0,
+        "chanceMax": 63.0,
+        "group": null,
+        "key": "Barley",
+        "max": 1,
+        "min": 1,
+        "name": "Barley"
+      },
+      {
+        "chance": 63.0,
+        "chanceMax": 63.0,
+        "group": null,
+        "key": "Flax",
+        "max": 1,
+        "min": 1,
+        "name": "Flax"
+      }
+    ],
+    "name": null,
+    "nameKey": "trainingDummy",
+    "places": [
+      {
+        "always": true,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "weaponStand",
+    "key": "Morkhalla_WeaponStand",
+    "metals": [
+      {
+        "chance": 15.0,
+        "chanceMax": 15.0,
+        "group": null,
+        "key": "IronScrap",
+        "max": 1,
+        "min": 1,
+        "name": "Scrap Iron"
+      },
+      {
+        "chance": 90.0,
+        "chanceMax": 90.0,
+        "group": "moulds",
+        "key": "moulds",
+        "max": 1,
+        "min": 1,
+        "name": null
+      }
+    ],
+    "name": null,
+    "nameKey": "weaponStand",
+    "places": [
+      {
+        "always": false,
+        "key": "morkhalla",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "brazier",
+    "key": "MountainKit_brazier",
+    "metals": [
+      {
+        "chance": 28.0,
+        "chanceMax": 28.0,
+        "group": null,
+        "key": "Bronze",
+        "max": 1,
+        "min": 1,
+        "name": "Bronze"
+      }
+    ],
+    "name": null,
+    "nameKey": "brazier",
+    "places": [
+      {
+        "always": false,
+        "key": "frostCave",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "hildirCave",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "caveFurniture",
+    "key": "mountainkit_chair",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "caveFurniture",
+    "places": [
+      {
+        "always": false,
+        "key": "frostCave",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Wood Gate",
+    "key": "MountainKit_wood_gate",
+    "metals": [
+      {
+        "chance": 34.0,
+        "chanceMax": 34.0,
+        "group": null,
+        "key": "Iron",
+        "max": 1,
+        "min": 1,
+        "name": "Iron"
+      }
+    ],
+    "name": "Wood Gate",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "frostCave",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "bed",
+    "key": "prop_bed02",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 5,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "bed",
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Spice Rack",
+    "key": "prop_cauldron_ext1_spice",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Spice Rack",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Butcher's Table",
+    "key": "prop_cauldron_ext3_butchertable",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 5,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Butcher's Table",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Forge Cooler",
+    "key": "prop_forge_ext5",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 5,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Forge Cooler",
+    "nameKey": null,
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Item Stand",
+    "key": "prop_itemstand",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Item Stand",
+    "nameKey": null,
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "trophyStand",
+    "key": "prop_itemstand_TrophyDraugrElite",
+    "metals": [
+      {
+        "chance": 90.0,
+        "chanceMax": 95.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      },
+      {
+        "chance": 5.0,
+        "chanceMax": 5.0,
+        "group": null,
+        "key": "TrophyDraugrElite",
+        "max": 1,
+        "min": 1,
+        "name": "Draugr Elite Trophy"
+      },
+      {
+        "chance": 5.0,
+        "chanceMax": 5.0,
+        "group": null,
+        "key": "TrophyGoblinShaman",
+        "max": 1,
+        "min": 1,
+        "name": "Fuling Shaman Trophy"
+      },
+      {
+        "chance": 10.0,
+        "chanceMax": 10.0,
+        "group": null,
+        "key": "TrophyGreydwarf",
+        "max": 1,
+        "min": 1,
+        "name": "Greydwarf Trophy"
+      },
+      {
+        "chance": 5.0,
+        "chanceMax": 5.0,
+        "group": null,
+        "key": "TrophySeekerBrute",
+        "max": 1,
+        "min": 1,
+        "name": "Seeker Soldier Trophy"
+      }
+    ],
+    "name": null,
+    "nameKey": "trophyStand",
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Standing Brazier",
+    "key": "prop_piece_brazierfloor01",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "BronzeScrap",
+        "max": 5,
+        "min": 1,
+        "name": "Scrap Bronze"
+      }
+    ],
+    "name": "Standing Brazier",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Cauldron",
+    "key": "prop_piece_cauldron",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "TinOre",
+        "max": 5,
+        "min": 1,
+        "name": "Tin Ore"
+      }
+    ],
+    "name": "Cauldron",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Darkwood Chair",
+    "key": "prop_piece_chair03",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 2,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Darkwood Chair",
+    "nameKey": null,
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Mead Ketill",
+    "key": "prop_piece_MeadCauldron",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "BronzeScrap",
+        "max": 5,
+        "min": 1,
+        "name": "Scrap Bronze"
+      }
+    ],
+    "name": "Mead Ketill",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "Adze",
+    "key": "prop_piece_workbench_ext3",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 5,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Adze",
+    "nameKey": null,
+    "places": [
+      {
+        "always": true,
+        "key": "lumberCamp",
+        "sometimes": false
+      },
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "Tool Shelf",
+    "key": "prop_piece_workbench_ext4",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 5,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": "Tool Shelf",
+    "nameKey": null,
+    "places": [
+      {
+        "always": false,
+        "key": "northVillage",
+        "sometimes": true
+      }
+    ]
+  },
+  {
+    "id": "prepTable",
+    "key": "prop_preptable",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 10,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "prepTable",
+    "places": [
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "tankard",
+    "key": "prop_Tankard",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "tankard",
+    "places": [
+      {
+        "always": true,
+        "key": "northVillage",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "theHole",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "shipwreck",
+    "key": "shipwreck_karve_bottomboards",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "shipwreck",
+    "places": [
+      {
+        "always": true,
+        "key": "shipwreck",
+        "sometimes": true
+      },
+      {
+        "always": true,
+        "key": "unnamed",
+        "sometimes": false
+      }
+    ]
+  },
+  {
+    "id": "wagon",
+    "key": "trader_wagon_destructable",
+    "metals": [
+      {
+        "chance": 100.0,
+        "chanceMax": 100.0,
+        "group": null,
+        "key": "FineWood",
+        "max": 1,
+        "min": 1,
+        "name": "Finewood"
+      }
+    ],
+    "name": null,
+    "nameKey": "wagon",
+    "places": [
+      {
+        "always": true,
+        "key": "excavation",
+        "sometimes": false
+      }
+    ]
+  }
+]

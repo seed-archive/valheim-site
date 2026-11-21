@@ -1,0 +1,2488 @@
+{
+  "creatures": [
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "blunt": 10.0
+      },
+      "key": "Boar",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Boar"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {},
+      "key": "Deer",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Deer"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "pierce": 48.0,
+        "slash": 48.0
+      },
+      "key": "Draugr",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Draugr"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "slash": 58.0
+      },
+      "key": "Draugr_Elite",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Draugr Elite"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "slash": 5.0
+      },
+      "key": "Greyling",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greyling"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "slash": 6.0
+      },
+      "key": "Neck",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Neck"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "meadows",
+      "boss": false,
+      "deals": {
+        "pierce": 20.0,
+        "slash": 25.0
+      },
+      "key": "Skeleton",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Skeleton"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "meadows",
+      "boss": true,
+      "deals": {
+        "lightning": 15.0,
+        "pierce": 20.0
+      },
+      "key": "Eikthyr",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Eikthyr"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "blunt": 50.0,
+        "pierce": 55.0,
+        "slash": 50.0
+      },
+      "key": "Bjorn",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Bear"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "fire": 75.0,
+        "slash": 60.0
+      },
+      "key": "Skeleton_Hildir",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Brenna"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "slash": 25.0
+      },
+      "key": "Ghost",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.5
+      },
+      "name": "Ghost"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "blunt": 10.0,
+        "slash": 14.0
+      },
+      "key": "Greydwarf",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greydwarf"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "slash": 30.0
+      },
+      "key": "Greydwarf_Elite",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greydwarf Brute"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "poison": 30.0,
+        "slash": 14.0
+      },
+      "key": "Greydwarf_Shaman",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greydwarf Shaman"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "blunt": 20.0,
+        "poison": 30.0
+      },
+      "key": "Skeleton_Poison",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Rancid Remains"
+    },
+    {
+      "best": [
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow"
+      ],
+      "biome": "blackForest",
+      "boss": false,
+      "deals": {
+        "blunt": 70.0
+      },
+      "key": "Troll",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Troll"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "blackForest",
+      "boss": true,
+      "deals": {
+        "blunt": 60.0,
+        "pierce": 35.0
+      },
+      "key": "gd_king",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "The Elder"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "blunt": 80.0
+      },
+      "key": "Abomination",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 0.25,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Abomination"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "poison": 90.0
+      },
+      "key": "Blob",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.5,
+        "frost": 1.5,
+        "lightning": 1.5,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Blob"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "blunt": 80.0
+      },
+      "key": "BogWitchKvastur",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Kvastur"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "pierce": 20.0,
+        "poison": 70.0
+      },
+      "key": "Leech",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Leech"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "poison": 115.0
+      },
+      "key": "BlobElite",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.5,
+        "frost": 1.5,
+        "lightning": 1.5,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Oozer"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "pierce": 55.0,
+        "slash": 48.0
+      },
+      "key": "Skeleton_Swamps",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Skeleton"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "blunt": 10.0,
+        "fire": 40.0
+      },
+      "key": "Surtling",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Surtling"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "slash": 60.0
+      },
+      "key": "Wraith",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.5
+      },
+      "name": "Wraith"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "fist"
+      ],
+      "biome": "swamp",
+      "boss": false,
+      "deals": {
+        "pierce": 40.0,
+        "poison": 30.0
+      },
+      "key": "Writhan",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.5,
+        "spirit": 1.0
+      },
+      "name": "Writhan"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "swamp",
+      "boss": true,
+      "deals": {
+        "blunt": 80.0,
+        "poison": 130.0
+      },
+      "key": "Bonemass",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.25,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 0.25,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Bonemass"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ocean",
+      "boss": false,
+      "deals": {
+        "poison": 5.0,
+        "slash": 70.0
+      },
+      "key": "Serpent",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Serpent"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "slash": 20.0
+      },
+      "key": "Bat",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.5
+      },
+      "name": "Bat"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "fire": 50.0,
+        "slash": 35.0
+      },
+      "key": "Fenring_Cultist",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.5,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Cultist"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "frost": 90.0
+      },
+      "key": "Hatchling",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Drake"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "slash": 95.0
+      },
+      "key": "Fenring",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Fenring"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "frost": 100.0,
+        "slash": 60.0
+      },
+      "key": "Fenring_Cultist_Hildir",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Geirrhafa"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "pierce": 60.0,
+        "slash": 60.0
+      },
+      "key": "Skeleton_Mountains",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Skeleton"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "blunt": 110.0,
+        "pierce": 110.0
+      },
+      "key": "StoneGolem",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Stone Golem"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "slash": 80.0
+      },
+      "key": "Ulv",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.25,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.5,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Ulv"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": false,
+      "deals": {
+        "slash": 70.0
+      },
+      "key": "Wolf",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Wolf"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mountain",
+      "boss": true,
+      "deals": {
+        "frost": 200.0,
+        "pierce": 120.0,
+        "slash": 110.0
+      },
+      "key": "Dragon",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 0.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Moder"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "pierce": 90.0
+      },
+      "key": "Deathsquito",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Deathsquito"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 85.0,
+        "fire": 45.0,
+        "pierce": 85.0,
+        "slash": 85.0
+      },
+      "key": "Goblin",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Fuling"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 130.0,
+        "slash": 80.0
+      },
+      "key": "GoblinBrute",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Fuling Berserker"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 100.0,
+        "fire": 100.0
+      },
+      "key": "GoblinShaman",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Fuling Shaman"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 45.0,
+        "poison": 50.0
+      },
+      "key": "BlobTar",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Growth"
+    },
+    {
+      "best": [
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 120.0,
+        "slash": 130.0
+      },
+      "key": "Lox",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Lox"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 150.0,
+        "pierce": 130.0,
+        "slash": 130.0
+      },
+      "key": "Unbjorn",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.5
+      },
+      "name": "Vile"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": false,
+      "deals": {
+        "blunt": 150.0,
+        "fire": 100.0,
+        "slash": 80.0
+      },
+      "key": "GoblinBruteBros",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Zil & Thungr"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "plains",
+      "boss": true,
+      "deals": {
+        "fire": 65.0,
+        "lightning": 65.0
+      },
+      "key": "GoblinKing",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.25,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Yagluth"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "blunt": 70.0,
+        "fire": 130.0,
+        "frost": 200.0
+      },
+      "key": "DvergerMage",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Dvergr Mage"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "blunt": 70.0,
+        "pierce": 160.0
+      },
+      "key": "Dverger",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Dvergr Rogue"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "blunt": 50.0,
+        "fire": 80.0
+      },
+      "key": "Gjall",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Gjall"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {},
+      "key": "Hare",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Hare"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "blunt": 100.0,
+        "frost": 200.0,
+        "pierce": 120.0
+      },
+      "key": "Seeker",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Seeker"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "blunt": 120.0,
+        "slash": 100.0
+      },
+      "key": "SeekerBrute",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Seeker Soldier"
+    },
+    {
+      "best": [
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow"
+      ],
+      "biome": "mistlands",
+      "boss": false,
+      "deals": {
+        "pierce": 50.0
+      },
+      "key": "Tick",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Tick"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "mistlands",
+      "boss": true,
+      "deals": {
+        "blunt": 40.0,
+        "pierce": 150.0,
+        "poison": 100.0,
+        "slash": 130.0
+      },
+      "key": "SeekerQueen",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "The Queen"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "blunt": 150.0,
+        "slash": 75.0
+      },
+      "key": "Asksvin",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Asksvin"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "blunt": 40.0,
+        "fire": 20.0,
+        "poison": 20.0,
+        "slash": 140.0
+      },
+      "key": "BonemawSerpent",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Bonemaw"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 90.0
+      },
+      "key": "Charred_Archer",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.25,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Charred Marksman"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 75.0,
+        "slash": 100.0
+      },
+      "key": "Charred_Twitcher",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.25,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Charred Twitcher"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 100.0
+      },
+      "key": "Charred_Mage",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.25,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Charred Warlock"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 160.0,
+        "slash": 150.0
+      },
+      "key": "Charred_Melee",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.25,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Charred Warrior"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "blunt": 70.0,
+        "pierce": 210.0
+      },
+      "key": "DvergerAshlands",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Dvergr Rogue"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "blunt": 80.0,
+        "pierce": 140.0,
+        "slash": 105.0
+      },
+      "key": "FallenValkyrie",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Fallen Valkyrie"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {},
+      "key": "BlobLava",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.0,
+        "frost": 1.5,
+        "lightning": 1.5,
+        "pierce": 0.5,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Lava Blob"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 230.0,
+        "slash": 250.0
+      },
+      "key": "Charred_Melee_Dyrnwyn",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.5
+      },
+      "name": "Lord Reto"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "blunt": 160.0,
+        "pierce": 160.0
+      },
+      "key": "Morgen",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 0.5,
+        "frost": 1.0,
+        "lightning": 1.5,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Morgen"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "pierce": 60.0
+      },
+      "key": "SeekerBrood",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Seeker Brood"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": false,
+      "deals": {
+        "slash": 110.0
+      },
+      "key": "Volture",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Volture"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "ashlands",
+      "boss": true,
+      "deals": {
+        "fire": 60.0,
+        "pierce": 210.0,
+        "spirit": 60.0
+      },
+      "key": "Fader",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Fader"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {},
+      "key": "Seal_Pup",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Baby Seal"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 190.0,
+        "frost": 100.0,
+        "pierce": 100.0
+      },
+      "key": "Barka",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 0.5,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Barka"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 160.0,
+        "fire": 85.0,
+        "pierce": 150.0,
+        "slash": 160.0
+      },
+      "key": "GoblinDeepNorth",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Captive Fuling"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 75.0,
+        "fire": 35.0,
+        "slash": 100.0
+      },
+      "key": "Elaking",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Elaking"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 80.0,
+        "poison": 100.0,
+        "slash": 40.0
+      },
+      "key": "ElakingMole",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Eyeless One"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 60.0,
+        "frost": 20.0,
+        "slash": 60.0
+      },
+      "key": "Greydwarf_Frozen",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greydwarf"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 20.0,
+        "frost": 16.0,
+        "poison": 180.0,
+        "slash": 60.0
+      },
+      "key": "Greydwarf_Shaman_Frozen",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 2.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.5,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Greydwarf Shaman"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 30.0,
+        "lightning": 120.0,
+        "slash": 150.0,
+        "spirit": 15.0
+      },
+      "key": "JotunWitch",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 0.25,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Hexen"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 140.0,
+        "pierce": 250.0
+      },
+      "key": "DvergerDeepNorth",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Imprisoned Dvergr"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 160.0,
+        "slash": 170.0
+      },
+      "key": "JotunWarrior",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.0,
+        "frost": 0.25,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Krigen"
+    },
+    {
+      "best": [
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 150.0,
+        "slash": 160.0
+      },
+      "key": "Moose",
+      "multipliers": {
+        "blunt": 0.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 0.5,
+        "spirit": 0.0
+      },
+      "name": "Moose"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "spear",
+        "polearm",
+        "bow",
+        "crossbow",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {},
+      "key": "Seal",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 1.5,
+        "frost": 1.0,
+        "lightning": 1.0,
+        "pierce": 1.0,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Seal"
+    },
+    {
+      "best": [],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 10.0,
+        "pierce": 45.0,
+        "slash": 95.0,
+        "spirit": 30.0
+      },
+      "key": "ShadowPerson",
+      "multipliers": {
+        "blunt": 0.0,
+        "fire": 0.0,
+        "frost": 0.0,
+        "lightning": 0.0,
+        "pierce": 0.0,
+        "poison": 0.0,
+        "slash": 0.0,
+        "spirit": 0.0
+      },
+      "name": "Shadow"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 20.0,
+        "poison": 110.0
+      },
+      "key": "BlobMork",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 0.5,
+        "frost": 1.5,
+        "lightning": 1.5,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 0.5,
+        "spirit": 1.0
+      },
+      "name": "Shapeless Pulp"
+    },
+    {
+      "best": [
+        "club"
+      ],
+      "biome": "deepNorth",
+      "boss": false,
+      "deals": {
+        "blunt": 80.0,
+        "frost": 10.0
+      },
+      "key": "Skeleton_DeepNorth",
+      "multipliers": {
+        "blunt": 1.5,
+        "fire": 1.5,
+        "frost": 0.5,
+        "lightning": 1.0,
+        "pierce": 0.5,
+        "poison": 0.0,
+        "slash": 1.0,
+        "spirit": 1.0
+      },
+      "name": "Skeleton"
+    },
+    {
+      "best": [
+        "sword",
+        "axe",
+        "knife",
+        "club",
+        "fist"
+      ],
+      "biome": "deepNorth",
+      "boss": true,
+      "deals": {
+        "blunt": 250.0,
+        "fire": 50.0,
+        "frost": 50.0,
+        "pierce": 125.0
+      },
+      "key": "FrozenKing_p3",
+      "multipliers": {
+        "blunt": 1.0,
+        "fire": 0.5,
+        "frost": 0.5,
+        "lightning": 0.5,
+        "pierce": 0.5,
+        "poison": 1.0,
+        "slash": 1.0,
+        "spirit": 0.0
+      },
+      "name": "Kall Fimbulbringer"
+    }
+  ],
+  "kinds": [
+    {
+      "kind": "sword",
+      "type": "slash"
+    },
+    {
+      "kind": "axe",
+      "type": "slash"
+    },
+    {
+      "kind": "knife",
+      "type": "slash"
+    },
+    {
+      "kind": "club",
+      "type": "blunt"
+    },
+    {
+      "kind": "spear",
+      "type": "pierce"
+    },
+    {
+      "kind": "polearm",
+      "type": "pierce"
+    },
+    {
+      "kind": "bow",
+      "type": "pierce"
+    },
+    {
+      "kind": "crossbow",
+      "type": "pierce"
+    },
+    {
+      "kind": "fist",
+      "type": "slash"
+    }
+  ],
+  "types": [
+    "blunt",
+    "slash",
+    "pierce",
+    "fire",
+    "frost",
+    "lightning",
+    "poison",
+    "spirit"
+  ]
+}
