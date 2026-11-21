@@ -1,6 +1,6 @@
 # Black Forest
 
-**How do I explore the Black Forest?** Keep to its edge with a torch until the copper and the cores there are bronze on your back, then comb the whole forest: its towers, chambers and nests give you the Elder's place and his seeds along the way.
+**How do I explore the Black Forest?** Keep to its edge with a torch until its copper and cores are bronze on your back, then comb the forest: it gives the Elder's place and his seeds on the way.
 
 ## What kills a newcomer in the Black Forest?
 

@@ -1,6 +1,6 @@
 # Ashlands
 
-**How do I explore the Ashlands?** Cross the burning sea in the Drakkar, raise a roofed stone foothold with a portal the moment you land, make flametal and the stone portal, then break into the Charred Fortresses round Fader for his bells.
+**How do I explore the Ashlands?** Cross the burning sea in the Drakkar, raise a roofed stone foothold with a portal, make flametal, then break into the fortresses round Fader for his bells.
 
 ## Which boat crosses the sea?
 

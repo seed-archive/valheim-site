@@ -1,6 +1,6 @@
 # A speedrunner's start
 
-**Is this seed worth the run?** When Eikthyr and the base cave share the start island, the Elder stands near the base, and Bonemass and Moder lie a short sail from the start: scout that loop first, and reset when a leg is long.
+**Is this seed worth the run?** When Eikthyr and the base cave share the start island, the Elder is near the base, and Bonemass and Moder are a short sail off; reset when a leg is long.
 
 ## What is on my starting island?
 

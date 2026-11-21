@@ -1,6 +1,6 @@
 # Mistlands
 
-**How do I explore the Mistlands?** Land where the mist is thin, let the Dvergr kill your first Seekers and keep the carapace they leave, then comb the mist: mines for cores and the Sealbreaker, giants' remains for marble, a Dvergr extractor for sap, and the Queen's citadel last.
+**How do I explore the Mistlands?** Land where the mist is thin, let the Dvergr kill your first Seekers, then comb the mist for mines, giants' remains and sap, and take the Queen's citadel last.
 
 ## How far are the Mistlands from home?
 

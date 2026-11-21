@@ -1,6 +1,6 @@
 # Swamp
 
-**How do I explore the Swamp?** Find a Swamp with crypts, camp on dry ground, dig your first iron out of the nearest Sunken Crypt and arm yourself with it; then comb the whole Swamp for its other crypts, its roots and Bonemass's altar.
+**How do I explore the Swamp?** Camp on dry ground, arm yourself with iron from the nearest Sunken Crypt, then comb the Swamp for its other crypts, its roots and Bonemass's altar.
 
 ## How do I reach the Swamp?
 

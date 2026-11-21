@@ -1,6 +1,6 @@
 # Deep North
 
-**How do I explore the Deep North?** Sail north, cross the ice on foot and camp in a village by Kall's gate; bomb a petrified troll for Bloodgold, take the key's mould from the Winding Tunnels, open {{kallMorkhallaNeed}} Mörkhalla, go south for the blood their ice sends there, and bring it back to his gate.
+**How do I explore the Deep North?** Camp in a village by Kall's gate, bomb a petrified troll for Bloodgold, take the key's mould from the Winding Tunnels, then open the Mörkhalla for his blood.
 
 ## How do I get far north?
 

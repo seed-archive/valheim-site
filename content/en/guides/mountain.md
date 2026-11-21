@@ -1,6 +1,6 @@
 # Mountain
 
-**How do I explore the Mountain?** Climb by day on a frost mead, dig the first silver the wishbone finds and turn it into a wolf fur cape; then comb the Mountain for the rest of its silver, its drake nests and Moder's altar.
+**How do I explore the Mountain?** Climb by day on a frost mead, make a wolf fur cape from the first silver, then comb the Mountain for its silver, its drake nests and Moder's altar.
 
 ## How far is the Mountain from home?
 

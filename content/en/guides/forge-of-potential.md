@@ -1,6 +1,8 @@
 # Forge of Potential
 
-**Can you upgrade gear past its last level?** Yes, at the Forge of Potential: one stands in the Mountain of every world, and with an idol of the item's tier it raises a weapon or an armour piece above the level its own station stops at, {{success}}% of the time; the rest of the time the item shatters.
+**Can you upgrade gear past its last level?** Yes, at the Forge of Potential in the Mountain: with an idol of its tier a piece rises one level {{success}}% of the time, or shatters.
+
+One forge stands in the Mountain of every world, and it raises a weapon or an armour piece above the level its own station stops at.
 
 ## Where it stands
 

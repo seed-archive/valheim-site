@@ -25,8 +25,6 @@ export const metadata: Metadata = {
     siteName: "Seed Archive",
     type: "website",
   },
-  // Not open to search engines until the section has its first pages.
-  robots: { index: false, follow: false },
 };
 
 export default function RootLayout(props: PropsWithChildren) {

@@ -1,6 +1,6 @@
 # Plains
 
-**How do I explore the Plains?** Sail along their shore to Yagluth's altar, build a walled base on level ground by the sea, raid the smallest Fuling village for barley, flax and your first black metal, then take the bigger villages and the towers for his totems.
+**How do I explore the Plains?** Build a walled base by the sea, raid a small Fuling village for barley, flax and black metal, then take the bigger villages and towers for Yagluth's totems.
 
 ## How far are the Plains from home?
 
