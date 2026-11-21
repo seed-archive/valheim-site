@@ -102,6 +102,20 @@ In what you break on the way. Without his key a Sunken Crypt's door stays shut, 
 
 The Winding Tunnels come before the Mörkhalla anyway, for the key's mould, so clear their rubble as you go. What the Swamp still gives you is its leeches: every leech drops a bloodbag, and a [frost resistance mead](/catalog/meads#meadfrostresist)'s base takes {{frostMeadBloodbags}} of them.
 
+## What must I build in the Mistlands?
+
+The Black Forge, even on a run that leaves the Queen for last: the Intricate Key that opens the Mörkhalla is cast on it at level {{keyForgeLevel}}, and the forge is built only of what the Mistlands give. Any three extensions set beside it raise it to that level. The usual game takes the Cooler, the Vice and the Metal Cutter from the Ashlands; a run from the north swaps the Cutter's flametal for the Smith's Aprons' Bloodgold, which needs Fader's embers anyway. The Vice's mechanical springs are pressed at the artisan table from iron and refined eitr, so even the key waits on this biome's sap.
+
+| The Black Forge to level {{keyForgeLevel}} | What it takes |
+|---|---|
+| The Black Forge | {{blackForgeBlackMarble}} black marble, {{blackForgeYggdrasil}} Yggdrasil wood, {{blackForgeBlackCores}} black cores |
+| Black Forge Cooler | {{coolerIron}} iron, {{coolerCopper}} copper, {{coolerBlackMarble}} black marble |
+| Vice | {{viseIron}} iron, {{viseCopper}} copper, {{viseSprings}} mechanical springs |
+| Metal Cutter, the Ashlands' way | {{cutterBlackMarble}} black marble, {{cutterFlametal}} flametal, {{cutterAshwood}} ashwood, {{cutterCharredBones}} charred bones |
+| Smith's Aprons, the Deep North's way | {{apronBloodgold}} Bloodgold, {{apronTimberwood}} Timberwood, {{apronHides}} moose hides |
+
+Coming down from Kall, the mines that matter are the ones nearest your road: the nearest Infested Mine lies {{kallMineM}} m from his gate as a rule and the second {{kallMine2M}} m. The black metal comes from the Deep North's wardrobes.
+
 ## How do I live through the first night?
 
 Every weather of the Deep North freezes you, day and night: no health coming back, stamina slower, and a little damage every second until you die. A fire alone or a roof alone softens it to cold; both together lift it, and so does any frost resistance.

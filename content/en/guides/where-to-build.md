@@ -98,7 +98,7 @@ Chart: spread
 
 ### Where do biomes meet?
 
-The best no-portals base stands where the biomes it needs touch: fewer trips, less to fetch. Look for the Swamp's iron beside a Mountain's silver, or the edge where the Plains meet the [Mistlands](/guides/mistlands), for crops and sap at one door; the [Plains](/guides/plains#where-do-the-plains-meet-the-mistlands) guide says how often they touch.
+The best no-portals base stands where the biomes it needs touch: fewer trips, less to fetch. Look for the Swamp's iron beside a Mountain's silver, or the edge where the Plains meet the Mistlands, for crops and sap at one door; [Where do I set the eitr base?](/guides/mistlands#where-do-i-set-the-eitr-base) says how often a root stands there.
 
 It is a rare find: Bonemass's Swamp borders a Mountain on only {{meetSwampMountain}}% of seeds; as a rule the nearest Mountain lies {{meetAltarMMountain}} m from his altar ({{meetAltarMMountainLow}}–{{meetAltarMMountainHigh}} m on the middle half of seeds).
 

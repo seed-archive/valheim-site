@@ -159,7 +159,13 @@ Classic, the shortest category, stops the clock here: it ends at his altar.
 
 Going on, the Plains cannot be skipped: black metal goes into the Galdr Table and the Queen's Sealbreaker, and without Yagluth's Torn Spirit you walk the Mistlands blind in the mist.
 
-**The Queen**, through the mist, with the Infested Mines beside her. [Mistlands](/guides/mistlands).
+### Mistlands
+
+You have no time to grope through the mist. The rules let you print the seed, so look the Infested Mines up on the [seed map](/tools/map) and walk straight to the ones by the Queen: {{queenMinesFew}} or more stand in her own Mistlands on {{queenMines}}% of seeds, and within {{bossNearM}} m of her gate on {{queenMinesNear}}%.
+
+Let a Seeker Soldier do the mining: lead it so its ram and slam land on a giant's ribs, and it breaks them for you, so the remains become a quarry without a swing of your own.
+
+The Mistlands cannot be skipped if you mean to go on: the Black Forge, built with the mines' black cores, forges Fader's bells and casts the Intricate Key, and the Drakkar takes Yggdrasil wood and the ceramic plates that only the Queen's drop makes possible.
 
 **Fader**, with the bells of the Charred Fortresses. [Ashlands](/guides/ashlands).
 

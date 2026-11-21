@@ -47,6 +47,8 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Plains.** Clear one Fuling village by day and make it your camp before you look for the next. A village's shamans and its first Fulings rise from spawners that fire once; set down a workbench and a campfire, and while they stand nothing new rises inside their reach, from the village or from the open Plains. Two pieces stay under the {{raidBasePieces}} that call most raids, so the camp draws none. Fulings still walk in from outside: it is a place to rest and mend, not a wall.
 
+**Mistlands.** Set a torch in every mine room you clear, so its Seekers stay dead, and come by day: the mist's Seekers carry more stars at night.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
@@ -93,6 +95,16 @@ Find the shore first and keep the base by it: any coast leads home. Then build t
 
 **Plains.** Steer for the standing stones and the stone towers of every Plains you land on: only they hold Yagluth's Vegvísir, and a tower pays a totem besides.
 
+**Mistlands.** The Queen is the hardest boss to find without a map, and the mist steals the sky and Yggdrasil with it, so you steer by what you lay down and what the Dvergr built. Lay lines of wisp torches, doubled for the way out and single for a dead end, mine the ridges flat into a road, and keep to the ground you have cleared. Come in from the edge with the Plains, where the sky still shows, and if a root stands near it, make it your home.
+
+| From the Queen's gate, the nearest | As a rule | Middle half of seeds |
+|---|---|---|
+| Edge of her Mistlands, m | {{queenEdgeM}} | {{queenEdgeMLow}}–{{queenEdgeMHigh}} |
+| Edge with the Plains, m | {{meetAltarMPlains}} | {{meetAltarMPlainsLow}}–{{meetAltarMPlainsHigh}} |
+| Dvergr lighthouse, m | {{queenLighthouseM}} | {{queenLighthouseMLow}}–{{queenLighthouseMHigh}} |
+
+A Dvergr lighthouse stands in her Mistlands on {{queenLighthouseIn}}% of seeds.
+
 ## How do I play with no portals?
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
@@ -125,6 +137,8 @@ The far south costs most: the [Drakkar](/catalog/ships), the one ship that cross
 **Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip.
 
 **Plains.** Barley and flax grow only here, so set the farm on the spot or carry the whole harvest home.
+
+**Mistlands.** The sap is carried, so the root's base is your Mistlands home: set it at the edge with the Plains, for the crops, if a root stands there.
 
 > **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 
