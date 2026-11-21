@@ -71,9 +71,19 @@ The last leg is the killer: the gap between the last two rows is the voyage from
 
 ## What is the speedrun route, boss by boss?
 
-Each guide of the [Biomes](/guides/biomes) is one leg of the route, with its own questions and its own odds.
+Each biome is one leg of the route. The [Biomes](/guides/biomes) tell them for the player who explores; here is the same land on the clock.
 
-**Eikthyr**, for speed: burn him with campfires and he drops fast, and his power cuts what running costs you in stamina, so the scouting of [A good start](/guides/a-good-start) goes quicker. [Meadows](/guides/meadows).
+### Meadows
+
+For you the Meadows are a road, not a home: the base waits at a troll cave of the Black Forest, with copper and tin by its mouth.
+
+Eikthyr is killed for speed, never for need. His power cuts what running costs you in stamina, so the scouting of [A good start](/guides/a-good-start) goes quicker, and it pays when his altar lies near your way to the base cave: by way of his altar that walk is {{viaEikthyrM}} m as a rule against {{baseM}} m straight, a detour of {{eikthyrDetourM}} m ({{eikthyrDetourMLow}}–{{eikthyrDetourMHigh}} m on the middle half of seeds). With his altar far off the way, run without him.
+
+The deer for his altar cross your road anyway; carry a spear or a bow for them. Then burn him: ring his altar with campfires. They do not last, and they need not, since the burning they set does the work, and their ground counts as a base ([Boss arenas](/guides/boss-arenas#which-pieces-make-the-ground-a-base)), so nothing of the open world rises round them while he burns. Make the antler pickaxe from his antler and nothing else, and run on.
+
+Take the hives only from the houses you rob on that walk, and turn aside for none: {{hivesFive}} serve a run, which brews only a handful of times, and {{hivesFive}} stand within {{wayReachM}} m of the walk on {{hivesOnWayFive}}% of seeds. Fewer mean a little less mead, not a detour.
+
+Skipping Eikthyr costs more than the walk to him. Without his antler nothing mines before bronze, so a troll's blows must do the digging at every vein, and without his power every step costs full stamina.
 
 **The Elder**, after the copper base, a troll cave with copper and tin by its mouth. [Black Forest](/guides/black-forest).
 

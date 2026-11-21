@@ -35,6 +35,10 @@ A place you cleared stays clear only for a time, counted from when its last crea
 
 A nest renews for as long as it stands, so the one place you can make safe for good is the one you broke the nests round.
 
+### What changes biome by biome with one life?
+
+**Meadows.** Raise your spear, your club and your blocking on a training dummy before Eikthyr, and fight him inside a ring of campfires, where no Neck or boar rises during the fight.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
