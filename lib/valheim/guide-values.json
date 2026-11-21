@@ -312,6 +312,8 @@
   "runBlackMetal": 65,
   "runIron": 94,
   "runSilver": 1,
+  "sailDeadDeg": 37,
+  "sailDeadShare": 20,
   "sealPelts": 2,
   "sealPeltsMost": 3,
   "sightBeamM": 128.0,
@@ -380,6 +382,7 @@
   "viseCopper": 8,
   "viseIron": 5,
   "viseSprings": 2,
+  "windHoldMin": 17,
   "wisplightSilver": 1,
   "workbenchWood": 10
 }

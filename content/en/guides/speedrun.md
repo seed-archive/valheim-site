@@ -151,7 +151,9 @@ Skipping the Swamp has its price: without the wishbone, silver means digging the
 
 The Mountain is one climb and out. No gate takes silver; mine only the bars the Wisplight wants. Up once on the mead with the iron pickaxe, the walk through the nests and the nearest vein, a smelter right beside her altar so only bars go down, since a cart on her slopes overturns, then Moder, and down again. From her altar and back, the walk through the {{moderEggs}} nearest nests is {{moderEggLoopM}} m as a rule, and {{moderClimbLoopM}} m with the nearest vein added: the silver costs almost nothing extra.
 
-Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and gives the sail a wind.
+Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and puts the wind dead astern of your boat. It pays most on the run's two long sails, south and then north, where your heading is fixed and the wind is not. A sail dies whenever the wind comes from within {{sailDeadDeg}}° of the bow, {{sailDeadShare}}% of all headings, and a wind holds its main direction for about {{windHoldMin}} minutes, so a bad one outlasts a short crossing. Call the power when the wind stands ahead of your beam; with it already behind or abeam the sail pulls as hard without her.
+
+The wind follows the world's clock and not the seed: the same hour of the same day blows the same way in every world. A wind that stopped you at a crossing will be waiting there on the next run, unless you reach the water at another hour.
 
 She cannot be skipped even off the board: without her tears there is no artisan table, so no blast furnace for the Plains' black metal.
 

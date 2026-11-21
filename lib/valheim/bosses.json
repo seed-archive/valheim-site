@@ -346,7 +346,11 @@
         },
         {
           "key": "tailwind",
-          "value": null
+          "value": {
+            "sailDeadDeg": 37,
+            "sailDeadShare": 20,
+            "windHoldMin": 17
+          }
         },
         {
           "key": "resist",

@@ -32,6 +32,12 @@ export const metadata: Metadata = {
 const t = (id: string, values?: Record<string, string | number>) =>
   serverFormat(`pages.bosses.${id}`, values);
 const damage = (k: string) => serverFormat(`pages.crafting.damage.${k}`);
+// What a power that turns the wind astern saves: the sail's dead angle and
+// share of headings and how long a wind holds (the Valheim generator's
+// numbers, on the power's "tailwind" effect).
+const sailOf = (effects: Effect[]) =>
+  effects.find((e) => e.key === "tailwind")?.value as
+    Record<string, number> | undefined;
 const biomeName = (b: string) => serverFormat(`pages.crafting.biome.${b}`);
 // A message the page may lack (a boss without an alternative yet).
 const maybe = (id: string) =>
@@ -277,6 +283,11 @@ export default function BossesPage() {
                       cooldown: b.power.cooldown / 60,
                     })}
                   </Typography>
+                  {sailOf(b.power.effects as Effect[]) ? (
+                    <Typography sx={{ mb: 1 }}>
+                      {t("power.sail", sailOf(b.power.effects as Effect[]))}
+                    </Typography>
+                  ) : null}
                 </>
               ) : (
                 <Typography sx={{ mb: 1 }}>{t("power.none")}</Typography>

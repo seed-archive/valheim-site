@@ -1217,6 +1217,7 @@
       "power": {
         "title": "The power of the trophy",
         "how": "Hang the trophy on its stone at the Sacrificial Stones: once you call the power it lasts {minutes} min, and you can call it again after {cooldown} min.",
+        "sail": "The wind follows the world's clock, not your course: it holds a main direction for about {windHoldMin} min and is as likely behind you as ahead. A sail dies when the wind comes from within {sailDeadDeg}° of the bow on either side, {sailDeadShare}% of all headings, and then you row. Her power turns the wind dead astern whatever your heading, so call it when the wind stands ahead of your beam; with the wind already behind or abeam it gains you nothing.",
         "none": "The game gives no power for this trophy."
       },
       "tip": {
