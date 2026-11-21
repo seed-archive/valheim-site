@@ -12,8 +12,12 @@ The rules of text shared with the No Man's Sky site, with Valheim's own where th
 **The reader and his question** (the owner, 2026-11-21, replacing the rules of 2026-11-19 and 2026-11-20; the
 findings and the plan are `docs/guide-writing.md`): a biome guide is a chapter written for the usual player, who
 goes through the game at his own pace, and answers his question: **how do I explore this biome?** It is told in
-the order he lives it, on one spine: arriving; living here, where the biome changes his home or camp; what the
-land holds; the boss; leaving. Headings stay questions in his words, and each continues the one before.
+the order he lives it, on one spine (the owner, 2026-11-21): he arrives weak, and everything beats him; he
+survives by taking the biome's own resource where it lies at its edge and making the biome's gear from it; at ease
+then, he combs the whole land, and what the boss asks for comes by the way; he kills the boss; he leaves with what
+the next chapter starts from. Headings stay questions in his words, and each continues the one before. **A choice
+is analysed, never made for him**: the page gives each side's reasons with the numbers and leaves the choice to the
+reader.
 
 **The ways of playing have their own pages** (the owner, 2026-11-21, as a trial he judges on the Meadows): Speedrun
 and A speedrunner's start; No death, no map, no portals; Hard, Very hard and Hardcore; Reverse run. They are told
@@ -22,7 +26,8 @@ its last lines link the speedrun's part of that biome once. The speedrun is a la
 main line.
 
 **We do not repeat the raven** (the owner, 2026-11-21): the game's own raven tells a player to pick up flint, build
-a workbench, eat and sleep in a bed, and the home page says so. A page tells what the raven does not: what the land
+a workbench, eat and sleep in a bed, and the home page says so. He is part of the game: a page may lean on what he
+says, and never repeats him word for word. A page tells what the raven does not: what the land
 holds, how much of it, how far it lies, what to expect and what to choose.
 
 **Two homes** (the owner, 2026-11-21): the usual player lives in the Meadows on open ground by the sea, where he

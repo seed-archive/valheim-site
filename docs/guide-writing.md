@@ -100,13 +100,18 @@ conflicting ones in `.claude/rules/site-text.md` and `docs/guides.md`.
 A biome chapter follows the order the player lives it. Headings stay questions in the player's words, but each
 continues the one before:
 
-1. **Arriving**: what this land does to a newcomer, and what he should have before stepping in.
-2. **Living here**: what changes for his home or camp, only where the biome changes it (the smelter, the farm, the
-   roofed foothold).
-3. **What the land holds**: its places, materials and food; how much the world gives and how far from home. The
-   catalogue holds the lists; the chapter says what matters first and why, and links the list once.
-4. **The boss**: finding him, his offering, getting ready, the fight in a line, what his trophy and his drop open.
-5. **Leaving**: what he carries into the next chapter, and the link to it.
+The owner gave the spine on reading the ledgers (2026-11-21):
+
+1. **Arriving weak**: everything here beats a newcomer; what this land does to him, and where he camps.
+2. **Surviving**: the biome's own resource where it lies at the edge, and the biome's gear made from it.
+3. **Combing the land**, now at ease: its places, materials and food; how much the world gives and how far from
+   home; what the boss asks for comes by the way. The catalogue holds the lists; the chapter says what matters
+   first and why, and links the list once.
+4. **The boss**: finding him, getting ready, the fight, what his trophy and his drop open.
+5. **Leaving**: the chapter's conclusion, with what he carries into the next chapter and the way into it.
+
+A choice is analysed, never made for the reader: each side's reasons with the numbers, and the choice left to him
+(bronze or troll leather; the camp on the crypt or outside the Swamp; Yagluth by blade or by bow).
 
 ### What goes on a page
 
