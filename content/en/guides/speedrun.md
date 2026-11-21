@@ -143,7 +143,13 @@ Bonemass himself goes down quicker under a shelf: build a roof, get under it and
 
 Skipping the Swamp has its price: without the wishbone, silver means digging the Mountain blind and hoping Moder's shots dig it out, a poor hope; without iron the forge stays where bronze left it, and the iron pickaxe never comes.
 
-**Moder**, for silver, smelted right at her altar and carried down as bars: a cart on her slopes overturns. [Mountain](/guides/mountain).
+### Mountain
+
+The Mountain is one climb and out. No gate takes silver; mine only the bars the Wisplight wants. Up once on the mead with the iron pickaxe, the walk through the nests and the nearest vein, a smelter right beside her altar so only bars go down, since a cart on her slopes overturns, then Moder, and down again. From her altar and back, the walk through the {{moderEggs}} nearest nests is {{moderEggLoopM}} m as a rule, and {{moderClimbLoopM}} m with the nearest vein added: the silver costs almost nothing extra.
+
+Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and gives the sail a wind. Her altar lies on the road, in the [strip](#what-is-the-strip), on {{stripModer}}% of seeds.
+
+She cannot be skipped: every All Bosses category, Classic included, counts her, and without her tears there is no artisan table, so no blast furnace for the Plains' black metal.
 
 **Yagluth**, with {{goblinTotems}} Fuling totems taken from the villages near him. [Plains](/guides/plains).
 

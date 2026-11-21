@@ -19,7 +19,7 @@ Moder is the long trip, since a reverse run lives at the far end of the world, r
 | The Moder nearest the start, m | {{moderRunKallM}} | {{moderRunKallMLow}}–{{moderRunKallMHigh}} |
 | The Moder nearest Kall, m | {{kallModerM}} | {{kallModerMLow}}–{{kallModerMHigh}} |
 
-Any Moder serves, so climb the one nearest Kall; [which Mountain to climb](/guides/mountain#coming-from-the-north-which-mountain-do-i-climb) tells the rest.
+Any Moder of the world serves, and the one by the start is rarely the one by Kall's gate, so climb the one nearest Kall: it holds her {{moderEggs}} drake nests on {{kallModerNests}}% of seeds. Players dig a trench against her summoning platform and shoot as she lands; fire arrows hurt her half again. Her power then halves the frost you take on the way back north.
 
 ## What does each boss open, and how do I get round it?
 

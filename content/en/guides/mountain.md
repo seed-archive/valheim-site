@@ -1,39 +1,60 @@
 # Mountain
 
-**What do I need from the Mountain?** Silver, and Moder's tears for the artisan table: climb on a frost mead with Bonemass's wishbone and an iron pickaxe, and bring {{dragonEggs}} dragon eggs.
+**How do I explore the Mountain?** Climb by day on a frost mead, dig the first silver the wishbone finds and turn it into a wolf fur cape; then comb the Mountain for the rest of its silver, its drake nests and Moder's altar.
 
-Bonemass's wishbone round your neck and iron in your pickaxe, you climb above the snow line. The first climb is the hard one: no cape yet, a freeze in every weather, and nights that belong to the wolves. After it you come back as often as your wolf armour asks.
+## How far is the Mountain from home?
+
+Two Mountains matter, the nearest one and Moder's own:
+
+| From home | As a rule | Middle half of seeds |
+|---|---|---|
+| The nearest Mountain, m | {{homeMountainM}} | {{homeMountainMLow}}–{{homeMountainMHigh}} |
+| The Forge of Potential, m | {{homeForgeM}} | {{homeForgeMLow}}–{{homeForgeMHigh}} |
+| Moder's altar, m | {{homeModerM}} | {{homeModerMLow}}–{{homeModerMHigh}} |
+
+A Mountain stands on your home's own land on {{islandMountain}}% of seeds, {{homeMountainM}} m from the door as a rule, so the first climb is a walk, and it is where you learn the cold. Moder's own Mountain shares that land on only {{moderIsland}}% of seeds: at {{homeModerM}} m, hers is a voyage, made later and better dressed.
 
 ## How do I stand the cold?
 
-Every weather on the Mountain freezes you, by day and by night. The wolf fur cape lifts the cold for good, but it takes silver, the very thing you came for, so the first climb is made on a [frost resistance mead](/catalog/meads#meadfrostresist), its base brewed from the hives' honey and the Swamp's bloodbags. Without the mead, a fire alone or a roof alone only softens the freeze to cold; a fire under a roof lifts it, and that is where you rest. Once Moder falls, her power halves the frost you take while it lasts.
+Every weather on the Mountain freezes you, by day and by night: your health stops coming back and drains until you are dead. The frost resistance mead you brewed in the Swamp lifts it while it lasts. Leave a few meads in a chest at the mountain's foot before you climb: if you die up there with every one of them on you, you cannot reach your own grave.
+
+The cold is half of it. Wolves hunt in packs and outrun you, so never let your stamina run out with one in sight, and climb a rock they cannot. Drakes circle their nests and spit frost; fire arrows bring them down. A stone golem shrugs off blades and arrows and breaks under the one tool you came with, the pickaxe. At night the Fenrings come out, and the wolves are more: climb by day, and be down or under a roof by dusk.
+
+Camp like this: a portal at the mountain's foot, and by the first vein a hut dug into the slope, walled and roofed, with a fire inside. A fire under a roof lifts the freeze even without a mead.
 
 ## How do I find the silver?
 
-Silver lies buried on the high, flat shelves, never on a slope and never at the Mountain's edge. Worn, Bonemass's wishbone beeps above a vein, and only an [iron pickaxe](/catalog/tools) breaks it. Veins lie round her altar, so the first climb need not wander; her whole Mountain holds several times more for the day you want it all.
+With Bonemass's wishbone. Silver lies buried on the high, level shelves, never on a slope and never at the Mountain's edge; worn, the wishbone beeps above a vein, and you dig where it beeps. Only the iron pickaxe breaks the vein.
 
-| Silver veins | As a rule | Middle half of seeds |
-|---|---|---|
-| Within {{silverReach}} m of Moder's altar | {{moderSilver}} | {{moderSilverLow}}–{{moderSilverHigh}} |
-| In Moder's whole Mountain | {{moderMountainSilver}} | {{moderMountainSilverLow}}–{{moderMountainSilverHigh}} |
+The first silver has one job: the wolf fur cape, of wolf pelts, a little silver and a wolf's trophy. The cape keeps the cold off for good, and from then on the mead stays in the chest. The wolf armour follows.
 
-Chart: spread
+No metal passes a portal, so the silver goes down the mountain itself. Where your home can be reached on foot, it rides a cart all the way; where it cannot, a cart takes it to the boat. Going down, pick the gentlest slope: a loaded cart on a steep one overturns and may break. Silver melts in the smelter you already have.
 
 ## How much silver do I need?
 
-More than one climb brings. The wolf armour and cape, a silver sword and its fellows, raised to their top, run a long bill, and a vein gives about {{silverVeinOre}} ore, each ore one bar in an ordinary smelter ([Crafting stations](/catalog/crafting-stations)).
+A little for the cape, and a great deal for everything else:
 
 | The silver | Bars |
 |---|---|
-| The wolf armour, cape, a silver weapon of each kind, shield, at first quality | {{kitSilverSilverQ1}} |
-| The same, raised to the top | {{kitSilverSilver}} |
 | The Wisplight, for the Mistlands | {{wisplightSilver}} |
+| The wolf armour, the cape, the shield and a silver weapon of each kind, as made | {{kitSilverSilverQ1}} |
+| The same, raised to the top | {{kitSilverSilver}} |
 
-> **At leisure**, the [Forge of Potential](/guides/forge-of-potential) waits in one Mountain of every world, {{forgeM}} m from the start as a rule: it raises a piece past its top. {{forgeChance}}% of tries succeed; a failed one destroys the piece.
+A vein gives about {{silverVeinOre}} ore, a bar for each; {{moderSilver}} veins lie within {{silverReach}} m of Moder's altar as a rule, and {{moderMountainSilver}} in her whole Mountain. Make what you will wear from the nearest veins, and raise it when you come back for more.
+
+## What does the whole Mountain hold?
+
+With the cape on, no mead is running out, and you can comb the Mountain at your own pace.
+
+Its wolves are the armour: the wolf set and the cape take {{killsWolf}} wolves' pelts, and {{killsWolfTop}} raised to the top. Their meat, with the onions whose seeds lie in the chests of the old cabins, is the Mountain's food. Obsidian lies black on the snow and makes arrows. The frost caves are the Mountain's dungeons: Ulvs, cultists and bats inside, and the Fenris hair of the Fenris set; {{vegvisirCave}}% of the caves hold Moder's Vegvísir, as the tower ruins do.
+
+Silver also makes the weapons of the next lands. The Draugr Fang is the bow for Moder herself; Frostner and the silver sword are for what comes after her. The pieces are on the [weapons](/catalog/weapons) page.
+
+One Mountain of every world holds the [Forge of Potential](/guides/forge-of-potential), which raises a piece past its top: {{forgeChance}}% of tries succeed, and a failed one destroys the piece.
 
 ## Are there enough drake nests?
 
-Almost always. Her altar takes {{dragonEggs}} dragon eggs, one from each drake nest, and her own Mountain holds {{moderEggs}} or more on {{moderNests}}% of seeds, {{moderNestsIn}} as a rule. The nests stand round her altar and show from far off, so the question is the walk, not the luck. Her Vegvísir, which leads you to the altar, stands in the Mountain's tower ruins and in {{vegvisirCave}}% of the frost caves.
+Almost always. Moder's altar takes {{dragonEggs}} dragon eggs, one from each drake nest, and her own Mountain holds {{moderEggs}} nests or more on {{moderNests}}% of seeds, {{moderNestsIn}} as a rule.
 
 | A drake nest from her altar | As a rule | Middle half of seeds |
 |---|---|---|
@@ -41,70 +62,14 @@ Almost always. Her altar takes {{dragonEggs}} dragon eggs, one from each drake n
 | The 2nd, m | {{moderNest2M}} | {{moderNest2MLow}}–{{moderNest2MHigh}} |
 | The {{moderEggs}}rd, m | {{moderNestM}} | {{moderNestMLow}}–{{moderNestMHigh}} |
 
-Chart: spread
-
-## Can I get the eggs and the silver in one climb?
-
-Yes, and one climb is one fewer through the freeze. Start and end at her altar: the {{moderEggs}} nearest nests for the eggs, the nearest vein for the silver, {{moderSilver1M}} m from her altar as a rule, then back to summon her. The silver adds little to the walk.
-
-| The walk from her altar and back | As a rule | Middle half of seeds |
-|---|---|---|
-| Through the {{moderEggs}} nearest nests, m | {{moderEggLoopM}} | {{moderEggLoopMLow}}–{{moderEggLoopMHigh}} |
-| Through the nests and the nearest vein, m | {{moderClimbLoopM}} | {{moderClimbLoopMLow}}–{{moderClimbLoopMHigh}} |
-
-Chart: spread
-
-## Where do I shelter on the Mountain?
-
-In a frost cave you have cleared, or under your own roof: a stay up here is a stay of nights, and the night is the danger. A frost cave's rooms raise their Ulvs, golems, bats and cultists once, but the cave freezes like the weather outside, so bring the mead in. The nearest frost cave stands {{moderCave1M}} m from Moder's altar as a rule ({{moderCave1MLow}}–{{moderCave1MHigh}} on the middle half of seeds). After dark the wolves come more often and only then with stars, the bears with more stars, and the Fenrings, who walk only at night.
-
-The wolf armour is what keeps you up here. Its pelts come one a wolf, so the set is a long hunt and its top a longer one; a starred wolf drops twice or four times as much.
-
-| Wolf kills | To wear it | To its top |
-|---|---|---|
-| Wolf armour and fur cape | {{killsWolf}} | {{killsWolfTop}} |
-| Fenris armour | {{killsFenris}} | {{killsFenrisTop}} |
-
-> **With no death**, climb by day and clear the drakes round her altar before you summon her: the drakes of a nest rise once and do not come back.
-
-## How do I get the silver home?
-
-On your own legs or by boat: no metal passes a portal, ore or bar. A cart down a mountain overturns and may break, so carry the ore down the shortest slope to the sea, sail it home and smelt it there, by the stones; where her altar shares the start island, the ore walks home. The nearer her altar stands to a shore, and the lower, the shorter that haul: it stands {{altarShoreModer}} m from the ocean as a rule ({{altarShoreModerLow}}–{{altarShoreModerHigh}} on the middle half of seeds), {{moderAltitudeM}} m above it ({{moderAltitudeMLow}}–{{moderAltitudeMHigh}}). The ocean shore lies within {{reachNearM}} m of her altar on {{moderShoreNear}}% of seeds, and always within {{reachMidM}} m.
+An egg is too heavy to carry two at a time, and no portal takes it, so each of those distances is walked there and back with one egg. Find the altar first, then fetch the eggs from the nests nearest it, the farthest of them {{moderNestM}} m away as a rule. The [seed map](/tools/map) shows the nests round your own altar.
 
 ## Where is Moder's altar?
 
-Her Vegvísir leads you there, and her altar stands {{moderM}} m from the start as a rule ({{moderMLow}}–{{moderMHigh}} on the middle half of seeds). The [seed map](/tools/map) shows where yours is, and how she falls is on [How to kill each boss](/catalog/bosses#moder): a bow, with fire or poison arrows, never frost.
+Where her Vegvísir shows it, high on her own Mountain: {{moderAltitudeM}} m above the sea as a rule, and {{altarShoreModer}} m from the shore where your boat waits.
 
-| Moder's altar and her Mountain | How often |
-|---|---|
-| Her altar on the start island | {{moderIsland}}% of seeds |
-| A Mountain on the start island, for the first climb | {{islandMountain}}% of seeds |
+She is weak to fire and untouched by frost, and she fights from the air: this is a bow's fight. The Draugr Fang with poison arrows does the most to her, then the huntsman bow, then the finewood bow; keep the frost arrows in the chest. She breathes frost, so the cape or the mead stays on. Every way to kill her is on [How to kill each boss](/catalog/bosses#moder).
 
-> **With no map**, climb: from the top the drake nests show from far off, and they stand round her altar. The top is your lookout, and a fire at her altar marks the way down.
+Her death gives you dragon tears, and the tears build the artisan table, without which there is no blast furnace, no windmill and no spinning wheel: the whole of the Plains is locked behind her. Her power fills your sail with a tailwind, lets you carry {{moderPowerCarry}} more, makes you {{moderPowerSpeed}}% faster and takes {{moderPowerFrost}}% off the frost you suffer, for {{powerMinutes}} minutes. The drakes stop coming for your home.
 
-## How do I race the Mountain on a speedrun?
-
-For the runner on the clock, the Mountain is one climb and out. No gate takes silver; mine only the bars the Wisplight wants. Up once on the mead with the iron pickaxe, the walk through the nests and the nearest vein, a smelter right beside her altar so only bars go down, Moder, and down again. Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and gives the sail a wind.
-
-| Moder for the run | How often |
-|---|---|
-| Her altar on the road, in the [strip](/guides/speedrun#what-is-the-strip) | {{stripModer}}% of seeds |
-
-## Coming from the north, which Mountain do I climb?
-
-The one nearest Kall. A [reverse run](/guides/reverse-run) needs Moder for her tears alone: they build the artisan table, the table builds the blast furnace, and only the blast furnace smelts the Deep North's Bloodgold. Any Moder of the world serves, and the one by the start is rarely the one by Kall's gate. The Moder nearest Kall holds her {{moderEggs}} nests on {{kallModerNests}}% of seeds.
-
-| Moder's altar from Kall's gate | As a rule | Middle half of seeds |
-|---|---|---|
-| The Moder nearest the start, m | {{moderRunKallM}} | {{moderRunKallMLow}}–{{moderRunKallMHigh}} |
-| The Moder nearest Kall, m | {{kallModerM}} | {{kallModerMLow}}–{{kallModerMHigh}} |
-
-Chart: spread
-
-> **On a reverse run**, players dig a trench against her summoning platform and shoot as she lands; fire arrows hurt her half again. Her power then halves the frost you take on the way back north.
-
-## Can you skip Moder?
-
-You can, and pay more than for any early boss you leave: without her tears there is no artisan table, so no blast furnace for the Plains' black metal, and without silver no Wisplight in the Mistlands later. On a [speedrun](/guides/speedrun) not at all: every All Bosses category, Classic included, counts her.
-
-[How good is my seed?](/tools/how-good-is-my-seed) sets your own seed against these numbers. Next, the totems and the black metal: the [Plains](/guides/plains).
+You come down from the Mountain in wolf fur that keeps the cold off, with a silver bow, onions for the garden and an artisan table waiting to be built. What the table makes needs black metal, and black metal is carried by the Fulings of the [Plains](/guides/plains). On the clock the Mountain is one climb, and the [Speedrun](/guides/speedrun#mountain) tells it.

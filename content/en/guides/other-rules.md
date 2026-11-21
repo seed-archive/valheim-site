@@ -43,6 +43,8 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Swamp.** Sweep for the Root Harnesk before you ring Bonemass's altar: the ring that keeps the Draugr from rising stops the Abominations rising too.
 
+**Mountain.** Climb by day, and clear the drakes round Moder's altar before you summon her: the drakes of a nest rise once and do not come back.
+
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
 ## How do I find my way with no map?
@@ -84,6 +86,8 @@ Find the shore first and keep the base by it: any coast leads home. Then build t
 **Black Forest.** Haldor is found by luck: circle your home in widening rings and search every Black Forest before you sail past it. Climb the stone towers, which hold the Elder's Vegvísir, and raise a tower of your own on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
 
 **Swamp.** The road home is the one you laid yourself: build it as you go in, not when you want out.
+
+**Mountain.** Climb: from the top the drake nests show from far off, and they stand round Moder's altar. The top is your lookout, and a fire at her altar marks the way down.
 
 ## How do I play with no portals?
 
