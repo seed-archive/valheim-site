@@ -1,5 +1,8 @@
 # Writing a game's guides: the method (for every game of the archive)
 
+**The archive's copy is `.claude/guides/guide-method.md`** (the coordinator, 2026-11-21), where the owner's later
+words are added; this file is what Valheim handed over and is not kept up to date.
+
 Written by the Valheim session on the owner's word, 2026-11-21, for the coordinator to pass to the other games. It
 is what Valheim does before rewriting its seventeen guides; Valheim's own findings and plan are in
 `guide-writing.md` beside this file. The owner has not yet read a page made this way: the method is a plan, not a

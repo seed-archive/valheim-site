@@ -119,6 +119,11 @@ continues the one before:
   more of one thing.
 - **A share that is all but always or never** is a sentence without a number.
 - **A sum is done for the reader**: the page gives the result, never the formula.
+- **A conclusion stands under the data** (the owner, 2026-11-21, first said for No Man's Sky; the archive's
+  `.claude/guides/guide-method.md`, point 6): under a table, a sentence or two say what to take, keep or skip, and
+  why, with the numbers that decide it. A number the tables do not hold is computed by the generator, never
+  guessed.
+- **A chapter ends with its conclusion**, and the way into the next chapter is inside it, not a bare "next is X".
 - **The home is placed once**, in the Meadows chapter: open ground by the sea. Later chapters say "your home".
 
 ### The ways of playing
@@ -157,9 +162,10 @@ no:
 9. Does a joke or a figure of speech stand where a fact should?
 10. Does a link not lead to the reader's next step, or stand twice?
 11. Does the bold answer promise what the page then tells, in that order?
-12. Does one of the owner's earlier remarks apply (`site-text.md`, `seo.md`)?
+12. Does a table stand without its conclusion under it, or the chapter end on a bare "next is X"?
+13. Does one of the owner's earlier remarks apply (`site-text.md`, `seo.md`)?
 
-Then one independent reader, read-only, gets the page and its ledger and answers the same twelve questions. It
+Then one independent reader, read-only, gets the page and its ledger and answers the same thirteen questions. It
 reports; I fix. A page goes to the owner when both readings come back clean. A remark of his becomes a question in
 this list, so every later page is checked for it.
 

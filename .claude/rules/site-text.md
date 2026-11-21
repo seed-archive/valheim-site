@@ -39,7 +39,11 @@ island) is the runner's pages'.
 three rows or more of one kind and stands under the heading it answers; a table of one row is never made. A chart
 compares two or more parameters of one thing (the 1st, 3rd and 4th Charred Fortress from Fader's altar), never
 different things on one chart (fortresses with Morgen holes). A sum is done for the reader: the page gives the
-result, never the formula. A share that is all but always or never is a sentence without a number.
+result, never the formula. A share that is all but always or never is a sentence without a number. **A conclusion
+stands under the data** (the owner, 2026-11-21, the archive's `.claude/guides/guide-method.md`): under a table, a
+sentence or two say what to take, keep or skip and why, with the numbers that decide it; a number the tables lack
+is computed by the Valheim generator, never guessed. A chapter ends with its conclusion, the way into the next
+chapter inside it.
 
 **The ledger** (the owner, 2026-11-21): before a chapter is written, the Valheim generator's notes get its ledger:
 what the player has when he arrives, what he does in order, what he has when he leaves. A chapter starts from the
