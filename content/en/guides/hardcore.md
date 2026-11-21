@@ -14,6 +14,8 @@ Choose a harder world and one slider decides how hard. It turns four dials at on
 | Hard | {{combatPlayerDamageHard}}% | {{combatEnemyDamageHard}}% | {{combatSpeedSizeHard}}% | {{combatLevelUpHard}}% |
 | Very hard | {{combatPlayerDamageVeryHard}}% | {{combatEnemyDamageVeryHard}}% | {{combatSpeedSizeVeryHard}}% | {{combatLevelUpVeryHard}}% |
 
+Read the two damage columns together. On Very hard your blow lands at {{combatPlayerDamageVeryHard}}% and theirs at {{combatEnemyDamageVeryHard}}%, against {{combatPlayerDamageNormal}}% each on Normal: every fight lasts longer, and every blow you fail to block costs double.
+
 > **Speedrunners** who set Easy or Very easy deal more and take less, and stars come no more often than on Normal.
 
 ## What do the presets switch on?
@@ -46,6 +48,8 @@ The world keeps a clock. Every so often it rolls, and a roll may bring a raid to
 | Normal | {{raidIntervalNormal}} | {{raidChanceNormal}}% |
 | More | {{raidIntervalMore}} | {{raidChanceMore}}% |
 | Much more | {{raidIntervalMuchMore}} | {{raidChanceMuchMore}}% |
+
+On More the world rolls every {{raidIntervalMore}} minutes instead of every {{raidIntervalNormal}}, and a roll hits {{raidChanceMore}}% of the time instead of {{raidChanceNormal}}%. Wall the home from the first day: the first army, Eikthyr's, waits for no boss to fall.
 
 > **At leisure**, a builder who would rather build than defend can set Raids to Less, Much less or None.
 

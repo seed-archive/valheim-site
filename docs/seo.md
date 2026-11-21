@@ -14,8 +14,9 @@ Seed Archive shares is the portal's `docs/seo.md` (`../seed-archive/docs/seo.md`
 | How good is my seed? | `/tools/how-good-is-my-seed` | a seed's measures set against the seed scan                |
 | Guides               | `/guides`                    | the guides' index, reached by breadcrumbs only (not in the menu; the owner, 2026-11-16)               |
 | How to kill each boss | `/catalog/bosses`           | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way (moved from the guides 2026-11-19) |
-| Challenges (section) | `/guides/challenges`, its guides `/guides/challenges/{a-good-start,speedrun,other-rules,reverse-run}` | the run's story: a good start, the speedrun's route, no death, no map, no portals, the reverse run (`docs/guides.md` → The menu) |
-| Biomes (section)     | `/guides/biomes`, its guides `/guides/biomes/<biome>`, Meadows to Deep North | each biome's questions in the run's order, with how often and how far; footnotes for the other ways of playing |
+| Challenges (section) | `/guides/challenges`, its guides `/guides/challenges/{a-speedrunners-start,speedrun,other-rules,hardcore,reverse-run}` | the other ways of playing, each told biome by biome: the speedrunner's start and route, no death, no map, no portals, the harder worlds, the reverse run (`docs/guides.md` → The menu) |
+| Biomes (section)     | `/guides/biomes`, its guides `/guides/biomes/<biome>`, Meadows to Deep North | a chapter a biome for the player who explores: how the land is explored, how much it gives and how far it lies from his home (`docs/guide-writing.md`) |
+| Basics (section)     | `/guides/basics`, its guides `/guides/basics/{where-to-build,how-much-metal,boss-arenas}` | references the chapters send the reader to (2026-11-21) |
 | What to break        | `/catalog/breakables`        | the objects worth smashing: metal, hides, jute, chains, coins, moulds, the chance a break gives each, where they stand (Materials group, 2026-11-20) |
 | Comfort              | `/catalog/comfort`           | the best piece of each kind, and how long Rested lasts (moved from the guides 2026-11-19) |
 | Bugs                 | `/bugs`                      | world generation bugs a player meets on a seed; in the footer |
@@ -58,7 +59,7 @@ section). To be checked against search suggestions and Search Console once the s
 | `/tools/how-good-is-my-seed` | best valheim seed | valheim seed checker; good starting seed |
 | `/tools/craft-tree` | valheim progression | what to craft first; valheim crafting order |
 | `/guides` | valheim guides | valheim walkthrough |
-| a-good-start | valheim best start | starting island; where to go first in valheim |
+| a-speedrunners-start (was a-good-start until 2026-11-21) | valheim speedrun seed | starting island; best seed for a speedrun |
 | speedrun | valheim speedrun | speedrun route; speedrun seed |
 | `/guides/challenges` | valheim challenges | valheim speedrun; hardcore |
 | `/guides/biomes` | valheim biomes | valheim biome order; valheim walkthrough |
@@ -84,8 +85,8 @@ headings and the `fact` do not repeat it (`.claude/rules/site-text.md`).
 
 - **External.** Only where a page cites a rule (the speedrun's categories on speedrun.com) or credits a player
   (`/credits` on the portal).
-- **Tools and guides.** How good is my seed? ↔ a-good-start, speedrun and every biome (each biome's "Rate your seed");
-  the seed map ↔ a-good-start, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun.
+- **Tools and guides.** How good is my seed? ↔ a-speedrunners-start, speedrun, how-much-metal and reverse-run;
+  the seed map ↔ a-speedrunners-start, where-to-build, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun.
 - **Guides and catalogue.** Each biome guide links the bosses page at its boss (`/catalog/bosses#<boss>`), the
   traders page where it names a trader, and the meads, weapons and materials it relies on; the catalogue links back
   from a boss's trophy and a creature's drops.

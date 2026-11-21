@@ -12,12 +12,7 @@ This is the road left untried, the game turned round: straight to the [Deep Nort
 
 Moder and Fader, and the chain that binds them is short. Everything the Deep North forges is Bloodgold, and Bloodgold melts only in the blast furnace, built at the artisan table, built from Moder's tears. Its ore is petrified tissue, and the petrified trolls break only to Ember Charges, whose embers burn in the Eternal Pyre, built from Fader's ribs. Kall's gate wants {{maliciousBlood}} Malicious Blood; the blood comes from the Jotun invasions a Mörkhalla's ice sets loose, and a Mörkhalla opens only to an Intricate Key cast from Bloodgold. One biome whose boss you may skip is just as fixed: the Mistlands, whose Black Forge casts the key and Fader's {{bells}} bells. The Queen, Yagluth, Bonemass, the Elder and Eikthyr can all wait.
 
-Moder is the long trip, since a reverse run lives at the far end of the world, round Kall's gate:
-
-| Moder's altar, from Kall's gate | As a rule | Middle half of seeds |
-|---|---|---|
-| The Moder nearest the start, m | {{moderRunKallM}} | {{moderRunKallMLow}}–{{moderRunKallMHigh}} |
-| The Moder nearest Kall, m | {{kallModerM}} | {{kallModerMLow}}–{{kallModerMHigh}} |
+Moder is the long trip, since a reverse run lives at the far end of the world, round Kall's gate. From that gate the Moder nearest the start is {{moderRunKallM}} m away as a rule ({{moderRunKallMLow}}–{{moderRunKallMHigh}} m on the middle half of seeds), and the Moder nearest Kall {{kallModerM}} m ({{kallModerMLow}}–{{kallModerMHigh}} m).
 
 Any Moder of the world serves, and the one by the start is rarely the one by Kall's gate, so climb the one nearest Kall: it holds her {{moderEggs}} drake nests on {{kallModerNests}}% of seeds. Players dig a trench against her summoning platform and shoot as she lands; fire arrows hurt her half again. Her power then halves the frost you take on the way back north.
 
@@ -64,7 +59,7 @@ The springs' refined eitr is the hidden gate: it is made only from sap, so the k
 
 ## How do I get to the Deep North?
 
-By sea: the ocean cuts it off from every other land, so the boat is the bill, and the start island of [A good start](/guides/a-good-start) is all you build it from. The raft takes no metal and no boss item, and the northern sea does not burn boats as the Ashlands' does, so a run can leave on the first raft the island allows. Its danger is the floating ice along the shore: land with care, and break the sheets for ice.
+By sea: the ocean cuts it off from every other land, so the boat is the bill, and the start island of [A speedrunner's start](/guides/a-speedrunners-start) is all you build it from. The raft takes no metal and no boss item, and the northern sea does not burn boats as the Ashlands' does, so a run can leave on the first raft the island allows. Its danger is the floating ice along the shore: land with care, and break the sheets for ice.
 
 | The boat | Wood | Fine wood | Ancient bark | Leather scraps or deer hides | Resin | Metal |
 |---|---|---|---|---|---|---|
@@ -177,14 +172,7 @@ Fire is the weapon you start with, and this is what it does to each:
 | Petrified tissue in a troll's leg, about | {{tissueLeg}} |
 | Petrified tissue in a troll's arm, about | {{tissueArm}} |
 
-A seal gives {{sealPelts}} to {{sealPeltsMost}} pelts, so one seal and one ember break a leg with charges to spare, and a leg is the key many times over. The petrified trolls stand near the camp:
-
-| From the Winding Tunnels nearest Kall | As a rule | Middle half of seeds |
-|---|---|---|
-| The nearest petrified troll, m | {{holeFracM}} | {{holeFracMLow}}–{{holeFracMHigh}} |
-| The second petrified troll, m | {{holeFrac2M}} | {{holeFrac2MLow}}–{{holeFrac2MHigh}} |
-
-Chart: spread
+A seal gives {{sealPelts}} to {{sealPeltsMost}} pelts, so one seal and one ember break a leg with charges to spare, and a leg is the key many times over. The petrified trolls stand near the camp: from the Winding Tunnels nearest Kall the first is {{holeFracM}} m away as a rule ({{holeFracMLow}}–{{holeFracMHigh}} m on the middle half of seeds) and the second {{holeFrac2M}} m ({{holeFrac2MLow}}–{{holeFrac2MHigh}} m).
 
 What else each beast drops is in the [creatures](/catalog/creatures) list.
 
@@ -213,4 +201,4 @@ One whose far end is tight: Kall's gate with a Winding Tunnels and its Mörkhall
 
 The [seed map](/tools/map) shows where the Deep North's shore comes nearest; [How good is my seed?](/tools/how-good-is-my-seed) scores the usual order.
 
-Here the Challenges end. To play the world the way it was meant, from the stones outward, start again at [A good start](/guides/a-good-start).
+Here the Challenges end. To play the world the way it was meant, from the stones outward, start again in the [Meadows](/guides/meadows).

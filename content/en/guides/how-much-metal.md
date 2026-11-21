@@ -1,10 +1,10 @@
 # How much metal a run takes
 
-**How much iron do I need?** For a full kit at top quality, {{kitAllIron}} iron and {{kitAllSilver}} silver. The least a run to Kall needs is only {{leastIronDeepNorth}} iron.
+**How much iron do I need?** For a full kit at top quality, {{kitAllIron}} iron and {{kitAllSilver}} silver. The gates on the road to Kall take only {{leastIronDeepNorth}} iron by themselves.
 
 ## What does each boss's summon take?
 
-Your walls stand by the water, and now the bosses start sending their bills. Every altar wants an offering from its boss's own biome, and up to Yagluth you simply pick it up on the way. The last three you have to make, and that is where your metal starts to bleed.
+Every altar wants an offering from its boss's own biome, and up to Yagluth you simply pick it up on the way. The last three you have to make, and that is where your metal starts to go.
 
 | Boss | The summon | Made at |
 |---|---|---|
@@ -47,7 +47,7 @@ This is the bill you actually pay: each age's armour set plus one weapon of ever
 | Black metal, the Plains | {{kitBlackMetalBronze}} | {{kitBlackMetalIron}} | {{kitBlackMetalSilver}} | {{kitBlackMetalBlackMetal}} |
 | All four | {{kitAllBronze}} | {{kitAllIron}} | {{kitAllSilver}} | {{kitAllBlackMetal}} |
 
-Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
+Iron is the metal that decides: {{kitAllIron}} bars across the ages, {{kitIronIron}} of them for the Iron age alone, against {{kitSilverSilver}} of silver on the Mountain and {{kitBlackMetalBlackMetal}} of black metal on the Plains. The Swamp is where a full kit is paid for, and where raising only what you keep saves most. Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
 
 > **At leisure**, raise only the age you will wear longest: the top level of a piece you shed in the next biome is the dearest metal you will ever spend.
 
@@ -59,19 +59,9 @@ Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/arm
 
 You can know before you sail. The muck piles in the Sunken Crypts of Bonemass's own Swamp hold a fixed amount of iron scrap, and silver sits in veins by Moder's altar, so your seed has settled both questions already.
 
-| Bonemass's Swamp holds, in its crypts' muck piles | How often |
-|---|---|
-| Every age's kit at top quality, {{kitAllIron}} iron | {{swampIronKit}}% of seeds |
-| The least a run to Kall needs, {{leastIronDeepNorth}} iron | {{swampIronLeast}}% of seeds |
+Bonemass's Swamp holds {{swampIron}} iron scrap in its crypts' muck piles as a rule, {{swampIronLow}}–{{swampIronHigh}} on the middle half of seeds. That covers the gates to Kall, {{leastIronDeepNorth}} iron, on {{swampIronLeast}}% of seeds, and every age's kit at top quality, {{kitAllIron}} iron, on only {{swampIronKit}}%: a full kit is dug from more Swamps than his.
 
-Chart: share
-
-| By the bosses | As a rule | Middle half of seeds |
-|---|---|---|
-| Iron scrap in the crypts' muck piles of Bonemass's Swamp | {{swampIron}} | {{swampIronLow}}–{{swampIronHigh}} |
-| Silver veins within {{silverReach}} m of Moder's altar | {{moderSilver}} | {{moderSilverLow}}–{{moderSilverHigh}} |
-
-Moder's veins never cover every age's kit of silver, so count on the pickaxe going on to the rest of her Mountain. [How good is my seed?](/tools/how-good-is-my-seed) opens your own seed's crypts and veins.
+By Moder's altar {{moderSilver}} silver veins lie within {{silverReach}} m as a rule, {{moderSilverLow}}–{{moderSilverHigh}} on the middle half of seeds. They never cover every age's kit of silver, so count on the pickaxe going on to the rest of her Mountain. [How good is my seed?](/tools/how-good-is-my-seed) opens your own seed's crypts and veins.
 
 > **With no portals**, the bill is the haul: every scrap of iron and every bar of silver goes home by ship or cart, so a seed whose Swamp covers the kit is one long trip instead of several.
 
@@ -86,19 +76,8 @@ One chest is luck; a run of chests is arithmetic. {{cryptChestIron}}% of crypt c
 | A run to Fader | {{cryptChestsIronAshlands}} | {{cryptChestsIronAshlandsLow}}–{{cryptChestsIronAshlandsHigh}} |
 | A run to Kall | {{cryptChestsIronDeepNorth}} | {{cryptChestsIronDeepNorthLow}}–{{cryptChestsIronDeepNorthHigh}} |
 
+The gates are a handful of chests: {{cryptChestsIronDeepNorth}} of them cover the whole road to Kall as a rule. The full kit would take {{cryptChestsIronKit}}, so the kit is dug out of the muck piles, and the chests give only its first bars.
+
 > **With no map**, breathe easy: the measures above count only the crypts of Bonemass's own Swamp, the one you must find anyway, so you never have to hunt down a second swamp by eye.
 
-## Racing a category: the least metal each takes
-
-For the runner on the clock in an All Bosses category of the [Speedrun](/guides/speedrun), the kit is dead weight. Strip the run to the bone, every station built once, weapons and armour your own business, and this is the least metal each category can get away with. A Classic run picks up every summon it needs and makes none.
-
-| Category | Iron | Silver | Black metal | Flametal | Bloodgold |
-|---|---|---|---|---|---|
-| Classic, to Yagluth | {{leastIronClassic}} | {{leastSilverClassic}} | {{leastBlackMetalClassic}} | {{leastFlametalClassic}} | {{leastBloodgoldClassic}} |
-| Mistlands, to the Queen | {{leastIronMistlands}} | {{leastSilverMistlands}} | {{leastBlackMetalMistlands}} | {{leastFlametalMistlands}} | {{leastBloodgoldMistlands}} |
-| Ashlands, to Fader | {{leastIronAshlands}} | {{leastSilverAshlands}} | {{leastBlackMetalAshlands}} | {{leastFlametalAshlands}} | {{leastBloodgoldAshlands}} |
-| Deep North, to Kall | {{leastIronDeepNorth}} | {{leastSilverDeepNorth}} | {{leastBlackMetalDeepNorth}} | {{leastFlametalDeepNorth}} | {{leastBloodgoldDeepNorth}} |
-
-The pickaxe and the axe that dig each material out are on the bill; nothing you swing at a boss is. Real runs overspend on purpose: an [iron mace](/catalog/weapons) for Bonemass ({{ironMace}} iron) and the iron pickaxe for silver. Copper and tin they leave to a troll, whose blows mine them, so a run that leads one along saves the pickaxe.
-
-You know the bill, and every boss that bill buys will try to kill you for it. Last of the basics, how to claim the ground round an altar so the fight is yours alone: [Boss arenas](/guides/boss-arenas).
+A run on the clock strips this bill to its gates and one mace; the least each category gets away with is counted on the [Speedrun](/guides/speedrun#how-much-metal-does-a-run-spend).

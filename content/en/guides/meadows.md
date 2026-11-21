@@ -6,7 +6,7 @@
 
 On open, level ground by the sea. The raven will have you chopping, building and sleeping within the hour, and he does not care where: "wherever home may be", he says. It matters all the same. No portal lets ore or metal through, so every load you will ever smelt comes home in a boat's hold, and a house far from the water means walking each of those loads from the boat to the door, and yourself back to the boat for the next. Build where the boat can lie at your doorstep. From the Sacrificial Stones the open sea is {{startShoreM}} m away as a rule, {{startShoreMLow}}–{{startShoreMHigh}} m on the middle half of seeds: a short walk, made once.
 
-Keep the Black Forest within reach and off your doorstep: on its border the Greydwarfs walk in at night. Keep the hall small, too: the open ground round it is for the gardens, and for the oaks you will plant for fine wood. The stones themselves give a house nothing; you come back to them to read a Vegvísir and to hang a trophy.
+Keep the Black Forest within reach and off your doorstep: on its border the Greydwarfs walk in at night. Keep the hall small, too: the open ground round it is for the gardens, and for the oaks you will plant for fine wood. The stones themselves give a house nothing; you come back to them to read a Vegvísir and to hang a trophy. How far every later haul lies from such a home, and where a bridge spares the boat, is weighed on [Where to build your base](/guides/where-to-build).
 
 ## What lies within a walk of home?
 

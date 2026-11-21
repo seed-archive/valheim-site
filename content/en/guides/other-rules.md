@@ -121,7 +121,7 @@ A Dvergr lighthouse stands in her Mistlands on {{queenLighthouseIn}}% of seeds.
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
 
-Players who play this way move outward rather than back: a base in each biome with a bed in it, a starter kit of surtling cores, {{stonecutterIron}} iron for a stonecutter and copper for a forge, carts dropped onto the ship for room, and a spare ship, since a lost one strands you. Every boss's trophy still goes back to the Sacrificial Stones, so keep one road or dock to the start. What your start island holds is walked to, not sailed, which makes [A good start](/guides/a-good-start) worth more here than anywhere:
+Players who play this way move outward rather than back: a base in each biome with a bed in it, a starter kit of surtling cores, {{stonecutterIron}} iron for a stonecutter and copper for a forge, carts dropped onto the ship for room, and a spare ship, since a lost one strands you. Every boss's trophy still goes back to the Sacrificial Stones, so keep one road or dock to the start. What your start island holds is walked to, not sailed, which makes the island's count on [A speedrunner's start](/guides/a-speedrunners-start) worth more here than anywhere:
 
 | On the start island | How often |
 |---|---|
@@ -131,22 +131,44 @@ Players who play this way move outward rather than back: a base in each biome wi
 | The Elder's altar | {{islandElder}}% of seeds |
 | Moder's altar | {{islandModer}}% of seeds |
 
-The rest is sailed, there and back with the load:
-
-| From the start | As a rule | Middle half of seeds |
-|---|---|---|
-| Bonemass's altar, m | {{bonemassM}} | {{bonemassMLow}}–{{bonemassMHigh}} |
-| Moder's altar, m | {{moderM}} | {{moderMLow}}–{{moderMHigh}} |
+The rest is sailed, there and back with the load: Bonemass's altar lies {{bonemassM}} m from the start as a rule ({{bonemassMLow}}–{{bonemassMHigh}} m on the middle half of seeds) and Moder's {{moderM}} m ({{moderMLow}}–{{moderMHigh}} m).
 
 The far south costs most: the [Drakkar](/catalog/ships), the one ship that crosses the Ashlands' sea, is built from the Swamp's iron and the Mistlands' wood and plates ([Which boat crosses the sea?](/guides/ashlands#which-boat-crosses-the-sea)), every piece of it brought to one shipyard by boat, so count your trips before you cast off.
 
 > **Speedrunners** lose little on metal, which never ported, and much on the last leg: the portal back to the copper base is what takes a run north, so with none the whole way to the Deep North is sailed from the Ashlands.
 
+### Where does the cart road meet the boat?
+
+At the shore nearest each altar and each ore. Every step from the boat is a step you haul: a short walk is a short haul, a long one is a cart road you build first.
+
+| From the altar to the open sea's shore | As a rule | Middle half of seeds |
+|---|---|---|
+| The Elder's, m | {{altarShoreElder}} | {{altarShoreElderLow}}–{{altarShoreElderHigh}} |
+| Bonemass's, m | {{altarShoreBonemass}} | {{altarShoreBonemassLow}}–{{altarShoreBonemassHigh}} |
+| Moder's, m | {{altarShoreModer}} | {{altarShoreModerLow}}–{{altarShoreModerHigh}} |
+| Yagluth's, m | {{altarShoreYagluth}} | {{altarShoreYagluthLow}}–{{altarShoreYagluthHigh}} |
+| The Queen's, m | {{altarShoreQueen}} | {{altarShoreQueenLow}}–{{altarShoreQueenHigh}} |
+| Kall's gate, m | {{altarShoreKall}} | {{altarShoreKallLow}}–{{altarShoreKallHigh}} |
+
+Chart: spread
+
+Two of these are roads: Moder's altar, {{altarShoreModer}} m up her mountain as a rule, and Kall's gate, {{altarShoreKall}} m over the snow. Yagluth's and the Queen's stand all but on the beach, {{altarShoreYagluth}} m and {{altarShoreQueen}} m, so the base for each is the boat's own landing.
+
+| From the ore to the open sea's shore | As a rule | Middle half of seeds |
+|---|---|---|
+| Iron: the Sunken Crypt nearest Bonemass, m | {{cryptShore}} | {{cryptShoreLow}}–{{cryptShoreHigh}} |
+| Silver: the veins by Moder, m | {{silverShore}} | {{silverShoreLow}}–{{silverShoreHigh}} |
+| Black marble and fragments: the Infested Mine nearest the Queen, m | {{mineShore}} | {{mineShoreLow}}–{{mineShoreHigh}} |
+
+Chart: spread
+
+Silver is the haul that wants a road: {{silverShore}} m of mountainside as a rule, against {{cryptShore}} m for the iron and {{mineShore}} m for the mine. Players set the smelter up there, by Moder's altar, and bring the bars down.
+
 ### What changes biome by biome with no portals?
 
 **Black Forest.** The cores a usual game spends on a pair of portals are yours to keep: you need only the kiln and the smelter, but again at every new base. The Elder's wood comes home on a cart or under sail, so what matters is whether his altar stands on your home's own land: one of his altars does on {{homeElderOnLand}}% of seeds, {{homeElderM}} m from home as a rule.
 
-**Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip.
+**Swamp.** Take all the iron the later stations ask for while you are here, or plan the second trip. A Swamp that touches a Mountain would give iron and silver from one base, and it is a rare find: Bonemass's Swamp borders a Mountain on only {{meetSwampMountain}}% of seeds, and as a rule the nearest Mountain lies {{meetAltarMMountain}} m from his altar ({{meetAltarMMountainLow}}–{{meetAltarMMountainHigh}} m on the middle half of seeds).
 
 **Plains.** Barley and flax grow only here, so set the farm on the spot or carry the whole harvest home.
 

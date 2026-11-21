@@ -6,7 +6,7 @@ import { GUIDE_GROUPS } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Challenges guides for Valheim — Seed Archive",
   description:
-    "The same world played other ways: the speedrun, no death, no map, no portals, Hard and Hardcore, and the reverse run from the Deep North.",
+    "The same world played other ways: the speedrun and its start, no death, no map, no portals, Hard and Hardcore, and the reverse run from the Deep North.",
   alternates: { canonical: "/guides/challenges" },
 };
 

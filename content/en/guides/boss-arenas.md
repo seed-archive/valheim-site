@@ -4,7 +4,7 @@
 
 ## Which pieces make the ground a base?
 
-Every boss the metal bill buys will try to kill you for it; choose the ground it fights you on. The game never counts your walls, your floors or how much you built: a base is only the ground inside the areas certain pieces carry. A fire carries one lit or cold, so an unlit campfire rings an altar as well as a roaring one. Keep it all on the ground: a station's area is a tall column, but a fire's, a bed's or a torch's is a sphere. The [crafting stations](/catalog/crafting-stations) and the fires on [Other build pieces](/catalog/other-pieces) give their materials.
+A boss fights you on the ground you choose for it. The game never counts your walls, your floors or how much you built: a base is only the ground inside the areas certain pieces carry. A fire carries one lit or cold, so an unlit campfire rings an altar as well as a roaring one. Keep it all on the ground: a station's area is a tall column, but a fire's, a bed's or a torch's is a sphere. The [crafting stations](/catalog/crafting-stations) and the fires on [Other build pieces](/catalog/other-pieces) give their materials.
 
 | Piece | Rings the ground round it, m | To cover an arena of {{arenaRadius}} m, about |
 |---|---|---|
@@ -34,12 +34,7 @@ A ring keeps spawns out, not walkers. Raiders appear {{raidMinM}}–{{raidMaxM}}
 
 ## What does a ring never stop, by each altar?
 
-A nest spawns inside a base as if you had built nothing, so break every one in reach before you lay the first piece. These are the nests the world plants by an altar.
-
-| Altar | The nest | A seed has one within {{arenaReach}} m | Nearest, as a rule, m | Middle half of seeds, m |
-|---|---|---|---|---|
-| [The Elder](/catalog/bosses#the-elder) | a Greydwarf nest | {{altarNestElder}}% | {{altarNestElderM}} | {{altarNestElderMLow}}–{{altarNestElderMHigh}} |
-| [Fader](/catalog/bosses#fader), in the [Ashlands](/guides/ashlands) | a Charred spawner | {{altarNestFader}}% | {{altarNestFaderM}} | {{altarNestFaderMLow}}–{{altarNestFaderMHigh}} |
+A nest spawns inside a base as if you had built nothing, so break every one in reach before you lay the first piece. The world plants them by two altars. A Greydwarf nest stands within {{arenaReach}} m of [the Elder](/catalog/bosses#the-elder)'s altar on {{altarNestElder}}% of seeds, the nearest {{altarNestElderM}} m off as a rule ({{altarNestElderMLow}}–{{altarNestElderMHigh}} m on the middle half of seeds). A Charred spawner stands within {{arenaReach}} m of [Fader](/catalog/bosses#fader)'s, in the [Ashlands](/guides/ashlands), on {{altarNestFader}}% of seeds, the nearest {{altarNestFaderM}} m off ({{altarNestFaderMLow}}–{{altarNestFaderMHigh}} m).
 
 Bonemass has his own: a bone pile stands within {{arenaReach}} m of his altar on all but {{bonemassNoPileReach}}% of seeds (the [Swamp](/guides/swamp) counts them). The [seed map](/tools/map) shows what waits round your own altars. And a Greydwarf nest breaks into the very ancient seeds the Elder is summoned with, so smashing it is no chore; it is shopping.
 
@@ -87,4 +82,4 @@ The heights are our own sums on the game's rule of support, for a straight stack
 
 > **With no map**, the lookout is your map: an iron tower over an altar shows the arena's ground and the places round it before you build, and its torches ring its own foot.
 
-With the nests broken and the ring laid, every boss fights you alone. The basics are done; the eight lands begin by the stones, in the [Meadows](/guides/meadows).
+With the nests broken and the ring laid, every boss fights you alone.

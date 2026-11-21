@@ -83,41 +83,16 @@ export const CATALOG_GROUPS: Group[] = [
 export const CATALOG = CATALOG_GROUPS.flatMap((group) => group.entries);
 
 // The guides, three sections (the owner, 2026-11-19 and 2026-11-20;
-// `docs/guides.md` → The menu): Basics first, what every player needs from a
-// good start on; then the biomes in the run's order; the challenges last. Farming and the Forge of
-// Potential are to be folded into the Plains and the Mountain; until then they
-// stay at their addresses, out of the menu.
+// `docs/guides.md` → The menu), in the order of 2026-11-21: the biomes, the
+// Basics, the challenges. Farming and the Forge of Potential stay at their
+// addresses, out of the menu.
 // Each section is a page of its own, /guides/<section>, and its guides stand
 // under it, /guides/<section>/<slug> (the owner, 2026-11-20, as No Man's Sky).
 export const GUIDE_GROUPS: Group[] = [
-  // The owner, 2026-11-20: what every player needs first is Basics, not a
-  // challenge; the challenges come last, after the biomes.
-  {
-    id: "archive.groupBasics",
-    href: "/guides/basics",
-    entries: [
-      entry(
-        "/guides/basics/a-good-start",
-        "archive.guideGoodStart",
-        "goodStart",
-      ),
-      entry(
-        "/guides/basics/where-to-build",
-        "archive.guideWhereToBuild",
-        "whereToBuild",
-      ),
-      entry(
-        "/guides/basics/how-much-metal",
-        "archive.guideHowMuchMetal",
-        "howMuchMetal",
-      ),
-      entry(
-        "/guides/basics/boss-arenas",
-        "archive.guideBossArenas",
-        "bossArenas",
-      ),
-    ],
-  },
+  // The owner, 2026-11-21: the saga starts in the Meadows, so the biomes come
+  // first, a chapter each for the player who explores; the Basics are
+  // references the chapters send to; the challenges, the other ways of
+  // playing, come last, the speedrunner's start opening them.
   {
     id: "archive.groupBiomes",
     href: "/guides/biomes",
@@ -137,9 +112,35 @@ export const GUIDE_GROUPS: Group[] = [
     ],
   },
   {
+    id: "archive.groupBasics",
+    href: "/guides/basics",
+    entries: [
+      entry(
+        "/guides/basics/where-to-build",
+        "archive.guideWhereToBuild",
+        "whereToBuild",
+      ),
+      entry(
+        "/guides/basics/how-much-metal",
+        "archive.guideHowMuchMetal",
+        "howMuchMetal",
+      ),
+      entry(
+        "/guides/basics/boss-arenas",
+        "archive.guideBossArenas",
+        "bossArenas",
+      ),
+    ],
+  },
+  {
     id: "archive.groupChallenges",
     href: "/guides/challenges",
     entries: [
+      entry(
+        "/guides/challenges/a-speedrunners-start",
+        "archive.guideSpeedrunnersStart",
+        "speedrunnersStart",
+      ),
       entry("/guides/challenges/speedrun", "archive.guideSpeedrun", "speedrun"),
       entry(
         "/guides/challenges/other-rules",
