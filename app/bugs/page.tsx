@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { BugsPage } from "@/components/bugs/BugsPage";
 
 export const metadata: Metadata = {
-  title: "World generation bugs in Valheim — Seed Archive",
+  title: "Bugs in Valheim — Seed Archive",
   description:
-    "Why one Valheim seed gives Burial Chambers and Sunken Crypts different rooms, which dungeons follow the seed exactly, and why the map's loot is an average.",
+    "Why Burial Chambers and Sunken Crypts differ on one seed, why the map's loot is an average, and why the Helmet of the Protector never reaches the forge.",
   alternates: { canonical: "/bugs" },
 };
 

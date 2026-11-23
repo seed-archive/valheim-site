@@ -53,7 +53,13 @@ chapter inside it. **The three-row rule is judged by its place, never an absolut
 catalogue: "нужно очень сильно смотреть по месту применения… не будем возводить это правило в абсолют"): it is
 written for a guide's prose, where a small table stands in for telling. A reference that draws one table a group
 (the catalogue's table a biome, a creature's drops) keeps its tables whatever their length: there the same shape
-on every page is worth more than the count of rows.
+on every page is worth more than the count of rows. **A catalogue page's conclusion is its lead** (the owner,
+2026-11-23, of Staffs: "очень сухо, ничего не описано", and that a catalogue needs no conclusion under its tables):
+the bold question, then an answer that tells the kinds apart and says what to choose or make first, in words drawn
+from the table's own data (Weapons: a sword when you attack, a mace when you hold your ground; Staffs: elemental
+staffs deal the damage, blood magic puts something between you and the enemy). A lead that only lists the columns
+is not an answer. Under a biome's table nothing is added. A row says in full what the thing does: a staff's row
+what its cast does where it lands and how hard its summon hits, never the cost alone.
 
 **The ledger** (the owner, 2026-11-21): before a chapter is written, the Valheim generator's notes get its ledger:
 what the player has when he arrives, what he does in order, what he has when he leaves. A chapter starts from the
@@ -77,6 +83,8 @@ reason is made up to carry a number (2026-11-21).
   answer up, biggest point first.
 - A page's `<title>` is `<title> in Valheim — Seed Archive`. The game's name stands once a page, in its `<title>`; the
   bold question and the headings do not repeat it (`docs/seo.md`).
+- Only the site's header sticks (the owner, 2026-11-23, as the No Man's Sky section did the same day): a section's
+  heading scrolls with its text and tables, never sticks under the header.
 - A full-screen tool (the map) keeps the shared header and drops the footer; it has a title, a description and a
   canonical address, stands in the sitemap, and is linked from at least two pages of the section (the shared
   `seed-archive/docs/seo.md`, "Header and footer").

@@ -20,5 +20,6 @@ The Valheim section of Seed Archive, to be served at https://seedarchive.gg/valh
 npm install
 npm run dev      # the site on localhost:5020/valheim
 npm run lint
+npm test         # the seed page's results for three seeds (test/fixtures/seeds.json, written by the Valheim generator) and the messages the code names
 npm run build
 ```

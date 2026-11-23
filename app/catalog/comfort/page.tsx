@@ -15,14 +15,20 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { AnchorHeading } from "@/components/catalog/AnchorHeading";
 import {
-  BAR,
   BIOMES,
   anchor,
   biomeOf,
   seasonNote,
 } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
-import { serverFormat } from "@/lib/i18n/server";
+import { serverFormat, serverMessages } from "@/lib/i18n/server";
+
+// The note that tells twin pieces apart, as the build pieces' pages show it
+// (two Item Stands: on a wall, on a floor).
+const pieceNote = (key: string) =>
+  `pages.buildPieces.note.${key}` in serverMessages
+    ? serverFormat(`pages.buildPieces.note.${key}`)
+    : null;
 import comfort from "@/lib/valheim/comfort.json";
 import crafting from "@/lib/valheim/crafting.json";
 import { RowLink } from "@/components/catalog/RowLink";
@@ -141,14 +147,18 @@ function groupTable(pieces: Piece[]) {
               <TableCell>
                 <ItemIcon item={p.key}>
                   <RowLink item={p.key}>{p.name}</RowLink>
-                  {p.litOnly || p.season ? (
+                  {p.litOnly || p.season || pieceNote(p.key) ? (
                     <Typography
                       component="span"
                       variant="caption"
                       color="text.secondary"
                       sx={{ display: "block" }}
                     >
-                      {[p.litOnly ? t("litMark") : null, seasonNote(p.season)]
+                      {[
+                        pieceNote(p.key),
+                        p.litOnly ? t("litMark") : null,
+                        seasonNote(p.season),
+                      ]
                         .filter(Boolean)
                         .join(". ")}
                     </Typography>
@@ -168,18 +178,8 @@ function groupTable(pieces: Piece[]) {
 // A section of the page: its anchor, and a heading that is the link to it.
 function Section(props: { id: string; title: string; children: ReactNode }) {
   return (
-    <Box component="section" id={props.id} sx={{ scrollMarginTop: BAR }}>
-      <AnchorHeading
-        id={props.id}
-        sx={{
-          position: "sticky",
-          top: BAR,
-          zIndex: 2,
-          mt: 4,
-          py: 1,
-          bgcolor: "background.default",
-        }}
-      >
+    <Box component="section" id={props.id}>
+      <AnchorHeading id={props.id} sx={{ mt: 4, py: 1 }}>
         {props.title}
       </AnchorHeading>
       {props.children}

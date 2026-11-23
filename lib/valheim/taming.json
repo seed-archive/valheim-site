@@ -1,0 +1,353 @@
+{
+  "boost": {
+    "times": 2.0,
+    "withinM": 60.0
+  },
+  "creatures": [
+    {
+      "biome": "meadows",
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": false,
+            "key": "Boar_piggy",
+            "kind": "young",
+            "name": "Piggy",
+            "roof": false,
+            "seconds": 3000.0
+          }
+        ],
+        "love": 3,
+        "loveSeconds": 30.0,
+        "most": 5,
+        "mostWithinM": 10.0,
+        "partnerM": 3.0,
+        "pregnancySeconds": 60.0
+      },
+      "commandable": false,
+      "eats": [
+        {
+          "key": "Carrot",
+          "name": "Carrot"
+        },
+        {
+          "key": "Turnip",
+          "name": "Turnip"
+        },
+        {
+          "key": "Onion",
+          "name": "Onion"
+        },
+        {
+          "key": "Mushroom",
+          "name": "Mushroom"
+        },
+        {
+          "key": "Raspberry",
+          "name": "Raspberries"
+        },
+        {
+          "key": "Blueberries",
+          "name": "Blueberries"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 10.0,
+      "key": "Boar",
+      "name": "Boar",
+      "runSpeed": 8.0,
+      "saddle": null,
+      "startsTamed": false,
+      "tamingSeconds": 1800.0
+    },
+    {
+      "biome": "mountain",
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": false,
+            "key": "Wolf_cub",
+            "kind": "young",
+            "name": "Wolf Cub",
+            "roof": false,
+            "seconds": 3000.0
+          }
+        ],
+        "love": 3,
+        "loveSeconds": 30.0,
+        "most": 4,
+        "mostWithinM": 10.0,
+        "partnerM": 3.0,
+        "pregnancySeconds": 60.0
+      },
+      "commandable": true,
+      "eats": [
+        {
+          "key": "NeckTail",
+          "name": "Neck Tail"
+        },
+        {
+          "key": "RawMeat",
+          "name": "Boar Meat"
+        },
+        {
+          "key": "LoxMeat",
+          "name": "Lox Meat"
+        },
+        {
+          "key": "Sausages",
+          "name": "Sausages"
+        },
+        {
+          "key": "FishRaw",
+          "name": "Raw Fish"
+        },
+        {
+          "key": "DeerMeat",
+          "name": "Deer Meat"
+        },
+        {
+          "key": "ChickenMeat",
+          "name": "Chicken Meat"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 80.0,
+      "key": "Wolf",
+      "name": "Wolf",
+      "runSpeed": 8.0,
+      "saddle": null,
+      "startsTamed": false,
+      "tamingSeconds": 1800.0
+    },
+    {
+      "biome": "plains",
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": false,
+            "key": "Lox_Calf",
+            "kind": "young",
+            "name": "Lox Calf",
+            "roof": false,
+            "seconds": 6000.0
+          }
+        ],
+        "love": 4,
+        "loveSeconds": 30.0,
+        "most": 4,
+        "mostWithinM": 20.0,
+        "partnerM": 8.0,
+        "pregnancySeconds": 120.0
+      },
+      "commandable": false,
+      "eats": [
+        {
+          "key": "Cloudberry",
+          "name": "Cloudberries"
+        },
+        {
+          "key": "Barley",
+          "name": "Barley"
+        },
+        {
+          "key": "Flax",
+          "name": "Flax"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 1000.0,
+      "key": "Lox",
+      "name": "Lox",
+      "runSpeed": 7.0,
+      "saddle": {
+        "key": "SaddleLox",
+        "name": "Lox Saddle",
+        "runDrain": 1.0,
+        "stamina": 240.0,
+        "swimDrain": 5.0
+      },
+      "startsTamed": false,
+      "tamingSeconds": 1800.0
+    },
+    {
+      "biome": "ashlands",
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": true,
+            "key": "AsksvinEgg",
+            "kind": "egg",
+            "name": "Asksvin Egg",
+            "roof": false,
+            "seconds": 1800.0
+          },
+          {
+            "fire": false,
+            "key": "Asksvin_hatchling",
+            "kind": "young",
+            "name": "Asksvin Hatchling",
+            "roof": false,
+            "seconds": 3000.0
+          }
+        ],
+        "love": 3,
+        "loveSeconds": 30.0,
+        "most": 10,
+        "mostWithinM": 10.0,
+        "partnerM": 4.0,
+        "pregnancySeconds": 60.0
+      },
+      "commandable": false,
+      "eats": [
+        {
+          "key": "Vineberry",
+          "name": "Vineberry Cluster"
+        },
+        {
+          "key": "Fiddleheadfern",
+          "name": "Fiddlehead"
+        },
+        {
+          "key": "MushroomSmokePuff",
+          "name": "Smoke Puff"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 800.0,
+      "key": "Asksvin",
+      "name": "Asksvin",
+      "runSpeed": 9.0,
+      "saddle": {
+        "key": "SaddleAsksvin",
+        "name": "Asksvin Saddle",
+        "runDrain": 1.0,
+        "stamina": 240.0,
+        "swimDrain": 5.0
+      },
+      "startsTamed": false,
+      "tamingSeconds": 1800.0
+    },
+    {
+      "biome": "deepNorth",
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": false,
+            "key": "Moose_calf",
+            "kind": "young",
+            "name": "Moose Calf",
+            "roof": false,
+            "seconds": 3000.0
+          }
+        ],
+        "love": 3,
+        "loveSeconds": 30.0,
+        "most": 5,
+        "mostWithinM": 10.0,
+        "partnerM": 3.0,
+        "pregnancySeconds": 60.0
+      },
+      "commandable": false,
+      "eats": [
+        {
+          "key": "Lingonberry",
+          "name": "Lingonberries"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 1000.0,
+      "key": "Moose",
+      "name": "Moose",
+      "runSpeed": 12.600000381469728,
+      "saddle": {
+        "key": "SaddleMoose",
+        "name": "Moose Saddle",
+        "runDrain": 1.0,
+        "stamina": 240.0,
+        "swimDrain": 5.0
+      },
+      "startsTamed": false,
+      "tamingSeconds": 1800.0
+    },
+    {
+      "biome": null,
+      "breeding": {
+        "chance": 0.33000001311302185,
+        "grows": [
+          {
+            "fire": true,
+            "key": "ChickenEgg",
+            "kind": "egg",
+            "name": "Egg",
+            "roof": true,
+            "seconds": 1800.0
+          },
+          {
+            "fire": false,
+            "key": "Chicken",
+            "kind": "young",
+            "name": "Chicken",
+            "roof": false,
+            "seconds": 3000.0
+          }
+        ],
+        "love": 3,
+        "loveSeconds": 30.0,
+        "most": 10,
+        "mostWithinM": 10.0,
+        "partnerM": 4.0,
+        "pregnancySeconds": 60.0
+      },
+      "commandable": false,
+      "eats": [
+        {
+          "key": "Dandelion",
+          "name": "Dandelion"
+        },
+        {
+          "key": "Barley",
+          "name": "Barley"
+        },
+        {
+          "key": "BeechSeeds",
+          "name": "Beech Seeds"
+        },
+        {
+          "key": "BirchSeeds",
+          "name": "Birch Seeds"
+        },
+        {
+          "key": "CarrotSeeds",
+          "name": "Carrot Seeds"
+        },
+        {
+          "key": "OnionSeeds",
+          "name": "Onion Seeds"
+        },
+        {
+          "key": "TurnipSeeds",
+          "name": "Turnip Seeds"
+        }
+      ],
+      "fedSeconds": 600.0,
+      "health": 10.0,
+      "key": "Hen",
+      "name": "Hen",
+      "runSpeed": 6.0,
+      "saddle": null,
+      "startsTamed": true,
+      "tamingSeconds": 1800.0
+    }
+  ],
+  "mead": {
+    "base": "MeadBaseTamer",
+    "key": "MeadTamer",
+    "name": "Brew of Animal Whispers"
+  }
+}

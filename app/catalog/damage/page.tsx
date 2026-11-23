@@ -5,6 +5,7 @@ import { PageTrail } from "@seed-archive/ui/page-trail";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { SectionLinks } from "@/components/catalog/SectionLinks";
 import { WeaponMatrix } from "@/components/catalog/WeaponMatrix";
 import { serverFormat } from "@/lib/i18n/server";
 
@@ -21,7 +22,11 @@ export default function DamagePage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
@@ -35,7 +40,9 @@ export default function DamagePage() {
         <Typography sx={{ mb: 2 }}>
           <b>{t("question")}</b> {t("lead")}
         </Typography>
-        <WeaponMatrix />
+        <SectionLinks>
+          <WeaponMatrix />
+        </SectionLinks>
       </Container>
       <ArchiveFooter />
     </>

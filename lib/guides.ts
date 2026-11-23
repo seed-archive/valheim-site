@@ -35,6 +35,7 @@ export const CATALOG_GROUPS: Group[] = [
     entries: [
       entry("/catalog/weapons", "archive.guideWeapons", "weapons"),
       entry("/catalog/bows", "archive.guideBows", "bows"),
+      entry("/catalog/staffs", "archive.guideStaffs", "staffs"),
       entry("/catalog/armour", "archive.guideArmour", "armour"),
       entry("/catalog/tools", "archive.guideToolsCatalog", "toolsCatalog"),
     ],
@@ -84,8 +85,8 @@ export const CATALOG = CATALOG_GROUPS.flatMap((group) => group.entries);
 
 // The guides, three sections (the owner, 2026-11-19 and 2026-11-20;
 // `docs/guides.md` → The menu), in the order of 2026-11-21: the biomes, the
-// Basics, the challenges. Farming and the Forge of Potential stay at their
-// addresses, out of the menu.
+// Basics, the challenges. Farming and the Forge of Potential stand in the
+// Basics at their first addresses.
 // Each section is a page of its own, /guides/<section>, and its guides stand
 // under it, /guides/<section>/<slug> (the owner, 2026-11-20, as No Man's Sky).
 export const GUIDE_GROUPS: Group[] = [
@@ -130,6 +131,13 @@ export const GUIDE_GROUPS: Group[] = [
         "archive.guideBossArenas",
         "bossArenas",
       ),
+      // The owner, 2026-11-23: "Как приручить животных" in the Basics.
+      entry("/guides/basics/taming", "archive.guideTaming", "taming"),
+      // The owner, 2026-11-23: no guide stays out of the menu. Never folded
+      // into the Plains and the Mountain as planned, they join the Basics at
+      // the addresses they were released at.
+      entry("/guides/farming", "archive.guideFarming", "farming"),
+      entry("/guides/forge-of-potential", "archive.guideForge", "forge"),
     ],
   },
   {

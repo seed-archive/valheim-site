@@ -17,6 +17,8 @@ Every altar wants an offering from its boss's own biome, and up to Yagluth you s
 | Fader | {{bells}} bells, {{bellFragments}} fragments each | the Black Forge |
 | Kall Fimbulbringer | {{maliciousBlood}} Malicious Blood, one from each Jotun invasion a Mörkhalla's ice sets loose, every Mörkhalla opened with an Intricate Key its gate consumes | {{dnKeys}} Intricate Keys, {{keyBloodgold}} Bloodgold each, cast at the Black Forge, then hardened at the frost foundry |
 
+Figure: summons
+
 None of it waits in a friendly place. The bones lie behind the Elder's key in the [Swamp](/guides/swamp), the eggs up on the [Mountain](/guides/mountain), the totems in the villages of the [Plains](/guides/plains), the fragments deep in the Infested Mines of the [Mistlands](/guides/mistlands), the bells' fragments in the Charred Fortresses of the [Ashlands](/guides/ashlands), and the key's mould in the Winding Tunnels of the [Deep North](/guides/deep-north). When you get there, [How to kill each boss](/catalog/bosses) has the fights.
 
 ## What do the roads between biomes make you build?
@@ -33,7 +35,7 @@ Between the altars stand a ship and a handful of stations the road will not let 
 
 Every level and extension is on the [crafting stations](/catalog/crafting-stations) page, every boat on [Ships](/catalog/ships).
 
-> **On a reverse run** Moder is your wall: the blast furnace is built at the artisan table, and the table from her tears, so without her there is no Bloodgold, no key and no Kall. Fader is the other: the petrified trolls break only to bombs made with his embers.
+> **On a reverse run**, Moder is your wall: the blast furnace is built at the artisan table, and the table from her tears, so without her there is no Bloodgold, no key and no Kall. Fader is the other: the petrified trolls break only to bombs made with his embers.
 
 ## What does a full kit take, age by age?
 
@@ -47,7 +49,7 @@ This is the bill you actually pay: each age's armour set plus one weapon of ever
 | Black metal, the Plains | {{kitBlackMetalBronze}} | {{kitBlackMetalIron}} | {{kitBlackMetalSilver}} | {{kitBlackMetalBlackMetal}} |
 | All four | {{kitAllBronze}} | {{kitAllIron}} | {{kitAllSilver}} | {{kitAllBlackMetal}} |
 
-Iron is the metal that decides: {{kitAllIron}} bars across the ages, {{kitIronIron}} of them for the Iron age alone, against {{kitSilverSilver}} of silver on the Mountain and {{kitBlackMetalBlackMetal}} of black metal on the Plains. The Swamp is where a full kit is paid for, and where raising only what you keep saves most. Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
+Iron is the metal that decides: {{kitAllIron}} bars across the ages, {{kitIronIron}} of them for the Iron Age alone, against {{kitSilverSilver}} of silver on the Mountain and {{kitBlackMetalBlackMetal}} of black metal on the Plains. The Swamp is where a full kit is paid for, and where raising only what you keep saves most. Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
 
 > **At leisure**, raise only the age you will wear longest: the top level of a piece you shed in the next biome is the dearest metal you will ever spend.
 
@@ -80,4 +82,4 @@ The gates are a handful of chests: {{cryptChestsIronDeepNorth}} of them cover th
 
 > **With no map**, breathe easy: the measures above count only the crypts of Bonemass's own Swamp, the one you must find anyway, so you never have to hunt down a second swamp by eye.
 
-A run on the clock strips this bill to its gates and one mace; the least each category gets away with is counted on the [Speedrun](/guides/speedrun#how-much-metal-does-a-run-spend).
+A run on the clock strips this bill to its gates and one mace; the least it gets away with is counted on the [Speedrun](/guides/speedrun#how-much-metal-does-a-run-spend).

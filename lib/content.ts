@@ -5,6 +5,7 @@ import { marked } from "marked";
 
 import { longGuideLinks } from "@/lib/guides";
 import { BASE_PATH } from "@/lib/site";
+import { slug } from "@/lib/slug";
 import { POWERS } from "@/lib/valheim/boss-power";
 import GUIDE_VALUES from "@/lib/valheim/guide-values.json";
 
@@ -45,11 +46,15 @@ function anchorHeadings(html: string) {
   return html.replace(
     /<h([2-4])>(.*?)<\/h\1>/g,
     (_, level: string, inner: string) => {
-      const base = inner
-        .replace(/<[^>]+>/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "");
+      // The heading's words, its HTML entities back to signs (Markdown writes
+      // an apostrophe as &#39;), in the section's one anchor style.
+      const base = slug(
+        inner
+          .replace(/<[^>]+>/g, "")
+          .replace(/&#39;|&apos;|&rsquo;/g, "'")
+          .replace(/&amp;/g, "&")
+          .replace(/&quot;/g, '"'),
+      );
       const seen = (used.get(base) ?? 0) + 1;
       used.set(base, seen);
       const id = seen === 1 ? base : `${base}-${seen}`;

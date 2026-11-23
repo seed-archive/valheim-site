@@ -36,7 +36,7 @@ A ring keeps spawns out, not walkers. Raiders appear {{raidMinM}}–{{raidMaxM}}
 
 A nest spawns inside a base as if you had built nothing, so break every one in reach before you lay the first piece. The world plants them by two altars. A Greydwarf nest stands within {{arenaReach}} m of [the Elder](/catalog/bosses#the-elder)'s altar on {{altarNestElder}}% of seeds, the nearest {{altarNestElderM}} m off as a rule ({{altarNestElderMLow}}–{{altarNestElderMHigh}} m on the middle half of seeds). A Charred spawner stands within {{arenaReach}} m of [Fader](/catalog/bosses#fader)'s, in the [Ashlands](/guides/ashlands), on {{altarNestFader}}% of seeds, the nearest {{altarNestFaderM}} m off ({{altarNestFaderMLow}}–{{altarNestFaderMHigh}} m).
 
-Bonemass has his own: a bone pile stands within {{arenaReach}} m of his altar on all but {{bonemassNoPileReach}}% of seeds (the [Swamp](/guides/swamp) counts them). The [seed map](/tools/map) shows what waits round your own altars. And a Greydwarf nest breaks into the very ancient seeds the Elder is summoned with, so smashing it is no chore; it is shopping.
+Bonemass has his own: a bone pile stands within {{arenaReach}} m of his altar on all but {{bonemassNoPileReach}}% of seeds. The [seed map](/tools/map) shows what waits round your own altars. And a Greydwarf nest breaks into the very ancient seeds the Elder is summoned with, so smashing it is no chore; it is shopping.
 
 > **With no death**, the order is the whole plan: nests, then the ring, then the summon, on a day you can spare. On a [harder world](/guides/hardcore) whatever crawls out of a nest you missed hits harder than on Normal.
 

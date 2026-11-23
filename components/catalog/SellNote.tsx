@@ -7,6 +7,9 @@ import traders from "@/lib/valheim/traders.json";
 // generator: every item with a value).
 const VALUE = new Map(traders.valuables.map((v) => [v.key, v.value]));
 
+// Whether a trader buys this item.
+export const sells = (item: string) => VALUE.has(item);
+
 // After an item a trader buys: what it sells for, linked to its row on the
 // traders page. Nothing for an item no trader buys.
 export function SellNote(props: { item: string }) {

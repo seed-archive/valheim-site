@@ -11,15 +11,17 @@ import type { ReactNode } from "react";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { SectionLinks } from "@/components/catalog/SectionLinks";
+import { slug } from "@/lib/slug";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { RowLink } from "@/components/catalog/RowLink";
 import { MATERIAL_KINDS } from "@/lib/valheim/recipes";
 import { RUN_ORDER } from "@/lib/valheim/run-order";
+import { USED_IN } from "@/lib/valheim/used-in";
 import { SellNote } from "@/components/catalog/SellNote";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
 import bosses from "@/lib/valheim/bosses.json";
-import crafting from "@/lib/valheim/crafting.json";
 import materials from "@/lib/valheim/materials.json";
 import traders from "@/lib/valheim/traders.json";
 
@@ -29,10 +31,6 @@ const t = (id: string, values?: Record<string, string | number>) =>
 // The biomes in the run's order; a material no source gives comes last.
 const BIOMES = RUN_ORDER;
 const ELSEWHERE = "elsewhere";
-const biomeAt = (b: string | null) => {
-  const i = BIOMES.indexOf(b ?? "");
-  return i < 0 ? BIOMES.length : i;
-};
 
 // How many places a material names before "and more": a common one (wood,
 // stone) lies in dozens (our own choice).
@@ -41,27 +39,18 @@ const PLACES_SHOWN = 6;
 const anchor = (biome: string) =>
   biome.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
 
-// Everything each material goes into: every recipe and build piece that takes
-// it, earliest biome first.
-const usedIn = new Map<
-  string,
-  { key: string; name: string; biome: string | null }[]
->();
-for (const r of [...crafting.gear, ...crafting.building]) {
-  for (const m of r.resources) {
-    const list = usedIn.get(m.key) ?? [];
-    if (!list.some((x) => x.key === r.key)) {
-      list.push({ key: r.key, name: r.name, biome: r.biome });
-    }
-    usedIn.set(m.key, list);
-  }
-}
-usedIn.forEach((list) =>
-  list.sort(
-    (a, b) =>
-      biomeAt(a.biome) - biomeAt(b.biome) || a.name.localeCompare(b.name),
-  ),
-);
+// Everything each material goes into (`lib/valheim/used-in.ts`).
+const usedIn = USED_IN;
+
+// An idol, by the game's prefab names (`Upgrader<tier>Weapon`, `…Armor`): what
+// it raises at the Forge of Potential, a Battle idol weapons and tools, a
+// Protection idol armour, shields and capes (the recipes that ask for each).
+const idolOf = (key: string) =>
+  /^Upgrader\d+Weapon$/.test(key)
+    ? "battle"
+    : /^Upgrader\d+Armor$/.test(key)
+      ? "protection"
+      : null;
 
 const traderName = new Map(
   traders.traders.map((x) => [x.key, x.name ?? x.key]),
@@ -137,8 +126,13 @@ function sources(m: Material) {
 // The bosses, by prefab: a trophy one of them drops gives its power on the
 // start altar.
 const BOSS_KEYS = new Set(bosses.map((b) => b.key));
-const bossSlug = (name: string) => name.toLowerCase().replace(/[^a-z]+/g, "-");
-const bossOf = (m: Material) => m.droppedBy.find((c) => BOSS_KEYS.has(c.key));
+const bossSlug = slug;
+// Only a trophy gives the power; a boss's other drops (Dragon Tear, Hard
+// Antler…) do not.
+const bossOf = (m: Material) =>
+  m.key.startsWith("Trophy")
+    ? m.droppedBy.find((c) => BOSS_KEYS.has(c.key))
+    : undefined;
 
 // The section of the bosses' trophies, and a section's heading.
 const BOSSES_SECTION = "bosses";
@@ -178,82 +172,104 @@ export function MaterialsView(props: {
         maxWidth="lg"
         sx={{ py: 6, minHeight: "70vh" }}
       >
-        <PageTrail
-          steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.catalog"), href: "/catalog" },
-            { name: serverFormat(props.crumb) },
-          ]}
-        />
-        <Typography variant="h3" component="h1" gutterBottom>
-          {own("title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          <b>{own("question")}</b> {own("answer")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          {groups
-            .filter((g) => g.list.length > 0)
-            .map((g, i) => (
-              <span key={g.biome}>
-                {i > 0 ? " · " : ""}
-                <Link href={`#${anchor(g.biome)}`}>{heading(g.biome)}</Link>
-              </span>
-            ))}
-        </Typography>
+        <SectionLinks>
+          <PageTrail
+            steps={[
+              { name: serverFormat("archive.home"), href: "/" },
+              { name: serverFormat("archive.catalog"), href: "/catalog" },
+              { name: serverFormat(props.crumb) },
+            ]}
+          />
+          <Typography variant="h3" component="h1" gutterBottom>
+            {own("title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>
+            <b>{own("question")}</b> {own("answer")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>
+            {groups
+              .filter((g) => g.list.length > 0)
+              .map((g, i) => (
+                <span key={g.biome}>
+                  {i > 0 ? " · " : ""}
+                  <Link href={`#${anchor(g.biome)}`}>{heading(g.biome)}</Link>
+                </span>
+              ))}
+          </Typography>
 
-        {groups.map(({ biome, list }) =>
-          list.length === 0 ? null : (
-            <section key={biome} id={anchor(biome)}>
-              <Typography variant="h4" component="h2" sx={{ mt: 6, mb: 1 }}>
-                {heading(biome)}
-              </Typography>
-              <TableContainer>
-                <Table size="small" sx={{ "& td": { verticalAlign: "top" } }}>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>{t("head.material")}</TableCell>
-                      <TableCell>{t("head.from")}</TableCell>
-                      <TableCell>{t("head.into")}</TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {list.map((m) => {
-                      const uses = usedIn.get(m.key) ?? [];
-                      return (
-                        <TableRow key={m.key} id={m.key.toLowerCase()}>
-                          <TableCell sx={{ whiteSpace: "nowrap" }}>
-                            <ItemIcon item={m.key}>
-                              {m.name}
-                              <SellNote item={m.key} />
-                            </ItemIcon>
-                          </TableCell>
-                          <TableCell>{sources(m)}</TableCell>
-                          <TableCell>
-                            {bossOf(m) ? (
-                              <Link
-                                href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
-                              >
-                                {t("power")}
-                              </Link>
-                            ) : null}
-                            {bossOf(m) && uses.length > 0 ? ", " : ""}
-                            {uses.map((u, i) => (
-                              <span key={u.key}>
-                                {i > 0 ? ", " : ""}
-                                <RowLink item={u.key}>{u.name}</RowLink>
-                              </span>
-                            ))}
-                          </TableCell>
-                        </TableRow>
-                      );
-                    })}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            </section>
-          ),
-        )}
+          {groups.map(({ biome, list }) =>
+            list.length === 0 ? null : (
+              <section key={biome}>
+                <Typography
+                  variant="h4"
+                  component="h2"
+                  id={anchor(biome)}
+                  sx={{ mt: 6, mb: 1 }}
+                >
+                  {heading(biome)}
+                </Typography>
+                <TableContainer>
+                  <Table size="small" sx={{ "& td": { verticalAlign: "top" } }}>
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>
+                          {t(
+                            props.kind === "trophies"
+                              ? "head.trophy"
+                              : "head.material",
+                          )}
+                        </TableCell>
+                        <TableCell>{t("head.from")}</TableCell>
+                        <TableCell>{t("head.into")}</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {list.map((m) => {
+                        const uses = usedIn.get(m.key) ?? [];
+                        return (
+                          <TableRow key={m.key} id={m.key.toLowerCase()}>
+                            <TableCell sx={{ whiteSpace: "nowrap" }}>
+                              <ItemIcon item={m.key}>
+                                {m.name}
+                                <SellNote item={m.key} />
+                              </ItemIcon>
+                            </TableCell>
+                            <TableCell>{sources(m)}</TableCell>
+                            <TableCell>
+                              {bossOf(m) ? (
+                                <Link
+                                  href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
+                                >
+                                  {t("power")}
+                                </Link>
+                              ) : null}
+                              {bossOf(m) && uses.length > 0 ? ", " : ""}
+                              {uses.map((u, i) => (
+                                <span key={u.key}>
+                                  {i > 0 ? ", " : ""}
+                                  <RowLink item={u.key}>{u.name}</RowLink>
+                                </span>
+                              ))}
+                              {idolOf(m.key) ? (
+                                <Link href="/guides/forge-of-potential">
+                                  {t(`idol.${idolOf(m.key)}`)}
+                                </Link>
+                              ) : null}
+                              {/* Nothing it goes into: a dash, as "Where from". */}
+                              {!bossOf(m) && uses.length === 0 && !idolOf(m.key)
+                                ? "—"
+                                : null}
+                            </TableCell>
+                          </TableRow>
+                        );
+                      })}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </section>
+            ),
+          )}
+        </SectionLinks>
       </Container>
       <ArchiveFooter />
     </>

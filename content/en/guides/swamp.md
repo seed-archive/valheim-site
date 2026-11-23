@@ -40,11 +40,11 @@ No metal passes a portal. Either the scrap goes home, by cart to the boat and by
 
 The first bars go into the iron mace and the iron pickaxe: the mace because nearly everything here, Bonemass included, breaks under blunt, the pickaxe because nothing less breaks the Mountain's silver. The armour and the banded shield come next, and in them you can stay in the Swamp as long as you like.
 
-## How much iron does the iron age take?
+## How much iron does the Iron Age take?
 
 More than you expect, if you raise what you make:
 
-| The iron age, made and raised | Iron |
+| The Iron Age, made and raised | Iron |
 |---|---|
 | The iron mace, at its top | {{ironMaceTop}} |
 | The iron armour, helmet, chest and legs, as made | {{ironSetQ1}} |

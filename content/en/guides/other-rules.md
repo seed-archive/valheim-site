@@ -10,9 +10,7 @@ One life for the whole game, the hardcore player's rule: the first death ends it
 
 ### What does a harder world change?
 
-You hit softer, they hit harder and come starred more often, but their health stays as it is, and they grow faster and larger only outside dungeons. The star is what to fear: one takes a creature to {{starHealth1}}% of its health and {{starDamage1}}% of its blows, two to {{starHealth2}}% and {{starDamage2}}%. Near home the open world spares you: Boars and Necks come starred only beyond {{starMinDistanceBoar}} m of the world's centre and Trolls beyond {{starMinDistanceTroll}} m, while a nest's creatures may come starred anywhere. [Hard, Very hard and Hardcore](/guides/hardcore) gives every Combat setting number by number, the chance of a star from every source, and all that each preset switches on.
-
-Meet every danger with its resistance on: the [meads](/catalog/meads) list them, and [How to kill each boss](/catalog/bosses) gives each boss the way that keeps you out of its reach. Most bosses hit with pierce, and the Swamp's Root Harnesk is the one piece of [armour](/catalog/armour) that resists it. The player who taught this run is in the [credits](/credits).
+You hit softer, they hit harder and come starred more often; what a star does to a creature, how to meet it and every setting number by number are on [Hard, Very hard and Hardcore](/guides/hardcore). The player who taught this run is in the [credits](/credits).
 
 > **Speedrunners** race this rule too: the Immortal board of speedrun.com's category extensions times runs with no death, the Deep North included.
 
@@ -45,13 +43,13 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Mountain.** Climb by day, and clear the drakes round Moder's altar before you summon her: the drakes of a nest rise once and do not come back.
 
-**Plains.** Clear one Fuling village by day and make it your camp before you look for the next. A village's shamans and its first Fulings rise from spawners that fire once; set down a workbench and a campfire, and while they stand nothing new rises inside their reach, from the village or from the open Plains. Two pieces stay under the {{raidBasePieces}} that call most raids, so the camp draws none. Fulings still walk in from outside: it is a place to rest and mend, not a wall.
+**Plains.** Clear one Fuling village by day and make it your camp before you look for the next. A village's shamans and its first Fulings rise from spawners that fire once; set down a workbench and a campfire, and while they stand nothing new rises inside their reach, from the village or from the open Plains. {{raidSafePieces}} pieces stay under the {{raidBasePieces}} that call most raids, so the camp draws none. Fulings still walk in from outside: it is a place to rest and mend, not a wall.
 
 **Mistlands.** Set a torch in every mine room you clear, so its Seekers stay dead, and come by day: the mist's Seekers carry more stars at night.
 
 **Deep North.** Until Kall falls, two raids stalk the north: the Jotnar, once the first Krigen or Hexen dies, and the Eyeless Ones, once the first of them does. Neither can start unless {{raidBasePieces}} base pieces stand around you, so sleep with a campfire and a bed and nothing else: {{raidSafePieces}} pieces call no raid. Keep the workbench and the portal more than {{raidClearM}} m from the bed, and remember that a hooded lantern counts as a base piece too.
 
-A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance mead, hold {{kallRetryBlood}} bloods spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
+A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance barley wine, hold {{kallRetryBlood}} bloods spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
 
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
@@ -121,9 +119,9 @@ A Dvergr lighthouse stands in her Mistlands on {{queenLighthouseIn}}% of seeds.
 
 A second setting, apart from the map, switches the portals off: every trip is walked or sailed. The Hardcore preset stops short of that: it keeps your wooden portals and only adds No boss portals. Ore and metal pass only the Ashlands' stone portal, never a wooden one, so the usual game already sails its metal; with no portals the wood, the stone and the food sail too, and so does every way home.
 
-Players who play this way move outward rather than back: a base in each biome with a bed in it, a starter kit of surtling cores, {{stonecutterIron}} iron for a stonecutter and copper for a forge, carts dropped onto the ship for room, and a spare ship, since a lost one strands you. Every boss's trophy still goes back to the Sacrificial Stones, so keep one road or dock to the start. What your start island holds is walked to, not sailed, which makes the island's count on [A speedrunner's start](/guides/a-speedrunners-start) worth more here than anywhere:
+Players who play this way move outward rather than back: a base in each biome with a bed in it, a starter kit of surtling cores, {{stonecutterIron}} iron for a stonecutter and copper for a forge, carts dropped onto the ship for room, and a spare ship, since a lost one strands you. Every boss's trophy still goes back to the Sacrificial Stones, so keep one road or dock to the start. What your starting island holds is walked to, not sailed, which makes the island's count on [A speedrunner's start](/guides/a-speedrunners-start) worth more here than anywhere:
 
-| On the start island | How often |
+| On the starting island | How often |
 |---|---|
 | The Black Forest | {{islandBlackForest}}% of seeds |
 | The Mountain | {{islandMountain}}% of seeds |
@@ -184,7 +182,7 @@ Silver is the haul that wants a road: {{silverShore}} m of mountainside as a rul
 
 **Deep North.** The ship hauls the whole workshop from your last base: the blast furnace's materials, the Black Forge's with its extensions, the frost foundry's iron, and everything a camp on the snow is built from.
 
-> **On a reverse run** the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
+> **On a reverse run**, the trip north is one-way only for a runner who left no portal behind in the [Black Forest](/guides/reverse-run#what-do-i-fetch-from-the-black-forest); with none, the way back is sailed on the boat that took you or on the next one you build. For metal nothing changes, since petrified tissue and Bloodgold never pass a wooden portal either.
 
 ## I play slowly and build: what comes for my home?
 

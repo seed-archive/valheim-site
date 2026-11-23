@@ -13,12 +13,13 @@ import type { ReactNode } from "react";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { SectionLinks } from "@/components/catalog/SectionLinks";
 import { PageTrail } from "@seed-archive/ui/page-trail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { RowLink } from "@/components/catalog/RowLink";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
-import crafting from "@/lib/valheim/crafting.json";
 import traders from "@/lib/valheim/traders.json";
+import { USED_IN } from "@/lib/valheim/used-in";
 
 export const metadata: Metadata = {
   title: "What to buy from the traders in Valheim — Seed Archive",
@@ -27,20 +28,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalog/traders" },
 };
 
+// The game's whole description of most valuables (`traders.json` text): it
+// says nothing the table does not, so the page leaves it out.
+const BARE_VALUABLE = "Valuable";
+
 const t = (id: string, values?: Record<string, string | number>) =>
   serverFormat(`pages.traders.${id}`, values);
 
-// What each item goes into: every recipe and build piece that takes it.
-const usedIn = new Map<string, { key: string; name: string }[]>();
-for (const r of [...crafting.gear, ...crafting.building]) {
-  for (const m of r.resources) {
-    const list = usedIn.get(m.key) ?? [];
-    if (!list.some((x) => x.key === r.key)) {
-      list.push({ key: r.key, name: r.name });
-    }
-    usedIn.set(m.key, list);
-  }
-}
+// What each item goes into (`lib/valheim/used-in.ts`).
+const usedIn = USED_IN;
 
 type Good = (typeof traders.traders)[number]["goods"][number];
 
@@ -195,196 +191,216 @@ export default function TradersPage() {
         maxWidth="lg"
         sx={{ py: 6, minHeight: "70vh" }}
       >
-        <PageTrail
-          steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.catalog"), href: "/catalog" },
-            { name: serverFormat("archive.guideTraders") },
-          ]}
-        />
-        <Typography variant="h3" component="h1" gutterBottom>
-          {t("title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          <b>{t("question")}</b> {t("answer")}
-        </Typography>
+        <SectionLinks>
+          <PageTrail
+            steps={[
+              { name: serverFormat("archive.home"), href: "/" },
+              { name: serverFormat("archive.catalog"), href: "/catalog" },
+              { name: serverFormat("archive.guideTraders") },
+            ]}
+          />
+          <Typography variant="h3" component="h1" gutterBottom>
+            {t("title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>
+            <b>{t("question")}</b> {t("answer")}
+          </Typography>
 
-        {traders.traders.map((trader) => (
-          <section key={trader.key}>
-            <Typography
-              variant="h4"
-              component="h2"
-              id={trader.key.toLowerCase()}
-              sx={{ mt: 5, mb: 1 }}
-            >
-              {trader.name}
-            </Typography>
-            <Typography sx={{ mb: 2 }}>{t(`about.${trader.key}`)}</Typography>
-            <TableContainer>
-              <Table size="small">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>{t("head.item")}</TableCell>
-                    <TableCell align="right">{t("head.price")}</TableCell>
-                    <TableCell>{t("head.appears")}</TableCell>
-                    <TableCell>{t("head.for")}</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {trader.goods.map((g) => {
-                    return (
-                      <TableRow key={g.key} id={g.key?.toLowerCase()}>
-                        <TableCell sx={{ whiteSpace: "nowrap" }}>
-                          <ItemIcon item={g.key ?? ""}>
-                            {g.name}
-                            {g.stack > 1 ? ` × ${g.stack}` : ""}
-                          </ItemIcon>
-                        </TableCell>
-                        <TableCell align="right">{g.price}</TableCell>
-                        <TableCell>{appears(g)}</TableCell>
-                        <TableCell>{forWhat(g)}</TableCell>
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </TableContainer>
-            {trader.key === "Hildir" ? hildirQuest() : null}
-            {trader.key === "BogWitch" ? (
-              <Typography sx={{ mt: 2 }}>{t("writhan")}</Typography>
-            ) : null}
-          </section>
-        ))}
+          {traders.traders.map((trader) => (
+            <section key={trader.key}>
+              <Typography
+                variant="h4"
+                component="h2"
+                id={trader.key.toLowerCase()}
+                sx={{ mt: 5, mb: 1 }}
+              >
+                {trader.name}
+              </Typography>
+              <Typography sx={{ mb: 2 }}>{t(`about.${trader.key}`)}</Typography>
+              <TableContainer>
+                <Table size="small">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>{t("head.item")}</TableCell>
+                      <TableCell align="right">{t("head.price")}</TableCell>
+                      <TableCell>{t("head.appears")}</TableCell>
+                      <TableCell>{t("head.for")}</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {trader.goods.map((g) => {
+                      return (
+                        <TableRow key={g.key} id={g.key?.toLowerCase()}>
+                          <TableCell sx={{ whiteSpace: "nowrap" }}>
+                            <ItemIcon item={g.key ?? ""}>
+                              {g.name}
+                              {g.stack > 1 ? ` × ${g.stack}` : ""}
+                            </ItemIcon>
+                          </TableCell>
+                          <TableCell align="right">{g.price}</TableCell>
+                          <TableCell>{appears(g)}</TableCell>
+                          <TableCell>{forWhat(g)}</TableCell>
+                        </TableRow>
+                      );
+                    })}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+              {trader.key === "Hildir" ? hildirQuest() : null}
+              {trader.key === "BogWitch" ? (
+                <Typography sx={{ mt: 2 }}>{t("writhan")}</Typography>
+              ) : null}
+            </section>
+          ))}
 
-        <Typography variant="h4" component="h2" id="sell" sx={{ mt: 5, mb: 1 }}>
-          {t("sell.title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>{t("sell.text")}</Typography>
-        <TableContainer>
-          <Table size="small">
-            <TableHead>
-              <TableRow>
-                <TableCell>{t("head.item")}</TableCell>
-                <TableCell align="right">{t("head.value")}</TableCell>
-                <TableCell>{t("head.about")}</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {traders.valuables.map((v) => (
-                <TableRow key={v.key} id={`sell-${v.key.toLowerCase()}`}>
-                  <TableCell sx={{ whiteSpace: "nowrap" }}>
-                    <ItemIcon item={v.key}>{v.name}</ItemIcon>
-                  </TableCell>
-                  <TableCell align="right">{v.value}</TableCell>
-                  <TableCell>
-                    {(usedIn.get(v.key) ?? []).length === 0 ? (
-                      <b>{t("currency")} </b>
-                    ) : null}
-                    {v.text}
-                    {(usedIn.get(v.key) ?? []).length > 0 ? (
-                      <>
-                        {" "}
-                        {t("goesInto")}{" "}
-                        {(usedIn.get(v.key) ?? []).map((u, i) => (
-                          <span key={u.key}>
-                            {i > 0 ? ", " : ""}
-                            <RowLink item={u.key}>{u.name}</RowLink>
-                          </span>
-                        ))}
-                        .
-                      </>
-                    ) : null}
-                  </TableCell>
+          <Typography
+            variant="h4"
+            component="h2"
+            id="sell"
+            sx={{ mt: 5, mb: 1 }}
+          >
+            {t("sell.title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>{t("sell.text")}</Typography>
+          <TableContainer>
+            <Table size="small">
+              <TableHead>
+                <TableRow>
+                  <TableCell>{t("head.item")}</TableCell>
+                  <TableCell align="right">{t("head.value")}</TableCell>
+                  <TableCell>{t("head.about")}</TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-
-        {/* The runner's shelf comes last: the page is the usual player's, and
-            the Speedrun guide links here (`#buy`). */}
-        <Typography variant="h4" component="h2" id="buy" sx={{ mt: 5, mb: 1 }}>
-          {t("essential.title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          {t("essential.text", { coins: essentialCoins })}
-        </Typography>
-        <TableContainer sx={{ mb: 2 }}>
-          <Table size="small">
-            <TableHead>
-              <TableRow>
-                <TableCell>{t("head.item")}</TableCell>
-                <TableCell>{t("head.trader")}</TableCell>
-                <TableCell align="right">{t("head.price")}</TableCell>
-                <TableCell>{t("head.appears")}</TableCell>
-                <TableCell>{t("head.for")}</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {essentials.map(({ row, goods, trader, price }) => {
-                const one = goods.length === 1 ? goods[0].good : null;
-                return (
-                  <TableRow key={row}>
+              </TableHead>
+              <TableBody>
+                {traders.valuables.map((v) => (
+                  <TableRow key={v.key} id={`sell-${v.key.toLowerCase()}`}>
+                    <TableCell sx={{ whiteSpace: "nowrap" }}>
+                      <ItemIcon item={v.key}>{v.name}</ItemIcon>
+                    </TableCell>
+                    <TableCell align="right">{v.value}</TableCell>
                     <TableCell>
-                      {one ? (
-                        <ItemIcon item={one.key ?? ""}>
-                          <Link href={`#${one.key?.toLowerCase()}`}>
-                            {one.name}
-                          </Link>
-                          {one.stack > 1 ? ` × ${one.stack}` : ""}
-                        </ItemIcon>
-                      ) : (
+                      {(usedIn.get(v.key) ?? []).length === 0 ? (
+                        <b>{t("currency")} </b>
+                      ) : null}
+                      {/* The game's text, unless it is the bare "Valuable" the
+                        whole table already says; it ends with no full stop,
+                        so one is added before the next sentence. */}
+                      {v.text === BARE_VALUABLE ? null : v.text}
+                      {v.text &&
+                      v.text !== BARE_VALUABLE &&
+                      !/[.!?]$/.test(v.text)
+                        ? "."
+                        : ""}
+                      {(usedIn.get(v.key) ?? []).length > 0 ? (
                         <>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              flexWrap: "wrap",
-                              gap: 0.5,
-                              mb: 0.5,
-                            }}
-                          >
-                            {goods.map(({ good }) => (
-                              <Link
-                                key={good.key}
-                                href={`#${good.key?.toLowerCase()}`}
-                                title={good.name ?? ""}
-                              >
-                                <ItemIcon item={good.key ?? ""} />
-                              </Link>
-                            ))}
-                          </Box>
-                          {t(`essential.row.${row}`)}
+                          {" "}
+                          <b>{t("goesInto")}</b>{" "}
+                          {(usedIn.get(v.key) ?? []).map((u, i) => (
+                            <span key={u.key}>
+                              {i > 0 ? ", " : ""}
+                              <RowLink item={u.key}>{u.name}</RowLink>
+                            </span>
+                          ))}
+                          .
                         </>
-                      )}
-                    </TableCell>
-                    <TableCell>{trader}</TableCell>
-                    <TableCell align="right">{price}</TableCell>
-                    <TableCell>
-                      {one
-                        ? appears(one)
-                        : goods
-                            .map(({ good }) => appears(good))
-                            .filter((x, i, a) => a.indexOf(x) === i)
-                            .join(", ")}
-                    </TableCell>
-                    <TableCell>
-                      {one ? forWhat(one) : t(`essential.for.${row}`)}
+                      ) : null}
                     </TableCell>
                   </TableRow>
-                );
-              })}
-              <TableRow>
-                <TableCell colSpan={2}>
-                  <b>{t("essential.total")}</b>
-                </TableCell>
-                <TableCell align="right">
-                  <b>{essentialCoins}</b>
-                </TableCell>
-                <TableCell colSpan={2} />
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+
+          {/* The runner's shelf comes last: the page is the usual player's, and
+            the Speedrun guide links here (`#buy`). */}
+          <Typography
+            variant="h4"
+            component="h2"
+            id="buy"
+            sx={{ mt: 5, mb: 1 }}
+          >
+            {t("essential.title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>
+            {t("essential.text", { coins: essentialCoins })}
+          </Typography>
+          <TableContainer sx={{ mb: 2 }}>
+            <Table size="small">
+              <TableHead>
+                <TableRow>
+                  <TableCell>{t("head.item")}</TableCell>
+                  <TableCell>{t("head.trader")}</TableCell>
+                  <TableCell align="right">{t("head.price")}</TableCell>
+                  <TableCell>{t("head.appears")}</TableCell>
+                  <TableCell>{t("head.for")}</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {essentials.map(({ row, goods, trader, price }) => {
+                  const one = goods.length === 1 ? goods[0].good : null;
+                  return (
+                    <TableRow key={row}>
+                      <TableCell>
+                        {one ? (
+                          <ItemIcon item={one.key ?? ""}>
+                            <Link href={`#${one.key?.toLowerCase()}`}>
+                              {one.name}
+                            </Link>
+                            {one.stack > 1 ? ` × ${one.stack}` : ""}
+                          </ItemIcon>
+                        ) : (
+                          <>
+                            <Box
+                              sx={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: 0.5,
+                                mb: 0.5,
+                              }}
+                            >
+                              {goods.map(({ good }) => (
+                                <Link
+                                  key={good.key}
+                                  href={`#${good.key?.toLowerCase()}`}
+                                  title={good.name ?? ""}
+                                >
+                                  <ItemIcon item={good.key ?? ""} />
+                                </Link>
+                              ))}
+                            </Box>
+                            {t(`essential.row.${row}`)}
+                          </>
+                        )}
+                      </TableCell>
+                      <TableCell>{trader}</TableCell>
+                      <TableCell align="right">{price}</TableCell>
+                      <TableCell>
+                        {one
+                          ? appears(one)
+                          : goods
+                              .map(({ good }) => appears(good))
+                              .filter((x, i, a) => a.indexOf(x) === i)
+                              .join(", ")}
+                      </TableCell>
+                      <TableCell>
+                        {one ? forWhat(one) : t(`essential.for.${row}`)}
+                      </TableCell>
+                    </TableRow>
+                  );
+                })}
+                <TableRow>
+                  <TableCell colSpan={2}>
+                    <b>{t("essential.total")}</b>
+                  </TableCell>
+                  <TableCell align="right">
+                    <b>{essentialCoins}</b>
+                  </TableCell>
+                  <TableCell colSpan={2} />
+                </TableRow>
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </SectionLinks>
       </Container>
       <ArchiveFooter />
     </>

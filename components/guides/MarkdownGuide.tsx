@@ -9,6 +9,7 @@ import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { sectionOf } from "@/lib/guides";
 import { serverFormat } from "@/lib/i18n/server";
+import { AnchorHeadings } from "@seed-archive/ui/anchor-heading";
 import type { Guide } from "@/lib/content";
 
 // A table that gets a chart is followed by a line naming its kind,
@@ -140,11 +141,35 @@ function markedCharts(
 // A guide written in Markdown (`lib/content.ts`): the header, Home › Guides ›
 // the page, its h1, and its body. The body's look follows the theme: h2 as
 // the site's section headings, links in the theme's colour, tables framed.
-export function MarkdownGuide(props: { guide: Guide; crumb: string }) {
+// A picture the page draws in its text stands on a line of its own,
+// `Figure: <name>`, filled from the page's `figures` (the Speedrun page's
+// strip, 2026-11-22); the line itself is not shown.
+const FIGURE = /<p>Figure: (\w+)<\/p>/;
+
+// `children`: what a page shows after its text, a table no Markdown holds (the
+// wind page's hours). `figures`: the pictures its `Figure:` lines name.
+export function MarkdownGuide(props: {
+  guide: Guide;
+  crumb: string;
+  children?: React.ReactNode;
+  figures?: Record<string, React.ReactNode>;
+}) {
   const parts = markedCharts(props.guide.html);
   // Home › Guides › its section › the page; a guide out of the menu has no section.
   const section = sectionOf(props.crumb);
-  const html = (__html: string) => <Box dangerouslySetInnerHTML={{ __html }} />;
+  // A part's HTML, each `Figure:` line in it replaced by its picture.
+  const html = (__html: string) => {
+    const pieces = __html.split(FIGURE);
+    return pieces.map((piece, i) =>
+      i % 2 === 1 ? (
+        <Box key={i} sx={{ mb: 2 }}>
+          {props.figures?.[piece]}
+        </Box>
+      ) : (
+        <Box key={i} dangerouslySetInnerHTML={{ __html: piece }} />
+      ),
+    );
+  };
   return (
     <>
       <ArchiveBar />
@@ -166,14 +191,16 @@ export function MarkdownGuide(props: { guide: Guide; crumb: string }) {
         <Typography variant="h3" component="h1" gutterBottom>
           {props.guide.title}
         </Typography>
-        <Box
+        {/* Every section heading is its own link, copied on a click, as on
+            the No Man's Sky section (the owner, 2026-11-23). */}
+        <AnchorHeadings
+          copied={serverFormat("pages.crafting.copied")}
           sx={{
             typography: "body1",
             "& h2": {
               typography: "h5",
               mt: 5,
               mb: 1,
-              scrollMarginTop: { xs: 64, sm: 72 },
             },
             "& h3": { typography: "h6", mt: 3, mb: 1 },
             "& p, & ul, & ol": { mb: 2, mt: 0 },
@@ -210,7 +237,8 @@ export function MarkdownGuide(props: { guide: Guide; crumb: string }) {
               <Box key={at}>{html(part.html)}</Box>
             ),
           )}
-        </Box>
+        </AnchorHeadings>
+        {props.children}
       </Container>
       <ArchiveFooter />
     </>

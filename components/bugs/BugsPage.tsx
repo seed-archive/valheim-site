@@ -12,6 +12,8 @@ import { slug } from "@/lib/slug";
 // between them (ZoneSystem.PlaceLocations: Random.Range(0, 16) · 22.5°).
 const YAWS = 16;
 const YAW_STEP = 22.5;
+// The Helmet of the Protector's last level (`HelmetDNHeavy`, m_maxQuality).
+const PROTECTOR_MAX = 4;
 
 // The bugs in the game's world generation a player meets on a seed; each one is
 // proven in the Valheim generator's notes.
@@ -19,6 +21,7 @@ export function BugsPage() {
   const intl = useIntl();
   const crypts = intl.formatMessage({ id: "pages.bugs.crypts.title" });
   const loot = intl.formatMessage({ id: "pages.bugs.loot.title" });
+  const protector = intl.formatMessage({ id: "pages.bugs.protector.title" });
   const bold = (text: React.ReactNode) => <strong>{text}</strong>;
   return (
     <>
@@ -52,7 +55,13 @@ export function BugsPage() {
         <Typography sx={{ mb: 2 }}>
           <FormattedMessage id="pages.bugs.crypts.maps" />
         </Typography>
-        <Typography variant="h5" component="h2" id={slug(loot)} gutterBottom sx={{ mt: 4 }}>
+        <Typography
+          variant="h5"
+          component="h2"
+          id={slug(loot)}
+          gutterBottom
+          sx={{ mt: 4 }}
+        >
           {loot}
         </Typography>
         <Typography sx={{ mb: 2 }}>
@@ -62,10 +71,31 @@ export function BugsPage() {
           <FormattedMessage id="pages.bugs.loot.exact" values={{ b: bold }} />
         </Typography>
         <Typography sx={{ mb: 2 }}>
-          <FormattedMessage id="pages.bugs.loot.overYaws" values={{ b: bold, yaws: YAWS }} />
+          <FormattedMessage
+            id="pages.bugs.loot.overYaws"
+            values={{ b: bold, yaws: YAWS }}
+          />
         </Typography>
         <Typography sx={{ mb: 2 }}>
           <FormattedMessage id="pages.bugs.loot.atPlay" values={{ b: bold }} />
+        </Typography>
+        <Typography
+          variant="h5"
+          component="h2"
+          id={slug(protector)}
+          gutterBottom
+          sx={{ mt: 4 }}
+        >
+          {protector}
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage id="pages.bugs.protector.why" />
+        </Typography>
+        <Typography sx={{ mb: 2 }}>
+          <FormattedMessage
+            id="pages.bugs.protector.what"
+            values={{ max: PROTECTOR_MAX }}
+          />
         </Typography>
       </Container>
       <ArchiveFooter />

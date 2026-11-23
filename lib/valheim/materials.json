@@ -44,9 +44,7 @@
     "made": false,
     "name": "Barber Kit",
     "places": [],
-    "soldBy": [
-      "Hildir"
-    ]
+    "soldBy": ["Hildir"]
   },
   {
     "biome": "meadows",
@@ -60,9 +58,7 @@
     "made": false,
     "name": "Basic Fireworks",
     "places": [],
-    "soldBy": [
-      "Hildir"
-    ]
+    "soldBy": ["Hildir"]
   },
   {
     "biome": "meadows",
@@ -94,9 +90,7 @@
     "key": "RawMeat",
     "made": false,
     "name": "Boar Meat",
-    "places": [
-      "runestone"
-    ],
+    "places": ["abandonedFarm", "runestone"],
     "soldBy": []
   },
   {
@@ -115,9 +109,7 @@
     "key": "TrophyBoar",
     "made": false,
     "name": "Boar Trophy",
-    "places": [
-      "runestone"
-    ],
+    "places": ["abandonedFarm", "runestone"],
     "soldBy": []
   },
   {
@@ -160,6 +152,58 @@
       "tarPit",
       "trollCave",
       "voltureNest"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader1Weapon",
+    "made": false,
+    "name": "Bronze Battle Idol",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "burialChamber",
+      "draugrVillage",
+      "hildirCrypt",
+      "ruins",
+      "shipSetting",
+      "stoneHouse",
+      "stoneTower",
+      "swampHut",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader1Armor",
+    "made": false,
+    "name": "Bronze Protection Idol",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "burialChamber",
+      "draugrVillage",
+      "hildirCrypt",
+      "ruins",
+      "shipSetting",
+      "stoneHouse",
+      "stoneTower",
+      "swampHut",
+      "trollCave"
     ],
     "soldBy": []
   },
@@ -232,6 +276,7 @@
       "infestedMine",
       "lumberCamp",
       "morgenHole",
+      "morkhalla",
       "northHomestead",
       "northVillage",
       "ruins",
@@ -286,9 +331,7 @@
     "key": "AxeHead1",
     "made": false,
     "name": "Curious Axe Head",
-    "places": [
-      "abandonedHouse"
-    ],
+    "places": ["abandonedHouse"],
     "soldBy": []
   },
   {
@@ -396,9 +439,11 @@
     "made": false,
     "name": "Draugr Elite Trophy",
     "places": [
+      "draugrVillage",
       "grave",
       "northVillage",
       "ruins",
+      "sunkenCrypt",
       "well"
     ],
     "soldBy": []
@@ -420,6 +465,7 @@
     "made": false,
     "name": "Draugr Trophy",
     "places": [
+      "draugrVillage",
       "grave",
       "ruins",
       "runestone",
@@ -468,6 +514,7 @@
     "made": false,
     "name": "Entrails",
     "places": [
+      "draugrVillage",
       "frostCave",
       "grave",
       "hildirCave",
@@ -543,12 +590,7 @@
     "key": "Flint",
     "made": false,
     "name": "Flint",
-    "places": [
-      "abandonedFarm",
-      "abandonedHouse",
-      "draugrVillage",
-      "ruins"
-    ],
+    "places": ["abandonedFarm", "abandonedHouse", "draugrVillage", "ruins"],
     "soldBy": []
   },
   {
@@ -616,9 +658,7 @@
     "made": false,
     "name": "Iron Pit",
     "places": [],
-    "soldBy": [
-      "Hildir"
-    ]
+    "soldBy": ["Hildir"]
   },
   {
     "biome": "meadows",
@@ -641,6 +681,9 @@
     "made": false,
     "name": "Leather Scraps",
     "places": [
+      "abandonedFarm",
+      "frostCave",
+      "hildirCave",
       "ruins",
       "runestone",
       "trollCave"
@@ -658,11 +701,7 @@
     "key": "Mushroom",
     "made": false,
     "name": "Mushroom",
-    "places": [
-      "abandonedFarm",
-      "abandonedHouse",
-      "start"
-    ],
+    "places": ["abandonedFarm", "abandonedHouse", "start"],
     "soldBy": []
   },
   {
@@ -676,9 +715,7 @@
     "key": "AxeHead2",
     "made": false,
     "name": "Mysterious Axe Head",
-    "places": [
-      "abandonedHouse"
-    ],
+    "places": ["abandonedHouse"],
     "soldBy": []
   },
   {
@@ -697,12 +734,7 @@
     "key": "NeckTail",
     "made": false,
     "name": "Neck Tail",
-    "places": [
-      "haldor",
-      "hildir",
-      "kall",
-      "northMemorial"
-    ],
+    "places": ["haldor", "hildir", "kall", "northMemorial"],
     "soldBy": []
   },
   {
@@ -721,12 +753,7 @@
     "key": "TrophyNeck",
     "made": false,
     "name": "Neck Trophy",
-    "places": [
-      "haldor",
-      "hildir",
-      "kall",
-      "northMemorial"
-    ],
+    "places": ["haldor", "hildir", "kall", "northMemorial"],
     "soldBy": []
   },
   {
@@ -760,10 +787,7 @@
     "key": "Raspberry",
     "made": false,
     "name": "Raspberries",
-    "places": [
-      "abandonedFarm",
-      "start"
-    ],
+    "places": ["abandonedFarm", "start"],
     "soldBy": []
   },
   {
@@ -794,12 +818,7 @@
     "key": "Resin",
     "made": false,
     "name": "Resin",
-    "places": [
-      "abandonedHouse",
-      "bogWitch",
-      "greydwarfCamp",
-      "ruins"
-    ],
+    "places": ["abandonedHouse", "bogWitch", "greydwarfCamp", "ruins"],
     "soldBy": []
   },
   {
@@ -813,9 +832,7 @@
     "key": "StoneRock",
     "made": false,
     "name": "Rock",
-    "places": [
-      "rockClearing"
-    ],
+    "places": ["rockClearing"],
     "soldBy": []
   },
   {
@@ -1016,6 +1033,44 @@
     "soldBy": []
   },
   {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader0Weapon",
+    "made": false,
+    "name": "Wooden Battle Idol",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "draugrVillage",
+      "shipSetting"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "meadows",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader0Armor",
+    "made": false,
+    "name": "Wooden Protection Idol",
+    "places": [
+      "abandonedFarm",
+      "abandonedHouse",
+      "draugrVillage",
+      "shipSetting"
+    ],
+    "soldBy": []
+  },
+  {
     "biome": "blackForest",
     "caughtWith": [],
     "droppedBy": [],
@@ -1045,9 +1100,7 @@
     "key": "AncientSeed",
     "made": false,
     "name": "Ancient Seed",
-    "places": [
-      "greydwarfCamp"
-    ],
+    "places": ["greydwarfCamp"],
     "soldBy": []
   },
   {
@@ -1062,9 +1115,7 @@
     "made": false,
     "name": "Barrel Hoops",
     "places": [],
-    "soldBy": [
-      "Haldor"
-    ]
+    "soldBy": ["Haldor"]
   },
   {
     "biome": "blackForest",
@@ -1086,9 +1137,7 @@
     "key": "BjornHide",
     "made": false,
     "name": "Bear Hide",
-    "places": [
-      "bearDen"
-    ],
+    "places": ["bearDen"],
     "soldBy": []
   },
   {
@@ -1111,11 +1160,7 @@
     "key": "BjornMeat",
     "made": false,
     "name": "Bear Meat",
-    "places": [
-      "bearDen",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["bearDen", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -1134,9 +1179,7 @@
     "key": "BjornPaw",
     "made": false,
     "name": "Bear Paw",
-    "places": [
-      "bearDen"
-    ],
+    "places": ["bearDen"],
     "soldBy": []
   },
   {
@@ -1155,9 +1198,7 @@
     "key": "TrophyBjorn",
     "made": false,
     "name": "Bear Trophy",
-    "places": [
-      "bearDen"
-    ],
+    "places": ["bearDen"],
     "soldBy": []
   },
   {
@@ -1185,10 +1226,7 @@
     "key": "Blueberries",
     "made": false,
     "name": "Blueberries",
-    "places": [
-      "bearDen",
-      "ruins"
-    ],
+    "places": ["bearDen", "ruins"],
     "soldBy": []
   },
   {
@@ -1221,7 +1259,7 @@
     "key": "TrophySkeletonHildir",
     "made": false,
     "name": "Brenna Trophy",
-    "places": [],
+    "places": ["hildirCrypt"],
     "soldBy": []
   },
   {
@@ -1278,9 +1316,7 @@
     "key": "Pukeberries",
     "made": false,
     "name": "Bukeperries",
-    "places": [
-      "greydwarfCamp"
-    ],
+    "places": ["fulingVillage", "greydwarfCamp", "hildirFortress"],
     "soldBy": []
   },
   {
@@ -1313,9 +1349,7 @@
     "key": "CarrotSeeds",
     "made": false,
     "name": "Carrot Seeds",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["northVillage"],
     "soldBy": []
   },
   {
@@ -1383,9 +1417,7 @@
     "key": "Copper",
     "made": true,
     "name": "Copper",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -1418,9 +1450,7 @@
     "key": "RoundLog",
     "made": false,
     "name": "Corewood",
-    "places": [
-      "theHole"
-    ],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -1457,7 +1487,7 @@
     "key": "Ectoplasm",
     "made": false,
     "name": "Ectoplasm",
-    "places": [],
+    "places": ["burialChamber", "hildirCrypt"],
     "soldBy": []
   },
   {
@@ -1510,12 +1540,8 @@
     "key": "FishingBait",
     "made": false,
     "name": "Fishing Bait",
-    "places": [
-      "frostCave"
-    ],
-    "soldBy": [
-      "Haldor"
-    ]
+    "places": ["frostCave"],
+    "soldBy": ["Haldor"]
   },
   {
     "biome": "blackForest",
@@ -1533,7 +1559,7 @@
     "key": "TrophyGhost",
     "made": false,
     "name": "Ghost Trophy",
-    "places": [],
+    "places": ["burialChamber", "hildirCrypt"],
     "soldBy": []
   },
   {
@@ -1552,10 +1578,7 @@
     "key": "TrophyGreydwarfBrute",
     "made": false,
     "name": "Greydwarf Brute Trophy",
-    "places": [
-      "greydwarfCamp",
-      "northVillage"
-    ],
+    "places": ["greydwarfCamp", "northVillage"],
     "soldBy": []
   },
   {
@@ -1582,10 +1605,7 @@
     "key": "GreydwarfEye",
     "made": false,
     "name": "Greydwarf Eye",
-    "places": [
-      "greydwarfCamp",
-      "ruins"
-    ],
+    "places": ["greydwarfCamp", "ruins"],
     "soldBy": []
   },
   {
@@ -1604,9 +1624,7 @@
     "key": "TrophyGreydwarfShaman",
     "made": false,
     "name": "Greydwarf Shaman Trophy",
-    "places": [
-      "greydwarfCamp"
-    ],
+    "places": ["greydwarfCamp"],
     "soldBy": []
   },
   {
@@ -1625,9 +1643,54 @@
     "key": "TrophyGreydwarf",
     "made": false,
     "name": "Greydwarf Trophy",
+    "places": ["greydwarfCamp", "northVillage"],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader2Weapon",
+    "made": false,
+    "name": "Iron Battle Idol",
     "places": [
-      "greydwarfCamp",
-      "northVillage"
+      "burialChamber",
+      "grave",
+      "hildirCrypt",
+      "ruins",
+      "stoneHouse",
+      "stoneTower",
+      "sunkenCrypt",
+      "swampHut",
+      "trollCave"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "blackForest",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader2Armor",
+    "made": false,
+    "name": "Iron Protection Idol",
+    "places": [
+      "burialChamber",
+      "grave",
+      "hildirCrypt",
+      "ruins",
+      "stoneHouse",
+      "stoneTower",
+      "sunkenCrypt",
+      "swampHut",
+      "trollCave"
     ],
     "soldBy": []
   },
@@ -1712,11 +1775,7 @@
     "key": "MeadHealthMinor",
     "made": true,
     "name": "Minor Healing Mead",
-    "places": [
-      "charredRuins",
-      "infestedMine",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "infestedMine", "morgenHole"],
     "soldBy": []
   },
   {
@@ -1730,11 +1789,7 @@
     "key": "MeadStaminaMinor",
     "made": true,
     "name": "Minor Stamina Mead",
-    "places": [
-      "charredRuins",
-      "infestedMine",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "infestedMine", "morgenHole"],
     "soldBy": []
   },
   {
@@ -1790,9 +1845,7 @@
     "key": "MeadPoisonResist",
     "made": true,
     "name": "Poison Resistance Mead",
-    "places": [
-      "infestedMine"
-    ],
+    "places": ["infestedMine"],
     "soldBy": []
   },
   {
@@ -1839,7 +1892,7 @@
     "key": "TrophySkeletonPoison",
     "made": false,
     "name": "Rancid Remains Trophy",
-    "places": [],
+    "places": ["burialChamber"],
     "soldBy": []
   },
   {
@@ -1924,9 +1977,7 @@
     "key": "Thistle",
     "made": false,
     "name": "Thistle",
-    "places": [
-      "rockClearing"
-    ],
+    "places": ["rockClearing"],
     "soldBy": []
   },
   {
@@ -1940,9 +1991,7 @@
     "key": "Tin",
     "made": true,
     "name": "Tin",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -1961,10 +2010,7 @@
     "key": "TinOre",
     "made": false,
     "name": "Tin Ore",
-    "places": [
-      "ruins",
-      "theHole"
-    ],
+    "places": ["ruins", "theHole"],
     "soldBy": []
   },
   {
@@ -1988,9 +2034,7 @@
     "key": "TrollHide",
     "made": false,
     "name": "Troll Hide",
-    "places": [
-      "trollCave"
-    ],
+    "places": ["trollCave"],
     "soldBy": []
   },
   {
@@ -2009,9 +2053,7 @@
     "key": "TrophyFrostTroll",
     "made": false,
     "name": "Troll Trophy",
-    "places": [
-      "trollCave"
-    ],
+    "places": ["trollCave"],
     "soldBy": []
   },
   {
@@ -2064,11 +2106,7 @@
     "key": "ElderBark",
     "made": false,
     "name": "Ancient Bark",
-    "places": [
-      "grave",
-      "ruins",
-      "sunkenCrypt"
-    ],
+    "places": ["grave", "ruins", "sunkenCrypt"],
     "soldBy": []
   },
   {
@@ -2119,9 +2157,7 @@
     "key": "TrophyBlob",
     "made": false,
     "name": "Blob Trophy",
-    "places": [
-      "sunkenCrypt"
-    ],
+    "places": ["sunkenCrypt"],
     "soldBy": []
   },
   {
@@ -2159,9 +2195,7 @@
     "key": "TrophyBonemass",
     "made": false,
     "name": "Bonemass Trophy",
-    "places": [
-      "bonemass"
-    ],
+    "places": ["bonemass"],
     "soldBy": []
   },
   {
@@ -2176,9 +2210,7 @@
     "made": false,
     "name": "Candle Wick",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2239,9 +2271,7 @@
     "made": false,
     "name": "Corked Vial",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2255,9 +2285,7 @@
     "made": false,
     "name": "Cured Squirrel Hamstring",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2285,9 +2313,7 @@
     "made": false,
     "name": "Fresh Seaweed",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2333,9 +2359,7 @@
     "key": "Guck",
     "made": false,
     "name": "Guck",
-    "places": [
-      "guckTree"
-    ],
+    "places": ["guckTree"],
     "soldBy": []
   },
   {
@@ -2349,12 +2373,7 @@
     "key": "Iron",
     "made": true,
     "name": "Iron",
-    "places": [
-      "charredRuins",
-      "frostCave",
-      "hildirCave",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "frostCave", "hildirCave", "morgenHole"],
     "soldBy": []
   },
   {
@@ -2402,9 +2421,7 @@
     "made": false,
     "name": "Ivy Seeds",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2422,9 +2439,7 @@
     "key": "TrophyKvastur",
     "made": false,
     "name": "Kvastur",
-    "places": [
-      "bogWitch"
-    ],
+    "places": ["bogWitch"],
     "soldBy": []
   },
   {
@@ -2458,9 +2473,7 @@
     "made": false,
     "name": "Love Potion",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2557,9 +2570,7 @@
     "key": "MeadHealthMedium",
     "made": true,
     "name": "Medium Healing Mead",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -2601,9 +2612,7 @@
     "key": "Ooze",
     "made": false,
     "name": "Ooze",
-    "places": [
-      "sunkenCrypt"
-    ],
+    "places": ["sunkenCrypt"],
     "soldBy": []
   },
   {
@@ -2618,9 +2627,7 @@
     "made": false,
     "name": "Powdered Dragon Eggshells",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2634,9 +2641,7 @@
     "made": false,
     "name": "Pungent Pebbles",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2682,9 +2687,7 @@
     "key": "Sausages",
     "made": true,
     "name": "Sausages",
-    "places": [
-      "infestedMine"
-    ],
+    "places": ["infestedMine"],
     "soldBy": []
   },
   {
@@ -2724,9 +2727,7 @@
     "made": false,
     "name": "Seasoning of the Gourd",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2752,6 +2753,52 @@
   {
     "biome": "swamp",
     "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader3Weapon",
+    "made": false,
+    "name": "Silver Battle Idol",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "grave",
+      "hildirCave",
+      "ruins",
+      "stoneTower",
+      "sunkenCrypt",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader3Armor",
+    "made": false,
+    "name": "Silver Protection Idol",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "grave",
+      "hildirCave",
+      "ruins",
+      "stoneTower",
+      "sunkenCrypt",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "swamp",
+    "caughtWith": [],
     "droppedBy": [
       {
         "key": "Surtling",
@@ -2765,9 +2812,7 @@
     "key": "TrophySurtling",
     "made": false,
     "name": "Surtling Trophy",
-    "places": [
-      "fireHole"
-    ],
+    "places": ["fireHole"],
     "soldBy": []
   },
   {
@@ -2796,9 +2841,7 @@
     "made": false,
     "name": "Thunder Stone",
     "places": [],
-    "soldBy": [
-      "Haldor"
-    ]
+    "soldBy": ["Haldor"]
   },
   {
     "biome": "swamp",
@@ -2853,9 +2896,7 @@
     "key": "TurnipSeeds",
     "made": false,
     "name": "Turnip Seeds",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["northVillage"],
     "soldBy": []
   },
   {
@@ -2897,11 +2938,7 @@
     "key": "WitheredBone",
     "made": false,
     "name": "Withered Bone",
-    "places": [
-      "grave",
-      "ruins",
-      "sunkenCrypt"
-    ],
+    "places": ["grave", "ruins", "sunkenCrypt"],
     "soldBy": []
   },
   {
@@ -2916,9 +2953,7 @@
     "made": false,
     "name": "Woodland Herb Blend",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "swamp",
@@ -2936,9 +2971,7 @@
     "key": "TrophyWraith",
     "made": false,
     "name": "Wraith Trophy",
-    "places": [
-      "swampHut"
-    ],
+    "places": ["swampHut"],
     "soldBy": []
   },
   {
@@ -2991,9 +3024,7 @@
     "made": false,
     "name": "Ymir Flesh",
     "places": [],
-    "soldBy": [
-      "Haldor"
-    ]
+    "soldBy": ["Haldor"]
   },
   {
     "biome": "ocean",
@@ -3068,9 +3099,7 @@
     "made": false,
     "name": "Seafarer's Herbs",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "ocean",
@@ -3164,6 +3193,56 @@
     "fished": false,
     "gathered": false,
     "grown": false,
+    "itemType": 1,
+    "key": "Upgrader4Weapon",
+    "made": false,
+    "name": "Black Metal Battle Idol",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirCave",
+      "hildirFortress",
+      "ruins",
+      "stoneHouse",
+      "stoneTower",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader4Armor",
+    "made": false,
+    "name": "Black Metal Protection Idol",
+    "places": [
+      "abandonedHouse",
+      "frostCave",
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirCave",
+      "hildirFortress",
+      "ruins",
+      "stoneHouse",
+      "stoneTower",
+      "well"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mountain",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
     "itemType": 2,
     "key": "MeadTamer",
     "made": true,
@@ -3201,11 +3280,7 @@
     "key": "Crystal",
     "made": false,
     "name": "Crystal",
-    "places": [
-      "abandonedHouse",
-      "frostCave",
-      "hildirCave"
-    ],
+    "places": ["abandonedHouse", "frostCave", "hildirCave"],
     "soldBy": []
   },
   {
@@ -3224,7 +3299,7 @@
     "key": "TrophyCultist",
     "made": false,
     "name": "Cultist Trophy",
-    "places": [],
+    "places": ["frostCave"],
     "soldBy": []
   },
   {
@@ -3253,10 +3328,6 @@
       {
         "key": "Hatchling",
         "name": "Drake"
-      },
-      {
-        "key": "TheHive",
-        "name": "TheHive"
       }
     ],
     "fished": false,
@@ -3266,9 +3337,7 @@
     "key": "TrophyHatchling",
     "made": false,
     "name": "Drake Trophy",
-    "places": [
-      "drakeNest"
-    ],
+    "places": ["drakeNest"],
     "soldBy": []
   },
   {
@@ -3315,10 +3384,7 @@
     "key": "WolfClaw",
     "made": false,
     "name": "Fenris Claw",
-    "places": [
-      "frostCave",
-      "hildirCave"
-    ],
+    "places": ["frostCave", "hildirCave"],
     "soldBy": []
   },
   {
@@ -3332,10 +3398,7 @@
     "key": "WolfHairBundle",
     "made": false,
     "name": "Fenris Hair",
-    "places": [
-      "frostCave",
-      "hildirCave"
-    ],
+    "places": ["frostCave", "hildirCave"],
     "soldBy": []
   },
   {
@@ -3345,10 +3408,6 @@
       {
         "key": "Hatchling",
         "name": "Drake"
-      },
-      {
-        "key": "TheHive",
-        "name": "TheHive"
       }
     ],
     "fished": false,
@@ -3358,9 +3417,7 @@
     "key": "FreezeGland",
     "made": false,
     "name": "Freeze Gland",
-    "places": [
-      "drakeNest"
-    ],
+    "places": ["drakeNest"],
     "soldBy": []
   },
   {
@@ -3379,7 +3436,7 @@
     "key": "TrophyCultist_Hildir",
     "made": false,
     "name": "Geirrhafa Trophy",
-    "places": [],
+    "places": ["hildirCave"],
     "soldBy": []
   },
   {
@@ -3465,10 +3522,7 @@
     "key": "Onion",
     "made": false,
     "name": "Onion",
-    "places": [
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -3487,11 +3541,7 @@
     "key": "OnionSeeds",
     "made": false,
     "name": "Onion Seeds",
-    "places": [
-      "abandonedHouse",
-      "stoneTower",
-      "well"
-    ],
+    "places": ["abandonedHouse", "stoneTower", "well"],
     "soldBy": []
   },
   {
@@ -3524,11 +3574,7 @@
     "key": "JuteRed",
     "made": false,
     "name": "Red Jute",
-    "places": [
-      "frostCave",
-      "hildirCave",
-      "morkhalla"
-    ],
+    "places": ["frostCave", "hildirCave", "morkhalla"],
     "soldBy": []
   },
   {
@@ -3547,10 +3593,7 @@
     "key": "Silver",
     "made": true,
     "name": "Silver",
-    "places": [
-      "charredRuins",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "morgenHole"],
     "soldBy": []
   },
   {
@@ -3583,9 +3626,7 @@
     "key": "TrophySGolem",
     "made": false,
     "name": "Stone Golem Trophy",
-    "places": [
-      "abandonedHouse"
-    ],
+    "places": ["abandonedHouse", "frostCave"],
     "soldBy": []
   },
   {
@@ -3618,7 +3659,7 @@
     "key": "TrophyUlv",
     "made": false,
     "name": "Ulv Trophy",
-    "places": [],
+    "places": ["frostCave", "hildirCave"],
     "soldBy": []
   },
   {
@@ -3645,7 +3686,7 @@
     "key": "WolfFang",
     "made": false,
     "name": "Wolf Fang",
-    "places": [],
+    "places": ["frostCave", "hildirCave"],
     "soldBy": []
   },
   {
@@ -3697,9 +3738,7 @@
     "key": "WolfPelt",
     "made": false,
     "name": "Wolf Pelt",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -3838,6 +3877,58 @@
     "caughtWith": [],
     "droppedBy": [],
     "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader5Weapon",
+    "made": false,
+    "name": "Black Marble Battle Idol",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "fortress",
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "infestedMine",
+      "morgenHole",
+      "ruins",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader5Armor",
+    "made": false,
+    "name": "Black Marble Protection Idol",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "fortress",
+      "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
+      "infestedMine",
+      "morgenHole",
+      "ruins",
+      "stoneHouse",
+      "stoneTower"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "plains",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
     "gathered": false,
     "grown": false,
     "itemType": 1,
@@ -3912,10 +4003,7 @@
     "key": "Bread",
     "made": true,
     "name": "Bread",
-    "places": [
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -4041,12 +4129,8 @@
     "key": "ChickenEgg",
     "made": false,
     "name": "Egg",
-    "places": [
-      "hildirFortress"
-    ],
-    "soldBy": [
-      "Haldor"
-    ]
+    "places": ["hildirFortress"],
+    "soldBy": ["Haldor"]
   },
   {
     "biome": "plains",
@@ -4101,11 +4185,7 @@
     "key": "Flax",
     "made": false,
     "name": "Flax",
-    "places": [
-      "fulingVillage",
-      "morkhalla",
-      "northVillage"
-    ],
+    "places": ["fulingVillage", "morkhalla", "northVillage"],
     "soldBy": []
   },
   {
@@ -4120,9 +4200,7 @@
     "made": false,
     "name": "Fragrant Bundle",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "plains",
@@ -4154,10 +4232,7 @@
     "key": "TrophyGoblinBrute",
     "made": false,
     "name": "Fuling Berserker Trophy",
-    "places": [
-      "northVillage",
-      "standingStones"
-    ],
+    "places": ["fulingVillage", "northVillage", "standingStones"],
     "soldBy": []
   },
   {
@@ -4176,9 +4251,7 @@
     "key": "TrophyGoblinShaman",
     "made": false,
     "name": "Fuling Shaman Trophy",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["fulingVillage", "hildirFortress", "northVillage"],
     "soldBy": []
   },
   {
@@ -4199,9 +4272,10 @@
     "name": "Fuling Trophy",
     "places": [
       "fulingOutpost",
+      "fulingVillage",
+      "hildirFortress",
       "ruins",
       "standingStones",
-      "stoneHouse",
       "stoneTower"
     ],
     "soldBy": []
@@ -4236,9 +4310,7 @@
     "key": "TrophyGrowth",
     "made": false,
     "name": "Growth Trophy",
-    "places": [
-      "tarPit"
-    ],
+    "places": ["tarPit"],
     "soldBy": []
   },
   {
@@ -4318,9 +4390,7 @@
     "key": "LoxPelt",
     "made": false,
     "name": "Lox Pelt",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -4395,9 +4465,7 @@
     "key": "MeadStaminaMedium",
     "made": true,
     "name": "Medium Stamina Mead",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -4412,9 +4480,7 @@
     "made": false,
     "name": "Mountain Peak Pepper Powder",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "plains",
@@ -4472,9 +4538,7 @@
     "key": "RottenMeat",
     "made": false,
     "name": "Rotten Meat",
-    "places": [
-      "morgenHole"
-    ],
+    "places": ["morgenHole"],
     "soldBy": []
   },
   {
@@ -4489,9 +4553,7 @@
     "made": false,
     "name": "Scythe Handle",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "plains",
@@ -4509,9 +4571,7 @@
     "key": "Tar",
     "made": false,
     "name": "Tar",
-    "places": [
-      "tarPit"
-    ],
+    "places": ["tarPit"],
     "soldBy": []
   },
   {
@@ -4530,7 +4590,7 @@
     "key": "TrophyGoblinBruteBrosBrute",
     "made": false,
     "name": "Thungr Trophy",
-    "places": [],
+    "places": ["hildirFortress"],
     "soldBy": []
   },
   {
@@ -4545,9 +4605,7 @@
     "made": false,
     "name": "Toadstool",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "plains",
@@ -4565,9 +4623,7 @@
     "key": "YagluthDrop",
     "made": false,
     "name": "Torn Spirit",
-    "places": [
-      "yagluth"
-    ],
+    "places": ["yagluth"],
     "soldBy": []
   },
   {
@@ -4680,9 +4736,7 @@
     "key": "TrophyGoblinKing",
     "made": false,
     "name": "Yagluth Trophy",
-    "places": [
-      "yagluth"
-    ],
+    "places": ["yagluth"],
     "soldBy": []
   },
   {
@@ -4715,10 +4769,7 @@
     "key": "BlackCore",
     "made": false,
     "name": "Black Core",
-    "places": [
-      "infestedMine",
-      "morkhalla"
-    ],
+    "places": ["infestedMine", "morkhalla"],
     "soldBy": []
   },
   {
@@ -4767,9 +4818,7 @@
     "key": "GiantBloodSack",
     "made": false,
     "name": "Blood Clot",
-    "places": [
-      "giantRemains"
-    ],
+    "places": ["giantRemains", "infestedMine"],
     "soldBy": []
   },
   {
@@ -4788,11 +4837,7 @@
     "key": "JuteBlue",
     "made": false,
     "name": "Blue Jute",
-    "places": [
-      "dvergrRuins",
-      "infestedMine",
-      "theQueen"
-    ],
+    "places": ["dvergrRuins", "infestedMine", "theQueen"],
     "soldBy": []
   },
   {
@@ -4815,12 +4860,7 @@
     "key": "Carapace",
     "made": false,
     "name": "Carapace",
-    "places": [
-      "dvergrRuins",
-      "excavation",
-      "infestedMine",
-      "theQueen"
-    ],
+    "places": ["dvergrRuins", "excavation", "infestedMine", "theQueen"],
     "soldBy": []
   },
   {
@@ -4896,10 +4936,7 @@
     "key": "DvergrNeedle",
     "made": false,
     "name": "Dvergr Extractor",
-    "places": [
-      "dvergrRuins",
-      "excavation"
-    ],
+    "places": ["dvergrRuins", "excavation"],
     "soldBy": []
   },
   {
@@ -4913,12 +4950,7 @@
     "key": "Lantern",
     "made": true,
     "name": "Dvergr Lantern",
-    "places": [
-      "charredRuins",
-      "dvergrRuins",
-      "excavation",
-      "theQueen"
-    ],
+    "places": ["charredRuins", "dvergrRuins", "excavation", "theQueen"],
     "soldBy": []
   },
   {
@@ -4945,10 +4977,62 @@
     "key": "TrophyDvergr",
     "made": false,
     "name": "Dvergr Trophy",
+    "places": ["charredRuins", "dvergrRuins", "excavation", "morkhalla"],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader6Weapon",
+    "made": false,
+    "name": "Flametal Battle Idol",
     "places": [
       "charredRuins",
       "dvergrRuins",
-      "excavation"
+      "fortress",
+      "infestedMine",
+      "lumberCamp",
+      "morgenHole",
+      "morkhalla",
+      "northHomestead",
+      "northVillage",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "theHole"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "mistlands",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": true,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader6Armor",
+    "made": false,
+    "name": "Flametal Protection Idol",
+    "places": [
+      "charredRuins",
+      "dvergrRuins",
+      "fortress",
+      "infestedMine",
+      "lumberCamp",
+      "morgenHole",
+      "morkhalla",
+      "northHomestead",
+      "northVillage",
+      "ruins",
+      "shipSetting",
+      "shipwreck",
+      "theHole"
     ],
     "soldBy": []
   },
@@ -4983,9 +5067,7 @@
     "made": false,
     "name": "Grasslands Herbalist Harvest",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "mistlands",
@@ -5050,10 +5132,7 @@
     "key": "Hook",
     "made": false,
     "name": "Hook",
-    "places": [
-      "dvergrRuins",
-      "infestedMine"
-    ],
+    "places": ["dvergrRuins", "infestedMine"],
     "soldBy": []
   },
   {
@@ -5117,10 +5196,6 @@
     "caughtWith": [],
     "droppedBy": [
       {
-        "key": "Hive",
-        "name": "Hive"
-      },
-      {
         "key": "SeekerQueen",
         "name": "The Queen"
       }
@@ -5132,9 +5207,7 @@
     "key": "QueenDrop",
     "made": false,
     "name": "Majestic Carapace",
-    "places": [
-      "theQueen"
-    ],
+    "places": ["theQueen"],
     "soldBy": []
   },
   {
@@ -5167,7 +5240,7 @@
     "key": "Mandible",
     "made": false,
     "name": "Mandible",
-    "places": [],
+    "places": ["infestedMine"],
     "soldBy": []
   },
   {
@@ -5265,9 +5338,7 @@
     "key": "MeadEitrMinor",
     "made": true,
     "name": "Minor Eitr Mead",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -5342,9 +5413,7 @@
     "key": "RoyalJelly",
     "made": false,
     "name": "Royal Jelly",
-    "places": [
-      "infestedMine"
-    ],
+    "places": ["infestedMine"],
     "soldBy": []
   },
   {
@@ -5410,9 +5479,7 @@
     "key": "DvergrKeyFragment",
     "made": false,
     "name": "Sealbreaker Fragment",
-    "places": [
-      "infestedMine"
-    ],
+    "places": ["infestedMine"],
     "soldBy": []
   },
   {
@@ -5449,12 +5516,7 @@
     "key": "BugMeat",
     "made": false,
     "name": "Seeker Meat",
-    "places": [
-      "dvergrRuins",
-      "excavation",
-      "infestedMine",
-      "theQueen"
-    ],
+    "places": ["dvergrRuins", "excavation", "infestedMine", "theQueen"],
     "soldBy": []
   },
   {
@@ -5473,9 +5535,7 @@
     "key": "TrophySeekerBrute",
     "made": false,
     "name": "Seeker Soldier Trophy",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["infestedMine", "northVillage"],
     "soldBy": []
   },
   {
@@ -5494,12 +5554,7 @@
     "key": "TrophySeeker",
     "made": false,
     "name": "Seeker Trophy",
-    "places": [
-      "dvergrRuins",
-      "excavation",
-      "infestedMine",
-      "theQueen"
-    ],
+    "places": ["dvergrRuins", "excavation", "infestedMine", "theQueen"],
     "soldBy": []
   },
   {
@@ -5541,12 +5596,7 @@
     "key": "Softtissue",
     "made": false,
     "name": "Soft Tissue",
-    "places": [
-      "charredRuins",
-      "dvergrRuins",
-      "excavation",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "dvergrRuins", "excavation", "morgenHole"],
     "soldBy": []
   },
   {
@@ -5568,10 +5618,6 @@
     "caughtWith": [],
     "droppedBy": [
       {
-        "key": "Hive",
-        "name": "Hive"
-      },
-      {
         "key": "SeekerQueen",
         "name": "The Queen"
       }
@@ -5583,9 +5629,7 @@
     "key": "TrophySeekerQueen",
     "made": false,
     "name": "The Queen Trophy",
-    "places": [
-      "theQueen"
-    ],
+    "places": ["theQueen"],
     "soldBy": []
   },
   {
@@ -5604,9 +5648,7 @@
     "key": "TrophyTick",
     "made": false,
     "name": "Tick Trophy",
-    "places": [
-      "giantRemains"
-    ],
+    "places": ["giantRemains", "infestedMine"],
     "soldBy": []
   },
   {
@@ -5690,9 +5732,7 @@
     "key": "YggdrasilWood",
     "made": false,
     "name": "Yggdrasil Wood",
-    "places": [
-      "dvergrRuins"
-    ],
+    "places": ["dvergrRuins"],
     "soldBy": []
   },
   {
@@ -5766,9 +5806,7 @@
     "key": "AskHide",
     "made": false,
     "name": "Asksvin Hide",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -5782,10 +5820,7 @@
     "key": "AsksvinCarrionNeck",
     "made": false,
     "name": "Asksvin Neck",
-    "places": [
-      "morgenHole",
-      "voltureNest"
-    ],
+    "places": ["morgenHole", "voltureNest"],
     "soldBy": []
   },
   {
@@ -5799,10 +5834,7 @@
     "key": "AsksvinCarrionPelvic",
     "made": false,
     "name": "Asksvin Pelvis",
-    "places": [
-      "morgenHole",
-      "voltureNest"
-    ],
+    "places": ["morgenHole", "voltureNest"],
     "soldBy": []
   },
   {
@@ -5816,10 +5848,7 @@
     "key": "AsksvinCarrionRibcage",
     "made": false,
     "name": "Asksvin Ribcage",
-    "places": [
-      "morgenHole",
-      "voltureNest"
-    ],
+    "places": ["morgenHole", "voltureNest"],
     "soldBy": []
   },
   {
@@ -5833,10 +5862,7 @@
     "key": "AsksvinCarrionSkull",
     "made": false,
     "name": "Asksvin Skull",
-    "places": [
-      "morgenHole",
-      "voltureNest"
-    ],
+    "places": ["morgenHole", "voltureNest"],
     "soldBy": []
   },
   {
@@ -5888,9 +5914,7 @@
     "key": "BellFragment",
     "made": false,
     "name": "Bell Fragment",
-    "places": [
-      "fortress"
-    ],
+    "places": ["fortress"],
     "soldBy": []
   },
   {
@@ -5918,11 +5942,7 @@
     "key": "GemstoneRed",
     "made": false,
     "name": "Bloodstone",
-    "places": [
-      "fortress",
-      "morkhalla",
-      "ruins"
-    ],
+    "places": ["fortress", "morkhalla", "ruins"],
     "soldBy": []
   },
   {
@@ -5998,10 +6018,7 @@
     "key": "CelestialFeather",
     "made": false,
     "name": "Celestial Feather",
-    "places": [
-      "fortress",
-      "ruins"
-    ],
+    "places": ["fortress", "ruins"],
     "soldBy": []
   },
   {
@@ -6067,9 +6084,7 @@
     "key": "CharredCogwheel",
     "made": false,
     "name": "Charred Cogwheel",
-    "places": [
-      "fortress"
-    ],
+    "places": ["fortress"],
     "soldBy": []
   },
   {
@@ -6145,9 +6160,7 @@
     "key": "DyrnwynBladeFragment",
     "made": false,
     "name": "Dyrnwyn Blade Fragment",
-    "places": [
-      "placeOfMystery"
-    ],
+    "places": ["placeOfMystery"],
     "soldBy": []
   },
   {
@@ -6166,9 +6179,7 @@
     "key": "DyrnwynHiltFragment",
     "made": false,
     "name": "Dyrnwyn Hilt Fragment",
-    "places": [
-      "placeOfMystery"
-    ],
+    "places": ["placeOfMystery"],
     "soldBy": []
   },
   {
@@ -6182,9 +6193,7 @@
     "key": "DyrnwynTipFragment",
     "made": false,
     "name": "Dyrnwyn Tip Fragment",
-    "places": [
-      "placeOfMystery"
-    ],
+    "places": ["placeOfMystery"],
     "soldBy": []
   },
   {
@@ -6250,10 +6259,7 @@
     "key": "Fiddleheadfern",
     "made": false,
     "name": "Fiddlehead",
-    "places": [
-      "charredRuins",
-      "ruins"
-    ],
+    "places": ["charredRuins", "ruins"],
     "soldBy": []
   },
   {
@@ -6314,12 +6320,7 @@
     "key": "FlametalOreNew",
     "made": false,
     "name": "Flametal Ore",
-    "places": [
-      "charredRuins",
-      "fortress",
-      "lavaLeviathan",
-      "ruins"
-    ],
+    "places": ["charredRuins", "fortress", "lavaLeviathan", "ruins"],
     "soldBy": []
   },
   {
@@ -6361,9 +6362,7 @@
     "made": false,
     "name": "Herbs of the Hidden Hills",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "ashlands",
@@ -6376,11 +6375,7 @@
     "key": "GemstoneBlue",
     "made": false,
     "name": "Iolite",
-    "places": [
-      "fortress",
-      "morkhalla",
-      "ruins"
-    ],
+    "places": ["fortress", "morkhalla", "ruins"],
     "soldBy": []
   },
   {
@@ -6394,11 +6389,7 @@
     "key": "GemstoneGreen",
     "made": false,
     "name": "Jade",
-    "places": [
-      "fortress",
-      "morkhalla",
-      "ruins"
-    ],
+    "places": ["fortress", "morkhalla", "ruins"],
     "soldBy": []
   },
   {
@@ -6511,10 +6502,7 @@
     "key": "TrophyCharredArcher",
     "made": false,
     "name": "Marksman Trophy",
-    "places": [
-      "fortress",
-      "placeOfMystery"
-    ],
+    "places": ["fortress", "placeOfMystery"],
     "soldBy": []
   },
   {
@@ -6570,12 +6558,7 @@
     "key": "MoltenCore",
     "made": false,
     "name": "Molten Core",
-    "places": [
-      "fortress",
-      "morgenHole",
-      "placeOfMystery",
-      "ruins"
-    ],
+    "places": ["fortress", "morgenHole", "placeOfMystery", "ruins"],
     "soldBy": []
   },
   {
@@ -6594,9 +6577,7 @@
     "key": "MorgenHeart",
     "made": false,
     "name": "Morgen Heart",
-    "places": [
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "morgenHole", "ruins"],
     "soldBy": []
   },
   {
@@ -6615,9 +6596,7 @@
     "key": "MorgenSinew",
     "made": false,
     "name": "Morgen Sinew",
-    "places": [
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "morgenHole", "ruins"],
     "soldBy": []
   },
   {
@@ -6636,9 +6615,7 @@
     "key": "TrophyMorgen",
     "made": false,
     "name": "Morgen Trophy",
-    "places": [
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "morgenHole", "ruins"],
     "soldBy": []
   },
   {
@@ -6694,10 +6671,7 @@
     "key": "Pot_Shard_Green",
     "made": false,
     "name": "Pot Shard",
-    "places": [
-      "charredRuins",
-      "morgenHole"
-    ],
+    "places": ["charredRuins", "morgenHole"],
     "soldBy": []
   },
   {
@@ -6772,11 +6746,7 @@
     "key": "BronzeScrap",
     "made": false,
     "name": "Scrap Bronze",
-    "places": [
-      "fortress",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["fortress", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -6818,10 +6788,7 @@
     "key": "MushroomSmokePuff",
     "made": false,
     "name": "Smoke Puff",
-    "places": [
-      "charredRuins",
-      "ruins"
-    ],
+    "places": ["charredRuins", "ruins"],
     "soldBy": []
   },
   {
@@ -6882,9 +6849,7 @@
     "key": "SulfurStone",
     "made": false,
     "name": "Sulfur",
-    "places": [
-      "sulfurArch"
-    ],
+    "places": ["sulfurArch"],
     "soldBy": []
   },
   {
@@ -6926,9 +6891,7 @@
     "key": "Vineberry",
     "made": false,
     "name": "Vineberry Cluster",
-    "places": [
-      "charredRuins"
-    ],
+    "places": ["charredRuins"],
     "soldBy": []
   },
   {
@@ -6942,9 +6905,7 @@
     "key": "VineberrySeeds",
     "made": false,
     "name": "Vineberry Seeds",
-    "places": [
-      "charredRuins"
-    ],
+    "places": ["charredRuins"],
     "soldBy": []
   },
   {
@@ -6963,9 +6924,7 @@
     "key": "VoltureEgg",
     "made": false,
     "name": "Volture Egg",
-    "places": [
-      "voltureNest"
-    ],
+    "places": ["voltureNest"],
     "soldBy": []
   },
   {
@@ -6984,9 +6943,7 @@
     "key": "VoltureMeat",
     "made": false,
     "name": "Volture Meat",
-    "places": [
-      "voltureNest"
-    ],
+    "places": ["voltureNest"],
     "soldBy": []
   },
   {
@@ -7005,9 +6962,7 @@
     "key": "TrophyVolture",
     "made": false,
     "name": "Volture Trophy",
-    "places": [
-      "voltureNest"
-    ],
+    "places": ["voltureNest"],
     "soldBy": []
   },
   {
@@ -7026,10 +6981,7 @@
     "key": "TrophyCharredMage",
     "made": false,
     "name": "Warlock Trophy",
-    "places": [
-      "fortress",
-      "placeOfMystery"
-    ],
+    "places": ["fortress", "placeOfMystery"],
     "soldBy": []
   },
   {
@@ -7048,12 +7000,7 @@
     "key": "TrophyCharredMelee",
     "made": false,
     "name": "Warrior Trophy",
-    "places": [
-      "charredRuins",
-      "charredSpawner",
-      "fortress",
-      "placeOfMystery"
-    ],
+    "places": ["charredRuins", "charredSpawner", "fortress", "placeOfMystery"],
     "soldBy": []
   },
   {
@@ -7115,6 +7062,48 @@
     "made": true,
     "name": "Bloodgold",
     "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader7Weapon",
+    "made": false,
+    "name": "Bloodgold Battle Idol",
+    "places": [
+      "lumberCamp",
+      "morkhalla",
+      "northHomestead",
+      "northVillage",
+      "shipSetting",
+      "shipwreck"
+    ],
+    "soldBy": []
+  },
+  {
+    "biome": "deepNorth",
+    "caughtWith": [],
+    "droppedBy": [],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 1,
+    "key": "Upgrader7Armor",
+    "made": false,
+    "name": "Bloodgold Protection Idol",
+    "places": [
+      "lumberCamp",
+      "morkhalla",
+      "northHomestead",
+      "northVillage",
+      "shipSetting",
+      "shipwreck"
+    ],
     "soldBy": []
   },
   {
@@ -7577,6 +7566,10 @@
       {
         "key": "BlobMork",
         "name": "Shapeless Pulp"
+      },
+      {
+        "key": "BlobMorkMini",
+        "name": "Tiny Pulp"
       }
     ],
     "fished": false,
@@ -7586,9 +7579,7 @@
     "key": "OozeMork",
     "made": false,
     "name": "Dead Pulp",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -7607,7 +7598,7 @@
     "key": "ElakingHairBundle",
     "made": false,
     "name": "Elaking Hair Bundle",
-    "places": [],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7626,7 +7617,7 @@
     "key": "TrophyElaking",
     "made": false,
     "name": "Elaking Trophy",
-    "places": [],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7645,7 +7636,7 @@
     "key": "TrophyMole",
     "made": false,
     "name": "Eyeless One Trophy",
-    "places": [],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7660,9 +7651,7 @@
     "made": false,
     "name": "Fiery Spice Powder",
     "places": [],
-    "soldBy": [
-      "BogWitch"
-    ]
+    "soldBy": ["BogWitch"]
   },
   {
     "biome": "deepNorth",
@@ -7694,9 +7683,7 @@
     "key": "FrostCore",
     "made": false,
     "name": "Frostcore",
-    "places": [
-      "theHole"
-    ],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7710,9 +7697,7 @@
     "key": "OrbFrostFire",
     "made": false,
     "name": "Frostfire Essence",
-    "places": [
-      "northMemorial"
-    ],
+    "places": ["northMemorial"],
     "soldBy": []
   },
   {
@@ -7750,7 +7735,7 @@
     "key": "TrophyJotunWitch",
     "made": false,
     "name": "Hexen Trophy",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -7819,9 +7804,7 @@
     "key": "KaleSeeds",
     "made": false,
     "name": "Kale Seeds",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["northVillage"],
     "soldBy": []
   },
   {
@@ -7840,7 +7823,7 @@
     "key": "TrophyJotunWarrior",
     "made": false,
     "name": "Krigen Trophy",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -7859,7 +7842,7 @@
     "key": "Leatherstraps",
     "made": false,
     "name": "Leather Straps",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -7878,10 +7861,7 @@
     "key": "Lingonberry",
     "made": false,
     "name": "Lingonberries",
-    "places": [
-      "morkhalla",
-      "northVillage"
-    ],
+    "places": ["morkhalla", "northVillage"],
     "soldBy": []
   },
   {
@@ -7914,7 +7894,7 @@
     "key": "MoleClaws",
     "made": false,
     "name": "Long Claws",
-    "places": [],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7928,9 +7908,7 @@
     "key": "GlowWorm",
     "made": false,
     "name": "Luminous Larva",
-    "places": [
-      "theHole"
-    ],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -7977,9 +7955,7 @@
     "key": "MooseHide",
     "made": false,
     "name": "Moose Hide",
-    "places": [
-      "morkhalla"
-    ],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8055,7 +8031,7 @@
     "key": "MoldArmorGoldChest",
     "made": false,
     "name": "Mould: Breastplate of the Protector",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8074,7 +8050,7 @@
     "key": "MoldArmormediumChest",
     "made": false,
     "name": "Mould: Chestpiece of the Vanguard",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8088,11 +8064,7 @@
     "key": "MoldStaffOrbofAhri",
     "made": false,
     "name": "Mould: Echo Spike",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8111,7 +8083,7 @@
     "key": "MoldArmorMageHelmet",
     "made": false,
     "name": "Mould: Headdress of the Caller",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8130,7 +8102,7 @@
     "key": "MoldArmorGoldHelmet",
     "made": false,
     "name": "Mould: Helmet of the Protector",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8149,7 +8121,7 @@
     "key": "MoldArmorMediumHelmet",
     "made": false,
     "name": "Mould: Hood of the Vanguard",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8172,9 +8144,7 @@
     "key": "MoldKeys",
     "made": false,
     "name": "Mould: Intricate Key",
-    "places": [
-      "theHole"
-    ],
+    "places": ["theHole"],
     "soldBy": []
   },
   {
@@ -8188,11 +8158,7 @@
     "key": "MoldStaffthunderblood",
     "made": false,
     "name": "Mould: Lightning Strike",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8206,11 +8172,7 @@
     "key": "MoldAtgeir",
     "made": false,
     "name": "Mould: Nord Atgeir",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8224,12 +8186,7 @@
     "key": "MoldAxe",
     "made": false,
     "name": "Mould: Nord Axe",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -8243,12 +8200,7 @@
     "key": "MoldBow",
     "made": false,
     "name": "Mould: Nord Bow",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -8262,11 +8214,7 @@
     "key": "MoldShieldBuckler",
     "made": false,
     "name": "Mould: Nord Buckler",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8280,11 +8228,7 @@
     "key": "MoldCrossbow",
     "made": false,
     "name": "Mould: Nord Crossbow",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8298,11 +8242,7 @@
     "key": "MoldKnife",
     "made": false,
     "name": "Mould: Nord Dagger",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8316,11 +8256,7 @@
     "key": "MoldAxe2H",
     "made": false,
     "name": "Mould: Nord Greataxe",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8334,11 +8270,7 @@
     "key": "MoldShieldTower",
     "made": false,
     "name": "Mould: Nord Greatshield",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8352,11 +8284,7 @@
     "key": "MoldSword2H",
     "made": false,
     "name": "Mould: Nord Greatsword",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8370,11 +8298,7 @@
     "key": "MoldFistweapon",
     "made": false,
     "name": "Mould: Nord Knucklechains",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8388,12 +8312,7 @@
     "key": "MoldMace",
     "made": false,
     "name": "Mould: Nord Mace",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -8407,11 +8326,7 @@
     "key": "MoldShieldRound",
     "made": false,
     "name": "Mould: Nord Shield",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8425,11 +8340,7 @@
     "key": "MoldMace2H",
     "made": false,
     "name": "Mould: Nord Sledge",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8443,12 +8354,7 @@
     "key": "MoldSpear",
     "made": false,
     "name": "Mould: Nord Spear",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -8462,12 +8368,7 @@
     "key": "MoldSword",
     "made": false,
     "name": "Mould: Nord Sword",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -8481,11 +8382,7 @@
     "key": "MoldStafffrostorbs",
     "made": false,
     "name": "Mould: Northern Vengeance",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8504,7 +8401,7 @@
     "key": "MoldArmorMageChest",
     "made": false,
     "name": "Mould: Robes of the Caller",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8518,11 +8415,7 @@
     "key": "MoldStaffspiritcaller",
     "made": false,
     "name": "Mould: Spirit Caller",
-    "places": [
-      "morkhalla",
-      "northMemorial",
-      "theHole"
-    ],
+    "places": ["morkhalla", "northMemorial", "theHole"],
     "soldBy": []
   },
   {
@@ -8541,7 +8434,7 @@
     "key": "MoldArmorMageLegs",
     "made": false,
     "name": "Mould: Trousers of the Caller",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8560,7 +8453,7 @@
     "key": "MoldArmorGoldLegs",
     "made": false,
     "name": "Mould: Trousers of the Protector",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8579,7 +8472,7 @@
     "key": "MoldArmorMediumLegs",
     "made": false,
     "name": "Mould: Trousers of the Vanguard",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8766,7 +8659,7 @@
     "key": "NornThread",
     "made": false,
     "name": "Nornathread",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -8822,9 +8715,7 @@
     "key": "OatSeeds",
     "made": false,
     "name": "Oat Seeds",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["northVillage"],
     "soldBy": []
   },
   {
@@ -8908,9 +8799,7 @@
     "key": "GoldOre",
     "made": false,
     "name": "Petrified Tissue",
-    "places": [
-      "northRuins"
-    ],
+    "places": ["northRuins"],
     "soldBy": []
   },
   {
@@ -8943,7 +8832,7 @@
     "key": "TrophyBlob_Morkhalla",
     "made": false,
     "name": "Pulp Trophy",
-    "places": [],
+    "places": ["morkhalla"],
     "soldBy": []
   },
   {
@@ -9046,9 +8935,7 @@
     "key": "PoteitrSeeds",
     "made": false,
     "name": "Seed Poteitr",
-    "places": [
-      "northVillage"
-    ],
+    "places": ["northVillage"],
     "soldBy": []
   },
   {
@@ -9109,9 +8996,7 @@
     "key": "OrbThunderBlood",
     "made": false,
     "name": "Thunderblood Essence",
-    "places": [
-      "northMemorial"
-    ],
+    "places": ["northMemorial"],
     "soldBy": []
   },
   {
@@ -9125,12 +9010,7 @@
     "key": "Frostwood",
     "made": false,
     "name": "Timberwood",
-    "places": [
-      "lumberCamp",
-      "morkhalla",
-      "northVillage",
-      "theHole"
-    ],
+    "places": ["lumberCamp", "morkhalla", "northVillage", "theHole"],
     "soldBy": []
   },
   {
@@ -9158,6 +9038,25 @@
     "key": "BakedPoteitrUncooked",
     "made": true,
     "name": "Unbaked Poteitr",
+    "places": [],
+    "soldBy": []
+  },
+  {
+    "biome": null,
+    "caughtWith": [],
+    "droppedBy": [
+      {
+        "key": "GoblinShaman_Hildir",
+        "name": "Zil"
+      }
+    ],
+    "fished": false,
+    "gathered": false,
+    "grown": false,
+    "itemType": 13,
+    "key": "TrophyGoblinBruteBrosShaman",
+    "made": false,
+    "name": "Zil Trophy",
     "places": [],
     "soldBy": []
   }

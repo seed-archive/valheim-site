@@ -12,7 +12,11 @@ import type { Metadata } from "next";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { BiomeSections, material, searchText } from "@/components/catalog/BiomeSections";
+import {
+  BiomeSections,
+  material,
+  searchText,
+} from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { TableSearch } from "@/components/catalog/TableSearch";
 import { effectText, type Effect } from "@/lib/valheim/effects";
@@ -26,6 +30,10 @@ export const metadata: Metadata = {
     "Every mead and potion by biome: what drinking it does, how long it lasts, and what its base takes at the cauldron.",
   alternates: { canonical: "/catalog/meads" },
 };
+
+// Under a minute a mead's time is told in seconds (Tasty Mead 10 s, the
+// game's `consume.ttl`), not as a fraction of a minute.
+const SECONDS_A_MINUTE = 60;
 
 const t = (id: string, values?: Record<string, string | number>) =>
   serverFormat(`pages.meads.${id}`, values);
@@ -48,8 +56,12 @@ function meadTable(list: Base[]) {
       <Table size="small" sx={{ tableLayout: { md: "fixed" } }}>
         <TableHead>
           <TableRow>
-            <TableCell sx={{ width: { md: "24%" } }}>{t("head.mead")}</TableCell>
-            <TableCell sx={{ width: { md: "40%" } }}>{t("head.effect")}</TableCell>
+            <TableCell sx={{ width: { md: "24%" } }}>
+              {t("head.mead")}
+            </TableCell>
+            <TableCell sx={{ width: { md: "40%" } }}>
+              {t("head.effect")}
+            </TableCell>
             <TableCell>{t("head.base")}</TableCell>
           </TableRow>
         </TableHead>
@@ -60,14 +72,23 @@ function meadTable(list: Base[]) {
               <TableRow
                 key={b.key}
                 id={(m?.key ?? b.key).toLowerCase()}
-                data-search={searchText(m?.name, b.name, ...b.resources.map((r) => r.name))}
+                data-search={searchText(
+                  m?.name,
+                  b.name,
+                  ...b.resources.map((r) => r.name),
+                )}
               >
                 <TableCell>
-                  <ItemIcon item={m?.key ?? b.key}>{m?.name ?? b.name}</ItemIcon>
+                  <ItemIcon item={m?.key ?? b.key}>
+                    {m?.name ?? b.name}
+                  </ItemIcon>
                 </TableCell>
                 <TableCell>
                   {m?.effect?.text ? (
-                    <Typography variant="body2" sx={{ fontStyle: "italic", mb: 0.5 }}>
+                    <Typography
+                      variant="body2"
+                      sx={{ fontStyle: "italic", mb: 0.5 }}
+                    >
                       {m.effect.text}
                     </Typography>
                   ) : null}
@@ -76,14 +97,26 @@ function meadTable(list: Base[]) {
                   ))}
                   {m?.effect?.seconds ? (
                     <Box sx={{ color: "text.secondary" }}>
-                      {t("lasts", { minutes: Math.round((m.effect.seconds / 60) * 10) / 10 })}
+                      {m.effect.seconds < SECONDS_A_MINUTE
+                        ? t("lastsSeconds", { seconds: m.effect.seconds })
+                        : t("lasts", {
+                            minutes:
+                              Math.round(
+                                (m.effect.seconds / SECONDS_A_MINUTE) * 10,
+                              ) / 10,
+                          })}
                     </Box>
                   ) : null}
                 </TableCell>
                 <TableCell>
                   <ItemIcon item={b.key}>
                     {b.name}
-                    <Typography component="span" variant="caption" color="text.secondary" sx={{ display: "block" }}>
+                    <Typography
+                      component="span"
+                      variant="caption"
+                      color="text.secondary"
+                      sx={{ display: "block" }}
+                    >
                       {t("makes", { count: m?.count ?? 1 })}
                     </Typography>
                   </ItemIcon>
@@ -103,7 +136,11 @@ export default function MeadsPage() {
   return (
     <>
       <ArchiveBar />
-      <Container component="main" maxWidth="lg" sx={{ py: 6, minHeight: "70vh" }}>
+      <Container
+        component="main"
+        maxWidth="lg"
+        sx={{ py: 6, minHeight: "70vh" }}
+      >
         <PageTrail
           steps={[
             { name: serverFormat("archive.home"), href: "/" },

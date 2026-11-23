@@ -9,6 +9,9 @@ import Typography from "@mui/material/Typography";
 
 import { RowLink } from "@/components/catalog/RowLink";
 import { serverFormat } from "@/lib/i18n/server";
+import { creatureName, UNMET } from "@/lib/valheim/creature-names";
+import { modifierText } from "@/lib/valheim/modifier";
+import { slug } from "@/lib/slug";
 import matrix from "@/lib/valheim/weapon-matrix.json";
 
 // The two tables of the damage page: what hurts each creature and boss (its
@@ -65,7 +68,7 @@ function ByBiome(props: {
               </TableCell>
             </TableRow>,
             ...matrix.creatures
-              .filter((c) => c.biome === biome)
+              .filter((c) => c.biome === biome && !UNMET.has(c.key))
               .map((c) => (
                 <TableRow key={c.key}>
                   <TableCell
@@ -76,14 +79,12 @@ function ByBiome(props: {
                   >
                     {c.boss ? (
                       // The bosses guide's headings are its anchors, made from their words.
-                      <Link
-                        href={`/catalog/bosses#${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
-                      >
+                      <Link href={`/catalog/bosses#${slug(c.name)}`}>
                         {c.name}
                       </Link>
                     ) : (
                       <RowLink item={c.key} creature>
-                        {c.name}
+                        {creatureName(c.key, c.name)}
                       </RowLink>
                     )}
                   </TableCell>
@@ -147,14 +148,16 @@ export function WeaponMatrix() {
                 align="center"
                 sx={m === 1 ? undefined : tone(m)}
               >
-                {m === 1 ? "" : m === 0 ? t("immune") : `×${m}`}
+                {modifierText(m)}
               </TableCell>
             );
           }),
           <TableCell key="best" sx={{ minWidth: 180 }}>
             {c.best.length === matrix.kinds.length
               ? t("any")
-              : c.best.map(kindName).join(", ")}
+              : c.best.length === 0
+                ? t("none")
+                : c.best.map(kindName).join(", ")}
           </TableCell>,
         ]}
       />

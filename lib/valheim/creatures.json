@@ -1126,16 +1126,7 @@
     "sources": {
       "areas": [],
       "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "places": ["BearCave"],
-          "rooms": 0,
-          "spawner": "Spawner_Bjorn_sleeping"
-        }
-      ],
+      "once": [],
       "openWorld": [
         {
           "anHour": 0.27,
@@ -1168,7 +1159,7 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 1,
+      "perPlace": null,
       "raids": [],
       "respawns": [],
       "starsAtNight": true,
@@ -1382,7 +1373,7 @@
     ],
     "sources": {
       "areas": [],
-      "night": "more",
+      "night": null,
       "once": [
         {
           "levelChance": 10.0,
@@ -1393,43 +1384,12 @@
           "spawner": "Spawner_Bjorn_sleeping"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 0.27,
-          "biomes": ["blackForest"],
-          "chance": 15.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 2,
-          "minLevel": 1,
-          "night": false,
-          "rare": false,
-          "seconds": 2000.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.36,
-          "biomes": ["blackForest"],
-          "chance": 20.0,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 2000.0,
-          "starsFrom": 0.0
-        }
-      ],
+      "openWorld": [],
       "perPlace": 1,
       "raids": [],
       "respawns": [],
-      "starsAtNight": true,
-      "verdict": "renews",
+      "starsAtNight": false,
+      "verdict": "runsOut",
       "worldEvents": []
     },
     "spawnerKinds": ["bears"],
@@ -3638,14 +3598,6 @@
           ],
           "rooms": 27,
           "spawner": "Spawner_Draugr"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "places": ["SwampHut4"],
-          "rooms": 10,
-          "spawner": "Spawner_Draugr_Ranged"
         }
       ],
       "openWorld": [
@@ -3680,7 +3632,7 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 4,
+      "perPlace": 3,
       "raids": [
         {
           "key": "army_bonemass",
@@ -3773,22 +3725,8 @@
           "spawner": "Spawner_DraugrPile"
         }
       ],
-      "night": "more",
+      "night": null,
       "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "places": [
-            "Runestone_Draugr",
-            "SunkenCrypt4",
-            "SwampHut4",
-            "SwampRuin1",
-            "SwampRuin2"
-          ],
-          "rooms": 27,
-          "spawner": "Spawner_Draugr"
-        },
         {
           "levelChance": 10.0,
           "maxLevel": 1,
@@ -3798,46 +3736,9 @@
           "spawner": "Spawner_Draugr_Ranged"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 0.6,
-          "biomes": ["meadows", "blackForest", "mountain", "plains"],
-          "chance": 5.0,
-          "day": false,
-          "globalKey": "defeated_gdking",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 15.0,
-          "biomes": ["swamp"],
-          "chance": 50.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 4,
-      "raids": [
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        }
-      ],
+      "openWorld": [],
+      "perPlace": 2,
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
@@ -4161,14 +4062,6 @@
           ],
           "rooms": 0,
           "spawner": "Spawner_DvergerArbalest"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["CharredTowerRuins1_dvergr"],
-          "rooms": 0,
-          "spawner": "Spawner_DvergerAshlands"
         }
       ],
       "openWorld": [
@@ -4176,21 +4069,6 @@
           "anHour": 1.08,
           "biomes": ["mistlands"],
           "chance": 30.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": false,
-          "rare": false,
-          "seconds": 1000.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.36,
-          "biomes": ["ashlands"],
-          "chance": 10.0,
           "day": true,
           "globalKey": "",
           "levelChance": 10.0,
@@ -4296,44 +4174,12 @@
           "levelChance": 10.0,
           "maxLevel": 3,
           "minLevel": 1,
-          "places": [
-            "Mistlands_Excavation1",
-            "Mistlands_Excavation2",
-            "Mistlands_GuardTower1_new",
-            "Mistlands_GuardTower2_new",
-            "Mistlands_GuardTower3_new",
-            "Mistlands_Harbour1",
-            "Mistlands_Lighthouse1_new",
-            "Mistlands_RoadPost1"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_DvergerArbalest"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
           "places": ["CharredTowerRuins1_dvergr"],
           "rooms": 0,
           "spawner": "Spawner_DvergerAshlands"
         }
       ],
       "openWorld": [
-        {
-          "anHour": 1.08,
-          "biomes": ["mistlands"],
-          "chance": 30.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": false,
-          "rare": false,
-          "seconds": 1000.0,
-          "starsFrom": 0.0
-        },
         {
           "anHour": 0.36,
           "biomes": ["ashlands"],
@@ -4350,7 +4196,7 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 8,
+      "perPlace": 5,
       "raids": [],
       "respawns": [],
       "starsAtNight": false,
@@ -4567,21 +4413,6 @@
           "rare": false,
           "seconds": 120.0,
           "starsFrom": 0.0
-        },
-        {
-          "anHour": 3.0,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 2,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
         }
       ],
       "perPlace": null,
@@ -4728,21 +4559,6 @@
       "once": [],
       "openWorld": [
         {
-          "anHour": 4.5,
-          "biomes": ["deepNorth"],
-          "chance": 15.0,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 2,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
-        },
-        {
           "anHour": 3.0,
           "biomes": ["deepNorth"],
           "chance": 10.0,
@@ -4764,17 +4580,12 @@
           "key": "army_elakingar",
           "maxLevel": 1,
           "minLevel": 1
-        },
-        {
-          "key": "army_jotuns",
-          "maxLevel": 1,
-          "minLevel": 1
         }
       ],
       "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
-      "worldEvents": ["jotun_invasion"]
+      "worldEvents": []
     },
     "spawnerKinds": ["otherCreatures"],
     "spawns": [
@@ -5267,14 +5078,6 @@
           ],
           "rooms": 50,
           "spawner": "Spawner_Goblin"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["GoblinHut03"],
-          "rooms": 25,
-          "spawner": "Spawner_GoblinArcher"
         }
       ],
       "openWorld": [
@@ -5433,26 +5236,8 @@
     "sets": [],
     "sources": {
       "areas": [],
-      "night": "more",
+      "night": null,
       "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "GoblinHut01",
-            "GoblinHut02",
-            "GoblinHut03",
-            "Ruin3",
-            "StoneHenge5",
-            "StoneHouse1_heath",
-            "StoneHouse2_heath",
-            "StoneTower1",
-            "StoneTower3"
-          ],
-          "rooms": 50,
-          "spawner": "Spawner_Goblin"
-        },
         {
           "levelChance": 10.0,
           "maxLevel": 3,
@@ -5462,69 +5247,12 @@
           "spawner": "Spawner_GoblinArcher"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 0.06,
-          "biomes": ["meadows", "blackForest", "mountain"],
-          "chance": 5.0,
-          "day": false,
-          "globalKey": "defeated_goblinking",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": true,
-          "seconds": 3000.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 19.8,
-          "biomes": ["plains"],
-          "chance": 33.0,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 60.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 1.188,
-          "biomes": ["plains"],
-          "chance": 33.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": false,
-          "rare": false,
-          "seconds": 1000.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 12,
-      "raids": [
-        {
-          "key": "army_goblin",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss3",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
+      "openWorld": [],
+      "perPlace": 1,
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": "runsOut",
       "worldEvents": []
     },
     "spawnerKinds": ["fulings"],
@@ -6024,28 +5752,13 @@
     "sources": {
       "areas": [],
       "night": null,
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "places": [],
-          "rooms": 2,
-          "spawner": "Spawner_Ghost"
-        }
-      ],
+      "once": [],
       "openWorld": [],
       "perPlace": null,
-      "raids": [
-        {
-          "key": "ghosts",
-          "maxLevel": 1,
-          "minLevel": 1
-        }
-      ],
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
-      "verdict": "fixed",
+      "verdict": null,
       "worldEvents": []
     },
     "spawnerKinds": ["ghosts"],
@@ -6587,21 +6300,6 @@
           "rare": false,
           "seconds": 200.0,
           "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
         }
       ],
       "perPlace": 7,
@@ -7008,97 +6706,10 @@
     "name": "Greydwarf",
     "sets": [],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 3,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Greydwarf_camp1"],
-          "rooms": 0,
-          "seconds": 10.0,
-          "spawner": "Spawner_GreydwarfNest"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Ruin1",
-            "Ruin2",
-            "StoneHouse3",
-            "StoneHouse4",
-            "StoneTowerRuins03"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Greydwarf"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
       "openWorld": [
-        {
-          "anHour": 9.0,
-          "biomes": ["blackForest"],
-          "chance": 30.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": false,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 9.0,
-          "biomes": ["meadows"],
-          "chance": 30.0,
-          "day": false,
-          "globalKey": "defeated_eikthyr",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 60.0,
-          "biomes": ["blackForest"],
-          "chance": 100.0,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 6,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 60.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 9.0,
-          "biomes": ["meadows"],
-          "chance": 50.0,
-          "day": false,
-          "globalKey": "defeated_eikthyr",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 200.0,
-          "starsFrom": 0.0
-        },
         {
           "anHour": 0.6,
           "biomes": ["deepNorth"],
@@ -7115,14 +6726,8 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 7,
-      "raids": [
-        {
-          "key": "army_theelder",
-          "maxLevel": 1,
-          "minLevel": 1
-        }
-      ],
+      "perPlace": null,
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
@@ -7874,7 +7479,7 @@
           "spawner": "Spawner_GreydwarfNest"
         }
       ],
-      "night": "more",
+      "night": "only",
       "once": [
         {
           "levelChance": 10.0,
@@ -7914,21 +7519,6 @@
           "night": true,
           "rare": false,
           "seconds": 60.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
           "starsFrom": 0.0
         }
       ],
@@ -8321,61 +7911,10 @@
     "name": "Greydwarf Shaman",
     "sets": [],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 3,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Greydwarf_camp1"],
-          "rooms": 0,
-          "seconds": 10.0,
-          "spawner": "Spawner_GreydwarfNest"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Ruin1"],
-          "rooms": 0,
-          "spawner": "Spawner_Greydwarf_Shaman"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
       "openWorld": [
-        {
-          "anHour": 15.179999542236327,
-          "biomes": ["meadows"],
-          "chance": 50.599998474121094,
-          "day": false,
-          "globalKey": "defeated_gdking",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 120.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 30.359999084472655,
-          "biomes": ["blackForest"],
-          "chance": 50.599998474121094,
-          "day": false,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 60.0,
-          "starsFrom": 0.0
-        },
         {
           "anHour": 0.6,
           "biomes": ["deepNorth"],
@@ -8392,14 +7931,8 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 1,
-      "raids": [
-        {
-          "key": "army_theelder",
-          "maxLevel": 1,
-          "minLevel": 1
-        }
-      ],
+      "perPlace": null,
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
@@ -9736,14 +9269,6 @@
           "maxLevel": 3,
           "minLevel": 1,
           "places": [],
-          "rooms": 11,
-          "spawner": "Spawner_JotunDualWield"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [],
           "rooms": 115,
           "spawner": "Spawner_JotunWarrior"
         }
@@ -10051,45 +9576,15 @@
           "places": [],
           "rooms": 11,
           "spawner": "Spawner_JotunDualWield"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [],
-          "rooms": 115,
-          "spawner": "Spawner_JotunWarrior"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 0.06,
-          "biomes": ["deepNorth"],
-          "chance": 5.0,
-          "day": true,
-          "globalKey": "jotun_killed",
-          "levelChance": 10.0,
-          "max": 2,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": false,
-          "rare": true,
-          "seconds": 3000.0,
-          "starsFrom": 0.0
-        }
-      ],
+      "openWorld": [],
       "perPlace": null,
-      "raids": [
-        {
-          "key": "army_jotuns",
-          "maxLevel": 1,
-          "minLevel": 1
-        }
-      ],
+      "raids": [],
       "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
-      "worldEvents": ["jotun_invasion"]
+      "worldEvents": []
     },
     "spawnerKinds": ["otherCreatures"],
     "spawns": [],
@@ -10702,28 +10197,12 @@
       "areas": [],
       "night": null,
       "once": [],
-      "openWorld": [
-        {
-          "anHour": 9.0,
-          "biomes": ["swamp"],
-          "chance": 50.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 10,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 200.0,
-          "starsFrom": 0.0
-        }
-      ],
+      "openWorld": [],
       "perPlace": null,
       "raids": [],
       "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": null,
       "worldEvents": []
     },
     "spawnerKinds": ["leeches"],
@@ -11433,28 +10912,12 @@
           "spawner": "Spawner_Morgen_wakeup"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 0.045,
-          "biomes": ["ashlands"],
-          "chance": 5.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 1,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": true,
-          "seconds": 4000.0,
-          "starsFrom": 0.0
-        }
-      ],
+      "openWorld": [],
       "perPlace": 1,
       "raids": [],
       "respawns": [],
       "starsAtNight": false,
-      "verdict": "fixed",
+      "verdict": "runsOut",
       "worldEvents": []
     },
     "spawnerKinds": ["morgens"],
@@ -11549,16 +11012,7 @@
     "sources": {
       "areas": [],
       "night": null,
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["MorgenHole1", "MorgenHole2", "MorgenHole3"],
-          "rooms": 2,
-          "spawner": "Spawner_Morgen_wakeup"
-        }
-      ],
+      "once": [],
       "openWorld": [
         {
           "anHour": 0.045,
@@ -11576,11 +11030,11 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 1,
+      "perPlace": null,
       "raids": [],
       "respawns": [],
       "starsAtNight": false,
-      "verdict": "fixed",
+      "verdict": "rare",
       "worldEvents": []
     },
     "spawnerKinds": [],
@@ -13351,20 +12805,9 @@
           "rooms": 8,
           "seconds": 5.0,
           "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
         }
       ],
-      "night": "more",
+      "night": "only",
       "once": [
         {
           "levelChance": 10.0,
@@ -13385,28 +12828,6 @@
           ],
           "rooms": 39,
           "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
         }
       ],
       "openWorld": [
@@ -13424,39 +12845,9 @@
           "rare": false,
           "seconds": 300.0,
           "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
         }
       ],
-      "perPlace": 19,
+      "perPlace": 7,
       "raids": [
         {
           "key": "skeletons",
@@ -13745,110 +13136,10 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
       "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
         {
           "anHour": 0.6,
           "biomes": ["deepNorth"],
@@ -13865,35 +13156,9 @@
           "starsFrom": 0.0
         }
       ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
       "worldEvents": []
@@ -14112,157 +13377,21 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 19,
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
       "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
         {
           "key": "hildirboss1",
           "maxLevel": 3,
           "minLevel": 2
         }
       ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": "rare",
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -14468,56 +13597,9 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
+      "areas": [],
+      "night": null,
       "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
         {
           "levelChance": 10.0,
           "maxLevel": 3,
@@ -14525,100 +13607,14 @@
           "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
           "rooms": 0,
           "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "openWorld": [],
+      "perPlace": 1,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": "runsOut",
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -14827,64 +13823,9 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
+      "areas": [],
+      "night": null,
       "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
         {
           "levelChance": 10.0,
           "maxLevel": 3,
@@ -14900,84 +13841,12 @@
           "spawner": "Spawner_Skeleton_Mountains"
         }
       ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
+      "openWorld": [],
       "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": "runsOut",
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -15186,157 +14055,15 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": null,
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -15542,157 +14269,15 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": null,
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -15908,88 +14493,15 @@
           "maxNear": 2,
           "maxTotal": 100,
           "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
           "places": ["Grave1"],
           "rooms": 0,
           "seconds": 5.0,
           "spawner": "BonePileSpawner_swamp"
         }
       ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
+      "night": null,
+      "once": [],
       "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
         {
           "anHour": 2.25,
           "biomes": ["swamp"],
@@ -16004,52 +14516,11 @@
           "rare": false,
           "seconds": 400.0,
           "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
         }
       ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
       "verdict": "renews",
       "worldEvents": []
@@ -16271,157 +14742,15 @@
       }
     ],
     "sources": {
-      "areas": [
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": [
-            "CombatRuin01",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 8,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner"
-        },
-        {
-          "levelChance": 15.0,
-          "maxLevel": 3,
-          "maxNear": 2,
-          "maxTotal": 100,
-          "minLevel": 1,
-          "places": ["Grave1"],
-          "rooms": 0,
-          "seconds": 5.0,
-          "spawner": "BonePileSpawner_swamp"
-        }
-      ],
-      "night": "more",
-      "once": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "Crypt2",
-            "Crypt3",
-            "Crypt4",
-            "Hildir_crypt",
-            "StoneTowerRuins03",
-            "StoneTowerRuins07",
-            "StoneTowerRuins08",
-            "StoneTowerRuins09",
-            "StoneTowerRuins09_sunk",
-            "StoneTowerRuins10",
-            "StoneTowerRuins10_sunk"
-          ],
-          "rooms": 39,
-          "spawner": "Spawner_Skeleton"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": ["Dolmen01", "Dolmen02", "Dolmen03", "ShipSetting01"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Meadows_night_noarcher"
-        },
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "places": [
-            "AbandonedLogCabin03",
-            "AbandonedLogCabin04",
-            "StoneTowerRuins04",
-            "StoneTowerRuins05",
-            "StoneTowerRuins05_leet"
-          ],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_Mountains"
-        }
-      ],
-      "openWorld": [
-        {
-          "anHour": 3.0,
-          "biomes": ["meadows", "blackForest", "swamp", "mountain", "plains"],
-          "chance": 25.0,
-          "day": false,
-          "globalKey": "defeated_bonemass",
-          "levelChance": 10.0,
-          "max": 3,
-          "maxLevel": 1,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 300.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 2.25,
-          "biomes": ["swamp"],
-          "chance": 25.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 4,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 400.0,
-          "starsFrom": 0.0
-        },
-        {
-          "anHour": 0.6,
-          "biomes": ["deepNorth"],
-          "chance": 10.0,
-          "day": true,
-          "globalKey": "",
-          "levelChance": 10.0,
-          "max": 5,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "night": true,
-          "rare": false,
-          "seconds": 600.0,
-          "starsFrom": 0.0
-        }
-      ],
-      "perPlace": 19,
-      "raids": [
-        {
-          "key": "skeletons",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "army_bonemass",
-          "maxLevel": 1,
-          "minLevel": 1
-        },
-        {
-          "key": "hildirboss1",
-          "maxLevel": 3,
-          "minLevel": 2
-        }
-      ],
-      "respawns": [
-        {
-          "levelChance": 10.0,
-          "maxLevel": 3,
-          "minLevel": 1,
-          "minutes": 60.0,
-          "places": ["Crypt2", "Crypt3", "Crypt4", "Hildir_crypt"],
-          "rooms": 0,
-          "spawner": "Spawner_Skeleton_respawn_30"
-        }
-      ],
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
       "starsAtNight": false,
-      "verdict": "renews",
+      "verdict": null,
       "worldEvents": []
     },
     "spawnerKinds": ["skeletons"],
@@ -16990,6 +15319,59 @@
         "night": true
       }
     ],
+    "tameable": false,
+    "weaponSets": []
+  },
+  {
+    "biome": null,
+    "boss": false,
+    "chops": null,
+    "drops": [
+      {
+        "chance": 0.25,
+        "key": "OozeMork",
+        "max": 1,
+        "min": 1,
+        "name": "Dead Pulp",
+        "onePerPlayer": false,
+        "usedIn": [
+          {
+            "key": "BombBlob_Morkhalla",
+            "name": "Blob Bomb: Pulp"
+          }
+        ]
+      }
+    ],
+    "health": 50.0,
+    "key": "BlobMorkMini",
+    "mines": null,
+    "modifiers": {
+      "blunt": "weak",
+      "chop": "ignore",
+      "fire": "resistant",
+      "frost": "weak",
+      "lightning": "weak",
+      "pickaxe": "ignore",
+      "pierce": "resistant",
+      "poison": "immune",
+      "slash": "resistant"
+    },
+    "name": "Tiny Pulp",
+    "sets": [],
+    "sources": {
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
+      "starsAtNight": false,
+      "verdict": null,
+      "worldEvents": []
+    },
+    "spawnerKinds": [],
+    "spawns": [],
     "tameable": false,
     "weaponSets": []
   },
@@ -18190,6 +16572,57 @@
       "poison": "immune"
     },
     "name": "Yagluth",
+    "sets": [],
+    "sources": {
+      "areas": [],
+      "night": null,
+      "once": [],
+      "openWorld": [],
+      "perPlace": null,
+      "raids": [],
+      "respawns": [],
+      "starsAtNight": false,
+      "verdict": null,
+      "worldEvents": []
+    },
+    "spawnerKinds": [],
+    "spawns": [],
+    "tameable": false,
+    "weaponSets": []
+  },
+  {
+    "biome": null,
+    "boss": false,
+    "chops": null,
+    "drops": [
+      {
+        "chance": 1.0,
+        "key": "chest_hildir3",
+        "max": 1,
+        "min": 1,
+        "name": "Hildir's Bronze Chest",
+        "onePerPlayer": false,
+        "usedIn": []
+      },
+      {
+        "chance": 1.0,
+        "key": "TrophyGoblinBruteBrosShaman",
+        "max": 1,
+        "min": 1,
+        "name": "Zil Trophy",
+        "onePerPlayer": false,
+        "usedIn": []
+      }
+    ],
+    "health": 2400.0,
+    "key": "GoblinShaman_Hildir",
+    "mines": null,
+    "modifiers": {
+      "chop": "ignore",
+      "pickaxe": "ignore",
+      "spirit": "immune"
+    },
+    "name": "Zil",
     "sets": [],
     "sources": {
       "areas": [],

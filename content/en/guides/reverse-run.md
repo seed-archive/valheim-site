@@ -14,7 +14,7 @@ Moder and Fader, and the chain that binds them is short. Everything the Deep Nor
 
 Moder is the long trip, since a reverse run lives at the far end of the world, round Kall's gate. From that gate the Moder nearest the start is {{moderRunKallM}} m away as a rule ({{moderRunKallMLow}}–{{moderRunKallMHigh}} m on the middle half of seeds), and the Moder nearest Kall {{kallModerM}} m ({{kallModerMLow}}–{{kallModerMHigh}} m).
 
-Any Moder of the world serves, and the one by the start is rarely the one by Kall's gate, so climb the one nearest Kall: it holds her {{moderEggs}} drake nests on {{kallModerNests}}% of seeds. Players dig a trench against her summoning platform and shoot as she lands; fire arrows hurt her half again. Her power then halves the frost you take on the way back north.
+Any Moder of the world serves, and the one by the start is rarely the one by Kall's gate, so climb the one nearest Kall: it holds her {{moderEggs}} drake nests on {{kallModerNests}}% of seeds. Players dig a trench against her summoning platform and shoot as she lands; fire arrows hurt her {{moderFireMore}}% more. Her power then takes {{moderPowerFrost}}% off the frost you take on the way back north.
 
 ## What does each boss open, and how do I get round it?
 
@@ -32,7 +32,7 @@ Every boss of the usual order opens a door. Played backwards, each door is got r
 | Bonemass's withered bones | the Elder's key to the Sunken Crypts | the Elder first, even backwards |
 | A pickaxe | Eikthyr's hard antler | a troll's blows mine copper and tin for you; or one short walk to Eikthyr first |
 
-Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him takes only the raft's wood, leather scraps and resin. Fader you meet before the weapons that suit him: he takes no fire and only half of pierce, so the fires that serve you everywhere else do nothing to him; bring blunt or slash. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
+Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him takes only the raft's wood, leather scraps and resin. Fader you meet before the weapons that suit him: he takes no fire and only {{faderPierceShare}}% of pierce, so the fires that serve you everywhere else do nothing to him; bring blunt or slash. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
 
 ## What does the first key cost?
 
@@ -59,7 +59,7 @@ The springs' refined eitr is the hidden gate: it is made only from sap, so the k
 
 ## How do I get to the Deep North?
 
-By sea: the ocean cuts it off from every other land, so the boat is the bill, and the start island of [A speedrunner's start](/guides/a-speedrunners-start) is all you build it from. The raft takes no metal and no boss item, and the northern sea does not burn boats as the Ashlands' does, so a run can leave on the first raft the island allows. Its danger is the floating ice along the shore: land with care, and break the sheets for ice.
+By sea: the ocean cuts it off from every other land, so the boat is the bill, and the starting island of [A speedrunner's start](/guides/a-speedrunners-start) is all you build it from. The raft takes no metal and no boss item, and the northern sea does not burn boats as the Ashlands' does, so a run can leave on the first raft the island allows. Its danger is the floating ice along the shore: land with care, and break the sheets for ice.
 
 | The boat | Wood | Fine wood | Ancient bark | Leather scraps or deer hides | Resin | Metal |
 |---|---|---|---|---|---|---|
@@ -69,9 +69,9 @@ By sea: the ocean cuts it off from every other land, so the boat is the bill, an
 
 The Karve's bronze nails wait for copper, tin and something to mine them: Eikthyr's antler, or a troll's blows in the [Black Forest](/guides/black-forest), so some players set out no earlier than that. A raft that leaves before the forge and the [Swamp](/guides/swamp) lands without a frost resistance mead, since its base wants the Swamp's bloodbags and the mead ketill's copper and tin (the cold table below): fire under a roof has to hold off the cold instead.
 
-The north cannot give everything, so the run comes back south, and the start island's Burial Chambers are where its surtling cores wait: the smelter, the charcoal kiln and the blast furnace take {{furnaceCores}} each before a single portal.
+The north cannot give everything, so the run comes back south, and the starting island's Burial Chambers are where its surtling cores wait: the smelter, the charcoal kiln and the blast furnace take {{furnaceCores}} each before a single portal.
 
-| Surtling cores in the start island's Burial Chambers | How often |
+| Surtling cores in the starting island's Burial Chambers | How often |
 |---|---|
 | {{coresNeed}}, the usual game's kiln, smelter and portal pair | {{islandCoresEnough}}% of seeds |
 | {{coresFurnaceNeed}}, the smelter, the kiln and the blast furnace | {{islandCoresFurnace}}% of seeds |
@@ -121,7 +121,7 @@ Every weather of the Deep North freezes you, day and night: no health coming bac
 | A frost resistance [mead](/catalog/meads) | {{frostMeadHoney}} honey, {{frostMeadThistle}} thistle, {{frostMeadBloodbags}} bloodbags, {{frostMeadEye}} greydwarf eye; a mead ketill of {{meadCauldronTin}} tin, {{meadCauldronCopper}} copper, {{meadCauldronScraps}} leather scraps | before you sail |
 | A feather cape | {{capeFeathers}} feathers, {{capeScaleHides}} scale hides, {{capeEitr}} eitr | after the Mistlands |
 
-Timberwood falls to the first axe, and its stave walls do not wear under snow. Open snow refuses every piece, the campfire too, so set the fire on a rock, on a village house's floor, or on ground the hoe has levelled. The resistances do not add up: with the cape on, the mead is wasted, and the cape doubles the fire you take in the Ashlands. Moder's power from her [trophy](/catalog/trophies) halves the frost you take, but a reverse run hangs it late.
+Timberwood falls to the first axe, and its stave walls do not wear under snow. Open snow refuses every piece, the campfire too, so set the fire on a rock, on a village house's floor, or on ground the hoe has levelled. The resistances do not add up: with the cape on, the mead is wasted, and the cape doubles the fire you take in the Ashlands. Moder's power from her [trophy](/catalog/trophies) takes {{moderPowerFrost}}% off the frost you take, but a reverse run hangs it late.
 
 ### How do I camp without calling a raid?
 

@@ -6,7 +6,13 @@ import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import ListSubheader from "@mui/material/ListSubheader";
+import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
@@ -43,6 +49,7 @@ export function ArchiveBar() {
   const { signOut, user } = useAuth();
   const intl = useIntl();
   const [accountMenu, setAccountMenu] = useState<HTMLElement | null>(null);
+  const [drawer, setDrawer] = useState(false);
   const [open, setOpen] = useState<{ key: string; anchor: HTMLElement } | null>(
     null,
   );
@@ -85,8 +92,58 @@ export function ArchiveBar() {
             <FormattedMessage id="archive.game" />
           </Typography>
         </Box>
+        {/* Below md the whole menu is in the drawer (the shared seo.md, Header and footer). */}
+        <IconButton
+          color="inherit"
+          aria-label={intl.formatMessage({ id: "archive.menu" })}
+          onClick={() => setDrawer(true)}
+          sx={{ display: { xs: "inline-flex", md: "none" } }}
+        >
+          <MenuIcon />
+        </IconButton>
+        <Drawer anchor="right" open={drawer} onClose={() => setDrawer(false)}>
+          <List sx={{ width: 280 }}>
+            {MENUS.flatMap((menu) => [
+              <ListSubheader key={menu.key} sx={{ fontWeight: 700 }}>
+                <FormattedMessage id={menu.id} />
+              </ListSubheader>,
+              ...menu.groups.flatMap((group) => [
+                ...(group.id
+                  ? [
+                      <ListItemButton
+                        key={`${menu.key}-${group.id}`}
+                        component={group.href ? Link : "div"}
+                        href={group.href}
+                        disabled={!group.href}
+                        onClick={() => setDrawer(false)}
+                        sx={{ "&.Mui-disabled": { opacity: 1 } }}
+                      >
+                        <ListItemText
+                          primary={<FormattedMessage id={group.id} />}
+                          slotProps={{ primary: { sx: { fontWeight: 600 } } }}
+                        />
+                      </ListItemButton>,
+                    ]
+                  : []),
+                ...group.entries.map((entry) => (
+                  <ListItemButton
+                    key={`${menu.key}-${entry.href}`}
+                    component={Link}
+                    href={entry.href}
+                    onClick={() => setDrawer(false)}
+                    sx={group.id ? { pl: 4 } : undefined}
+                  >
+                    <ListItemText
+                      primary={<FormattedMessage id={entry.id} />}
+                    />
+                  </ListItemButton>
+                )),
+              ]),
+            ])}
+          </List>
+        </Drawer>
         {MENUS.map((menu) => (
-          <Box key={menu.key}>
+          <Box key={menu.key} sx={{ display: { xs: "none", md: "block" } }}>
             <Button
               color="inherit"
               onClick={(event) =>
@@ -128,7 +185,10 @@ export function ArchiveBar() {
                         <MenuItem
                           key={group.id}
                           disabled
-                          sx={{ fontWeight: 700, "&.Mui-disabled": { opacity: 1 } }}
+                          sx={{
+                            fontWeight: 700,
+                            "&.Mui-disabled": { opacity: 1 },
+                          }}
                         >
                           <FormattedMessage id={group.id} />
                         </MenuItem>

@@ -13,6 +13,7 @@ import type { Metadata } from "next";
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { RowLink } from "@/components/catalog/RowLink";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
+import { SectionLinks } from "@/components/catalog/SectionLinks";
 import { serverFormat } from "@/lib/i18n/server";
 import events from "@/lib/valheim/events.json";
 
@@ -113,48 +114,50 @@ export default function EventsPage() {
         maxWidth="lg"
         sx={{ py: 6, minHeight: "70vh" }}
       >
-        <PageTrail
-          steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.catalog"), href: "/catalog" },
-            { name: serverFormat("archive.guideEvents") },
-          ]}
-        />
-        <Typography variant="h3" component="h1" gutterBottom>
-          {t("title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>
-          <b>{t("question")}</b>{" "}
-          {t("answer", {
-            minutes: events.intervalMinutes,
-            chance: events.chance,
-          })}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>{t("how")}</Typography>
-        <TableContainer>
-          <Table size="small" sx={{ "& td": { verticalAlign: "top" } }}>
-            <TableHead>
-              <TableRow>
-                <TableCell>{t("head.raid")}</TableCell>
-                <TableCell>{t("head.opens")}</TableCell>
-                <TableCell>{t("head.ends")}</TableCell>
-                <TableCell>{t("head.lasts")}</TableCell>
-                <TableCell>{t("head.who")}</TableCell>
-                <TableCell>{t("head.where")}</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>{ordered.map(row)}</TableBody>
-          </Table>
-        </TableContainer>
-        <Typography
-          variant="h5"
-          component="h2"
-          id="jotun-invasion"
-          sx={{ mt: 5, mb: 1 }}
-        >
-          {t("invasion.title")}
-        </Typography>
-        <Typography sx={{ mb: 2 }}>{t("invasion.text")}</Typography>
+        <SectionLinks>
+          <PageTrail
+            steps={[
+              { name: serverFormat("archive.home"), href: "/" },
+              { name: serverFormat("archive.catalog"), href: "/catalog" },
+              { name: serverFormat("archive.guideEvents") },
+            ]}
+          />
+          <Typography variant="h3" component="h1" gutterBottom>
+            {t("title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>
+            <b>{t("question")}</b>{" "}
+            {t("answer", {
+              minutes: events.intervalMinutes,
+              chance: events.chance,
+            })}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>{t("how")}</Typography>
+          <TableContainer>
+            <Table size="small" sx={{ "& td": { verticalAlign: "top" } }}>
+              <TableHead>
+                <TableRow>
+                  <TableCell>{t("head.raid")}</TableCell>
+                  <TableCell>{t("head.opens")}</TableCell>
+                  <TableCell>{t("head.ends")}</TableCell>
+                  <TableCell>{t("head.lasts")}</TableCell>
+                  <TableCell>{t("head.who")}</TableCell>
+                  <TableCell>{t("head.where")}</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>{ordered.map(row)}</TableBody>
+            </Table>
+          </TableContainer>
+          <Typography
+            variant="h5"
+            component="h2"
+            id="jotun-invasion"
+            sx={{ mt: 5, mb: 1 }}
+          >
+            {t("invasion.title")}
+          </Typography>
+          <Typography sx={{ mb: 2 }}>{t("invasion.text")}</Typography>
+        </SectionLinks>
       </Container>
       <ArchiveFooter />
     </>

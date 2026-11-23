@@ -1,3 +1,5 @@
+import { slug } from "@/lib/slug";
+
 // How the map groups the game's locations; "other" (ruins, camps, houses) is
 // not drawn. The Valheim generator gives each
 // location type its group and name key (its `legend`); the player's names are
@@ -61,28 +63,8 @@ export const BIOME_KEYS = [
   "mistlands",
 ];
 
-// Eight compass points, clockwise from north, for "2 km north-east".
-export const COMPASS = [
-  "north",
-  "northEast",
-  "east",
-  "southEast",
-  "south",
-  "southWest",
-  "west",
-  "northWest",
-];
-
-export function compass(dx: number, dz: number): string {
-  const angle = (Math.atan2(dx, dz) * 180) / Math.PI;
-  return COMPASS[Math.round((angle + 360) / 45) % 8];
-}
-
 // A place's anchor on the caves and dungeons page, from its name: every
 // variant under one name shares it.
 export function placeAnchor(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
+  return slug(name);
 }
