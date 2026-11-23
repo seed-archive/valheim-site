@@ -1,0 +1,160 @@
+{
+  "blocks": [
+    {
+      "biome": "meadows",
+      "boss": "eikthyr",
+      "strip": [
+        ["strip.eikthyr", false],
+        ["strip.hildir", false]
+      ],
+      "measures": [
+        ["bees.fifth", true],
+        ["vegetation.start.birches", false],
+        ["vegetation.start.oaks", false]
+      ]
+    },
+    {
+      "biome": "blackForest",
+      "boss": "theElder",
+      "strip": [
+        ["strip.theElder", false],
+        ["strip.haldor", false]
+      ],
+      "measures": [
+        ["joint.base", true],
+        ["base.copper2", true],
+        ["base.sea", true],
+        ["vegetation.base.tin", false],
+        ["blackForest.camp3", true],
+        ["blackForest.coresWalk", true]
+      ]
+    },
+    {
+      "biome": "swamp",
+      "boss": "bonemass",
+      "strip": [
+        ["strip.bonemass", false],
+        ["strip.bogWitch", false]
+      ],
+      "measures": [
+        ["around.bonemass.crypt3", true],
+        ["around.bonemass.fireHole1", true],
+        ["region.bonemass.iron", false],
+        ["region.bonemass.abominationsMet", false]
+      ]
+    },
+    {
+      "biome": "mountain",
+      "boss": "moder",
+      "strip": [["strip.moder", false]],
+      "measures": [
+        ["around.moder.drakeNest3", true],
+        ["around.moder.silver1", true]
+      ]
+    },
+    {
+      "biome": "plains",
+      "boss": "yagluth",
+      "strip": [["strip.yagluth", false]],
+      "measures": [
+        ["plains.totem5", true],
+        ["region.yagluth.barley", false],
+        ["region.yagluth.flax", false]
+      ]
+    },
+    {
+      "biome": "mistlands",
+      "boss": "theQueen",
+      "strip": [["strip.theQueen", false]],
+      "measures": [
+        ["mistlands.fragmentsWalk", true],
+        ["around.theQueen.giant1", true],
+        ["around.theQueen.extractorM", true],
+        ["around.theQueen.root1", true],
+        ["region.theQueen.blackCores", false]
+      ]
+    },
+    {
+      "biome": "ashlands",
+      "boss": "fader",
+      "strip": [["strip.fader", false]],
+      "measures": [
+        ["around.fader.fortress4", true],
+        ["around.fader.morgenHole2", true]
+      ]
+    },
+    {
+      "biome": "deepNorth",
+      "boss": "kall",
+      "strip": [["strip.kall", false]],
+      "measures": [
+        ["around.kall.morkhalla3", true],
+        ["around.kall.hole1", true]
+      ]
+    }
+  ],
+  "within": {
+    "bees.fifth": { "need": "hivesFive", "name": "bees" },
+    "blackForest.camp3": { "need": "ancientSeedsNeed", "name": "camps" },
+    "blackForest.coresWalk": { "need": "coresNeed", "name": "coresWalk" },
+    "base.copper2": { "need": "caveVeins", "name": "veins" },
+    "base.sea": { "need": 1, "name": "sea" },
+    "around.bonemass.crypt3": { "need": "runCrypts", "name": "crypts" },
+    "around.bonemass.fireHole1": { "need": 1, "name": "holes" },
+    "around.moder.drakeNest3": { "need": "moderEggs", "name": "nests" },
+    "around.moder.silver1": { "need": 1, "name": "silver" },
+    "mistlands.fragmentsWalk": {
+      "need": "sealbreakerFragments",
+      "name": "fragments"
+    },
+    "plains.totem5": { "need": "yagluthTotemsNeed", "name": "totems" },
+    "around.theQueen.giant1": { "need": 1, "name": "giant" },
+    "around.theQueen.extractorM": { "need": 1, "name": "extractor" },
+    "around.theQueen.root1": { "need": 1, "name": "root" },
+    "around.fader.fortress4": { "need": "faderForts", "name": "forts" },
+    "around.fader.morgenHole2": { "need": "morgenHoles", "name": "morgen" },
+    "around.kall.morkhalla3": { "need": "kallMorkhallaNeed", "name": "mork" },
+    "around.kall.hole1": { "need": 1, "name": "tunnels" }
+  },
+  "needOf": {
+    "region.yagluth.totems": "yagluthTotemsNeed",
+    "vegetation.base.cores": "coresNeed",
+    "region.bonemass.iron": "runIron",
+    "region.bonemass.abominationsMet": "harnessTwo"
+  },
+  "quarters": [
+    "vegetation.start.oaks",
+    "vegetation.base.tin",
+    "region.yagluth.barley",
+    "region.yagluth.flax",
+    "region.theQueen.blackCores"
+  ],
+  "neutral": [
+    "strip.eikthyr",
+    "bosses.eikthyr.island",
+    "vegetation.start.birches",
+    "joint.base"
+  ],
+  "yesNo": [
+    "strip.eikthyr",
+    "strip.hildir",
+    "strip.bonemass",
+    "strip.bogWitch",
+    "strip.theElder",
+    "strip.haldor",
+    "strip.moder",
+    "strip.yagluth",
+    "strip.theQueen",
+    "strip.fader",
+    "strip.kall",
+    "vegetation.base.shore"
+  ],
+  "bonus": ["around.theQueen.root1"],
+  "about": ["vegetation.base.cores", "region.bonemass.iron"],
+  "island": {
+    "biomes": ["blackForest", "swamp", "mountain"],
+    "bosses": ["eikthyr", "theElder", "bonemass", "moder"]
+  },
+  "quarterPoints": { "lower": 5, "upper": 15 },
+  "roundM": 10
+}

@@ -19,11 +19,11 @@ import {
 } from "@/lib/valheim/generator";
 import { placeIcon } from "@/lib/valheim/icons";
 import { CAMP_BUILDING, mapPalette, overlays } from "@/lib/valheim/palette";
-import { BIOME_KEYS, compass, type PlaceGroup } from "@/lib/valheim/places";
+import { BIOME_KEYS, type PlaceGroup } from "@/lib/valheim/places";
 
-// Nothing can be built this near the start: the start location's no-build
-// radius, its exterior radius (the game's StartTemple prefab, m_noBuild).
-const START_NO_BUILD = 25;
+// The Forge of Potential's place key (the Valheim generator's kinds,
+// `AncientUpgradeStation`).
+const FORGE_KEY = "ancientForge";
 
 // A darker shade of each group's marker colour for the tooltip's label, so it
 // reads on white (our own choice).
@@ -157,53 +157,55 @@ export function useValheimMap(
     if (!current) {
       return [];
     }
-    // The start's group also holds the Forge of Potential, so the start is found by its key.
+    // The start's group also holds the Forge of Potential, so each is found by its key.
     const start = current.places.find((p) => p.key === "start");
+    // Of the forge's possible places, the one nearest the start (the owner, 2026-11-23: the forge stands where the
+    // player first comes near one, so the nearest is the one to head for).
+    const from = (p: Place) =>
+      start ? Math.hypot(p.x - start.x, p.y - start.y) : 0;
+    const forge = current.places
+      .filter((p) => p.key === FORGE_KEY)
+      .sort((a, b) => from(a) - from(b))[0];
     // Ruins, camps, houses: not drawn (the owner, 2026-11-16).
     return current.places
       .filter((p) => p.group !== "other" && !hidden.has(p.key))
       .map((p) => {
         const lines: string[] = [];
-        if (p.unique) {
+        if (p.key === FORGE_KEY) {
+          lines.push(t("pages.map.possibleForge"));
+        } else if (p.unique) {
           lines.push(t("pages.map.possiblePlace"));
         }
         if (p === start) {
-          lines.push(t("pages.map.startNoBuild", { m: START_NO_BUILD }));
-        }
-        if (start && p !== start) {
-          const dx = p.x - start.x;
-          const dy = p.y - start.y;
-          lines.push(
-            t("pages.map.fromStart", {
-              km: (Math.hypot(dx, dy) / 1000).toFixed(1),
-              way: t(`pages.map.compass.${compass(dx, dy)}`),
-            }),
-          );
+          lines.push(t("pages.map.startTrophies"));
         }
         if (LOOT_GROUPS.includes(p.group)) {
           lines.push(t("pages.map.loot.open"));
         }
         const sea = current.nearest.get(`${p.x},${p.y}`);
+        const nearestNote: Card["note"] =
+          sea !== undefined
+            ? {
+                tone: sea > 0 ? "info" : "good",
+                lines: [
+                  t("pages.map.nearestTitle"),
+                  sea > 0
+                    ? t("pages.map.seaOnWay", { sea: (sea / 1000).toFixed(1) })
+                    : t("pages.map.noSea"),
+                ],
+              }
+            : p === forge
+              ? { tone: "good", lines: [t("pages.map.nearestTitle")] }
+              : undefined;
         const card: Card = {
-          kicker: t(`pages.map.kinds.${p === start || p.group !== "start" ? p.group : "landmark"}`),
+          kicker: t(
+            `pages.map.kinds.${p.key === FORGE_KEY ? "forge" : p.group}`,
+          ),
           kickerColour: KICKER_COLOUR[p.group],
           title: t(`pages.map.places.${p.key}`),
           meta: `${t(`pages.map.biomes.${BIOME_KEYS[p.biome]}`)} · x ${p.x}, y ${p.y}`,
           lines,
-          note:
-            sea === undefined
-              ? undefined
-              : {
-                  tone: sea > 0 ? "info" : "good",
-                  lines: [
-                    t("pages.map.nearestTitle"),
-                    sea > 0
-                      ? t("pages.map.seaOnWay", {
-                          sea: (sea / 1000).toFixed(1),
-                        })
-                      : t("pages.map.noSea"),
-                  ],
-                },
+          note: nearestNote,
         };
         return {
           layer: p.group,

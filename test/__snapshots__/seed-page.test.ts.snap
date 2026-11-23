@@ -1,0 +1,197 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`seed 6Z4uDl0xNQ > scores as before 1`] = `
+{
+  "parts": {
+    "ashlands": 1,
+    "blackForest": 0.7857142857142857,
+    "deepNorth": 1,
+    "island": 0.7142857142857143,
+    "meadows": 1,
+    "mistlands": 0.75,
+    "mountain": 0.5,
+    "plains": 0.75,
+    "swamp": 0.8333333333333334,
+  },
+  "total": 81,
+}
+`;
+
+exports[`seed 6Z4uDl0xNQ > stands its bosses against the strip as before 1`] = `
+[
+  {
+    "inStrip": {
+      "along": -137,
+    },
+    "key": "eikthyr",
+  },
+  {
+    "inStrip": {
+      "along": -3266,
+    },
+    "key": "theElder",
+  },
+  {
+    "inStrip": {
+      "along": 5555,
+    },
+    "key": "bonemass",
+  },
+  {
+    "inStrip": {
+      "along": -5376,
+    },
+    "key": "moder",
+  },
+  {
+    "inStrip": {
+      "along": -6917,
+    },
+    "key": "yagluth",
+  },
+  {
+    "inStrip": {
+      "along": 7611,
+    },
+    "key": "theQueen",
+  },
+  {
+    "inStrip": {
+      "along": -9157,
+    },
+    "key": "fader",
+  },
+  {
+    "inStrip": {
+      "along": 9275,
+    },
+    "key": "kall",
+  },
+]
+`;
+
+exports[`seed IzFt3SW5sA > scores as before 1`] = `
+{
+  "parts": {
+    "ashlands": 0.5,
+    "blackForest": 0.5714285714285714,
+    "deepNorth": 0.5,
+    "island": 0.8571428571428571,
+    "meadows": 0.8333333333333334,
+    "mistlands": 0.5,
+    "mountain": 0.8333333333333334,
+    "plains": 0.375,
+    "swamp": 0.8333333333333334,
+  },
+  "total": 64,
+}
+`;
+
+exports[`seed IzFt3SW5sA > stands its bosses against the strip as before 1`] = `
+[
+  {
+    "inStrip": {
+      "along": -57,
+    },
+    "key": "eikthyr",
+  },
+  {
+    "inStrip": {
+      "along": 4152,
+    },
+    "key": "theElder",
+  },
+  {
+    "inStrip": {
+      "along": 5879,
+    },
+    "key": "bonemass",
+  },
+  {
+    "inStrip": {
+      "along": 6407,
+    },
+    "key": "moder",
+  },
+  {
+    "inStrip": null,
+    "key": "yagluth",
+  },
+  {
+    "inStrip": null,
+    "key": "theQueen",
+  },
+  {
+    "inStrip": null,
+    "key": "fader",
+  },
+  {
+    "inStrip": null,
+    "key": "kall",
+  },
+]
+`;
+
+exports[`seed Valheim > scores as before 1`] = `
+{
+  "parts": {
+    "ashlands": 0.5,
+    "blackForest": 0.5,
+    "deepNorth": 0.8333333333333334,
+    "island": 0.42857142857142855,
+    "meadows": 0.6666666666666666,
+    "mistlands": 0.4166666666666667,
+    "mountain": 0.16666666666666666,
+    "plains": 0.125,
+    "swamp": 0.5,
+  },
+  "total": 46,
+}
+`;
+
+exports[`seed Valheim > stands its bosses against the strip as before 1`] = `
+[
+  {
+    "inStrip": {
+      "along": 209,
+    },
+    "key": "eikthyr",
+  },
+  {
+    "inStrip": {
+      "along": -2555,
+    },
+    "key": "theElder",
+  },
+  {
+    "inStrip": {
+      "along": -2096,
+    },
+    "key": "bonemass",
+  },
+  {
+    "inStrip": null,
+    "key": "moder",
+  },
+  {
+    "inStrip": null,
+    "key": "yagluth",
+  },
+  {
+    "inStrip": null,
+    "key": "theQueen",
+  },
+  {
+    "inStrip": {
+      "along": -9403,
+    },
+    "key": "fader",
+  },
+  {
+    "inStrip": {
+      "along": 9157,
+    },
+    "key": "kall",
+  },
+]
+`;

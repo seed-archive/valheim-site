@@ -11,6 +11,7 @@
     "tools": "Tools",
     "map": "Map",
     "account": "Account",
+    "menu": "Menu",
     "signOut": "Sign out",
     "unavailable": "The archive could not be read.",
     "privacy": "Privacy",
@@ -18,6 +19,8 @@
     "releaseNotes": "Release notes",
     "seedRating": "How good is my seed?",
     "craftTree": "Craft tree",
+    "forgeName": "Nidavellir",
+    "bestSeeds": "Best seeds",
     "bugs": "Bugs",
     "guides": "Guides",
     "catalog": "Catalog",
@@ -48,10 +51,13 @@
     "guideSpeedrun": "Speedrun",
     "guideReverseRun": "Reverse run",
     "guideWhereToBuild": "Where to build your base",
+    "wind": "Wind",
     "guideHowMuchMetal": "How much metal a run takes",
     "guideHardcore": "Hard, Very hard and Hardcore",
     "guideBossArenas": "Boss arenas",
+    "guideTaming": "Taming animals",
     "guideBows": "Bows, crossbows and arrows",
+    "guideStaffs": "Staffs",
     "guideArmour": "Armour",
     "guideToolsCatalog": "Tools",
     "guideMeads": "Meads",
@@ -114,8 +120,89 @@
     "tools": {
       "title": "Tools",
       "map": "<b>How do I see the world of a seed?</b> Type it on the <link>Valheim seed map</link>.",
-      "seedRating": "<b>Is my seed any good?</b> Type it into <link>How good is my seed?</link> and see how its start island, boss altars, traders and dungeons rank against other worlds.",
-      "craftTree": "<b>How much wood and ore does my run need?</b> Switch on what you will build in the <link>Craft tree</link>."
+      "seedRating": "<b>Is my seed any good?</b> Type it into <link>How good is my seed?</link> and see how its starting island, boss altars, traders and dungeons rank against other worlds.",
+      "craftTree": "<b>How much wood and ore does my run need?</b> Switch on what you will build in the <link>Craft tree</link>.",
+      "forgeName": "<b>How do I raise an item at the Forge of Potential without breaking it?</b> Name your character at <link>Nidavellir</link>.",
+      "wind": "<b>Which way does the wind blow?</b> The same in every world: see any hour of the year in the <link>Wind</link> tool.",
+      "bestSeeds": "<b>Which seed should I start?</b> Pick one of the <link>Best seeds</link>, sorted by the score or by the biome you care about."
+    },
+    "bestSeeds": {
+      "title": "Best seeds",
+      "question": "Which seed should I start?",
+      "answer": "The {count} best seeds we have rated in <rating>How good is my seed?</rating>, with each biome scored from 0 to 100. Click a column's head to sort by it, and a seed to open it on the map.",
+      "rank": "#",
+      "seed": "Seed",
+      "score": "Score",
+      "island": "Starting island"
+    },
+    "taming": {
+      "head": {
+        "animal": "Animal",
+        "eats": "Eats",
+        "ride": "Saddle",
+        "health": "Health",
+        "love": "Love points",
+        "partner": "Partner within",
+        "most": "Stops at",
+        "pregnancy": "Pregnancy",
+        "grows": "Grows up",
+        "mount": "Mount",
+        "speed": "Run speed",
+        "stamina": "Stamina",
+        "gallop": "Gallop lasts",
+        "swim": "Swim lasts"
+      },
+      "follows": "follows on command",
+      "bornTame": "hatches tame",
+      "metres": "{m} m",
+      "most": "{n} within {m} m",
+      "min": "{n} min",
+      "egg": "{name}: hatches in {n} min",
+      "young": "{name}: grows up in {n} min",
+      "fire": "by a fire",
+      "roof": "under a roof",
+      "speed": "{v} m/s",
+      "span": "{low}–{high} min",
+      "spanSeconds": "{low}–{high} s"
+    },
+    "forge": {
+      "return": {
+        "level": "Level",
+        "multiplier": "Step",
+        "perLevel": "Per level",
+        "craft": "1 (craft)",
+        "total": "Put in",
+        "idolOnly": "From level {from}, at the Forge of Potential: one idol a try, no material. The grey numbers are what the workbench would ask for the level; you never pay them, but a break is counted by them.",
+        "breaks": "If it breaks",
+        "breaksAt": "at level {level}",
+        "sum": "({first} + {at}) × {pct}% →",
+        "note": "So a break at {top} gives back more than one at {max}, though the item took no more material."
+      }
+    },
+    "forgeName": {
+      "title": "Nidavellir",
+      "subtitle": "In Norse myth, Nidavellir is the home of the dwarves, where the brothers Sindri and Brokkr forged Thor's hammer Mjölnir. Here it is the place to find the name that forges your item without breaking it.",
+      "question": "How do I raise an item at the Forge of Potential without breaking it?",
+      "again": "A name is no luck charm: a second copy of the same item meets every level on its second try, and can break where the first copy rose. Each copy needs fresh characters of its own.",
+      "answer": "Give the character who presses the button the right name. The forge's first try of an item at a level is decided by the character's name alone, so pick the idol, the item and the step, and take a name whose first try raises it.",
+      "guide": "What goes to the forge, what a try takes and why a name decides it is in the guide",
+      "idol": "Idol",
+      "item": "Item",
+      "step": "Step",
+      "stepLevel": "{from} → {to}",
+      "find": "Find names",
+      "finding": "Finding…",
+      "ingredients": "See ingredients",
+      "names": "Names whose first try raises it to level {to}:",
+      "how": {
+        "title": "How to raise an item with a name",
+        "lead": "One step, one fresh character with a name from above, written exactly. It takes the item, its idol, the recipe's ingredients and warm clothes from a chest at your base, walks past the station that makes the item, and presses the forge's button once. A name holds for the first try of each item at each level; delete the character and make it again, and its tries start over.",
+        "why": "Why the ingredients: the forge lists only the recipes a character knows, and a fresh one learns a recipe by holding all its ingredients and standing by its station.",
+        "stepsBefore": "Every step, from the stations to the name, is in the guide's section",
+        "steps": "How do I raise an item without breaking it?",
+        "catalogBefore": "and the ingredients each item's recipe asks for, the ones that go in the chest, are in the",
+        "catalog": "Catalog"
+      }
     },
     "craftTree": {
       "title": "Craft tree",
@@ -156,14 +243,11 @@
     },
     "seedRating": {
       "title": "How good is my seed?",
-      "lead": "<b>Is my Valheim seed a good one?</b> Type it below: it is rated for a fair run through every biome, from 0 to 100 — green where this seed is among the best tenth of seeds, red where it is worse than most.",
+      "lead": "<b>Is my seed a good one?</b> Type it below: it is rated for a fair run through every biome, from 0 to 100 — green where this seed is among the best tenth of seeds, red where it is worse than most. No seed in mind yet? Take one of the <best>Best seeds</best>.",
       "rate": "Rate",
       "strip": {
         "title": "How fast a run goes here",
         "lead": "A run goes from the start along one line, north or south. The bosses should stand in a strip {km} km wide through the start; what a biome gives is counted in the boss's own biome, and in metres only where it must stand right beside something.",
-        "north": "In the strip, {km} km north",
-        "south": "In the strip, {km} km south",
-        "outside": "Not in the strip: the nearest is {km} km away, {aside} km beside it",
         "none": "None in this world",
         "searching": "Looking…"
       },
@@ -171,40 +255,45 @@
         "total": "{n} / 100"
       },
       "measure": {
-        "bees_near": "Beehives within 1000 m of the start",
+        "bees_fifth": "{bees} beehives within {beesM} m of the start",
+        "blackForest_camp3": "{camps} Greydwarf camps within {campsM} m of the base, for the Elder's seeds",
+        "blackForest_coresWalk": "{coresWalk} surtling cores within {coresWalkM} m of the base",
+        "strip_theElder": "The Elder's altar in the strip",
+        "strip_haldor": "Haldor in the strip",
+        "strip_hildir": "Hildir in the strip",
+        "strip_eikthyr": "Eikthyr's altar in the strip",
         "vegetation_start_birches": "Birches within {start} m of the start",
         "vegetation_start_oaks": "Oaks within {start} m of the start",
-        "vegetation_base_copper": "Copper veins within {copper} m of the base",
-        "vegetation_base_shore": "The sea within {copper} m of the base",
+        "base_copper2": "{veins} copper veins within {veinsM} m of the base",
+        "base_sea": "The sea within {seaM} m of the base",
         "vegetation_base_tin": "Tin on the shore within {tin} m of the base",
-        "vegetation_base_birches": "Birches within {birch} m of the base, for the portal",
         "vegetation_base_greydwarfNests": "Greydwarf nests in this forest",
-        "around_kall_morkhallaNear": "{morkhalla} Mörkhalla within {bossNear} m of Kall",
-        "around_kall_holeNear": "The Winding Tunnels within {bossNear} m of Kall",
-        "region_bonemass_crypt": "Sunken Crypts in his Swamp",
-        "region_bonemass_fireHole": "Surtlings' fire holes in his Swamp",
-        "vegetation_base_chambers": "Burial Chambers within {chambers} m of the base",
-        "region_bonemass_abominationsMet": "Abominations a sweep of his Swamp meets",
-        "region_moder_drakeNest": "Drake nests in her Mountain",
-        "vegetation_moder_silver": "Silver veins in her Mountain, within {silver} m of her altar",
-        "region_yagluth_enoughTotems": "Enough totems in his Plains for the altar",
-        "region_theQueen_enoughFragments": "Enough Sealbreaker fragments in her Mistlands",
+        "strip_moder": "Moder's altar in the strip",
+        "strip_yagluth": "Yagluth's altar in the strip",
+        "strip_theQueen": "The Queen's gate in the strip",
+        "strip_fader": "Fader's altar in the strip",
+        "strip_kall": "Kall's altar in the strip",
+        "around_moder_drakeNest3": "{nests} drake nests within {nestsM} m of her altar",
+        "plains_totem5": "{totems} Fuling totems within {totemsM} m of his altar",
+        "around_theQueen_giant1": "A giant's remains within {giantM} m of her gate",
+        "around_theQueen_extractorM": "A place that can give a Dvergr Extractor within {extractorM} m of her gate",
+        "around_theQueen_root1": "A Yggdrasil root within {rootM} m of her gate",
+        "around_fader_fortress4": "{forts} Charred Fortresses within {fortsM} m of his altar",
+        "around_fader_morgenHole2": "{morgen} Morgen holes within {morgenM} m of his altar",
+        "around_kall_morkhalla3": "{mork} Mörkhalla within {morkM} m of his altar",
+        "around_kall_hole1": "The Winding Tunnels within {tunnelsM} m of his altar",
+        "strip_bonemass": "Bonemass's altar in the strip",
+        "strip_bogWitch": "The Bog Witch in the strip",
+        "around_bonemass_crypt3": "{crypts} Sunken Crypts within {cryptsM} m of his altar",
+        "around_bonemass_fireHole1": "A surtlings' fire hole within {holesM} m of his altar",
+        "region_bonemass_abominationsMet": "Abominations a sweep of his Swamp meets (the root harness needs {harness})",
+        "around_moder_silver1": "A silver vein within {silverM} m of her altar",
+        "mistlands_fragmentsWalk": "{fragments} Sealbreaker fragments in the Infested Mines within {fragmentsM} m of her gate",
         "region_theQueen_blackCores": "Black core stands in her Mistlands",
-        "region_start_cores": "Surtling cores on the start island (need {cores})",
-        "vegetation_base_cores": "Surtling cores in those chambers (need {cores})",
-        "region_bonemass_scrap": "Scrap piles in the Sunken Crypts of his Swamp",
-        "region_bonemass_iron": "Iron scrap from those piles",
-        "around_theQueen_rootNear": "A Yggdrasil root within {queenNear} m of the Queen",
-        "around_theQueen_extractor": "Places that can give a Dvergr Extractor within {extractor} m of the Queen",
-        "region_yagluth_totems": "Totems in the villages and outposts of his Plains",
-        "region_yagluth_village": "Fuling villages in his Plains",
-        "region_yagluth_tower": "Fuling outposts in his Plains",
-        "region_yagluth_barley": "Barley in those villages",
-        "region_yagluth_flax": "Flax in those villages",
-        "joint_base": "A troll cave with two copper veins and tin by it",
-        "around_theQueen_giantNear": "A giant's remains within {queenNear} m of the Queen",
-        "around_fader_fortressesNear": "{fortresses} Charred Fortresses within {bossNear} m of Fader",
-        "around_fader_morgenHolesNear": "{morgenHoles} Morgen holes within {bossNear} m of Fader"
+        "region_bonemass_iron": "Iron scrap in the Sunken Crypts of his Swamp (a run spends {iron})",
+        "region_yagluth_barley": "Barley in the villages of his Plains",
+        "region_yagluth_flax": "Flax in the villages of his Plains",
+        "joint_base": "A troll cave with two copper veins and tin by it"
       },
       "verdict": {
         "offStrip": "{boss} is off the strip: the run turns aside for it.",
@@ -212,7 +301,6 @@
         "baseGood": "A troll cave with copper in sight of the sea makes the base: the ship is built there and the iron ferried back.",
         "baseInland": "The troll cave with copper is out of sight of the sea: the iron is carried overland to the base.",
         "coresFar": "No Burial Chamber near the base: the surtling cores are carried far.",
-        "witchFar": "The Bog Witch is off the strip: the run must go far for her and will likely skip her.",
         "holesYes": "Fire holes in his Swamp give the smelter its cores and coal.",
         "holesNo": "No fire holes in his Swamp: cores and coal come from elsewhere, and more wood is felled.",
         "abomination": "The Abomination is a roll, not a place: every fresh zone of deep Swamp you enter may raise one, so sweep new ground round the crypts.",
@@ -225,23 +313,26 @@
         "fewer": "{what}: fewer than on most seeds."
       },
       "island": {
-        "title": "The start island",
+        "title": "The starting island",
         "lead": "What a run reaches before its first boat. The Meadows and the Black Forest with their altars belong on it; the Swamp and the Mountain with theirs are a bonus. The best seed holds all four.",
         "biome": "Biome",
-        "onIsland": "On the start island",
+        "onIsland": "On the starting island",
         "altar": "Boss altar on it",
         "optional": "(a bonus)",
-        "row": "On the start island",
-        "on": "On the island",
-        "bonus": "On the island: a bonus",
-        "off": "Not on the island"
+        "row": "On the starting island"
       },
       "value": {
         "yes": "Yes",
         "no": "No",
         "about": "about {n} ({least} to {most})"
       },
-      "toMap": "Every place below is on the <link>map of this seed</link>."
+      "toMap": "Every place below is on the <link>map of this seed</link>.",
+      "howToRead": {
+        "title": "How to read the report",
+        "where": "Every distance in a question comes from a scan of many seeds: it is how far three seeds in four have what the run needs, rounded to ten metres. The count before it is what the run asks for: the eggs for Moder, the totems for Yagluth, the cores for a smelter, a kiln and a pair of portals.",
+        "colour": "The colour of an answer is where your seed stands among the scanned ones. Green: the best quarter, the thing lies nearer than on three seeds in four. Grey: the usual middle half. Red: the worst quarter, or none within the distance at all. A count with no need, such as the oaks or the black cores, is coloured the same way by its own quarters. A boss or trader in the strip is green, outside it red. A grey row with no colour is the same on almost every seed and does not count.",
+        "score": "Each green answer gives a block one point, each grey one half, each red none; a block's number is the share it gets of all its answers, and the seed's number the mean of its blocks."
+      }
     },
     "map": {
       "title": "Valheim seed map",
@@ -261,7 +352,7 @@
         "spawners": "Spawners"
       },
       "places": {
-        "start": "Sacrificial stones",
+        "start": "Sacrificial Stones",
         "eikthyr": "Eikthyr's altar",
         "theElder": "The Elder's altar",
         "bonemass": "Bonemass's altar",
@@ -313,7 +404,7 @@
         "voltureNest": "Volture nest",
         "morgenHole": "Morgen hole",
         "placeOfMystery": "Place of mystery",
-        "ancientForge": "Ancient forge",
+        "ancientForge": "Forge of Potential",
         "northRuins": "Deep North ruins",
         "northVillage": "Deep North village",
         "northMemorial": "Deep North memorial",
@@ -339,7 +430,6 @@
         "deepNorth": "Deep North",
         "ocean": "Ocean"
       },
-      "fromStart": "{km} km {way} of the start",
       "loot": {
         "open": "Click to see what it holds",
         "close": "Close",
@@ -456,7 +546,7 @@
         "traders": "Traders' nearest possible places",
         "distance": "Straight",
         "sea": "Of it, sea",
-        "onIsland": "On the start island",
+        "onIsland": "On the starting island",
         "closer": "closer than {n}% of seeds",
         "more": "more than {n}% of seeds",
         "dungeons": "Dungeons",
@@ -514,19 +604,9 @@
         "summons_yagluthTotems": "Yagluth's altar to the farthest village needed for five totems",
         "summons_yagluthVillages": "Fuling villages to clear for five totems"
       },
-      "compass": {
-        "north": "north",
-        "northEast": "north-east",
-        "east": "east",
-        "southEast": "south-east",
-        "south": "south",
-        "southWest": "south-west",
-        "west": "west",
-        "northWest": "north-west"
-      },
       "kinds": {
         "start": "Start",
-        "landmark": "One in the world",
+        "forge": "Crafting station",
         "bosses": "Boss altar",
         "traders": "Trader",
         "dungeons": "Dungeon",
@@ -534,6 +614,7 @@
         "resources": "Resource"
       },
       "possiblePlace": "One of the places the game may put it: there is one in each world",
+      "possibleForge": "One of the places the game may put it: the first you come near becomes the forge, and the others are gone",
       "nearestTitle": "The nearest to the start",
       "seaOnWay": "{sea} km of the straight way is sea",
       "noSea": "No sea on the straight way",
@@ -607,7 +688,7 @@
         "surtlings": "Surtlings",
         "fryslings": "Fryslings"
       },
-      "startNoBuild": "Nothing can be built within {m} m of the stones",
+      "startTrophies": "Where you offer the bosses' trophies for their powers",
       "pickCount": {
         "barley": "{n} barley",
         "flax": "{n} flax",
@@ -626,7 +707,7 @@
       "home": "Back to Valheim"
     },
     "bugs": {
-      "title": "World generation bugs",
+      "title": "Bugs",
       "lead": "<b>Why does a Burial Chamber on my seed have other rooms than on a friend's, on the very same seed?</b> Because the game turns each Burial Chamber and Sunken Crypt at random, apart from the seed, and the turn decides its rooms.",
       "crypts": {
         "title": "Burial Chambers and Sunken Crypts differ on the same seed",
@@ -641,6 +722,11 @@
         "exact": "<b>Stands there.</b> Fixed by the seed: the same in every world made from it, so the number is exact.",
         "overYaws": "<b>Stands there, by its turn.</b> What stands in a Burial Chamber or a Sunken Crypt: its rooms' cores and scrap piles. The crypt is built one of {yaws} ways, so the panel gives the average of them, with the fewest and the most a crypt of that place can have. Your world holds one of those layouts.",
         "atPlay": "<b>Rolled when you take it.</b> Chests, and what drops from things you break, are rolled by the game when you open or break them, not when the world is made. No map can know them; the panel gives the average the game's own odds give."
+      },
+      "protector": {
+        "title": "The Helmet of the Protector never reaches the Forge of Potential",
+        "why": "The Forge of Potential lists a piece only when its recipe asks for an idol. Every other weapon and piece of armour that rises past its last level asks for one; the Helmet of the Protector does not: its recipe holds gold, its mould and moose hide, and nothing else.",
+        "what": "So the forge never offers it, and the helmet stays at level {max}, while the chest and legs of the same set rise further. Nothing you carry changes it: the forge reads the recipe, not your inventory."
       }
     },
     "catalog": {
@@ -692,9 +778,14 @@
       "question": "Where does it come from, and what is it for?",
       "answer": "Each crafting material under the first biome that gives it: where you find it, and every recipe it goes into in any biome, so you know what to keep before a later biome asks for it. Gear, food, meads and trophies are on pages of their own.",
       "power": "Power at the Sacrificial Stones",
+      "idol": {
+        "battle": "Weapons and tools of its tier, past their last level at the Forge of Potential",
+        "protection": "Armour, shields and capes of its tier, past their last level at the Forge of Potential"
+      },
       "bossTrophies": "Bosses' trophies",
       "head": {
         "material": "Material",
+        "trophy": "Trophy",
         "from": "Where from",
         "into": "Goes into"
       },
@@ -707,7 +798,16 @@
     },
     "buildPieces": {
       "note": {
-        "piece_TrainingDummy": "Every hit on it raises your weapon skill just as a hit on a creature does, so you can train at home in safety."
+        "piece_TrainingDummy": "Every hit on it raises your weapon skill just as a hit on a creature does, so you can train at home in safety.",
+        "itemstand": "On a wall",
+        "itemstandh": "On a floor or table",
+        "piece_grausten_roof_45_corner2": "The other corner shape",
+        "piece_grausten_roof_45_arch_corner2": "The other corner shape",
+        "bonfire": "Gives comfort lit or not",
+        "piece_brazierfloor02": "Gives comfort lit or not",
+        "piece_gift1": "Small",
+        "piece_gift2": "Medium",
+        "piece_gift3": "Large"
       },
       "head": {
         "piece": "Piece",
@@ -718,7 +818,7 @@
       "use": {
         "station": "Crafting station",
         "extension": "Raises the {station} one level",
-        "converter": "Turns materials into others",
+        "converter": "Turns {items}",
         "producer": "Makes {items} by itself",
         "bed": "Bed: sleep, and the spawn point",
         "comfort": "Comfort {value}",
@@ -764,33 +864,73 @@
       }
     },
     "effects": {
-      "runStamina": "Stamina for running {v} %",
-      "jumpStamina": "Stamina for jumping {v} %",
-      "swimStamina": "Stamina for swimming {v} %",
-      "sneakStamina": "Stamina for sneaking {v} %",
-      "attackStamina": "Stamina for attacking {v} %",
-      "blockStamina": "Stamina for blocking {v} %",
-      "dodgeStamina": "Stamina for dodging {v} %",
+      "runStamina": "Stamina for running {v}%",
+      "jumpStamina": "Stamina for jumping {v}%",
+      "swimStamina": "Stamina for swimming {v}%",
+      "sneakStamina": "Stamina for sneaking {v}%",
+      "attackStamina": "Stamina for attacking {v}%",
+      "blockStamina": "Stamina for blocking {v}%",
+      "dodgeStamina": "Stamina for dodging {v}%",
       "blockStaminaFlat": "Stamina for each block {v}",
-      "stagger": "Stagger resistance {v} %",
-      "speed": "Movement speed {v} %",
-      "jump": "Jump height {v} %",
-      "healthRegen": "Health regeneration {v} %",
-      "staminaRegen": "Stamina regeneration {v} %",
-      "eitrRegen": "Eitr regeneration {v} %",
+      "stagger": "Stagger resistance {v}%",
+      "speed": "Movement speed {v}%",
+      "jump": "Jump height {v}%",
+      "healthRegen": "Health regen {v}%",
+      "staminaRegen": "Stamina regen {v}%",
+      "eitrRegen": "Eitr regen {v}%",
       "healthOverTime": "Heals {v} health over {seconds} s",
       "staminaOverTime": "Restores {v} stamina over {seconds} s",
       "eitrOverTime": "Restores {v} eitr over {seconds} s",
       "carry": "Carry weight {v}",
       "tailwind": "The wind always behind the sail",
       "taming": "Animals tame faster",
-      "damage": "{types} damage {v} %",
-      "damageAll": "All damage {v} %",
+      "damage": "{types} damage {v}%",
+      "damageAll": "All damage {v}%",
       "skill": "{skill} skill {v}",
-      "resist": "{types} damage taken {v} %",
+      "resist": "{types} damage taken {v}%",
+      "armor": "Armour {v}",
+      "healthUpFront": "Heals {v} health at once",
+      "staminaUpFront": "Restores {v} stamina at once",
+      "eitrUpFront": "Restores {v} eitr at once",
+      "fallDamage": "Fall damage {v}%",
+      "swimSpeed": "Swimming speed {v}%",
+      "slowFall": "Falls no faster than {v} m/s",
+      "shield": "A shield that takes {v} damage",
+      "missingHealth": "Damage +{v}% for each point of health you have lost",
+      "when": {
+        "equip": "While worn",
+        "set": "With the whole set on",
+        "adrenaline": "At full adrenaline, for {seconds} s",
+        "adrenalineNow": "At full adrenaline",
+        "hit": "A hit lays {name} on the target",
+        "hitChance": "A hit lays {name} on the target, {chance}% of the time",
+        "attack": "Its attacks"
+      },
       "skillName": {
+        "swords": "Swords",
+        "knives": "Knives",
+        "clubs": "Clubs",
+        "polearms": "Polearms",
+        "spears": "Spears",
+        "blocking": "Blocking",
+        "axes": "Axes",
+        "bows": "Bows",
+        "elementalMagic": "Elemental magic",
+        "bloodMagic": "Blood magic",
+        "unarmed": "Unarmed",
+        "pickaxes": "Pickaxes",
+        "woodCutting": "Wood cutting",
+        "crossbows": "Crossbows",
+        "jump": "Jump",
+        "sneak": "Sneak",
+        "run": "Run",
+        "swim": "Swim",
+        "fishing": "Fishing",
+        "cooking": "Cooking",
         "farming": "Farming",
-        "run": "Run"
+        "crafting": "Crafting",
+        "ride": "Ride",
+        "all": "All"
       }
     },
     "breakables": {
@@ -855,6 +995,7 @@
         "base": "Base, at the mead ketill"
       },
       "lasts": "Lasts {minutes} min",
+      "lastsSeconds": "Lasts {seconds} s",
       "makes": "The fermenter makes {count}"
     },
     "stations": {
@@ -893,6 +1034,26 @@
       "lead": "Portals, fires, stacks, piles, adornments, and the training dummy that trains your weapon skill at home, by biome."
     },
     "crafting": {
+      "casts": {
+        "eitr": "Costs {n} eitr a cast",
+        "eitrHeld": "Costs {n} eitr a shot, held to fire a stream",
+        "health": "Takes {n}% of your current health a cast, less as the skill rises",
+        "projectiles": "Fires {n} shots at once",
+        "blast": "The shot bursts where it lands and hits all within {r} m",
+        "splinters": "The shot bursts into {n} splinters where it lands; each carries the staff's damage",
+        "splintersBounce": "The shot bursts into {n} splinters where it lands; each carries the staff's damage and bounces up to {bounces} times",
+        "returns": "The orb flies through all in its way and comes back to you; on the way back it deals {damage} to each enemy it passes",
+        "returnsEitr": "On the way back it gives you and each ally it passes {n} eitr",
+        "oneOf": "Each cast summons one of these, at random:",
+        "summons": "Summons a {name} ({health} health{blows})",
+        "blows": "; hits for up to {damage}",
+        "lifetime": "for {s} s",
+        "mostQuality": "as many at once as the staff's level",
+        "mostSkill": "{from} to {to} at once as the skill rises",
+        "status": "Gives you and allies within {radius} m: {name}",
+        "seconds": "for {s} s",
+        "shield": "absorbs {absorb} damage, {per} more a skill level"
+      },
       "colours": "Within a biome, green is the best and red the worst: of each damage type among the weapons, of armour among the armour, of block among the shields. Green also marks the best eitr regen and any armour that makes you faster; red, a speed penalty heavier than usual for its kind.",
       "nothing": "Nothing matches.",
       "copied": "Link copied",
@@ -967,7 +1128,11 @@
         "tool.other": "Build tool",
         "torch": "Torch",
         "trinket": "Trinket",
-        "utility": "Utility"
+        "utility": "Utility",
+        "bait": "Fishing bait",
+        "thrown": "Thrown",
+        "drinking": "Drinking vessel",
+        "hook": "Grappling hook"
       },
       "damage": {
         "damage": "Damage",
@@ -984,11 +1149,11 @@
       },
       "stat": {
         "armor": "Armour {value}",
-        "block": "Block {value}",
+        "block": "Block power {value}",
         "tier": "Tier {value}",
         "durability": "Durability {value}",
-        "movement": "Speed {value} %",
-        "eitrRegen": "Eitr regen {value} %",
+        "movement": "Movement speed {value}%",
+        "eitrRegen": "Eitr regen {value}%",
         "weight": "Weight {value}",
         "quality": "Quality up to {value}",
         "set": "Set of {value}"
@@ -997,10 +1162,31 @@
       "noStation": "By hand",
       "season": "Only {from} – {to}"
     },
+    "wind": {
+      "title": "Wind",
+      "question": "Which way does the wind blow?",
+      "answer": "The world's clock decides it, not the seed: at the same hour of the same day the wind blows the same way in every world, so this table is your wind too.",
+      "read": "Each cell is where the wind comes from at the start of that game hour. The main direction holds for about {hold} minutes, with smaller turns every couple of minutes on top of it. The night's hours are grey: sleep through them and you never sail in them. The first hours of day 1 are empty, since a new world begins just before its first morning.",
+      "dead": "The sail is dead when the wind comes from within {deg}° of the bow, on either side, {share}% of all headings, and only the oars move you then. Moder's power turns the wind dead astern while it lasts: call it when the wind stands ahead of your beam. Her power is on",
+      "moder": "How to kill each boss",
+      "week": "Week",
+      "weekDays": "Week {week}: days {from}–{to}",
+      "previous": "Previous week",
+      "next": "Next week",
+      "hour": "Hour",
+      "day": "Day {day}"
+    },
+    "speedrun": {
+      "stripMap": "The world of the seed Valheim with the strip between two red lines",
+      "stripCaption": "The seed Valheim: the strip, {m} m wide between the two red lines, runs north and south through the start; the run keeps to it and leaves the rest alone."
+    },
     "dungeons": {
       "title": "Caves and dungeons",
       "question": "Which creatures live where?",
       "lead": "Know what waits inside before you walk in: every cave, dungeon and camp that holds creatures, which stand there, how many, and how likely each is on your seed.",
+      "thing": {
+        "piece_Charred_Balista": "a Charred ballista, a turret that shoots"
+      },
       "section": {
         "dungeon": {
           "title": "Dungeons",
@@ -1016,6 +1202,7 @@
         }
       },
       "rooms": "Its rooms can hold:",
+      "quantity": "Up to {n} in a world.",
       "variant": "{n}",
       "head": {
         "variant": "Variant",
@@ -1081,20 +1268,22 @@
       "mistlands": "<b>How do I explore the Mistlands?</b> <link>Mistlands</link>: the Dvergr as allies, the Infested Mines for cores and the Sealbreaker, a Dvergr extractor for sap, and the Queen.",
       "ashlands": "<b>How do I explore the Ashlands?</b> <link>Ashlands</link>: the Drakkar over the burning sea, a roofed foothold, the stone portal that carries metal, and the Charred Fortresses for Fader's bells.",
       "damage": "<b>What hurts each creature?</b> <link>Damage types</link>: the weapon kind to bring against every creature and boss, and the resistance to wear against what it deals.",
-      "weapons": "<b>Which weapon to use?</b> <link>Weapons</link>: swords, axes, maces, knives, spears, atgeirs, fists and staffs by biome, what each is for and its damage.",
+      "weapons": "<b>Which weapon to use?</b> <link>Weapons</link>: swords, axes, maces, knives, spears, atgeirs and fists by biome, what each is for and its damage.",
       "bows": "<b>Which bow and which arrows?</b> <link>Bows, crossbows and arrows</link>: why the arrow sets the damage type, and every bow, bolt and bomb by biome.",
+      "staffs": "<b>What does each staff cast?</b> <link>Staffs</link>: what every staff fires, summons or lays on your allies, and what a cast costs in eitr and health.",
       "armour": "<b>Which armour to wear?</b> <link>Armour</link>: helmets, chest and leg pieces, capes, shields and trinkets by biome.",
       "toolsCatalog": "<b>Which tools to make?</b> <link>Tools</link>: pickaxes, the hammer, the hoe, the cultivator, saddles and fishing bait.",
       "events": "<b>What raids my base, and when does it stop?</b> <link>Raids</link>: what opens each raid, what ends it, and who comes.",
-      "forge": "<b>Can you upgrade gear past its last level?</b> <link>Forge of Potential</link>: the idols, the odds, and why the answer is fixed.",
+      "forge": "<b>Can I upgrade my gear past its last level?</b> <link>Forge of Potential</link>: where it stands, the idols, the odds, and why the answer is fixed.",
       "otherRules": "<b>How do I play with no death, no map or no portals?</b> <link>No death, no map, no portals</link>: one thing taken from the usual game at a time, what each rule makes you plan for, and how the rules stack.",
-      "speedrunnersStart": "<b>Is this seed worth the run?</b> <link>A speedrunner's start</link>: what the start island holds, the first loop from Eikthyr to Moder leg by leg, and the tests a seed must pass before you keep it.",
+      "speedrunnersStart": "<b>Is this seed worth the run?</b> <link>A speedrunner's start</link>: what the starting island holds, the first loop from Eikthyr to Moder leg by leg, and the tests a seed must pass before you keep it.",
       "speedrun": "<b>How do I speedrun to the end?</b> <link>Speedrun</link>: forge only what the next boss asks, let monsters chop and mine for you, and sail as little as you can.",
       "reverseRun": "<b>How do I play backwards, the Deep North first?</b> <link>Reverse run</link>: a raft north, a camp by the Winding Tunnels, and the gates that send you south for Moder and Fader.",
       "whereToBuild": "<b>Where do I build the home I keep all game?</b> <link>Where to build your base</link>: the open sea for the boat, how far each metal lies from home, which of them sail, where a bridge spares the voyage, and what the raids make of it.",
       "howMuchMetal": "<b>How much iron do I need?</b> <link>How much metal a run takes</link>: the iron and silver of a full kit at top quality, the least the bosses' gates ask, and whether your seed holds it.",
       "hardcore": "<b>What does Very hard or the Hardcore preset change?</b> <link>Hard, Very hard and Hardcore</link>: softer blows from you and harder ones from them, more stars, earlier raids, and the Hardcore death.",
       "bossArenas": "<b>How do I build a boss arena that nothing spawns into?</b> <link>Boss arenas</link>: why walls count for nothing, the ring of fires and stations round the altar, and the nests no ring stops.",
+      "taming": "<b>How do I tame an animal?</b> <link>Taming animals</link>: who can be tamed and on what food, how to catch each one, breeding, and the three mounts.",
       "meads": "<b>What does each mead do?</b> <link>Meads</link>: what each bottle does and for how long, and what its base costs at the mead ketill.",
       "trophies": "<b>What is each trophy for?</b> <link>Trophies</link>: who drops it, what it goes into, and the power a boss's trophy gives at the Sacrificial Stones.",
       "stations": "<b>What to build first?</b> <link>Crafting stations</link>: a workbench, then a forge, and every upgrade that levels them up.",
@@ -1108,7 +1297,7 @@
       "dungeons": "<b>Which creatures live where?</b> <link>Caves and dungeons</link>: who waits in each cave, dungeon and camp, and how likely on your seed.",
       "materials": "<b>Where does it come from, and what is it for?</b> <link>Materials</link>: where to find each crafting material, and every recipe it goes into.",
       "breakables": "<b>What is worth smashing?</b> <link>What to break</link>: the pots, gates, braziers, hangings and furniture that drop metal, hides, jute, chains, coins and moulds, and how often.",
-      "farming": "<b>How to farm?</b> <link>Farming</link>.",
+      "farming": "<b>How do I farm?</b> <link>Farming</link>: every crop, tree and vine the cultivator plants, what it is planted with, what it gives, how long it grows and where.",
       "comfort": "<b>How do I raise comfort?</b> <link>Comfort</link>: the best piece of each kind, and how long Rested lasts.",
       "food": "<b>What to eat?</b> <link>Food and feasts</link>: the best dishes for a melee fighter, an archer and a mage by each biome, and when to eat again."
     },
@@ -1119,7 +1308,7 @@
         "title": "Eikthyr",
         "summon": "His altar takes {trophies} deer trophies: hunt deer on the way to it.",
         "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
-        "island": "On {island}% of seeds it stands on the start island; on the rest the first boat comes before the first boss.",
+        "island": "On {island}% of seeds it stands on the starting island; on the rest the first boat comes before the first boss.",
         "power": "Hang his trophy on the sacrificial stones at the start for his power: running and jumping cost less stamina, which carries half the game.",
         "skipTitle": "Can you skip Eikthyr?",
         "skip": "Technically yes, but not on a run: without his antler there is no pickaxe, so no copper, no tin and no bronze, and without his power every run and jump costs full stamina."
@@ -1148,7 +1337,7 @@
       "reach": {
         "title": "Getting there",
         "near": "The start sits in a ring of Meadows: the nearest Black Forest is usually {median} m away, and rarely nearer than {least} m.",
-        "island": "On {island}% of seeds the start island has Black Forest of its own."
+        "island": "On {island}% of seeds the starting island has Black Forest of its own."
       },
       "bronze": {
         "title": "Copper, tin and bronze",
@@ -1167,14 +1356,14 @@
         "title": "The Elder",
         "summon": "His altar takes {seeds} ancient seeds. Greydwarf nests drop them, and they stand in the Greydwarf camps of the Black Forest; a Greydwarf brute drops one now and then.",
         "near": "On half of all seeds the altar is within {median} m of the start; on nine seeds in ten within {most} m.",
-        "island": "On {island}% of seeds it stands on the start island.",
+        "island": "On {island}% of seeds it stands on the starting island.",
         "key": "He drops the swamp key, which opens the door of a Sunken Crypt.",
         "skipTitle": "Can you skip the Elder?",
         "skip": "Yes, as everything in the game can be skipped: players tired of speedruns even play it in reverse, from the Deep North back to the Meadows. The cost is time and nerve: without his key the door of a Sunken Crypt stays closed to you."
       },
       "haldor": {
         "title": "Haldor",
-        "near": "Haldor the trader lives in the Black Forest; his camp is usually {median} m from the start, and on {island}% of seeds on the start island."
+        "near": "Haldor the trader lives in the Black Forest; his camp is usually {median} m from the start, and on {island}% of seeds on the starting island."
       },
       "map": "Every troll cave, copper vein, tin deposit and birch of your seed is on the <link>Valheim seed map</link>, under Dungeons, Ore and Fine wood."
     },
@@ -1185,6 +1374,7 @@
       "head": {
         "boss": "Boss",
         "biome": "Biome",
+        "altars": "Altars in a world",
         "health": "Health",
         "weak": "Weak",
         "resists": "Resists",
@@ -1218,6 +1408,7 @@
         "title": "The power of the trophy",
         "how": "Hang the trophy on its stone at the Sacrificial Stones: once you call the power it lasts {minutes} min, and you can call it again after {cooldown} min.",
         "sail": "The wind follows the world's clock, not your course: it holds a main direction for about {windHoldMin} min and is as likely behind you as ahead. A sail dies when the wind comes from within {sailDeadDeg}° of the bow on either side, {sailDeadShare}% of all headings, and then you row. Her power turns the wind dead astern whatever your heading, so call it when the wind stands ahead of your beam; with the wind already behind or abeam it gains you nothing.",
+        "sailMore": "Where the wind comes from, hour by hour all year, is in the tool ",
         "none": "The game gives no power for this trophy."
       },
       "tip": {
@@ -1404,7 +1595,8 @@
       "title": "Weapons",
       "question": "Which weapon to use?",
       "lead": "A sword when you attack, a mace when you hold your ground, and the mace again on the hardest settings, where it is the favourite; an atgeir against crowds, a knife from the shadows, fists if they are your style. Every one by biome, with its damage, station and materials.",
-      "damageLink": "Before you choose, see which damage type hurts your next foe most, and what it hits back with, on"
+      "damageLink": "Before you choose, see which damage type hurts your next foe most, and what it hits back with, on",
+      "staffsLink": "What each staff casts is on"
     },
     "damage": {
       "title": "Damage types",
@@ -1424,6 +1616,7 @@
       "creature": "Creature",
       "best": "Hit it with",
       "any": "any weapon",
+      "none": "no weapon hurts it",
       "immune": "immune",
       "boss": "boss"
     },
@@ -1431,6 +1624,12 @@
       "title": "Bows, crossbows and arrows",
       "question": "Which bow and which arrows?",
       "lead": "The arrow, not the bow, sets the damage type: a bow's damage adds to its arrow's, so fire arrows for what burns, frost for what freezes. Every bow, crossbow, arrow, bolt and bomb by biome."
+    },
+    "staffs": {
+      "title": "Staffs",
+      "question": "What does each staff cast?",
+      "lead": "Elemental staffs deal the damage themselves and cost only eitr: a fireball that bursts where it lands, a stream of frost, a volley of lightning, roots that rise and strike. Blood magic staffs put something between you and the enemy, and take a share of your health with the eitr: they raise skeletons, a troll or animal spirits, or lay a shield on you and your allies; the Echo Spike alone strikes for itself and asks no health. A summoning staff is the one worth upgrading first, since every level of it lets one more summon stand. Every staff by biome, with what a cast does and costs.",
+      "eitr": "You have no eitr at all until you eat for it, and a staff without eitr casts nothing: the dishes that give it are on"
     },
     "armour": {
       "title": "Armour",
@@ -1446,7 +1645,29 @@
       "title": "Creatures",
       "question": "What does each creature drop, and what is it for?",
       "lead": "Hunt with a recipe in mind: every creature by biome, its health, what hurts it, what it drops and every recipe each drop goes into.",
-      "health": "Health {n}",
+      "health": "Health: {n}",
+      "phases": "Health: {first}, {second} and {third}, one phase after another; how he fights each is on ",
+      "variant": {
+        "Bjorn_sleeping": "sleeping",
+        "Draugr_Ranged": "archer",
+        "DvergerAshlands": "Ashlands",
+        "ElakingLantern": "with a lantern",
+        "GoblinArcher": "archer",
+        "Greydwarf_Frozen": "Deep North",
+        "Greydwarf_Shaman_Frozen": "Deep North",
+        "JotunWarriorDualWield": "two weapons",
+        "Morgen_NonSleeping": "awake",
+        "Skeleton_DeepNorth": "Deep North",
+        "Skeleton_Meadows": "Meadows",
+        "Skeleton_Meadows_noarcher": "Meadows, warrior",
+        "Skeleton_Mountains": "Mountain",
+        "Skeleton_Swamps": "Swamp"
+      },
+      "dropsNothing": "It drops nothing.",
+      "usedIn": {
+        "power": "Power at the Sacrificial Stones",
+        "none": "—"
+      },
       "damage": {
         "blunt": "Blunt",
         "slash": "Slash",
@@ -1549,6 +1770,8 @@
       "notes": {
         "Troll": "A troll cave often holds a troll inside and sometimes one more by its entrance; neither comes back once killed. One troll in {weaponSets} carries a log: it reaches farther but never throws, while an unarmed troll punches, slams and hurls rocks from afar; otherwise they are the same troll, with the same health and drops. Kill a troll and the Elder, and trolls can raid your base. Pierce hurts them most, so bring a spear or arrows. They break walls, so no trap holds one, but lure one past trees and copper and it fells and mines for you.",
         "Bjorn": "Wall a bear in on flat ground with a campfire under it and it burns; keep repairing the fire and the walls while it does.",
+        "GoblinBruteBros": "When Thungr falls, Zil rises from him and fights on; Zil carries Hildir's Bronze Chest.",
+        "GoblinShaman_Hildir": "No spawner makes him: he rises when Thungr falls, in Hildir's Plains fortress.",
         "Serpent": "A sea monster: it hunts ships in the deep ocean.",
         "BonemawSerpent": "A sea monster: it hunts ships in the waters of the Ashlands."
       }
@@ -1571,15 +1794,24 @@
       "crops": {
         "title": "Crops",
         "text": "A crop is planted with its seed and gives its harvest. Where the seeds do not come back with it, plant one of the harvest (or a seed, for kale) and it grows into seeds: one find keeps a field going. What each harvest goes into is on its row in",
-        "materials": "Materials"
+        "materials": "Materials",
+        "conclusion": "The {biome} grow {count} of the {all} crops, every one but {missing}: the one farm that feeds a whole game. Some grow in one biome only, {only}: no home elsewhere grows them, so they are farmed where they grow. Your home in the Meadows grows {home} of them.",
+        "sameTime": "Every crop takes the same {min}–{max} minutes, so a field is chosen by where it grows, not by how fast."
       },
       "trees": {
         "title": "Trees",
-        "text": "A sapling grows on any ground; what a grown tree gives when felled is its average."
+        "text": "A sapling grows on any ground; what a grown tree gives when felled is its average.",
+        "conclusion": "The {most} is the slow one, {min}–{max} minutes, and pays for it with {fine} fine wood, more than any other tree: plant oaks where you will stay. For wood you burn and build with in bulk the {quick} is back within {quickMax} minutes."
       },
       "vines": {
         "title": "Vines",
-        "text": "Vines grow fastest of all and give vineberries."
+        "text": "Vines grow fastest of all and give vineberries.",
+        "conclusion": "A vine is ripe in {min}–{max} minutes, a crop in {crop} at the least: a few vines by the door keep the vineberries coming while a field is still green."
+      },
+      "where": {
+        "title": "Where should I farm?",
+        "text": "In the {biome}, once you can hold ground there: one farm grows nearly everything the game plants, so it is the field you keep to the end. Until then farm at home, where {home} of the {all} crops grow. What each crop then feeds is on",
+        "food": "Food and feasts"
       }
     },
     "food": {

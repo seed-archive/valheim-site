@@ -72,13 +72,14 @@ export function material(r: Resource) {
 }
 
 // The shared header's height (Material UI's toolbar: 56 px on a phone, 64 px
-// wider): a biome's heading sticks below it.
+// wider): an anchor scrolls below it (providers.tsx).
 export const BAR = { xs: 56, sm: 64 };
 
 // The biomes that hold something, each a section with its anchor
 // (`#black-forest`); its heading is the link to it (a click copies the
-// address) and stays at the top while its table scrolls. A line of links to
-// them comes first.
+// address) and scrolls with its table: only the site's header sticks (the
+// owner, 2026-11-23, as in the No Man's Sky section). A line of links to them
+// comes first.
 export function BiomeSections<T extends { biome: string | null }>(props: {
   list: T[];
   table: (rows: T[]) => ReactNode;
@@ -95,30 +96,8 @@ export function BiomeSections<T extends { biome: string | null }>(props: {
         ))}
       </Typography>
       {biomes.map((b) => (
-        <Box
-          component="section"
-          key={b}
-          id={anchor(b)}
-          // A jump to the biome or to a row lands below the header and the
-          // biome's heading.
-          sx={{
-            scrollMarginTop: BAR,
-            "& tr[id]": {
-              scrollMarginTop: { xs: BAR.xs + 48, sm: BAR.sm + 48 },
-            },
-          }}
-        >
-          <AnchorHeading
-            id={anchor(b)}
-            sx={{
-              position: "sticky",
-              top: BAR,
-              zIndex: 2,
-              mt: 4,
-              py: 1,
-              bgcolor: "background.default",
-            }}
-          >
+        <Box component="section" key={b} id={anchor(b)}>
+          <AnchorHeading id={anchor(b)} sx={{ mt: 4, py: 1 }}>
             {t(`biome.${b}`)}
           </AnchorHeading>
           {props.table(props.list.filter((x) => biomeOf(x) === b))}

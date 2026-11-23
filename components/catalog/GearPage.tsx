@@ -21,6 +21,12 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { TableSearch } from "@/components/catalog/TableSearch";
 import { serverFormat } from "@/lib/i18n/server";
 import crafting from "@/lib/valheim/crafting.json";
+import {
+  effectText,
+  gearWhen,
+  joined,
+  type GearEffect,
+} from "@/lib/valheim/effects";
 
 const t = (id: string, values?: Record<string, string | number>) =>
   serverFormat(`pages.crafting.${id}`, values);
@@ -42,7 +48,8 @@ const GEAR_GROUPS = [
 // against chest: a runner who makes only one piece sees which) and a
 // shield's block. Every other stat is shown without a colour.
 const COMPARED: Record<string, (stat: string) => boolean> = {
-  weapons: (s) => s.startsWith("damage.") && s !== "damage.chop" && s !== "damage.pickaxe",
+  weapons: (s) =>
+    s.startsWith("damage.") && s !== "damage.chop" && s !== "damage.pickaxe",
   armour: (s) => s === "armor" || s === "eitrRegen",
   shields: (s) => s === "block",
 };
@@ -99,15 +106,42 @@ type Step = {
   resources: { key: string; name: string; amount: number }[];
 };
 // What an item of its line gives over the one before it.
-type Over = { key: string; name: string; tier: number; damage: Record<string, number> };
+type Over = {
+  key: string;
+  name: string;
+  tier: number;
+  damage: Record<string, number>;
+};
+
+// Items whose skill or group says the wrong thing (the game files a tankard
+// under swords, a bait under ammunition, a bomb under nothing): their kind by
+// the start of their key (the owner, 2026-11-23).
+const KIND_BY_KEY: [prefix: string, kind: string][] = [
+  ["FishingBait", "bait"],
+  ["Bomb", "thrown"],
+  ["Snowball", "thrown"],
+  ["Tankard", "drinking"],
+  ["GrapplingHook", "hook"],
+];
 
 // A kind's word: the slot or the skill, or the group for the rest (food,
 // materials, arrows).
-const kindOf = (g: Gear) =>
-  g.kind && g.kind !== "other" ? t(`kind.${g.kind}`) : t(`group.${g.group}`);
+const kindOf = (g: Gear) => {
+  const own = KIND_BY_KEY.find(([prefix]) => g.key.startsWith(prefix));
+  if (own) {
+    return t(`kind.${own[1]}`);
+  }
+  return g.kind && g.kind !== "other"
+    ? t(`kind.${g.kind}`)
+    : t(`group.${g.group}`);
+};
 
 // A number as the game shows it: at most one decimal.
-const num = (v: number) => String(Math.round(v * 10) / 10);
+const num = (v: number) => {
+  const r = Math.round(v * 10) / 10;
+  // A true minus sign, as everywhere on the site (the owner, 2026-11-23).
+  return r < 0 ? `−${Math.abs(r)}` : String(r);
+};
 
 // An item's stats at quality 1, one line each, the main ones first, each with
 // its value: damage by type, armour, block, tool tier, durability, speed,
@@ -116,25 +150,55 @@ function lines(g: Gear): { stat?: string; value?: number; text: string }[] {
   const s = statsOf(g);
   const out: { stat?: string; value?: number; text: string }[] = [];
   for (const [k, v] of Object.entries(s.damage ?? {})) {
-    out.push({ stat: `damage.${k}`, value: v, text: `${t(`damage.${k}`)} ${num(v)}` });
+    out.push({
+      stat: `damage.${k}`,
+      value: v,
+      text: `${t(`damage.${k}`)} ${num(v)}`,
+    });
   }
   if (s.armor) {
-    out.push({ stat: "armor", value: s.armor, text: t("stat.armor", { value: num(s.armor) }) });
+    out.push({
+      stat: "armor",
+      value: s.armor,
+      text: t("stat.armor", { value: num(s.armor) }),
+    });
   }
   if (s.block) {
-    out.push({ stat: "block", value: s.block, text: t("stat.block", { value: num(s.block) }) });
+    out.push({
+      stat: "block",
+      value: s.block,
+      text: t("stat.block", { value: num(s.block) }),
+    });
   }
   if (s.tier !== undefined) {
-    out.push({ stat: "tier", value: s.tier, text: t("stat.tier", { value: s.tier }) });
+    out.push({
+      stat: "tier",
+      value: s.tier,
+      text: t("stat.tier", { value: s.tier }),
+    });
   }
   if (s.durability && g.maxQuality > 1) {
-    out.push({ stat: "durability", value: s.durability, text: t("stat.durability", { value: num(s.durability) }) });
+    out.push({
+      stat: "durability",
+      value: s.durability,
+      text: t("stat.durability", { value: num(s.durability) }),
+    });
   }
   if (s.movement) {
-    out.push({ stat: "movement", value: s.movement, text: t("stat.movement", { value: `${s.movement > 0 ? "+" : ""}${num(s.movement * 100)}` }) });
+    out.push({
+      stat: "movement",
+      value: s.movement,
+      text: t("stat.movement", {
+        value: `${s.movement > 0 ? "+" : ""}${num(s.movement * 100)}`,
+      }),
+    });
   }
   if (s.eitrRegen) {
-    out.push({ stat: "eitrRegen", value: s.eitrRegen, text: t("stat.eitrRegen", { value: `+${num(s.eitrRegen * 100)}` }) });
+    out.push({
+      stat: "eitrRegen",
+      value: s.eitrRegen,
+      text: t("stat.eitrRegen", { value: `+${num(s.eitrRegen * 100)}` }),
+    });
   }
   if (s.set) {
     out.push({ text: t("stat.set", { value: s.set.size }) });
@@ -170,24 +234,36 @@ function gains(s: Step) {
 // it stands once; then each step with only its station level and materials.
 function upgrades(g: Gear) {
   const steps = g.upgrades as Step[];
+  // No upgrades: a dash, as the piece pages show nothing.
   if (steps.length === 0) {
-    return null;
+    return "—";
   }
   const each = gains(steps[0]);
   return (
     <>
       {each && (
-        <Typography variant="body2" component="span" sx={{ display: "block", mb: 0.5 }}>
+        <Typography
+          variant="body2"
+          component="span"
+          sx={{ display: "block", mb: 0.5 }}
+        >
           {t("upgrade.each", { gains: each })}
         </Typography>
       )}
       {steps.map((s) => (
-        <Typography key={s.quality} variant="body2" component="span" sx={{ display: "block" }}>
+        <Typography
+          key={s.quality}
+          variant="body2"
+          component="span"
+          sx={{ display: "block" }}
+        >
           <Box component="span" sx={{ fontWeight: 500 }}>
             {t("upgrade.step", { quality: s.quality, level: s.level })}
           </Box>{" "}
           <Box component="span" sx={{ color: "text.secondary" }}>
-            {s.resources.map((r) => (r.amount > 1 ? `${r.name} × ${r.amount}` : r.name)).join(", ")}
+            {s.resources
+              .map((r) => (r.amount > 1 ? `${r.name} × ${r.amount}` : r.name))
+              .join(", ")}
           </Box>
         </Typography>
       ))}
@@ -198,6 +274,157 @@ function upgrades(g: Gear) {
 // What an item of its line (a tool line, or its kind of weapon) gives over the
 // one before it: the tool tier and each damage type that changes. An item
 // that changes no number says nothing.
+// What wearing or wielding it does beyond its stats (2026-11-23, the owner:
+// armour and trinkets show their effects): each with when it holds.
+function effectLines(g: Gear) {
+  const list = (g.effects ?? []) as GearEffect[];
+  return list.map((e, i) => (
+    <Box
+      key={`effect-${i}`}
+      component="span"
+      sx={{ display: "block", mt: 0.5 }}
+    >
+      <Box component="span" sx={{ fontWeight: 500 }}>
+        {gearWhen(e)}
+        {e.name && e.when !== "hit" && e.name !== g.name ? ` (${e.name})` : ""}
+        {e.effects.length > 0 ? ": " : ""}
+      </Box>
+      {joined(e.effects).map(effectText).join(", ")}
+    </Box>
+  ));
+}
+
+type Summon = {
+  key: string;
+  name: string;
+  health: number;
+  // The most of each damage type among its attacks.
+  blows: Record<string, number>;
+  lifetime: number[] | null;
+  levels: { skill: number; skillLevel: number; most: number }[] | null;
+  mostFromQuality: boolean;
+};
+type Casts = {
+  // What the shot does where it lands: the radius all are hit within; how
+  // many splinters it bursts into and how often each bounces; what a shot
+  // that comes back deals and gives on its way back.
+  blast: number | null;
+  splinters: { count: number; bounces: number | null } | null;
+  returns: { damage: Record<string, number>; eitr: number | null } | null;
+  eitr: number | null;
+  healthPercent: number | null;
+  projectiles: number;
+  held: boolean;
+  summons: Summon[];
+  status: {
+    name: string | null;
+    tooltip: string | null;
+    seconds: number | null;
+    radius: number | null;
+    shield: {
+      absorb: number;
+      perSkillLevel: number;
+      ttlPerItemLevel: number;
+    } | null;
+  } | null;
+};
+
+// What a staff does (the staffs' page, 2026-11-23; the Valheim generator's
+// `casts`): its cost, what a cast fires, summons or lays on allies.
+function castLines(g: Gear) {
+  const c = (g as { casts?: Casts | null }).casts;
+  if (!c) {
+    return null;
+  }
+  const lines: string[] = [];
+  if (c.eitr) {
+    lines.push(t(c.held ? "casts.eitrHeld" : "casts.eitr", { n: c.eitr }));
+  }
+  if (c.healthPercent) {
+    lines.push(t("casts.health", { n: c.healthPercent }));
+  }
+  if (c.projectiles > 1) {
+    lines.push(t("casts.projectiles", { n: c.projectiles }));
+  }
+  if (c.blast) {
+    lines.push(t("casts.blast", { r: c.blast }));
+  }
+  if (c.splinters) {
+    lines.push(
+      t(c.splinters.bounces ? "casts.splintersBounce" : "casts.splinters", {
+        n: c.splinters.count,
+        bounces: c.splinters.bounces ?? 0,
+      }),
+    );
+  }
+  if (c.returns) {
+    const damage = Object.entries(c.returns.damage)
+      .map(([k, v]) => `${t(`damage.${k}`)} ${num(v)}`)
+      .join(", ");
+    lines.push(t("casts.returns", { damage }));
+    if (c.returns.eitr) {
+      lines.push(t("casts.returnsEitr", { n: c.returns.eitr }));
+    }
+  }
+  // A spawn of several prefabs picks one at random a cast (`SpawnAbility`).
+  if (c.summons.length > 1) {
+    lines.push(t("casts.oneOf"));
+  }
+  for (const s of c.summons) {
+    const levels = s.levels ?? [];
+    const most = s.mostFromQuality
+      ? t("casts.mostQuality")
+      : levels.length > 0
+        ? t("casts.mostSkill", {
+            from: levels[0].most,
+            to: levels[levels.length - 1].most,
+          })
+        : "";
+    const blows = Object.entries(s.blows ?? {})
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, v]) => `${t(`damage.${k}`)} ${num(v)}`)
+      .join(", ");
+    lines.push(
+      [
+        t("casts.summons", {
+          name: s.name,
+          health: s.health,
+          blows: blows ? t("casts.blows", { damage: blows }) : "",
+        }),
+        s.lifetime ? t("casts.lifetime", { s: Math.round(s.lifetime[1]) }) : "",
+        most,
+      ]
+        .filter(Boolean)
+        .join(", "),
+    );
+  }
+  if (c.status) {
+    const s = c.status;
+    lines.push(
+      [
+        t("casts.status", { name: s.name ?? "", radius: s.radius ?? 0 }),
+        s.seconds ? t("casts.seconds", { s: s.seconds }) : "",
+        s.shield
+          ? t("casts.shield", {
+              absorb: s.shield.absorb,
+              per: s.shield.perSkillLevel,
+            })
+          : "",
+      ]
+        .filter(Boolean)
+        .join(", "),
+    );
+    if (s.tooltip) {
+      lines.push(s.tooltip);
+    }
+  }
+  return lines.map((text, i) => (
+    <Box key={`cast-${i}`} component="span" sx={{ display: "block", mt: 0.5 }}>
+      {text}
+    </Box>
+  ));
+}
+
 function overLine(g: Gear) {
   const o = g.over as Over | null;
   if (!o) {
@@ -261,10 +488,21 @@ function gearTable(list: Gear[]) {
       a.name.localeCompare(b.name),
   );
   const marks = extremes(rows);
+  // A staff's stats carry what it casts, several lines of prose: the column
+  // takes the room the other columns can spare (the owner, 2026-11-23: it
+  // stretched the rows tall).
+  const casts = rows.some((g) => (g as { casts?: unknown }).casts);
+  const width = casts
+    ? { item: "16%", stats: "34%", station: "10%", materials: "18%" }
+    : { item: "20%", stats: "17%", station: "12%", materials: "21%" };
   const colour = (g: Gear, stat?: string, value?: number) => {
     if (stat === "movement" && value !== undefined) {
       const usual = USUAL_SPEED.get(g.group) ?? 0;
-      return value > 0 ? "success.main" : value < usual ? "error.main" : undefined;
+      return value > 0
+        ? "success.main"
+        : value < usual
+          ? "error.main"
+          : undefined;
     }
     const m = stat ? marks.get(`${peers(g)}|${stat}`) : undefined;
     if (!m) {
@@ -273,20 +511,37 @@ function gearTable(list: Gear[]) {
     if (m.best === value) {
       return "success.main";
     }
-    return m.worst === value && !BEST_ONLY.has(stat ?? "") ? "error.main" : undefined;
+    return m.worst === value && !BEST_ONLY.has(stat ?? "")
+      ? "error.main"
+      : undefined;
   };
   return (
     <TableContainer>
       <Table size="small" sx={{ tableLayout: { md: "fixed" } }}>
         <TableHead>
           <TableRow>
-            <TableCell sx={{ width: { md: "20%" } }}>{t("head.item")}</TableCell>
-            <TableCell sx={{ width: { md: "17%" } }}>{t("head.stats")}</TableCell>
-            <TableCell sx={{ width: { md: "12%" } }}>{t("head.station")}</TableCell>
-            <TableCell sx={{ width: { md: "21%" } }}>{t("head.materials")}</TableCell>
+            <TableCell sx={{ width: { md: width.item } }}>
+              {t("head.item")}
+            </TableCell>
+            <TableCell
+              sx={{
+                width: { md: width.stats },
+                minWidth: casts ? { xs: 240, md: "auto" } : undefined,
+              }}
+            >
+              {t("head.stats")}
+            </TableCell>
+            <TableCell sx={{ width: { md: width.station } }}>
+              {t("head.station")}
+            </TableCell>
+            <TableCell sx={{ width: { md: width.materials } }}>
+              {t("head.materials")}
+            </TableCell>
             {/* On a phone the table scrolls sideways; the upgrades keep a
                 readable width rather than a column of single words. */}
-            <TableCell sx={{ minWidth: { xs: 240, md: "auto" } }}>{t("head.upgrades")}</TableCell>
+            <TableCell sx={{ minWidth: { xs: 240, md: "auto" } }}>
+              {t("head.upgrades")}
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -327,6 +582,8 @@ function gearTable(list: Gear[]) {
                   </Box>
                 ))}
                 {overLine(g)}
+                {castLines(g)}
+                {effectLines(g)}
               </TableCell>
               <TableCell>{station(g)}</TableCell>
               <TableCell>{g.resources.map(material)}</TableCell>
@@ -342,7 +599,12 @@ function gearTable(list: Gear[]) {
 // One catalogue page of made items: those the Valheim generator puts on
 // `page` (weapons, bows, armour, tools), by biome; its words are
 // `pages.<words>`: title, question, lead.
-export function GearPage(props: { page: string; words: string; crumb: string; before?: React.ReactNode }) {
+export function GearPage(props: {
+  page: string;
+  words: string;
+  crumb: string;
+  before?: React.ReactNode;
+}) {
   const own = (id: string) => serverFormat(`pages.${props.words}.${id}`);
   const list = crafting.gear.filter((g) => g.page === props.page);
   return (

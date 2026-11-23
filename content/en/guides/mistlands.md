@@ -65,20 +65,21 @@ Which root is the choice. The nearest root stands {{queenRootM}} m from the Quee
 
 ## How do I make the feather cape and the grappling hook?
 
-Both are for the cliffs. The cape takes the fall away, so you jump down instead of climbing; the hook pulls you up.
+Both are for the cliffs. The feather cape takes the fall away, so you jump down instead of climbing. It is made at the Galdr Table:
 
-| What it takes | Feather cape, at the Galdr Table | Grappling hook, at the Black Forge |
-|---|---|---|
-| Feathers | {{capeFeathers}} | — |
-| Scale hides | {{capeScaleHides}} | — |
-| Eitr | {{capeEitr}} | {{hookEitr}} |
-| Yggdrasil wood | — | {{hookYggdrasil}} |
-| Mandibles | — | {{hookMandibles}} |
-| A Hook | — | {{hookHooks}} |
+Figure: cape
+
+The grappling hook pulls you up the cliff the cape lets you jump from. It is made at the Black Forge:
+
+Figure: hook
 
 Both take refined eitr, so neither comes before the sap. The cape saves your life, since a fall kills here, and the hook saves your time. The cape doubles the fire you take, so it comes off when a Gjall is near.
 
-With the stations up, the land offers two roads. Carapace and steel: the armour takes {{killsSeeker}} Seekers' carapace, and the weapons are the Mistwalker, Krom, the Demolisher and the arbalest. Or eitr-weave and the staffs: little armour, and magic that the Seekers do not resist, fed by eitr food in place of some of your health. The [armour](/catalog/armour) page has both.
+With the stations up, the land offers two roads. Carapace and steel: the armour takes {{killsSeeker}} Seekers' carapace, and the weapons are the Mistwalker, Krom, the Demolisher and the arbalest. Or eitr-weave and the [staffs](/catalog/staffs): little armour, and magic that the Seekers do not resist, fed by eitr food in place of some of your health. The [armour](/catalog/armour) page has both armours.
+
+## Where is the Queen's gate?
+
+Where her Vegvísir shows it, and the Vegvísir stands in some of the Infested Mines' rooms: the mines you clear for the fragments find it on the way. As a rule the gate is {{homeQueenM}} m from home, {{homeQueenMLow}}–{{homeQueenMHigh}} m on the middle half of seeds, so it is a voyage, not a walk.
 
 ## What does the Queen's fight take?
 

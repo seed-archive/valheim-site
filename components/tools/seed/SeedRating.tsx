@@ -47,7 +47,9 @@ export function SeedRating() {
     mode: "onChange",
   });
   const generator = useRef<MapClient | null>(null);
-  const [strip, setStrip] = useState<{ seed: string; found: Found[] } | null>(null);
+  const [strip, setStrip] = useState<{ seed: string; found: Found[] } | null>(
+    null,
+  );
   // `complete` once the deep measures (the vegetation's, seconds later) are in.
   const [measured, setMeasured] = useState<{
     seed: string;
@@ -68,12 +70,18 @@ export function SeedRating() {
       return;
     }
     let live = true;
-    // The bosses and traders against the strip first, then the measures.
+    // The bosses against the strip first, then the measures.
     const placesOnStrip = async () => {
-      const places = decodePlaces(await gen.call<Float32Array>("places", [seed, 0]));
+      const places = decodePlaces(
+        await gen.call<Float32Array>("places", [seed, 0]),
+      );
       const start = places.find((p) => p.key === "start") ?? { x: 0, y: 0 };
-      const found = BIOMES.flatMap((b) => (b.trader ? [b.boss, b.trader] : [b.boss])).map((k) =>
-        find(start, places.filter((p) => p.key === k), k),
+      const found = BIOMES.map((b) => b.boss).map((k) =>
+        find(
+          start,
+          places.filter((p) => p.key === k),
+          k,
+        ),
       );
       live && setStrip({ seed, found });
     };
@@ -127,7 +135,14 @@ export function SeedRating() {
         <Typography gutterBottom>
           <FormattedMessage
             id="pages.seedRating.lead"
-            values={{ b: (text) => <b>{text}</b> }}
+            values={{
+              b: (text) => <b>{text}</b>,
+              best: (text) => (
+                <Link component={NextLink} href="/tools/best-seeds">
+                  {text}
+                </Link>
+              ),
+            }}
           />
         </Typography>
         <Stack
@@ -192,7 +207,9 @@ export function SeedRating() {
             </Typography>
             <StripReport
               measures={current}
-              complete={Boolean(measured && measured.seed === seed && measured.complete)}
+              complete={Boolean(
+                measured && measured.seed === seed && measured.complete,
+              )}
               found={strip && strip.seed === seed ? strip.found : null}
             />
           </Paper>

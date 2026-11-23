@@ -345,13 +345,7 @@
           "requires": null,
           "stack": 5,
           "text": "An intense musk permeates the air around this bottle.",
-          "usedIn": [
-            {
-              "key": "MeadTrollPheromones",
-              "name": "Love Potion",
-              "then": null
-            }
-          ]
+          "usedIn": []
         },
         {
           "armor": null,
@@ -374,11 +368,6 @@
                 "key": "MeadBzerker",
                 "name": "Berserkir Mead"
               }
-            },
-            {
-              "key": "MushroomBzerker",
-              "name": "Toadstool",
-              "then": null
             }
           ]
         },

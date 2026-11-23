@@ -4,11 +4,15 @@
 
 ## What counts as a speedrun?
 
-The seed has passed its tests; now the clock starts. Runners race in All Bosses: Classic stops the timer when Yagluth falls, and the later categories push on through the Queen, Fader and Kall Fimbulbringer. A category counts every boss up to its last, so what the sections below say of skipping one is for a run off the board, against your own clock. Each runs on a random seed or a set one, and glitchless lets you outwit a boss but never clip through a wall. Few bosses force the order: an altar wants its offering and nothing else, but the withered bones lie behind the Elder's key, silver wants the iron pickaxe, and the north's key wants Moder's tears and Fader's embers, the gates the [Reverse run](/guides/reverse-run#what-does-each-boss-open-and-how-do-i-get-round-it) lists. Within them the route below is simply the shortest. For Classic, the [Plains](/guides/plains) are the last of the Biomes you need to see. The categories, their rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim), and the runner whose runs taught this guide stands in the [credits](/credits).
+The seed has passed its tests; now the clock starts. A run counts every boss down to the last, Kall Fimbulbringer in the Deep North, so what the sections below say of skipping one is for a run off the board, against your own clock. Each runs on a random seed or a set one, and glitchless lets you outwit a boss but never clip through a wall. Few bosses force the order: an altar wants its offering and nothing else, but the withered bones lie behind the Elder's key, silver wants the iron pickaxe, and the north's key wants Moder's tears and Fader's embers, the gates the [Reverse run](/guides/reverse-run#what-does-each-boss-open-and-how-do-i-get-round-it) lists. Within them the route below is simply the shortest. The rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim), and the runner whose runs taught this guide stands in the [credits](/credits).
 
 ## What is the strip?
 
-Your run starts in the middle of the world, drops south to the Ashlands, then turns and climbs to the Deep North. The fastest way to do that is to stop wandering: draw one imaginary line through the start, north to south, and keep to it. That line, {{stripM}} m wide, is the strip. Whatever stands in it lies on your road; whatever stands beside it is a detour, and every detour is time off the clock. It is a rule of thumb, not a wall: when the boat has to round an island, you leave the strip and come back.
+Your run starts in the middle of the world, works its way south from altar to altar down to Fader in the Ashlands, then portals home and climbs north to Kall in the Deep North. South, then north: the run has no business east or west, and every step that way is time off the clock. So draw one band through the start, north to south, {{stripM}} m wide, and keep to it. That band is the strip. Whatever stands in it lies on your road; whatever stands beside it is a detour. It is a rule of thumb, not a wall: when the boat has to round an island, you leave the strip and come back.
+
+Figure: strip
+
+A seed is judged the same way. [How good is my seed?](/tools/how-good-is-my-seed) asks of every boss whether his altar stands in the strip, and counts what he asks for round that altar: the fewer sidesteps a seed forces, the better it runs.
 
 Wherever another page of the Challenges says "strip" or "on the road", it means this line through the start. It is your line, not the world's. Off the clock you round the island, or go anywhere you like; a reverse run sails north first, keeps to no strip at all and goes where the shore is.
 
@@ -25,7 +29,7 @@ Only Eikthyr waits on the road on almost every seed. After him, every boss stand
 | Bonemass's altar | {{stripBonemass}}% of seeds |
 | Moder's altar | {{stripModer}}% of seeds |
 | Yagluth's altar | {{stripYagluth}}% of seeds |
-| The Queen's altar | {{stripQueen}}% of seeds |
+| The Queen's gate | {{stripQueen}}% of seeds |
 | Fader's altar | {{stripFader}}% of seeds |
 | Kall's gate | {{stripKall}}% of seeds |
 
@@ -50,24 +54,30 @@ A boss just beside the strip costs you a short walk. One far beside it costs a s
 
 Chart: spread
 
-Eikthyr stands all but on the line, {{eikthyrAxisM}} m off it as a rule, and the Elder {{elderAxisM}} m. The Queen is the long one, {{queenAxisM}} m, so look her gate up before you commit a seed to any category past Classic. What waits round the last two bosses, and so what a detour there will find, is on the [Ashlands](/guides/ashlands) and [Deep North](/guides/deep-north) guides.
+Eikthyr stands all but on the line, {{eikthyrAxisM}} m off it as a rule, and the Elder {{elderAxisM}} m. The Queen is the long one, {{queenAxisM}} m, so look her gate up before you commit a seed. What waits round the last two bosses, and so what a detour there will find, is on the [Ashlands](/guides/ashlands) and [Deep North](/guides/deep-north) guides.
 
 The best speedrun seed is simply the one with short detours. [How good is my seed?](/tools/how-good-is-my-seed) measures them on yours.
 
-## How long is the route for my category?
+## What summons each boss, and how far from his altar?
 
-Add the legs up, altar to altar in the run's order: from the start by Eikthyr to the troll cave of your copper base, then the Elder, Bonemass, Moder and Yagluth, on to the Queen, Fader and Kall. Below is what you walk and sail to each category's last boss, in straight lines: a floor no run can beat.
+A boss costs you no search: his Vegvísir marks the altar. What summons him does, and here is how far it lies from the altar you take on the strip.
 
-| The route, from the start to | As a rule | Middle half of seeds |
+| What the run needs, m from the altar | As a rule | Middle half of seeds |
 |---|---|---|
-| Yagluth, Classic, m | {{routeClassicM}} | {{routeClassicMLow}}–{{routeClassicMHigh}} |
-| The Queen, Mistlands, m | {{routeMistlandsM}} | {{routeMistlandsMLow}}–{{routeMistlandsMHigh}} |
-| Fader, Ashlands, m | {{routeAshlandsM}} | {{routeAshlandsMLow}}–{{routeAshlandsMHigh}} |
-| Kall, Deep North, m | {{routeDeepNorthM}} | {{routeDeepNorthMLow}}–{{routeDeepNorthMHigh}} |
+| The base: {{coresNeed}} surtling cores in the Burial Chambers | {{keyCoresM}} | {{keyCoresMLow}}–{{keyCoresMHigh}} |
+| The Elder: {{ancientSeedsNeed}} Greydwarf camps, from the base | {{keyCampsM}} | {{keyCampsMLow}}–{{keyCampsMHigh}} |
+| Bonemass: {{runCrypts}} Sunken Crypts | {{keyCryptsM}} | {{keyCryptsMLow}}–{{keyCryptsMHigh}} |
+| Bonemass: a surtlings' fire hole | {{keyHoleM}} | {{keyHoleMLow}}–{{keyHoleMHigh}} |
+| Moder: {{moderEggs}} drake nests | {{keyNestsM}} | {{keyNestsMLow}}–{{keyNestsMHigh}} |
+| Yagluth: {{yagluthTotemsNeed}} Fuling totems | {{keyTotemsM}} | {{keyTotemsMLow}}–{{keyTotemsMHigh}} |
+| The Queen: {{sealbreakerFragments}} Sealbreaker fragments in the mines | {{keyFragmentsM}} | {{keyFragmentsMLow}}–{{keyFragmentsMHigh}} |
+| The Queen: a giant's remains | {{keyGiantM}} | {{keyGiantMLow}}–{{keyGiantMHigh}} |
+| Fader: {{faderForts}} Charred Fortresses | {{keyFortsM}} | {{keyFortsMLow}}–{{keyFortsMHigh}} |
+| Fader: {{morgenHoles}} Morgen holes | {{keyMorgenM}} | {{keyMorgenMLow}}–{{keyMorgenMHigh}} |
+| Kall: {{kallMorkhallaNeed}} Mörkhalla | {{keyMorkM}} | {{keyMorkMLow}}–{{keyMorkMHigh}} |
+| Kall: the Winding Tunnels | {{keyTunnelsM}} | {{keyTunnelsMLow}}–{{keyTunnelsMHigh}} |
 
-Chart: spread
-
-Classic is {{routeClassicM}} m as a rule, and going on to Kall makes it {{routeDeepNorthM}} m. The last leg is the killer: of everything the later categories add, the biggest piece is one voyage, from Fader in the far south to Kall in the far north.
+Two packs. Moder's nests, Bonemass's crypts, the Queen's giant and Fader's Morgen holes lie close to the altar as a rule: if you have not found them, look again before you blame the seed. Yagluth's totems, the Queen's fragments and Fader's fortresses lie far off, and the far end of their middle half pushes further still: those three decide a seed. The cores are a gamble: the chambers' rooms turn with the dungeon, and only {{keyCoresSure}}% of seeds give the {{coresNeed}} near the base whichever way they turn.
 
 ## What is the speedrun route, boss by boss?
 
@@ -101,7 +111,7 @@ Chart: share
 
 At {{campReachClose}} m the cave is clear on {{baseNoCampClose}}% of seeds, and by {{campReachFar}} m on only {{baseNoCampFar}}%: expect a camp in the neighbourhood, and set the hall on the cave's other side from it.
 
-**The troll as miner and lumberjack.** Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself: {{baseTin}} deposits lie within {{baseTinReach}} m of the cave as a rule ({{baseTinLow}}–{{baseTinHigh}}). Once the copper is out, lead the troll to the nearest birches and let it fell the fine wood; the best group within {{baseBirchReach}} m holds {{birchGroup}} birches as a rule ({{birchGroupLow}}–{{birchGroupHigh}}). On some seeds none grow by the cave, and the start's groves are the nearer harvest.
+**The troll as miner and lumberjack.** Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself: {{baseTin}} deposits lie within {{baseTinReach}} m of the cave as a rule ({{baseTinLow}}–{{baseTinHigh}}). Do not plan on walking that troll to the birches: only {{birchGroup}} grow within {{baseBirchReach}} m of the cave as a rule ({{birchGroupLow}}–{{birchGroupHigh}} on the middle half of seeds). Fine wood wants another troll, one you meet by the birches themselves, and the start has the groves: {{startBirches}} birches within {{startWoodM}} m of the stones as a rule.
 
 | Copper veins round the base cave, within | As a rule | Middle half of seeds |
 |---|---|---|
@@ -151,9 +161,7 @@ Skipping the Swamp has its price: without the wishbone, silver means digging the
 
 The Mountain is one climb and out. No gate takes silver; mine only the bars the Wisplight wants. Up once on the mead with the iron pickaxe, the walk through the nests and the nearest vein, a smelter right beside her altar so only bars go down, since a cart on her slopes overturns, then Moder, and down again. From her altar and back, the walk through the {{moderEggs}} nearest nests is {{moderEggLoopM}} m as a rule, and {{moderClimbLoopM}} m with the nearest vein added: the silver costs almost nothing extra.
 
-Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and puts the wind dead astern of your boat. It pays most on the run's two long sails, south and then north, where your heading is fixed and the wind is not. A sail dies whenever the wind comes from within {{sailDeadDeg}}° of the bow, {{sailDeadShare}}% of all headings, and a wind holds its main direction for about {{windHoldMin}} minutes, so a bad one outlasts a short crossing. Call the power when the wind stands ahead of your beam; with it already behind or abeam the sail pulls as hard without her.
-
-The wind follows the world's clock and not the seed: the same hour of the same day blows the same way in every world. A wind that stopped you at a crossing will be waiting there on the next run, unless you reach the water at another hour.
+Hang her trophy before the long sails: her power speeds you on foot, lets you carry more and puts the wind dead astern of your boat. It pays most on the run's two long sails, south and then north, where your heading is fixed and the wind is not. When the sail dies, how long a wind holds, and every hour of the year, the same in every world, are in the [Wind](/tools/wind) tool: a run that knows its crossings' hours knows its winds.
 
 She cannot be skipped even off the board: without her tears there is no artisan table, so no blast furnace for the Plains' black metal.
 
@@ -161,9 +169,9 @@ She cannot be skipped even off the board: without her tears there is no artisan 
 
 Yagluth takes {{goblinTotems}} Fuling totems, and you take them the cheapest way: raid the towers first, since an outpost always holds its totem, slip into the villages only for the rest, and pocket the black metal of the Fulings you cut down on the way. Outrun the Deathsquitos or shoot them; the Root Harnesk is a comfort you may not have.
 
-Classic, the shortest category, stops the clock here: it ends at his altar.
-
 Going on, the Plains cannot be skipped: black metal goes into the Galdr Table and the Queen's Sealbreaker, and without Yagluth's Torn Spirit you walk the Mistlands blind in the mist.
+
+His own Plains hold the {{yagluthTotemsNeed}} on {{yagluthTotems}}% of seeds, the fifth {{keyTotemsM}} m from his altar as a rule; on the rest the last totems wait in a second Plains.
 
 ### Mistlands
 
@@ -173,9 +181,13 @@ Let a Seeker Soldier do the mining: lead it so its ram and slam land on a giant'
 
 The Mistlands cannot be skipped if you mean to go on: the Black Forge, built with the mines' black cores, forges Fader's bells and casts the Intricate Key, and the Drakkar takes Yggdrasil wood and the ceramic plates that only the Queen's drop makes possible.
 
+Find the giant before you need him: his remains lie {{keyGiantM}} m from her gate as a rule, within {{keyGiantMHigh}} m on three seeds in four. Mark the nearest on the seed map together with the mines.
+
 ### Ashlands
 
 You come for Fader and the north's embers and nothing else: no foothold, no portal, no second trip. Where his altar lies near the water, the Drakkar beaches a short walk from the fight, and the run spends no time crossing burning ground: it stands within {{faderShoreNearM}} m of the coast on {{faderShoreNear}}% of seeds and within {{faderShoreFarM}} m on {{faderShoreFar}}%.
+
+The {{faderForts}} fortresses of the bells stand within {{keyFortsM}} m of his altar as a rule, and beyond {{keyFortsMHigh}} m on a quarter of seeds; there the last bell costs a long walk over burning ground.
 
 A fortress costs you neither ram nor catapult: a ladder over the wall onto the tower, down through the hole in its roof to the bell fragments, then the tower dug under from four sides until a chest falls out on one of them, while the creatures falling in are killed. Build the Eternal Pyre the moment Fader falls, so its embers are ready for the north's charges, and carry home only the flametal the Black Forge asks.
 
@@ -187,7 +199,7 @@ The Ashlands end your run far in the south, so portal to your copper base near t
 
 The order is the Winding Tunnels first, for the key's mould, then the Mörkhalla near him. Then save the trips: break all {{kallMorkhallaNeed}} Malicious Ices in one sweep of the Mörkhalla, portal south, take the cores, and sail north once more.
 
-Kall is the last boss, so the north is never skipped by a run that goes to him; every All Bosses category before Deep North stops short of the snow.
+Kall is the last boss, so the north is never skipped.
 
 How each fight goes, blow by blow, is on [How to kill each boss](/catalog/bosses).
 
@@ -218,14 +230,7 @@ Haldor's belt serves every haul after it, and his nearest place lies closest to 
 
 ## How much metal does a run spend?
 
-Less than you fear. Classic's gates take no metal at all: every summon up to Yagluth is found, not forged. The later gates eat into the Galdr Table, the Black Forge, the Drakkar and the Deep North's stations, and what each gate takes is on [How much metal a run takes](/guides/how-much-metal). Strip the run to the bone, every station built once, weapons and armour your own business, and this is the least each category gets away with:
-
-| Category | Iron | Silver | Black metal | Flametal | Bloodgold |
-|---|---|---|---|---|---|
-| Classic, to Yagluth | {{leastIronClassic}} | {{leastSilverClassic}} | {{leastBlackMetalClassic}} | {{leastFlametalClassic}} | {{leastBloodgoldClassic}} |
-| Mistlands, to the Queen | {{leastIronMistlands}} | {{leastSilverMistlands}} | {{leastBlackMetalMistlands}} | {{leastFlametalMistlands}} | {{leastBloodgoldMistlands}} |
-| Ashlands, to Fader | {{leastIronAshlands}} | {{leastSilverAshlands}} | {{leastBlackMetalAshlands}} | {{leastFlametalAshlands}} | {{leastBloodgoldAshlands}} |
-| Deep North, to Kall | {{leastIronDeepNorth}} | {{leastSilverDeepNorth}} | {{leastBlackMetalDeepNorth}} | {{leastFlametalDeepNorth}} | {{leastBloodgoldDeepNorth}} |
+Less than you fear. Every summon up to Yagluth is found, not forged; the later gates eat into the Galdr Table, the Black Forge, the Drakkar and the Deep North's stations, and what each gate takes is on [How much metal a run takes](/guides/how-much-metal). Strip the run to the bone, every station built once, weapons and armour your own business, and a run to Kall gets away with {{leastIronDeepNorth}} iron, {{leastSilverDeepNorth}} silver, {{leastBlackMetalDeepNorth}} black metal, {{leastFlametalDeepNorth}} flametal and {{leastBloodgoldDeepNorth}} Bloodgold.
 
 The pickaxe and the axe that dig each material out are on the bill; nothing you swing at a boss is. Real runs overspend on purpose, on the tools that gather and the one weapon they make: the iron mace for Bonemass ({{ironMace}} iron), the iron pickaxe for silver and the Wisplight. With those a run to Kall spends {{runIron}} iron, {{runSilver}} silver and {{runBlackMetal}} black metal. Iron is the bill, and the Swamp the one place a run digs for it: the black metal comes off the Fulings you cut down on the way to their totems, and the copper is left to a troll, whose blows mine it.
 
@@ -235,9 +240,9 @@ The pickaxe and the axe that dig each material out are on the bill; nothing you 
 
 **Let creatures do the work.** A troll's blows hit at a bronze tool's tier and above: lure one past birches and oaks and it fells fine wood for you; lead it over copper and it mines. The Elder's blows fell the plain trees round his altar. Later a Seeker Soldier breaks black marble and Yggdrasil wood. The rules allow all of it.
 
-**Skip what changes nothing.** The bronze pickaxe mines nothing the antler one cannot. The Early Axe cuts fine wood without any bronze, from axe heads you find in the Meadows' abandoned houses.
+**Skip what changes nothing.** The bronze pickaxe mines nothing the antler one cannot. The Early Axes cut fine wood without any bronze, from axe heads you find in the Meadows' abandoned houses.
 
-**Hang each power for its leg.** A trophy's power lasts {{powerSeconds}} s and comes back after {{powerCooldownSeconds}} s, so spend each where it pays: Eikthyr's on the scouting, the Elder's while you chop and mine without a troll, Moder's tailwind on the long sail north. Every power is on [Trophies](/catalog/trophies).
+**Hang each power for its leg.** A trophy's power lasts {{powerMinutes}} minutes and is ready again {{powerCooldownMinutes}} minutes after, so spend each where it pays: Eikthyr's on the scouting, the Elder's while you chop and mine without a troll, Moder's tailwind on the long sail north. Every power is on [Trophies](/catalog/trophies).
 
 **Close each army fast.** A boss's raids begin when the boss before him falls and end when he does, so a quick dash from altar to altar leaves each army little time to come at you. Wolves, skeletons and the rest stay once they have come; the [Raids](/catalog/events) page says what opens and ends each.
 

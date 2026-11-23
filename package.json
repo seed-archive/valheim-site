@@ -37,7 +37,9 @@
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
     "prettier": "3.9.10",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
   },
   "engines": {
     "node": ">=24"
@@ -54,7 +56,8 @@
     "dev": "next dev -p 5020",
     "lint": "eslint . --fix",
     "prepare": "husky",
-    "start": "next start -p 5021"
+    "start": "next start -p 5021",
+    "test": "vitest run"
   },
   "version": "0.1.0"
 }

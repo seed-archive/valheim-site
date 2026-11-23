@@ -1,0 +1,2488 @@
+[
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "CapeAsh",
+    "maxQuality": 4,
+    "name": "Ashen Cape"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "CapeAsksvin",
+    "maxQuality": 4,
+    "name": "Asksvin Cloak"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorAshlandsMediumChest",
+    "maxQuality": 4,
+    "name": "Breastplate of Ask"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthHeavyChest",
+    "maxQuality": 4,
+    "name": "Breastplate of the Protector"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "HelmetBronze",
+    "maxQuality": 4,
+    "name": "Bronze Helmet"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorBronzeLegs",
+    "maxQuality": 4,
+    "name": "Bronze Plate Leggings"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorBronzeChest",
+    "maxQuality": 4,
+    "name": "Bronze Plate Tunic"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "CapeOdin",
+    "maxQuality": 4,
+    "name": "Cape of Oden"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "CapeDeepNorthMage",
+    "maxQuality": 4,
+    "name": "Cape of the Caller"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ArmorCarapaceChest",
+    "maxQuality": 4,
+    "name": "Carapace Breastplate"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ArmorCarapaceLegs",
+    "maxQuality": 4,
+    "name": "Carapace Greaves"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "HelmetCarapace",
+    "maxQuality": 4,
+    "name": "Carapace Helmet"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "HelmetCelebration",
+    "maxQuality": 4,
+    "name": "Celebratory Cap"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthMediumChest",
+    "maxQuality": 4,
+    "name": "Chestpiece of the Vanguard"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "CapeDeerHide",
+    "maxQuality": 4,
+    "name": "Deer Hide Cape"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "HelmetDrake",
+    "maxQuality": 4,
+    "name": "Drake Helmet"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "HelmetMage",
+    "maxQuality": 4,
+    "name": "Eitr-weave Hood"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ArmorMageChest",
+    "maxQuality": 4,
+    "name": "Eitr-weave Robe"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ArmorMageLegs",
+    "maxQuality": 4,
+    "name": "Eitr-weave Trousers"
+  },
+  {
+    "biome": "mistlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "CapeFeather",
+    "maxQuality": 4,
+    "name": "Feather Cape"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ArmorFenringChest",
+    "maxQuality": 4,
+    "name": "Fenris Coat"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "HelmetFenring",
+    "maxQuality": 4,
+    "name": "Fenris Hood"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ArmorFenringLegs",
+    "maxQuality": 4,
+    "name": "Fenris Leggings"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "HelmetFishingHat",
+    "maxQuality": 4,
+    "name": "Fishing Hat"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorFlametalChest",
+    "maxQuality": 4,
+    "name": "Flametal Breastplate"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorFlametalLegs",
+    "maxQuality": 4,
+    "name": "Flametal Greaves"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "HelmetFlametal",
+    "maxQuality": 4,
+    "name": "Flametal Helmet"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "HelmetBerserkerHood",
+    "maxQuality": 4,
+    "name": "Headdress of the Bear"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "HelmetDNMage",
+    "maxQuality": 4,
+    "name": "Headdress of the Caller"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "HelmetAshlandsMediumHood",
+    "maxQuality": 4,
+    "name": "Hood of Ask"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "HelmetMage_Ashlands",
+    "maxQuality": 4,
+    "name": "Hood of Embla"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "HelmetOdin",
+    "maxQuality": 4,
+    "name": "Hood of Oden"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "HelmetDNMediumHood",
+    "maxQuality": 4,
+    "name": "Hood of the Vanguard"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ArmorIronLegs",
+    "maxQuality": 4,
+    "name": "Iron Greaves"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "HelmetIron",
+    "maxQuality": 4,
+    "name": "Iron Helmet"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ArmorIronChest",
+    "maxQuality": 4,
+    "name": "Iron Scale Mail"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "HelmetLeather",
+    "maxQuality": 4,
+    "name": "Leather Helmet"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ArmorLeatherLegs",
+    "maxQuality": 4,
+    "name": "Leather Trousers"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ArmorLeatherChest",
+    "maxQuality": 4,
+    "name": "Leather Tunic"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "CapeLinen",
+    "maxQuality": 4,
+    "name": "Linen Cape"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorBerserkerLegs",
+    "maxQuality": 4,
+    "name": "Loincloth of the Bear"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "CapeLox",
+    "maxQuality": 4,
+    "name": "Lox Cape"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "HelmetLox",
+    "maxQuality": 4,
+    "name": "Lox Fur Hood"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorLoxChest",
+    "maxQuality": 4,
+    "name": "Lox Fur Jacket"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorLoxLegs",
+    "maxQuality": 4,
+    "name": "Lox Fur Trousers"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "CapeDeepNorth",
+    "maxQuality": 4,
+    "name": "Moose Hide Cape"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorPaddedCuirass",
+    "maxQuality": 4,
+    "name": "Padded Cuirass"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorPaddedGreaves",
+    "maxQuality": 4,
+    "name": "Padded Greaves"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "HelmetPadded",
+    "maxQuality": 4,
+    "name": "Padded Helmet"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorBerserkerChest",
+    "maxQuality": 4,
+    "name": "Patterns of the Bear"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ArmorRagsLegs",
+    "maxQuality": 2,
+    "name": "Rag Trousers"
+  },
+  {
+    "biome": "meadows",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ArmorRagsChest",
+    "maxQuality": 2,
+    "name": "Rag Tunic"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorMageChest_Ashlands",
+    "maxQuality": 4,
+    "name": "Robes of Embla"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthMageChest",
+    "maxQuality": 4,
+    "name": "Robes of the Caller"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ArmorRootChest",
+    "maxQuality": 4,
+    "name": "Root Harnesk"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ArmorRootLegs",
+    "maxQuality": 4,
+    "name": "Root Leggings"
+  },
+  {
+    "biome": "swamp",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "HelmetRoot",
+    "maxQuality": 4,
+    "name": "Root Mask"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "CapeTrollHide",
+    "maxQuality": 4,
+    "name": "Troll Hide Cape"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "HelmetTrollLeather",
+    "maxQuality": 4,
+    "name": "Troll Leather Hood"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorTrollLeatherLegs",
+    "maxQuality": 4,
+    "name": "Troll Leather Trousers"
+  },
+  {
+    "biome": "blackForest",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ArmorTrollLeatherChest",
+    "maxQuality": 4,
+    "name": "Troll Leather Tunic"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorAshlandsMediumlegs",
+    "maxQuality": 4,
+    "name": "Trousers of Ask"
+  },
+  {
+    "biome": "ashlands",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ArmorMageLegs_Ashlands",
+    "maxQuality": 4,
+    "name": "Trousers of Embla"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthMagelegs",
+    "maxQuality": 4,
+    "name": "Trousers of the Caller"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthHeavylegs",
+    "maxQuality": 4,
+    "name": "Trousers of the Protector"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ArmorDeepNorthMediumlegs",
+    "maxQuality": 4,
+    "name": "Trousers of the Vanguard"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorBerserkerUndeadChest",
+    "maxQuality": 4,
+    "name": "Vilebone Cage"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ArmorBerserkerUndeadLegs",
+    "maxQuality": 4,
+    "name": "Vilebone Drapes"
+  },
+  {
+    "biome": "plains",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "HelmetBerserkerUndead",
+    "maxQuality": 4,
+    "name": "Vilebone Visage"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "CapeWolf",
+    "maxQuality": 4,
+    "name": "Wolf Fur Cape"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ArmorWolfChest",
+    "maxQuality": 4,
+    "name": "Wolf Hide Chestpiece"
+  },
+  {
+    "biome": "mountain",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ArmorWolfLegs",
+    "maxQuality": 4,
+    "name": "Wolf Hide Trousers"
+  },
+  {
+    "biome": "swamp",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ShieldBanded",
+    "maxQuality": 3,
+    "name": "Banded Shield"
+  },
+  {
+    "biome": "plains",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ShieldBlackmetal",
+    "maxQuality": 3,
+    "name": "Black Metal Shield"
+  },
+  {
+    "biome": "plains",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader4Armor",
+      "name": "Black Metal Protection Idol"
+    },
+    "key": "ShieldBlackmetalTower",
+    "maxQuality": 3,
+    "name": "Black Metal Tower Shield"
+  },
+  {
+    "biome": "meadows",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ShieldBoneTower",
+    "maxQuality": 3,
+    "name": "Bone Tower Shield"
+  },
+  {
+    "biome": "blackForest",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
+    },
+    "key": "ShieldBronzeBuckler",
+    "maxQuality": 3,
+    "name": "Bronze Buckler"
+  },
+  {
+    "biome": "mistlands",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ShieldCarapaceBuckler",
+    "maxQuality": 3,
+    "name": "Carapace Buckler"
+  },
+  {
+    "biome": "mistlands",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader5Armor",
+      "name": "Black Marble Protection Idol"
+    },
+    "key": "ShieldCarapace",
+    "maxQuality": 3,
+    "name": "Carapace Shield"
+  },
+  {
+    "biome": "ashlands",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ShieldFlametal",
+    "maxQuality": 3,
+    "name": "Flametal Shield"
+  },
+  {
+    "biome": "ashlands",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader6Armor",
+      "name": "Flametal Protection Idol"
+    },
+    "key": "ShieldFlametalTower",
+    "maxQuality": 3,
+    "name": "Flametal Tower Shield"
+  },
+  {
+    "biome": "swamp",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ShieldIronBuckler",
+    "maxQuality": 3,
+    "name": "Iron Buckler"
+  },
+  {
+    "biome": "swamp",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ShieldIronTower",
+    "maxQuality": 3,
+    "name": "Iron Tower Shield"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ShieldGoldBuckler",
+    "maxQuality": 3,
+    "name": "Nord Buckler"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ShieldGoldTower",
+    "maxQuality": 3,
+    "name": "Nord Greatshield"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "ShieldGold",
+    "maxQuality": 3,
+    "name": "Nord Shield"
+  },
+  {
+    "biome": "ocean",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ShieldSerpentscale",
+    "maxQuality": 3,
+    "name": "Serpent Scale Shield"
+  },
+  {
+    "biome": "swamp",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "ShieldRoots",
+    "maxQuality": 3,
+    "name": "Shield of Roots"
+  },
+  {
+    "biome": "mountain",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader3Armor",
+      "name": "Silver Protection Idol"
+    },
+    "key": "ShieldSilver",
+    "maxQuality": 3,
+    "name": "Silver Shield"
+  },
+  {
+    "biome": "meadows",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ShieldWood",
+    "maxQuality": 3,
+    "name": "Wood Shield"
+  },
+  {
+    "biome": "meadows",
+    "group": "shields",
+    "idol": {
+      "key": "Upgrader0Armor",
+      "name": "Wooden Protection Idol"
+    },
+    "key": "ShieldWoodTower",
+    "maxQuality": 3,
+    "name": "Wood Tower Shield"
+  },
+  {
+    "biome": "blackForest",
+    "group": "tools",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Cultivator",
+    "maxQuality": 3,
+    "name": "Cultivator"
+  },
+  {
+    "biome": "meadows",
+    "group": "tools",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Hammer",
+    "maxQuality": 3,
+    "name": "Hammer"
+  },
+  {
+    "biome": "meadows",
+    "group": "tools",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Hoe",
+    "maxQuality": 3,
+    "name": "Hoe"
+  },
+  {
+    "biome": "ocean",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "KnifeChitin",
+    "maxQuality": 4,
+    "name": "Abyssal Razor"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "SpearElderbark",
+    "maxQuality": 4,
+    "name": "Ancient Bark Spear"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "CrossbowArbalest",
+    "maxQuality": 4,
+    "name": "Arbalest"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "BowAshlands",
+    "maxQuality": 4,
+    "name": "Ash Fang"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "Battleaxe",
+    "maxQuality": 4,
+    "name": "Battleaxe"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "AxeBerzerkr",
+    "maxQuality": 4,
+    "name": "Berserkir Axes"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "AtgeirBlackmetal",
+    "maxQuality": 4,
+    "name": "Black Metal Atgeir"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "AxeBlackMetal",
+    "maxQuality": 4,
+    "name": "Black Metal Axe"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "BattleaxeBlackmetal",
+    "maxQuality": 4,
+    "name": "Black Metal Battleaxe"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "KnifeBlackMetal",
+    "maxQuality": 4,
+    "name": "Black Metal Knife"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "PickaxeBlackMetal",
+    "maxQuality": 4,
+    "name": "Black Metal Pickaxe"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "SwordBlackmetal",
+    "maxQuality": 4,
+    "name": "Black Metal Sword"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "AxeBerzerkrBlood",
+    "maxQuality": 4,
+    "name": "Bleeding Berserkir Axes"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "BowAshlandsBlood",
+    "maxQuality": 4,
+    "name": "Blood Fang"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "MaceEldnerBlood",
+    "maxQuality": 4,
+    "name": "Bloodgeon"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "AtgeirBronze",
+    "maxQuality": 4,
+    "name": "Bronze Atgeir"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "AxeBronze",
+    "maxQuality": 4,
+    "name": "Bronze Axe"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "MaceBronze",
+    "maxQuality": 4,
+    "name": "Bronze Mace"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "PickaxeBronze",
+    "maxQuality": 4,
+    "name": "Bronze Pickaxe"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "SpearBronze",
+    "maxQuality": 4,
+    "name": "Bronze Spear"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "SwordBronze",
+    "maxQuality": 4,
+    "name": "Bronze Sword"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "THSwordSlayerBlood",
+    "maxQuality": 4,
+    "name": "Brutal Slayer"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SpearCarapace",
+    "maxQuality": 4,
+    "name": "Carapace Spear"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Club",
+    "maxQuality": 4,
+    "name": "Club"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "KnifeCopper",
+    "maxQuality": 4,
+    "name": "Copper Knife"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Bow",
+    "maxQuality": 4,
+    "name": "Crude Bow"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "BattleaxeCrystal",
+    "maxQuality": 4,
+    "name": "Crystal Battleaxe"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "StaffSkeleton",
+    "maxQuality": 4,
+    "name": "Dead Raiser"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SledgeDemolisher",
+    "maxQuality": 4,
+    "name": "Demolisher"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "BowDraugrFang",
+    "maxQuality": 4,
+    "name": "Draugr Fang"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "StaffLightning",
+    "maxQuality": 4,
+    "name": "Dundr"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "SwordDyrnwyn",
+    "maxQuality": 4,
+    "name": "Dyrnwyn"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "AxeEarly",
+    "maxQuality": 4,
+    "name": "Early Axes"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "StaffOrbofAhri",
+    "maxQuality": 4,
+    "name": "Echo Spike"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "SpearWolfFang",
+    "maxQuality": 4,
+    "name": "Fang Spear"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "BowFineWood",
+    "maxQuality": 4,
+    "name": "Finewood Bow"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "MaceEldner",
+    "maxQuality": 4,
+    "name": "Flametal Mace"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "FistFenrirClaw",
+    "maxQuality": 4,
+    "name": "Flesh Rippers"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "AxeFlint",
+    "maxQuality": 4,
+    "name": "Flint Axe"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "KnifeFlint",
+    "maxQuality": 4,
+    "name": "Flint Knife"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "SpearFlint",
+    "maxQuality": 4,
+    "name": "Flint Spear"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "AtgeirGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Atgeir"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "AxeGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Axe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BowGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Bow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "CrossbowGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Crossbow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "KnifeGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Dagger"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BattleaxeGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Greataxe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "THSwordGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Greatsword"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "FistGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Knucklechains"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "MaceGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Mace"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SledgeGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Sledge"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SpearGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Spear"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SwordGold_FrostFire",
+    "maxQuality": 4,
+    "name": "Frostfire Sword"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "MaceSilver",
+    "maxQuality": 4,
+    "name": "Frostner"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "AtgeirHimminAfl",
+    "maxQuality": 4,
+    "name": "Himminafl"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "BowHuntsman",
+    "maxQuality": 4,
+    "name": "Huntsman Bow"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "AtgeirIron",
+    "maxQuality": 4,
+    "name": "Iron Atgeir"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "AxeIron",
+    "maxQuality": 4,
+    "name": "Iron Axe"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "MaceIron",
+    "maxQuality": 4,
+    "name": "Iron Mace"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "PickaxeIron",
+    "maxQuality": 4,
+    "name": "Iron Pickaxe"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "SledgeIron",
+    "maxQuality": 4,
+    "name": "Iron Sledge"
+  },
+  {
+    "biome": "swamp",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
+    },
+    "key": "SwordIron",
+    "maxQuality": 4,
+    "name": "Iron Sword"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "AxeJotunBane",
+    "maxQuality": 4,
+    "name": "Jotun Bane"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "MaceEldnerNature",
+    "maxQuality": 4,
+    "name": "Klossen"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "THSwordKrom",
+    "maxQuality": 4,
+    "name": "Krom"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "StaffThunderBlood",
+    "maxQuality": 4,
+    "name": "Lightning Strike"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SwordMistwalker",
+    "maxQuality": 4,
+    "name": "Mistwalker"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "SwordNiedhogg",
+    "maxQuality": 4,
+    "name": "Nidhögg"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "SwordNiedhoggBlood",
+    "maxQuality": 4,
+    "name": "Nidhögg the Bleeding"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "SwordNiedhoggNature",
+    "maxQuality": 4,
+    "name": "Nidhögg the Primal"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "SwordNiedhoggLightning",
+    "maxQuality": 4,
+    "name": "Nidhögg the Thundering"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "AtgeirGold",
+    "maxQuality": 4,
+    "name": "Nord Atgeir"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "AxeGold",
+    "maxQuality": 4,
+    "name": "Nord Axe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BowGold",
+    "maxQuality": 4,
+    "name": "Nord Bow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "CrossbowGold",
+    "maxQuality": 4,
+    "name": "Nord Crossbow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "KnifeGold",
+    "maxQuality": 4,
+    "name": "Nord Dagger"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BattleaxeGold",
+    "maxQuality": 4,
+    "name": "Nord Greataxe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "THSwordGold",
+    "maxQuality": 4,
+    "name": "Nord Greatsword"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader2Armor",
+      "name": "Iron Protection Idol"
+    },
+    "key": "FistGold",
+    "maxQuality": 4,
+    "name": "Nord Knucklechains"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "MaceGold",
+    "maxQuality": 4,
+    "name": "Nord Mace"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SledgeGold",
+    "maxQuality": 4,
+    "name": "Nord Sledge"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SpearGold",
+    "maxQuality": 4,
+    "name": "Nord Spear"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SwordGold",
+    "maxQuality": 4,
+    "name": "Nord Sword"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "StaffFrostOrbs",
+    "maxQuality": 4,
+    "name": "Northern Vengeance"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "FistBjornClaw",
+    "maxQuality": 4,
+    "name": "Paws of the Bear"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "MaceNeedle",
+    "maxQuality": 4,
+    "name": "Porcupine"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "AxeBerzerkrNature",
+    "maxQuality": 4,
+    "name": "Primal Berserkir Axes"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "THSwordSlayerNature",
+    "maxQuality": 4,
+    "name": "Primal Slayer"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "CrossbowRipper",
+    "maxQuality": 4,
+    "name": "Ripper"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "BowAshlandsRoot",
+    "maxQuality": 4,
+    "name": "Root Fang"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "CrossbowRipperNature",
+    "maxQuality": 4,
+    "name": "Root Ripper"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "THSwordSlayerLightning",
+    "maxQuality": 4,
+    "name": "Scourging Slayer"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Scythe",
+    "maxQuality": 3,
+    "name": "Scythe"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "KnifeSilver",
+    "maxQuality": 4,
+    "name": "Silver Knife"
+  },
+  {
+    "biome": "mountain",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
+    },
+    "key": "SwordSilver",
+    "maxQuality": 4,
+    "name": "Silver Sword"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "KnifeSkollAndHati",
+    "maxQuality": 4,
+    "name": "Skoll and Hati"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "BattleaxeSkullSplittur",
+    "maxQuality": 4,
+    "name": "Skull Splittur"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "THSwordSlayer",
+    "maxQuality": 4,
+    "name": "Slayer"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "Shovel",
+    "maxQuality": 3,
+    "name": "Snow Shovel"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "BowSpineSnap",
+    "maxQuality": 4,
+    "name": "Spinesnap"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "StaffSpiritCaller",
+    "maxQuality": 4,
+    "name": "Spirit Caller"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SpearSplitner",
+    "maxQuality": 4,
+    "name": "Splitnir"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SpearSplitner_Blood",
+    "maxQuality": 4,
+    "name": "Splitnir the Bleeding"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SpearSplitner_Nature",
+    "maxQuality": 4,
+    "name": "Splitnir the Primal"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "SpearSplitner_Lightning",
+    "maxQuality": 4,
+    "name": "Splitnir the Storming"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "StaffFireball",
+    "maxQuality": 4,
+    "name": "Staff of Embers"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "StaffClusterbomb",
+    "maxQuality": 4,
+    "name": "Staff of Fracturing"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "StaffIceShards",
+    "maxQuality": 4,
+    "name": "Staff of Frost"
+  },
+  {
+    "biome": "mistlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
+    },
+    "key": "StaffShield",
+    "maxQuality": 4,
+    "name": "Staff of Protection"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "StaffGreenRoots",
+    "maxQuality": 4,
+    "name": "Staff of the Wild"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "SledgeStagbreaker",
+    "maxQuality": 4,
+    "name": "Stagbreaker"
+  },
+  {
+    "biome": "meadows",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
+    },
+    "key": "AxeStone",
+    "maxQuality": 4,
+    "name": "Stone Axe"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "BowAshlandsStorm",
+    "maxQuality": 4,
+    "name": "Storm Fang"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "CrossbowRipperLightning",
+    "maxQuality": 4,
+    "name": "Storm Ripper"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "MaceEldnerLightning",
+    "maxQuality": 4,
+    "name": "Storm Star"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "AtgeirGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Atgeir"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "AxeGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Axe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BowGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Bow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "CrossbowGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Crossbow"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "KnifeGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Dagger"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "BattleaxeGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Greataxe"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "THSwordGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Greatsword"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "FistGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Knucklechains"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "MaceGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Mace"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SledgeGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Sledge"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SpearGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Spear"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
+    },
+    "key": "SwordGold_BloodLightning",
+    "maxQuality": 4,
+    "name": "Thunderblood Sword"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "AxeBerzerkrLightning",
+    "maxQuality": 4,
+    "name": "Thundering Berserkir Axes"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "StaffRedTroll",
+    "maxQuality": 4,
+    "name": "Trollstav"
+  },
+  {
+    "biome": "plains",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader4Weapon",
+      "name": "Black Metal Battle Idol"
+    },
+    "key": "FistBjornUndeadClaw",
+    "maxQuality": 4,
+    "name": "Vilebone Maulclaws"
+  },
+  {
+    "biome": "blackForest",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
+    },
+    "key": "SwordWood",
+    "maxQuality": 4,
+    "name": "Wooden Sword"
+  },
+  {
+    "biome": "ashlands",
+    "group": "weapons",
+    "idol": {
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
+    },
+    "key": "CrossbowRipperBlood",
+    "maxQuality": 4,
+    "name": "Wound Ripper"
+  }
+]

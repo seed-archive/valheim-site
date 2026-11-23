@@ -46,10 +46,37 @@ export function ToolsIndex() {
         </Typography>
         <Typography sx={{ mt: 1 }}>
           <FormattedMessage
+            id="pages.tools.bestSeeds"
+            values={{
+              b: (text) => <b>{text}</b>,
+              link: (text) => <Link href="/tools/best-seeds">{text}</Link>,
+            }}
+          />
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          <FormattedMessage
             id="pages.tools.craftTree"
             values={{
               b: (text) => <b>{text}</b>,
               link: (text) => <Link href="/tools/craft-tree">{text}</Link>,
+            }}
+          />
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          <FormattedMessage
+            id="pages.tools.forgeName"
+            values={{
+              b: (text) => <b>{text}</b>,
+              link: (text) => <Link href="/tools/nidavellir">{text}</Link>,
+            }}
+          />
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          <FormattedMessage
+            id="pages.tools.wind"
+            values={{
+              b: (text) => <b>{text}</b>,
+              link: (text) => <Link href="/tools/wind">{text}</Link>,
             }}
           />
         </Typography>

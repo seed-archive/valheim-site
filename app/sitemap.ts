@@ -11,14 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools",
     "/tools/map",
     "/tools/how-good-is-my-seed",
+    "/tools/best-seeds",
     "/tools/craft-tree",
+    "/tools/nidavellir",
+    "/tools/wind",
     "/bugs",
     "/catalog",
     "/guides",
     ...GUIDE_GROUPS.flatMap((group) => (group.href ? [group.href] : [])),
-    // The two guides that stand out of the menu (`lib/guides.ts`).
-    "/guides/farming",
-    "/guides/forge-of-potential",
     ...[...CATALOG, ...GUIDES].map((page) => page.href),
   ].map((path) => ({
     url: `${base}${path}`,

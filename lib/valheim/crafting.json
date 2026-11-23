@@ -3440,6 +3440,33 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "FlametalOreNew",
+              "fromName": "Flametal Ore",
+              "to": "FlametalNew",
+              "toName": "Flametal"
+            },
+            {
+              "from": "BlackMetalScrap",
+              "fromName": "Black Metal Scrap",
+              "to": "BlackMetal",
+              "toName": "Black Metal"
+            },
+            {
+              "from": "FlametalOreNew",
+              "fromName": "Flametal Ore",
+              "to": "FlametalNew",
+              "toName": "Flametal"
+            },
+            {
+              "from": "GoldOre",
+              "fromName": "Petrified Tissue",
+              "to": "Gold",
+              "toName": "Bloodgold"
+            }
+          ],
+          "items": "Flametal Ore into Flametal, Black Metal Scrap into Black Metal, Flametal Ore into Flametal, Petrified Tissue into Bloodgold",
           "use": "converter"
         }
       ],
@@ -4553,6 +4580,27 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "Wood",
+              "fromName": "Wood",
+              "to": "Coal",
+              "toName": "Coal"
+            },
+            {
+              "from": "FineWood",
+              "fromName": "Finewood",
+              "to": "Coal",
+              "toName": "Coal"
+            },
+            {
+              "from": "RoundLog",
+              "fromName": "Corewood",
+              "to": "Coal",
+              "toName": "Coal"
+            }
+          ],
+          "items": "Wood into Coal, Finewood into Coal, Corewood into Coal",
           "use": "converter"
         }
       ],
@@ -4841,6 +4889,57 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "RawMeat",
+              "fromName": "Boar Meat",
+              "to": "CookedMeat",
+              "toName": "Cooked Boar Meat"
+            },
+            {
+              "from": "NeckTail",
+              "fromName": "Neck Tail",
+              "to": "NeckTailGrilled",
+              "toName": "Grilled Neck Tail"
+            },
+            {
+              "from": "FishRaw",
+              "fromName": "Raw Fish",
+              "to": "FishCooked",
+              "toName": "Cooked Fish"
+            },
+            {
+              "from": "DeerMeat",
+              "fromName": "Deer Meat",
+              "to": "CookedDeerMeat",
+              "toName": "Cooked Deer Meat"
+            },
+            {
+              "from": "WolfMeat",
+              "fromName": "Wolf Meat",
+              "to": "CookedWolfMeat",
+              "toName": "Cooked Wolf Meat"
+            },
+            {
+              "from": "ChickenMeat",
+              "fromName": "Chicken Meat",
+              "to": "CookedChickenMeat",
+              "toName": "Cooked Chicken Meat"
+            },
+            {
+              "from": "HareMeat",
+              "fromName": "Hare Meat",
+              "to": "CookedHareMeat",
+              "toName": "Cooked Hare Meat"
+            },
+            {
+              "from": "BjornMeat",
+              "fromName": "Bear Meat",
+              "to": "CookedBjornMeat",
+              "toName": "Cooked Bear Meat"
+            }
+          ],
+          "items": "Boar Meat into Cooked Boar Meat, Neck Tail into Grilled Neck Tail, Raw Fish into Cooked Fish, Deer Meat into Cooked Deer Meat, Wolf Meat into Cooked Wolf Meat, Chicken Meat into Cooked Chicken Meat, Hare Meat into Cooked Hare Meat, Bear Meat into Cooked Bear Meat",
           "use": "converter"
         }
       ],
@@ -6188,6 +6287,15 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "Softtissue",
+              "fromName": "Soft Tissue",
+              "to": "Eitr",
+              "toName": "Refined Eitr"
+            }
+          ],
+          "items": "Soft Tissue into Refined Eitr",
           "use": "converter"
         }
       ],
@@ -6364,6 +6472,129 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "MeadBaseHealthMinor",
+              "fromName": "Mead Base: Minor Healing",
+              "to": "MeadHealthMinor",
+              "toName": "Minor Healing Mead"
+            },
+            {
+              "from": "MeadBaseHealthMedium",
+              "fromName": "Mead Base: Medium Healing",
+              "to": "MeadHealthMedium",
+              "toName": "Medium Healing Mead"
+            },
+            {
+              "from": "MeadBaseStaminaMinor",
+              "fromName": "Mead Base: Minor Stamina",
+              "to": "MeadStaminaMinor",
+              "toName": "Minor Stamina Mead"
+            },
+            {
+              "from": "MeadBaseStaminaMedium",
+              "fromName": "Mead Base: Medium Stamina",
+              "to": "MeadStaminaMedium",
+              "toName": "Medium Stamina Mead"
+            },
+            {
+              "from": "MeadBasePoisonResist",
+              "fromName": "Mead Base: Poison Resistance",
+              "to": "MeadPoisonResist",
+              "toName": "Poison Resistance Mead"
+            },
+            {
+              "from": "MeadBaseFrostResist",
+              "fromName": "Mead Base: Frost Resistance",
+              "to": "MeadFrostResist",
+              "toName": "Frost Resistance Mead"
+            },
+            {
+              "from": "BarleyWineBase",
+              "fromName": "Barley Wine Base: Fire Resistance",
+              "to": "BarleyWine",
+              "toName": "Fire Resistance Barley Wine"
+            },
+            {
+              "from": "MeadBaseTasty",
+              "fromName": "Mead Base: Tasty",
+              "to": "MeadTasty",
+              "toName": "Tasty Mead"
+            },
+            {
+              "from": "MeadBaseHealthMajor",
+              "fromName": "Mead Base: Major Healing",
+              "to": "MeadHealthMajor",
+              "toName": "Major Healing Mead"
+            },
+            {
+              "from": "MeadBaseStaminaLingering",
+              "fromName": "Mead Base: Lingering Stamina",
+              "to": "MeadStaminaLingering",
+              "toName": "Lingering Stamina Mead"
+            },
+            {
+              "from": "MeadBaseEitrMinor",
+              "fromName": "Mead Base: Minor Eitr",
+              "to": "MeadEitrMinor",
+              "toName": "Minor Eitr Mead"
+            },
+            {
+              "from": "MeadBaseEitrLingering",
+              "fromName": "Mead Base: Lingering Eitr",
+              "to": "MeadEitrLingering",
+              "toName": "Lingering Eitr Mead"
+            },
+            {
+              "from": "MeadBaseHealthLingering",
+              "fromName": "Mead Base: Lingering Health",
+              "to": "MeadHealthLingering",
+              "toName": "Lingering Healing Mead"
+            },
+            {
+              "from": "MeadBaseBzerker",
+              "fromName": "Mead base: Berserkir",
+              "to": "MeadBzerker",
+              "toName": "Berserkir Mead"
+            },
+            {
+              "from": "MeadBaseStrength",
+              "fromName": "Mead Base: Troll Endurance",
+              "to": "MeadStrength",
+              "toName": "Mead of Troll Endurance"
+            },
+            {
+              "from": "MeadBaseHasty",
+              "fromName": "Mead base: Ratatosk",
+              "to": "MeadHasty",
+              "toName": "Tonic of Ratatosk"
+            },
+            {
+              "from": "MeadBaseLightFoot",
+              "fromName": "Mead Base: Lightfoot",
+              "to": "MeadLightfoot",
+              "toName": "Lightfoot Mead"
+            },
+            {
+              "from": "MeadBaseSwimmer",
+              "fromName": "Mead Base: Vananidir",
+              "to": "MeadSwimmer",
+              "toName": "Draught of Vananidir"
+            },
+            {
+              "from": "MeadBaseTamer",
+              "fromName": "Mead Base: Animal Whispers",
+              "to": "MeadTamer",
+              "toName": "Brew of Animal Whispers"
+            },
+            {
+              "from": "MeadBaseBugRepellent",
+              "fromName": "Mead Base: Anti-Sting",
+              "to": "MeadBugRepellent",
+              "toName": "Anti-Sting Concoction"
+            }
+          ],
+          "items": "Mead Base: Minor Healing into Minor Healing Mead, Mead Base: Medium Healing into Medium Healing Mead, Mead Base: Minor Stamina into Minor Stamina Mead, Mead Base: Medium Stamina into Medium Stamina Mead, Mead Base: Poison Resistance into Poison Resistance Mead, Mead Base: Frost Resistance into Frost Resistance Mead, Barley Wine Base: Fire Resistance into Fire Resistance Barley Wine, Mead Base: Tasty into Tasty Mead, Mead Base: Major Healing into Major Healing Mead, Mead Base: Lingering Stamina into Lingering Stamina Mead, Mead Base: Minor Eitr into Minor Eitr Mead, Mead Base: Lingering Eitr into Lingering Eitr Mead, Mead Base: Lingering Health into Lingering Healing Mead, Mead base: Berserkir into Berserkir Mead, Mead Base: Troll Endurance into Mead of Troll Endurance, Mead base: Ratatosk into Tonic of Ratatosk, Mead Base: Lightfoot into Lightfoot Mead, Mead Base: Vananidir into Draught of Vananidir, Mead Base: Animal Whispers into Brew of Animal Whispers, Mead Base: Anti-Sting into Anti-Sting Concoction",
           "use": "converter"
         }
       ],
@@ -6968,6 +7199,8 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [],
+          "items": "",
           "use": "converter"
         }
       ],
@@ -7028,6 +7261,189 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "SwordGoldUncooked",
+              "fromName": "Cast: Nord Sword",
+              "to": "SwordGold",
+              "toName": "Nord Sword"
+            },
+            {
+              "from": "AtgeirGoldUncooked",
+              "fromName": "Cast: Nord Atgeir",
+              "to": "AtgeirGold",
+              "toName": "Nord Atgeir"
+            },
+            {
+              "from": "BattleaxeGoldUncooked",
+              "fromName": "Cast: Nord Greataxe",
+              "to": "BattleaxeGold",
+              "toName": "Nord Greataxe"
+            },
+            {
+              "from": "AxeGoldUncooked",
+              "fromName": "Cast: Nord Axe",
+              "to": "AxeGold",
+              "toName": "Nord Axe"
+            },
+            {
+              "from": "BowGoldUncooked",
+              "fromName": "Cast: Nord Bow",
+              "to": "BowGold",
+              "toName": "Nord Bow"
+            },
+            {
+              "from": "CrossbowGoldUncooked",
+              "fromName": "Cast: Nord Crossbow",
+              "to": "CrossbowGold",
+              "toName": "Nord Crossbow"
+            },
+            {
+              "from": "FistGoldUncooked",
+              "fromName": "Cast: Nord Knucklechains",
+              "to": "FistGold",
+              "toName": "Nord Knucklechains"
+            },
+            {
+              "from": "KnifeGoldUncooked",
+              "fromName": "Cast: Nord Dagger",
+              "to": "KnifeGold",
+              "toName": "Nord Dagger"
+            },
+            {
+              "from": "SledgeGoldUncooked",
+              "fromName": "Cast: Nord Sledge",
+              "to": "SledgeGold",
+              "toName": "Nord Sledge"
+            },
+            {
+              "from": "MaceGoldUncooked",
+              "fromName": "Cast: Nord Mace",
+              "to": "MaceGold",
+              "toName": "Nord Mace"
+            },
+            {
+              "from": "SpearGoldUncooked",
+              "fromName": "Cast: Nord Spear",
+              "to": "SpearGold",
+              "toName": "Nord Spear"
+            },
+            {
+              "from": "THSwordGoldUncooked",
+              "fromName": "Cast: Nord Greatsword",
+              "to": "THSwordGold",
+              "toName": "Nord Greatsword"
+            },
+            {
+              "from": "ArmorGoldHeavyChestUncooked",
+              "fromName": "Cast: Breastplate of the Protector",
+              "to": "ArmorDeepNorthHeavyChest",
+              "toName": "Breastplate of the Protector"
+            },
+            {
+              "from": "ArmorGoldHeavyLegsUncooked",
+              "fromName": "Cast: Trousers of the Protector",
+              "to": "ArmorDeepNorthHeavylegs",
+              "toName": "Trousers of the Protector"
+            },
+            {
+              "from": "ArmorGoldHeavyHelmetUncooked",
+              "fromName": "Cast: Helmet of the Protector",
+              "to": "HelmetDNHeavy",
+              "toName": "Helmet of the Protector"
+            },
+            {
+              "from": "ArmorGoldMediumHelmetUncooked",
+              "fromName": "Cast: Hood of the Vanguard",
+              "to": "HelmetDNMediumHood",
+              "toName": "Hood of the Vanguard"
+            },
+            {
+              "from": "ArmorGoldMediumChestUncooked",
+              "fromName": "Cast: Chestpiece of the Vanguard",
+              "to": "ArmorDeepNorthMediumChest",
+              "toName": "Chestpiece of the Vanguard"
+            },
+            {
+              "from": "ArmorGoldMediumLegsUncooked",
+              "fromName": "Cast: Trousers of the Vanguard",
+              "to": "ArmorDeepNorthMediumlegs",
+              "toName": "Trousers of the Vanguard"
+            },
+            {
+              "from": "ArmorGoldMageLegsUncooked",
+              "fromName": "Cast: Trousers of the Caller",
+              "to": "ArmorDeepNorthMagelegs",
+              "toName": "Trousers of the Caller"
+            },
+            {
+              "from": "ArmorGoldMageChestUncooked",
+              "fromName": "Cast: Robes of the Caller",
+              "to": "ArmorDeepNorthMageChest",
+              "toName": "Robes of the Caller"
+            },
+            {
+              "from": "ArmorGoldMageHelmetUncooked",
+              "fromName": "Cast: Headdress of the Caller",
+              "to": "HelmetDNMage",
+              "toName": "Headdress of the Caller"
+            },
+            {
+              "from": "ShieldBucklerGoldUncooked",
+              "fromName": "Cast: Nord Buckler",
+              "to": "ShieldGoldBuckler",
+              "toName": "Nord Buckler"
+            },
+            {
+              "from": "ShieldRoundGoldUncooked",
+              "fromName": "Cast: Nord Shield",
+              "to": "ShieldGold",
+              "toName": "Nord Shield"
+            },
+            {
+              "from": "ShieldTowerGoldUncooked",
+              "fromName": "Cast: Nord Greatshield",
+              "to": "ShieldGoldTower",
+              "toName": "Nord Greatshield"
+            },
+            {
+              "from": "KeysGoldUncooked",
+              "fromName": "Cast: Intricate Key",
+              "to": "BloodGoldKey",
+              "toName": "Intricate Key"
+            },
+            {
+              "from": "StaffSpiritCallerUncooked",
+              "fromName": "Cast: Spirit Caller",
+              "to": "StaffSpiritCaller",
+              "toName": "Spirit Caller"
+            },
+            {
+              "from": "StaffSpiritCallerUncooked",
+              "fromName": "Cast: Spirit Caller",
+              "to": "StaffSpiritCaller",
+              "toName": "Spirit Caller"
+            },
+            {
+              "from": "StaffOrbofAhriUncooked",
+              "fromName": "Cast: Echo Spike",
+              "to": "StaffOrbofAhri",
+              "toName": "Echo Spike"
+            },
+            {
+              "from": "StaffFrostOrbsUncooked",
+              "fromName": "Cast: Northern Vengeance",
+              "to": "StaffFrostOrbs",
+              "toName": "Northern Vengeance"
+            },
+            {
+              "from": "StaffThunderbloodUncooked",
+              "fromName": "Cast: Lightning Strike",
+              "to": "StaffThunderBlood",
+              "toName": "Lightning Strike"
+            }
+          ],
+          "items": "Cast: Nord Sword into Nord Sword, Cast: Nord Atgeir into Nord Atgeir, Cast: Nord Greataxe into Nord Greataxe, Cast: Nord Axe into Nord Axe, Cast: Nord Bow into Nord Bow, Cast: Nord Crossbow into Nord Crossbow, Cast: Nord Knucklechains into Nord Knucklechains, Cast: Nord Dagger into Nord Dagger, Cast: Nord Sledge into Nord Sledge, Cast: Nord Mace into Nord Mace, Cast: Nord Spear into Nord Spear, Cast: Nord Greatsword into Nord Greatsword, Cast: Breastplate of the Protector into Breastplate of the Protector, Cast: Trousers of the Protector into Trousers of the Protector, Cast: Helmet of the Protector into Helmet of the Protector, Cast: Hood of the Vanguard into Hood of the Vanguard, Cast: Chestpiece of the Vanguard into Chestpiece of the Vanguard, Cast: Trousers of the Vanguard into Trousers of the Vanguard, Cast: Trousers of the Caller into Trousers of the Caller, Cast: Robes of the Caller into Robes of the Caller, Cast: Headdress of the Caller into Headdress of the Caller, Cast: Nord Buckler into Nord Buckler, Cast: Nord Shield into Nord Shield, Cast: Nord Greatshield into Nord Greatshield, Cast: Intricate Key into Intricate Key, Cast: Spirit Caller into Spirit Caller, Cast: Spirit Caller into Spirit Caller, Cast: Echo Spike into Echo Spike, Cast: Northern Vengeance into Northern Vengeance, Cast: Lightning Strike into Lightning Strike",
           "use": "converter"
         }
       ],
@@ -8478,6 +8894,99 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "SerpentMeat",
+              "fromName": "Serpent Meat",
+              "to": "SerpentMeatCooked",
+              "toName": "Cooked Serpent Meat"
+            },
+            {
+              "from": "LoxMeat",
+              "fromName": "Lox Meat",
+              "to": "CookedLoxMeat",
+              "toName": "Cooked Lox Meat"
+            },
+            {
+              "from": "FishRaw",
+              "fromName": "Raw Fish",
+              "to": "FishCooked",
+              "toName": "Cooked Fish"
+            },
+            {
+              "from": "RawMeat",
+              "fromName": "Boar Meat",
+              "to": "CookedMeat",
+              "toName": "Cooked Boar Meat"
+            },
+            {
+              "from": "NeckTail",
+              "fromName": "Neck Tail",
+              "to": "NeckTailGrilled",
+              "toName": "Grilled Neck Tail"
+            },
+            {
+              "from": "DeerMeat",
+              "fromName": "Deer Meat",
+              "to": "CookedDeerMeat",
+              "toName": "Cooked Deer Meat"
+            },
+            {
+              "from": "WolfMeat",
+              "fromName": "Wolf Meat",
+              "to": "CookedWolfMeat",
+              "toName": "Cooked Wolf Meat"
+            },
+            {
+              "from": "BugMeat",
+              "fromName": "Seeker Meat",
+              "to": "CookedBugMeat",
+              "toName": "Cooked Seeker Meat"
+            },
+            {
+              "from": "ChickenMeat",
+              "fromName": "Chicken Meat",
+              "to": "CookedChickenMeat",
+              "toName": "Cooked Chicken Meat"
+            },
+            {
+              "from": "HareMeat",
+              "fromName": "Hare Meat",
+              "to": "CookedHareMeat",
+              "toName": "Cooked Hare Meat"
+            },
+            {
+              "from": "VoltureMeat",
+              "fromName": "Volture Meat",
+              "to": "CookedVoltureMeat",
+              "toName": "Cooked Volture Meat"
+            },
+            {
+              "from": "AsksvinMeat",
+              "fromName": "Asksvin Tail",
+              "to": "CookedAsksvinMeat",
+              "toName": "Cooked Asksvin Tail"
+            },
+            {
+              "from": "BoneMawSerpentMeat",
+              "fromName": "Bonemaw Meat",
+              "to": "CookedBoneMawSerpentMeat",
+              "toName": "Cooked Bonemaw Meat"
+            },
+            {
+              "from": "BjornMeat",
+              "fromName": "Bear Meat",
+              "to": "CookedBjornMeat",
+              "toName": "Cooked Bear Meat"
+            },
+            {
+              "from": "MooseMeat",
+              "fromName": "Moose Meat",
+              "to": "CookedMooseMeat",
+              "toName": "Cooked Moose Meat"
+            }
+          ],
+          "items": "Serpent Meat into Cooked Serpent Meat, Lox Meat into Cooked Lox Meat, Raw Fish into Cooked Fish, Boar Meat into Cooked Boar Meat, Neck Tail into Grilled Neck Tail, Deer Meat into Cooked Deer Meat, Wolf Meat into Cooked Wolf Meat, Seeker Meat into Cooked Seeker Meat, Chicken Meat into Cooked Chicken Meat, Hare Meat into Cooked Hare Meat, Volture Meat into Cooked Volture Meat, Asksvin Tail into Cooked Asksvin Tail, Bonemaw Meat into Cooked Bonemaw Meat, Bear Meat into Cooked Bear Meat, Moose Meat into Cooked Moose Meat",
           "use": "converter"
         }
       ],
@@ -12396,6 +12905,51 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "CopperOre",
+              "fromName": "Copper Ore",
+              "to": "Copper",
+              "toName": "Copper"
+            },
+            {
+              "from": "IronOre",
+              "fromName": "Iron Ore",
+              "to": "Iron",
+              "toName": "Iron"
+            },
+            {
+              "from": "IronScrap",
+              "fromName": "Scrap Iron",
+              "to": "Iron",
+              "toName": "Iron"
+            },
+            {
+              "from": "BronzeScrap",
+              "fromName": "Scrap Bronze",
+              "to": "Bronze",
+              "toName": "Bronze"
+            },
+            {
+              "from": "TinOre",
+              "fromName": "Tin Ore",
+              "to": "Tin",
+              "toName": "Tin"
+            },
+            {
+              "from": "SilverOre",
+              "fromName": "Silver Ore",
+              "to": "Silver",
+              "toName": "Silver"
+            },
+            {
+              "from": "CopperScrap",
+              "fromName": "Copper Scrap",
+              "to": "Copper",
+              "toName": "Copper"
+            }
+          ],
+          "items": "Copper Ore into Copper, Iron Ore into Iron, Scrap Iron into Iron, Scrap Bronze into Bronze, Tin Ore into Tin, Silver Ore into Silver, Copper Scrap into Copper",
           "use": "converter"
         }
       ],
@@ -12682,6 +13236,15 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "Flax",
+              "fromName": "Flax",
+              "to": "LinenThread",
+              "toName": "Linen Thread"
+            }
+          ],
+          "items": "Flax into Linen Thread",
           "use": "converter"
         }
       ],
@@ -13271,6 +13834,93 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "LoxPieUncooked",
+              "fromName": "Unbaked Lox Pie",
+              "to": "LoxPie",
+              "toName": "Lox Meat Pie"
+            },
+            {
+              "from": "BreadDough",
+              "fromName": "Bread Dough",
+              "to": "Bread",
+              "toName": "Bread"
+            },
+            {
+              "from": "FishAndBreadUncooked",
+              "fromName": "Uncooked Fish 'n' Bread",
+              "to": "FishAndBread",
+              "toName": "Fish 'n' Bread"
+            },
+            {
+              "from": "MeatPlatterUncooked",
+              "fromName": "Uncooked Meat Platter",
+              "to": "MeatPlatter",
+              "toName": "Meat Platter"
+            },
+            {
+              "from": "HoneyGlazedChickenUncooked",
+              "fromName": "Uncooked Honey Glazed Chicken",
+              "to": "HoneyGlazedChicken",
+              "toName": "Honey Glazed Chicken"
+            },
+            {
+              "from": "MisthareSupremeUncooked",
+              "fromName": "Uncooked Misthare Supreme",
+              "to": "MisthareSupreme",
+              "toName": "Misthare Supreme"
+            },
+            {
+              "from": "MagicallyStuffedShroomUncooked",
+              "fromName": "Uncooked Stuffed Mushroom",
+              "to": "MagicallyStuffedShroom",
+              "toName": "Stuffed Mushroom"
+            },
+            {
+              "from": "RoastedCrustPieUncooked",
+              "fromName": "Uncooked Roasted Crust Pie",
+              "to": "RoastedCrustPie",
+              "toName": "Roasted Crust Pie"
+            },
+            {
+              "from": "PiquantPieUncooked",
+              "fromName": "Uncooked Piquant Pie",
+              "to": "PiquantPie",
+              "toName": "Piquant Pie"
+            },
+            {
+              "from": "VikingCupcakeUncooked",
+              "fromName": "Unbaked Sweetbread",
+              "to": "VikingCupcake",
+              "toName": "Frosted Sweetbread"
+            },
+            {
+              "from": "SealBlubber",
+              "fromName": "Seal Blubber",
+              "to": "CookedSealBlubber",
+              "toName": "Cooked Seal Blubber"
+            },
+            {
+              "from": "OvenPancakeUncooked",
+              "fromName": "Oven Pancake Batter",
+              "to": "OvenPancake",
+              "toName": "Oven Pancake"
+            },
+            {
+              "from": "KaleChipsUncooked",
+              "fromName": "Raw Kale Chips",
+              "to": "KaleChips",
+              "toName": "Kale Chips"
+            },
+            {
+              "from": "BakedPoteitrUncooked",
+              "fromName": "Unbaked Poteitr",
+              "to": "BakedPoteitr",
+              "toName": "Baked Poteitr"
+            }
+          ],
+          "items": "Unbaked Lox Pie into Lox Meat Pie, Bread Dough into Bread, Uncooked Fish 'n' Bread into Fish 'n' Bread, Uncooked Meat Platter into Meat Platter, Uncooked Honey Glazed Chicken into Honey Glazed Chicken, Uncooked Misthare Supreme into Misthare Supreme, Uncooked Stuffed Mushroom into Stuffed Mushroom, Uncooked Roasted Crust Pie into Roasted Crust Pie, Uncooked Piquant Pie into Piquant Pie, Unbaked Sweetbread into Frosted Sweetbread, Seal Blubber into Cooked Seal Blubber, Oven Pancake Batter into Oven Pancake, Raw Kale Chips into Kale Chips, Unbaked Poteitr into Baked Poteitr",
           "use": "converter"
         }
       ],
@@ -15578,6 +16228,27 @@
       "tool": "Hammer",
       "uses": [
         {
+          "conversions": [
+            {
+              "from": "Barley",
+              "fromName": "Barley",
+              "to": "BarleyFlour",
+              "toName": "Barley Flour"
+            },
+            {
+              "from": "OatSeeds",
+              "fromName": "Oat Seeds",
+              "to": "Oat",
+              "toName": "Oats"
+            },
+            {
+              "from": "Oat",
+              "fromName": "Oats",
+              "to": "OatFlour",
+              "toName": "Oat Flour"
+            }
+          ],
+          "items": "Barley into Barley Flour, Oat Seeds into Oats, Oats into Oat Flour",
           "use": "converter"
         }
       ],
@@ -20597,6 +21268,8 @@
     {
       "amount": 20,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltBlackmetal",
       "kind": "other",
@@ -20676,6 +21349,8 @@
     {
       "amount": 20,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "TurretBolt",
       "kind": "other",
@@ -20734,6 +21409,8 @@
     {
       "amount": 20,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowBloodGold",
       "kind": "other",
@@ -20796,6 +21473,8 @@
     {
       "amount": 20,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltBloodGold",
       "kind": "other",
@@ -20858,6 +21537,8 @@
     {
       "amount": 20,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "TurretBoltBloodgold",
       "kind": "other",
@@ -20899,6 +21580,8 @@
     {
       "amount": 20,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltBone",
       "kind": "other",
@@ -20962,6 +21645,8 @@
     {
       "amount": 20,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowBronze",
       "kind": "other",
@@ -21041,6 +21726,8 @@
     {
       "amount": 20,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowCarapace",
       "kind": "other",
@@ -21129,6 +21816,8 @@
     {
       "amount": 20,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltCarapace",
       "kind": "other",
@@ -21217,6 +21906,8 @@
     {
       "amount": 20,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowCharred",
       "kind": "other",
@@ -21296,6 +21987,8 @@
     {
       "amount": 20,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltCharred",
       "kind": "other",
@@ -21375,6 +22068,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitCave",
       "kind": "other",
@@ -21418,6 +22113,16 @@
     {
       "amount": 20,
       "biome": "meadows",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 100.0,
+          "effects": [],
+          "name": "Burning",
+          "seconds": 5.0,
+          "when": "hit"
+        }
+      ],
       "group": "ammo",
       "key": "ArrowFire",
       "kind": "other",
@@ -21515,6 +22220,8 @@
     {
       "amount": 20,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "TurretBoltFlametal",
       "kind": "other",
@@ -21556,6 +22263,8 @@
     {
       "amount": 20,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowFlint",
       "kind": "other",
@@ -21635,6 +22344,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowFrost",
       "kind": "other",
@@ -21732,6 +22443,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitDeepNorth",
       "kind": "other",
@@ -21779,6 +22492,8 @@
     {
       "amount": 20,
       "biome": "ocean",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitOcean",
       "kind": "other",
@@ -21822,6 +22537,8 @@
     {
       "amount": 20,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitAshlands",
       "kind": "other",
@@ -21865,6 +22582,8 @@
     {
       "amount": 20,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "BoltIron",
       "kind": "other",
@@ -21944,6 +22663,8 @@
     {
       "amount": 20,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowIron",
       "kind": "other",
@@ -22023,6 +22744,8 @@
     {
       "amount": 20,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitMistlands",
       "kind": "other",
@@ -22066,6 +22789,8 @@
     {
       "amount": 20,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitForest",
       "kind": "other",
@@ -22109,6 +22834,8 @@
     {
       "amount": 20,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowNeedle",
       "kind": "other",
@@ -22168,6 +22895,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowObsidian",
       "kind": "other",
@@ -22247,6 +22976,8 @@
     {
       "amount": 20,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowPoison",
       "kind": "other",
@@ -22344,6 +23075,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowSilver",
       "kind": "other",
@@ -22424,6 +23157,8 @@
     {
       "amount": 20,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitSwamp",
       "kind": "other",
@@ -22467,6 +23202,8 @@
     {
       "amount": 20,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "FishingBaitPlains",
       "kind": "other",
@@ -22510,6 +23247,8 @@
     {
       "amount": 20,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "ArrowWood",
       "kind": "other",
@@ -22560,6 +23299,8 @@
     {
       "amount": 20,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "ammo",
       "key": "TurretBoltWood",
       "kind": "other",
@@ -22614,6 +23355,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeAsh",
       "kind": "cape",
@@ -22717,6 +23460,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeAsksvin",
       "kind": "cape",
@@ -22812,6 +23557,36 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "jumpStamina",
+              "value": -10.0
+            },
+            {
+              "key": "attackStamina",
+              "value": -20.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Ask's Endurance",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorAshlandsMediumChest",
       "kind": "chest",
@@ -22949,6 +23724,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorDeepNorthHeavyChest",
       "kind": "chest",
@@ -23095,6 +23872,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetBronze",
       "kind": "helmet",
@@ -23188,6 +23967,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorBronzeLegs",
       "kind": "legs",
@@ -23279,6 +24060,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorBronzeChest",
       "kind": "chest",
@@ -23370,6 +24153,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeOdin",
       "kind": "cape",
@@ -23484,6 +24269,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeDeepNorthMage",
       "kind": "cape",
@@ -23641,6 +24428,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorCarapaceChest",
       "kind": "chest",
@@ -23787,6 +24576,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorCarapaceLegs",
       "kind": "legs",
@@ -23933,6 +24724,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetCarapace",
       "kind": "helmet",
@@ -24086,6 +24879,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetCelebration",
       "kind": "helmet",
@@ -24216,6 +25011,40 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "dodgeStamina",
+              "value": -20.0
+            },
+            {
+              "key": "healthRegen",
+              "value": 10.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 10.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vanguard",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorDeepNorthMediumChest",
       "kind": "chest",
@@ -24366,6 +25195,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetCrownofValheim",
       "kind": "helmet",
@@ -24414,6 +25245,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeDeerHide",
       "kind": "cape",
@@ -24528,6 +25361,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetDrake",
       "kind": "helmet",
@@ -24638,6 +25473,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetMage",
       "kind": "helmet",
@@ -24750,6 +25587,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorMageChest",
       "kind": "chest",
@@ -24886,6 +25725,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorMageLegs",
       "kind": "legs",
@@ -25001,6 +25842,29 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "jumpStamina",
+              "value": -20.0
+            },
+            {
+              "key": "fallDamage",
+              "value": -100.0
+            },
+            {
+              "key": "slowFall",
+              "value": 5.0
+            }
+          ],
+          "name": "Feather fall",
+          "seconds": null,
+          "when": "equip"
+        }
+      ],
       "group": "armour",
       "key": "CapeFeather",
       "kind": "cape",
@@ -25142,6 +26006,31 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "unarmed"
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": -50.0,
+                "types": ["fire"]
+              }
+            }
+          ],
+          "name": "Fenris blessing",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorFenringChest",
       "kind": "chest",
@@ -25284,6 +26173,31 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "unarmed"
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": -50.0,
+                "types": ["fire"]
+              }
+            }
+          ],
+          "name": "Fenris blessing",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetFenring",
       "kind": "helmet",
@@ -25407,6 +26321,31 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "unarmed"
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": -50.0,
+                "types": ["fire"]
+              }
+            }
+          ],
+          "name": "Fenris blessing",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorFenringLegs",
       "kind": "legs",
@@ -25549,6 +26488,31 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "fishing"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "swim"
+              }
+            }
+          ],
+          "name": "Fishing Hat",
+          "seconds": null,
+          "when": "equip"
+        }
+      ],
       "group": "armour",
       "key": "HelmetFishingHat",
       "kind": "helmet",
@@ -25882,6 +26846,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorFlametalChest",
       "kind": "chest",
@@ -26026,6 +26992,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorFlametalLegs",
       "kind": "legs",
@@ -26157,6 +27125,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetFlametal",
       "kind": "helmet",
@@ -26310,6 +27280,53 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 30.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 15.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["chop", "slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Berserk",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetBerserkerHood",
       "kind": "helmet",
@@ -26416,6 +27433,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetDNMage",
       "kind": "helmet",
@@ -26556,6 +27575,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetDNHeavy",
       "kind": "helmet",
@@ -26677,6 +27698,36 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "jumpStamina",
+              "value": -10.0
+            },
+            {
+              "key": "attackStamina",
+              "value": -20.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Ask's Endurance",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetAshlandsMediumHood",
       "kind": "helmet",
@@ -26817,6 +27868,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetMage_Ashlands",
       "kind": "helmet",
@@ -26934,6 +27987,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetOdin",
       "kind": "helmet",
@@ -27051,6 +28106,40 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "dodgeStamina",
+              "value": -20.0
+            },
+            {
+              "key": "healthRegen",
+              "value": 10.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 10.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vanguard",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetDNMediumHood",
       "kind": "helmet",
@@ -27209,6 +28298,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorIronLegs",
       "kind": "legs",
@@ -27300,6 +28391,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetIron",
       "kind": "helmet",
@@ -27393,6 +28486,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorIronChest",
       "kind": "chest",
@@ -27484,6 +28579,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetLeather",
       "kind": "helmet",
@@ -27601,6 +28698,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorLeatherLegs",
       "kind": "legs",
@@ -27715,6 +28814,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorLeatherChest",
       "kind": "chest",
@@ -27829,6 +28930,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeLinen",
       "kind": "cape",
@@ -27914,6 +29017,53 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 30.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 15.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["chop", "slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Berserk",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorBerserkerLegs",
       "kind": "legs",
@@ -28027,6 +29177,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeLox",
       "kind": "cape",
@@ -28117,6 +29269,31 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 30.0,
+                "skill": "sneak"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Boon of the Lox",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetLox",
       "kind": "helmet",
@@ -28266,6 +29443,31 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 30.0,
+                "skill": "sneak"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Boon of the Lox",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorLoxChest",
       "kind": "chest",
@@ -28412,6 +29614,31 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 30.0,
+                "skill": "sneak"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Boon of the Lox",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorLoxLegs",
       "kind": "legs",
@@ -28558,6 +29785,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeDeepNorth",
       "kind": "cape",
@@ -28691,6 +29920,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorPaddedCuirass",
       "kind": "chest",
@@ -28792,6 +30023,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorPaddedGreaves",
       "kind": "legs",
@@ -28893,6 +30126,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "HelmetPadded",
       "kind": "helmet",
@@ -28996,6 +30231,53 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 30.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 15.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["chop", "slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Berserk",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorBerserkerChest",
       "kind": "chest",
@@ -29122,6 +30404,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorRagsLegs",
       "kind": "legs",
@@ -29178,6 +30462,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorRagsChest",
       "kind": "chest",
@@ -29234,6 +30520,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorMageChest_Ashlands",
       "kind": "chest",
@@ -29372,6 +30660,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorDeepNorthMageChest",
       "kind": "chest",
@@ -29520,6 +30810,24 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Improved archery",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorRootChest",
       "kind": "chest",
@@ -29643,6 +30951,24 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Improved archery",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorRootLegs",
       "kind": "legs",
@@ -29766,6 +31092,24 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "bows"
+              }
+            }
+          ],
+          "name": "Improved archery",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetRoot",
       "kind": "helmet",
@@ -29892,6 +31236,24 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "sneak"
+              }
+            }
+          ],
+          "name": "Sneaky",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "CapeTrollHide",
       "kind": "cape",
@@ -30010,6 +31372,24 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "sneak"
+              }
+            }
+          ],
+          "name": "Sneaky",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetTrollLeather",
       "kind": "helmet",
@@ -30131,6 +31511,24 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "sneak"
+              }
+            }
+          ],
+          "name": "Sneaky",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorTrollLeatherLegs",
       "kind": "legs",
@@ -30217,6 +31615,24 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 15.0,
+                "skill": "sneak"
+              }
+            }
+          ],
+          "name": "Sneaky",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorTrollLeatherChest",
       "kind": "chest",
@@ -30303,6 +31719,36 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "jumpStamina",
+              "value": -10.0
+            },
+            {
+              "key": "attackStamina",
+              "value": -20.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Ask's Endurance",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorAshlandsMediumlegs",
       "kind": "legs",
@@ -30440,6 +31886,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorMageLegs_Ashlands",
       "kind": "legs",
@@ -30555,6 +32003,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorDeepNorthMagelegs",
       "kind": "legs",
@@ -30703,6 +32153,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorDeepNorthHeavylegs",
       "kind": "legs",
@@ -30849,6 +32301,40 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "dodgeStamina",
+              "value": -20.0
+            },
+            {
+              "key": "healthRegen",
+              "value": 10.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 10.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vanguard",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorDeepNorthMediumlegs",
       "kind": "legs",
@@ -30999,6 +32485,53 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 20.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 40.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 20.0,
+                "types": ["blunt", "pierce"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vilebone Wrath",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorBerserkerUndeadChest",
       "kind": "chest",
@@ -31140,6 +32673,53 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 20.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 40.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 20.0,
+                "types": ["blunt", "pierce"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vilebone Wrath",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "ArmorBerserkerUndeadLegs",
       "kind": "legs",
@@ -31281,6 +32861,53 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 20.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 40.0
+            },
+            {
+              "key": "damage",
+              "value": {
+                "percent": 20.0,
+                "types": ["blunt", "pierce"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": 25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Vilebone Wrath",
+          "seconds": null,
+          "when": "set"
+        }
+      ],
       "group": "armour",
       "key": "HelmetBerserkerUndead",
       "kind": "helmet",
@@ -31387,6 +33014,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "CapeWolf",
       "kind": "cape",
@@ -31505,6 +33134,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorWolfChest",
       "kind": "chest",
@@ -31624,6 +33255,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "armour",
       "key": "ArmorWolfLegs",
       "kind": "legs",
@@ -31766,6 +33399,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "BlackSoup",
       "kind": "other",
@@ -31817,6 +33452,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "BloodPudding",
       "kind": "other",
@@ -31868,6 +33505,8 @@
     {
       "amount": 2,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "BoarJerky",
       "kind": "other",
@@ -31911,6 +33550,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "CarrotSoup",
       "kind": "other",
@@ -31949,6 +33590,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "CookedEgg",
       "kind": "other",
@@ -31979,6 +33622,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "DeerStew",
       "kind": "other",
@@ -32025,6 +33670,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "Eyescream",
       "kind": "other",
@@ -32085,6 +33732,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "FierySvinstew",
       "kind": "other",
@@ -32136,6 +33785,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "FishSoup",
       "kind": "other",
@@ -32195,6 +33846,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "FishWraps",
       "kind": "other",
@@ -32233,6 +33886,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "Lingondricka",
       "kind": "other",
@@ -32289,6 +33944,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MarinatedGreens",
       "kind": "other",
@@ -32343,6 +34000,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MashedMeat",
       "kind": "other",
@@ -32399,6 +34058,8 @@
     {
       "amount": 2,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MooseKebab",
       "kind": "other",
@@ -32463,6 +34124,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MeatballsMashedPoteitr",
       "kind": "other",
@@ -32519,6 +34182,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MinceMeatSauce",
       "kind": "other",
@@ -32575,6 +34240,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "ShocklateSmoothie",
       "kind": "other",
@@ -32630,6 +34297,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "MushroomOmelette",
       "kind": "other",
@@ -32668,6 +34337,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "OatMilk",
       "kind": "other",
@@ -32719,6 +34390,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "OatmealLingonberryJam",
       "kind": "other",
@@ -32770,6 +34443,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "OnionSoup",
       "kind": "other",
@@ -32800,6 +34475,8 @@
     {
       "amount": 3,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "Pancakes",
       "kind": "other",
@@ -32854,6 +34531,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "PulledBear",
       "kind": "other",
@@ -32900,6 +34579,8 @@
     {
       "amount": 4,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "QueensJam",
       "kind": "other",
@@ -32938,6 +34619,8 @@
     {
       "amount": 3,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "Salad",
       "kind": "other",
@@ -32984,6 +34667,8 @@
     {
       "amount": 4,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "Sausages",
       "kind": "other",
@@ -33044,6 +34729,8 @@
     {
       "amount": 3,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "ScorchingMedley",
       "kind": "other",
@@ -33090,6 +34777,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SealSoup",
       "kind": "other",
@@ -33158,6 +34847,8 @@
     {
       "amount": 2,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SeekerAspic",
       "kind": "other",
@@ -33218,6 +34909,8 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SerpentStew",
       "kind": "other",
@@ -33264,6 +34957,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SizzlingBerryBroth",
       "kind": "other",
@@ -33310,6 +35005,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SmokedFish",
       "kind": "other",
@@ -33356,6 +35053,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SmokedMooseMeat",
       "kind": "other",
@@ -33399,6 +35098,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SparklingShroomshake",
       "kind": "other",
@@ -33453,6 +35154,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "SpicyMarmalade",
       "kind": "other",
@@ -33499,6 +35202,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "TurnipStew",
       "kind": "other",
@@ -33542,6 +35247,8 @@
     {
       "amount": 2,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "WolfJerky",
       "kind": "other",
@@ -33585,6 +35292,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "WolfMeatSkewer",
       "kind": "other",
@@ -33636,6 +35345,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "consumables",
       "key": "YggdrasilPorridge",
       "kind": "other",
@@ -33687,6 +35398,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastAshlands_Material",
       "kind": "other",
@@ -33741,6 +35454,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BarleyWineBase",
       "kind": "other",
@@ -33798,6 +35513,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastBlackforest_Material",
       "kind": "other",
@@ -33852,6 +35569,8 @@
     {
       "amount": 5,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "Catapult_Ammo_BloodGold",
       "kind": "other",
@@ -33919,6 +35638,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Blue",
       "kind": "other",
@@ -33957,6 +35678,8 @@
     {
       "amount": 2,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BreadDough",
       "kind": "other",
@@ -33987,6 +35710,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "Bronze",
       "kind": "other",
@@ -34025,6 +35750,8 @@
     {
       "amount": 20,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BronzeNails",
       "kind": "other",
@@ -34055,6 +35782,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldHeavyChestUncooked",
       "kind": "other",
@@ -34124,6 +35853,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMediumChestUncooked",
       "kind": "other",
@@ -34193,6 +35924,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "StaffOrbofAhriUncooked",
       "kind": "other",
@@ -34257,6 +35990,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMageHelmetUncooked",
       "kind": "other",
@@ -34331,6 +36066,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldHeavyHelmetUncooked",
       "kind": "other",
@@ -34387,6 +36124,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMediumHelmetUncooked",
       "kind": "other",
@@ -34461,6 +36200,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "KeysGoldUncooked",
       "kind": "other",
@@ -34508,6 +36249,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "StaffThunderbloodUncooked",
       "kind": "other",
@@ -34572,6 +36315,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "AtgeirGoldUncooked",
       "kind": "other",
@@ -34621,6 +36366,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "AxeGoldUncooked",
       "kind": "other",
@@ -34672,6 +36419,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BowGoldUncooked",
       "kind": "other",
@@ -34722,6 +36471,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ShieldBucklerGoldUncooked",
       "kind": "other",
@@ -34768,6 +36519,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "CrossbowGoldUncooked",
       "kind": "other",
@@ -34817,6 +36570,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "KnifeGoldUncooked",
       "kind": "other",
@@ -34867,6 +36622,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BattleaxeGoldUncooked",
       "kind": "other",
@@ -34918,6 +36675,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ShieldTowerGoldUncooked",
       "kind": "other",
@@ -34964,6 +36723,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "THSwordGoldUncooked",
       "kind": "other",
@@ -35018,6 +36779,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FistGoldUncooked",
       "kind": "other",
@@ -35072,6 +36835,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MaceGoldUncooked",
       "kind": "other",
@@ -35121,6 +36886,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ShieldRoundGoldUncooked",
       "kind": "other",
@@ -35167,6 +36934,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "SledgeGoldUncooked",
       "kind": "other",
@@ -35216,6 +36985,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "SpearGoldUncooked",
       "kind": "other",
@@ -35265,6 +37036,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "SwordGoldUncooked",
       "kind": "other",
@@ -35314,6 +37087,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "StaffFrostOrbsUncooked",
       "kind": "other",
@@ -35396,6 +37171,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMageChestUncooked",
       "kind": "other",
@@ -35465,6 +37242,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "StaffSpiritCallerUncooked",
       "kind": "other",
@@ -35539,6 +37318,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMageLegsUncooked",
       "kind": "other",
@@ -35608,6 +37389,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldHeavyLegsUncooked",
       "kind": "other",
@@ -35677,6 +37460,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ArmorGoldMediumLegsUncooked",
       "kind": "other",
@@ -35746,6 +37531,8 @@
     {
       "amount": 5,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "CeramicPlate",
       "kind": "other",
@@ -35785,6 +37572,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Cyan",
       "kind": "other",
@@ -35836,6 +37625,8 @@
     {
       "amount": 5,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BombSiege",
       "kind": "other",
@@ -35897,6 +37688,8 @@
     {
       "amount": 5,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "Catapult_ammo",
       "kind": "other",
@@ -35930,6 +37723,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Green",
       "kind": "other",
@@ -35973,6 +37768,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastMountains_Material",
       "kind": "other",
@@ -36027,6 +37824,8 @@
     {
       "amount": 10,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "IronNails",
       "kind": "other",
@@ -36057,6 +37856,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseTamer",
       "kind": "other",
@@ -36119,6 +37920,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseBugRepellent",
       "kind": "other",
@@ -36176,6 +37979,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseFrostResist",
       "kind": "other",
@@ -36267,6 +38072,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseLightFoot",
       "kind": "other",
@@ -36351,6 +38158,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseEitrLingering",
       "kind": "other",
@@ -36413,6 +38222,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseHealthLingering",
       "kind": "other",
@@ -36475,6 +38286,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseStaminaLingering",
       "kind": "other",
@@ -36537,6 +38350,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseHealthMajor",
       "kind": "other",
@@ -36612,6 +38427,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseHealthMedium",
       "kind": "other",
@@ -36695,6 +38512,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseStaminaMedium",
       "kind": "other",
@@ -36760,6 +38579,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseEitrMinor",
       "kind": "other",
@@ -36833,6 +38654,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseHealthMinor",
       "kind": "other",
@@ -36911,6 +38734,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseStaminaMinor",
       "kind": "other",
@@ -36976,6 +38801,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBasePoisonResist",
       "kind": "other",
@@ -37059,6 +38886,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseTasty",
       "kind": "other",
@@ -37125,6 +38954,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseStrength",
       "kind": "other",
@@ -37187,6 +39018,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseSwimmer",
       "kind": "other",
@@ -37254,6 +39087,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseBzerker",
       "kind": "other",
@@ -37345,6 +39180,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeadBaseHasty",
       "kind": "other",
@@ -37414,6 +39251,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MechanicalSpring",
       "kind": "other",
@@ -37452,6 +39291,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastMistlands_Material",
       "kind": "other",
@@ -37506,6 +39347,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastDeepNorth_Material",
       "kind": "other",
@@ -37560,6 +39403,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "OvenPancakeUncooked",
       "kind": "other",
@@ -37624,6 +39469,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastPlains_Material",
       "kind": "other",
@@ -37678,6 +39525,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Purple",
       "kind": "other",
@@ -37716,6 +39565,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FishRaw",
       "kind": "other",
@@ -37834,6 +39685,8 @@
     {
       "amount": 4,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "KaleChipsUncooked",
       "kind": "other",
@@ -37864,6 +39717,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Red",
       "kind": "other",
@@ -37902,6 +39757,8 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastOceans_Material",
       "kind": "other",
@@ -37956,6 +39813,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "SharpeningStone",
       "kind": "other",
@@ -37999,6 +39858,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "ShieldCore",
       "kind": "other",
@@ -38050,6 +39911,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastSwamps_Material",
       "kind": "other",
@@ -38109,6 +39972,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "LoxPieUncooked",
       "kind": "other",
@@ -38160,6 +40025,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "BakedPoteitrUncooked",
       "kind": "other",
@@ -38223,6 +40090,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "VikingCupcakeUncooked",
       "kind": "other",
@@ -38277,6 +40146,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FishAndBreadUncooked",
       "kind": "other",
@@ -38315,6 +40186,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "HoneyGlazedChickenUncooked",
       "kind": "other",
@@ -38370,6 +40243,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MeatPlatterUncooked",
       "kind": "other",
@@ -38435,6 +40310,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MisthareSupremeUncooked",
       "kind": "other",
@@ -38486,6 +40363,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "PiquantPieUncooked",
       "kind": "other",
@@ -38537,6 +40416,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "RoastedCrustPieUncooked",
       "kind": "other",
@@ -38588,6 +40469,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "MagicallyStuffedShroomUncooked",
       "kind": "other",
@@ -38639,6 +40522,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FeastMeadows_Material",
       "kind": "other",
@@ -38698,6 +40583,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "materials",
       "key": "FireworksRocket_Yellow",
       "kind": "other",
@@ -38741,6 +40628,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "SaddleAsksvin",
       "kind": "other",
@@ -38792,6 +40681,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "Bell",
       "kind": "other",
@@ -38822,6 +40713,35 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "clubs"
+              }
+            },
+            {
+              "key": "healthUpFront",
+              "value": 100.0
+            }
+          ],
+          "name": "Bracelets of the Brave",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBlackDamageHealth",
       "kind": "trinket",
@@ -38878,6 +40798,25 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthUpFront",
+              "value": 100.0
+            },
+            {
+              "key": "staminaUpFront",
+              "value": 100.0
+            }
+          ],
+          "name": "Brimstone",
+          "seconds": 1.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketFlametalStaminaHealth",
       "kind": "trinket",
@@ -38942,6 +40881,21 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "staminaRegen",
+              "value": 25.0
+            }
+          ],
+          "name": "Bronze Pendant",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBronzeStamina",
       "kind": "trinket",
@@ -38993,6 +40947,38 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "resist",
+              "value": {
+                "percent": -25.0,
+                "types": ["blunt"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": -25.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "resist",
+              "value": {
+                "percent": -25.0,
+                "types": ["pierce"]
+              }
+            }
+          ],
+          "name": "Crystal Heart",
+          "seconds": 50.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketSilverResist",
       "kind": "trinket",
@@ -39049,6 +41035,21 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "blockStamina",
+              "value": -50.0
+            }
+          ],
+          "name": "Evasion Mantle",
+          "seconds": 120.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBlackStamina",
       "kind": "trinket",
@@ -39100,6 +41101,25 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "swimStamina",
+              "value": -80.0
+            },
+            {
+              "key": "swimSpeed",
+              "value": 50.0
+            }
+          ],
+          "name": "Fins of Destiny",
+          "seconds": 120.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketChitinSwim",
       "kind": "trinket",
@@ -39156,6 +41176,21 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 25.0
+            }
+          ],
+          "name": "Heart of the Forest",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBronzeHealth",
       "kind": "trinket",
@@ -39212,6 +41247,25 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "armor",
+              "value": 20.0
+            },
+            {
+              "key": "healthUpFront",
+              "value": 50.0
+            }
+          ],
+          "name": "Iron Brooch",
+          "seconds": 30.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketIronHealth",
       "kind": "trinket",
@@ -39263,6 +41317,35 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "elementalMagic"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "bloodMagic"
+              }
+            },
+            {
+              "key": "eitrUpFront",
+              "value": 100.0
+            }
+          ],
+          "name": "Jörmundling",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketFlametalEitr",
       "kind": "trinket",
@@ -39322,6 +41405,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "SaddleLox",
       "kind": "other",
@@ -39377,6 +41462,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "SaddleMoose",
       "kind": "other",
@@ -39436,6 +41523,37 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "runStamina",
+              "value": -10.0
+            },
+            {
+              "key": "attackStamina",
+              "value": -10.0
+            },
+            {
+              "key": "healthRegen",
+              "value": 20.0
+            },
+            {
+              "key": "armor",
+              "value": 20.0
+            },
+            {
+              "key": "healthUpFront",
+              "value": 100.0
+            }
+          ],
+          "name": "Neckstabber",
+          "seconds": 30.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBloodGoldHealth",
       "kind": "trinket",
@@ -39492,6 +41610,25 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "speed",
+              "value": 15.0
+            },
+            {
+              "key": "staminaUpFront",
+              "value": 50.0
+            }
+          ],
+          "name": "Nimble Anklet",
+          "seconds": 30.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketIronStamina",
       "kind": "trinket",
@@ -39543,6 +41680,21 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "eitrRegen",
+              "value": 25.0
+            }
+          ],
+          "name": "Pulsating Earrings",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketCarapaceEitr",
       "kind": "trinket",
@@ -39603,6 +41755,28 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["slash"]
+              }
+            },
+            {
+              "key": "staminaUpFront",
+              "value": 100.0
+            }
+          ],
+          "name": "Resounding Shackle",
+          "seconds": 60.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketScaleStaminaDamage",
       "kind": "trinket",
@@ -39672,6 +41846,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "DvergrKey",
       "kind": "other",
@@ -39702,6 +41878,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "other",
       "key": "Demister",
       "kind": "utility",
@@ -39740,6 +41918,37 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "healthRegen",
+              "value": 10.0
+            },
+            {
+              "key": "staminaRegen",
+              "value": 10.0
+            },
+            {
+              "key": "eitrRegen",
+              "value": 10.0
+            },
+            {
+              "key": "staminaUpFront",
+              "value": 50.0
+            },
+            {
+              "key": "eitrUpFront",
+              "value": 50.0
+            }
+          ],
+          "name": "Witch Crown",
+          "seconds": 30.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketBloodGoldStamina",
       "kind": "trinket",
@@ -39796,6 +42005,38 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "damage",
+              "value": {
+                "percent": 10.0,
+                "types": ["pierce"]
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "bows"
+              }
+            },
+            {
+              "key": "skill",
+              "value": {
+                "levels": 20.0,
+                "skill": "spears"
+              }
+            }
+          ],
+          "name": "Wolf Sight",
+          "seconds": 30.0,
+          "when": "adrenaline"
+        }
+      ],
       "group": "other",
       "key": "TrinketSilverDamage",
       "kind": "trinket",
@@ -39860,6 +42101,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldBanded",
       "kind": "shield",
@@ -39946,6 +42189,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldBlackmetal",
       "kind": "shield",
@@ -40055,6 +42300,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldBlackmetalTower",
       "kind": "shield",
@@ -40164,6 +42411,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldBoneTower",
       "kind": "shield",
@@ -40289,6 +42538,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldBronzeBuckler",
       "kind": "shield",
@@ -40387,6 +42638,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldCarapaceBuckler",
       "kind": "shield",
@@ -40505,6 +42758,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldCarapace",
       "kind": "shield",
@@ -40623,6 +42878,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldFlametal",
       "kind": "shield",
@@ -40732,6 +42989,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldFlametalTower",
       "kind": "shield",
@@ -40841,6 +43100,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldIronBuckler",
       "kind": "shield",
@@ -40922,6 +43183,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldIronTower",
       "kind": "shield",
@@ -41008,6 +43271,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldGoldBuckler",
       "kind": "shield",
@@ -41097,6 +43362,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldGoldTower",
       "kind": "shield",
@@ -41191,6 +43458,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldGold",
       "kind": "shield",
@@ -41285,6 +43554,8 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldSerpentscale",
       "kind": "shield",
@@ -41394,6 +43665,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldRoots",
       "kind": "shield",
@@ -41481,6 +43754,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldSilver",
       "kind": "shield",
@@ -41567,6 +43842,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldWood",
       "kind": "shield",
@@ -41711,6 +43988,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "shields",
       "key": "ShieldWoodTower",
       "kind": "shield",
@@ -41823,6 +44102,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "tools",
       "key": "Cultivator",
       "kind": "tool.farming",
@@ -41900,6 +44181,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "tools",
       "key": "Lantern",
       "kind": "torch",
@@ -41956,6 +44239,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "tools",
       "key": "Hammer",
       "kind": "tool.other",
@@ -42063,6 +44348,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "tools",
       "key": "Hoe",
       "kind": "tool.other",
@@ -42170,6 +44457,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "tools",
       "key": "Torch",
       "kind": "torch",
@@ -42247,6 +44536,16 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 100.0,
+          "effects": [],
+          "name": "Harpooned",
+          "seconds": 0.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "SpearChitin",
       "kind": "spear",
@@ -42314,6 +44613,8 @@
     {
       "amount": 1,
       "biome": "ocean",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeChitin",
       "kind": "knife",
@@ -42440,6 +44741,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearElderbark",
       "kind": "spear",
@@ -42588,6 +44891,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "PickaxeAntler",
       "kind": "pickaxe.2h",
@@ -42655,6 +44960,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "CrossbowArbalest",
       "kind": "crossbow",
@@ -42812,6 +45119,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowAshlands",
       "kind": "bow",
@@ -43001,6 +45310,8 @@
     {
       "amount": 5,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombLava",
       "kind": "other",
@@ -43063,6 +45374,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Battleaxe",
       "kind": "axe.2h",
@@ -43206,6 +45519,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeBerzerkr",
       "kind": "axe.2h",
@@ -43362,6 +45677,8 @@
     {
       "amount": 3,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBile",
       "kind": "other",
@@ -43434,6 +45751,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirBlackmetal",
       "kind": "polearm.2h",
@@ -43562,6 +45881,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeBlackMetal",
       "kind": "axe",
@@ -43696,6 +46017,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BattleaxeBlackmetal",
       "kind": "axe.2h",
@@ -43831,6 +46154,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeBlackMetal",
       "kind": "knife",
@@ -43964,6 +46289,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "PickaxeBlackMetal",
       "kind": "pickaxe.2h",
@@ -44090,6 +46417,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordBlackmetal",
       "kind": "sword",
@@ -44219,6 +46548,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "AxeBerzerkrBlood",
       "kind": "axe.2h",
@@ -44350,6 +46694,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_PoisonElite",
       "kind": "other",
@@ -44426,6 +46772,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_Frost",
       "kind": "other",
@@ -44502,6 +46850,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_Lava",
       "kind": "other",
@@ -44562,6 +46912,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_Poison",
       "kind": "other",
@@ -44638,6 +46990,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_Morkhalla",
       "kind": "other",
@@ -44676,6 +47030,10 @@
             {
               "key": "BlobMork",
               "name": "Shapeless Pulp"
+            },
+            {
+              "key": "BlobMorkMini",
+              "name": "Tiny Pulp"
             }
           ],
           "key": "OozeMork",
@@ -44698,6 +47056,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombBlob_Tar",
       "kind": "other",
@@ -44758,6 +47118,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "BowAshlandsBlood",
       "kind": "bow",
@@ -44884,6 +47259,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "MaceEldnerBlood",
       "kind": "club",
@@ -45010,6 +47400,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirBronze",
       "kind": "polearm.2h",
@@ -45142,6 +47534,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeBronze",
       "kind": "axe",
@@ -45302,6 +47696,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceBronze",
       "kind": "club",
@@ -45441,6 +47837,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "PickaxeBronze",
       "kind": "pickaxe.2h",
@@ -45567,6 +47965,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearBronze",
       "kind": "spear",
@@ -45732,6 +48132,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordBronze",
       "kind": "sword",
@@ -45901,6 +48303,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "THSwordSlayerBlood",
       "kind": "sword.2h",
@@ -46027,6 +48444,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeButcher",
       "kind": "knife",
@@ -46086,6 +48505,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearCarapace",
       "kind": "spear",
@@ -46243,6 +48664,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Club",
       "kind": "club",
@@ -46367,6 +48790,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeCopper",
       "kind": "knife",
@@ -46529,6 +48954,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Bow",
       "kind": "bow",
@@ -46693,6 +49120,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BattleaxeCrystal",
       "kind": "axe.2h",
@@ -46834,6 +49263,62 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": {
+        "blast": null,
+        "eitr": 100.0,
+        "healthPercent": 40.0,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": [
+          {
+            "blows": {
+              "pierce": 40.0,
+              "slash": 50.0
+            },
+            "health": 400.0,
+            "key": "Skeleton_Friendly",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 10,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Skelett"
+          }
+        ]
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffSkeleton",
       "kind": "bloodStaff.2h",
@@ -46842,7 +49327,7 @@
       "mead": null,
       "name": "Dead Raiser",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 10,
@@ -46969,6 +49454,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SledgeDemolisher",
       "kind": "club.2h",
@@ -47112,6 +49599,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowDraugrFang",
       "kind": "bow",
@@ -47290,6 +49779,18 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": {
+        "blast": null,
+        "eitr": 25.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 12,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffLightning",
       "kind": "elementalStaff.2h",
@@ -47297,17 +49798,8 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Dundr",
-      "over": {
-        "damage": {
-          "blunt": -120.0,
-          "fire": -120.0,
-          "lightning": 20.0
-        },
-        "key": "StaffFireball",
-        "name": "Staff of Embers",
-        "tier": 0
-      },
-      "page": "weapons",
+      "over": null,
+      "page": "staffs",
       "resources": [
         {
           "amount": 10,
@@ -47463,6 +49955,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordDyrnwyn",
       "kind": "sword",
@@ -47614,6 +50108,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeEarly",
       "kind": "axe.2h",
@@ -47774,6 +50270,24 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": {
+        "blast": null,
+        "eitr": 25.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 1,
+        "returns": {
+          "damage": {
+            "fire": 50.0,
+            "frost": 50.0
+          },
+          "eitr": 10.0
+        },
+        "splinters": null,
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffOrbofAhri",
       "kind": "bloodStaff.2h",
@@ -47782,7 +50296,7 @@
       "mead": null,
       "name": "Echo Spike",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 10,
@@ -47903,6 +50417,8 @@
     {
       "amount": 10,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombDynamite",
       "kind": "other",
@@ -47947,6 +50463,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearWolfFang",
       "kind": "spear",
@@ -48135,6 +50653,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowFineWood",
       "kind": "bow",
@@ -48280,6 +50800,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceEldner",
       "kind": "club",
@@ -48474,6 +50996,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "FistFenrirClaw",
       "kind": "fist.2h",
@@ -48619,6 +51143,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeFlint",
       "kind": "axe",
@@ -48779,6 +51305,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeFlint",
       "kind": "knife",
@@ -48914,6 +51442,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearFlint",
       "kind": "spear",
@@ -49076,6 +51606,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirGold_FrostFire",
       "kind": "polearm.2h",
@@ -49214,6 +51746,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeGold_FrostFire",
       "kind": "axe",
@@ -49357,6 +51891,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowGold_FrostFire",
       "kind": "bow",
@@ -49496,6 +52032,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "CrossbowGold_FrostFire",
       "kind": "crossbow",
@@ -49636,6 +52174,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeGold_FrostFire",
       "kind": "knife",
@@ -49778,6 +52318,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BattleaxeGold_FrostFire",
       "kind": "axe.2h",
@@ -49921,6 +52463,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "THSwordGold_FrostFire",
       "kind": "sword.2h",
@@ -50059,6 +52603,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "FistGold_FrostFire",
       "kind": "fist.2h",
@@ -50199,6 +52745,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceGold_FrostFire",
       "kind": "club",
@@ -50337,6 +52885,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SledgeGold_FrostFire",
       "kind": "club.2h",
@@ -50475,6 +53025,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearGold_FrostFire",
       "kind": "spear",
@@ -50613,6 +53165,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordGold_FrostFire",
       "kind": "sword",
@@ -50751,6 +53305,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceSilver",
       "kind": "club",
@@ -50885,6 +53441,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "GrapplingHook",
       "kind": "other",
@@ -50948,6 +53506,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirHimminAfl",
       "kind": "polearm.2h",
@@ -51106,6 +53666,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "TankardAnniversary",
       "kind": "sword",
@@ -51158,6 +53720,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowHuntsman",
       "kind": "bow",
@@ -51339,6 +53903,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirIron",
       "kind": "polearm.2h",
@@ -51493,6 +54059,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeIron",
       "kind": "axe",
@@ -51653,6 +54221,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceIron",
       "kind": "club",
@@ -51792,6 +54362,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "PickaxeIron",
       "kind": "pickaxe.2h",
@@ -51918,6 +54490,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SledgeIron",
       "kind": "club.2h",
@@ -52075,6 +54649,8 @@
     {
       "amount": 1,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordIron",
       "kind": "sword",
@@ -52244,6 +54820,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeJotunBane",
       "kind": "axe",
@@ -52408,6 +54986,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "MaceEldnerNature",
       "kind": "club",
@@ -52537,6 +55125,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "THSwordKrom",
       "kind": "sword.2h",
@@ -52678,6 +55268,18 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": {
+        "blast": 3.0,
+        "eitr": 40.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffThunderBlood",
       "kind": "elementalStaff.2h",
@@ -52685,17 +55287,8 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Lightning Strike",
-      "over": {
-        "damage": {
-          "blunt": -20.0,
-          "lightning": 300.0,
-          "poison": -20.0
-        },
-        "key": "StaffGreenRoots",
-        "name": "Staff of the Wild",
-        "tier": 0
-      },
-      "page": "weapons",
+      "over": null,
+      "page": "staffs",
       "resources": [
         {
           "amount": 10,
@@ -52828,6 +55421,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "TankardOdin",
       "kind": "sword",
@@ -52897,6 +55492,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordMistwalker",
       "kind": "sword",
@@ -53053,6 +55650,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordNiedhogg",
       "kind": "sword",
@@ -53204,6 +55803,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "SwordNiedhoggBlood",
       "kind": "sword",
@@ -53330,6 +55944,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "SwordNiedhoggNature",
       "kind": "sword",
@@ -53459,6 +56083,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordNiedhoggLightning",
       "kind": "sword",
@@ -53588,6 +56214,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AtgeirGold",
       "kind": "polearm.2h",
@@ -53717,6 +56345,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeGold",
       "kind": "axe",
@@ -53852,6 +56482,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowGold",
       "kind": "bow",
@@ -53982,6 +56614,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "CrossbowGold",
       "kind": "crossbow",
@@ -54113,6 +56747,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeGold",
       "kind": "knife",
@@ -54245,6 +56881,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BattleaxeGold",
       "kind": "axe.2h",
@@ -54379,6 +57017,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "THSwordGold",
       "kind": "sword.2h",
@@ -54512,6 +57152,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "FistGold",
       "kind": "fist.2h",
@@ -54644,6 +57286,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceGold",
       "kind": "club",
@@ -54772,6 +57416,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SledgeGold",
       "kind": "club.2h",
@@ -54900,6 +57546,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearGold",
       "kind": "spear",
@@ -55028,6 +57676,8 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordGold",
       "kind": "sword",
@@ -55157,6 +57807,24 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": {
+        "blast": null,
+        "eitr": 100.0,
+        "healthPercent": 40.0,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": {
+          "name": "Vengeance Sphere",
+          "radius": 5.0,
+          "seconds": 120.0,
+          "shield": null,
+          "tooltip": "Should your enemy hurt you, it shall reflect back upon them at once."
+        },
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffFrostOrbs",
       "kind": "bloodStaff.2h",
@@ -55165,7 +57833,7 @@
       "mead": null,
       "name": "Northern Vengeance",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 10,
@@ -55286,6 +57954,8 @@
     {
       "amount": 5,
       "biome": "swamp",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombOoze",
       "kind": "other",
@@ -55371,6 +58041,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "FistBjornClaw",
       "kind": "fist.2h",
@@ -55517,6 +58189,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceNeedle",
       "kind": "club",
@@ -55662,6 +58336,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "AxeBerzerkrNature",
       "kind": "axe.2h",
@@ -55796,6 +58480,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "THSwordSlayerNature",
       "kind": "sword.2h",
@@ -55925,6 +58619,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "CrossbowRipper",
       "kind": "crossbow",
@@ -56101,6 +58797,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "BowAshlandsRoot",
       "kind": "bow",
@@ -56230,6 +58936,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "CrossbowRipperNature",
       "kind": "crossbow",
@@ -56358,6 +59074,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "THSwordSlayerLightning",
       "kind": "sword.2h",
@@ -56487,6 +59205,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Scythe",
       "kind": "farming.2h",
@@ -56555,6 +59275,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeSilver",
       "kind": "knife",
@@ -56753,6 +59475,8 @@
     {
       "amount": 1,
       "biome": "mountain",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordSilver",
       "kind": "sword",
@@ -56950,6 +59674,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "KnifeSkollAndHati",
       "kind": "knife.2h",
@@ -57074,6 +59800,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BattleaxeSkullSplittur",
       "kind": "axe.2h",
@@ -57208,6 +59936,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "THSwordSlayer",
       "kind": "sword.2h",
@@ -57361,6 +60091,8 @@
     {
       "amount": 10,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BombSmoke",
       "kind": "other",
@@ -57408,6 +60140,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Shovel",
       "kind": "farming.2h",
@@ -57494,6 +60228,8 @@
     {
       "amount": 10,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Snowball",
       "kind": "other",
@@ -57542,6 +60278,8 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowSpineSnap",
       "kind": "bow",
@@ -57682,6 +60420,190 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": {
+        "blast": null,
+        "eitr": 100.0,
+        "healthPercent": 40.0,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": [
+          {
+            "blows": {
+              "blunt": 100.0,
+              "pierce": 100.0,
+              "slash": 90.0
+            },
+            "health": 1500.0,
+            "key": "Bjorn_spiritcaller",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 10,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Bear"
+          },
+          {
+            "blows": {
+              "blunt": 150.0,
+              "slash": 160.0
+            },
+            "health": 1100.0,
+            "key": "Moose_spiritcaller",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 10,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Moose"
+          },
+          {
+            "blows": {
+              "slash": 140.0
+            },
+            "health": 800.0,
+            "key": "Wolf_spiritcaller",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 10,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Wolf"
+          },
+          {
+            "blows": {
+              "blunt": 100.0
+            },
+            "health": 1000.0,
+            "key": "Boar_spiritcaller",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 10,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Boar"
+          }
+        ]
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffSpiritCaller",
       "kind": "bloodStaff.2h",
@@ -57690,7 +60612,7 @@
       "mead": null,
       "name": "Spirit Caller",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 8,
@@ -57803,6 +60725,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearSplitner",
       "kind": "spear",
@@ -57979,6 +60903,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "SpearSplitner_Blood",
       "kind": "spear",
@@ -58105,6 +61044,16 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": 20.0,
+          "effects": [],
+          "name": "Immobilized",
+          "seconds": 10.0,
+          "when": "hit"
+        }
+      ],
       "group": "weapons",
       "key": "SpearSplitner_Nature",
       "kind": "spear",
@@ -58234,6 +61183,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SpearSplitner_Lightning",
       "kind": "spear",
@@ -58363,6 +61314,18 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": {
+        "blast": 3.0,
+        "eitr": 35.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffFireball",
       "kind": "elementalStaff.2h",
@@ -58370,17 +61333,8 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of Embers",
-      "over": {
-        "damage": {
-          "blunt": 120.0,
-          "fire": 120.0,
-          "frost": -30.0
-        },
-        "key": "StaffIceShards",
-        "name": "Staff of Frost",
-        "tier": 0
-      },
-      "page": "weapons",
+      "over": null,
+      "page": "staffs",
       "resources": [
         {
           "amount": 20,
@@ -58514,6 +61468,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": {
+        "blast": null,
+        "eitr": 30.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": {
+          "bounces": 6,
+          "count": 12
+        },
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffClusterbomb",
       "kind": "elementalStaff.2h",
@@ -58521,17 +61490,8 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of Fracturing",
-      "over": {
-        "damage": {
-          "blunt": 12.0,
-          "fire": 12.0,
-          "lightning": -20.0
-        },
-        "key": "StaffLightning",
-        "name": "Dundr",
-        "tier": 0
-      },
-      "page": "weapons",
+      "over": null,
+      "page": "staffs",
       "resources": [
         {
           "amount": 15,
@@ -58682,6 +61642,18 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": {
+        "blast": null,
+        "eitr": 5.0,
+        "healthPercent": null,
+        "held": true,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffIceShards",
       "kind": "elementalStaff.2h",
@@ -58690,7 +61662,7 @@
       "mead": null,
       "name": "Staff of Frost",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 20,
@@ -58827,6 +61799,29 @@
     {
       "amount": 1,
       "biome": "mistlands",
+      "casts": {
+        "blast": null,
+        "eitr": 60.0,
+        "healthPercent": 40.0,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": {
+          "name": "Magic barrier",
+          "radius": 5.0,
+          "seconds": 60.0,
+          "shield": {
+            "absorb": 200.0,
+            "perSkillLevel": 5.0,
+            "skill": 10,
+            "ttlPerItemLevel": 60
+          },
+          "tooltip": "A magical shield that absorbs damage."
+        },
+        "summons": []
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffShield",
       "kind": "bloodStaff.2h",
@@ -58835,7 +61830,7 @@
       "mead": null,
       "name": "Staff of Protection",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 20,
@@ -58956,6 +61951,62 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": {
+        "blast": 3.0,
+        "eitr": 55.0,
+        "healthPercent": null,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": [
+          {
+            "blows": {
+              "blunt": 70.0,
+              "poison": 40.0
+            },
+            "health": 250.0,
+            "key": "staff_greenroots_tentaroot",
+            "levels": [
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 9,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 9,
+                "skillLevel": 20
+              },
+              {
+                "level": 1,
+                "most": 4,
+                "skill": 9,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 5,
+                "skill": 9,
+                "skillLevel": 60
+              },
+              {
+                "level": 1,
+                "most": 6,
+                "skill": 9,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": [23.0, 25.0],
+            "mostFromQuality": false,
+            "name": "Summoned Root"
+          }
+        ]
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffGreenRoots",
       "kind": "elementalStaff.2h",
@@ -58963,17 +62014,8 @@
       "maxQuality": 4,
       "mead": null,
       "name": "Staff of the Wild",
-      "over": {
-        "damage": {
-          "blunt": 8.0,
-          "fire": -12.0,
-          "poison": 20.0
-        },
-        "key": "StaffClusterbomb",
-        "name": "Staff of Fracturing",
-        "tier": 0
-      },
-      "page": "weapons",
+      "over": null,
+      "page": "staffs",
       "resources": [
         {
           "amount": 15,
@@ -59133,6 +62175,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SledgeStagbreaker",
       "kind": "club.2h",
@@ -59316,6 +62360,8 @@
     {
       "amount": 1,
       "biome": "meadows",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeStone",
       "kind": "axe",
@@ -59449,6 +62495,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "BowAshlandsStorm",
       "kind": "bow",
@@ -59578,6 +62626,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "CrossbowRipperLightning",
       "kind": "crossbow",
@@ -59706,6 +62756,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "MaceEldnerLightning",
       "kind": "club",
@@ -59835,6 +62887,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "Tankard",
       "kind": "sword",
@@ -59891,6 +62945,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "AtgeirGold_BloodLightning",
       "kind": "polearm.2h",
@@ -60024,6 +63093,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "AxeGold_BloodLightning",
       "kind": "axe",
@@ -60162,6 +63246,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "BowGold_BloodLightning",
       "kind": "bow",
@@ -60296,6 +63395,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "CrossbowGold_BloodLightning",
       "kind": "crossbow",
@@ -60431,6 +63545,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "KnifeGold_BloodLightning",
       "kind": "knife",
@@ -60568,6 +63697,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "BattleaxeGold_BloodLightning",
       "kind": "axe.2h",
@@ -60706,6 +63850,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "THSwordGold_BloodLightning",
       "kind": "sword.2h",
@@ -60839,6 +63998,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "FistGold_BloodLightning",
       "kind": "fist.2h",
@@ -60974,6 +64148,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "MaceGold_BloodLightning",
       "kind": "club",
@@ -61107,6 +64296,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "SledgeGold_BloodLightning",
       "kind": "club.2h",
@@ -61240,6 +64444,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "SpearGold_BloodLightning",
       "kind": "spear",
@@ -61373,6 +64592,21 @@
     {
       "amount": 1,
       "biome": "deepNorth",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "SwordGold_BloodLightning",
       "kind": "sword",
@@ -61506,6 +64740,8 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "AxeBerzerkrLightning",
       "kind": "axe.2h",
@@ -61640,6 +64876,50 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": {
+        "blast": null,
+        "eitr": 120.0,
+        "healthPercent": 60.0,
+        "held": false,
+        "projectiles": 1,
+        "returns": null,
+        "splinters": null,
+        "status": null,
+        "summons": [
+          {
+            "blows": {
+              "blunt": 80.0,
+              "fire": 20.0
+            },
+            "health": 2000.0,
+            "key": "Troll_Summoned",
+            "levels": [
+              {
+                "level": 1,
+                "most": 1,
+                "skill": 10,
+                "skillLevel": 0
+              },
+              {
+                "level": 1,
+                "most": 2,
+                "skill": 10,
+                "skillLevel": 40
+              },
+              {
+                "level": 1,
+                "most": 3,
+                "skill": 10,
+                "skillLevel": 80
+              }
+            ],
+            "lifetime": null,
+            "mostFromQuality": true,
+            "name": "Summoned Troll"
+          }
+        ]
+      },
+      "effects": [],
       "group": "weapons",
       "key": "StaffRedTroll",
       "kind": "bloodStaff.2h",
@@ -61648,7 +64928,7 @@
       "mead": null,
       "name": "Trollstav",
       "over": null,
-      "page": "weapons",
+      "page": "staffs",
       "resources": [
         {
           "amount": 15,
@@ -61806,6 +65086,8 @@
     {
       "amount": 1,
       "biome": "plains",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "FistBjornUndeadClaw",
       "kind": "fist.2h",
@@ -61990,6 +65272,8 @@
     {
       "amount": 1,
       "biome": "blackForest",
+      "casts": null,
+      "effects": [],
       "group": "weapons",
       "key": "SwordWood",
       "kind": "sword",
@@ -62143,6 +65427,21 @@
     {
       "amount": 1,
       "biome": "ashlands",
+      "casts": null,
+      "effects": [
+        {
+          "chance": null,
+          "effects": [
+            {
+              "key": "missingHealth",
+              "value": 0.2
+            }
+          ],
+          "name": null,
+          "seconds": null,
+          "when": "attack"
+        }
+      ],
       "group": "weapons",
       "key": "CrossbowRipperBlood",
       "kind": "crossbow",

@@ -15,9 +15,9 @@ import type { ReactNode } from "react";
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { AnchorHeading } from "@/components/catalog/AnchorHeading";
-import { BAR } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat, serverMessages } from "@/lib/i18n/server";
+import { slug as anchorOf } from "@/lib/slug";
 import { effectText, joined, type Effect } from "@/lib/valheim/effects";
 import bosses from "@/lib/valheim/bosses.json";
 import { RowLink } from "@/components/catalog/RowLink";
@@ -47,10 +47,10 @@ type Boss = (typeof bosses)[number];
 type Phase = Boss["phases"][number];
 
 // A boss's anchor (`the-elder`, `kall-fimbulbringer`).
-const slug = (b: Boss) => b.name.toLowerCase().replace(/[^a-z]+/g, "-");
+const slug = (b: Boss) => anchorOf(b.name);
 // A multiplier as the change it makes to a hit: 2 → +100 %, 0.5 → −50 %.
 const percent = (m: number) =>
-  `${m > 1 ? "+" : "−"}${Math.round(Math.abs(m - 1) * 100)} %`;
+  `${m > 1 ? "+" : "−"}${Math.round(Math.abs(m - 1) * 100)}%`;
 
 // What hurts a boss more and what less, from its first phase (the game's
 // damage modifiers): weak, resisted, immune.
@@ -149,12 +149,13 @@ export default function BossesPage() {
           <b>{t("question")}</b> {t("lead")}
         </Typography>
 
-        <TableContainer id={SUMMARY} sx={{ mb: 2, scrollMarginTop: BAR }}>
+        <TableContainer id={SUMMARY} sx={{ mb: 2 }}>
           <Table size="small">
             <TableHead>
               <TableRow>
                 <TableCell>{t("head.boss")}</TableCell>
                 <TableCell>{t("head.biome")}</TableCell>
+                <TableCell align="right">{t("head.altars")}</TableCell>
                 <TableCell align="right">{t("head.health")}</TableCell>
                 <TableCell>{t("head.weak")}</TableCell>
                 <TableCell>{t("head.resists")}</TableCell>
@@ -172,6 +173,7 @@ export default function BossesPage() {
                       <Link href={`#${slug(b)}`}>{b.name}</Link>
                     </TableCell>
                     <TableCell>{biomeName(b.biome)}</TableCell>
+                    <TableCell align="right">{b.altars ?? "—"}</TableCell>
                     <TableCell align="right">
                       {b.phases.reduce((s, p) => s + p.health, 0)}
                     </TableCell>
@@ -198,23 +200,8 @@ export default function BossesPage() {
         {bosses.map((b) => {
           const id = slug(b);
           return (
-            <Box
-              key={b.key}
-              component="section"
-              id={id}
-              sx={{ scrollMarginTop: BAR }}
-            >
-              <AnchorHeading
-                id={id}
-                sx={{
-                  position: "sticky",
-                  top: BAR,
-                  zIndex: 2,
-                  mt: 4,
-                  py: 1,
-                  bgcolor: "background.default",
-                }}
-              >
+            <Box key={b.key} component="section" id={id}>
+              <AnchorHeading id={id} sx={{ mt: 4, py: 1 }}>
                 {b.name}
               </AnchorHeading>
               {b.phases.map((p, i) => {
@@ -222,7 +209,13 @@ export default function BossesPage() {
                 return (
                   <Box key={i} sx={{ mb: 2 }}>
                     {b.phases.length > 1 ? (
-                      <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                      // A phase is one level under the boss, as his other
+                      // sections are.
+                      <Typography
+                        variant="h6"
+                        component="h3"
+                        sx={{ mt: 2, mb: 1 }}
+                      >
                         {t("phase", { n: i + 1 })}
                       </Typography>
                     ) : null}
@@ -285,7 +278,12 @@ export default function BossesPage() {
                   </Typography>
                   {sailOf(b.power.effects as Effect[]) ? (
                     <Typography sx={{ mb: 1 }}>
-                      {t("power.sail", sailOf(b.power.effects as Effect[]))}
+                      {t("power.sail", sailOf(b.power.effects as Effect[]))}{" "}
+                      {t("power.sailMore")}
+                      <Link href="/tools/wind">
+                        {serverFormat("archive.wind")}
+                      </Link>
+                      .
                     </Typography>
                   ) : null}
                 </>

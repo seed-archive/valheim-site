@@ -34,8 +34,18 @@ export function effectText(e: Effect) {
     }
     case "skill": {
       const v = e.value as { skill: string; levels: number };
-      return t("skill", { skill: t(`skillName.${v.skill}`), v: signed(v.levels) });
+      return t("skill", {
+        skill: t(`skillName.${v.skill}`),
+        v: signed(v.levels),
+      });
     }
+    case "healthUpFront":
+    case "staminaUpFront":
+    case "eitrUpFront":
+    case "slowFall":
+    case "shield":
+    case "missingHealth":
+      return t(e.key, { v: e.value as number });
     case "healthOverTime":
     case "staminaOverTime":
     case "eitrOverTime": {
@@ -45,6 +55,31 @@ export function effectText(e: Effect) {
     default:
       return t(e.key, { v: signed(e.value as number) });
   }
+}
+
+// A piece of gear's effects, each with when it holds (the Valheim generator's
+// `gear_effects`): while worn, with the set, at full adrenaline, on a hit.
+export type GearEffect = {
+  when: "equip" | "set" | "adrenaline" | "hit" | "attack";
+  name: string | null;
+  seconds: number | null;
+  chance: number | null;
+  effects: Effect[];
+};
+
+// When a gear effect holds, in words.
+export function gearWhen(g: GearEffect) {
+  if (g.when === "hit") {
+    return g.chance !== null && g.chance < 100
+      ? t("when.hitChance", { name: g.name ?? "", chance: g.chance })
+      : t("when.hit", { name: g.name ?? "" });
+  }
+  // A trinket whose effect is given at once (Brimstone's health and stamina)
+  // lasts the game's one second: no time is said.
+  if (g.when === "adrenaline" && (g.seconds ?? 0) <= 1) {
+    return t("when.adrenalineNow");
+  }
+  return t(`when.${g.when}`, { seconds: g.seconds ?? 0 });
 }
 
 // Effects with their resistances of one size joined: "Blunt, Slash and

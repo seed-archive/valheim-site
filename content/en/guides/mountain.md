@@ -59,8 +59,8 @@ Almost always. Moder's altar takes {{dragonEggs}} dragon eggs, one from each dra
 | A drake nest from her altar | As a rule | Middle half of seeds |
 |---|---|---|
 | The nearest, m | {{moderNest1M}} | {{moderNest1MLow}}–{{moderNest1MHigh}} |
-| The 2nd, m | {{moderNest2M}} | {{moderNest2MLow}}–{{moderNest2MHigh}} |
-| The last of the {{moderEggs}}, m | {{moderNestM}} | {{moderNestMLow}}–{{moderNestMHigh}} |
+| The second, m | {{moderNest2M}} | {{moderNest2MLow}}–{{moderNest2MHigh}} |
+| The third, m | {{moderNestM}} | {{moderNestMLow}}–{{moderNestMHigh}} |
 
 An egg is too heavy to carry two at a time, and no portal takes it, so each of those distances is walked there and back with one egg. Find the altar first, then fetch the eggs from the nests nearest it, the farthest of them {{moderNestM}} m away as a rule. The [seed map](/tools/map) shows the nests round your own altar.
 
@@ -70,6 +70,6 @@ Where her Vegvísir shows it, high on her own Mountain: {{moderAltitudeM}} m abo
 
 She is weak to fire and untouched by frost, and much of the fight she spends in the air: this is a bow's fight, and which arrow is yours to choose. By the numbers the Draugr Fang with poison arrows does the most to her, then the huntsman bow, then the finewood bow. Fire arrows gain from her weakness to fire, and any bow shoots them. Frost arrows do nothing. She breathes frost, so the cape or the mead stays on. Every way to kill her is on [How to kill each boss](/catalog/bosses#moder).
 
-Her death gives you dragon tears, and the tears build the artisan table, without which there is no blast furnace, no windmill and no spinning wheel: the Plains' metal, bread and linen all wait on her. Her power fills your sail with a tailwind, lets you carry {{moderPowerCarry}} more, makes you {{moderPowerSpeed}}% faster and takes {{moderPowerFrost}}% off the frost you suffer, for {{powerMinutes}} minutes. The drakes stop coming for your home.
+Her death gives you dragon tears, and the tears build the artisan table, without which there is no blast furnace, no windmill and no spinning wheel: the Plains' metal, bread and linen all wait on her. Her power fills your sail with a tailwind (which way the wind blows without it is the same in every world, hour by hour in the [Wind](/tools/wind) tool), lets you carry {{moderPowerCarry}} more, makes you {{moderPowerSpeed}}% faster and takes {{moderPowerFrost}}% off the frost you suffer, for {{powerMinutes}} minutes. The drakes stop coming for your home.
 
 You come down from the Mountain in wolf fur that keeps the cold off, with a silver bow, onions for the garden and an artisan table waiting to be built. What the table makes needs black metal, and black metal is carried by the Fulings of the [Plains](/guides/plains). On the clock the Mountain is one climb, and the [Speedrun](/guides/speedrun#mountain) tells it.

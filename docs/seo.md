@@ -12,14 +12,19 @@ Seed Archive shares is the portal's `docs/seo.md` (`../seed-archive/docs/seo.md`
 | Tools                | `/tools`                     | the tools' index, reached by breadcrumbs only (not in the menu; the owner, 2026-11-16)                |
 | Map                  | `/tools/map`                 | the world map of a seed, computed in the visitor's browser |
 | How good is my seed? | `/tools/how-good-is-my-seed` | a seed's measures set against the seed scan                |
+| Best seeds           | `/tools/best-seeds`          | the best seeds by the seed rating, each biome's score in a column to sort by (2026-11-23) |
+| Nidavellir           | `/tools/nidavellir`          | an idol, an item and a step: the character names whose first Forge of Potential try raises it (2026-11-23; was Forge at `/tools/forge`, never released: named after the dwarves' Nidavellir, where Mjölnir was forged, so its title differs from the guide's) |
+| Wind                 | `/tools/wind`                | where the wind comes from, hour by hour, a week at a time over 52 weeks, the same in every world (2026-11-23, was the guide `/guides/basics/wind`) |
+| Forge of Potential   | `/guides/forge-of-potential` | what goes to the forge, what a try takes, why a name decides it, the way with a fresh character (Basics) |
 | Guides               | `/guides`                    | the guides' index, reached by breadcrumbs only (not in the menu; the owner, 2026-11-16)               |
 | How to kill each boss | `/catalog/bosses`           | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way (moved from the guides 2026-11-19) |
 | Challenges (section) | `/guides/challenges`, its guides `/guides/challenges/{a-speedrunners-start,speedrun,other-rules,hardcore,reverse-run}` | the other ways of playing, each told biome by biome: the speedrunner's start and route, no death, no map, no portals, the harder worlds, the reverse run (`docs/guides.md` → The menu) |
 | Biomes (section)     | `/guides/biomes`, its guides `/guides/biomes/<biome>`, Meadows to Deep North | a chapter a biome for the player who explores: how the land is explored, how much it gives and how far it lies from his home (`docs/guide-writing.md`) |
-| Basics (section)     | `/guides/basics`, its guides `/guides/basics/{where-to-build,how-much-metal,boss-arenas}` | references the chapters send the reader to (2026-11-21) |
+| Basics (section)     | `/guides/basics`, its guides `/guides/basics/{where-to-build,how-much-metal,boss-arenas,taming}`, and Farming and the Forge of Potential at the addresses they were released at, `/guides/farming` and `/guides/forge-of-potential` | references the chapters send the reader to (2026-11-21; Taming animals 2026-11-23) |
+| Staffs               | `/catalog/staffs`            | every staff by biome with what a cast does and costs: the blast, the splinters, the summons with their health and blows, the shield (Gear group, 2026-11-23) |
 | What to break        | `/catalog/breakables`        | the objects worth smashing: metal, hides, jute, chains, coins, moulds, the chance a break gives each, where they stand (Materials group, 2026-11-20) |
 | Comfort              | `/catalog/comfort`           | the best piece of each kind, and how long Rested lasts (moved from the guides 2026-11-19) |
-| Bugs                 | `/bugs`                      | world generation bugs a player meets on a seed; in the footer |
+| Bugs                 | `/bugs`                      | the game's bugs a player meets: world generation on a seed, and the Helmet of the Protector the forge never takes (2026-11-23); in the footer |
 
 A page's address names its menu item (`/catalog/<kind>`, `/guides/…`, `/tools/<tool>`), each with an index page and
 the breadcrumb Home › item › page (the shared `docs/seo.md`, the owner, 2026-11-16). The section has no Quests menu
@@ -58,6 +63,12 @@ section). To be checked against search suggestions and Search Console once the s
 | `/tools/map` | valheim seed map | valheim world map; boss altar locations; trader locations |
 | `/tools/how-good-is-my-seed` | best valheim seed | valheim seed checker; good starting seed |
 | `/tools/craft-tree` | valheim progression | what to craft first; valheim crafting order |
+| `/tools/best-seeds` | best valheim seeds | seed list; good seed to start |
+| `/catalog/staffs` | valheim staffs | what does each staff do; dead raiser; staff of protection; eitr cost |
+| `/guides/basics/taming` | valheim taming | how to tame a lox; asksvin saddle; breeding |
+| `/tools/wind` | valheim wind | wind direction; sailing; moder power |
+| `/tools/nidavellir` | valheim forge of potential without breaking | upgrade without breaking; refinement; character name; idol |
+| `/guides/forge-of-potential` | valheim forge of potential | upgrade past level 4; idols; break chance |
 | `/guides` | valheim guides | valheim walkthrough |
 | a-speedrunners-start (was a-good-start until 2026-11-21) | valheim speedrun seed | starting island; best seed for a speedrun |
 | speedrun | valheim speedrun | speedrun route; speedrun seed |
@@ -86,7 +97,18 @@ headings and the `fact` do not repeat it (`.claude/rules/site-text.md`).
 - **External.** Only where a page cites a rule (the speedrun's categories on speedrun.com) or credits a player
   (`/credits` on the portal).
 - **Tools and guides.** How good is my seed? ↔ a-speedrunners-start, speedrun, how-much-metal and reverse-run;
-  the seed map ↔ a-speedrunners-start, where-to-build, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun.
+  the seed map ↔ a-speedrunners-start, where-to-build, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun;
+  Nidavellir ↔ forge-of-potential (the tool links the guide twice: the lead, and the steps' section
+  `#how-do-i-raise-an-item-without-breaking-it`; the guide links the tool where the name decides and in its steps),
+  Nidavellir → the materials catalogue (`/catalog`, the recipes' ingredients; the See ingredients button is a button,
+  not a link, and leads to the chosen item's row), forge-of-potential → `/bugs` (the Helmet of the Protector) and
+  the seed map. The idols' rows in the materials catalogue link forge-of-potential. Best seeds ↔ How good is my
+  seed? (each links the other in its lead), a-speedrunners-start → Best seeds. Wind ← the bosses page (Moder's
+  power), the Mountain chapter and Speedrun.
+- **The new pages of 2026-11-23.** Taming animals ← the Plains chapter (the lox) and the Ashlands chapter (the
+  Asksvin on lava); it links the weapons it names (the Abyssal Harpoon, the Butcher Knife), the traders, Yagluth
+  and Hildir's Sealed Tower. Staffs ← Weapons, the Mistlands chapter and forge-of-potential; it links Food and
+  feasts (eitr comes from food alone). Bugs ← forge-of-potential, the map's loot panel and the footer.
 - **Guides and catalogue.** Each biome guide links the bosses page at its boss (`/catalog/bosses#<boss>`), the
   traders page where it names a trader, and the meads, weapons and materials it relies on; the catalogue links back
   from a boss's trophy and a creature's drops.
@@ -102,6 +124,12 @@ The shared steps of the portal's `docs/seo.md` first, with `<slug>` = `valheim`,
 2. Check the text rules of `.claude/rules/site-text.md`: the forbidden words, no sample sizes, no named places on
    guides, no typed numbers, every claim proven in the Valheim generator's notes.
 3. Add a page's row to the core when a page is added, and its links to the link map.
+4. Over every address of `sitemap.xml`, from the served HTML (done for the release of 2026-11-23): status 200, one
+   `<h1>`, a description of 160 characters or fewer, no address twice in the sitemap; every `href` with a `#` inside
+   `<main>` lands on an `id` of its page; every page counts two pages or more that link it from `<main>` (an index
+   page's sentence counts; the map's panels link from the browser and are counted by hand: Bugs).
+5. A new guide's tables each have their conclusion under them, and a new catalogue page's lead answers its question
+   (`.claude/rules/site-text.md` → Tables and charts).
 
 ## Regrouping (2026-11-17)
 
@@ -136,7 +164,8 @@ The proposal: one page a players' category, each about 150 rows at most, a searc
 
 | Page | What | Rows |
 |---|---|---|
-| `/catalog/weapons` | melee weapons and staffs, sections by type (swords, axes, clubs and sledges, knives, spears, atgeirs, fists, staffs); the weapons guide's text as its lead | ~112 |
+| `/catalog/weapons` | melee weapons, sections by type (swords, axes, clubs and sledges, knives, spears, atgeirs, fists); the weapons guide's text as its lead; links Staffs | ~112 |
+| `/catalog/staffs` | staffs by biome (2026-11-23), what each casts in its stats: eitr or health a cast, projectiles, summons, the shield's effect; linked from Weapons, the Mistlands guide and the Forge of Potential guide | ~16 |
 | `/catalog/bows` | bows, crossbows, arrows, bolts, bombs | ~54 |
 | `/catalog/armour` | armour, shields, trinkets, by biome | ~108 |
 | `/catalog/tools` | pickaxes, hammer, hoe, cultivator, torches, hook, saddles, fishing baits | ~25 |

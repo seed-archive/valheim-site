@@ -176,7 +176,9 @@ export function CraftTree() {
     now.filter((k) => !on.has(k)).forEach((k) => autoOn.current.add(k));
     setQuality((prev) => new Map(prev).set(key, q));
     switchAll([key, ...now], true);
-    const dropped = old.filter((k) => !now.includes(k) && autoOn.current.has(k));
+    const dropped = old.filter(
+      (k) => !now.includes(k) && autoOn.current.has(k),
+    );
     if (dropped.length === 0) {
       return;
     }
@@ -188,9 +190,10 @@ export function CraftTree() {
         }
         closure(k, "deps").forEach((d) => needed.add(d));
         if (k !== key && recipes[k]) {
-          stationAt(recipes[k].station ?? null, levelFor(k, effective.get(k) ?? 1)).forEach(
-            (d) => needed.add(d),
-          );
+          stationAt(
+            recipes[k].station ?? null,
+            levelFor(k, effective.get(k) ?? 1),
+          ).forEach((d) => needed.add(d));
         }
       });
       const next = new Set(prev);
@@ -257,7 +260,8 @@ export function CraftTree() {
     return () => window.clearTimeout(timer);
   }, []);
 
-  const lit = (e: Edge) => hover !== null && (e.from === hover || e.to === hover);
+  const lit = (e: Edge) =>
+    hover !== null && (e.from === hover || e.to === hover);
 
   // One vertex: its icon and name, a click switches it; an upgradable item has
   // its quality buttons.
@@ -325,8 +329,12 @@ export function CraftTree() {
                   font: "inherit",
                   fontSize: 12,
                   cursor: "pointer",
-                  bgcolor: isOn && level <= q ? "primary.main" : "background.paper",
-                  color: isOn && level <= q ? "primary.contrastText" : "text.secondary",
+                  bgcolor:
+                    isOn && level <= q ? "primary.main" : "background.paper",
+                  color:
+                    isOn && level <= q
+                      ? "primary.contrastText"
+                      : "text.secondary",
                 }}
               >
                 {level}
@@ -384,9 +392,20 @@ export function CraftTree() {
             {boss.summon.name} × {boss.summon.count}
           </ItemIcon>
         ) : null}
-        <Typography sx={{ fontWeight: 700, color: isOn ? "#c62828" : "#e57373" }}>{boss.name}</Typography>
+        <Typography
+          sx={{ fontWeight: 700, color: isOn ? "#c62828" : "#e57373" }}
+        >
+          {boss.name}
+        </Typography>
         {boss.drops.length > 0 ? (
-          <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", justifyContent: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
             {boss.drops.map((d) => (
               <ItemIcon key={d.key} item={d.key}>
                 {d.name}
@@ -445,7 +464,6 @@ export function CraftTree() {
               borderColor: "divider",
               pt: 2,
               pb: 4,
-              scrollMarginTop: 72,
             }}
           >
             <Typography variant="h6" component="h2" sx={{ mb: 3 }}>
@@ -541,7 +559,9 @@ export function CraftTree() {
                 zIndex: 1,
               }}
             >
-              {[...BOSSES.values()].filter((x) => x.band === b).map((x) => bossCard(x.key))}
+              {[...BOSSES.values()]
+                .filter((x) => x.band === b)
+                .map((x) => bossCard(x.key))}
             </Box>
           </Box>
         ))}
@@ -587,7 +607,8 @@ export function CraftTree() {
         {rows.map(([key, n], i) => {
           const biome = items[key]?.biome ?? null;
           const heading =
-            order === "biome" && (i === 0 || (items[rows[i - 1][0]]?.biome ?? null) !== biome);
+            order === "biome" &&
+            (i === 0 || (items[rows[i - 1][0]]?.biome ?? null) !== biome);
           return (
             <Box key={key}>
               {heading ? (
@@ -597,7 +618,11 @@ export function CraftTree() {
                   sx={{ mt: i === 0 ? 0 : 2, mb: 1 }}
                 >
                   <FormattedMessage
-                    id={biome ? `pages.craftTree.biome.${biome}` : "pages.craftTree.noBiome"}
+                    id={
+                      biome
+                        ? `pages.craftTree.biome.${biome}`
+                        : "pages.craftTree.noBiome"
+                    }
                   />
                 </Typography>
               ) : null}

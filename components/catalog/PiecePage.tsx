@@ -27,6 +27,10 @@ const t = (id: string, values?: Record<string, string | number>) =>
 
 type Piece = (typeof crafting.building)[number];
 
+// The hammer's own modes, which the game lists among its pieces but build
+// nothing (the repair mode).
+const HAMMER_MODES = ["piece_repair"];
+
 // One use of a piece as the Valheim generator writes it: its key and the
 // numbers its words fill in.
 type Use = {
@@ -61,9 +65,15 @@ function pieceTable(list: Piece[]) {
       <Table size="small" sx={{ tableLayout: { md: "fixed" } }}>
         <TableHead>
           <TableRow>
-            <TableCell sx={{ width: { md: "28%" } }}>{t("head.piece")}</TableCell>
-            <TableCell sx={{ width: { md: "24%" } }}>{t("head.uses")}</TableCell>
-            <TableCell sx={{ width: { md: "16%" } }}>{t("head.stationNearby")}</TableCell>
+            <TableCell sx={{ width: { md: "28%" } }}>
+              {t("head.piece")}
+            </TableCell>
+            <TableCell sx={{ width: { md: "24%" } }}>
+              {t("head.uses")}
+            </TableCell>
+            <TableCell sx={{ width: { md: "16%" } }}>
+              {t("head.stationNearby")}
+            </TableCell>
             <TableCell>{t("head.materials")}</TableCell>
           </TableRow>
         </TableHead>
@@ -83,16 +93,23 @@ function pieceTable(list: Piece[]) {
               <TableCell>
                 <ItemIcon item={b.key}>
                   {b.name}
-                  {b.season || `pages.buildPieces.note.${b.key}` in serverMessages ? (
+                  {b.season ||
+                  `pages.buildPieces.note.${b.key}` in serverMessages ? (
                     <Typography
                       component="span"
                       variant="caption"
                       color="text.secondary"
                       sx={{ display: "block" }}
                     >
-                      {b.season
-                        ? seasonNote(b.season)
-                        : serverFormat(`pages.buildPieces.note.${b.key}`)}
+                      {/* The note that tells twins apart, then the season. */}
+                      {[
+                        `pages.buildPieces.note.${b.key}` in serverMessages
+                          ? serverFormat(`pages.buildPieces.note.${b.key}`)
+                          : null,
+                        b.season ? seasonNote(b.season) : null,
+                      ]
+                        .filter(Boolean)
+                        .join(". ")}
                     </Typography>
                   ) : null}
                 </ItemIcon>
@@ -111,9 +128,15 @@ function pieceTable(list: Piece[]) {
 // One catalogue page of the hammer's pieces: those the Valheim generator puts
 // on `page` (one of the hammer's tabs, or the ships and carts), by biome; its
 // words are `pages.<words>`: title, question, lead.
-export function PiecePage(props: { page: string; words: string; crumb: string }) {
+export function PiecePage(props: {
+  page: string;
+  words: string;
+  crumb: string;
+}) {
   const own = (id: string) => serverFormat(`pages.${props.words}.${id}`);
-  const list = crafting.building.filter((b) => b.page === props.page);
+  const list = crafting.building.filter(
+    (b) => b.page === props.page && !HAMMER_MODES.includes(b.key),
+  );
   return (
     <>
       <ArchiveBar />

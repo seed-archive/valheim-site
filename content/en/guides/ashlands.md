@@ -14,7 +14,7 @@ So you build before you fight. Land by day, near ruins, with a portal left stand
 
 ## How do I make flametal, and a portal that carries metal?
 
-Flametal ore lies in three places: the spires that stand in the lava, the Charred's ruins, and the fortresses. The spires stand in lava and are mined from it; the ruins and the fortress chests ask only for a fight. Players differ on the spires. Mining them gives flametal before the first fortress, at the lava's risk; skipping them works because the ruins and a first fortress give enough for the armour. The blast furnace smelts the ore either way.
+Flametal ore lies in three places: the spires that stand in the lava, the Charred's ruins, and the fortresses. The spires stand in lava and are mined from it; the ruins and the fortress chests ask only for a fight. Players differ on the spires. Mining them gives flametal before the first fortress, at the lava's risk; skipping them works because the ruins and a first fortress give enough for the armour. The blast furnace smelts the ore either way. A tamed Asksvin walks the lava with you on its back, unhurt; [Taming animals](/guides/taming) tells how to get one.
 
 The first flametal is your armour and your way into the fortresses. Three sets are made here: the flametal armour, heavy; the set of Ask, light, from {{killsAsksvinAsk}} Asksvin and lox pelts from the Plains; and the robes of Embla, for magic. The pieces are on the [armour](/catalog/armour) page.
 
@@ -48,8 +48,8 @@ Fader's altar takes {{bells}} bells, a bell is forged from {{bellFragments}} fra
 
 | Fortresses cleared | Enough for the bells |
 |---|---|
-| {{bellForts}} | {{bellFortsShare}}% of runs |
-| {{bellFortsMore}} | {{bellFortsMoreShare}}% of runs |
+| {{bellForts}} | {{bellFortsShare}}% of rolls |
+| {{bellFortsMore}} | {{bellFortsMoreShare}}% of rolls |
 | {{bellFortsAll}} | always |
 
 Plan for {{bellFortsMore}}: {{bellForts}} are enough only {{bellFortsShare}}% of the time. {{faderForts}} fortresses stand within {{bossNearM}} m of his altar on {{faderForts4Near}}% of seeds; on the others the last one is a longer walk through the same land.

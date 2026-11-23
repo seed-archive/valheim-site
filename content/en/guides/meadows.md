@@ -21,7 +21,7 @@ The first errands of the game, counted from your door:
 
 Go for the altar before the copper. The copper, {{homeCopperM}} m off as a rule, cannot be mined until Eikthyr's antler is a pickaxe, and his altar is a walk of {{homeEikthyrM}} m. The bees fit any walk in between. The [seed map](/tools/map) shows all of it on your own seed before you lay the first log.
 
-That copper row is the case for the one other sound home: on a Black Forest shore, by a troll's cave. There the ore lies at the door instead of {{homeCopperM}} m away, and so does everything that kills a newcomer. Either way the home goes where the loads end, not where the Valkyrie dropped you.
+The home goes where the loads end, not where the Valkyrie dropped you.
 
 ## What do the Meadows give a newcomer?
 
@@ -48,6 +48,10 @@ As many as one fermenter eats. The honey is for the meads you will brew once the
 How we count it: a mead base takes {{meadHoneyNeed}} honey, a hive makes one honey every {{hiveSeconds}} s, by day and by night, and a fermenter takes {{fermentSeconds}} s over one base. So one fermenter eats {{meadHoneyNeed}} × {{hiveSeconds}} ÷ {{fermentSeconds}} = {{hivesFor1}} hives' honey.
 
 Stop at {{hivesFor1}}. They keep one fermenter busy, and a second fermenter on the same hives only waits a little for its honey; nothing in the game asks for mead faster than that. Take one more if a house on your way holds it, and never walk for the {{hivesFor2}} a second fermenter would want. A hive holds {{hiveHoneyMax}} honey and then stops, so empty it whenever you pass.
+
+## Where is Hildir?
+
+In the Meadows, but not near you: her camp stands {{homeHildirM}} m from home as a rule, {{homeHildirMLow}}–{{homeHildirMHigh}} m on the middle half of seeds, and the raven only says she is somewhere in land like this. You find her once you range far, not in the first days. What she sells, and the chests she asks you to bring her, are on [What to buy from the traders](/catalog/traders).
 
 ## Where is Eikthyr's altar?
 

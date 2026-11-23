@@ -1,5 +1,6 @@
 [
   {
+    "altars": 3,
     "best": [
       {
         "ammo": {
@@ -69,10 +70,12 @@
     },
     "summon": {
       "count": 2,
-      "item": "TrophyDeer"
+      "item": "TrophyDeer",
+      "name": "Deer Trophy"
     }
   },
   {
+    "altars": 4,
     "best": [
       {
         "ammo": {
@@ -160,10 +163,12 @@
     },
     "summon": {
       "count": 3,
-      "item": "AncientSeed"
+      "item": "AncientSeed",
+      "name": "Ancient Seed"
     }
   },
   {
+    "altars": 5,
     "best": [
       {
         "ammo": null,
@@ -271,10 +276,12 @@
     },
     "summon": {
       "count": 10,
-      "item": "WitheredBone"
+      "item": "WitheredBone",
+      "name": "Withered Bone"
     }
   },
   {
+    "altars": 3,
     "best": [
       {
         "ammo": {
@@ -366,10 +373,12 @@
     },
     "summon": {
       "count": 3,
-      "item": "DragonEgg"
+      "item": "DragonEgg",
+      "name": "Dragon Egg"
     }
   },
   {
+    "altars": 4,
     "best": [
       {
         "ammo": null,
@@ -460,10 +469,12 @@
     },
     "summon": {
       "count": 5,
-      "item": "GoblinTotem"
+      "item": "GoblinTotem",
+      "name": "Fuling Totem"
     }
   },
   {
+    "altars": 5,
     "best": [
       {
         "ammo": null,
@@ -557,6 +568,7 @@
     }
   },
   {
+    "altars": 3,
     "best": [
       {
         "ammo": null,
@@ -649,6 +661,7 @@
         "count": 3,
         "item": "BellFragment"
       },
+      "name": "Bell",
       "source": {
         "each": 1,
         "enough": [0.0, 0.0, 0.63, 0.988, 1.0],
@@ -660,6 +673,7 @@
     }
   },
   {
+    "altars": 3,
     "best": [
       {
         "ammo": null,
@@ -965,7 +979,8 @@
     "power": null,
     "summon": {
       "count": 3,
-      "item": "HatefulBlood"
+      "item": "HatefulBlood",
+      "name": "Malicious Blood"
     }
   }
 ]

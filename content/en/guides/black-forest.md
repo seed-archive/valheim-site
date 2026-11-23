@@ -30,7 +30,7 @@ Build the kiln and the smelter from the first chamber's cores, at home, with the
 
 ## Bronze, troll leather or bear hide?
 
-The first bars pose two choices. The first is tools or armour. Tools make the next load quicker: the bronze axe fells what the flint axe cannot, and {{cartNails}} bronze nails make the cart. Armour makes the next blow survivable, and on a harder world, where one blow ends you, it comes first.
+The first bars pose two choices. The first is tools or armour. Tools make the next load quicker: the bronze axe fells what the flint axe cannot, and {{cartNails}} bronze nails make the cart. Armour makes the next blow survivable, and where a blow can end you, it comes first.
 
 The second is which armour. All three sets of the forest are worn at the same stage:
 
@@ -44,15 +44,7 @@ Bronze stops the most and costs the most: {{bronzeSetBronze}} bars you smelted, 
 
 ## Are the troll caves dangerous?
 
-A cave's trolls may carry stars. The forest's own trolls carry none within {{starMinDistanceTroll}} m of the world's centre, where the stones stand, but a cave's trolls roll their stars wherever the cave is:
-
-| A cave's troll | One star | Two stars |
-|---|---|---|
-| Normal | {{starOneSpawnerNormal}}% | {{starTwoSpawnerNormal}}% |
-| Hard | {{starOneSpawnerHard}}% | {{starTwoSpawnerHard}}% |
-| Very hard | {{starOneSpawnerVeryHard}}% | {{starTwoSpawnerVeryHard}}% |
-
-A harder world moves the odds of a star only from {{starOneSpawnerNormal}}% to {{starOneSpawnerVeryHard}}%, so the rule is the same on every setting: look before you wake it, and fight it with the spear or the bow from where it cannot reach. A cave's trolls rise once and never come back: kill them, and the cave is yours for good.
+A cave's trolls may carry stars. The forest's own trolls carry none within {{starMinDistanceTroll}} m of the world's centre, where the stones stand, but a cave's trolls roll their stars wherever the cave is: one star {{starOneSpawnerNormal}}% of the time, two {{starTwoSpawnerNormal}}%. Look before you wake it, and fight it with the spear or the bow from where it cannot reach. A cave's trolls rise once and never come back: kill them, and the cave is yours for good.
 
 ## What does the whole forest hold?
 

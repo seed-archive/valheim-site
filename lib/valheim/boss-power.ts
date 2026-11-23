@@ -27,8 +27,28 @@ function effect(boss: string, key: string, type?: string): number {
   return Math.abs(Number(sized?.percent ?? sized?.levels));
 }
 
-// Every power lasts and recharges alike; Eikthyr's stands for all.
+// A boss's damage multiplier for one type in one phase, as the share of a hit
+// that lands, in percent (Yagluth's pierce 0.25 → 25).
+function share(boss: string, type: string, phase = 0): number {
+  const phases = BOSSES.find((entry) => entry.key === boss)?.phases ?? [];
+  const mods = (phases[phase]?.modifiers ?? {}) as Record<string, number>;
+  return Math.round((mods[type] ?? 1) * 100);
+}
+
+// Kall's second phase: how many aspects come back, and how many at once.
+const kallSecond = BOSSES.find((entry) => entry.key === "FrozenKing")
+  ?.phases[1] as { aspects?: unknown[]; atOnce?: number } | undefined;
+
+// Every power lasts and recharges alike; Eikthyr's stands for all. The
+// bosses' damage numbers the guides name follow (the owner, 2026-11-23: no
+// number typed into a text).
 export const POWERS = {
+  yagluthPierceShare: share("GoblinKing", "pierce"),
+  moderFireMore: share("Dragon", "fire") - 100,
+  faderPierceShare: share("Fader", "pierce"),
+  kallResistShare: share("FrozenKing", "pierce"),
+  kallAspects: kallSecond?.aspects?.length ?? 0,
+  kallAspectsAtOnce: Number(kallSecond?.atOnce ?? 0),
   powerMinutes: Number(powerOf("Eikthyr")?.seconds) / SECONDS_A_MINUTE,
   powerCooldownMinutes: Number(powerOf("Eikthyr")?.cooldown) / SECONDS_A_MINUTE,
   eikthyrPowerPercent: effect("Eikthyr", "runStamina"),

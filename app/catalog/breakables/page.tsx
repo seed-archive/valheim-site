@@ -74,9 +74,13 @@ export default function BreakablesPage() {
                           ) : (
                             <RowLink item={m.key}>{m.name}</RowLink>
                           )}
-                          {" ×"}
-                          {/* A table may hold a max below its min; the game then gives the min. */}
-                          {m.max <= m.min ? m.min : `${m.min}–${m.max}`}
+                          {/* A table may hold a max below its min; the game then
+                              gives the min. "× 1" is left out, as everywhere. */}
+                          {m.max <= m.min
+                            ? m.min > 1
+                              ? ` × ${m.min}`
+                              : ""
+                            : ` × ${m.min}–${m.max}`}
                           {", "}
                           {m.chance === m.chanceMax
                             ? t("chance", { n: m.chance })

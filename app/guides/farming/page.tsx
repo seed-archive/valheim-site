@@ -15,7 +15,7 @@ import type { ReactNode } from "react";
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { AnchorHeading } from "@/components/catalog/AnchorHeading";
-import { BAR, BIOMES } from "@/components/catalog/BiomeSections";
+import { BIOMES } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { serverFormat } from "@/lib/i18n/server";
 import farming from "@/lib/valheim/farming.json";
@@ -154,24 +154,55 @@ function plantTable(list: Plant[], named: boolean) {
 // A section of the page: its anchor, and a heading that is the link to it.
 function Section(props: { id: string; title: string; children: ReactNode }) {
   return (
-    <Box component="section" id={props.id} sx={{ scrollMarginTop: BAR }}>
-      <AnchorHeading
-        id={props.id}
-        sx={{
-          position: "sticky",
-          top: BAR,
-          zIndex: 2,
-          mt: 4,
-          py: 1,
-          bgcolor: "background.default",
-        }}
-      >
+    <Box component="section" id={props.id}>
+      <AnchorHeading id={props.id} sx={{ mt: 4, py: 1 }}>
         {props.title}
       </AnchorHeading>
       {props.children}
     </Box>
   );
 }
+
+// "A, B and C".
+const list = (names: string[]) =>
+  names.length > 1
+    ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`
+    : names.join("");
+const range = (m: number[]) => ({
+  min: Math.round(m[0]),
+  max: Math.round(m[1]),
+});
+
+// What the tables say, read off the Valheim generator's data, never typed
+// (the owner, 2026-11-23: the page had no conclusion, only the figures).
+// A crop is its harvest row, not the seed plant of the same crop.
+const CROPS = farming.filter(
+  (p) => p.kind === "crop" && !/^Seed[ -]/.test(p.name),
+);
+// Where you live, the usual player's home (`site-text.md` → Two homes).
+const HOME = "meadows";
+// The biome where the most crops grow, and what grows only in one biome.
+const BEST = BIOMES.map((b) => ({
+  b,
+  crops: CROPS.filter((c) => c.biomes.includes(b)),
+})).sort((x, y) => y.crops.length - x.crops.length)[0];
+const ONLY_ONE = CROPS.filter((c) => c.biomes.length === 1);
+const AT_HOME = CROPS.filter((c) => c.biomes.includes(HOME));
+const CROP_MINUTES = range(CROPS[0].minutes as number[]);
+const SAME_TIME = CROPS.every(
+  (c) =>
+    c.minutes[0] === CROPS[0].minutes[0] &&
+    c.minutes[1] === CROPS[0].minutes[1],
+);
+// Trees: the one that gives the most fine wood, and the quickest.
+const TREES = farming.filter((p) => p.kind === "tree");
+const fine = (p: Plant) =>
+  (p.gives as Thing[]).find((g) => g.key === "FineWood")?.amount ?? 0;
+const MOST_FINE = [...TREES].sort((a, b) => fine(b) - fine(a))[0];
+const QUICKEST = [...TREES]
+  .filter((p) => (p.gives as Thing[]).length > 0)
+  .sort((a, b) => a.minutes[1] - b.minutes[1])[0];
+const VINES = farming.filter((p) => p.kind === "vine");
 
 export default function FarmingPage() {
   const of = (kind: string) => farming.filter((p) => p.kind === kind);
@@ -187,6 +218,10 @@ export default function FarmingPage() {
           steps={[
             { name: serverFormat("archive.home"), href: "/" },
             { name: serverFormat("archive.guides"), href: "/guides" },
+            {
+              name: serverFormat("archive.groupBasics"),
+              href: "/guides/basics",
+            },
             { name: serverFormat("archive.guideFarming") },
           ]}
         />
@@ -204,14 +239,54 @@ export default function FarmingPage() {
             <Link href="/catalog/materials">{t("crops.materials")}</Link>.
           </Typography>
           {plantTable(of("crop"), false)}
+          <Typography sx={{ mb: 2 }}>
+            {t("crops.conclusion", {
+              biome: biomeName(BEST.b),
+              count: BEST.crops.length,
+              all: CROPS.length,
+              missing: list(
+                CROPS.filter((c) => !BEST.crops.includes(c)).map((c) => c.name),
+              ),
+              only: list(
+                ONLY_ONE.map((c) => `${c.name} (${biomeName(c.biomes[0])})`),
+              ),
+              home: AT_HOME.length,
+            })}{" "}
+            {SAME_TIME ? t("crops.sameTime", CROP_MINUTES) : null}
+          </Typography>
         </Section>
         <Section id="trees" title={t("trees.title")}>
           <Typography sx={{ mb: 2 }}>{t("trees.text")}</Typography>
           {plantTable(of("tree"), true)}
+          <Typography sx={{ mb: 2 }}>
+            {t("trees.conclusion", {
+              most: MOST_FINE.name,
+              fine: fine(MOST_FINE),
+              ...range(MOST_FINE.minutes as number[]),
+              quick: QUICKEST.name,
+              quickMax: Math.round(QUICKEST.minutes[1]),
+            })}
+          </Typography>
         </Section>
         <Section id="vines" title={t("vines.title")}>
           <Typography sx={{ mb: 2 }}>{t("vines.text")}</Typography>
           {plantTable(of("vine"), true)}
+          <Typography sx={{ mb: 2 }}>
+            {t("vines.conclusion", {
+              ...range(VINES[0].minutes as number[]),
+              crop: CROP_MINUTES.min,
+            })}
+          </Typography>
+        </Section>
+        <Section id="where" title={t("where.title")}>
+          <Typography sx={{ mb: 2 }}>
+            {t("where.text", {
+              biome: biomeName(BEST.b),
+              home: AT_HOME.length,
+              all: CROPS.length,
+            })}{" "}
+            <Link href="/catalog/food">{t("where.food")}</Link>.
+          </Typography>
         </Section>
       </Container>
       <ArchiveFooter />

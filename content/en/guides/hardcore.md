@@ -37,7 +37,7 @@ None of it is locked. After a preset you can still move any slider by hand, so a
 
 Everything. Every item on you goes, worn or not, and every skill falls back to nothing. If that is too steep, the Death penalty's Hard setting stops one step short: it burns what you carry but leaves what you wear, and it bleeds your skills faster than Normal does.
 
-> **With no death** the death penalty no longer matters, since the first death ends the run anyway; what matters is the Combat setting above and the stars below.
+> **With no death**, the death penalty no longer matters, since the first death ends the run anyway; what matters is the Combat setting above and the stars below.
 
 ## How often do raids come?
 
