@@ -15,7 +15,6 @@ export default function ChallengesPage() {
       groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/challenges").map(
         (g) => ({ entries: g.entries }),
       )}
-      parent={{ name: "archive.guides", href: "/guides" }}
     />
   );
 }

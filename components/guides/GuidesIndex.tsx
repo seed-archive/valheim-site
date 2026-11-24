@@ -10,35 +10,21 @@ import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { PageTrail } from "@/components/PageTrail";
 import type { Entry } from "@/lib/guides";
 
-// A menu item's index (Guides, Catalog), or a section's contents page
-// (`parent` its menu item): its pages in groups, each page in a sentence. A
-// group without a name is a plain list; a group with an `href` names its
-// section's page.
+// A menu item's index (Guides, Catalog), or a group's contents page (`name`
+// the group's menu id, its breadcrumbs every level above it): its pages in
+// groups, each page in a sentence. A group without a name is a plain list; a
+// group with an `href` names its own page.
 export function GuidesIndex(props: {
   name: string;
   title: string;
   groups: { id?: string; href?: string; entries: Entry[] }[];
-  parent?: { name: string; href: string };
 }) {
-  const { name, title, groups, parent } = props;
+  const { name, title, groups } = props;
   return (
     <>
       <ArchiveBar />
       <Container component="main" sx={{ py: 6, minHeight: "70vh" }}>
-        <PageTrail
-          steps={[
-            { name: <FormattedMessage id="archive.home" />, href: "/" },
-            ...(parent
-              ? [
-                  {
-                    name: <FormattedMessage id={parent.name} />,
-                    href: parent.href,
-                  },
-                ]
-              : []),
-            { name: <FormattedMessage id={name} /> },
-          ]}
-        />
+        <PageTrail crumb={name} />
         <Typography variant="h3" component="h1" gutterBottom>
           <FormattedMessage id={title} />
         </Typography>

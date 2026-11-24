@@ -54,7 +54,7 @@ export default async function WindPage() {
           {intl.rich("pages.wind.dead", {
             ...WIND,
             link: (chunks) => (
-              <Link href="/catalog/bosses#moder">{chunks}</Link>
+              <Link href="/guides/basics/bosses#moder">{chunks}</Link>
             ),
           })}
         </Typography>

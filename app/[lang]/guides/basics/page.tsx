@@ -15,7 +15,6 @@ export default function BasicsPage() {
       groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/basics").map(
         (g) => ({ entries: g.entries }),
       )}
-      parent={{ name: "archive.guides", href: "/guides" }}
     />
   );
 }

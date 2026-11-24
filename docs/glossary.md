@@ -382,7 +382,7 @@ above stay for a single value.
 | Seed Archive | Seed Archive | site (a name, never translated) |
 | Valheim | Valheim | site (the game's menu writes it so: menu_modifier_popup_text) |
 | Home | Главная | site |
-| Catalog | Каталог | site |
+| Database (the menu item, was Catalog until 2026-11-24) | Справочник (the owner, 2026-11-24; not «База данных», not «Каталог») | site |
 | Guides | Гайды | site |
 | Tools | Инструменты | site |
 | Basics | Основы | site |

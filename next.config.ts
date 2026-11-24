@@ -2,6 +2,7 @@ import { withSentryConfig } from "@sentry/nextjs/config";
 
 import type { NextConfig } from "next";
 
+import { CATALOG, catalogHref, FROM_DATABASE } from "./lib/guides";
 import { DEFAULT_LOCALE, LOCALES, PUBLISHED } from "./lib/i18n/locales";
 import { BASE_PATH } from "./lib/site";
 
@@ -10,7 +11,7 @@ const PORTAL = "https://seedarchive.gg";
 const PORTAL_PAGES = ["privacy", "terms", "release-notes"];
 
 // The first segments of the section's pages after the language (app/[lang]).
-const SECTIONS = ["tools", "catalog", "guides", "bugs"];
+const SECTIONS = ["tools", "database", "guides", "bugs"];
 
 // The icons asked for at the root of the project's own domain (Vercel's
 // dashboard takes the project's icon from /favicon.ico there): the section's
@@ -18,9 +19,16 @@ const SECTIONS = ["tools", "catalog", "guides", "bugs"];
 const ROOT_ICONS = ["favicon.ico", "icon.svg", "apple-icon.png"];
 
 // Addresses a release served that have moved since (the owner, 2026-11-23:
-// redirect every one, indexed or not): the biome chapters into
-// /guides/biomes, the ways of playing into /guides/challenges, the bosses and
-// comfort into the catalogue, the good start renamed, the map under Tools.
+// redirect every one, indexed or not), each straight to where it stands now:
+// the biome chapters into /guides/biomes, the ways of playing into
+// /guides/challenges, the good start renamed, the map under Tools. Since
+// 2026-11-24 an address follows the menu level by level (the portal's
+// docs/seo.md): Farming and the Forge of Potential under the Basics, and the
+// catalogue, renamed the Database, in its groups (/database/<group>/<kind>);
+// its groups' addresses under /catalog, never released, follow the last
+// rule. The bosses and comfort went from the guides to the database on
+// 2026-11-19 and, with the traders, to the Basics on 2026-11-25
+// (`catalogHref` resolves the three there: `FROM_DATABASE`).
 const BIOMES = [
   "meadows",
   "black-forest",
@@ -44,9 +52,22 @@ const MOVED: [string, string][] = [
     "/guides/challenges/a-good-start",
     "/guides/challenges/a-speedrunners-start",
   ],
-  ["/guides/bosses", "/catalog/bosses"],
-  ["/guides/comfort", "/catalog/comfort"],
+  ["/guides/bosses", catalogHref("bosses")],
+  ["/guides/comfort", catalogHref("comfort")],
   ["/map", "/tools/map"],
+  ["/guides/farming", "/guides/basics/farming"],
+  ["/guides/forge-of-potential", "/guides/basics/forge-of-potential"],
+  ["/catalog", "/database"],
+  ...[...CATALOG, ...FROM_DATABASE].map((page): [string, string] => [
+    `/catalog/${page.href.split("/").pop()}`,
+    page.href,
+  ]),
+  ["/catalog/:path+", "/database/:path+"],
+  // The bosses, the traders and comfort left the database for the Basics
+  // (the owner, 2026-11-25).
+  ["/database/world/bosses", catalogHref("bosses")],
+  ["/database/world/traders", catalogHref("traders")],
+  ["/database/base/comfort", catalogHref("comfort")],
 ];
 
 const nextConfig: NextConfig = {
@@ -74,12 +95,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ]);
-    // An old address goes straight to its English page, one hop (D20).
-    const moved = MOVED.map(([source, destination]) => ({
-      source,
-      destination: `/${DEFAULT_LOCALE}${destination}`,
-      permanent: true,
-    }));
+    // An old address goes straight to its new page in one hop, in its own
+    // language, or in English when it names none (D20).
+    const published = PUBLISHED.join("|");
+    const moved = MOVED.flatMap(([source, destination]) => [
+      {
+        source: `/:lang(${published})${source}`,
+        destination: `/:lang${destination}`,
+        permanent: true,
+      },
+      {
+        source,
+        destination: `/${DEFAULT_LOCALE}${destination}`,
+        permanent: true,
+      },
+    ]);
     // An address without a language: the same page in English, always (D20),
     // never by the browser's language. Only the section's own first segments
     // count, so an unknown language (/valheim/fr/…) stays a 404.
