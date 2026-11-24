@@ -5,7 +5,8 @@
 // (`pages.guides.<line>`).
 export type Entry = { href: string; id: string; line: string };
 // A group with an `href` is a section with a contents page of its own (the
-// Guides' sections, as in the No Man's Sky section; the owner, 2026-11-20).
+// Guides' sections, as in the No Man's Sky section; the owner, 2026-11-20;
+// the catalogue's groups too, 2026-11-24).
 export type Group = { id?: string; href?: string; entries: Entry[] };
 
 const entry = (href: string, id: string, line: string): Entry => ({
@@ -14,81 +15,71 @@ const entry = (href: string, id: string, line: string): Entry => ({
   line,
 });
 
-// Every page stands under its menu item's address, as in its breadcrumb:
-// /catalog/<kind>, /guides/<topic>, /tools/<tool>. The catalogue is one page a
-// players' category (the owner, 2026-11-17), in groups, each a bold line of
-// the menu. Inside the groups, the order of the title review (the owner,
-// 2026-11-24, docs/seo.md): the bosses first, the armour second, the ships up
-// and the Deep North last.
+// A page's address follows the menu, level by level (the owner, 2026-11-24;
+// the portal's docs/seo.md): /database/<group>/<kind>,
+// /guides/<section>/<topic>, /tools/<tool>, and every level is an index page
+// of the level below. The menu item Catalog is Database since 2026-11-24 (the
+// owner, in every game); its message keys stay `catalog`. The database is one
+// page a players' category (the owner, 2026-11-17), in groups, each a bold
+// line of the menu with a page of its own. Inside the groups, the order of
+// the title review (the owner, 2026-11-24, docs/seo.md): the bosses first,
+// the armour second, the ships up and the Deep North last.
+const catalogGroup = (
+  slug: string,
+  id: string,
+  entries: [string, string, string][],
+): Group => ({
+  id,
+  href: `/database/${slug}`,
+  entries: entries.map(([kind, entryId, line]) =>
+    entry(`/database/${slug}/${kind}`, entryId, line),
+  ),
+});
 export const CATALOG_GROUPS: Group[] = [
-  {
-    id: "archive.groupWorld",
-    entries: [
-      entry("/catalog/bosses", "archive.guideBosses", "bosses"),
-      entry("/catalog/creatures", "archive.guideCreatures", "creatures"),
-      entry("/catalog/damage", "archive.guideDamage", "damage"),
-      entry("/catalog/dungeons", "archive.guideDungeons", "dungeons"),
-      entry("/catalog/traders", "archive.guideTraders", "traders"),
-      entry("/catalog/events", "archive.guideEvents", "events"),
+  catalogGroup("world", "archive.groupWorld", [
+    ["bosses", "archive.guideBosses", "bosses"],
+    ["creatures", "archive.guideCreatures", "creatures"],
+    ["damage", "archive.guideDamage", "damage"],
+    ["dungeons", "archive.guideDungeons", "dungeons"],
+    ["traders", "archive.guideTraders", "traders"],
+    ["events", "archive.guideEvents", "events"],
+  ]),
+  catalogGroup("gear", "archive.groupGear", [
+    ["weapons", "archive.guideWeapons", "weapons"],
+    ["armour", "archive.guideArmour", "armour"],
+    ["bows", "archive.guideBows", "bows"],
+    ["staffs", "archive.guideStaffs", "staffs"],
+    ["tools", "archive.guideToolsCatalog", "toolsCatalog"],
+  ]),
+  catalogGroup("food", "archive.groupFood", [
+    ["food", "archive.guideFood", "food"],
+    ["meads", "archive.guideMeads", "meads"],
+  ]),
+  catalogGroup("materials", "archive.groupMaterials", [
+    ["materials", "archive.guideMaterials", "materials"],
+    ["breakables", "archive.guideBreakables", "breakables"],
+    ["trophies", "archive.guideTrophies", "trophies"],
+  ]),
+  catalogGroup("base", "archive.groupBase", [
+    ["crafting-stations", "archive.guideStations", "stations"],
+    ["ships", "archive.guideShips", "ships"],
+    ["wood-building", "archive.guideWoodBuilding", "woodBuilding"],
+    ["stone-building", "archive.guideStoneBuilding", "stoneBuilding"],
+    ["furniture", "archive.guideFurniture", "furniture"],
+    ["comfort", "archive.guideComfort", "comfort"],
+    ["other-pieces", "archive.guideOtherPieces", "otherPieces"],
+    [
+      "deep-north-building",
+      "archive.guideDeepNorthBuilding",
+      "deepNorthBuilding",
     ],
-  },
-  {
-    id: "archive.groupGear",
-    entries: [
-      entry("/catalog/weapons", "archive.guideWeapons", "weapons"),
-      entry("/catalog/armour", "archive.guideArmour", "armour"),
-      entry("/catalog/bows", "archive.guideBows", "bows"),
-      entry("/catalog/staffs", "archive.guideStaffs", "staffs"),
-      entry("/catalog/tools", "archive.guideToolsCatalog", "toolsCatalog"),
-    ],
-  },
-  {
-    id: "archive.groupFood",
-    entries: [
-      entry("/catalog/food", "archive.guideFood", "food"),
-      entry("/catalog/meads", "archive.guideMeads", "meads"),
-    ],
-  },
-  {
-    id: "archive.groupMaterials",
-    entries: [
-      entry("/catalog/materials", "archive.guideMaterials", "materials"),
-      entry("/catalog/breakables", "archive.guideBreakables", "breakables"),
-      entry("/catalog/trophies", "archive.guideTrophies", "trophies"),
-    ],
-  },
-  {
-    id: "archive.groupBase",
-    entries: [
-      entry("/catalog/crafting-stations", "archive.guideStations", "stations"),
-      entry("/catalog/ships", "archive.guideShips", "ships"),
-      entry(
-        "/catalog/wood-building",
-        "archive.guideWoodBuilding",
-        "woodBuilding",
-      ),
-      entry(
-        "/catalog/stone-building",
-        "archive.guideStoneBuilding",
-        "stoneBuilding",
-      ),
-      entry("/catalog/furniture", "archive.guideFurniture", "furniture"),
-      entry("/catalog/comfort", "archive.guideComfort", "comfort"),
-      entry("/catalog/other-pieces", "archive.guideOtherPieces", "otherPieces"),
-      entry(
-        "/catalog/deep-north-building",
-        "archive.guideDeepNorthBuilding",
-        "deepNorthBuilding",
-      ),
-    ],
-  },
+  ]),
 ];
 export const CATALOG = CATALOG_GROUPS.flatMap((group) => group.entries);
 
 // The guides, three sections (the owner, 2026-11-19 and 2026-11-20;
 // `docs/guides.md` → The menu), in the order of 2026-11-21: the biomes, the
-// Basics, the challenges. Farming and the Forge of Potential stand in the
-// Basics at their first addresses.
+// Basics, the challenges.
 // Each section is a page of its own, /guides/<section>, and its guides stand
 // under it, /guides/<section>/<slug> (the owner, 2026-11-20, as No Man's Sky).
 export const GUIDE_GROUPS: Group[] = [
@@ -125,9 +116,10 @@ export const GUIDE_GROUPS: Group[] = [
       ),
       // The owner, 2026-11-23: no guide stays out of the menu. Never folded
       // into the Plains and the Mountain as planned, Farming and the Forge of
-      // Potential join the Basics at the addresses they were released at. The
-      // order is the title review's (the owner, 2026-11-24, docs/seo.md).
-      entry("/guides/farming", "archive.guideFarming", "farming"),
+      // Potential join the Basics, and since 2026-11-24 stand under its
+      // address. The order is the title review's (the owner, 2026-11-24,
+      // docs/seo.md).
+      entry("/guides/basics/farming", "archive.guideFarming", "farming"),
       // The owner, 2026-11-23: "Как приручить животных" in the Basics.
       entry("/guides/basics/taming", "archive.guideTaming", "taming"),
       entry(
@@ -140,7 +132,7 @@ export const GUIDE_GROUPS: Group[] = [
         "archive.guideBossArenas",
         "bossArenas",
       ),
-      entry("/guides/forge-of-potential", "archive.guideForge", "forge"),
+      entry("/guides/basics/forge-of-potential", "archive.guideForge", "forge"),
     ],
   },
   {
@@ -169,17 +161,63 @@ export const GUIDE_GROUPS: Group[] = [
 ];
 export const GUIDES = GUIDE_GROUPS.flatMap((group) => group.entries);
 
-// A guide's section, by the guide's menu id (its breadcrumb's last step).
-export const sectionOf = (id: string) =>
-  GUIDE_GROUPS.find((g) => g.entries.some((e) => e.id === id));
+// The menu items whose pages stand in groups, each an index page of its own.
+const MENUS = [
+  { id: "archive.catalog", href: "/database", groups: CATALOG_GROUPS },
+  { id: "archive.guides", href: "/guides", groups: GUIDE_GROUPS },
+];
 
-// The text of a guide links another by its short path, /guides/<slug>; it is
-// made long here, so a guide moved to another section needs no edit of the
-// text (the No Man's Sky section's `longGuideLinks`).
-const LONG = new Map(GUIDES.map((e) => [e.href.split("/").pop()!, e.href]));
+// A page's breadcrumbs by its menu id, every level of the menu a link (the
+// portal's docs/seo.md): Home › the menu item › its group › the page; a
+// menu item's or a group's own index ends at its own level. The last step,
+// the page itself, has no link.
+export type Step = { id: string; href?: string };
+const HOME: Step = { id: "archive.home", href: "/" };
+export function trailOf(id: string): Step[] {
+  for (const menu of MENUS) {
+    const top: Step = { id: menu.id, href: menu.href };
+    if (menu.id === id) {
+      return [HOME, { id }];
+    }
+    for (const group of menu.groups) {
+      if (group.id === id) {
+        return [HOME, top, { id }];
+      }
+      if (group.entries.some((e) => e.id === id)) {
+        const level: Step[] =
+          group.id && group.href ? [{ id: group.id, href: group.href }] : [];
+        return [HOME, top, ...level, { id }];
+      }
+    }
+  }
+  return [HOME, { id }];
+}
+
+// The text of a guide links a page by its short path, /guides/<slug> or
+// /catalog/<kind> (the database's first name); it is made long here, so a
+// page moved to another group needs no edit of the text in any language (the
+// No Man's Sky section's `longGuideLinks`).
+const longOf = (entries: Entry[]) =>
+  new Map(entries.map((e) => [e.href.split("/").pop()!, e.href]));
+const LONG: Record<string, Map<string, string>> = {
+  guides: longOf(GUIDES),
+  catalog: longOf(CATALOG),
+};
 export const longGuideLinks = (markdown: string) =>
   markdown.replace(
-    /\]\(\/guides\/([a-z0-9-]+)([#?][^)\s]*)?\)/g,
-    (link, slug: string, rest?: string) =>
-      LONG.has(slug) ? `](${LONG.get(slug)}${rest ?? ""})` : link,
+    /\]\(\/(guides|catalog)\/([a-z0-9-]+)([#?][^)\s]*)?\)/g,
+    (link, menu: string, slug: string, rest?: string) => {
+      const long = LONG[menu].get(slug);
+      return long ? `](${long}${rest ?? ""})` : link;
+    },
   );
+
+// A database page's address by its kind, the last part of its path
+// (`weapons` → /database/gear/weapons), for links built from the game's data.
+export function catalogHref(kind: string): string {
+  const href = LONG.catalog.get(kind);
+  if (!href) {
+    throw new Error(`No database page "${kind}"`);
+  }
+  return href;
+}

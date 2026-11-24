@@ -19,21 +19,31 @@ page's hreflang and canonical come from `lib/alternates.ts`.
 | Best seeds           | `/tools/best-seeds`          | the best seeds by the seed rating, each biome's score in a column to sort by (2026-11-23) |
 | Nidavellir           | `/tools/nidavellir`          | an idol, an item and a step: the character names whose first Forge of Potential try raises it (2026-11-23; was Forge at `/tools/forge`, never released: named after the dwarves' Nidavellir, where Mjölnir was forged, so its title differs from the guide's) |
 | Wind                 | `/tools/wind`                | where the wind comes from, hour by hour, a week at a time over 52 weeks, the same in every world (2026-11-23, was the guide `/guides/basics/wind`) |
-| Forge of Potential   | `/guides/forge-of-potential` | what goes to the forge, what a try takes, why a name decides it, the way with a fresh character (Basics) |
+| Forge of Potential   | `/guides/basics/forge-of-potential` | what goes to the forge, what a try takes, why a name decides it, the way with a fresh character (Basics; at `/guides/forge-of-potential` until 2026-11-24) |
 | Guides               | `/guides`                    | the guides' index, reached by breadcrumbs only (not in the menu; the owner, 2026-11-16)               |
-| How to kill each boss | `/catalog/bosses`           | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way (moved from the guides 2026-11-19) |
+| Database             | `/database`                  | the database's index (the menu item Catalog, at `/catalog`, until 2026-11-24; «Справочник» in Russian, «Base de datos», «Datenbank»): its groups, each linking its own page, and every page in a sentence |
+| Database groups      | `/database/{world,gear,food,materials,base}` | a contents page a group of the menu: World, Gear, Food and drink, Materials, Your base (2026-11-24) |
+| How to kill each boss | `/database/world/bosses`    | each boss's health, weaknesses, attacks, trophy power, the best weapon by then and another way (moved from the guides 2026-11-19) |
 | Challenges (section) | `/guides/challenges`, its guides `/guides/challenges/{a-speedrunners-start,speedrun,other-rules,hardcore,reverse-run}` | the other ways of playing, each told biome by biome: the speedrunner's start and route, no death, no map, no portals, the harder worlds, the reverse run (`docs/guides.md` → The menu) |
 | Biomes (section)     | `/guides/biomes`, its guides `/guides/biomes/<biome>`, Meadows to Deep North | a chapter a biome for the player who explores: how the land is explored, how much it gives and how far it lies from his home (`docs/guide-writing.md`) |
-| Basics (section)     | `/guides/basics`, its guides `/guides/basics/{where-to-build,how-much-metal,boss-arenas,taming}`, and Farming and the Forge of Potential at the addresses they were released at, `/guides/farming` and `/guides/forge-of-potential` | references the chapters send the reader to (2026-11-21; Taming animals 2026-11-23) |
-| Staffs               | `/catalog/staffs`            | every staff by biome with what a cast does and costs: the blast, the splinters, the summons with their health and blows, the shield (Gear group, 2026-11-23) |
-| What to break        | `/catalog/breakables`        | the objects worth smashing: metal, hides, jute, chains, coins, moulds, the chance a break gives each, where they stand (Materials group, 2026-11-20) |
-| Comfort              | `/catalog/comfort`           | the best piece of each kind, and how long Rested lasts (moved from the guides 2026-11-19) |
+| Basics (section)     | `/guides/basics`, its guides `/guides/basics/{where-to-build,farming,taming,how-much-metal,boss-arenas,forge-of-potential}` | references the chapters send the reader to (2026-11-21; Taming animals 2026-11-23; Farming and the Forge of Potential moved under it from `/guides/<slug>` 2026-11-24) |
+| Staffs               | `/database/gear/staffs`      | every staff by biome with what a cast does and costs: the blast, the splinters, the summons with their health and blows, the shield (Gear group, 2026-11-23) |
+| What to break        | `/database/materials/breakables` | the objects worth smashing: metal, hides, jute, chains, coins, moulds, the chance a break gives each, where they stand (Materials group, 2026-11-20) |
+| Comfort              | `/database/base/comfort`     | the best piece of each kind, and how long Rested lasts (moved from the guides 2026-11-19) |
 | Bugs                 | `/bugs`                      | the game's bugs a player meets: world generation on a seed, and the Helmet of the Protector the forge never takes (2026-11-23); in the footer |
 
-A page's address names its menu item (`/catalog/<kind>`, `/guides/…`, `/tools/<tool>`), each with an index page and
-the breadcrumb Home › item › page (the shared `docs/seo.md`, the owner, 2026-11-16). The section has no Quests menu
-(the owner, 2026-11-17): "Where to go first" repeated the Meadows and Black Forest guides and was removed, and the
-bosses moved to the guides, then on 2026-11-19 to the catalogue. A
+**A page's address follows the menu, level by level** (the owner, 2026-11-24; the shared `docs/seo.md`):
+`/database/<group>/<kind>`, `/guides/<section>/<slug>`, `/tools/<tool>`. Every level is a page of its own, an index
+of the level below (`/database`, `/database/gear`, `/guides`, `/guides/basics`, `/tools`), and the breadcrumbs name
+every level as a link: Home › Database › Gear › Weapons. The menu is `lib/guides.ts` (`CATALOG_GROUPS`,
+`GUIDE_GROUPS`) and `lib/tools.ts`; the breadcrumbs come from it (`trailOf`, `components/PageTrail.tsx`'s `crumb`),
+so a page names only its menu id. The database's groups and their slugs: World `world`, Gear `gear`, Food and drink
+`food`, Materials `materials`, Your base `base`. Every old address answers 308 in one hop to the new one, the
+language kept, or to `/en/…` without one (`MOVED` in `next.config.ts`): `/catalog/<kind>` →
+`/database/<group>/<kind>`, `/catalog` → `/database`, `/guides/farming` → `/guides/basics/farming`,
+`/guides/forge-of-potential` → `/guides/basics/forge-of-potential`, and every older move straight to its final
+address. The section has no Quests menu (the owner, 2026-11-17): "Where to go first" repeated the Meadows and Black
+Forest guides and was removed, and the bosses moved to the guides, then on 2026-11-19 to the catalogue. A
 full-screen tool such as the map keeps only the header: no breadcrumb, no footer.
 
 Until the section has its first real pages, every page is `noindex` (`app/layout.tsx`).
@@ -46,7 +56,7 @@ Taken over from the No Man's Sky section's rules, 2026-11-20, as the owner asked
 of playing in its own section where it needs one, the speedrun among them (`.claude/rules/site-text.md` → The
 baseline and the ways of playing). The Guides menu reads as one trip: the Challenges section first,
 from a good start through the speedrun to the other rules, then the Biomes in the run's order; each guide's closing
-sentence leads to the next (`docs/guides.md` → The story). The Catalog is the reference a guide links to, the Tools
+sentence leads to the next (`docs/guides.md` → The story). The Database is the reference a guide links to, the Tools
 are what a guide sends the player to use.
 
 **The rule of the menu's order.** The Biomes run in the order a run meets them: Meadows, Black Forest, Swamp,
@@ -71,11 +81,11 @@ section). To be checked against search suggestions and Search Console once the s
 | `/tools/how-good-is-my-seed` | valheim seed checker (2026-11-24; was best valheim seed) | best valheim seed; good starting seed |
 | `/tools/craft-tree` | valheim progression | what to craft first; valheim crafting order |
 | `/tools/best-seeds` | best valheim seeds | seed list; good seed to start |
-| `/catalog/staffs` | valheim staffs | what does each staff do; dead raiser; staff of protection; eitr cost |
+| `/database/gear/staffs` | valheim staffs | what does each staff do; dead raiser; staff of protection; eitr cost |
 | `/guides/basics/taming` | valheim taming | how to tame a lox; asksvin saddle; breeding |
 | `/tools/wind` | valheim wind | wind direction; sailing; moder power |
 | `/tools/nidavellir` | valheim forge of potential without breaking | upgrade without breaking; refinement; character name; idol |
-| `/guides/forge-of-potential` | valheim forge of potential | upgrade past level 4; idols; break chance |
+| `/guides/basics/forge-of-potential` | valheim forge of potential | upgrade past level 4; idols; break chance |
 | `/guides` | valheim guides | valheim walkthrough |
 | a-speedrunners-start (was a-good-start until 2026-11-21) | valheim speedrun seed | starting island; best seed for a speedrun |
 | speedrun | valheim speedrun | speedrun route; speedrun seed |
@@ -91,11 +101,11 @@ section). To be checked against search suggestions and Search Console once the s
 | mistlands | infested mines | sealbreaker; dvergr extractor; eitr; the queen |
 | ashlands | charred fortress | bell fragments; fader; drakkar |
 | deep-north | valheim deep north | morkhalla; intricate key; kall summon |
-| `/catalog/bosses` | valheim bosses | boss order; how to summon each boss |
-| `/catalog/creatures` | valheim creatures | creature drops |
-| `/catalog/traders` | valheim traders | haldor items; hildir; bog witch |
-| `/catalog/breakables` | valheim what to break | fenris hair; ancient pot; red jute; how to get silver |
-| `/catalog` | valheim items | valheim creatures; build pieces |
+| `/database/world/bosses` | valheim bosses | boss order; how to summon each boss |
+| `/database/world/creatures` | valheim creatures | creature drops |
+| `/database/world/traders` | valheim traders | haldor items; hildir; bog witch |
+| `/database/materials/breakables` | valheim what to break | fenris hair; ancient pot; red jute; how to get silver |
+| `/database` | valheim items | valheim database; valheim creatures; build pieces |
 | `/bugs` | valheim same seed different dungeon | burial chamber layout |
 
 **The game's name** once a page, in its `<title>`: `<title> in Valheim — Seed Archive`; the bold question, the
@@ -117,7 +127,7 @@ player's question and holds the page's primary query ("What to break for silver,
   the seed map ↔ a-speedrunners-start, where-to-build, reverse-run and every biome whose places it shows; the craft tree ↔ speedrun;
   Nidavellir ↔ forge-of-potential (the tool links the guide twice: the lead, and the steps' section
   `#how-do-i-raise-an-item-without-breaking-it`; the guide links the tool where the name decides and in its steps),
-  Nidavellir → the materials catalogue (`/catalog`, the recipes' ingredients; the See ingredients button is a button,
+  Nidavellir → the database (`/database`, the recipes' ingredients; the See ingredients button is a button,
   not a link, and leads to the chosen item's row), forge-of-potential → `/bugs` (the Helmet of the Protector) and
   the seed map. The idols' rows in the materials catalogue link forge-of-potential. Best seeds ↔ How good is my
   seed? (each links the other in its lead), a-speedrunners-start → Best seeds. Wind ← the bosses page (Moder's
@@ -126,11 +136,18 @@ player's question and holds the page's primary query ("What to break for silver,
   Asksvin on lava); it links the weapons it names (the Abyssal Harpoon, the Butcher Knife), the traders, Yagluth
   and Hildir's Sealed Tower. Staffs ← Weapons, the Mistlands chapter and forge-of-potential; it links Food and
   feasts (eitr comes from food alone). Bugs ← forge-of-potential, the map's loot panel and the footer.
-- **Guides and catalogue.** Each biome guide links the bosses page at its boss (`/catalog/bosses#<boss>`), the
-  traders page where it names a trader, and the meads, weapons and materials it relies on; the catalogue links back
-  from a boss's trophy and a creature's drops.
+- **Guides and database.** Each biome guide links the bosses page at its boss (`/database/world/bosses#<boss>`),
+  the traders page where it names a trader, and the meads, weapons and materials it relies on; the database links
+  back from a boss's trophy and a creature's drops.
+- **Index pages.** The database's index links each group's page and every page; each group's page links its pages;
+  the header's group names link the group pages too.
 - **The prefix and the anchors.** `withBase` in `lib/content.ts` prefixes the Markdown's links; `anchorHeadings` gives
   every heading its id, so a guide's question is linkable.
+- **Short links in the Markdown.** A guide's text links a page by its short path, `/guides/<slug>` or
+  `/catalog/<kind>`, the same in every language (`test/guide-translations.test.ts` compares them);
+  `longGuideLinks` in `lib/guides.ts` makes it the page's full address from the menu (`/guides/basics/farming`,
+  `/database/world/bosses`), so a move needs no edit of the texts. Code links the full address
+  (`catalogHref(kind)` where the page comes from the data, as `recipeHref` and `creatureHref` do).
 
 ## Titles reviewed (2026-11-24, applied 2026-11-24)
 
@@ -138,14 +155,14 @@ player's question and holds the page's primary query ("What to break for silver,
 `content/en/guides/mistlands.md`), with the home page as the owner chose it and the menu order below
 (`lib/guides.ts`, `lib/tools.ts`); `es` and `de` are re-translated from the changed keys. Where the table below
 differs from what was applied, the claim was checked against its page and fixed:
-- `/catalog/bosses`: "the way round a straight fight" became "the other way players win": for the Queen and Kall
+- `/database/world/bosses`: "the way round a straight fight" became "the other way players win": for the Queen and Kall
   the page's other way is no way round a fight (the Queen's safe vestibule, Kall's phases);
-- `/catalog/dungeons`: "how likely each is on your seed" became "the chance each stands there": the chance is the
+- `/database/world/dungeons`: "how likely each is on your seed" became "the chance each stands there": the chance is the
   spawner's, the same on every seed;
-- `/catalog/breakables`: "pots break into silver, gates into iron, hangings into Fenris hair" became "pots for
+- `/database/materials/breakables`: "pots break into silver, gates into iron, hangings into Fenris hair" became "pots for
   silver, gates for iron, hangings for Fenris hair": an Ashlands pot gives silver in one break of seven, beside
   bronze, iron and meads, and a frost cave gate iron in one break of three (`lib/valheim/breakables.json`);
-- `/catalog/food`: "in each biome" became "biome by biome": no dish gives eitr before the Mistlands;
+- `/database/food/food`: "in each biome" became "biome by biome": no dish gives eitr before the Mistlands;
 - `/guides/basics`: "what every biome chapter sends you to" became "what the biome chapters send you to";
 - Meadows and Ashlands titles take an "and" ("…beehives and home…", "…bells and Fader…");
 - the Base group's "ships up" is read as the ships right after the crafting stations, the other pieces before the
@@ -154,8 +171,9 @@ differs from what was applied, the claim was checked against its page and fixed:
   world, and the page says so; the how-much-metal fact fills to well under 160 characters.
 
 The labels changed with it: "Seed map" (menu, footer, the Tools index's line, the map's hidden h1, the creatures'
-link), "Pickaxes and tools" (the h1 and label of `/catalog/tools` and its line on the catalogue index). The top level
-(Guides, Tools, Catalog) waits on the owner.
+link), "Pickaxes and tools" (the h1 and label of `/database/gear/tools` and its line on the database's index). The top
+level: Catalog became Database (the owner, 2026-11-24, in every game; «Справочник» in Russian, «Base de datos»,
+«Datenbank»), at `/database`.
 
 The review as it stood before it was applied:
 
@@ -217,29 +235,34 @@ the bosses' "two ways"):
 | /tools/nidavellir | valheim forge of potential without breaking | Forge of Potential without breaking: pick a name in Valheim | keep |
 | /tools/wind | valheim wind | Wind direction, hour by hour, for every world in Valheim | Wind direction is set by the world's clock, not the seed: see which way it blows at any hour of the year and pick the hour to cross under sail. |
 | /bugs | valheim same seed different dungeon | Bugs: why one seed gives different crypts in Valheim | keep |
-| /catalog | valheim items | Items, creatures and build pieces in Valheim | Every creature, weapon, armour piece, dish, mead, material and build piece: what it does, what it takes and where to find it. |
-| /catalog/bosses | valheim bosses | All bosses and how to kill each in Valheim | Two ways to beat every boss: the hardest-hitting weapon you can make by then, and the way round a straight fight. With health, weaknesses and attacks. |
-| /catalog/damage | | Damage types: what hurts each creature in Valheim | keep |
-| /catalog/dungeons | | Dungeons and caves: who waits inside in Valheim | Know what waits inside before you walk in: the creatures of every cave, dungeon and camp, how many stand there, and how likely each is on your seed. |
-| /catalog/events | | Raids: what starts each and what ends it in Valheim | keep |
-| /catalog/weapons | | Weapons: which to use, biome by biome, in Valheim | A sword when you attack, a mace when you hold your ground, an atgeir against crowds: every melee weapon by biome, with its damage, station and materials. |
-| /catalog/bows | | Bows, crossbows and arrows: which to pick in Valheim | The arrow, not the bow, sets the damage type. Every bow, crossbow, arrow, bolt and bomb by biome, with its damage, station and materials. |
-| /catalog/staffs | | Staffs: what each one casts and costs in Valheim | keep |
-| /catalog/armour | | Armour, shields and capes: which to wear in Valheim | Every helmet, chest and leg piece, cape, shield and trinket by biome: its armour, block and effects, and which pieces slow you or make you faster. |
-| /catalog/tools | | Pickaxes and tools in Valheim (h1, label "Pickaxes and tools") | keep |
-| /catalog/food | | Best food for melee, archer and mage in Valheim | The best food for a melee fighter, an archer and a mage in each biome, and every dish and feast with its health, stamina and eitr. |
-| /catalog/meads | | Meads and potions: what each does, how long in Valheim | keep |
-| /catalog/materials | | Materials: where to find each, what it makes in Valheim | keep |
-| /catalog/breakables | | What to break for silver, iron and Fenris hair in Valheim | Ashlands pots break into silver, frost cave gates into iron, hangings into Fenris hair: every object worth smashing, what it gives and how often. |
-| /catalog/trophies | | Trophies: who drops each and what it is for in Valheim | keep |
-| /catalog/crafting-stations | | Crafting stations: what to build first in Valheim | keep |
-| /catalog/wood-building | | Wood building pieces and what each costs in Valheim | keep |
-| /catalog/stone-building | | Stone building pieces and what each costs in Valheim | keep |
-| /catalog/furniture | | Furniture: every piece and what it costs in Valheim | keep |
-| /catalog/comfort | | Comfort: how to raise it, how long Rested lasts in Valheim | keep |
-| /catalog/deep-north-building | | Deep North building pieces in Valheim | keep |
-| /catalog/ships | | Ships and carts: which to build, what it takes in Valheim | keep |
-| /catalog/other-pieces | | Portals, fires and other build pieces in Valheim | keep |
+| /database | valheim items | Database of items, creatures and build pieces in Valheim (h1, label "Database", 2026-11-24) | Every creature, weapon, armour piece, dish, mead, material and build piece: what it does, what it takes and where to find it. |
+| /database/world | | World: bosses, creatures, dungeons, traders and raids in Valheim (2026-11-24) | Every boss and creature, the damage each takes, the dungeons and camps, the traders and the raids: what the world sets against you and what it gives. |
+| /database/gear | | Gear: weapons, armour, bows, staffs and tools in Valheim (2026-11-24) | Every weapon, armour piece, bow, staff and tool: what it does and what it takes to make. |
+| /database/food | | Food and drink: dishes and meads in Valheim (2026-11-24) | Every dish and mead: what it gives you and what it takes to make. |
+| /database/materials | | Materials: resources, breakables and trophies in Valheim (2026-11-24) | Every material and trophy, where it comes from and what it goes into, and the objects worth breaking for what they drop. |
+| /database/base | | Your base: stations, ships, building and comfort in Valheim (2026-11-24) | Crafting stations, ships, wood, stone and Deep North building pieces, furniture and comfort: what each piece takes and what it gives your base. |
+| /database/world/bosses | valheim bosses | All bosses and how to kill each in Valheim | Two ways to beat every boss: the hardest-hitting weapon you can make by then, and the way round a straight fight. With health, weaknesses and attacks. |
+| /database/world/damage | | Damage types: what hurts each creature in Valheim | keep |
+| /database/world/dungeons | | Dungeons and caves: who waits inside in Valheim | Know what waits inside before you walk in: the creatures of every cave, dungeon and camp, how many stand there, and how likely each is on your seed. |
+| /database/world/events | | Raids: what starts each and what ends it in Valheim | keep |
+| /database/gear/weapons | | Weapons: which to use, biome by biome, in Valheim | A sword when you attack, a mace when you hold your ground, an atgeir against crowds: every melee weapon by biome, with its damage, station and materials. |
+| /database/gear/bows | | Bows, crossbows and arrows: which to pick in Valheim | The arrow, not the bow, sets the damage type. Every bow, crossbow, arrow, bolt and bomb by biome, with its damage, station and materials. |
+| /database/gear/staffs | | Staffs: what each one casts and costs in Valheim | keep |
+| /database/gear/armour | | Armour, shields and capes: which to wear in Valheim | Every helmet, chest and leg piece, cape, shield and trinket by biome: its armour, block and effects, and which pieces slow you or make you faster. |
+| /database/gear/tools | | Pickaxes and tools in Valheim (h1, label "Pickaxes and tools") | keep |
+| /database/food/food | | Best food for melee, archer and mage in Valheim | The best food for a melee fighter, an archer and a mage in each biome, and every dish and feast with its health, stamina and eitr. |
+| /database/food/meads | | Meads and potions: what each does, how long in Valheim | keep |
+| /database/materials/materials | | Materials: where to find each, what it makes in Valheim | keep |
+| /database/materials/breakables | | What to break for silver, iron and Fenris hair in Valheim | Ashlands pots break into silver, frost cave gates into iron, hangings into Fenris hair: every object worth smashing, what it gives and how often. |
+| /database/materials/trophies | | Trophies: who drops each and what it is for in Valheim | keep |
+| /database/base/crafting-stations | | Crafting stations: what to build first in Valheim | keep |
+| /database/base/wood-building | | Wood building pieces and what each costs in Valheim | keep |
+| /database/base/stone-building | | Stone building pieces and what each costs in Valheim | keep |
+| /database/base/furniture | | Furniture: every piece and what it costs in Valheim | keep |
+| /database/base/comfort | | Comfort: how to raise it, how long Rested lasts in Valheim | keep |
+| /database/base/deep-north-building | | Deep North building pieces in Valheim | keep |
+| /database/base/ships | | Ships and carts: which to build, what it takes in Valheim | keep |
+| /database/base/other-pieces | | Portals, fires and other build pieces in Valheim | keep |
 | /guides | | Guides for Valheim: biomes, basics and challenge runs | Every biome in the order you meet it, the basics the game never explains, and the challenge runs: speedrun, no map, Hardcore and the reverse run. |
 | /guides/biomes | | Biomes in order: a guide to each land in Valheim | Meadows to Deep North in the order you meet them: what each land asks of you, where it hides it, how much there is and how far it lies from home. |
 | /guides/basics | | Basics: base, metal, taming, farming, the forge in Valheim | Where to build your base, how much metal a run takes, boss arenas, taming, farming and the Forge of Potential: what every biome chapter sends you to. |

@@ -25,7 +25,7 @@
     "bestSeeds": "Best seeds",
     "bugs": "Bugs",
     "guides": "Guides",
-    "catalog": "Catalog",
+    "catalog": "Database",
     "groupWorld": "World",
     "groupGear": "Gear",
     "groupFood": "Food and drink",
@@ -86,7 +86,7 @@
         "description": "From the first beehive in the Meadows to Kall in the Deep North: what each land asks of you, what it gives, and the odds the game never shows."
       },
       "title": "What the game never tells you",
-      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft <meadows>Meadows</meadows> to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do, from your <basics>first steps</basics> to the end. Want it harder? Take on the <challenges>challenges</challenges>. Whichever road you take, every weapon, meal and boss you meet on it waits in the <catalog>catalog</catalog>. And before you set sail, drop your <map>seed on the map</map> and find out if it is <rating>good enough</rating> to grow into Yggdrasil.",
+      "lead": "A Valkyrie drops you by the stones of the tenth world, Hugin the raven gives you his first tip, and Odin gives you a task: put down his enemies, one in each land. Eight lands lie ahead, from the soft <meadows>Meadows</meadows> to the <deepNorth>Deep North</deepNorth>. Valheim never tells you the odds. We do, from your <basics>first steps</basics> to the end. Want it harder? Take on the <challenges>challenges</challenges>. Whichever road you take, every weapon, meal and boss you meet on it waits in the <catalog>database</catalog>. And before you set sail, drop your <map>seed on the map</map> and find out if it is <rating>good enough</rating> to grow into Yggdrasil.",
       "new": "New",
       "biome": {
         "meadows": {
@@ -216,7 +216,7 @@
         "title": "How to raise an item with a name",
         "lead": "One step, one fresh character with a name from above, written exactly. It takes the item, its idol, the recipe's ingredients and warm clothes from a chest at your base, walks past the station that makes the item, and presses the forge's button once. A name holds for the first try of each item at each level; delete the character and make it again, and its tries start over.",
         "why": "Why the ingredients: the forge lists only the recipes a character knows, and a fresh one learns a recipe by holding all its ingredients and standing by its station.",
-        "steps": "Every step, from the stations to the name, is in the guide's section <steps>How do I raise an item without breaking it?</steps>, and the ingredients each item's recipe asks for, the ones that go in the chest, are in the <catalog>Catalog</catalog>."
+        "steps": "Every step, from the stations to the name, is in the guide's section <steps>How do I raise an item without breaking it?</steps>, and the ingredients each item's recipe asks for, the ones that go in the chest, are in the <catalog>Database</catalog>."
       }
     },
     "craftTree": {
@@ -693,10 +693,42 @@
     },
     "catalog": {
       "meta": {
-        "title": "Items, creatures and build pieces in Valheim — Seed Archive",
+        "title": "Database of items, creatures and build pieces in Valheim — Seed Archive",
         "description": "Every creature, weapon, armour piece, dish, mead, material and build piece: what it does, what it takes and where to find it."
       },
-      "title": "Catalog"
+      "title": "Database",
+      "group": {
+        "world": {
+          "meta": {
+            "title": "World: bosses, creatures, dungeons, traders and raids in Valheim — Seed Archive",
+            "description": "Every boss and creature, the damage each takes, the dungeons and camps, the traders and the raids: what the world sets against you and what it gives."
+          }
+        },
+        "gear": {
+          "meta": {
+            "title": "Gear: weapons, armour, bows, staffs and tools in Valheim — Seed Archive",
+            "description": "Every weapon, armour piece, bow, staff and tool: what it does and what it takes to make."
+          }
+        },
+        "food": {
+          "meta": {
+            "title": "Food and drink: dishes and meads in Valheim — Seed Archive",
+            "description": "Every dish and mead: what it gives you and what it takes to make."
+          }
+        },
+        "materials": {
+          "meta": {
+            "title": "Materials: resources, breakables and trophies in Valheim — Seed Archive",
+            "description": "Every material and trophy, where it comes from and what it goes into, and the objects worth breaking for what they drop."
+          }
+        },
+        "base": {
+          "meta": {
+            "title": "Your base: stations, ships, building and comfort in Valheim — Seed Archive",
+            "description": "Crafting stations, ships, wood, stone and Deep North building pieces, furniture and comfort: what each piece takes and what it gives your base."
+          }
+        }
+      }
     },
     "events": {
       "meta": {

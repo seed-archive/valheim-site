@@ -48,7 +48,7 @@ export default async function ForgePage() {
         <Typography sx={{ mb: 3 }}>
           {intl.rich("pages.forgeName.guide", {
             link: (chunks) => (
-              <Link href="/guides/forge-of-potential">{chunks}</Link>
+              <Link href="/guides/basics/forge-of-potential">{chunks}</Link>
             ),
           })}
         </Typography>
@@ -62,11 +62,11 @@ export default async function ForgePage() {
         <Typography sx={{ mb: 1 }}>
           {intl.rich("pages.forgeName.how.steps", {
             steps: (chunks) => (
-              <Link href="/guides/forge-of-potential#how-do-i-raise-an-item-without-breaking-it">
+              <Link href="/guides/basics/forge-of-potential#how-do-i-raise-an-item-without-breaking-it">
                 {chunks}
               </Link>
             ),
-            catalog: (chunks) => <Link href="/catalog">{chunks}</Link>,
+            catalog: (chunks) => <Link href="/database">{chunks}</Link>,
           })}
         </Typography>
       </Container>

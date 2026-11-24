@@ -20,7 +20,7 @@ export async function SellNote(props: { item: string }) {
   return (
     <>
       {" "}
-      <Link href={`/catalog/traders#sell-${props.item.toLowerCase()}`}>
+      <Link href={`/database/world/traders#sell-${props.item.toLowerCase()}`}>
         {intl.format("pages.traders.sellsFor", { value })}
       </Link>
     </>

@@ -7,7 +7,6 @@ import { PageTrail } from "@/components/PageTrail";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { sectionOf } from "@/lib/guides";
 import { INTL_LOCALE } from "@/lib/i18n";
 import { serverIntl, type ServerIntl } from "@/lib/i18n/server";
 import { AnchorHeadings } from "@seed-archive/ui/anchor-heading";
@@ -181,8 +180,6 @@ export async function MarkdownGuide(props: {
 }) {
   const intl = await serverIntl();
   const parts = markedCharts(props.guide.html, intl);
-  // Home › Guides › its section › the page; a guide out of the menu has no section.
-  const section = sectionOf(props.crumb);
   // A part's HTML, each `Figure:` line in it replaced by its picture.
   const html = (__html: string) => {
     const pieces = __html.split(FIGURE);
@@ -204,16 +201,8 @@ export async function MarkdownGuide(props: {
         maxWidth="md"
         sx={{ py: 6, minHeight: "70vh" }}
       >
-        <PageTrail
-          steps={[
-            { name: intl.format("archive.home"), href: "/" },
-            { name: intl.format("archive.guides"), href: "/guides" },
-            ...(section?.id && section.href
-              ? [{ name: intl.format(section.id), href: section.href }]
-              : []),
-            { name: intl.format(props.crumb) },
-          ]}
-        />
+        {/* Home › Guides › its section › the page. */}
+        <PageTrail crumb={props.crumb} />
         <Typography variant="h3" component="h1" gutterBottom>
           {props.guide.title}
         </Typography>

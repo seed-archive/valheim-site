@@ -25,7 +25,7 @@
     "bestSeeds": "Mejores semillas",
     "bugs": "Errores",
     "guides": "Guías",
-    "catalog": "Catálogo",
+    "catalog": "Base de datos",
     "groupWorld": "Mundo",
     "groupGear": "Equipo",
     "groupFood": "Comida y bebida",
@@ -499,10 +499,42 @@
     },
     "catalog": {
       "meta": {
-        "title": "Objetos, criaturas y piezas de construcción en Valheim — Seed Archive",
+        "title": "Base de datos de objetos, criaturas y piezas de construcción en Valheim — Seed Archive",
         "description": "Cada criatura, arma, pieza de armadura, plato, hidromiel, material y pieza de construcción: qué hace, qué pide y dónde encontrarlo."
       },
-      "title": "Catálogo"
+      "title": "Base de datos",
+      "group": {
+        "world": {
+          "meta": {
+            "title": "Mundo: jefes, criaturas, mazmorras, comerciantes y asaltos en Valheim — Seed Archive",
+            "description": "Cada jefe y cada criatura, el daño que recibe cada uno, las mazmorras y los campamentos, los comerciantes y los asaltos: lo que el mundo pone contra ti y lo que te da."
+          }
+        },
+        "gear": {
+          "meta": {
+            "title": "Equipo: armas, armaduras, arcos, báculos y herramientas en Valheim — Seed Archive",
+            "description": "Cada arma, pieza de armadura, arco, báculo y herramienta: qué hace y qué pide para fabricarla."
+          }
+        },
+        "food": {
+          "meta": {
+            "title": "Comida y bebida: platos e hidromieles en Valheim — Seed Archive",
+            "description": "Cada plato e hidromiel: qué te da y qué pide para prepararlo."
+          }
+        },
+        "materials": {
+          "meta": {
+            "title": "Materiales: recursos, objetos rompibles y trofeos en Valheim — Seed Archive",
+            "description": "Cada material y trofeo, de dónde sale y para qué sirve, y los objetos que vale la pena romper por lo que sueltan."
+          }
+        },
+        "base": {
+          "meta": {
+            "title": "Tu base: estaciones, barcos, construcción y comodidad en Valheim — Seed Archive",
+            "description": "Estaciones de trabajo, barcos, piezas de construcción en madera, en piedra y del Norte profundo, decoración y comodidad: qué pide cada pieza y qué da a tu base."
+          }
+        }
+      }
     },
     "speedrun": {
       "stripMap": "El mundo de la semilla «Valheim» con la franja entre dos líneas rojas",

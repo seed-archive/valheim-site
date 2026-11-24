@@ -1,3 +1,4 @@
+import { catalogHref } from "@/lib/guides";
 import crafting from "@/lib/valheim/crafting.json";
 import creatures from "@/lib/valheim/creatures.json";
 import farming from "@/lib/valheim/farming.json";
@@ -31,25 +32,25 @@ const put = (key: string, page: string, id = key) => {
     ROW.set(key, `${page}#${id.toLowerCase()}`);
   }
 };
-food.forEach((f) => put(f.key, "/catalog/food"));
+food.forEach((f) => put(f.key, catalogHref("food")));
 crafting.gear.forEach((g) => {
   if (g.page === "meads") {
     // A mead's row carries the mead's key; its base links to that row.
     const mead = (g as { mead?: { key: string } | null }).mead;
-    put(g.key, "/catalog/meads", mead?.key ?? g.key);
+    put(g.key, catalogHref("meads"), mead?.key ?? g.key);
     if (mead) {
-      put(mead.key, "/catalog/meads");
+      put(mead.key, catalogHref("meads"));
     }
   } else if (g.page) {
-    put(g.key, `/catalog/${g.page}`);
+    put(g.key, catalogHref(g.page));
   }
 });
-crafting.building.forEach((b) => b.page && put(b.key, `/catalog/${b.page}`));
+crafting.building.forEach((b) => b.page && put(b.key, catalogHref(b.page)));
 materials.forEach((m) => {
   if (MATERIAL_KINDS.trophies(m)) {
-    put(m.key, "/catalog/trophies");
+    put(m.key, catalogHref("trophies"));
   } else if (MATERIAL_KINDS.raw(m)) {
-    put(m.key, "/catalog/materials");
+    put(m.key, catalogHref("materials"));
   }
 });
 // A seed plant (`sapling_seed…`) has no row of its own on the farming page:
@@ -57,14 +58,16 @@ materials.forEach((m) => {
 const firstKey = (x: unknown[]) => (x[0] as { key?: string } | undefined)?.key;
 const isSeedPlant = (key: string) =>
   key.toLowerCase().startsWith("sapling_seed");
+// The farming guide, where each plant has its row.
+const FARMING = "/guides/basics/farming";
 farming.forEach((p) => {
   if (!isSeedPlant(p.key)) {
-    put(p.key, "/guides/farming");
+    put(p.key, FARMING);
     const seed = farming.find(
       (s) => isSeedPlant(s.key) && firstKey(s.gives) === firstKey(p.plantWith),
     );
     if (seed) {
-      put(seed.key, "/guides/farming", p.key);
+      put(seed.key, FARMING, p.key);
     }
   }
 });
@@ -85,6 +88,6 @@ const NO_CHEST = /_nochest$/i;
 export const creatureHref = (key: string): string | null => {
   const row = key.replace(NO_CHEST, "");
   return CREATURE_ROW.has(row)
-    ? `/catalog/creatures#${row.toLowerCase()}`
+    ? `${catalogHref("creatures")}#${row.toLowerCase()}`
     : null;
 };

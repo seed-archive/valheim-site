@@ -406,7 +406,7 @@ prose («auf „Albtraum“», «mit „Keine Karte“»).
 | Valheim | Valheim | site |
 | Nidavellir | Nidavellir | site |
 | Home | Startseite | site |
-| Catalog | Katalog | site |
+| Database (the menu item, was Catalog until 2026-11-24) | Datenbank | site |
 | Guides | Guides | site (the word German players use) |
 | Tools (the menu) | Tools | site; the catalogue's guide "Tools" (hammer, pickaxe…) is «Werkzeuge» |
 | Basics | Grundlagen | site |

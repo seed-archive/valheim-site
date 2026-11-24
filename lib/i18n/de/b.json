@@ -526,7 +526,7 @@
         "title": "Wie du einen Gegenstand mit einem Namen aufwertest",
         "lead": "Ein Schritt, ein frischer Charakter mit einem Namen von oben, genau so geschrieben. Er nimmt den Gegenstand, seinen Götzen, die Zutaten des Rezepts und warme Kleidung aus einer Truhe in deiner Basis, geht an der Station vorbei, die den Gegenstand herstellt, und drückt einmal den Knopf der Schmiede. Ein Name gilt für den ersten Versuch jedes Gegenstands auf jeder Stufe; lösch den Charakter und leg ihn neu an, und seine Versuche beginnen von vorn.",
         "why": "Warum die Zutaten: die Schmiede listet nur die Rezepte, die ein Charakter kennt, und ein frischer lernt ein Rezept, indem er alle seine Zutaten hält und an seiner Station steht.",
-        "steps": "Jeder Schritt, von den Stationen bis zum Namen, steht im Abschnitt <steps>Wie werte ich einen Gegenstand auf, ohne ihn zu zerstören?</steps> des Guides, und die Zutaten, die das Rezept jedes Gegenstands verlangt, die, die in die Truhe kommen, stehen im <catalog>Katalog</catalog>."
+        "steps": "Jeder Schritt, von den Stationen bis zum Namen, steht im Abschnitt <steps>Wie werte ich einen Gegenstand auf, ohne ihn zu zerstören?</steps> des Guides, und die Zutaten, die das Rezept jedes Gegenstands verlangt, die, die in die Truhe kommen, stehen in der <catalog>Datenbank</catalog>."
       }
     },
     "materials": {

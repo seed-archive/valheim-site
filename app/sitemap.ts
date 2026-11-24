@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { pageUrl } from "@/lib/alternates";
-import { CATALOG, GUIDE_GROUPS, GUIDES } from "@/lib/guides";
+import { CATALOG, CATALOG_GROUPS, GUIDE_GROUPS, GUIDES } from "@/lib/guides";
 import { DEFAULT_LOCALE, PUBLISHED } from "@/lib/i18n/locales";
 
 // Every page in every language it is translated into, each with its
@@ -17,9 +17,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/nidavellir",
     "/tools/wind",
     "/bugs",
-    "/catalog",
+    "/database",
     "/guides",
-    ...GUIDE_GROUPS.flatMap((group) => (group.href ? [group.href] : [])),
+    ...[...CATALOG_GROUPS, ...GUIDE_GROUPS].flatMap((group) =>
+      group.href ? [group.href] : [],
+    ),
     ...[...CATALOG, ...GUIDES].map((page) => page.href),
   ];
   return paths.flatMap((path) => {
