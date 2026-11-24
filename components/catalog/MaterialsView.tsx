@@ -81,7 +81,7 @@ function sources(m: Material, name: GameName, intl: ServerIntl) {
   }
   if (m.fished) {
     parts.push(
-      <Link key="fished" href="/catalog/creatures#fishing">
+      <Link key="fished" href="/database/world/creatures#fishing">
         {t("fished")}
       </Link>,
     );
@@ -104,7 +104,7 @@ function sources(m: Material, name: GameName, intl: ServerIntl) {
   );
   m.soldBy.forEach((s) =>
     parts.push(
-      <Link key={s} href={`/catalog/traders#${s.toLowerCase()}`}>
+      <Link key={s} href={`/database/world/traders#${s.toLowerCase()}`}>
         {name(traderName.get(s) ?? s)}
       </Link>,
     ),
@@ -172,13 +172,7 @@ export async function MaterialsView(props: {
         sx={{ py: 6, minHeight: "70vh" }}
       >
         <SectionLinks>
-          <PageTrail
-            steps={[
-              { name: intl.format("archive.home"), href: "/" },
-              { name: intl.format("archive.catalog"), href: "/catalog" },
-              { name: intl.format(props.crumb) },
-            ]}
-          />
+          <PageTrail crumb={props.crumb} />
           <Typography variant="h3" component="h1" gutterBottom>
             {own("title")}
           </Typography>
@@ -243,7 +237,7 @@ export async function MaterialsView(props: {
                                     ? [
                                         <Link
                                           key="power"
-                                          href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
+                                          href={`/database/world/bosses#${bossSlug(bossOf(m)!.name)}`}
                                         >
                                           {t("power")}
                                         </Link>,
@@ -258,7 +252,7 @@ export async function MaterialsView(props: {
                                 "unit",
                               )}
                               {idolOf(m.key) ? (
-                                <Link href="/guides/forge-of-potential">
+                                <Link href="/guides/basics/forge-of-potential">
                                   {t(`idol.${idolOf(m.key)}`)}
                                 </Link>
                               ) : null}

@@ -15,7 +15,6 @@ export default function BiomesPage() {
       groups={GUIDE_GROUPS.filter((g) => g.href === "/guides/biomes").map(
         (g) => ({ entries: g.entries }),
       )}
-      parent={{ name: "archive.guides", href: "/guides" }}
     />
   );
 }

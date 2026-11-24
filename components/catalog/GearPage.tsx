@@ -650,13 +650,7 @@ export async function GearPage(props: {
         maxWidth="lg"
         sx={{ py: 6, minHeight: "70vh" }}
       >
-        <PageTrail
-          steps={[
-            { name: intl.format("archive.home"), href: "/" },
-            { name: intl.format("archive.catalog"), href: "/catalog" },
-            { name: intl.format(props.crumb) },
-          ]}
-        />
+        <PageTrail crumb={props.crumb} />
         <Typography variant="h3" component="h1" gutterBottom>
           {own("title")}
         </Typography>

@@ -25,7 +25,7 @@
     "bestSeeds": "Beste Seeds",
     "bugs": "Bugs",
     "guides": "Guides",
-    "catalog": "Katalog",
+    "catalog": "Datenbank",
     "groupWorld": "Welt",
     "groupGear": "Ausrüstung",
     "groupFood": "Essen und Trinken",
@@ -623,10 +623,42 @@
     },
     "catalog": {
       "meta": {
-        "title": "Gegenstände, Kreaturen und Bau-Objekte in Valheim — Seed Archive",
+        "title": "Datenbank der Gegenstände, Kreaturen und Bau-Objekte in Valheim — Seed Archive",
         "description": "Jede Kreatur, Waffe, jedes Rüstungsteil, Gericht, jeder Met, jedes Material und Bau-Objekt: was es bewirkt, was es kostet und wo du es findest."
       },
-      "title": "Katalog"
+      "title": "Datenbank",
+      "group": {
+        "world": {
+          "meta": {
+            "title": "Welt: Bosse, Kreaturen, Dungeons, Händler und Überfälle in Valheim — Seed Archive",
+            "description": "Jeder Boss und jede Kreatur, der Schaden, den jeder nimmt, die Dungeons und Lager, die Händler und die Überfälle: was die Welt dir entgegenstellt und was sie dir gibt."
+          }
+        },
+        "gear": {
+          "meta": {
+            "title": "Ausrüstung: Waffen, Rüstung, Bögen, Stäbe und Werkzeuge in Valheim — Seed Archive",
+            "description": "Jede Waffe, jedes Rüstungsteil, jeder Bogen, Stab und jedes Werkzeug: was es bewirkt und was du brauchst, um es herzustellen."
+          }
+        },
+        "food": {
+          "meta": {
+            "title": "Essen und Trinken: Gerichte und Met in Valheim — Seed Archive",
+            "description": "Jedes Gericht und jeder Met: was es dir gibt und was du brauchst, um es zuzubereiten."
+          }
+        },
+        "materials": {
+          "meta": {
+            "title": "Materialien: Rohstoffe, Zerschlagbares und Trophäen in Valheim — Seed Archive",
+            "description": "Jedes Material und jede Trophäe, woher es kommt und wofür du es brauchst, und die Objekte, die sich zu zerschlagen lohnen, für das, was sie fallen lassen."
+          }
+        },
+        "base": {
+          "meta": {
+            "title": "Deine Basis: Stationen, Schiffe, Bauen und Gemütlichkeit in Valheim — Seed Archive",
+            "description": "Handwerksstationen, Schiffe, Bau-Objekte aus Holz, aus Stein und des Hohen Nordens, Möbel und Gemütlichkeit: was jedes Objekt kostet und was es deiner Basis gibt."
+          }
+        }
+      }
     }
   }
 }

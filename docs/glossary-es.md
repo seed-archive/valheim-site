@@ -425,7 +425,7 @@ A status named in prose stands in «» with the word «estado» before it: «el 
 | Valheim | Valheim | site (the game's menu writes it so: menu_modifier_popup_text) |
 | Nidavellir | Nidavellir | site (a name, never translated) |
 | Home | Inicio | site |
-| Catalog | Catálogo | site |
+| Database (the menu item, was Catalog until 2026-11-24) | Base de datos | site |
 | Guides | Guías | site |
 | Tools | Herramientas | site |
 | Basics | Lo básico | site |

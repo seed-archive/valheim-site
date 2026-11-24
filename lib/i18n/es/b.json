@@ -526,7 +526,7 @@
         "title": "Cómo mejorar un objeto con un nombre",
         "lead": "Un paso, un personaje nuevo con un nombre de los de arriba, escrito exactamente igual. Toma el objeto, su ídolo, los ingredientes de la receta y ropa de abrigo de un cofre de tu base, pasa junto a la estación que fabrica el objeto y pulsa una vez el botón de la forja. Un nombre vale para el primer intento de cada objeto en cada nivel; borra el personaje y créalo de nuevo, y sus intentos empiezan otra vez.",
         "why": "Por qué los ingredientes: la forja solo muestra las recetas que conoce un personaje, y uno nuevo aprende una receta al llevar todos sus ingredientes y estar junto a su estación.",
-        "steps": "Cada paso, de las estaciones al nombre, está en la sección de la guía <steps>¿Cómo mejoro un objeto sin que se destruya?</steps>, y los ingredientes que pide la receta de cada objeto, los que van en el cofre, están en el <catalog>Catálogo</catalog>."
+        "steps": "Cada paso, de las estaciones al nombre, está en la sección de la guía <steps>¿Cómo mejoro un objeto sin que se destruya?</steps>, y los ingredientes que pide la receta de cada objeto, los que van en el cofre, están en la <catalog>Base de datos</catalog>."
       }
     },
     "materials": {

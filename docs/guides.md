@@ -32,7 +32,7 @@ A good start), Biomes second.
   Speedrun → No death, no map, no portals → Hard, Very hard and Hardcore → Boss arenas → Reverse run. In the menu
   (`GUIDE_GROUPS`) and routed under `/guides/challenges/`; their text is in `content/en/guides/`, checked against
   the drafts' Unproven notes (unproven lines and rows without data left out), every number from the generator.
-- **Moved to the catalogue**: Bosses (`/catalog/bosses`, World group) and Comfort (`/catalog/comfort`, Your base
+- **Moved to the catalogue** (the Database since 2026-11-24): Bosses (`/database/world/bosses`, World group) and Comfort (`/database/base/comfort`, Your base
   group); every link to them follows. Not released, so no redirects.
 - **Out of the menu, to be folded in**: Farming into the Plains, the Forge of Potential into the Mountain; their pages
   stay at their addresses until then.

@@ -58,7 +58,7 @@ export default function Home() {
               challenges: (text) => (
                 <Link href="/guides/challenges">{text}</Link>
               ),
-              catalog: (text) => <Link href="/catalog">{text}</Link>,
+              catalog: (text) => <Link href="/database">{text}</Link>,
             }}
           />
         </Typography>
