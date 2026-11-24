@@ -1,0 +1,578 @@
+{
+  "pages": {
+    "creatures": {
+      "meta": {
+        "title": "Kreaturen und ihre Beute in Valheim — Seed Archive",
+        "description": "Jede Kreatur nach Biom: ihre Gesundheit, was ihr schadet, was sie fallen lässt, wofür jede Beute gut ist und wo sie auf der Karte steht."
+      },
+      "title": "Kreaturen",
+      "question": "Was lässt jede Kreatur fallen, und wofür ist es gut?",
+      "lead": "Jag mit einem Rezept im Kopf: jede Kreatur nach Biom, ihre Gesundheit, was ihr schadet, was sie fallen lässt und jedes Rezept, in das jede Beute geht.",
+      "health": "Gesundheit: {n}",
+      "phases": "Gesundheit: {first}, {second} und {third}, eine Phase nach der anderen; wie er in jeder kämpft, steht unter <link>Wie du jeden Boss besiegst</link>.",
+      "variant": {
+        "Bjorn_sleeping": "schlafend",
+        "Draugr_Ranged": "Bogenschütze",
+        "DvergerAshlands": "Aschenlande",
+        "ElakingLantern": "mit Laterne",
+        "GoblinArcher": "Bogenschütze",
+        "Greydwarf_Frozen": "Hoher Norden",
+        "Greydwarf_Shaman_Frozen": "Hoher Norden",
+        "JotunWarriorDualWield": "zwei Waffen",
+        "Morgen_NonSleeping": "wach",
+        "Skeleton_DeepNorth": "Hoher Norden",
+        "Skeleton_Meadows": "Grasland",
+        "Skeleton_Meadows_noarcher": "Grasland, Krieger",
+        "Skeleton_Mountains": "Gebirge",
+        "Skeleton_Swamps": "Sumpfland"
+      },
+      "dropsNothing": "Sie lässt nichts fallen.",
+      "usedIn": {
+        "power": "Kraft an den Opfersteinen",
+        "none": "—"
+      },
+      "damage": {
+        "blunt": "Hauen",
+        "slash": "Schlitzen",
+        "pierce": "Stechen",
+        "fire": "Feuer",
+        "frost": "Eis",
+        "lightning": "Blitz",
+        "poison": "Gift",
+        "spirit": "Geist"
+      },
+      "head": {
+        "drop": "Beute",
+        "amount": "Menge",
+        "chance": "Chance",
+        "usedIn": "Verwendet in"
+      },
+      "group": {
+        "meadows": "Grasland",
+        "blackForest": "Düsterwald",
+        "swamp": "Sumpfland",
+        "mountain": "Gebirge",
+        "plains": "Ebenen",
+        "mistlands": "Nebellande",
+        "ashlands": "Aschenlande",
+        "deepNorth": "Hoher Norden",
+        "ocean": "Ozean",
+        "places": "In Dungeons, Lagern und Nestern"
+      },
+      "map": "Wo sie auf deinem Seed steht: ihre Spawner auf der <link>Valheim-Seed-Karte</link>.",
+      "livesIn": "Steht in: {places}.",
+      "chops": "Ihre Schläge fällen Bäume bis Werkzeugstufe {tier} ({damage} Hacken).",
+      "mines": "Ihre Schläge brechen Fels und Erz bis Werkzeugstufe {tier} ({damage} Spitzhacke).",
+      "sets": {
+        "head": {
+          "set": "Rüstungsset",
+          "kills": "Kills für die Herstellung",
+          "top": "Kills bis zur höchsten Qualität"
+        },
+        "kills": "{n, plural, one {etwa #, für {drop}} other {etwa #, für {drop}}}",
+        "top": "{n, plural, one {etwa # bis Qualität {quality}, für {drop}} other {etwa # bis Qualität {quality}, für {drop}}}",
+        "note": "Kills dieser Kreatur ohne Sterne, im Durchschnitt, nur für ihre eigene Beute; eine mit Sternen lässt mehr fallen, also braucht es weniger.",
+        "runsOut": "Nicht jeder Kill kann von ihren Orten kommen: jeder gibt höchstens {n}, einmal pro Welt.",
+        "runsOutRooms": "Nicht jeder Kill kann von ihren Orten kommen: jeder gibt sie einmal pro Welt."
+      },
+      "sources": {
+        "from": "Stammt aus: {parts}.",
+        "respawns": "{count, plural, one {Spawnern, die sie {minutes} Minute, nachdem die letzte fort ist, zurückbringen} other {Spawnern, die sie {minutes} Minuten, nachdem die letzte fort ist, zurückbringen}}",
+        "once": "ihren Orten, einmal pro Welt",
+        "areas": "Nestern, die spawnen, solange sie stehen",
+        "open": "{biomes} unter freiem Himmel",
+        "openEvery": "{biomes} unter freiem Himmel, mit {chance} % Chance {minutes, plural, =1 {jede Minute} one {jede # Minute} other {alle # Minuten}}",
+        "raids": "Überfällen",
+        "fixed": "Ihre Orte geben eine feste Zahl, {n, plural, one {# pro Ort} other {# pro Ort}}, einmal pro Welt; der Rest stammt aus: {rest}.",
+        "fixedRooms": "Ihre Orte geben eine feste Zahl, einmal pro Welt; der Rest stammt aus: {rest}.",
+        "runsOut": "Sie geht aus: ihre Orte geben sie einmal pro Welt, und nichts bringt sie zurück.",
+        "rare": "Stammt nur aus: {rest}.",
+        "renews": "Sie kommt wieder.",
+        "nightOnly": "Sie kommt nur nachts und geht bei Tagesanbruch.",
+        "nightMore": "Nachts kommen mehr von ihnen.",
+        "starsAtNight": "Nachts kann sie mehr Sterne haben.",
+        "starsFrom": "In der offenen Welt hat sie Sterne erst weiter als {m} mvom Mittelpunkt der Welt.",
+        "raidList": "Überfälle: {raids}.",
+        "raid": "<link>{name}</link> ({span})",
+        "raidAfter": "nach: {keys}",
+        "raidFromStart": "von Anfang an",
+        "raidUntil": "bis: {keys}",
+        "raidForGood": "für immer",
+        "raidStars": "mit einem oder zwei Sternen",
+        "raidMayStar": "manchmal mit Sternen"
+      },
+      "stars": {
+        "title": "Sterne",
+        "text": "Ein Stern bedeutet mehr Gesundheit, härtere Schläge und mehr Beute. Jeder Stern ist ein Wurf, meist mit {chance} % (Nester und ein paar Spawner weichen ab), für den zweiten neu gewürfelt; ein paar Kreaturen würfeln nur weit vom Mittelpunkt der Welt, und ein nächtlicher Spawn kann mehr Sterne erlauben als der am Tag. Die Kreaturen eines Überfalls kommen ohne Sterne, außer den Zecken und den Begleitern von Hildirs Wächtern. Die Einstellungen deiner Welt und manche Flecken eines Bioms ändern die Chance.",
+        "head": {
+          "stars": "Sterne",
+          "health": "Gesundheit",
+          "damage": "Schaden",
+          "drops": "Beute",
+          "share": "Von denen, die zwei haben können"
+        },
+        "times": "×{n}",
+        "share": "{n} %",
+        "note": "Beute: sowohl die Chance als auch die Menge jeder Beute."
+      },
+      "fish": {
+        "title": "Angeln",
+        "text": "Haldor verkauft die Angelrute und einfachen Angelköder; jeder andere Köder ist Angelköder und eine Trophäe, also entscheiden die Kreaturen, die du jagst, welche Fische du fangen kannst. Jeder Fisch wird zu Roher Fisch, und den verlangen die Gerichte.",
+        "head": {
+          "fish": "Fisch",
+          "where": "Wo",
+          "bait": "Köder",
+          "depth": "Schwimmt in",
+          "extras": "Bringt manchmal mit"
+        },
+        "where": "{biomes}, in Wasser ab {water} mTiefe",
+        "depth": "{min}–{max} m",
+        "deeper": "{min} mund tiefer"
+      },
+      "notes": {
+        "Troll": "In einer Trollhöhle steckt oft ein Troll und manchmal noch einer an ihrem Eingang; keiner kommt wieder, wenn er getötet ist. Einer von {weaponSets} Trollen trägt einen Baumstamm: er reicht weiter, wirft aber nie, während ein unbewaffneter Troll mit Fäusten schlägt, stampft und von Weitem Felsen schleudert; sonst ist es derselbe Troll, mit derselben Gesundheit und Beute. Töte einen Troll und den Uralten, und Trolle können deine Basis überfallen. Stechen schadet ihnen am meisten, also nimm einen Speer oder Pfeile mit. Sie brechen Mauern, also hält keine Falle einen fest, aber lock einen an Bäumen und Kupfer vorbei, und er fällt und schürft für dich.",
+        "Bjorn": "Mauere einen Bären auf flachem Boden ein, mit einem Lagerfeuer unter ihm, und er brennt; repariere dabei immer wieder das Feuer und die Mauern.",
+        "GoblinBruteBros": "Wenn Thungr fällt, erhebt sich Zil aus ihm und kämpft weiter; Zil trägt Hildirs Bronzetruhe.",
+        "GoblinShaman_Hildir": "Kein Spawner bringt ihn hervor: er erhebt sich, wenn Thungr fällt, in Hildirs Versiegeltem Turm.",
+        "Serpent": "Ein Seeungeheuer: es jagt Schiffe auf dem tiefen Ozean.",
+        "BonemawSerpent": "Ein Seeungeheuer: es jagt Schiffe in den Gewässern der Aschenlande."
+      }
+    },
+    "bosses": {
+      "meta": {
+        "title": "Alle Bosse und wie du jeden besiegst in Valheim — Seed Archive",
+        "description": "Zwei Wege, jeden Boss zu besiegen: die Waffe, die am härtesten trifft und die du bis dahin herstellen kannst, und der andere Weg, auf dem Spieler siegen. Mit Gesundheit, Schwächen und Angriffen."
+      },
+      "title": "Wie du jeden Boss besiegst",
+      "question": "Wie besiege ich jeden Boss?",
+      "lead": "Zwei Wege für jeden, nie nur einer: die Waffe, die ihm von allem, was du bis dahin herstellen kannst, am meisten schadet, und der Weg, auf dem Spieler ohne offenen Kampf siegen, mit Feuer, wo der Boss brennt. Unter jedem seine Gesundheit, seine Schwächen, wie lange ein Lagerfeuer braucht, um ihn niederzubrennen, und was seine Angriffe anrichten; Kall Phase für Phase.",
+      "head": {
+        "boss": "Boss",
+        "biome": "Biom",
+        "altars": "Altäre in einer Welt",
+        "health": "Gesundheit",
+        "weak": "Schwach",
+        "resists": "Resistent",
+        "immune": "Immun",
+        "best": "Beste Waffe"
+      },
+      "phase": "Phase {n}",
+      "fact": {
+        "health": "Gesundheit",
+        "weak": "Schwach gegen",
+        "resists": "Resistent gegen",
+        "immune": "Immun gegen",
+        "attacks": "Angriffe richten an",
+        "fire": "In einem Lagerfeuer"
+      },
+      "fire": {
+        "time": "ein Lagerfeuer allein brennt ihn in etwa {minutes} min nieder, wenn er in den Flammen bleibt",
+        "never": "ein Lagerfeuer tötet ihn nie: er heilt schneller, als das Feuer brennt, oder nimmt keinen Feuerschaden"
+      },
+      "aspects": "In dieser Phase nimmt er keinen Schaden von dir. Er bringt {count, plural, one {den # früheren Boss} other {die # früheren Bosse}} als Aspekte zurück, höchstens {atOnce} zugleich, Eikthyrs zuerst; der Tod jedes Aspekts trifft ihn mit {blast}, also müssen alle sterben. Die Gesundheit eines Aspekts ist seine eigene (die von {health}), aber jeder nimmt Schaden genau wie sein Boss, und Hauen ist bei keinem schwächer als voll: was jedem schadet, steht in <link>der Tabelle oben</link>.",
+      "breaks": "Sie fällen Bäume und brechen Fels",
+      "direct": {
+        "title": "Der offene Kampf",
+        "text": "Was du bis zu {biome} herstellen kannst und ihn am härtesten trifft, ein Treffer, gezählt nach seinen Schwächen und Resistenzen; ein Bogen mit dem besten Pfeil der Zeit, eine Armbrust mit dem besten Bolzen:"
+      },
+      "hit": "{hit} pro Treffer",
+      "power": {
+        "title": "Die Kraft der Trophäe",
+        "how": "Häng die Trophäe an ihren Stein bei den Opfersteinen: wenn du die Kraft rufst, hält sie {minutes} min, und nach {cooldown} min kannst du sie wieder rufen.",
+        "sail": "Der Wind folgt der Uhr der Welt, nicht deinem Kurs: er hält eine Hauptrichtung etwa {windHoldMin} min und kommt ebenso oft von hinten wie von vorn. Ein Segel ist tot, wenn der Wind aus weniger als {sailDeadDeg}° vom Bug kommt, an Backbord wie an Steuerbord, bei {sailDeadShare} % aller Kurse, und dann ruderst du. Ihre Kraft dreht den Wind genau achteraus, welchen Kurs du auch hältst, also ruf sie, wenn der Wind vorlicher als querab steht; mit dem Wind schon von achtern oder querab bringt sie dir nichts.",
+        "sailMore": "Woher der Wind kommt, Stunde um Stunde, das ganze Jahr, steht im Tool <link>Wind</link>.",
+        "none": "Das Spiel gibt für diese Trophäe keine Kraft."
+      },
+      "tip": {
+        "Dragon": "Sie kämpft in der Luft und landet nur ab und zu, also nimm einen Bogen mit. Die Tabelle setzt Giftpfeile an die Spitze, weil sie den ganzen Schaden eines Treffers zählt, aber Gift sickert über ein paar Sekunden ein; Feuer, gegen das sie schwach ist, wirkt sofort, also taugen Feuerpfeile genauso."
+      },
+      "other": {
+        "title": "Der andere Weg",
+        "Eikthyr": "Lauf um die großen Felsen rund um seinen Altar und schieß aus ihrer Deckung: die Felsen halten seinen Ansturm auf, sein Stampfen aber nicht.",
+        "gd_king": "Umgib seine Plattform und die Lücken zwischen den Säulen mit Lagerfeuern: Feuer schadet ihm doppelt, und er brennt, wenn er darüber läuft, während du hinter einer Säule hervor schießt. Oder grab dich unter den Altar: seine Plattform ist ein Dach, das er nicht brechen kann, mit Platz für eine Werkbank und ein Portal.",
+        "Bonemass": "Schieß von oben auf ihn, von einem Steinturm oder einem hohen Baum, mit Frostpfeilen; ebne vorher mit der Hacke den Boden um den Altar, damit du dich bewegen kannst und die Schlundegel fernbleiben.",
+        "Dragon": "Grab einen Graben an der Seite ihrer Beschwörungsplattform, die sich nicht zerstören lässt, und bleib darin: wenn sie landet, erreichen dich ihr Atem und ihre Klauen nicht, und du schießt senkrecht nach oben. Nimm viele Pfeile mit.",
+        "GoblinKing": "Speedrunner umkreisen ihn: bleib nah dran, lauf vom ersten Schlag bis zum letzten immer wieder in seinen Rücken, und er dreht sich zu langsam, um dich zu treffen. Wenn du lieber schießt, halte eine Steinsäule zwischen dir und ihm und tritt zum Schießen hervor: wer seine Sichtlinie bricht, stoppt seinen Strahl.",
+        "SeekerQueen": "Der Vorraum an ihrem Eingang ist sicher: dort greift sie dich nicht an und dort spawnt nichts, also richte deine Rast und deine Reparaturen gleich davor ein.",
+        "Fader": "Beschwöre mit dem Trollstab zwei Trolle und bleib außer seiner Reichweite: er kämpft gegen sie und lässt dich in Ruhe, solange du ihn nicht triffst. Oder grab zwei Gruben nebeneinander und lass den Boden zwischen ihnen als Wand stehen, nie eine gebaute: er zerstört Bau-Objekte, nicht Erde, und wenn er dich nicht erreicht, geht er auf ein Bau-Objekt los. Säume seine Grube mit Aschenholz-Palisadenwällen: sie schaden ihm, aber jeder nutzt sich nach ein paar Treffern ab und bricht, wenn er hineinläuft, also repariere sie immer wieder von deiner Seite aus. Neben seinem Altar lässt sich nichts graben: lock ihn zuerst aus seiner Arena zu den Gruben.",
+        "FrozenKing": "Bekämpfe jede Phase mit dem, wofür sie offen ist. Die erste und die dritte nehmen nur halben Schaden durch Stechen, Feuer, Eis und Blitz, also richten Bögen, Speere und Stäbe die Hälfte an: nimm die schwerste Waffe mit Hauen oder Schlitzen mit, die du hast, und erwarte in keiner der beiden ein Taumeln oder eine Öffnung. In der zweiten lass ihn in Ruhe und töte die Aspekte, wie sie kommen: Hauen schadet jedem voll, die des Uralten und Moders brennen, und die von Knochenwanst und Yagluth lässt Stechen kalt."
+      }
+    },
+    "crafting": {
+      "casts": {
+        "eitr": "Kostet {n} Eitr pro Zauber",
+        "eitrHeld": "Kostet {n} Eitr pro Schuss, gehalten für einen Strahl",
+        "health": "Nimmt {n} % deiner aktuellen Gesundheit pro Zauber, weniger, je höher die Fertigkeit",
+        "projectiles": "{n, plural, one {Feuert # Schuss auf einmal} other {Feuert # Schüsse auf einmal}}",
+        "blast": "Der Schuss birst, wo er landet, und trifft alles im Umkreis von {r} m",
+        "splinters": "Der Schuss birst, wo er landet, in {n, plural, one {# Splitter} other {# Splitter}}; jeder trägt den Schaden des Stabs",
+        "splintersBounce": "Der Schuss birst, wo er landet, in {n, plural, one {# Splitter} other {# Splitter}}; jeder trägt den Schaden des Stabs und prallt bis zu {bounces, plural, one {# Mal} other {# Mal}} ab",
+        "returns": "Die Kugel fliegt durch alles auf ihrem Weg und kehrt zu dir zurück; auf dem Rückweg richtet sie an jedem Feind, den sie passiert, {damage} an",
+        "returnsEitr": "Auf dem Rückweg gibt sie dir und jedem Verbündeten, den sie passiert, {n} Eitr",
+        "oneOf": "Jeder Zauber beschwört zufällig eines davon:",
+        "summons": "{blows, select, yes {Beschwört: {name} ({health} Gesundheit; trifft mit bis zu {damage})} other {Beschwört: {name} ({health} Gesundheit)}}",
+        "lifetime": "für {s} s",
+        "mostQuality": "so viele zugleich wie die Stufe des Stabs",
+        "mostSkill": "{from} bis {to} zugleich, je höher die Fertigkeit",
+        "status": "Gibt dir und Verbündeten im Umkreis von {radius} m: {name}",
+        "seconds": "für {s} s",
+        "shield": "fängt {absorb} Schaden ab, {per} mehr pro Fertigkeitsstufe"
+      },
+      "colours": "Innerhalb eines Bioms ist Grün das Beste und Rot das Schlechteste: bei jeder Schadensart unter den Waffen, bei der Rüstung unter den Rüstungen, beim Blocken unter den Schilden. Grün markiert außerdem die beste Eitr-Regeneration und jede Rüstung, die dich schneller macht; Rot einen Tempoabzug, der schwerer ist als üblich für ihre Art.",
+      "nothing": "Nichts passt.",
+      "copied": "Link kopiert",
+      "biome": {
+        "meadows": "Grasland",
+        "blackForest": "Düsterwald",
+        "swamp": "Sumpfland",
+        "mountain": "Gebirge",
+        "plains": "Ebenen",
+        "mistlands": "Nebellande",
+        "ashlands": "Aschenlande",
+        "deepNorth": "Hoher Norden",
+        "ocean": "Ozean",
+        "elsewhere": "Jederzeit"
+      },
+      "theBiome": {
+        "meadows": "dem Grasland",
+        "blackForest": "dem Düsterwald",
+        "swamp": "dem Sumpfland",
+        "mountain": "dem Gebirge",
+        "plains": "den Ebenen",
+        "mistlands": "den Nebellanden",
+        "ashlands": "den Aschenlanden",
+        "deepNorth": "dem Hohen Norden",
+        "ocean": "dem Ozean"
+      },
+      "group": {
+        "weapons": "Waffen",
+        "shields": "Schilde",
+        "armour": "Rüstung",
+        "ammo": "Pfeile, Bolzen und Geschosse",
+        "tools": "Werkzeuge",
+        "consumables": "Essen, Met und Tränke",
+        "materials": "Materialien",
+        "other": "Sonstiges"
+      },
+      "head": {
+        "item": "Gegenstand",
+        "stats": "Werte",
+        "station": "Station",
+        "materials": "Materialien",
+        "upgrades": "Jede Aufwertung"
+      },
+      "upgrade": {
+        "each": "Jeder Schritt: {gains}",
+        "step": "Qualität {quality}, Stufe {level}:",
+        "armor": "Rüstung +{value}",
+        "durability": "Haltbarkeit +{value}",
+        "block": "Blockwert +{value}",
+        "deflection": "Parierstärke +{value}",
+        "damage": "{type} +{value}"
+      },
+      "over": {
+        "name": "Gegenüber {name}: {parts}",
+        "tier": "Stufe {value}",
+        "damage": "{type} {value}"
+      },
+      "search": "Suche nach Name, Material oder Station",
+      "kind": {
+        "axe": "Axt",
+        "axe.2h": "Zweihändige Axt",
+        "bloodStaff.2h": "Stab der Blutmagie",
+        "bow": "Bogen",
+        "cape": "Umhang",
+        "chest": "Brustschutz",
+        "club": "Keule",
+        "club.2h": "Hammer",
+        "crossbow": "Armbrust",
+        "elementalStaff.2h": "Stab der Elementarmagie",
+        "farming.2h": "Landwirtschaftswerkzeug",
+        "fist.2h": "Faustwaffen",
+        "helmet": "Helm",
+        "knife": "Messer",
+        "knife.2h": "Doppelmesser",
+        "legs": "Hose",
+        "pickaxe.2h": "Spitzhacke",
+        "polearm.2h": "Atgeir",
+        "shield": "Schild",
+        "spear": "Speer",
+        "sword": "Schwert",
+        "sword.2h": "Zweihändiges Schwert",
+        "tool.farming": "Landwirtschaftswerkzeug",
+        "tool.other": "Bauwerkzeug",
+        "torch": "Fackel",
+        "trinket": "Schmuckstück",
+        "utility": "Hilfsgegenstand",
+        "bait": "Angelköder",
+        "thrown": "Wurfwaffe",
+        "drinking": "Trinkgefäß",
+        "hook": "Enterhaken"
+      },
+      "damage": {
+        "damage": "Schaden",
+        "blunt": "Hauen",
+        "slash": "Schlitzen",
+        "pierce": "Stechen",
+        "chop": "Hacken",
+        "pickaxe": "Spitzhacke",
+        "fire": "Feuer",
+        "frost": "Eis",
+        "lightning": "Blitz",
+        "poison": "Gift",
+        "spirit": "Geist"
+      },
+      "stat": {
+        "armor": "Rüstung {value}",
+        "block": "Blockwert {value}",
+        "tier": "Stufe {value}",
+        "durability": "Haltbarkeit {value}",
+        "movement": "Bewegungstempo {value} %",
+        "eitrRegen": "Eitr-Regeneration {value} %",
+        "weight": "Gewicht {value}",
+        "quality": "Qualität bis {value}",
+        "set": "Set aus {value}"
+      },
+      "stationLevel": "{station}, Stufe {level}",
+      "noStation": "Von Hand",
+      "season": "Nur {from}–{to}"
+    },
+    "effects": {
+      "runStamina": "Sprinten-Ausdauerverbrauch {v} %",
+      "jumpStamina": "Sprung-Ausdauerverbrauch {v} %",
+      "swimStamina": "Schwimmen-Ausdauerverbrauch {v} %",
+      "sneakStamina": "Schleichen-Ausdauerverbrauch {v} %",
+      "attackStamina": "Angriffs-Ausdauerverbrauch {v} %",
+      "blockStamina": "Blocken-Ausdauerverbrauch {v} %",
+      "dodgeStamina": "Ausweich-Ausdauerverbrauch {v} %",
+      "blockStaminaFlat": "Ausdauerverbrauch je Block {v}",
+      "stagger": "Taumelwiderstand {v} %",
+      "speed": "Bewegungstempo {v} %",
+      "jump": "Sprunghöhe {v} %",
+      "healthRegen": "Gesundheitsregeneration {v} %",
+      "staminaRegen": "Ausdauerregeneration {v} %",
+      "eitrRegen": "Eitr-Regeneration {v} %",
+      "healthOverTime": "Heilt {v} Gesundheit über {seconds} s",
+      "staminaOverTime": "Stellt {v} Ausdauer über {seconds} s wieder her",
+      "eitrOverTime": "Stellt {v} Eitr über {seconds} s wieder her",
+      "carry": "Max. Gewicht {v}",
+      "tailwind": "Der Wind immer hinter dem Segel",
+      "taming": "Tiere werden schneller zahm",
+      "damage": "Schaden durch {types} {v} %",
+      "damageAll": "Jeder Schaden {v} %",
+      "skill": "Fertigkeit {skill} {v}",
+      "resist": "Erlittener Schaden durch {types} {v} %",
+      "armor": "Rüstung {v}",
+      "healthUpFront": "Heilt sofort {v} Gesundheit",
+      "staminaUpFront": "Stellt sofort {v} Ausdauer wieder her",
+      "eitrUpFront": "Stellt sofort {v} Eitr wieder her",
+      "fallDamage": "Fallschaden {v} %",
+      "swimSpeed": "Schwimmtempo {v} %",
+      "slowFall": "Fällt nicht schneller als {v} m/s",
+      "shield": "Ein Schild, der {v} Schaden abfängt",
+      "missingHealth": "Schaden +{v} % für jeden Punkt Gesundheit, den du verloren hast",
+      "when": {
+        "equip": "Solange getragen",
+        "set": "Mit dem ganzen Set",
+        "adrenaline": "Bei vollem Adrenalin, für {seconds} s",
+        "adrenalineNow": "Bei vollem Adrenalin",
+        "hit": "Ein Treffer belegt das Ziel mit „{name}“",
+        "hitChance": "Ein Treffer belegt das Ziel mit „{name}“, in {chance} % der Fälle",
+        "attack": "Ihre Angriffe"
+      },
+      "skillName": {
+        "swords": "Schwerter",
+        "knives": "Messer",
+        "clubs": "Schlagwaffen",
+        "polearms": "Stangenwaffen",
+        "spears": "Speere",
+        "blocking": "Blocken",
+        "axes": "Äxte",
+        "bows": "Bögen",
+        "elementalMagic": "Elementarmagie",
+        "bloodMagic": "Blutmagie",
+        "unarmed": "Unbewaffnet",
+        "pickaxes": "Spitzhacken",
+        "woodCutting": "Holzhacken",
+        "crossbows": "Armbrüste",
+        "jump": "Springen",
+        "sneak": "Schleichen",
+        "run": "Sprinten",
+        "swim": "Schwimmen",
+        "fishing": "Angeln",
+        "cooking": "Kochen",
+        "farming": "Landwirtschaft",
+        "crafting": "Herstellung",
+        "ride": "Reiten",
+        "all": "Alle"
+      }
+    },
+    "damage": {
+      "meta": {
+        "title": "Schadensarten: was jeder Kreatur schadet in Valheim — Seed Archive",
+        "description": "Schwächen und Resistenzen jeder Kreatur und jedes Bosses gegen jede Schadensart, die Waffenart für sie und der Schaden, den sie austeilt."
+      },
+      "title": "Schadensarten",
+      "question": "Was schadet jeder Kreatur?",
+      "lead": "Jede Kreatur und jeder Boss nach Biom: die Schadensarten, die sie härter oder sanfter trifft, damit du weißt, welche Waffenart du mitnimmst, und der Schaden, den sie zurückteilt, damit du weißt, welche Resistenz du trägst.",
+      "hurts": {
+        "title": "Was jeder Kreatur schadet",
+        "lead": "Eine Schwachstelle vervielfacht den Treffer, eine Resistenz teilt ihn. Jede Waffenart richtet vor allem eine Art an:",
+        "kinds": "<b>{type}:</b> {kinds}.",
+        "fire": "Feuer ist die Schwäche, der du am häufigsten begegnest: im Düsterwald und im Gebirge nehmen die meisten Kreaturen es härter, und deshalb verbrennen Speedrunner sie mit Lagerfeuern. Leg die Gewohnheit in den Nebellanden ab: dort und in den Aschenlanden ist keine Kreatur schwach gegen Feuer, und in den Aschenlanden sind die meisten resistent."
+      },
+      "deals": {
+        "title": "Womit jede Kreatur zuschlägt",
+        "lead": "Der stärkste Schlag jeder Schadensart, den eine Kreatur austeilen kann, vor deiner Rüstung: trag die Resistenz gegen ihre Art.",
+        "pierce": "Stechen ist das, womit dich die Bosse treffen, alle außer Knochenwanst und Yagluth, und der Todeskito der Ebenen sticht mit nichts anderem. Der Wurzelkürass ist der einzige Brustschutz, der Stechen halbiert, also trag ihn gegen sie; Feuer trifft ihn aber härter, also lass ihn für Yagluth zu Hause. Jedes Rüstungsteil steht unter <link>Rüstung</link>."
+      },
+      "creature": "Kreatur",
+      "best": "Triff sie mit",
+      "any": "jeder Waffe",
+      "none": "keine Waffe schadet ihr",
+      "immune": "immun"
+    },
+    "weapons": {
+      "meta": {
+        "title": "Waffen: welche du nimmst, Biom für Biom, in Valheim — Seed Archive",
+        "description": "Ein Schwert, wenn du angreifst, ein Streitkolben, wenn du die Stellung hältst, ein Atgeir gegen Massen: jede Nahkampfwaffe nach Biom, mit ihrem Schaden, ihrer Station und ihren Materialien."
+      },
+      "title": "Waffen",
+      "question": "Welche Waffe soll ich nehmen?",
+      "lead": "Ein Schwert, wenn du angreifst, ein Streitkolben, wenn du die Stellung hältst, und wieder der Streitkolben auf den härtesten Einstellungen, wo er der Liebling ist; ein Atgeir gegen Massen, ein Messer aus dem Schatten, Fäuste, wenn sie dein Stil sind. Jede nach Biom, mit ihrem Schaden, ihrer Station und ihren Materialien.",
+      "damageLink": "Bevor du wählst, sieh dir unter <link>Schadensarten</link> an, welche Schadensart deinem nächsten Gegner am meisten schadet und womit er zurückschlägt.",
+      "staffsLink": "Was jeder Stab wirkt, steht unter <link>Stäbe</link>."
+    },
+    "staffs": {
+      "meta": {
+        "title": "Stäbe: was jeder wirkt und kostet in Valheim — Seed Archive",
+        "description": "Jeder Stab der Elementar- und Blutmagie nach Biom: was er wirkt oder beschwört, was ein Zauber an Eitr und Gesundheit kostet, und seine Materialien."
+      },
+      "title": "Stäbe",
+      "question": "Was wirkt jeder Stab?",
+      "lead": "Stäbe der Elementarmagie richten den Schaden selbst an und kosten nur Eitr: ein Feuerball, der birst, wo er landet, ein Strahl aus Eis, eine Salve von Blitzen, Wurzeln, die aufsteigen und zuschlagen. Stäbe der Blutmagie stellen etwas zwischen dich und den Feind und nehmen mit dem Eitr einen Teil deiner Gesundheit: sie erwecken Skelette, einen Troll oder Tiergeister oder legen einen Schild auf dich und deine Verbündeten; nur der Echo-Stachel schlägt selbst zu und verlangt keine Gesundheit. Ein Beschwörungsstab ist der, den du zuerst aufwerten solltest, denn mit jeder Stufe kann eine Beschwörung mehr stehen. Jeder Stab nach Biom, mit dem, was ein Zauber tut und kostet.",
+      "eitr": "Du hast überhaupt kein Eitr, bis du dafür isst, und ein Stab ohne Eitr wirkt nichts: die Gerichte, die es geben, stehen unter <link>Essen und Festmähler</link>."
+    },
+    "armour": {
+      "meta": {
+        "title": "Rüstung, Schilde und Umhänge: was du trägst in Valheim — Seed Archive",
+        "description": "Jeder Helm, Brustschutz, jede Hose, jeder Umhang, Schild und jedes Schmuckstück nach Biom: Rüstung, Blockwert und Effekte, und welche Teile dich bremsen oder schneller machen."
+      },
+      "title": "Rüstung",
+      "question": "Welche Rüstung soll ich tragen?",
+      "lead": "Jeder Helm, Brustschutz, jede Hose, jeder Umhang, Schild und jedes Schmuckstück nach Biom, mit Rüstung, Blockwert und Effekten. Achte neben der Rüstung auch auf das Tempo: manche Teile bremsen dich mehr als üblich für ihre Art, und ein paar machen dich schneller."
+    },
+    "bows": {
+      "meta": {
+        "title": "Bögen, Armbrüste und Pfeile: was du wählst in Valheim — Seed Archive",
+        "description": "Der Pfeil, nicht der Bogen, bestimmt die Schadensart. Jeder Bogen, jede Armbrust, jeder Pfeil, Bolzen und jede Bombe nach Biom, mit Schaden, Station und Materialien."
+      },
+      "title": "Bögen, Armbrüste und Pfeile",
+      "question": "Welcher Bogen und welche Pfeile?",
+      "lead": "Der Pfeil, nicht der Bogen, bestimmt die Schadensart: der Schaden eines Bogens kommt zu dem seines Pfeils hinzu, also Feuerpfeile für das, was brennt, Frost für das, was erfriert. Jeder Bogen, jede Armbrust, jeder Pfeil, Bolzen und jede Bombe nach Biom."
+    },
+    "trophies": {
+      "meta": {
+        "title": "Trophäen: wer jede fallen lässt und wofür sie gut ist in Valheim — Seed Archive",
+        "description": "Jede Trophäe nach Biom: welche Kreatur sie fallen lässt und wofür sie gut ist: die Kraft eines Bosses am Startaltar, ein Rezept, ein Köder."
+      },
+      "title": "Trophäen",
+      "question": "Wofür ist jede Trophäe gut?",
+      "answer": "Die Trophäe eines Bosses geht zurück zu den Opfersteinen: an ihren Stein dort gehängt, gibt sie dir die Kraft dieses Bosses. Jede Trophäe steht unter dem ersten Biom, in dem ihre Kreatur lebt, mit dem, der sie fallen lässt, und dem, wofür sie verwendet wird."
+    },
+    "toolsCatalog": {
+      "meta": {
+        "title": "Spitzhacken und Werkzeuge in Valheim — Seed Archive",
+        "description": "Jede Spitzhacke, jedes Bau- und Landwirtschaftswerkzeug, jede Fackel, jeder Sattel und Angelköder nach Biom: was es tut, Station und Materialien."
+      },
+      "title": "Spitzhacken und Werkzeuge",
+      "question": "Welche Werkzeuge soll ich herstellen?",
+      "lead": "Spitzhacken, der Hammer, die Hacke und der Pflug, Fackeln und Laternen, Sättel und Angelköder, nach Biom."
+    },
+    "forge": {
+      "return": {
+        "level": "Stufe",
+        "multiplier": "Schritt",
+        "perLevel": "Pro Stufe",
+        "craft": "1 (Herstellung)",
+        "total": "Insgesamt eingesetzt",
+        "idolOnly": "Ab Stufe {from}, an der Schmiede des Potenzials: ein Götze pro Versuch, kein Material. Die grauen Zahlen sind, was die Werkbank für die Stufe verlangen würde; du zahlst sie nie, aber eine Zerstörung wird nach ihnen berechnet.",
+        "breaks": "Wenn er zerstört wird",
+        "breaksAt": "auf Stufe {level}",
+        "sum": "({first} + {at}) × {pct} % →",
+        "note": "Eine Zerstörung auf {top} gibt also mehr zurück als eine auf {max}, obwohl der Gegenstand nicht mehr Material gekostet hat."
+      }
+    },
+    "forgeName": {
+      "meta": {
+        "title": "Schmiede des Potenzials ohne Zerstörung: wähle einen Namen in Valheim — Seed Archive",
+        "description": "Wähle an der Schmiede des Potenzials einen Götzen, einen Gegenstand und einen Schritt und erhalte die Charakternamen, deren erster Versuch ihn aufwertet, statt ihn zu zerstören."
+      },
+      "title": "Nidavellir",
+      "subtitle": "In der nordischen Mythologie ist Nidavellir die Heimat der Zwerge, wo die Brüder Sindri und Brokkr Thors Hammer Mjölnir schmiedeten. Hier ist es der Ort, an dem du den Namen findest, der deinen Gegenstand schmiedet, ohne ihn zu zerstören.",
+      "question": "Wie werte ich einen Gegenstand an der Schmiede des Potenzials auf, ohne ihn zu zerstören?",
+      "again": "Ein Name ist kein Glücksbringer: für ein zweites Exemplar desselben Gegenstands ist jede Stufe sein zweiter Versuch und kann zerstören, wo das erste Exemplar aufstieg. Jedes Exemplar braucht eigene, frische Charaktere.",
+      "answer": "Gib dem Charakter, der den Knopf drückt, den richtigen Namen. Den ersten Versuch der Schmiede mit einem Gegenstand auf einer Stufe entscheidet allein der Name des Charakters, also wähle den Götzen, den Gegenstand und den Schritt und nimm einen Namen, dessen erster Versuch ihn aufwertet.",
+      "guide": "Was zur Schmiede gehört, was ein Versuch kostet und warum ein Name entscheidet, steht im Guide <link>Schmiede des Potenzials</link>.",
+      "idol": "Götze",
+      "item": "Gegenstand",
+      "step": "Schritt",
+      "stepLevel": "{from} → {to}",
+      "find": "Finde Namen",
+      "finding": "Suche…",
+      "ingredients": "Zutaten ansehen",
+      "names": "Namen, deren erster Versuch ihn auf Stufe {to} hebt:",
+      "how": {
+        "title": "Wie du einen Gegenstand mit einem Namen aufwertest",
+        "lead": "Ein Schritt, ein frischer Charakter mit einem Namen von oben, genau so geschrieben. Er nimmt den Gegenstand, seinen Götzen, die Zutaten des Rezepts und warme Kleidung aus einer Truhe in deiner Basis, geht an der Station vorbei, die den Gegenstand herstellt, und drückt einmal den Knopf der Schmiede. Ein Name gilt für den ersten Versuch jedes Gegenstands auf jeder Stufe; lösch den Charakter und leg ihn neu an, und seine Versuche beginnen von vorn.",
+        "why": "Warum die Zutaten: die Schmiede listet nur die Rezepte, die ein Charakter kennt, und ein frischer lernt ein Rezept, indem er alle seine Zutaten hält und an seiner Station steht.",
+        "steps": "Jeder Schritt, von den Stationen bis zum Namen, steht im Abschnitt <steps>Wie werte ich einen Gegenstand auf, ohne ihn zu zerstören?</steps> des Guides, und die Zutaten, die das Rezept jedes Gegenstands verlangt, die, die in die Truhe kommen, stehen im <catalog>Katalog</catalog>."
+      }
+    },
+    "materials": {
+      "meta": {
+        "title": "Materialien: wo du jedes findest und was daraus wird in Valheim — Seed Archive",
+        "description": "Jedes Herstellungsmaterial nach Biom: wo du es findest und alles, worin es verwendet wird, in welchem Biom auch immer."
+      },
+      "title": "Materialien",
+      "question": "Woher kommt es, und wofür ist es gut?",
+      "answer": "Jedes Herstellungsmaterial unter dem ersten Biom, das es gibt: wo du es findest und jedes Rezept, in das es in irgendeinem Biom geht, damit du weißt, was du aufheben solltest, bevor ein späteres Biom danach verlangt. Ausrüstung, Essen, Met und Trophäen haben eigene Seiten.",
+      "power": "Kraft an den Opfersteinen",
+      "idol": {
+        "battle": "Waffen und Werkzeuge seiner Stufe, über ihre letzte Stufe hinaus an der Schmiede des Potenzials",
+        "protection": "Rüstung, Schilde und Umhänge seiner Stufe, über ihre letzte Stufe hinaus an der Schmiede des Potenzials"
+      },
+      "bossTrophies": "Trophäen der Bosse",
+      "head": {
+        "material": "Material",
+        "trophy": "Trophäe",
+        "from": "Woher",
+        "into": "Verwendet in"
+      },
+      "grown": "mit dem Pflug angebaut",
+      "made": "hergestellt",
+      "gathered": "in der offenen Welt gesammelt",
+      "fished": "an seinem Köder gefangen",
+      "caughtWith": "manchmal mit {fish} gefangen",
+      "more": "{count, plural, one {# weiterer Ort} other {# weitere Orte}}"
+    },
+    "meads": {
+      "meta": {
+        "title": "Met und Tränke: was jeder bewirkt und wie lange in Valheim — Seed Archive",
+        "description": "Jeder Met und jeder Trank nach Biom: was er beim Trinken bewirkt, wie lange er hält und was seine Metmischung am Kessel kostet."
+      },
+      "title": "Met",
+      "question": "Was bewirkt jeder Met?",
+      "lead": "Jeder Met und jeder Trank nach Biom: was er beim Trinken bewirkt und wie lange, dann was der Metkocher für seine Metmischung verlangt. Dieser Preis kauft mehrere Flaschen, nicht eine: der Fermentierer macht aus jeder Metmischung ein paar.",
+      "hives": "<b>Wie viele Bienenstöcke ein Fermentierer braucht:</b> eine Metmischung verlangt {honey} Honig, ein Bienenstock macht einen Honig alle {hive, plural, one {{hive} Sekunde} other {{hive} Sekunden}}, und ein Fermentierer verarbeitet eine Mischung alle {ferment, plural, one {{ferment} Sekunde} other {{ferment} Sekunden}}, also braucht ein Fermentierer, der nie stillsteht, {honey} × {hive} ÷ {ferment} = {hives, plural, one {# Bienenstock} other {# Bienenstöcke}}.",
+      "head": {
+        "mead": "Met",
+        "effect": "Was er bewirkt",
+        "base": "Metmischung, am Metkocher"
+      },
+      "lasts": "Hält {minutes} min",
+      "lastsSeconds": "Hält {seconds} s",
+      "makes": "{count, plural, one {Der Fermentierer macht #} other {Der Fermentierer macht #}}"
+    }
+  }
+}

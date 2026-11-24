@@ -1,6 +1,6 @@
 # Mistlands
 
-**How do I explore the Mistlands?** Land where the mist is thin, let the Dvergr kill your first Seekers, then comb the mist for mines, giants' remains and sap, and take the Queen's citadel last.
+**How do I explore the Mistlands?** Land where the mist is thin, let the Dvergr kill your first Seekers, then comb the mist for Infested Mines, giants' remains and sap; the Queen's citadel last.
 
 ## How far are the Mistlands from home?
 

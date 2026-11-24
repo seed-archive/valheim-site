@@ -8,32 +8,40 @@ import TableRow from "@mui/material/TableRow";
 
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { RowLink } from "@/components/catalog/RowLink";
-import { serverFormat } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type Values } from "@/lib/i18n/server";
 import taming from "@/lib/valheim/taming.json";
 
 // The taming guide's tables, from the Valheim generator's `taming.json`
 // (docs/taming.md): who can be tamed and on what, how they breed, and the
 // three mounts.
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.taming.${id}`, values);
+// The guide's words in the page's language, `pages.taming.<id>`.
+async function words() {
+  const intl = await serverIntl();
+  return (id: string, values?: Values) =>
+    intl.format(`pages.taming.${id}`, values);
+}
 
 type Creature = (typeof taming.creatures)[number];
 
 // Seconds as whole minutes, the way the guide counts.
 const minutes = (s: number) => Math.round(s / 60);
 
-function Name({ c }: { c: Creature }) {
+function Name({ c, name }: { c: Creature; name: GameName }) {
   return (
     <RowLink item={c.key} creature>
-      {c.name}
+      {name(c.name)}
     </RowLink>
   );
 }
 
 // Who can be tamed: what it eats (icons), whether it takes a saddle, whether it
 // follows commands, its health.
-export function TameTable() {
+export async function TameTable() {
+  const name = await gameNames();
+  const t = await words();
   return (
     <TableContainer sx={{ mb: 2 }}>
       <Table size="small">
@@ -49,7 +57,7 @@ export function TameTable() {
           {taming.creatures.map((c) => (
             <TableRow key={c.key}>
               <TableCell sx={{ whiteSpace: "nowrap" }}>
-                <Name c={c} />
+                <Name c={c} name={name} />
                 {c.commandable ? (
                   <Box sx={{ color: "text.secondary", typography: "caption" }}>
                     {t("follows")}
@@ -65,7 +73,7 @@ export function TameTable() {
                 {c.eats.map((e) => (
                   <Box key={e.key}>
                     <ItemIcon item={e.key}>
-                      <RowLink item={e.key}>{e.name}</RowLink>
+                      <RowLink item={e.key}>{name(e.name)}</RowLink>
                     </ItemIcon>
                   </Box>
                 ))}
@@ -73,7 +81,7 @@ export function TameTable() {
               <TableCell>
                 {c.saddle ? (
                   <ItemIcon item={c.saddle.key}>
-                    <RowLink item={c.saddle.key}>{c.saddle.name}</RowLink>
+                    <RowLink item={c.saddle.key}>{name(c.saddle.name)}</RowLink>
                   </ItemIcon>
                 ) : (
                   "—"
@@ -90,7 +98,9 @@ export function TameTable() {
 
 // How each breeds: love points, partner and crowding, pregnancy, and each step
 // from offspring to adult, with an egg's fire and roof.
-export function BreedTable() {
+export async function BreedTable() {
+  const name = await gameNames();
+  const t = await words();
   return (
     <TableContainer sx={{ mb: 2 }}>
       <Table size="small">
@@ -110,7 +120,7 @@ export function BreedTable() {
             return (
               <TableRow key={c.key}>
                 <TableCell sx={{ whiteSpace: "nowrap" }}>
-                  <Name c={c} />
+                  <Name c={c} name={name} />
                 </TableCell>
                 <TableCell>{b.love}</TableCell>
                 <TableCell>{t("metres", { m: b.partnerM })}</TableCell>
@@ -124,7 +134,7 @@ export function BreedTable() {
                   {b.grows.map((g) => (
                     <Box key={g.key}>
                       {t(g.kind === "egg" ? "egg" : "young", {
-                        name: g.name,
+                        name: name(g.name),
                         n: minutes(g.seconds),
                       })}
                       {g.fire ? ` ${t("fire")}` : ""}
@@ -144,7 +154,9 @@ export function BreedTable() {
 // The three mounts: run speed, health, the saddle's stamina and how long a
 // gallop and a swim last at the Ride skill's two ends (`Sadle`: the drain times
 // lerp(1, 0.5, skill)).
-export function MountTable() {
+export async function MountTable() {
+  const name = await gameNames();
+  const t = await words();
   const mounts = taming.creatures.filter((c) => c.saddle);
   return (
     <TableContainer sx={{ mb: 2 }}>
@@ -167,7 +179,7 @@ export function MountTable() {
             return (
               <TableRow key={c.key}>
                 <TableCell sx={{ whiteSpace: "nowrap" }}>
-                  <Name c={c} />
+                  <Name c={c} name={name} />
                 </TableCell>
                 <TableCell>
                   {t("speed", { v: Math.round(c.runSpeed * 10) / 10 })}

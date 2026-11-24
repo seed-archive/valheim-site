@@ -6,27 +6,31 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
-import Link from "next/link";
 import type { ReactNode } from "react";
+
+import Link from "@/components/LocaleLink";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { SectionLinks } from "@/components/catalog/SectionLinks";
 import { slug } from "@/lib/slug";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { RowLink } from "@/components/catalog/RowLink";
 import { MATERIAL_KINDS } from "@/lib/valheim/recipes";
 import { RUN_ORDER } from "@/lib/valheim/run-order";
 import { USED_IN } from "@/lib/valheim/used-in";
 import { SellNote } from "@/components/catalog/SellNote";
-import { serverFormat, serverMessages } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type ServerIntl, type Values } from "@/lib/i18n/server";
 import bosses from "@/lib/valheim/bosses.json";
 import materials from "@/lib/valheim/materials.json";
 import traders from "@/lib/valheim/traders.json";
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.materials.${id}`, values);
+// The page's words, `pages.materials.<id>`.
+const words = (intl: ServerIntl) => (id: string, values?: Values) =>
+  intl.format(`pages.materials.${id}`, values);
 
 // The biomes in the run's order; a material no source gives comes last.
 const BIOMES = RUN_ORDER;
@@ -59,7 +63,8 @@ const traderName = new Map(
 type Material = (typeof materials)[number];
 
 // Where a material comes from, as a list of short parts.
-function sources(m: Material) {
+function sources(m: Material, name: GameName, intl: ServerIntl) {
+  const t = words(intl);
   const parts: ReactNode[] = [];
   if (m.grown) {
     parts.push(t("grown"));
@@ -86,41 +91,32 @@ function sources(m: Material) {
   m.caughtWith.forEach((f) =>
     parts.push(
       <RowLink key={`with-${f.key}`} item={f.key} creature>
-        {t("caughtWith", { fish: f.name })}
+        {t("caughtWith", { fish: name(f.name) })}
       </RowLink>,
     ),
   );
   m.droppedBy.forEach((c) =>
     parts.push(
       <RowLink key={c.key} item={c.key} creature>
-        {c.name}
+        {name(c.name)}
       </RowLink>,
     ),
   );
   m.soldBy.forEach((s) =>
     parts.push(
       <Link key={s} href={`/catalog/traders#${s.toLowerCase()}`}>
-        {traderName.get(s) ?? s}
+        {name(traderName.get(s) ?? s)}
       </Link>,
     ),
   );
-  const places = m.places.filter(
-    (p) => `pages.map.places.${p}` in serverMessages,
-  );
+  const places = m.places.filter((p) => intl.has(`pages.map.places.${p}`));
   places
     .slice(0, PLACES_SHOWN)
-    .forEach((p) => parts.push(serverFormat(`pages.map.places.${p}`)));
+    .forEach((p) => parts.push(intl.format(`pages.map.places.${p}`)));
   if (places.length > PLACES_SHOWN) {
     parts.push(t("more", { count: places.length - PLACES_SHOWN }));
   }
-  return parts.length > 0
-    ? parts.map((p, i) => (
-        <span key={i}>
-          {i > 0 ? ", " : ""}
-          {p}
-        </span>
-      ))
-    : "—";
+  return parts.length > 0 ? intl.list(parts, "unit") : "—";
 }
 
 // The bosses, by prefab: a trophy one of them drops gives its power on the
@@ -136,22 +132,25 @@ const bossOf = (m: Material) =>
 
 // The section of the bosses' trophies, and a section's heading.
 const BOSSES_SECTION = "bosses";
-const heading = (biome: string) =>
+const heading = (biome: string, intl: ServerIntl) =>
   biome === BOSSES_SECTION
-    ? t("bossTrophies")
-    : serverFormat(`pages.crafting.biome.${biome}`);
+    ? words(intl)("bossTrophies")
+    : intl.format(`pages.crafting.biome.${biome}`);
 
 // The game's item types a page keeps to, shared with the links (`recipes.ts`).
 const KINDS = MATERIAL_KINDS;
 
 // A catalogue page of materials: those of `kind`, in biome sections, with
 // where each comes from and what it goes into; its words are `pages.<words>`.
-export function MaterialsView(props: {
+export async function MaterialsView(props: {
   kind: keyof typeof KINDS;
   words: string;
   crumb: string;
 }) {
-  const own = (id: string) => serverFormat(`pages.${props.words}.${id}`);
+  const name = await gameNames();
+  const intl = await serverIntl();
+  const t = words(intl);
+  const own = (id: string) => intl.format(`pages.${props.words}.${id}`);
   const all = materials.filter(KINDS[props.kind]);
   // On the trophies page the bosses' trophies come first, in a section of
   // their own (the owner, 2026-11-17), and leave their biomes.
@@ -175,9 +174,9 @@ export function MaterialsView(props: {
         <SectionLinks>
           <PageTrail
             steps={[
-              { name: serverFormat("archive.home"), href: "/" },
-              { name: serverFormat("archive.catalog"), href: "/catalog" },
-              { name: serverFormat(props.crumb) },
+              { name: intl.format("archive.home"), href: "/" },
+              { name: intl.format("archive.catalog"), href: "/catalog" },
+              { name: intl.format(props.crumb) },
             ]}
           />
           <Typography variant="h3" component="h1" gutterBottom>
@@ -192,7 +191,9 @@ export function MaterialsView(props: {
               .map((g, i) => (
                 <span key={g.biome}>
                   {i > 0 ? " · " : ""}
-                  <Link href={`#${anchor(g.biome)}`}>{heading(g.biome)}</Link>
+                  <Link href={`#${anchor(g.biome)}`}>
+                    {heading(g.biome, intl)}
+                  </Link>
                 </span>
               ))}
           </Typography>
@@ -206,7 +207,7 @@ export function MaterialsView(props: {
                   id={anchor(biome)}
                   sx={{ mt: 6, mb: 1 }}
                 >
-                  {heading(biome)}
+                  {heading(biome, intl)}
                 </Typography>
                 <TableContainer>
                   <Table size="small" sx={{ "& td": { verticalAlign: "top" } }}>
@@ -230,26 +231,32 @@ export function MaterialsView(props: {
                           <TableRow key={m.key} id={m.key.toLowerCase()}>
                             <TableCell sx={{ whiteSpace: "nowrap" }}>
                               <ItemIcon item={m.key}>
-                                {m.name}
+                                {name(m.name)}
                                 <SellNote item={m.key} />
                               </ItemIcon>
                             </TableCell>
-                            <TableCell>{sources(m)}</TableCell>
+                            <TableCell>{sources(m, name, intl)}</TableCell>
                             <TableCell>
-                              {bossOf(m) ? (
-                                <Link
-                                  href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
-                                >
-                                  {t("power")}
-                                </Link>
-                              ) : null}
-                              {bossOf(m) && uses.length > 0 ? ", " : ""}
-                              {uses.map((u, i) => (
-                                <span key={u.key}>
-                                  {i > 0 ? ", " : ""}
-                                  <RowLink item={u.key}>{u.name}</RowLink>
-                                </span>
-                              ))}
+                              {intl.list(
+                                [
+                                  ...(bossOf(m)
+                                    ? [
+                                        <Link
+                                          key="power"
+                                          href={`/catalog/bosses#${bossSlug(bossOf(m)!.name)}`}
+                                        >
+                                          {t("power")}
+                                        </Link>,
+                                      ]
+                                    : []),
+                                  ...uses.map((u) => (
+                                    <RowLink key={u.key} item={u.key}>
+                                      {name(u.name)}
+                                    </RowLink>
+                                  )),
+                                ],
+                                "unit",
+                              )}
                               {idolOf(m.key) ? (
                                 <Link href="/guides/forge-of-potential">
                                   {t(`idol.${idolOf(m.key)}`)}

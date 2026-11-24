@@ -6,7 +6,15 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { slug } from "@/lib/slug";
+
+// The sections' anchors, from their English titles, the same in every
+// language (D20: a link to a section holds across translations; other pages
+// and the guides link them).
+export const BUG_ANCHORS = {
+  crypts: "burial-chambers-and-sunken-crypts-differ-on-the-same-seed",
+  loot: "why-the-maps-loot-is-an-average",
+  protector: "the-helmet-of-the-protector-never-reaches-the-forge-of-potential",
+};
 
 // How many turns the game picks a location's rotation from, and the step
 // between them (ZoneSystem.PlaceLocations: Random.Range(0, 16) · 22.5°).
@@ -37,7 +45,12 @@ export function BugsPage() {
         <Typography sx={{ mb: 4 }}>
           <FormattedMessage id="pages.bugs.lead" values={{ b: bold }} />
         </Typography>
-        <Typography variant="h5" component="h2" id={slug(crypts)} gutterBottom>
+        <Typography
+          variant="h5"
+          component="h2"
+          id={BUG_ANCHORS.crypts}
+          gutterBottom
+        >
           {crypts}
         </Typography>
         <Typography sx={{ mb: 2 }}>
@@ -58,7 +71,7 @@ export function BugsPage() {
         <Typography
           variant="h5"
           component="h2"
-          id={slug(loot)}
+          id={BUG_ANCHORS.loot}
           gutterBottom
           sx={{ mt: 4 }}
         >
@@ -82,7 +95,7 @@ export function BugsPage() {
         <Typography
           variant="h5"
           component="h2"
-          id={slug(protector)}
+          id={BUG_ANCHORS.protector}
           gutterBottom
           sx={{ mt: 4 }}
         >

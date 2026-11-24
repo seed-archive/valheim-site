@@ -4,8 +4,8 @@ import type { PlaceGroup } from "@/lib/valheim/places";
 
 // What the Valheim generator's numbers mean. The .wasm returns only numbers
 // (the shared map interface); generator.json, which the generator writes,
-// names them in the same order: place kinds, sub-biomes, and the
-// measures of a seed.
+// names them in the same order: place kinds, camp rooms, and the measures of
+// a seed.
 
 // The game's wasm-bindgen glue, as an absolute URL for the map's workers.
 export function moduleUrl(): string {
@@ -61,26 +61,6 @@ export function decodeCamp(raw: Float32Array): CampRoom[] {
   }
   return out;
 }
-
-export type PointInfo = {
-  biome: number;
-  height: number;
-  // Wide enough for crypts and Bonemass, a narrow strip, or no swamp.
-  swamp: "wide" | "narrow" | null;
-  subBiomes: string[];
-};
-
-// `point`: biome, height above the sea, swamp (1, 0, −1), sub-biomes….
-export function decodePoint(raw: Float64Array): PointInfo {
-  return {
-    biome: raw[0],
-    height: raw[1],
-    swamp: raw[2] === 1 ? "wide" : raw[2] === 0 ? "narrow" : null,
-    subBiomes: Array.from(raw.slice(3), (i) => names.subBiomes[i]),
-  };
-}
-
-export const SUB_BIOMES: string[] = names.subBiomes;
 
 // One place measured from the start.
 export type Placed = {

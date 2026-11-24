@@ -4,7 +4,7 @@
 
 ## What counts as a speedrun?
 
-The seed has passed its tests; now the clock starts. A run counts every boss down to the last, Kall Fimbulbringer in the Deep North, so what the sections below say of skipping one is for a run off the board, against your own clock. Each runs on a random seed or a set one, and glitchless lets you outwit a boss but never clip through a wall. Few bosses force the order: an altar wants its offering and nothing else, but the withered bones lie behind the Elder's key, silver wants the iron pickaxe, and the north's key wants Moder's tears and Fader's embers, the gates the [Reverse run](/guides/reverse-run#what-does-each-boss-open-and-how-do-i-get-round-it) lists. Within them the route below is simply the shortest. The rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim), and the runner whose runs taught this guide stands in the [credits](/credits).
+The seed has passed its tests; now the clock starts. A run counts every boss down to the last, Kall Fimbulbringer in the Deep North, so what the sections below say of skipping one is for a run off the board, against your own clock. Each category runs on a random seed or a set one, and glitchless lets you outwit a boss but never clip through a wall. Few bosses force the order: an altar wants its offering and nothing else, but the withered bones lie behind the Elder's key, silver wants the iron pickaxe, and the north's key wants Moder's tears and Fader's embers, the gates the [Reverse run](/guides/reverse-run#what-does-each-boss-open-and-how-do-i-get-round-it) lists. Within them the route below is simply the shortest. The rules and today's times are on the [Valheim leaderboards of speedrun.com](https://www.speedrun.com/valheim), and the runner whose runs taught this guide stands in the [credits](/credits).
 
 ## What is the strip?
 
@@ -111,7 +111,7 @@ Chart: share
 
 At {{campReachClose}} m the cave is clear on {{baseNoCampClose}}% of seeds, and by {{campReachFar}} m on only {{baseNoCampFar}}%: expect a camp in the neighbourhood, and set the hall on the cave's other side from it.
 
-**The troll as miner and lumberjack.** Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself: {{baseTin}} deposits lie within {{baseTinReach}} m of the cave as a rule ({{baseTinLow}}–{{baseTinHigh}}). Do not plan on walking that troll to the birches: only {{birchGroup}} grow within {{baseBirchReach}} m of the cave as a rule ({{birchGroupLow}}–{{birchGroupHigh}} on the middle half of seeds). Fine wood wants another troll, one you meet by the birches themselves, and the start has the groves: {{startBirches}} birches within {{startWoodM}} m of the stones as a rule.
+**The troll as miner and lumberjack.** Lure the troll onto the copper veins and let its blows break them; the tin at the water's edge you most likely dig yourself: {{baseTin}} deposits lie within {{baseTinReach}} m of the cave as a rule ({{baseTinLow}}–{{baseTinHigh}}). Do not plan on walking that troll to the birches: the biggest group within {{baseBirchReach}} m of the cave holds only {{birchGroup}} birches as a rule ({{birchGroupLow}}–{{birchGroupHigh}} on the middle half of seeds). Fine wood wants another troll, one you meet by the birches themselves, and the start has the groves: {{startBirches}} birches within {{startWoodM}} m of the stones as a rule.
 
 | Copper veins round the base cave, within | As a rule | Middle half of seeds |
 |---|---|---|
@@ -167,11 +167,11 @@ She cannot be skipped even off the board: without her tears there is no artisan 
 
 ### Plains
 
-Yagluth takes {{goblinTotems}} Fuling totems, and you take them the cheapest way: raid the towers first, since an outpost always holds its totem, slip into the villages only for the rest, and pocket the black metal of the Fulings you cut down on the way. Outrun the Deathsquitos or shoot them; the Root Harnesk is a comfort you may not have.
+Yagluth takes {{yagluthTotemsNeed}} Fuling totems, and you take them the cheapest way: raid the towers first, since an outpost always holds its totem, slip into the villages only for the rest, and pocket the black metal of the Fulings you cut down on the way. Outrun the Deathsquitos or shoot them; the Root Harnesk is a comfort you may not have.
 
 Going on, the Plains cannot be skipped: black metal goes into the Galdr Table and the Queen's Sealbreaker, and without Yagluth's Torn Spirit you walk the Mistlands blind in the mist.
 
-His own Plains hold the {{yagluthTotemsNeed}} on {{yagluthTotems}}% of seeds, the fifth {{keyTotemsM}} m from his altar as a rule; on the rest the last totems wait in a second Plains.
+His own Plains hold the {{yagluthTotemsNeed}} on {{yagluthTotems}}% of seeds, the last {{keyTotemsM}} m from his altar as a rule; on the rest the last totems wait in a second Plains.
 
 ### Mistlands
 
@@ -197,7 +197,7 @@ The Ashlands cannot be skipped on the way to the Deep North: only the embers of 
 
 The Ashlands end your run far in the south, so portal to your copper base near the map's middle and sail north from there; how far beside the line Kall's gate stands is the run's last detour.
 
-The order is the Winding Tunnels first, for the key's mould, then the Mörkhalla near him. Then save the trips: break all {{kallMorkhallaNeed}} Malicious Ices in one sweep of the Mörkhalla, portal south, take the cores, and sail north once more.
+The order is the Winding Tunnels first, for the key's mould, then the Mörkhalla near him. Then save the trips: break all {{kallMorkhallaNeed}} Malicious Ices in one sweep of the Mörkhalla, portal south, break the invasions' cores for their blood, and sail north once more.
 
 Kall is the last boss, so the north is never skipped.
 

@@ -3,6 +3,9 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { SlotTile } from "@seed-archive/ui/slot-tile";
 
+import LocaleLink from "@/components/LocaleLink";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
 import { BASE_PATH } from "@/lib/site";
 import bosses from "@/lib/valheim/bosses.json";
 import crafting from "@/lib/valheim/crafting.json";
@@ -101,11 +104,7 @@ function Slot({ node }: { node: TreeNode }) {
   return (
     <Stack spacing={0.5} sx={{ alignItems: "center", width: NODE_WIDTH }}>
       {href ? (
-        <Box
-          component="a"
-          href={`${BASE_PATH}${href}`}
-          sx={{ color: "inherit" }}
-        >
+        <Box component={LocaleLink} href={href} sx={{ color: "inherit" }}>
           {name}
         </Box>
       ) : (
@@ -200,10 +199,19 @@ export function RecipeTree(props: { tree: TreeNode; title?: string }) {
   );
 }
 
-// Several trees in a row that wraps, as a figure of a guide.
-export function RecipeTrees(props: {
+// A tree with every name in the page's language.
+const named = (node: TreeNode, name: GameName): TreeNode => ({
+  ...node,
+  name: name(node.name),
+  parts: node.parts.map((part) => named(part, name)),
+});
+
+// Several trees in a row that wraps, as a figure of a guide; their names and
+// titles (a boss's name) in the page's language.
+export async function RecipeTrees(props: {
   trees: { tree: TreeNode; title?: string }[];
 }) {
+  const name = await gameNames();
   return (
     <Box
       sx={{
@@ -218,7 +226,11 @@ export function RecipeTrees(props: {
       }}
     >
       {props.trees.map((t) => (
-        <RecipeTree key={t.tree.key} tree={t.tree} title={t.title} />
+        <RecipeTree
+          key={t.tree.key}
+          tree={named(t.tree, name)}
+          title={t.title && name(t.title)}
+        />
       ))}
     </Box>
   );

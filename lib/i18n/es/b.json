@@ -1,0 +1,578 @@
+{
+  "pages": {
+    "creatures": {
+      "meta": {
+        "title": "Criaturas y lo que sueltan en Valheim — Seed Archive",
+        "description": "Cada criatura por bioma: su salud, qué le hace daño, qué suelta y para qué sirve cada botín, y dónde está en el mapa."
+      },
+      "title": "Criaturas",
+      "question": "¿Qué suelta cada criatura y para qué sirve?",
+      "lead": "Caza con una receta en mente: cada criatura por bioma, su salud, qué le hace daño, qué suelta y todas las recetas en las que entra cada botín.",
+      "health": "Salud: {n}",
+      "phases": "Salud: {first}, {second} y {third}, una fase tras otra; cómo pelea en cada una está en <link>Cómo matar a cada jefe</link>.",
+      "variant": {
+        "Bjorn_sleeping": "dormido",
+        "Draugr_Ranged": "arquero",
+        "DvergerAshlands": "Tierra de Ceniza",
+        "ElakingLantern": "con linterna",
+        "GoblinArcher": "arquero",
+        "Greydwarf_Frozen": "Norte profundo",
+        "Greydwarf_Shaman_Frozen": "Norte profundo",
+        "JotunWarriorDualWield": "dos armas",
+        "Morgen_NonSleeping": "despierto",
+        "Skeleton_DeepNorth": "Norte profundo",
+        "Skeleton_Meadows": "Praderas",
+        "Skeleton_Meadows_noarcher": "Praderas, guerrero",
+        "Skeleton_Mountains": "Montaña",
+        "Skeleton_Swamps": "Pantano"
+      },
+      "dropsNothing": "No suelta nada.",
+      "usedIn": {
+        "power": "Poder en las piedras de sacrificio",
+        "none": "—"
+      },
+      "damage": {
+        "blunt": "Contundente",
+        "slash": "Tajante",
+        "pierce": "Perforante",
+        "fire": "Fuego",
+        "frost": "Escarcha",
+        "lightning": "Rayo",
+        "poison": "Veneno",
+        "spirit": "Espíritu"
+      },
+      "head": {
+        "drop": "Botín",
+        "amount": "Cantidad",
+        "chance": "Probabilidad",
+        "usedIn": "Se usa en"
+      },
+      "group": {
+        "meadows": "Praderas",
+        "blackForest": "Bosque negro",
+        "swamp": "Pantano",
+        "mountain": "Montaña",
+        "plains": "Llanuras",
+        "mistlands": "Tierras Nubladas",
+        "ashlands": "Tierra de Ceniza",
+        "deepNorth": "Norte profundo",
+        "ocean": "Océano",
+        "places": "En mazmorras, campamentos y nidos"
+      },
+      "map": "Dónde está en tu semilla: sus generadores en el <link>Mapa de semillas de Valheim</link>.",
+      "livesIn": "Está en: {places}.",
+      "chops": "Sus golpes talan árboles hasta el nivel de herramienta {tier} ({damage} de daño Cortante).",
+      "mines": "Sus golpes rompen roca y mineral hasta el nivel de herramienta {tier} ({damage} de daño de Pico).",
+      "sets": {
+        "head": {
+          "set": "Conjunto de armadura",
+          "kills": "Bajas para hacerlo",
+          "top": "Bajas hasta su calidad máxima"
+        },
+        "kills": "{n, plural, other {unas #, por {drop}}}",
+        "top": "{n, plural, other {unas # hasta la calidad {quality}, por {drop}}}",
+        "note": "Bajas de esta criatura sin estrellas, de media, solo por su propio botín; una con estrellas suelta más, así que hacen falta menos.",
+        "runsOut": "No todas las bajas pueden salir de sus lugares: cada uno da como mucho {n}, una vez por mundo.",
+        "runsOutRooms": "No todas las bajas pueden salir de sus lugares: cada uno la da una vez por mundo."
+      },
+      "sources": {
+        "from": "Sale de: {parts}.",
+        "respawns": "{count, plural, one {generadores donde reaparece {minutes} minuto después de que desaparezca el último} other {generadores donde reaparece {minutes} minutos después de que desaparezca el último}}",
+        "once": "sus lugares, una vez por mundo",
+        "areas": "nidos que siguen generando mientras sigan en pie",
+        "open": "el campo abierto de {biomes}",
+        "openEvery": "el campo abierto de {biomes}, con un {chance} % de probabilidad cada {minutes, plural, one {minuto} other {# minutos}}",
+        "raids": "asaltos",
+        "fixed": "Sus lugares dan un número fijo, {n, plural, other {# por lugar}}, una vez por mundo; el resto sale de {rest}.",
+        "fixedRooms": "Sus lugares dan un número fijo, una vez por mundo; el resto sale de {rest}.",
+        "runsOut": "Se agota: sus lugares la dan una vez por mundo, y nada la trae de vuelta.",
+        "rare": "Sale solo de {rest}.",
+        "renews": "Vuelve.",
+        "nightOnly": "Solo aparece de noche y se va al amanecer.",
+        "nightMore": "De noche aparecen más.",
+        "starsAtNight": "De noche puede tener más estrellas.",
+        "starsFrom": "En el mundo abierto solo tiene estrellas a más de {m} m del centro del mundo.",
+        "raidList": "Asaltos: {raids}.",
+        "raid": "<link>{name}</link> ({span})",
+        "raidAfter": "tras {keys}",
+        "raidFromStart": "desde el principio",
+        "raidUntil": "hasta {keys}",
+        "raidForGood": "para siempre",
+        "raidStars": "con una o dos estrellas",
+        "raidMayStar": "a veces con estrellas"
+      },
+      "stars": {
+        "title": "Estrellas",
+        "text": "Una estrella significa más salud, golpes más duros y más botín. Cada estrella es una tirada, casi siempre al {chance} % (los nidos y algunos generadores varían), que se repite para la segunda; unas pocas criaturas solo tiran lejos del centro del mundo, y una aparición nocturna puede permitir más estrellas que las del día. Las criaturas de un asalto llegan sin estrellas, salvo las garrapatas y las escoltas de los guardias de Hildir. Los ajustes de tu mundo y algunas zonas de bioma cambian la probabilidad.",
+        "head": {
+          "stars": "Estrellas",
+          "health": "Salud",
+          "damage": "Daño",
+          "drops": "Botín",
+          "share": "De las que pueden tener dos"
+        },
+        "times": "×{n}",
+        "share": "{n} %",
+        "note": "Botín: tanto la probabilidad como la cantidad de cada botín."
+      },
+      "fish": {
+        "title": "Pesca",
+        "text": "Haldor vende la caña y el cebo simple; cualquier otro cebo es cebo simple y un trofeo, así que las criaturas que cazas deciden qué peces puedes pescar. Todo pez se convierte en Pescado crudo, y eso es lo que piden los platos.",
+        "head": {
+          "fish": "Pez",
+          "where": "Dónde",
+          "bait": "Cebo",
+          "depth": "Nada a",
+          "extras": "A veces trae"
+        },
+        "where": "{biomes}, en agua de {water} m de profundidad o más",
+        "depth": "{min}–{max} m",
+        "deeper": "{min} m o más hondo"
+      },
+      "notes": {
+        "Troll": "Una cueva del trol suele tener un trol dentro y a veces otro junto a la entrada; ninguno vuelve una vez muerto. Uno de cada {weaponSets} troles lleva un tronco: llega más lejos pero nunca lanza nada, mientras que un trol desarmado da puñetazos, golpea el suelo y arroja rocas desde lejos; por lo demás son el mismo trol, con la misma salud y el mismo botín. Mata a un trol y al Sabio, y los troles pueden asaltar tu base. El daño Perforante es lo que más les duele, así que lleva una lanza o flechas. Rompen muros, así que ninguna trampa retiene a uno, pero llévalo entre árboles y cobre y talará y minará por ti.",
+        "Bjorn": "Encierra a un oso entre muros en terreno llano con una fogata debajo y arderá; sigue reparando la fogata y los muros mientras tanto.",
+        "GoblinBruteBros": "Cuando cae Thungr, Zil se levanta de él y sigue luchando; Zil lleva el Cofre de bronce de Hildir.",
+        "GoblinShaman_Hildir": "Ningún generador lo crea: se levanta cuando cae Thungr, en la Torre sellada de Hildir.",
+        "Serpent": "Un monstruo marino: caza barcos en el océano profundo.",
+        "BonemawSerpent": "Un monstruo marino: caza barcos en las aguas de la Tierra de Ceniza."
+      }
+    },
+    "bosses": {
+      "meta": {
+        "title": "Todos los jefes y cómo matar a cada uno en Valheim — Seed Archive",
+        "description": "Dos vías para vencer a cada jefe: el arma que más fuerte le pega de lo que puedes fabricar para entonces, y la otra vía con la que ganan los jugadores. Con su salud, sus debilidades y sus ataques."
+      },
+      "title": "Cómo matar a cada jefe",
+      "question": "¿Cómo mato a cada jefe?",
+      "lead": "Dos vías para cada uno, nunca solo una: el arma que más daño le hace de lo que puedes fabricar para entonces, y la forma en que los jugadores ganan sin una pelea directa, con fuego donde el jefe arde. Debajo de cada uno, su salud, sus debilidades, cuánto tarda una fogata en quemarlo y lo que hacen sus ataques; Kall, fase a fase.",
+      "head": {
+        "boss": "Jefe",
+        "biome": "Bioma",
+        "altars": "Altares en un mundo",
+        "health": "Salud",
+        "weak": "Débil",
+        "resists": "Resiste",
+        "immune": "Inmune",
+        "best": "Mejor arma"
+      },
+      "phase": "Fase {n}",
+      "fact": {
+        "health": "Salud",
+        "weak": "Débil a",
+        "resists": "Resiste",
+        "immune": "Inmune a",
+        "attacks": "Sus ataques hacen",
+        "fire": "En una fogata"
+      },
+      "fire": {
+        "time": "solo con una fogata, cae en unos {minutes} min, si no sale de las llamas",
+        "never": "una fogata nunca acaba con él: se cura más rápido de lo que quema el fuego, o no recibe daño de fuego"
+      },
+      "aspects": "En esta fase no recibe daño tuyo. Trae de vuelta {count, plural, one {al # jefe anterior} other {a los # jefes anteriores}} como aspectos, como mucho {atOnce} a la vez, primero el de Eikthyr; la muerte de cada aspecto lo golpea con {blast}, así que todos deben morir. La salud de un aspecto es la suya propia (la de {health}), pero cada uno recibe el daño igual que su jefe, y el daño Contundente nunca hace menos del daño completo a ninguno: qué le hace daño a cada uno está en <link>la tabla de arriba</link>.",
+      "breaks": "Talan árboles y rompen roca",
+      "direct": {
+        "title": "La pelea directa",
+        "text": "Lo que puedes fabricar hasta {biome} que más fuerte le pega, un golpe contado tras sus debilidades y resistencias; un arco con la mejor flecha de ese momento, una ballesta con el mejor virote:"
+      },
+      "hit": "{hit} por golpe",
+      "power": {
+        "title": "El poder del trofeo",
+        "how": "Cuelga el trofeo en su piedra de las piedras de sacrificio: cuando invocas el poder, dura {minutes} min, y puedes volver a invocarlo tras {cooldown} min.",
+        "sail": "El viento sigue el reloj del mundo, no tu rumbo: mantiene una dirección principal unos {windHoldMin} min y es tan probable que sople por detrás como por delante. La vela muere cuando el viento llega a menos de {sailDeadDeg}° de la proa por cualquier banda, un {sailDeadShare} % de todos los rumbos, y entonces remas. Su poder pone el viento justo en popa sea cual sea tu rumbo, así que invócalo cuando el viento sople por delante del través; con el viento ya por detrás o de través no te aporta nada.",
+        "sailMore": "De dónde sopla el viento, hora a hora durante todo el año, está en la herramienta <link>Viento</link>.",
+        "none": "El juego no da ningún poder por este trofeo."
+      },
+      "tip": {
+        "Dragon": "Pelea en el aire y solo aterriza de vez en cuando, así que lleva un arco. La tabla pone primero las flechas ponzoñosas porque cuenta todo el daño de un golpe, pero el veneno entra poco a poco durante unos segundos; el fuego, al que es débil, llega al instante, así que las flechas ígneas sirven igual."
+      },
+      "other": {
+        "title": "La otra vía",
+        "Eikthyr": "Rodea las grandes rocas que hay alrededor de su altar y dispara desde detrás de ellas: las rocas frenan su embestida, aunque no su pisotón.",
+        "gd_king": "Rodea su plataforma y los huecos entre los pilares con fogatas: el fuego le hace el doble de daño, y arde al pasar sobre ellas mientras disparas desde detrás de un pilar. O cava bajo el altar: su plataforma es un techo que no puede romper, con sitio para un banco de trabajo y un portal.",
+        "Bonemass": "Dispárale desde arriba, desde una torre de piedra o un árbol alto, con flechas gélidas; antes allana el terreno alrededor del altar con una azada, para poder moverte y que las sanguijuelas se mantengan lejos.",
+        "Dragon": "Cava una zanja pegada al costado de su plataforma de invocación, que no se puede romper, y quédate dentro: cuando aterriza, su aliento y sus garras no te alcanzan, y disparas hacia arriba. Lleva muchas flechas.",
+        "GoblinKing": "Los speedrunners lo rodean: quédate cerca, sigue corriendo hacia su espalda desde el primer golpe hasta el último, y gira demasiado despacio para alcanzarte. Si prefieres disparar, mantén un pilar de piedra entre tú y él y asómate para disparar: romper su línea de visión detiene su rayo.",
+        "SeekerQueen": "El vestíbulo de su entrada es seguro: allí no te ataca y no aparece nada, así que monta tu descanso y tus reparaciones justo fuera.",
+        "Fader": "Invoca a dos troles con el Trollstav y mantente fuera de su alcance: pelea con ellos y te deja en paz mientras no le golpees. O cava dos fosos uno junto a otro y deja como muro el terreno entre ellos, nunca uno construido: rompe piezas, no tierra, y cuando no puede alcanzarte va a por una pieza. Rodea su foso con empalizadas de madera de ceniza: le hacen daño, pero cada una se desgasta tras unos golpes y se rompe cuando él choca con ella, así que sigue reparándolas desde tu lado. Junto a su altar no se puede cavar nada: primero llévalo fuera de su arena, hasta los fosos.",
+        "FrozenKing": "Pelea cada fase con lo que la deja abierta. La primera y la tercera reciben la mitad del daño Perforante, de Fuego, de Escarcha y de Rayo, así que arcos, lanzas y báculos hacen la mitad: lleva el arma Contundente o Tajante más pesada que tengas, y no esperes tambaleo ni ninguna apertura en ninguna de las dos. En la segunda, déjalo en paz y mata a los aspectos según llegan: el daño Contundente hace daño completo a todos, los del Sabio y de Moder arden, y los de Tuétano y Yagluth apenas notan el daño Perforante."
+      }
+    },
+    "crafting": {
+      "casts": {
+        "eitr": "Cuesta {n} de Eitr por lanzamiento",
+        "eitrHeld": "Cuesta {n} de Eitr por disparo, manteniéndolo pulsado para lanzar un chorro",
+        "health": "Consume el {n} % de tu salud actual por lanzamiento, menos a medida que sube la habilidad",
+        "projectiles": "{n, plural, one {Dispara # proyectil a la vez} other {Dispara # proyectiles a la vez}}",
+        "blast": "El disparo estalla donde cae y alcanza a todo lo que hay a menos de {r} m",
+        "splinters": "El disparo estalla en {n, plural, one {# fragmento} other {# fragmentos}} donde cae; cada uno lleva el daño del báculo",
+        "splintersBounce": "El disparo estalla en {n, plural, one {# fragmento} other {# fragmentos}} donde cae; cada uno lleva el daño del báculo y rebota hasta {bounces, plural, one {# vez} other {# veces}}",
+        "returns": "El orbe atraviesa todo lo que encuentra y vuelve a ti; a la vuelta hace {damage} a cada enemigo por el que pasa",
+        "returnsEitr": "A la vuelta te da a ti y a cada aliado por el que pasa {n} de Eitr",
+        "oneOf": "Cada lanzamiento invoca uno de estos, al azar:",
+        "summons": "{blows, select, yes {Invoca: {name} ({health} de salud; golpea hasta {damage})} other {Invoca: {name} ({health} de salud)}}",
+        "lifetime": "durante {s} s",
+        "mostQuality": "tantos a la vez como el nivel del báculo",
+        "mostSkill": "de {from} a {to} a la vez a medida que sube la habilidad",
+        "status": "Te da a ti y a los aliados a menos de {radius} m: {name}",
+        "seconds": "durante {s} s",
+        "shield": "absorbe {absorb} de daño, {per} más por nivel de habilidad"
+      },
+      "colours": "Dentro de un bioma, el verde es lo mejor y el rojo lo peor: de cada tipo de daño entre las armas, de armadura entre las armaduras, de bloqueo entre los escudos. El verde marca también la mejor regeneración de Eitr y cualquier armadura que te haga más rápido; el rojo, una penalización de velocidad mayor de lo normal para su tipo.",
+      "nothing": "No hay coincidencias.",
+      "copied": "Enlace copiado",
+      "biome": {
+        "meadows": "Praderas",
+        "blackForest": "Bosque negro",
+        "swamp": "Pantano",
+        "mountain": "Montaña",
+        "plains": "Llanuras",
+        "mistlands": "Tierras Nubladas",
+        "ashlands": "Tierra de Ceniza",
+        "deepNorth": "Norte profundo",
+        "ocean": "Océano",
+        "elsewhere": "En cualquier momento"
+      },
+      "theBiome": {
+        "meadows": "las Praderas",
+        "blackForest": "el Bosque negro",
+        "swamp": "el Pantano",
+        "mountain": "la Montaña",
+        "plains": "las Llanuras",
+        "mistlands": "las Tierras Nubladas",
+        "ashlands": "la Tierra de Ceniza",
+        "deepNorth": "el Norte profundo",
+        "ocean": "el Océano"
+      },
+      "group": {
+        "weapons": "Armas",
+        "shields": "Escudos",
+        "armour": "Armaduras",
+        "ammo": "Flechas, virotes y proyectiles",
+        "tools": "Herramientas",
+        "consumables": "Comida, hidromieles y pociones",
+        "materials": "Materiales",
+        "other": "Otros"
+      },
+      "head": {
+        "item": "Objeto",
+        "stats": "Estadísticas",
+        "station": "Estación",
+        "materials": "Materiales",
+        "upgrades": "Cada mejora"
+      },
+      "upgrade": {
+        "each": "Cada paso: {gains}",
+        "step": "Calidad {quality}, nivel {level}:",
+        "armor": "Armadura +{value}",
+        "durability": "Resistencia +{value}",
+        "block": "Poder de bloqueo +{value}",
+        "deflection": "Fuerza de esquiva +{value}",
+        "damage": "{type} +{value}"
+      },
+      "over": {
+        "name": "Sobre {name}: {parts}",
+        "tier": "nivel {value}",
+        "damage": "{type} {value}"
+      },
+      "search": "Buscar por nombre, material o estación",
+      "kind": {
+        "axe": "Hacha",
+        "axe.2h": "Hacha a dos manos",
+        "bloodStaff.2h": "Báculo de magia de sangre",
+        "bow": "Arco",
+        "cape": "Capa",
+        "chest": "Torso",
+        "club": "Garrote",
+        "club.2h": "Mazo",
+        "crossbow": "Ballesta",
+        "elementalStaff.2h": "Báculo de magia elemental",
+        "farming.2h": "Herramienta de cultivo",
+        "fist.2h": "Nudillos",
+        "helmet": "Casco",
+        "knife": "Cuchillo",
+        "knife.2h": "Cuchillos dobles",
+        "legs": "Piernas",
+        "pickaxe.2h": "Pico",
+        "polearm.2h": "Atgeir",
+        "shield": "Escudo",
+        "spear": "Lanza",
+        "sword": "Espada",
+        "sword.2h": "Espada a dos manos",
+        "tool.farming": "Herramienta de cultivo",
+        "tool.other": "Herramienta de construcción",
+        "torch": "Antorcha",
+        "trinket": "Abalorio",
+        "utility": "Objeto útil",
+        "bait": "Cebo",
+        "thrown": "Arrojadizo",
+        "drinking": "Recipiente para beber",
+        "hook": "Gancho de agarre"
+      },
+      "damage": {
+        "damage": "Daño",
+        "blunt": "Contundente",
+        "slash": "Tajante",
+        "pierce": "Perforante",
+        "chop": "Cortante",
+        "pickaxe": "Pico",
+        "fire": "Fuego",
+        "frost": "Escarcha",
+        "lightning": "Rayo",
+        "poison": "Veneno",
+        "spirit": "Espíritu"
+      },
+      "stat": {
+        "armor": "Armadura {value}",
+        "block": "Poder de bloqueo {value}",
+        "tier": "Nivel {value}",
+        "durability": "Resistencia {value}",
+        "movement": "Velocidad de movimiento {value} %",
+        "eitrRegen": "Regeneración de Eitr {value} %",
+        "weight": "Peso {value}",
+        "quality": "Calidad hasta {value}",
+        "set": "Conjunto de {value}"
+      },
+      "stationLevel": "{station}, nivel {level}",
+      "noStation": "A mano",
+      "season": "Solo {from}–{to}"
+    },
+    "effects": {
+      "runStamina": "Vigor al correr {v} %",
+      "jumpStamina": "Vigor al saltar {v} %",
+      "swimStamina": "Vigor al nadar {v} %",
+      "sneakStamina": "Vigor al moverte con sigilo {v} %",
+      "attackStamina": "Vigor al atacar {v} %",
+      "blockStamina": "Vigor al bloquear {v} %",
+      "dodgeStamina": "Vigor al esquivar {v} %",
+      "blockStaminaFlat": "Vigor por cada bloqueo {v}",
+      "stagger": "Resistencia al tambaleo {v} %",
+      "speed": "Velocidad de movimiento {v} %",
+      "jump": "Altura del salto {v} %",
+      "healthRegen": "Regeneración de salud {v} %",
+      "staminaRegen": "Regeneración de vigor {v} %",
+      "eitrRegen": "Regeneración de Eitr {v} %",
+      "healthOverTime": "Cura {v} de salud en {seconds} s",
+      "staminaOverTime": "Recupera {v} de vigor en {seconds} s",
+      "eitrOverTime": "Recupera {v} de Eitr en {seconds} s",
+      "carry": "Carga máxima {v}",
+      "tailwind": "El viento siempre detrás de la vela",
+      "taming": "Los animales se doman más rápido",
+      "damage": "Daño ({types}) {v} %",
+      "damageAll": "Todo el daño {v} %",
+      "skill": "Habilidad {skill} {v}",
+      "resist": "Daño recibido ({types}) {v} %",
+      "armor": "Armadura {v}",
+      "healthUpFront": "Cura {v} de salud al instante",
+      "staminaUpFront": "Recupera {v} de vigor al instante",
+      "eitrUpFront": "Recupera {v} de Eitr al instante",
+      "fallDamage": "Daño por caída {v} %",
+      "swimSpeed": "Velocidad al nadar {v} %",
+      "slowFall": "No cae más rápido de {v} m/s",
+      "shield": "Un escudo que absorbe {v} de daño",
+      "missingHealth": "Daño +{v} % por cada punto de salud que has perdido",
+      "when": {
+        "equip": "Mientras lo llevas",
+        "set": "Con el conjunto completo puesto",
+        "adrenaline": "Con la adrenalina al máximo, durante {seconds} s",
+        "adrenalineNow": "Con la adrenalina al máximo",
+        "hit": "Un golpe aplica el estado «{name}» al objetivo",
+        "hitChance": "Un golpe aplica el estado «{name}» al objetivo, el {chance} % de las veces",
+        "attack": "Sus ataques"
+      },
+      "skillName": {
+        "swords": "Espadas",
+        "knives": "Cuchillos",
+        "clubs": "Garrotes",
+        "polearms": "Piquetes",
+        "spears": "Lanzas",
+        "blocking": "Bloqueo",
+        "axes": "Hachas",
+        "bows": "Arcos",
+        "elementalMagic": "Magia elemental",
+        "bloodMagic": "Magia de sangre",
+        "unarmed": "Desarmado",
+        "pickaxes": "Picos",
+        "woodCutting": "Tala",
+        "crossbows": "Ballestas",
+        "jump": "Salto",
+        "sneak": "Sigilo",
+        "run": "Carrera",
+        "swim": "Natación",
+        "fishing": "Pesca",
+        "cooking": "Cocina",
+        "farming": "Cultivo",
+        "crafting": "Elaboración",
+        "ride": "Cabalgar",
+        "all": "Todas"
+      }
+    },
+    "damage": {
+      "meta": {
+        "title": "Tipos de daño: qué le hace daño a cada criatura en Valheim — Seed Archive",
+        "description": "Las debilidades y resistencias de cada criatura y jefe a cada tipo de daño, el tipo de arma que llevar y el daño que te devuelve."
+      },
+      "title": "Tipos de daño",
+      "question": "¿Qué le hace daño a cada criatura?",
+      "lead": "Cada criatura y jefe por bioma: los tipos de daño que recibe con más o menos fuerza, para que sepas qué tipo de arma llevar, y el daño que te devuelve, para que sepas qué resistencia ponerte.",
+      "hurts": {
+        "title": "Qué le hace daño a cada criatura",
+        "lead": "Un punto débil multiplica el golpe; una resistencia lo divide. Cada tipo de arma hace sobre todo un tipo de daño:",
+        "kinds": "<b>{type}:</b> {kinds}.",
+        "fire": "El Fuego es la debilidad que más a menudo encuentras: en el Bosque negro y en la Montaña la mayoría de las criaturas lo reciben con más fuerza, y por eso los speedrunners las queman con fogatas. Deja la costumbre al llegar a las Tierras Nubladas: allí y en la Tierra de Ceniza ninguna criatura es débil al fuego, y en la Tierra de Ceniza la mayoría lo resiste."
+      },
+      "deals": {
+        "title": "Con qué golpea cada criatura",
+        "lead": "El golpe más fuerte de cada tipo de daño que puede hacer una criatura, antes de tu armadura: ponte la resistencia a su tipo.",
+        "pierce": "El daño Perforante es con lo que te golpean los jefes, todos menos Tuétano y Yagluth, y el muersquito de las Llanuras no pica con otra cosa. La Coraza de raíces es la única pieza de torso que reduce a la mitad el daño Perforante, así que póntela contra ellos; eso sí, recibe el fuego con más fuerza, así que déjala en casa para Yagluth. Todas las piezas de armadura están en <link>Armaduras</link>."
+      },
+      "creature": "Criatura",
+      "best": "Golpéala con",
+      "any": "cualquier arma",
+      "none": "ningún arma le hace daño",
+      "immune": "inmune"
+    },
+    "weapons": {
+      "meta": {
+        "title": "Armas: cuál usar, bioma a bioma, en Valheim — Seed Archive",
+        "description": "Una espada cuando atacas, una maza cuando aguantas la posición, un atgeir contra multitudes: cada arma cuerpo a cuerpo por bioma, con su daño, su estación y sus materiales."
+      },
+      "title": "Armas",
+      "question": "¿Qué arma usar?",
+      "lead": "Una espada cuando atacas, una maza cuando aguantas la posición, y otra vez la maza en los ajustes más duros, donde es la favorita; un atgeir contra multitudes, un cuchillo desde las sombras, los nudillos si son tu estilo. Todas por bioma, con su daño, su estación y sus materiales.",
+      "damageLink": "Antes de elegir, mira qué tipo de daño le duele más a tu próximo enemigo, y con qué te devuelve el golpe, en <link>Tipos de daño</link>.",
+      "staffsLink": "Lo que lanza cada báculo está en <link>Báculos</link>."
+    },
+    "staffs": {
+      "meta": {
+        "title": "Báculos: qué lanza y cuánto cuesta cada uno en Valheim — Seed Archive",
+        "description": "Cada báculo de magia elemental y de sangre por bioma: qué lanza o invoca, cuánto Eitr y salud cuesta un lanzamiento, y sus materiales."
+      },
+      "title": "Báculos",
+      "question": "¿Qué lanza cada báculo?",
+      "lead": "Los báculos elementales hacen el daño ellos mismos y solo cuestan Eitr: una bola de fuego que estalla donde cae, un chorro de escarcha, una ráfaga de rayos, raíces que brotan y golpean. Los báculos de magia de sangre ponen algo entre tú y el enemigo, y se llevan una parte de tu salud junto con el Eitr: levantan esqueletos, un trol o espíritus de animales, o te ponen un escudo a ti y a tus aliados; solo la Púa de eco golpea por sí misma y no pide salud. Un báculo de invocación es el que más vale mejorar primero, ya que cada nivel permite que haya una invocación más en pie. Cada báculo por bioma, con lo que hace y cuesta un lanzamiento.",
+      "eitr": "No tienes nada de Eitr hasta que comes para tenerlo, y un báculo sin Eitr no lanza nada: los platos que lo dan están en <link>Comida y banquetes</link>."
+    },
+    "armour": {
+      "meta": {
+        "title": "Armaduras, escudos y capas: cuáles llevar en Valheim — Seed Archive",
+        "description": "Cada casco, pieza de torso y de piernas, capa, escudo y abalorio por bioma: su armadura, bloqueo y efectos, y qué piezas te frenan o te hacen más rápido."
+      },
+      "title": "Armaduras",
+      "question": "¿Qué armadura llevar?",
+      "lead": "Cada casco, pieza de torso, pieza de piernas, capa, escudo y abalorio por bioma, con su armadura, su bloqueo y sus efectos. Fíjate en la velocidad además de en la armadura: algunas piezas te frenan más de lo normal para su tipo, y unas pocas te hacen más rápido."
+    },
+    "bows": {
+      "meta": {
+        "title": "Arcos, ballestas y flechas: cuáles elegir en Valheim — Seed Archive",
+        "description": "La flecha, no el arco, decide el tipo de daño. Cada arco, ballesta, flecha, virote y bomba por bioma, con su daño, su estación y sus materiales."
+      },
+      "title": "Arcos, ballestas y flechas",
+      "question": "¿Qué arco y qué flechas?",
+      "lead": "La flecha, no el arco, decide el tipo de daño: el daño de un arco se suma al de su flecha, así que flechas ígneas para lo que arde, gélidas para lo que se congela. Cada arco, ballesta, flecha, virote y bomba por bioma."
+    },
+    "trophies": {
+      "meta": {
+        "title": "Trofeos: quién suelta cada uno y para qué sirve en Valheim — Seed Archive",
+        "description": "Cada trofeo por bioma: qué criatura lo suelta y para qué sirve: el poder de un jefe en el altar del inicio, una receta, un cebo."
+      },
+      "title": "Trofeos",
+      "question": "¿Para qué sirve cada trofeo?",
+      "answer": "El trofeo de un jefe vuelve a las piedras de sacrificio: colgado allí en su piedra, te da el poder de ese jefe. Cada trofeo está bajo el primer bioma en el que vive su criatura, con quién lo suelta y en qué se usa."
+    },
+    "toolsCatalog": {
+      "meta": {
+        "title": "Picos y herramientas en Valheim — Seed Archive",
+        "description": "Cada pico, herramienta de construcción y de cultivo, antorcha, silla de montar y cebo por bioma: qué hace, la estación que necesita y sus materiales."
+      },
+      "title": "Picos y herramientas",
+      "question": "¿Qué herramientas fabricar?",
+      "lead": "Picos, el martillo, la azada y el cultivador, antorchas y linternas, sillas de montar y cebos, por bioma."
+    },
+    "forge": {
+      "return": {
+        "level": "Nivel",
+        "multiplier": "Paso",
+        "perLevel": "Por nivel",
+        "craft": "1 (fabricación)",
+        "total": "Total invertido",
+        "idolOnly": "Desde el nivel {from}, en la Forja del Potencial: un ídolo por intento, sin material. Los números grises son lo que el banco de trabajo pediría por el nivel; nunca los pagas, pero una destrucción se calcula con ellos.",
+        "breaks": "Si se destruye",
+        "breaksAt": "en el nivel {level}",
+        "sum": "({first} + {at}) × {pct} % →",
+        "note": "Así, destruirse en {top} devuelve más que destruirse en {max}, aunque el objeto no se llevó más material."
+      }
+    },
+    "forgeName": {
+      "meta": {
+        "title": "La Forja del Potencial sin destruir tu objeto: elige un nombre en Valheim — Seed Archive",
+        "description": "Elige un ídolo, un objeto y un paso en la Forja del Potencial, y obtén los nombres de personaje cuyo primer intento lo mejora en vez de destruirlo."
+      },
+      "title": "Nidavellir",
+      "subtitle": "En la mitología nórdica, Nidavellir es el hogar de los enanos, donde los hermanos Sindri y Brokkr forjaron Mjölnir, el martillo de Thor. Aquí es el lugar donde encontrar el nombre que forja tu objeto sin destruirlo.",
+      "question": "¿Cómo mejoro un objeto en la Forja del Potencial sin que se destruya?",
+      "again": "Un nombre no es un amuleto de la suerte: para una segunda copia del mismo objeto, cada nivel es su segundo intento, y puede destruirse donde la primera copia subió. Cada copia necesita personajes nuevos propios.",
+      "answer": "Dale el nombre correcto al personaje que pulsa el botón. El primer intento de la forja con un objeto en un nivel lo decide solo el nombre del personaje, así que elige el ídolo, el objeto y el paso, y toma un nombre cuyo primer intento lo mejore.",
+      "guide": "Qué va a la forja, qué cuesta un intento y por qué lo decide un nombre está en la guía <link>Forja del Potencial</link>.",
+      "idol": "Ídolo",
+      "item": "Objeto",
+      "step": "Paso",
+      "stepLevel": "{from} → {to}",
+      "find": "Buscar nombres",
+      "finding": "Buscando…",
+      "ingredients": "Ver ingredientes",
+      "names": "Nombres cuyo primer intento lo mejora al nivel {to}:",
+      "how": {
+        "title": "Cómo mejorar un objeto con un nombre",
+        "lead": "Un paso, un personaje nuevo con un nombre de los de arriba, escrito exactamente igual. Toma el objeto, su ídolo, los ingredientes de la receta y ropa de abrigo de un cofre de tu base, pasa junto a la estación que fabrica el objeto y pulsa una vez el botón de la forja. Un nombre vale para el primer intento de cada objeto en cada nivel; borra el personaje y créalo de nuevo, y sus intentos empiezan otra vez.",
+        "why": "Por qué los ingredientes: la forja solo muestra las recetas que conoce un personaje, y uno nuevo aprende una receta al llevar todos sus ingredientes y estar junto a su estación.",
+        "steps": "Cada paso, de las estaciones al nombre, está en la sección de la guía <steps>¿Cómo mejoro un objeto sin que se destruya?</steps>, y los ingredientes que pide la receta de cada objeto, los que van en el cofre, están en el <catalog>Catálogo</catalog>."
+      }
+    },
+    "materials": {
+      "meta": {
+        "title": "Materiales: dónde encontrar cada uno y qué se fabrica con él en Valheim — Seed Archive",
+        "description": "Cada material de fabricación por bioma: dónde encontrarlo, y todo aquello en lo que se usa, sea cual sea el bioma."
+      },
+      "title": "Materiales",
+      "question": "¿De dónde sale y para qué sirve?",
+      "answer": "Cada material de fabricación bajo el primer bioma que lo da: dónde lo encuentras, y todas las recetas en las que entra en cualquier bioma, para que sepas qué guardar antes de que un bioma posterior te lo pida. El equipo, la comida, los hidromieles y los trofeos tienen sus propias páginas.",
+      "power": "Poder en las piedras de sacrificio",
+      "idol": {
+        "battle": "Armas y herramientas de su nivel, más allá de su último nivel en la Forja del Potencial",
+        "protection": "Armaduras, escudos y capas de su nivel, más allá de su último nivel en la Forja del Potencial"
+      },
+      "bossTrophies": "Trofeos de los jefes",
+      "head": {
+        "material": "Material",
+        "trophy": "Trofeo",
+        "from": "De dónde sale",
+        "into": "Se usa en"
+      },
+      "grown": "se cultiva con el cultivador",
+      "made": "se fabrica",
+      "gathered": "se recoge a campo abierto",
+      "fished": "se pesca con su cebo",
+      "caughtWith": "a veces sale al pescar {fish}",
+      "more": "{count, plural, one {# lugar más} other {# lugares más}}"
+    },
+    "meads": {
+      "meta": {
+        "title": "Hidromieles y pociones: qué hace cada uno y cuánto dura en Valheim — Seed Archive",
+        "description": "Cada hidromiel y poción por bioma: qué hace al beberlo, cuánto dura y qué pide su base en el caldero."
+      },
+      "title": "Hidromieles",
+      "question": "¿Qué hace cada hidromiel?",
+      "lead": "Cada hidromiel y poción por bioma: qué hace al beberlo y durante cuánto tiempo, y luego qué pide el Caldero de aguamiel para su base. Ese coste da varias botellas, no una: el fermentador convierte cada base en unas cuantas.",
+      "hives": "<b>Cuántas colmenas necesita un fermentador:</b> una base de hidromiel pide {honey} de miel, una colmena hace una miel cada {hive, plural, one {{hive} segundo} other {{hive} segundos}}, y un fermentador transforma una base cada {ferment, plural, one {{ferment} segundo} other {{ferment} segundos}}, así que un fermentador que nunca está parado necesita {honey} × {hive} ÷ {ferment} = {hives, plural, one {# colmena} other {# colmenas}}.",
+      "head": {
+        "mead": "Hidromiel",
+        "effect": "Qué hace",
+        "base": "Base, en el Caldero de aguamiel"
+      },
+      "lasts": "Dura {minutes} min",
+      "lastsSeconds": "Dura {seconds} s",
+      "makes": "{count, plural, other {El fermentador hace #}}"
+    }
+  }
+}

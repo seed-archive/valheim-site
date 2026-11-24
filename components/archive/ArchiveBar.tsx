@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
 import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -20,7 +20,11 @@ import Typography from "@mui/material/Typography";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { useAuth } from "@seed-archive/ui/auth";
+import { LanguageSwitcher } from "@seed-archive/ui/language-switcher";
+import Link from "@/components/LocaleLink";
 import { CATALOG_GROUPS, GUIDE_GROUPS, type Entry } from "@/lib/guides";
+import { DEFAULT_LOCALE, localePath, PUBLISHED } from "@/lib/i18n/locales";
+import { BASE_PATH } from "@/lib/site";
 import { TOOLS } from "@/lib/tools";
 
 // The menu items, in the order every game shows them (the shared seo.md,
@@ -40,14 +44,23 @@ const MENUS: {
   },
 ];
 
-// The archive's one header (D15): "Seed Archive", a plain link to the domain's
-// root (another zone, so not next/link), then the game's name, a link to this
+// The archive's one header (D15): "Seed Archive", a plain link to the portal's
+// home in the page's language (another zone, so not next/link), then the game's name, a link to this
 // section's home, then the section's own menu, then the archive's account (D13).
 // The indexes of Tools, Guides and Quests are not in the menu: a page's
 // breadcrumbs lead to them.
 export function ArchiveBar() {
   const { signOut, user } = useAuth();
   const intl = useIntl();
+  const { lang } = useParams<{ lang?: string }>();
+  // This page in each language the section is translated into: its path with
+  // the language swapped (the switcher's links are plain, another document).
+  const pathname = usePathname();
+  const rest = pathname.replace(/^\/[^/]+/, "");
+  const translations = PUBLISHED.map((l) => ({
+    lang: l,
+    href: `${BASE_PATH}/${l}${rest}`,
+  }));
   const [accountMenu, setAccountMenu] = useState<HTMLElement | null>(null);
   const [drawer, setDrawer] = useState(false);
   const [open, setOpen] = useState<{ key: string; anchor: HTMLElement } | null>(
@@ -74,7 +87,7 @@ export function ArchiveBar() {
           <Typography
             variant="h6"
             component="a"
-            href="/"
+            href={localePath(lang, "/")}
             sx={{ color: "inherit", textDecoration: "none", flexShrink: 0 }}
           >
             <FormattedMessage id="archive.title" />
@@ -210,6 +223,10 @@ export function ArchiveBar() {
             </Menu>
           </Box>
         ))}
+        <LanguageSwitcher
+          current={lang ?? DEFAULT_LOCALE}
+          translations={translations}
+        />
         {user ? (
           <>
             <IconButton

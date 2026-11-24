@@ -9,7 +9,9 @@ import Typography from "@mui/material/Typography";
 
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { RowLink } from "@/components/catalog/RowLink";
-import { serverFormat } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type Values } from "@/lib/i18n/server";
 import crafting from "@/lib/valheim/crafting.json";
 import {
   FORGE,
@@ -24,8 +26,12 @@ import {
 // material grows with the level, so each column of the tables moves.
 const EXAMPLE = "SwordIron";
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.forge.return.${id}`, values);
+// The figure's words in the page's language, `pages.forge.return.<id>`.
+async function words() {
+  const intl = await serverIntl();
+  return (id: string, values?: Values) =>
+    intl.format(`pages.forge.return.${id}`, values);
+}
 
 type Item = (typeof crafting.gear)[number];
 
@@ -37,11 +43,11 @@ const step = (l: number) =>
     : `${l} − 1 = ${multiplier(l)}`;
 
 // The materials as the tables' heads: icon, name, link to the catalogue.
-function heads(item: Item) {
+function heads(item: Item, name: GameName) {
   return item.resources.map((r) => (
     <TableCell key={r.key}>
       <ItemIcon item={r.key}>
-        <RowLink item={r.key}>{r.name}</RowLink>
+        <RowLink item={r.key}>{name(r.name)}</RowLink>
       </ItemIcon>
     </TableCell>
   ));
@@ -49,7 +55,8 @@ function heads(item: Item) {
 
 // What each level of the example item costs at its workbench, the total, and
 // the forge's levels, which take an idol and no material.
-function CostTable({ item }: { item: Item }) {
+async function CostTable({ item, name }: { item: Item; name: GameName }) {
+  const t = await words();
   const levels = Array.from({ length: item.maxQuality }, (_, i) => i + 1);
   const forgeLevels = Array.from(
     { length: TOP_LEVEL - item.maxQuality },
@@ -62,7 +69,7 @@ function CostTable({ item }: { item: Item }) {
           <TableRow>
             <TableCell>{t("level")}</TableCell>
             <TableCell>{t("multiplier")}</TableCell>
-            {heads(item)}
+            {heads(item, name)}
           </TableRow>
         </TableHead>
         <TableBody>
@@ -117,7 +124,8 @@ function CostTable({ item }: { item: Item }) {
 
 // What a break gives back at the last workbench level and at the step before
 // the tool's top level, each cell with its sum, so the reader sees how.
-function ReturnTable({ item }: { item: Item }) {
+async function ReturnTable({ item, name }: { item: Item; name: GameName }) {
+  const t = await words();
   const levels = [item.maxQuality, TOP_LEVEL - 1];
   return (
     <TableContainer sx={{ mb: 1 }}>
@@ -125,7 +133,7 @@ function ReturnTable({ item }: { item: Item }) {
         <TableHead>
           <TableRow>
             <TableCell>{t("breaks")}</TableCell>
-            {heads(item)}
+            {heads(item, name)}
           </TableRow>
         </TableHead>
         <TableBody>
@@ -152,17 +160,19 @@ function ReturnTable({ item }: { item: Item }) {
 
 // The guide's figure: the example item, what it costs, and what a break gives
 // back, all from its recipe in the Valheim generator's data.
-export function BreakReturnTable() {
+export async function BreakReturnTable() {
+  const name = await gameNames();
+  const t = await words();
   const item = crafting.gear.find((g) => g.key === EXAMPLE)!;
   return (
     <Box sx={{ mb: 2 }}>
       <Box sx={{ mb: 1 }}>
         <ItemIcon item={item.key}>
-          <RowLink item={item.key}>{item.name}</RowLink>
+          <RowLink item={item.key}>{name(item.name)}</RowLink>
         </ItemIcon>
       </Box>
-      <CostTable item={item} />
-      <ReturnTable item={item} />
+      <CostTable item={item} name={name} />
+      <ReturnTable item={item} name={name} />
       <Typography variant="body2" color="text.secondary">
         {t("note", { max: item.maxQuality, top: TOP_LEVEL - 1 })}
       </Typography>

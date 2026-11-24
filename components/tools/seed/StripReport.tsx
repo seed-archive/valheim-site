@@ -313,9 +313,11 @@ export function StripReport(props: {
         const fewer = QUARTERS.includes(meas[0])
           ? x !== undefined && quarter(ranks, meas[0], x) === "low"
           : share !== null && share < RED_BELOW;
+        // The verdict is a sentence of its own about the measure's label, a
+        // noun phrase, so a translation never has to bend it into a clause.
         if (fewer) {
           say(meas[1] ? "far" : "fewer", {
-            what: intl.formatMessage({ id: key(meas) }, labelValues),
+            label: intl.formatMessage({ id: key(meas) }, labelValues),
           });
         }
       }

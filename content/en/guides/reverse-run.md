@@ -28,11 +28,11 @@ Every boss of the usual order opens a door. Played backwards, each door is got r
 | The Mörkhalla's raised entrance | the grappling hook: {{hookYggdrasil}} Yggdrasil wood, {{hookEitr}} eitr, {{hookMandibles}} mandibles and a Hook from the Infested Mines | the Mistlands' mines |
 | The Ashlands | the Drakkar, the one boat the boiling sea spares | bridges or swimming between the sea's spires, or the grappling hook |
 | The Queen's door | the Sealbreaker, of the Infested Mines' fragments | not needed: skip her |
-| Finding silver | Bonemass's wishbone | dig the mountains blind; the Deep North gives no wishbone |
+| Finding silver | Bonemass's wishbone | dig the Mountains blind; the Deep North gives no wishbone |
 | Bonemass's withered bones | the Elder's key to the Sunken Crypts | the Elder first, even backwards |
 | A pickaxe | Eikthyr's hard antler | a troll's blows mine copper and tin for you; or one short walk to Eikthyr first |
 
-Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him takes only the raft's wood, leather scraps and resin. Fader you meet before the weapons that suit him: he takes no fire and only {{faderPierceShare}}% of pierce, so the fires that serve you everywhere else do nothing to him; bring blunt or slash. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
+Eikthyr is as a rule the nearest boss of the world, and his antler pickaxe breaks the Deep North's ice chunks and frozen statues and the tin you meet on the way back, so the short walk buys more than a pickaxe; setting out without him, you need only the raft's wood, leather scraps and resin. Fader you meet before the weapons that suit him: he takes no fire and only {{faderPierceShare}}% of pierce, so the fires that serve you everywhere else do nothing to him; bring blunt or slash. The straight fight and the trick for every boss are in [How to kill each boss](/catalog/bosses).
 
 ## What does the first key cost?
 
@@ -69,7 +69,7 @@ By sea: the ocean cuts it off from every other land, so the boat is the bill, an
 
 The Karve's bronze nails wait for copper, tin and something to mine them: Eikthyr's antler, or a troll's blows in the [Black Forest](/guides/black-forest), so some players set out no earlier than that. A raft that leaves before the forge and the [Swamp](/guides/swamp) lands without a frost resistance mead, since its base wants the Swamp's bloodbags and the mead ketill's copper and tin (the cold table below): fire under a roof has to hold off the cold instead.
 
-The north cannot give everything, so the run comes back south, and the starting island's Burial Chambers are where its surtling cores wait: the smelter, the charcoal kiln and the blast furnace take {{furnaceCores}} each before a single portal.
+The north cannot give everything, so the run comes back south, and the starting island's Burial Chambers are where its surtling cores wait: the smelter, the charcoal kiln and the blast furnace take {{smelterCores}}, {{kilnCores}} and {{furnaceCores}} before a single portal.
 
 | Surtling cores in the starting island's Burial Chambers | How often |
 |---|---|
@@ -99,7 +99,7 @@ The Winding Tunnels come before the Mörkhalla anyway, for the key's mould, so c
 
 ## What must I build in the Mistlands?
 
-The Black Forge, even on a run that leaves the Queen for last: the Intricate Key that opens the Mörkhalla is cast on it at level {{keyForgeLevel}}, and the forge is built only of what the Mistlands give. Any three extensions set beside it raise it to that level. The usual game takes the Cooler, the Vice and the Metal Cutter from the Ashlands; a run from the north swaps the Cutter's flametal for the Smith's Aprons' Bloodgold, which needs Fader's embers anyway. The Vice's mechanical springs are pressed at the artisan table from iron and refined eitr, so even the key waits on this biome's sap.
+The Black Forge, even on a run that leaves the Queen for last: the Intricate Key that opens the Mörkhalla is cast on it at level {{keyForgeLevel}}, and the forge is built only of what the Mistlands give. Any three extensions set beside it raise it to that level. The usual game takes the Cooler, the Vice and the Ashlands' Metal Cutter; a run from the north swaps the Cutter's flametal for the Smith's Aprons' Bloodgold, which needs Fader's embers anyway. The Vice's mechanical springs are pressed at the artisan table from iron and refined eitr, so even the key waits on this biome's sap.
 
 | The Black Forge to level {{keyForgeLevel}} | What it takes |
 |---|---|
@@ -109,7 +109,7 @@ The Black Forge, even on a run that leaves the Queen for last: the Intricate Key
 | Metal Cutter, the Ashlands' way | {{cutterBlackMarble}} black marble, {{cutterFlametal}} flametal, {{cutterAshwood}} ashwood, {{cutterCharredBones}} charred bones |
 | Smith's Aprons, the Deep North's way | {{apronBloodgold}} Bloodgold, {{apronTimberwood}} Timberwood, {{apronHides}} moose hides |
 
-Coming down from Kall, the mines that matter are the ones nearest your road: the nearest Infested Mine lies {{kallMineM}} m from his gate as a rule and the second {{kallMine2M}} m. The black metal comes from the Deep North's wardrobes.
+Coming down from Kall, the mines that matter are the ones nearest your road: the nearest Infested Mine lies {{kallMineM}} m from his gate as a rule and the second {{kallMine2M}} m. The black metal comes off the Fulings and out of their chests in the Plains.
 
 ## How do I live through the first night?
 
@@ -118,7 +118,7 @@ Every weather of the Deep North freezes you, day and night: no health coming bac
 | To lift the cold | What it takes | Where it is made |
 |---|---|---|
 | A campfire under a Timberwood roof | {{campfireStone}} stone, {{campfireWood}} wood; the walls at a workbench of {{workbenchWood}} wood | anywhere off deep snow |
-| A frost resistance [mead](/catalog/meads) | {{frostMeadHoney}} honey, {{frostMeadThistle}} thistle, {{frostMeadBloodbags}} bloodbags, {{frostMeadEye}} greydwarf eye; a mead ketill of {{meadCauldronTin}} tin, {{meadCauldronCopper}} copper, {{meadCauldronScraps}} leather scraps | before you sail |
+| A frost resistance [mead](/catalog/meads) | {{frostMeadHoney}} honey, {{frostMeadThistle}} thistle, {{frostMeadBloodbags}} bloodbags, {{frostMeadEye}} Greydwarf eye; a mead ketill of {{meadCauldronTin}} tin, {{meadCauldronCopper}} copper, {{meadCauldronScraps}} leather scraps | before you sail |
 | A feather cape | {{capeFeathers}} feathers, {{capeScaleHides}} scale hides, {{capeEitr}} eitr | after the Mistlands |
 
 Timberwood falls to the first axe, and its stave walls do not wear under snow. Open snow refuses every piece, the campfire too, so set the fire on a rock, on a village house's floor, or on ground the hoe has levelled. The resistances do not add up: with the cape on, the mead is wasted, and the cape doubles the fire you take in the Ashlands. Moder's power from her [trophy](/catalog/trophies) takes {{moderPowerFrost}}% off the frost you take, but a reverse run hangs it late.

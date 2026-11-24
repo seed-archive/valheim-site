@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 import {
   BiomeSections,
   material,
@@ -19,11 +19,14 @@ import {
 } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { TableSearch } from "@/components/catalog/TableSearch";
-import { serverFormat, serverMessages } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type ServerIntl, type Values } from "@/lib/i18n/server";
 import crafting from "@/lib/valheim/crafting.json";
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.buildPieces.${id}`, values);
+// The page's words, `pages.buildPieces.<id>`.
+const words = (intl: ServerIntl) => (id: string, values?: Values) =>
+  intl.format(`pages.buildPieces.${id}`, values);
 
 type Piece = (typeof crafting.building)[number];
 
@@ -39,26 +42,49 @@ type Use = {
   slots?: number;
   station?: string;
   items?: string;
+  conversions?: { fromName: string; toName: string }[];
   fuel?: string | null;
   material?: string;
 };
 
+// What a use names: a converter's conversions, each "a into b", as a list in
+// the page's language; any other use the item it makes (one name).
+const itemsOf = (u: Use, name: GameName, intl: ServerIntl) =>
+  u.conversions
+    ? intl.list(
+        u.conversions.map((c) =>
+          words(intl)("use.into", {
+            from: name(c.fromName),
+            to: name(c.toName),
+          }),
+        ),
+        "unit",
+      )
+    : u.items
+      ? name(u.items)
+      : "";
+
 // What a piece is for, one use a line.
-const uses = (b: Piece) =>
-  (b.uses as Use[]).map((u) => (
+const uses = (b: Piece, name: GameName, intl: ServerIntl) => {
+  const t = words(intl);
+  return (b.uses as Use[]).map((u) => (
     <Box key={u.use} component="span" sx={{ display: "block" }}>
       {t(`use.${u.use}`, {
         value: u.value ?? "",
         slots: u.slots ?? "",
-        station: u.station ?? "",
-        items: u.items ?? "",
-        fuel: u.fuel ?? "",
+        station: u.station ? name(u.station) : "",
+        items: itemsOf(u, name, intl),
+        fuel: u.fuel ? name(u.fuel) : "",
         material: u.material ? t(`material.${u.material}`) : "",
       })}
     </Box>
   ));
+};
 
-function pieceTable(list: Piece[]) {
+function pieceTable(list: Piece[], name: GameName, intl: ServerIntl) {
+  const t = words(intl);
+  const note = (key: string) => `pages.buildPieces.note.${key}`;
+  // By the English name.
   const rows = [...list].sort((a, b) => a.name.localeCompare(b.name));
   return (
     <TableContainer>
@@ -83,18 +109,17 @@ function pieceTable(list: Piece[]) {
               key={b.key}
               id={b.key.toLowerCase()}
               data-search={searchText(
-                b.name,
-                b.tool,
-                b.station,
+                name(b.name),
+                name(b.tool),
+                b.station && name(b.station),
                 ...(b.uses as Use[]).map((u) => t(`use.${u.use}`)),
-                ...b.resources.map((r) => r.name),
+                ...b.resources.map((r) => name(r.name)),
               )}
             >
               <TableCell>
                 <ItemIcon item={b.key}>
-                  {b.name}
-                  {b.season ||
-                  `pages.buildPieces.note.${b.key}` in serverMessages ? (
+                  {name(b.name)}
+                  {b.season || intl.has(note(b.key)) ? (
                     <Typography
                       component="span"
                       variant="caption"
@@ -103,10 +128,8 @@ function pieceTable(list: Piece[]) {
                     >
                       {/* The note that tells twins apart, then the season. */}
                       {[
-                        `pages.buildPieces.note.${b.key}` in serverMessages
-                          ? serverFormat(`pages.buildPieces.note.${b.key}`)
-                          : null,
-                        b.season ? seasonNote(b.season) : null,
+                        intl.has(note(b.key)) ? intl.format(note(b.key)) : null,
+                        b.season ? seasonNote(b.season, intl) : null,
                       ]
                         .filter(Boolean)
                         .join(". ")}
@@ -114,9 +137,9 @@ function pieceTable(list: Piece[]) {
                   ) : null}
                 </ItemIcon>
               </TableCell>
-              <TableCell>{b.uses.length ? uses(b) : "—"}</TableCell>
-              <TableCell>{b.station ?? "—"}</TableCell>
-              <TableCell>{b.resources.map(material)}</TableCell>
+              <TableCell>{b.uses.length ? uses(b, name, intl) : "—"}</TableCell>
+              <TableCell>{b.station ? name(b.station) : "—"}</TableCell>
+              <TableCell>{b.resources.map((r) => material(r, name))}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -128,12 +151,14 @@ function pieceTable(list: Piece[]) {
 // One catalogue page of the hammer's pieces: those the Valheim generator puts
 // on `page` (one of the hammer's tabs, or the ships and carts), by biome; its
 // words are `pages.<words>`: title, question, lead.
-export function PiecePage(props: {
+export async function PiecePage(props: {
   page: string;
   words: string;
   crumb: string;
 }) {
-  const own = (id: string) => serverFormat(`pages.${props.words}.${id}`);
+  const name = await gameNames();
+  const intl = await serverIntl();
+  const own = (id: string) => intl.format(`pages.${props.words}.${id}`);
   const list = crafting.building.filter(
     (b) => b.page === props.page && !HAMMER_MODES.includes(b.key),
   );
@@ -147,9 +172,9 @@ export function PiecePage(props: {
       >
         <PageTrail
           steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.catalog"), href: "/catalog" },
-            { name: serverFormat(props.crumb) },
+            { name: intl.format("archive.home"), href: "/" },
+            { name: intl.format("archive.catalog"), href: "/catalog" },
+            { name: intl.format(props.crumb) },
           ]}
         />
         <Typography variant="h3" component="h1" gutterBottom>
@@ -159,7 +184,10 @@ export function PiecePage(props: {
           <b>{own("question")}</b> {own("lead")}
         </Typography>
         <TableSearch>
-          <BiomeSections list={list} table={pieceTable} />
+          <BiomeSections
+            list={list}
+            table={(rows) => pieceTable(rows, name, intl)}
+          />
         </TableSearch>
       </Container>
       <ArchiveFooter />

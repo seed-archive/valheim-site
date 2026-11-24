@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
 
+import { pageUrl } from "@/lib/alternates";
 import { CATALOG, GUIDE_GROUPS, GUIDES } from "@/lib/guides";
-import { BASE_PATH } from "@/lib/site";
+import { DEFAULT_LOCALE, PUBLISHED } from "@/lib/i18n/locales";
 
+// Every page in every language it is translated into, each with its
+// alternates (D20).
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base =
-    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5020${BASE_PATH}`;
-  return [
-    "",
+  const paths = [
+    "/",
     "/tools",
     "/tools/map",
     "/tools/how-good-is-my-seed",
@@ -20,7 +21,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guides",
     ...GUIDE_GROUPS.flatMap((group) => (group.href ? [group.href] : [])),
     ...[...CATALOG, ...GUIDES].map((page) => page.href),
-  ].map((path) => ({
-    url: `${base}${path}`,
-  }));
+  ];
+  return paths.flatMap((path) => {
+    const languages = {
+      ...Object.fromEntries(PUBLISHED.map((l) => [l, pageUrl(l, path)])),
+      "x-default": pageUrl(DEFAULT_LOCALE, path),
+    };
+    return PUBLISHED.map((lang) => ({
+      url: pageUrl(lang, path),
+      alternates: { languages },
+    }));
+  });
 }

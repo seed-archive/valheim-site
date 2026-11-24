@@ -8,7 +8,7 @@ The Drakkar, and no other. The sea of the south boils: it burns every boat that 
 
 ## Where do I land, and what do I build first?
 
-You arrive weak here because nothing in the Ashlands comes alone. The Charred come in waves, warriors, marksmen and warlocks, and they resist the arrow and the flame; the Morgen resists every blade and point you own; Asksvin, Fallen Valkyries and Voltures join in. Lava kills within seconds. Leave the feather cape off, since it doubles fire, and drink the fire resistance wine before a fight, not in it.
+You arrive weak here because nothing in the Ashlands comes alone. The Charred come in waves, warriors, marksmen and warlocks, and they resist the arrow and the flame; the Morgen resists every blade and point you own; Asksvin, Fallen Valkyries and Voltures join in. Lava kills within seconds. Leave the feather cape off, since it doubles fire, and drink the fire resistance barley wine before a fight, not in it.
 
 So you build before you fight. Land by day, near ruins, with a portal left standing somewhere behind you outside the Ashlands. Raise a workbench, a portal, a stonecutter and a shield generator, fed with bones, whose dome stops the burning rain. Build in stone, and in grausten once you have it; wood burns here. Put a roof over every piece: ash wears away whatever stands uncovered. Then fight by day from behind your walls, and be home at dusk.
 
@@ -16,7 +16,7 @@ So you build before you fight. Land by day, near ruins, with a portal left stand
 
 Flametal ore lies in three places: the spires that stand in the lava, the Charred's ruins, and the fortresses. The spires stand in lava and are mined from it; the ruins and the fortress chests ask only for a fight. Players differ on the spires. Mining them gives flametal before the first fortress, at the lava's risk; skipping them works because the ruins and a first fortress give enough for the armour. The blast furnace smelts the ore either way. A tamed Asksvin walks the lava with you on its back, unhurt; [Taming animals](/guides/taming) tells how to get one.
 
-The first flametal is your armour and your way into the fortresses. Three sets are made here: the flametal armour, heavy; the set of Ask, light, from {{killsAsksvinAsk}} Asksvin and lox pelts from the Plains; and the robes of Embla, for magic. The pieces are on the [armour](/catalog/armour) page.
+The first flametal is your armour and your way into the fortresses. Three sets are made here: the flametal armour, heavy; the set of Ask, light, from what {{killsAsksvinAsk}} slain Asksvin drop, with lox pelts from the Plains; and the robes of Embla, for magic. The items are on the [armour](/catalog/armour) page.
 
 Then the stone portal, the one portal that carries ore and metal:
 

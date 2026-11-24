@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import NextLink from "next/link";
+import NextLink from "@/components/LocaleLink";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
@@ -15,7 +15,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 import { EXAMPLE_SEED, SEED_MAX, SEED_PATTERN } from "@/lib/world";
 import { MapClient } from "@seed-archive/map/client";
 import { StripReport } from "@/components/tools/seed/StripReport";
