@@ -12,6 +12,11 @@ const PORTAL_PAGES = ["privacy", "terms", "release-notes"];
 // The first segments of the section's pages after the language (app/[lang]).
 const SECTIONS = ["tools", "catalog", "guides", "bugs"];
 
+// The icons asked for at the root of the project's own domain (Vercel's
+// dashboard takes the project's icon from /favicon.ico there): the section's
+// own, under its prefix. On seedarchive.gg the portal serves the root.
+const ROOT_ICONS = ["favicon.ico", "icon.svg", "apple-icon.png"];
+
 // Addresses a release served that have moved since (the owner, 2026-11-23:
 // redirect every one, indexed or not): the biome chapters into
 // /guides/biomes, the ways of playing into /guides/challenges, the bosses and
@@ -98,7 +103,13 @@ const nextConfig: NextConfig = {
           },
         ].map((r) => ({ ...r, permanent: false }))
       : [];
-    return [...portal, ...moved, ...bare, ...untranslated];
+    const icons = ROOT_ICONS.map((file) => ({
+      source: `/${file}`,
+      destination: `${BASE_PATH}/${file}`,
+      basePath: false as const,
+      permanent: true,
+    }));
+    return [...icons, ...portal, ...moved, ...bare, ...untranslated];
   },
 };
 
