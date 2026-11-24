@@ -24,7 +24,7 @@ import bosses from "@/lib/valheim/bosses.json";
 import { RowLink } from "@/components/catalog/RowLink";
 
 export function generateMetadata() {
-  return pageMetadata("pages.bosses.meta", "/database/world/bosses");
+  return pageMetadata("pages.bosses.meta", "/guides/basics/bosses");
 }
 
 // The page's words in the page's language.

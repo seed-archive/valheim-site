@@ -29,7 +29,7 @@ import crafting from "@/lib/valheim/crafting.json";
 import { RowLink } from "@/components/catalog/RowLink";
 
 export function generateMetadata() {
-  return pageMetadata("pages.comfort.meta", "/database/base/comfort");
+  return pageMetadata("pages.comfort.meta", "/guides/basics/comfort");
 }
 
 // The page's words in the page's language.

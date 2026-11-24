@@ -2,7 +2,7 @@ import { withSentryConfig } from "@sentry/nextjs/config";
 
 import type { NextConfig } from "next";
 
-import { CATALOG, catalogHref } from "./lib/guides";
+import { CATALOG, catalogHref, FROM_DATABASE } from "./lib/guides";
 import { DEFAULT_LOCALE, LOCALES, PUBLISHED } from "./lib/i18n/locales";
 import { BASE_PATH } from "./lib/site";
 
@@ -21,12 +21,14 @@ const ROOT_ICONS = ["favicon.ico", "icon.svg", "apple-icon.png"];
 // Addresses a release served that have moved since (the owner, 2026-11-23:
 // redirect every one, indexed or not), each straight to where it stands now:
 // the biome chapters into /guides/biomes, the ways of playing into
-// /guides/challenges, the bosses and comfort into the database, the good
-// start renamed, the map under Tools. Since 2026-11-24 an address follows the
-// menu level by level (the portal's docs/seo.md): Farming and the Forge of
-// Potential under the Basics, and the catalogue, renamed the Database, in its
-// groups (/database/<group>/<kind>); its groups' addresses under /catalog,
-// never released, follow the last rule.
+// /guides/challenges, the good start renamed, the map under Tools. Since
+// 2026-11-24 an address follows the menu level by level (the portal's
+// docs/seo.md): Farming and the Forge of Potential under the Basics, and the
+// catalogue, renamed the Database, in its groups (/database/<group>/<kind>);
+// its groups' addresses under /catalog, never released, follow the last
+// rule. The bosses and comfort went from the guides to the database on
+// 2026-11-19 and, with the traders, to the Basics on 2026-11-25
+// (`catalogHref` resolves the three there: `FROM_DATABASE`).
 const BIOMES = [
   "meadows",
   "black-forest",
@@ -56,11 +58,16 @@ const MOVED: [string, string][] = [
   ["/guides/farming", "/guides/basics/farming"],
   ["/guides/forge-of-potential", "/guides/basics/forge-of-potential"],
   ["/catalog", "/database"],
-  ...CATALOG.map((page): [string, string] => [
+  ...[...CATALOG, ...FROM_DATABASE].map((page): [string, string] => [
     `/catalog/${page.href.split("/").pop()}`,
     page.href,
   ]),
   ["/catalog/:path+", "/database/:path+"],
+  // The bosses, the traders and comfort left the database for the Basics
+  // (the owner, 2026-11-25).
+  ["/database/world/bosses", catalogHref("bosses")],
+  ["/database/world/traders", catalogHref("traders")],
+  ["/database/base/comfort", catalogHref("comfort")],
 ];
 
 const nextConfig: NextConfig = {

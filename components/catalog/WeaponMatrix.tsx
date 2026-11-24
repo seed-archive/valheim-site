@@ -79,7 +79,7 @@ function ByBiome(props: {
                   >
                     {c.boss ? (
                       // The bosses guide's headings are its anchors, made from their words.
-                      <Link href={`/database/world/bosses#${slug(c.name)}`}>
+                      <Link href={`/guides/basics/bosses#${slug(c.name)}`}>
                         {name(c.name)}
                       </Link>
                     ) : (

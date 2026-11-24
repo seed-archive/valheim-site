@@ -288,7 +288,7 @@ export default async function FoodPage() {
           </Typography>
           <Typography sx={{ mb: 2 }}>
             {t("feasts.text")}{" "}
-            <Link href="/database/world/traders#bogwitch">
+            <Link href="/guides/basics/traders#bogwitch">
               {t("feasts.tray")}
             </Link>
           </Typography>

@@ -104,7 +104,7 @@ function sources(m: Material, name: GameName, intl: ServerIntl) {
   );
   m.soldBy.forEach((s) =>
     parts.push(
-      <Link key={s} href={`/database/world/traders#${s.toLowerCase()}`}>
+      <Link key={s} href={`/guides/basics/traders#${s.toLowerCase()}`}>
         {name(traderName.get(s) ?? s)}
       </Link>,
     ),
@@ -237,7 +237,7 @@ export async function MaterialsView(props: {
                                     ? [
                                         <Link
                                           key="power"
-                                          href={`/database/world/bosses#${bossSlug(bossOf(m)!.name)}`}
+                                          href={`/guides/basics/bosses#${bossSlug(bossOf(m)!.name)}`}
                                         >
                                           {t("power")}
                                         </Link>,

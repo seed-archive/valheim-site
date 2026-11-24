@@ -124,7 +124,7 @@ async function KallPhases() {
     second,
     third,
     link: (chunks) => (
-      <Link href="/database/world/bosses#kall-fimbulbringer">{chunks}</Link>
+      <Link href="/guides/basics/bosses#kall-fimbulbringer">{chunks}</Link>
     ),
   });
 }
@@ -704,7 +704,7 @@ export default async function CreaturesPage() {
                             <RowLink item={b.key}>{name(b.name)}</RowLink>
                           ) : (
                             <Link
-                              href={`/database/world/traders#${b.key.toLowerCase()}`}
+                              href={`/guides/basics/traders#${b.key.toLowerCase()}`}
                             >
                               {name(b.name)}
                             </Link>
