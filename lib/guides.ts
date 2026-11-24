@@ -22,8 +22,10 @@ const entry = (href: string, id: string, line: string): Entry => ({
 // owner, in every game); its message keys stay `catalog`. The database is one
 // page a players' category (the owner, 2026-11-17), in groups, each a bold
 // line of the menu with a page of its own. Inside the groups, the order of
-// the title review (the owner, 2026-11-24, docs/seo.md): the bosses first,
-// the armour second, the ships up and the Deep North last.
+// the title review (the owner, 2026-11-24, docs/seo.md): the armour second,
+// the ships up and the Deep North last. The bosses, the
+// traders and comfort, how-to guides rather than tables, moved to the Basics
+// (the owner, 2026-11-25).
 const catalogGroup = (
   slug: string,
   id: string,
@@ -37,11 +39,9 @@ const catalogGroup = (
 });
 export const CATALOG_GROUPS: Group[] = [
   catalogGroup("world", "archive.groupWorld", [
-    ["bosses", "archive.guideBosses", "bosses"],
     ["creatures", "archive.guideCreatures", "creatures"],
     ["damage", "archive.guideDamage", "damage"],
     ["dungeons", "archive.guideDungeons", "dungeons"],
-    ["traders", "archive.guideTraders", "traders"],
     ["events", "archive.guideEvents", "events"],
   ]),
   catalogGroup("gear", "archive.groupGear", [
@@ -66,7 +66,6 @@ export const CATALOG_GROUPS: Group[] = [
     ["wood-building", "archive.guideWoodBuilding", "woodBuilding"],
     ["stone-building", "archive.guideStoneBuilding", "stoneBuilding"],
     ["furniture", "archive.guideFurniture", "furniture"],
-    ["comfort", "archive.guideComfort", "comfort"],
     ["other-pieces", "archive.guideOtherPieces", "otherPieces"],
     [
       "deep-north-building",
@@ -108,31 +107,35 @@ export const GUIDE_GROUPS: Group[] = [
   {
     id: "archive.groupBasics",
     href: "/guides/basics",
+    // The owner, 2026-11-23: no guide stays out of the menu. Never folded
+    // into the Plains and the Mountain as planned, Farming and the Forge of
+    // Potential join the Basics, and since 2026-11-24 stand under its
+    // address; "Как приручить животных" in the Basics (2026-11-23). Comfort,
+    // the traders and the bosses, how-to guides, came from the database
+    // (2026-11-25). The order is by search demand, by judgement (the owner,
+    // 2026-11-25).
     entries: [
+      entry("/guides/basics/bosses", "archive.guideBosses", "bosses"),
+      entry("/guides/basics/traders", "archive.guideTraders", "traders"),
+      entry("/guides/basics/comfort", "archive.guideComfort", "comfort"),
+      entry("/guides/basics/taming", "archive.guideTaming", "taming"),
+      entry("/guides/basics/farming", "archive.guideFarming", "farming"),
       entry(
         "/guides/basics/where-to-build",
         "archive.guideWhereToBuild",
         "whereToBuild",
       ),
-      // The owner, 2026-11-23: no guide stays out of the menu. Never folded
-      // into the Plains and the Mountain as planned, Farming and the Forge of
-      // Potential join the Basics, and since 2026-11-24 stand under its
-      // address. The order is the title review's (the owner, 2026-11-24,
-      // docs/seo.md).
-      entry("/guides/basics/farming", "archive.guideFarming", "farming"),
-      // The owner, 2026-11-23: "Как приручить животных" in the Basics.
-      entry("/guides/basics/taming", "archive.guideTaming", "taming"),
       entry(
         "/guides/basics/how-much-metal",
         "archive.guideHowMuchMetal",
         "howMuchMetal",
       ),
+      entry("/guides/basics/forge-of-potential", "archive.guideForge", "forge"),
       entry(
         "/guides/basics/boss-arenas",
         "archive.guideBossArenas",
         "bossArenas",
       ),
-      entry("/guides/basics/forge-of-potential", "archive.guideForge", "forge"),
     ],
   },
   {
@@ -197,11 +200,18 @@ export function trailOf(id: string): Step[] {
 // /catalog/<kind> (the database's first name); it is made long here, so a
 // page moved to another group needs no edit of the text in any language (the
 // No Man's Sky section's `longGuideLinks`).
+const slugOf = (e: Entry) => e.href.split("/").pop()!;
 const longOf = (entries: Entry[]) =>
-  new Map(entries.map((e) => [e.href.split("/").pop()!, e.href]));
+  new Map(entries.map((e) => [slugOf(e), e.href]));
+// The database's pages that became Basics guides (the owner, 2026-11-25):
+// the texts still link them as /catalog/<kind>, and their old addresses
+// redirect here (next.config.ts).
+export const FROM_DATABASE = GUIDES.filter((e) =>
+  ["bosses", "traders", "comfort"].includes(slugOf(e)),
+);
 const LONG: Record<string, Map<string, string>> = {
   guides: longOf(GUIDES),
-  catalog: longOf(CATALOG),
+  catalog: longOf([...CATALOG, ...FROM_DATABASE]),
 };
 export const longGuideLinks = (markdown: string) =>
   markdown.replace(
@@ -213,7 +223,8 @@ export const longGuideLinks = (markdown: string) =>
   );
 
 // A database page's address by its kind, the last part of its path
-// (`weapons` → /database/gear/weapons), for links built from the game's data.
+// (`weapons` → /database/gear/weapons), for links built from the game's data;
+// a page that left the database answers its new address (`FROM_DATABASE`).
 export function catalogHref(kind: string): string {
   const href = LONG.catalog.get(kind);
   if (!href) {

@@ -24,7 +24,7 @@ import traders from "@/lib/valheim/traders.json";
 import { USED_IN } from "@/lib/valheim/used-in";
 
 export function generateMetadata() {
-  return pageMetadata("pages.traders.meta", "/database/world/traders");
+  return pageMetadata("pages.traders.meta", "/guides/basics/traders");
 }
 
 // The game's whole description of most valuables (`traders.json` text): it
