@@ -1,0 +1,663 @@
+{
+  "pages": {
+    "bugs": {
+      "meta": {
+        "title": "Errores: por qué una misma semilla da criptas distintas en Valheim — Seed Archive",
+        "description": "Por qué cámaras funerarias y criptas hundidas cambian en una semilla, por qué el botín del mapa es una media y por qué el Yelmo del Protector no va a la forja."
+      },
+      "title": "Errores",
+      "lead": "<b>¿Por qué una cámara funeraria de mi semilla tiene otras salas que la de un amigo, en la misma semilla?</b> Porque el juego gira cada cámara funeraria y cada cripta hundida al azar, al margen de la semilla, y el giro decide sus salas.",
+      "crypts": {
+        "title": "Las cámaras funerarias y las criptas hundidas difieren en la misma semilla",
+        "how": "El juego coloca cada lugar en uno de {yaws, plural, one {# giro} other {# giros}}, separados {step}°, y elige el giro con un número aleatorio que la semilla no fija. En la mayoría de los lugares el giro no cambia nada por dentro. Una cámara funeraria del Bosque negro y una cripta hundida del Pantano son distintas: el giro desplaza un poco el generador de la mazmorra, y la posición del generador se convierte en la semilla de las salas de la mazmorra.",
+        "cores": "Así que una cripta de una semilla tiene unas pocas distribuciones posibles, cada una con sus propias salas, cofres, corazones de surtling y montones de chatarra. Cuál recibe un mundo se decide cuando la cripta se genera por primera vez, y ya no cambia.",
+        "others": "Las cuevas del trol, las cavernas gélidas, las minas infestadas y las demás mazmorras no se ven afectadas: sus salas se derivan solo de la semilla.",
+        "maps": "Un mapa de semillas que muestra una sola distribución de una cripta muestra una de sus distribuciones posibles. Lo que de verdad contiene un mundo está en su archivo de guardado, una vez que alguien ha entrado."
+      },
+      "loot": {
+        "title": "Por qué el botín del mapa es una media",
+        "why": "Haz clic en una mazmorra o un campamento del mapa y su panel enumera lo que contiene. Algunos números son exactos y otros son medias, por dos razones: el giro de las criptas de arriba y los cofres que deciden su contenido solo al abrirse. El panel clasifica cada línea en uno de tres grupos.",
+        "exact": "<b>Está ahí.</b> Lo fija la semilla: es igual en cada mundo creado con ella, así que el número es exacto.",
+        "overYaws": "<b>Está ahí, según su giro.</b> Lo que hay en una cámara funeraria o una cripta hundida: los corazones y los montones de chatarra de sus salas. La cripta se construye de una de {yaws, plural, one {# manera} other {# maneras}}, así que el panel da su media, con el mínimo y el máximo que puede tener una cripta de ese lugar. Tu mundo contiene una de esas distribuciones.",
+        "atPlay": "<b>Se decide al recogerlo.</b> Los cofres, y lo que sueltan las cosas que rompes, los decide el juego cuando los abres o los rompes, no cuando se crea el mundo. Ningún mapa puede conocerlos; el panel da la media que dan las propias probabilidades del juego."
+      },
+      "protector": {
+        "title": "El Yelmo del Protector nunca llega a la Forja del Potencial",
+        "why": "La Forja del Potencial muestra un objeto solo cuando su receta pide un ídolo. Cualquier otra arma o pieza de armadura que sube más allá de su último nivel pide uno; el Yelmo del Protector no: su receta lleva oro sanguino, su molde y piel de alce, y nada más.",
+        "what": "Así que la forja nunca lo ofrece, y el yelmo se queda en el nivel {max}, mientras que el torso y las piernas del mismo conjunto suben más. Nada de lo que llevas lo cambia: la forja lee la receta, no tu inventario."
+      }
+    },
+    "traders": {
+      "meta": {
+        "title": "Qué comprar a los comerciantes en Valheim — Seed Archive",
+        "description": "Todo lo que venden Haldor, Hildir y la bruja del pantano: el precio, el jefe que lo desbloquea y para qué sirve cada objeto."
+      },
+      "title": "Qué comprar a los comerciantes",
+      "question": "¿Qué comprar a los comerciantes?",
+      "answer": "El Megingjord de Haldor y sus filas extra de inventario te dejan llevar más en cada carga; la bandeja para servir y las especias de la bruja del pantano convierten tu cocina en banquetes; Hildir vende ropa y sombreros, más cuantos más cofres le devuelvas.",
+      "about": {
+        "Haldor": "Comercia en el Bosque negro: equipo y las filas extra de inventario, con más en su estante a medida que caen los jefes.",
+        "BogWitch": "Comercia en el Pantano, con lo que necesitan tu cocina y tus pociones: la bandeja para servir para los banquetes, la especia de cada bioma y los ingredientes de los hidromieles.",
+        "Hildir": "Comercia en las Praderas, con ropa y sombreros, y saca más cada vez que le devuelves uno de sus cofres."
+      },
+      "head": {
+        "item": "Objeto",
+        "price": "Monedas",
+        "trader": "Comerciante",
+        "appears": "A la venta",
+        "for": "Para qué sirve",
+        "value": "Monedas por unidad",
+        "about": "Acerca de"
+      },
+      "sell": {
+        "title": "Qué compran los comerciantes",
+        "text": "Esto es todo lo que compra un comerciante, cada cosa por un número fijo de monedas. Algunas también se usan en recetas, así que piénsalo antes de venderlas; las demás no sirven más que para monedas, y las monedas no sirven más que para los bienes de arriba."
+      },
+      "sellsFor": "{value, plural, one {se vende por # moneda} other {se vende por # monedas}}",
+      "quest": {
+        "title": "La misión de Hildir",
+        "text": "Hildir es la única comerciante con una misión. Le robaron tres de sus cofres, y cada uno yace ahora en una mazmorra propia: mata a su guardián y el cofre cae. Cada cofre que le devuelves pone a la venta más de sus mercancías.",
+        "head": {
+          "chest": "Cofre",
+          "dungeon": "Mazmorra",
+          "biome": "Bioma",
+          "guard": "Guardián",
+          "health": "Salud del guardián",
+          "opens": "Mercancías que desbloquea"
+        }
+      },
+      "writhan": "Una de sus mercancías espera una muerte en lugar de un cofre: la Corona de raíces solo sale a la venta después de que mates a un marchitado, una criatura rara del Pantano y no un jefe.",
+      "essential": {
+        "title": "Para speedrunners: ¿qué es lo mínimo que debo comprar?",
+        "text": "Un speedrun compra solo esto y pasa de largo ante cualquier otro estante: juntos cuestan {coins, plural, one {{coins} moneda} other {{coins} monedas}}, y un speedrunner que los tiene no necesita más.",
+        "total": "Juntos",
+        "row": {
+          "spices": "Una especia para el banquete de cada bioma",
+          "pockets": "Bolsillos más amplios y Bolsillos más profundos"
+        },
+        "for": {
+          "spices": "Sin la especia de su bioma no hay banquete; cada una sale a la venta tras el jefe de ese bioma.",
+          "pockets": "Una fila más de inventario cada uno."
+        }
+      },
+      "always": "Desde el inicio",
+      "currency": "Solo como moneda.",
+      "carry": "+{weight} de carga máxima",
+      "armor": "{armor} de Armadura",
+      "places": "{count, plural, one {Coloca # tipo de <link>comida y banquetes</link>} other {Coloca # tipos de <link>comida y banquetes</link>}}",
+      "afterBoss": "Tras {boss}",
+      "goesInto": "<b>Se usa en</b> {items}",
+      "requires": {
+        "Hildir1": "Tras el primer cofre de Hildir",
+        "Hildir2": "Tras el segundo cofre de Hildir",
+        "Hildir3": "Tras el tercer cofre de Hildir"
+      }
+    },
+    "farming": {
+      "meta": {
+        "title": "Cultivo: cada cultivo, dónde crece y cuánto tarda en Valheim — Seed Archive",
+        "description": "Cada cultivo, árbol y enredadera que planta el cultivador: con qué se planta, qué da, cuánto tarda, dónde crece y qué platos alimenta."
+      },
+      "title": "Cultivo",
+      "question": "¿Cómo cultivo?",
+      "lead": "Cada cultivo, árbol y enredadera que planta el cultivador: con qué se planta, qué da, cuánto tarda en crecer y dónde crece.",
+      "cultivator": "El cultivador convierte el suelo en un campo y planta semillas en él. Un cultivo crece solo en suelo cultivado y solo en los biomas indicados a su lado; una semilla de un bioma a menudo crece en otros, pero no siempre donde se encontró.",
+      "minutes": "{min}–{max} min",
+      "head": {
+        "plant": "Planta",
+        "with": "Se planta con",
+        "gives": "Da",
+        "grows": "Crece",
+        "where": "Crece en",
+        "seeds": "Plantada, la cosecha da"
+      },
+      "seedsGive": "plantada, da",
+      "crops": {
+        "title": "Cultivos",
+        "text": "Un cultivo se planta con su semilla y da su cosecha. Donde las semillas no vuelven con ella, planta parte de la cosecha (o una semilla, en el caso de la col rizada) y crecerá en semillas: un solo hallazgo mantiene vivo un campo. En qué se usa cada cosecha está en su fila de <link>Materiales</link>.",
+        "conclusion": "{biome}: allí crecen {count} de los {all, plural, one {# cultivo} other {# cultivos}}, todos menos {missing}: la única granja que alimenta toda una partida. Algunos crecen en un solo bioma, {only}: ningún hogar en otro lugar los cultiva, así que se cultivan donde crecen. Tu hogar en las Praderas cultiva {home} de ellos.",
+        "onlyIn": "{name} ({biome})",
+        "biome": {
+          "meadows": "Las Praderas",
+          "blackForest": "El Bosque negro",
+          "swamp": "El Pantano",
+          "mountain": "La Montaña",
+          "plains": "Las Llanuras",
+          "mistlands": "Las Tierras Nubladas",
+          "ashlands": "La Tierra de Ceniza",
+          "deepNorth": "El Norte profundo",
+          "ocean": "El Océano"
+        },
+        "sameTime": "Todo cultivo tarda lo mismo, {min}–{max, plural, one {# minuto} other {# minutos}}, así que un campo se elige por dónde crece, no por lo rápido que crece."
+      },
+      "trees": {
+        "title": "Árboles",
+        "text": "Un árbol joven crece en cualquier suelo; lo que da un árbol adulto al talarlo es su media.",
+        "conclusion": "El lento es {most}, {min}–{max, plural, one {# minuto} other {# minutos}}, y lo compensa con {fine} de madera noble, más que cualquier otro árbol: planta robles donde vayas a quedarte. Para la madera que quemas y con la que construyes en grandes cantidades, {quick} se puede talar de nuevo en {quickMax, plural, one {# minuto} other {# minutos}} como mucho."
+      },
+      "vines": {
+        "title": "Enredaderas",
+        "text": "Las enredaderas crecen más rápido que nada y dan parrabayas.",
+        "conclusion": "Una enredadera madura en {min}–{max, plural, one {# minuto} other {# minutos}}, un cultivo en {crop} como mínimo: unas pocas enredaderas junto a la puerta hacen que no te falten parrabayas mientras el campo aún está verde."
+      },
+      "where": {
+        "title": "¿Dónde debo cultivar?",
+        "text": "En {biome}, en cuanto puedas mantenerte allí: una sola granja cultiva casi todo lo que planta el juego, así que es el campo que conservas hasta el final. Hasta entonces, cultiva en casa, donde crecen {home} de los {all, plural, one {# cultivo} other {# cultivos}}. Qué alimenta luego cada cultivo está en <link>Comida y banquetes</link>."
+      }
+    },
+    "events": {
+      "meta": {
+        "title": "Asaltos: qué inicia cada uno y qué lo termina en Valheim — Seed Archive",
+        "description": "Cada asalto a tu base: qué lo inicia, qué lo termina para siempre, cuánto dura y qué criaturas vienen y cuántas a la vez."
+      },
+      "title": "Asaltos",
+      "question": "¿Qué asalta mi base y cuándo se acaba?",
+      "answer": "{minutes, plural, =1 {Cada minuto} one {Cada # minuto} other {Cada # minutos}}, mientras estás cerca de una base, el juego tira un {chance} % de probabilidad de asalto entre los que tu mundo ha desbloqueado. Un asalto ligado a los jefes solo llega entre un jefe y el siguiente, así que matar al siguiente lo termina para siempre.",
+      "how": "Cualquier otro asalto se queda una vez desbloqueado. Y a un asalto se le sobrevive, no se le limpia: cada tipo de criatura sigue volviendo hasta el máximo que puede haber a la vez, una nueva por cada una que matas, hasta que se acaba el tiempo del asalto.",
+      "invasion": {
+        "title": "La Invasión jotun",
+        "text": "Esta no es un asalto a tu base sino un evento del mundo, y lo inicias tú mismo: rompe el Hielo malicioso en las salas de una Mörkhalla del Norte profundo y los jotun avanzan. Hasta tres zonas de invasión existen a la vez, cada una un parche helado de las Praderas, el Bosque negro, el Pantano, la Montaña o las Llanuras, lejos del centro del mundo y marcada en tu mapa; sin mapa, un rastro de partículas te lleva a la más cercana. Cada una resiste hasta que rompes el Hielo malicioso o el Orbe de Fimbulvinter de su centro y los jotun se retiran. Su propio asalto, los jotun en tu base, empieza cuando has matado a un jotun y solo termina con Kall Fimbulbringer."
+      },
+      "anywhere": "También lejos de una base",
+      "fromStart": "Desde el inicio",
+      "never": "Nunca",
+      "minutes": "{m} min",
+      "atOnce": "hasta {n} a la vez",
+      "spawner": {
+        "charred": "Generador de carbonizados"
+      },
+      "head": {
+        "raid": "Asalto",
+        "opens": "Empieza tras",
+        "ends": "Termina tras",
+        "lasts": "Dura",
+        "who": "Quién viene",
+        "where": "Dónde"
+      },
+      "key": {
+        "KilledTroll": "Matar a un trol",
+        "killed_surtling": "Matar a un surtling",
+        "KilledBat": "Matar a un murciélago",
+        "elakingmole_defeated": "Matar a un sin ojos",
+        "jotun_killed": "Matar a un jotun",
+        "hildir1": "Llevarle a Hildir su primer cofre",
+        "hildir2": "Llevarle a Hildir su segundo cofre",
+        "hildir3": "Llevarle a Hildir su tercer cofre"
+      },
+      "keyInline": {
+        "KilledTroll": "matar a un trol",
+        "killed_surtling": "matar a un surtling",
+        "KilledBat": "matar a un murciélago",
+        "elakingmole_defeated": "matar a un sin ojos",
+        "jotun_killed": "matar a un jotun",
+        "hildir1": "llevarle a Hildir su primer cofre",
+        "hildir2": "llevarle a Hildir su segundo cofre",
+        "hildir3": "llevarle a Hildir su tercer cofre"
+      }
+    },
+    "food": {
+      "meta": {
+        "title": "La mejor comida para cuerpo a cuerpo, arquero y mago en Valheim — Seed Archive",
+        "description": "Los mejores platos para un luchador cuerpo a cuerpo, un arquero y un mago, bioma a bioma, y cada plato y banquete con su salud, vigor y Eitr."
+      },
+      "title": "Comida y banquetes",
+      "question": "¿Qué comer?",
+      "answer": "Platos de salud para un luchador cuerpo a cuerpo, platos de vigor para un arquero, platos de Eitr para un mago; un banquete llena una casilla con los tres.",
+      "basics": "Comes hasta tres platos distintos a la vez; cada uno sube la salud, el vigor o el Eitr y regenera salud mientras dura.",
+      "head": {
+        "dish": "Plato",
+        "biome": "Bioma",
+        "health": "Salud",
+        "stamina": "Vigor",
+        "eitr": "Eitr",
+        "regen": "Regen.",
+        "minutes": "Minutos",
+        "again": "Volver a comer tras",
+        "made": "Se hace en"
+      },
+      "stationLevel": "{station}, nivel {level}",
+      "thenCooked": "{at}, luego cocinado",
+      "thenServed": "{at}, luego servido en una bandeja",
+      "who": {
+        "title": "Quién come qué",
+        "matrix": "Los tres mejores platos de cada tipo que puedes hacer al final de cada bioma: come los tres, ya que platos distintos siempre se acumulan. Un plato en negrita es nuevo en ese bioma; los demás siguen siendo los mejores de uno anterior.",
+        "again": "<b>Cuándo volver a comer:</b> un plato puede comerse de nuevo una vez pasada la mitad de su tiempo, y entonces aún da unas cuatro quintas partes de su valor. Vuelve a comer cada uno a su mitad y las tres casillas siguen casi llenas.",
+        "health": "Cuerpo a cuerpo: salud",
+        "stamina": "Arquero: vigor",
+        "eitr": "Mago: Eitr",
+        "balanced": "Mixto: salud y vigor",
+        "notYet": "No hay plato de este tipo antes del bioma donde empieza la fila: la comida de Eitr empieza en las Tierras Nubladas, con la magia.",
+        "feast": "<b>Banquetes:</b> salud y vigor, y Eitr desde las Tierras Nubladas, en una sola casilla y durante el tiempo más largo."
+      },
+      "role": {
+        "health": "Platos de salud",
+        "stamina": "Platos de vigor",
+        "eitr": "Platos de Eitr",
+        "balanced": "Platos equilibrados"
+      },
+      "feasts": {
+        "title": "Banquetes",
+        "text": "Prepara un banquete en la mesa para preparación de alimentos y colócalo en una bandeja para servir, y todo el grupo come de él.",
+        "tray": "Compra la bandeja para servir a la bruja del pantano."
+      }
+    },
+    "buildPieces": {
+      "note": {
+        "piece_TrainingDummy": "Cada golpe sobre él sube tu habilidad de arma igual que un golpe a una criatura, así que puedes entrenar en casa a salvo.",
+        "itemstand": "En una pared",
+        "itemstandh": "En un suelo o una mesa",
+        "piece_grausten_roof_45_corner2": "La otra forma de esquina",
+        "piece_grausten_roof_45_arch_corner2": "La otra forma de esquina",
+        "bonfire": "Da comodidad con fuego o sin él",
+        "piece_brazierfloor02": "Da comodidad con fuego o sin él",
+        "piece_gift1": "Pequeño",
+        "piece_gift2": "Mediano",
+        "piece_gift3": "Grande"
+      },
+      "head": {
+        "piece": "Pieza",
+        "uses": "Para qué sirve",
+        "stationNearby": "Estación cercana",
+        "materials": "Materiales"
+      },
+      "use": {
+        "station": "Estación de trabajo",
+        "extension": "Sube {station} un nivel",
+        "converter": "Convierte {items}",
+        "into": "{from} en {to}",
+        "producer": "Produce {items} por sí solo",
+        "bed": "Cama: para dormir, y el punto de aparición",
+        "comfort": "Comodidad {value}",
+        "fire": "Fuego, quema {fuel}",
+        "light": "Luz, quema {fuel}",
+        "lamp": "Luz",
+        "storage": "Almacenamiento, casillas: {slots}",
+        "portal": "Portal",
+        "portalMetal": "Portal que deja pasar el metal",
+        "ship": "Barco",
+        "cart": "Carro",
+        "map": "Comparte el mapa",
+        "seat": "Asiento",
+        "display": "Muestra un objeto",
+        "incinerator": "Destruye lo que se mete en él",
+        "sign": "Cartel para escribir",
+        "training": "Blanco de entrenamiento",
+        "roof": "Tejado",
+        "wall": "Pared",
+        "floor": "Suelo",
+        "stairs": "Escaleras",
+        "door": "Puerta o ventana",
+        "support": "Soporta hasta {value} ({material})",
+        "ward": "Estatua guardiana, protege {value} m a su alrededor",
+        "shield": "Escudo sobre la base",
+        "turret": "Torreta, carga {value} de munición",
+        "trap": "Trampa",
+        "siege": "Arma de asedio",
+        "defence": "Defensa",
+        "decoration": "Decoración",
+        "crafting": "Fabricación"
+      },
+      "material": {
+        "wood": "madera",
+        "stone": "piedra",
+        "iron": "hierro",
+        "hardwood": "madera dura",
+        "marble": "mármol negro",
+        "ashstone": "piedra cenicienta",
+        "ancient": "material antiguo",
+        "ice": "hielo",
+        "timberwood": "leño"
+      }
+    },
+    "comfort": {
+      "meta": {
+        "title": "Comodidad: cómo subirla y cuánto dura «Con energía» en Valheim — Seed Archive",
+        "description": "Cuánta comodidad alcanzas en cada bioma y cuánto dura «Con energía», cada pieza que da comodidad y los tipos donde solo cuenta la mejor pieza."
+      },
+      "title": "Comodidad",
+      "question": "¿Cómo subo la comodidad?",
+      "lead": "Descansa bajo techo junto a una pieza de cada tipo: un fuego, una cama, una silla, una mesa, una bandera y el resto. Solo cuenta la mejor pieza de cada tipo, así que un trono junto a una silla solo suma el trono.",
+      "rule": {
+        "title": "Cómo cuenta la comodidad",
+        "rested": "El estado «Con energía» dura {base, plural, one {# minuto} other {# minutos}} con comodidad 1, y {per, plural, one {# minuto} other {# minutos}} más por cada nivel por encima.",
+        "sum": "La comodidad empieza en {base}; un techo sobre ti suma {shelter}. Luego cada pieza a menos de diez metros suma su comodidad.",
+        "groups": "Las piezas se agrupan en tipos: fuegos, camas, sillas, mesas, banderas, alfombras, expositores, adornos, guirnaldas, linternas y ocio. De cada tipo solo cuenta la pieza con más comodidad. Una pieza sin tipo cuenta una vez, por muchas que haya.",
+        "lit": "Un fuego solo cuenta mientras arde. Un expositor es del tipo expositores: da su comodidad vacío, y un trofeo colgado en él no suma nada."
+      },
+      "byBiome": {
+        "title": "Comodidad por bioma",
+        "text": "Hasta dónde sube la comodidad de tu base con lo que puedes construir en cada bioma: la mejor pieza de cada tipo hasta entonces, más cada pieza sin tipo. Constrúyelo todo y la comodidad llega a {most}, y «Con energía» dura {minutes, plural, one {# minuto} other {# minutos}}."
+      },
+      "minutes": "{minutes} min",
+      "head": {
+        "biome": "Bioma",
+        "rested": "Con energía",
+        "added": "Qué suma",
+        "piece": "Pieza",
+        "comfort": "Comodidad"
+      },
+      "group": {
+        "none": "Sin tipo: cada una cuenta una vez",
+        "fire": "Fuegos",
+        "bed": "Camas",
+        "banner": "Banderas",
+        "chair": "Sillas",
+        "table": "Mesas",
+        "carpet": "Alfombras",
+        "display": "Expositores",
+        "decor": "Adornos",
+        "garland": "Guirnaldas",
+        "lantern": "Linternas",
+        "leisure": "Ocio"
+      },
+      "litMark": "Mientras arde"
+    },
+    "home": {
+      "meta": {
+        "title": "Guía de Valheim: lo que el juego nunca te dice — Seed Archive",
+        "description": "Desde la primera colmena de las Praderas hasta Kall en el Norte profundo: lo que cada tierra te pide, lo que te da y las probabilidades que el juego nunca muestra."
+      },
+      "title": "Lo que el juego nunca te dice",
+      "lead": "Una Valquiria te deja junto a las piedras del décimo mundo, el cuervo Hugin te da su primer consejo y Odín te encarga una tarea: acabar con sus enemigos, uno en cada tierra. Ante ti se extienden ocho tierras, desde las suaves <meadows>Praderas</meadows> hasta el <deepNorth>Norte profundo</deepNorth>. Valheim nunca te dice las probabilidades. Nosotros sí, desde tus <basics>primeros pasos</basics> hasta el final. ¿Lo quieres más difícil? Acepta los <challenges>desafíos</challenges>. Tomes el camino que tomes, cada arma, comida y jefe que encuentres en él te espera en el <catalog>catálogo</catalog>. Y antes de zarpar, pon tu <map>semilla en el mapa</map> y descubre si es <rating>lo bastante buena</rating> para crecer hasta ser Yggdrasil.",
+      "new": "Nuevo",
+      "biome": {
+        "meadows": {
+          "name": "Praderas",
+          "hook": "Donde empieza cada partida: Eikthyr, las colmenas de las casas que saqueas, el primer pico."
+        },
+        "black-forest": {
+          "name": "Bosque negro",
+          "hook": "Cobre, estaño y el Sabio, y los troles que guardan los tres."
+        },
+        "swamp": {
+          "name": "Pantano",
+          "hook": "El hierro duerme en las criptas hundidas, y también los huesos que despiertan a Tuétano."
+        },
+        "mountain": {
+          "name": "Montaña",
+          "hook": "Plata bajo la nieve, lobos en las laderas, los huevos de Moder en las cumbres."
+        },
+        "plains": {
+          "name": "Llanuras",
+          "hook": "Metal negro, aldeas fuling y los tótems que pide Yagluth."
+        },
+        "mistlands": {
+          "name": "Tierras Nubladas",
+          "hook": "Núcleos negros en la niebla, y la Reina bajo ella."
+        },
+        "ashlands": {
+          "name": "Tierra de Ceniza",
+          "hook": "Un mar que quema tu barco, fortalezas de los carbonizados, y Fader."
+        },
+        "deep-north": {
+          "name": "Norte profundo",
+          "hook": "La tierra más nueva: Kall espera al final y vuelve a llamar a cada jefe anterior a él."
+        }
+      }
+    },
+    "breakables": {
+      "meta": {
+        "title": "Qué romper para obtener plata, hierro y Pelo de Fenris en Valheim — Seed Archive",
+        "description": "Vasijas de la Tierra de Ceniza por la plata, puertas de las cavernas gélidas por el hierro, colgaduras por el Pelo de Fenris: cada objeto que vale la pena romper, qué da una rotura y con qué frecuencia."
+      },
+      "question": "¿Qué vale la pena romper?",
+      "answer": "Las vasijas de la Tierra de Ceniza, lo único que al romperse da plata; en las cavernas gélidas, las puertas de madera por las barras de hierro, los braseros por el bronce y las colgaduras por el Pelo de Fenris; en la Mörkhalla, lo que suelta pieles, yute, cadenas y monedas; y los muebles dvergr por la chatarra y los corazones de surtling.",
+      "head": {
+        "object": "Qué romper",
+        "gives": "Una rotura da",
+        "where": "Dónde está"
+      },
+      "chance": "{n} % de las roturas",
+      "chanceRange": "{low}–{high} % de las roturas",
+      "always": "(siempre)",
+      "sometimes": "(a veces)",
+      "note": "«A veces» significa que el objeto está en una parte del lugar que algunas semillas construyen y otras omiten.",
+      "object": {
+        "brazier": "Brasero",
+        "dvergrProps": "Muebles y maderos dvergr",
+        "dvergrPickaxe": "Pico dvergr",
+        "wallSpikes": "Púas de las murallas de la fortaleza",
+        "weaponStand": "Soporte de armas",
+        "barrel": "Barril",
+        "rugs": "Alfombras y banderas",
+        "bedroll": "Petate",
+        "morkhallaFurniture": "Bancos, taburetes y mesas",
+        "rubble": "Escombros",
+        "trainingDummy": "Muñeco de entrenamiento",
+        "coalPile": "Pila de carbón",
+        "fulingTrash": "Montón de basura fuling",
+        "fulingRoof": "Tejados y banderas fuling",
+        "hangingCloth": "Tela colgante",
+        "hairHanging": "Pelo colgante",
+        "caveFurniture": "Sillas y mesas",
+        "shipwreck": "Tablones de naufragio",
+        "carrion": "Carroña de cenicerdo",
+        "bed": "Cama",
+        "prepTable": "Mesa de preparación",
+        "tankard": "Jarra",
+        "trophyStand": "Expositor con un trofeo",
+        "seekerEgg": "Huevo de buscador",
+        "marblePost": "Poste de mármol negro",
+        "bellAltar": "Altar del fragmento de campana",
+        "morgenPile": "Montón de morgen",
+        "wagon": "Carromato"
+      },
+      "group": {
+        "moulds": "Un molde",
+        "ancientItems": "Un objeto antiguo para la Forja del Potencial"
+      }
+    },
+    "craftTree": {
+      "meta": {
+        "title": "Árbol de progresión: lo que cuesta tu fabricación en Valheim — Seed Archive",
+        "description": "Un árbol de progresión, bioma a bioma: activa el equipo y las estaciones que vas a fabricar y obtén la madera, el mineral y cada materia prima que necesitan."
+      },
+      "title": "Árbol de fabricación",
+      "question": "¿Cuánta madera y mineral necesita mi partida?",
+      "answer": "Desactiva lo que te saltas; la columna suma las materias primas que necesita el resto, con una estación de cada tipo.",
+      "resources": "Materias primas",
+      "how": {
+        "bands": "Cada banda es un bioma; una tarjeta está en el primer bioma donde puede fabricarse, debajo de lo que necesita. Una línea va de lo que se necesita a lo que lo necesita.",
+        "click": "Un clic desactiva una tarjeta y todo lo que la necesita, o la activa con todo lo que necesita. El nombre de un grupo cambia el conjunto entero.",
+        "stations": "El nivel de una estación es 1 más el número de sus mejoras construidas, sean cuales sean. Al principio solo están activos la fogata, las estaciones de cocina, la antorcha, el garrote, el banco de trabajo y el martillo; activa lo que vayas a fabricar, y las estaciones y mejoras que necesita se activan con ello.",
+        "quality": "Los números de una tarjeta son su calidad: elegir 3 suma los materiales de mejora y el nivel de estación que necesita.",
+        "column": "La columna suma las materias primas de todo lo activado, con las casillas y el peso para llevarlas."
+      },
+      "carry": "{slots, plural, one {{slots} casilla de inventario} other {{slots} casillas de inventario}}, {weight} de peso",
+      "order": {
+        "amount": "Mayor cantidad primero",
+        "name": "A–Z",
+        "biome": "Por bioma"
+      },
+      "noBiome": "Se encuentra en otro lugar",
+      "group": {
+        "armour": "{station}: armaduras",
+        "weapons": "{station}: herramientas y armas",
+        "staffs": "{station}: báculos",
+        "byHand": "A mano"
+      },
+      "biome": {
+        "meadows": "Praderas",
+        "blackForest": "Bosque negro",
+        "swamp": "Pantano",
+        "ocean": "Océano",
+        "mountain": "Montaña",
+        "plains": "Llanuras",
+        "mistlands": "Tierras Nubladas",
+        "ashlands": "Tierra de Ceniza",
+        "deepNorth": "Norte profundo"
+      }
+    },
+    "dungeons": {
+      "meta": {
+        "title": "Mazmorras y cuevas: quién espera dentro en Valheim — Seed Archive",
+        "description": "Sabe lo que te espera dentro antes de entrar: las criaturas de cada cueva, mazmorra y campamento, cuántas hay y la probabilidad de que cada una esté ahí."
+      },
+      "title": "Cuevas y mazmorras",
+      "question": "¿Qué criaturas viven en cada sitio?",
+      "lead": "Sabe lo que te espera dentro antes de entrar: cada cueva, mazmorra y campamento con criaturas, cuáles hay, cuántas y qué probabilidad tiene cada una en tu semilla.",
+      "thing": {
+        "piece_Charred_Balista": "una Ballesta carbonizada, una torreta que dispara"
+      },
+      "section": {
+        "dungeon": {
+          "title": "Mazmorras",
+          "text": "Tras la puerta tu semilla elige las salas, y las salas eligen las criaturas, así que dos mazmorras del mismo tipo no tienen por qué tener los mismos enemigos."
+        },
+        "camp": {
+          "title": "Campamentos",
+          "text": "Al aire libre tu semilla dispone las cabañas y las vallas alrededor de un centro, y las criaturas están entre ellas."
+        },
+        "place": {
+          "title": "Cuevas y otros lugares",
+          "text": "Construidos igual cada vez. Una criatura que está ahí solo por azar se decidió una vez, cuando se creó tu mundo, así que una que falta nunca aparece más tarde."
+        }
+      },
+      "rooms": "Sus salas pueden contener: {creatures}.",
+      "quantity": "{n, plural, other {Hasta {n} de estos en un mundo.}}",
+      "variant": "{n}",
+      "head": {
+        "variant": "Variante",
+        "spawner": "Generador",
+        "creatures": "Criaturas",
+        "count": "Cuántas",
+        "chance": "Probabilidad",
+        "map": "Mapa"
+      },
+      "mapLink": "En el mapa"
+    },
+    "wind": {
+      "compass": {
+        "N": "N",
+        "NE": "NE",
+        "E": "E",
+        "SE": "SE",
+        "S": "S",
+        "SW": "SO",
+        "W": "O",
+        "NW": "NO"
+      },
+      "meta": {
+        "title": "Dirección del viento, hora a hora, en cada mundo de Valheim — Seed Archive",
+        "description": "La dirección del viento la fija el reloj del mundo, no la semilla: mira hacia dónde sopla a cualquier hora del año y elige la hora para cruzar a vela."
+      },
+      "title": "Viento",
+      "question": "¿Hacia dónde sopla el viento?",
+      "answer": "Lo decide el reloj del mundo, no la semilla: a la misma hora del mismo día el viento sopla igual en cada mundo, así que esta tabla es también tu viento.",
+      "read": "Cada celda indica de dónde viene el viento al comienzo de esa hora de juego. La dirección principal se mantiene unos {hold, plural, one {# minuto} other {# minutos}}, con giros menores cada par de minutos encima. Las horas de la noche están en gris: duérmelas y nunca navegarás en ellas. Las primeras horas del día 1 están vacías, ya que un mundo nuevo empieza justo antes de su primera mañana.",
+      "dead": "La vela no sirve cuando el viento viene a menos de {deg}° de la proa, por cualquier banda, el {share} % de todos los rumbos, y entonces solo te mueven los remos. El poder de Moder pone el viento justo de popa mientras dura: invócalo cuando el viento sople por delante del través. Su poder está en <link>Cómo matar a cada jefe</link>.",
+      "week": "Semana",
+      "weekDays": "Semana {week}: días {from}–{to}",
+      "previous": "Semana anterior",
+      "next": "Semana siguiente",
+      "hour": "Hora",
+      "day": "Día {day}"
+    },
+    "taming": {
+      "head": {
+        "animal": "Animal",
+        "eats": "Come",
+        "ride": "Silla",
+        "health": "Salud",
+        "love": "Puntos de amor",
+        "partner": "Pareja a menos de",
+        "most": "La cría se detiene en",
+        "pregnancy": "Gestación",
+        "grows": "Crece en",
+        "mount": "Montura",
+        "speed": "Velocidad de carrera",
+        "stamina": "Vigor",
+        "gallop": "El galope dura",
+        "swim": "El nado dura"
+      },
+      "follows": "te sigue si se lo ordenas",
+      "bornTame": "eclosiona domado",
+      "metres": "{m} m",
+      "most": "{n, plural, other {# a menos de {m} m}}",
+      "min": "{n, plural, other {# min}}",
+      "egg": "{name}: eclosiona en {n} min",
+      "young": "{name}: crece en {n} min",
+      "fire": "junto a un fuego",
+      "roof": "bajo techo",
+      "speed": "{v} m/s",
+      "span": "{low}–{high} min",
+      "spanSeconds": "{low}–{high} s"
+    },
+    "bestSeeds": {
+      "meta": {
+        "title": "Mejores semillas en Valheim, evaluadas bioma a bioma — Seed Archive",
+        "description": "Las mejores semillas que hemos evaluado, cada bioma puntuado de 0 a 100: ordena por el bioma que te importa y abre cualquier semilla en el mapa."
+      },
+      "title": "Mejores semillas",
+      "question": "¿Con qué semilla debo empezar?",
+      "answer": "{count, plural, one {La # mejor semilla} other {Las # mejores semillas}} que hemos evaluado en <rating>¿Es buena mi semilla?</rating>, con cada bioma puntuado de 0 a 100. Haz clic en la cabecera de una columna para ordenar por ella, y en una semilla para abrirla en el mapa.",
+      "rank": "#",
+      "seed": "Semilla",
+      "score": "Puntuación",
+      "island": "Isla inicial"
+    },
+    "stations": {
+      "meta": {
+        "title": "Estaciones de trabajo: qué construir primero en Valheim — Seed Archive",
+        "description": "Cada estación de trabajo y las mejoras que suben su nivel, por bioma: la estación que cada una necesita cerca y los materiales que lleva."
+      },
+      "title": "Estaciones de trabajo",
+      "question": "¿Qué construir primero?",
+      "lead": "Un banco de trabajo, y luego una forja para el bronce. Una estación sube de nivel con las mejoras que construyes a su lado, y el mejor equipo pide un nivel más alto, así que planea las mejoras junto con la estación: cada estación y mejora por bioma."
+    },
+    "furniture": {
+      "meta": {
+        "title": "Decoración: cada pieza y lo que cuesta en Valheim — Seed Archive",
+        "description": "Cada cama, silla, mesa, cofre, bandera, alfombra y luz que construye el martillo, por bioma, con sus materiales."
+      },
+      "title": "Decoración",
+      "question": "¿Qué decoración puedes construir?",
+      "lead": "Cada cama, silla, mesa, cofre, bandera, alfombra y luz que construye el martillo, por bioma. Antes de llenar una sala, mira la página de comodidad: solo la mejor pieza de cada tipo cuenta para tu descanso."
+    },
+    "woodBuilding": {
+      "meta": {
+        "title": "Piezas de construcción en madera y lo que cuesta cada una en Valheim — Seed Archive",
+        "description": "Cada pared, suelo, tejado, viga, puerta y escalera de madera que construye el martillo junto a un banco de trabajo, por bioma, con sus materiales."
+      },
+      "title": "Construcción en madera",
+      "question": "¿Qué necesita una casa de madera?",
+      "lead": "Un banco de trabajo al alcance, y luego lo que cueste cada pieza: cada pared, suelo, tejado, viga, puerta y escalera de madera que el martillo levanta junto a él, por bioma."
+    },
+    "stoneBuilding": {
+      "meta": {
+        "title": "Piezas de construcción en piedra y lo que cuesta cada una en Valheim — Seed Archive",
+        "description": "Cada pared, suelo, pilar y arco de piedra, mármol y piedra cenicienta que construye el martillo junto a un cortapiedras, por bioma, con sus materiales."
+      },
+      "title": "Construcción en piedra",
+      "question": "¿Qué necesita una casa de piedra?",
+      "lead": "Un cortapiedras al alcance, y luego lo que cueste cada pieza: cada pieza de piedra, mármol y piedra cenicienta que el martillo levanta junto a él, por bioma."
+    },
+    "deepNorthBuilding": {
+      "meta": {
+        "title": "Piezas de construcción del Norte profundo en Valheim — Seed Archive",
+        "description": "La pestaña del Norte profundo del martillo: sus tejados, paredes y muebles, con sus materiales."
+      },
+      "title": "Construcción del Norte profundo",
+      "question": "¿Qué contiene la pestaña del Norte profundo del martillo?",
+      "lead": "Tejados, paredes y muebles que el juego separa de los de madera y piedra, con lo que cuesta cada uno."
+    },
+    "otherPieces": {
+      "meta": {
+        "title": "Portales, fuegos y otras piezas de construcción en Valheim — Seed Archive",
+        "description": "Las demás piezas del martillo: portales, fuegos, pilas, montones, adornos y el muñeco de entrenamiento, por bioma, con sus materiales."
+      },
+      "title": "Otras piezas de construcción",
+      "question": "¿Qué más construye el martillo?",
+      "lead": "Portales, fuegos, pilas, montones, adornos y el muñeco de entrenamiento que entrena tu habilidad de arma en casa, por bioma."
+    },
+    "ships": {
+      "meta": {
+        "title": "Barcos y carros: cuál construir y qué necesita en Valheim — Seed Archive",
+        "description": "La balsa, el Karve, el Barco vikingo, el Drakkar, el carro y las armas de asedio: la estación que cada uno necesita cerca y sus materiales."
+      },
+      "title": "Barcos y carros",
+      "question": "¿Qué barco construir?",
+      "lead": "La balsa, el Karve, el Barco vikingo o el Drakkar, el carro y las armas de asedio: lo que necesita cada uno para construirse, por bioma."
+    }
+  }
+}

@@ -28,11 +28,11 @@ From the Fuling villages, and nowhere else in the world. Take the smallest villa
 
 One small village gives you everything the next step needs: barley and flax from its fields, a totem if its bonfire has one, and black metal scrap from every Fuling that falls. The blast furnace, built at the artisan table Moder's tears paid for, smelts the scrap, and the first black metal weapons are made.
 
-The first harvest is seed. Plant all of it on the Plains ground by your base and eat none: the second harvest is the one that feeds you. The windmill turns barley into flour for bread, the spinning wheel turns flax into linen thread, and linen with iron makes the padded armour, which takes {{kitBlackMetalIron}} iron at its top: one more trip to the Swamp. Barley and cloudberries also brew the fire resistance wine you will want at the end. Bread, lox meat pie and blood pudding are the Plains' food. Cloudberries cannot be planted, so mark where they grow. As a rule Yagluth's own Plains hold {{yagluthBarley}} barley plants and {{yagluthFlax}} flax in their villages.
+The first harvest is seed. Plant all of it on the Plains ground by your base and eat none: the second harvest is the one that feeds you. The windmill turns barley into flour for bread, the spinning wheel turns flax into linen thread, and linen with iron makes the padded armour, and the age's whole kit takes {{kitBlackMetalIron}} iron at its top: one more trip to the Swamp. Barley and cloudberries also brew the fire resistance barley wine you will want at the end. Bread, lox meat pie and blood pudding are the Plains' food. Cloudberries cannot be planted, so mark where they grow. As a rule Yagluth's own Plains hold {{yagluthBarley}} barley plants and {{yagluthFlax}} flax in their villages.
 
 ## How much black metal do I need?
 
-No ore and no vein: black metal comes only as the scrap the Fulings drop.
+No ore and no vein: black metal comes only as scrap, from the Fulings you cut down and the chests of their villages and towers.
 
 | Raised to the top | Black metal |
 |---|---|
@@ -86,7 +86,7 @@ On {{yagluthTotems}}% of seeds his own Plains hold all {{yagluthTotemsNeed}}, an
 
 On the shore you sailed along, and his Vegvísir in the Plains' standing stones and stone towers confirms it. A Fuling village stands within {{campReachMidM}} m of his altar on {{yagluthVillageMid}}% of seeds: clear it before you lay the totems, or it joins the fight.
 
-How to fight him is a choice with a number in it. He takes {{yagluthPierceShare}}% of what an arrow should do. The bow still works and keeps you far from his fire and his lightning, at the price of hundreds of arrows. A blade does its full damage, ends it much sooner, and stands you in the fire: the crystal battleaxe, the black metal battleaxe and the silver sword do the most. Either way drink the fire resistance wine first, and take the Root Harnesk off, since it burns. Every way to kill him is on [How to kill each boss](/catalog/bosses#yagluth).
+How to fight him is a choice with a number in it. He takes {{yagluthPierceShare}}% of what an arrow should do. The bow still works and keeps you far from his fire and his lightning, at the price of hundreds of arrows. A blade does its full damage, ends it much sooner, and stands you in the fire: the crystal battleaxe, the black metal battleaxe and the silver sword do the most. Either way drink the fire resistance barley wine first, and take the Root Harnesk off, since it burns. Every way to kill him is on [How to kill each boss](/catalog/bosses#yagluth).
 
 His death gives you the Torn Spirit, which builds the wisp fountain, and a wisp caught there with {{wisplightSilver}} silver makes the Wisplight. His power adds {{yagluthPowerDamage}}% to every blow, {{yagluthPowerFarming}} levels to your farming and takes {{yagluthPowerLightning}}% off lightning, for {{powerMinutes}} minutes. The Fulings stop raiding your home, and the creatures of the mist start.
 

@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
-import { serverFormat } from "@/lib/i18n/server";
+import { serverIntl } from "@/lib/i18n/server";
 import seedStats from "@/lib/valheim/seed-stats.json";
 import map from "@/public/guides/strip-valheim.png";
 
@@ -21,7 +21,8 @@ const EDGE = 10;
 
 // The strip on a seed's map (the owner, 2026-11-22: a red line on each side,
 // the hatching of everything else was too much).
-export function StripFigure() {
+export async function StripFigure() {
+  const intl = await serverIntl();
   return (
     <Box component="figure" sx={{ m: 0 }}>
       <Box
@@ -29,7 +30,7 @@ export function StripFigure() {
       >
         <Image
           src={map}
-          alt={serverFormat("pages.speedrun.stripMap")}
+          alt={intl.format("pages.speedrun.stripMap")}
           sizes="(max-width: 700px) 100vw, 640px"
           style={{ width: "100%", height: "auto", display: "block" }}
         />
@@ -58,7 +59,7 @@ export function StripFigure() {
         color="text.secondary"
         sx={{ mt: 1, textAlign: "center" }}
       >
-        {serverFormat("pages.speedrun.stripCaption", { m: seedStats.stripM })}
+        {intl.format("pages.speedrun.stripCaption", { m: seedStats.stripM })}
       </Typography>
     </Box>
   );

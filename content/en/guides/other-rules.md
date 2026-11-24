@@ -26,7 +26,7 @@ A place you cleared stays clear only for a time, counted from when its last crea
 
 | Cleared place | Its creatures come back after |
 |---|---|
-| A Surtlings' fire hole | {{respawnFireHoleMin}} min |
+| A surtlings' fire hole | {{respawnFireHoleMin}} min |
 | A Sunken Crypt's skeletons, a tar pit | {{respawnCryptMin}} min |
 | The Mistlands' Seekers | {{respawnSeekerMin}} min |
 | A troll cave, a Morgen hole, a frost cave's Ulvs | never |
@@ -49,7 +49,7 @@ A nest renews for as long as it stands, so the one place you can make safe for g
 
 **Deep North.** Until Kall falls, two raids stalk the north: the Jotnar, once the first Krigen or Hexen dies, and the Eyeless Ones, once the first of them does. Neither can start unless {{raidBasePieces}} base pieces stand around you, so sleep with a campfire and a bed and nothing else: {{raidSafePieces}} pieces call no raid. Keep the workbench and the portal more than {{raidClearM}} m from the bed, and remember that a hooded lantern counts as a base piece too.
 
-A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance barley wine, hold {{kallRetryBlood}} bloods spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
+A base does not stop everything. A Winding Tunnels' wardrobe shaft keeps calling starred Elaking until you break it, and an invasion's core keeps calling starred Jotnar while you stand near it, wall or no wall. The Gammeltroll and the Barka never come starred; the moose, the shaft Elaking and the Mörkhalla's Krigen may. Underground, in a Mörkhalla or the Tunnels, a harder world's creatures keep their normal speed and size, and a Mörkhalla's guards stay dead once killed, so its halls are safer than the snow. For Kall, come in a Nord set at its top with frost cover and a fire resistance barley wine, hold {{kallRetryBlood}} Malicious Blood spare for a second try, and fight the Jotnar in the Mörkhalla rather than on the snow.
 
 > **On a reverse run** with one life, raise a roof over a campfire before anything else and keep inside its ring at night: within it nothing of the open world spawns. Never try fire on a Gammeltroll, which it cannot hurt; and the Krigen and the Hexen walk the open snow only once you have killed a Jotun.
 
@@ -81,15 +81,15 @@ The ruins, towers and standing stones hold the rest, though only some of each ki
 
 Chart: spread
 
-The [Jotun Invasion](/catalog/events#jotun-invasion) is the hardest find of all: once you break the Malicious Ice in the Deep North, it stands far out in the world, where a map would have marked it. The game leaves you one clue: the snow drifts toward the invasion, so walk with the wind.
+The [Jotun invasion](/catalog/events#jotun-invasion) is the hardest find of all: once you break the Malicious Ice in the Deep North, it stands far out in the world, where a map would have marked it. The game leaves you one clue: the snow drifts toward the invasion, so walk with the wind.
 
 ### What do I build so I never get lost?
 
-Find the shore first and keep the base by it: any coast leads home. Then build the way back. Players lay wooden footpaths over the Swamp's water, hoe and pave roads that all lead to the spawn, double their torch lines on the way out and leave single ones for a dead end, and set a sign on every shore they land on and every shore they leave. A road you meet anywhere is then a road home. Build for the ground, not the sky: even a Charred Fortress's beam, taller than any tower you can raise, is sure to show only within {{sightBeamM}} m, and not much farther.
+Find the shore first and keep the base by it: any coast leads home. Then build the way back. Players lay wooden footpaths over the Swamp's water, hoe and pave roads that all lead to the start, double their torch lines on the way out and leave single ones for a dead end, and set a sign on every shore they land on and every shore they leave. A road you meet anywhere is then a road home. Build for the ground, not the sky: even a Charred Fortress's beam, taller than any tower you can raise, is sure to show only within {{sightBeamM}} m, and not much farther.
 
 ### What changes biome by biome with no map?
 
-**Black Forest.** Haldor is found by luck: circle your home in widening rings and search every Black Forest before you sail past it. Climb the stone towers, which hold the Elder's Vegvísir, and raise a tower of your own on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
+**Black Forest.** Haldor is found by luck: circle your home in widening rings and search every Black Forest before you sail past it. Climb the stone towers, since some hold the Elder's Vegvísir, and raise a tower of your own on the highest ground by your home: within {{baseChambersReach}} m of it, that ground stands {{homeHighM}} m above the sea as a rule.
 
 **Swamp.** The road home is the one you laid yourself: build it as you go in, not when you want out.
 
@@ -131,7 +131,7 @@ Players who play this way move outward rather than back: a base in each biome wi
 
 The rest is sailed, there and back with the load: Bonemass's altar lies {{bonemassM}} m from the start as a rule ({{bonemassMLow}}–{{bonemassMHigh}} m on the middle half of seeds) and Moder's {{moderM}} m ({{moderMLow}}–{{moderMHigh}} m).
 
-The far south costs most: the [Drakkar](/catalog/ships), the one ship that crosses the Ashlands' sea, is built from the Swamp's iron and the Mistlands' wood and plates ([Which boat crosses the sea?](/guides/ashlands#which-boat-crosses-the-sea)), every piece of it brought to one shipyard by boat, so count your trips before you cast off.
+The far south costs most: the [Drakkar](/catalog/ships), the one ship that crosses the Ashlands' sea, is built from the Swamp's iron and the Mistlands' wood and plates ([Which boat crosses the sea?](/guides/ashlands#which-boat-crosses-the-sea)), every part of it brought to one shipyard by boat, so count your trips before you cast off.
 
 > **Speedrunners** lose little on metal, which never ported, and much on the last leg: the portal back to the copper base is what takes a run north, so with none the whole way to the Deep North is sailed from the Ashlands.
 
@@ -150,7 +150,7 @@ At the shore nearest each altar and each ore. Every step from the boat is a step
 
 Chart: spread
 
-Two of these are roads: Moder's altar, {{altarShoreModer}} m up her mountain as a rule, and Kall's gate, {{altarShoreKall}} m over the snow. Yagluth's and the Queen's stand all but on the beach, {{altarShoreYagluth}} m and {{altarShoreQueen}} m, so the base for each is the boat's own landing.
+Two of these are roads: Moder's altar, {{altarShoreModer}} m up her Mountain as a rule, and Kall's gate, {{altarShoreKall}} m over the snow. Yagluth's and the Queen's stand all but on the beach, {{altarShoreYagluth}} m and {{altarShoreQueen}} m, so the base for each is the boat's own landing.
 
 | From the ore to the open sea's shore | As a rule | Middle half of seeds |
 |---|---|---|
@@ -172,7 +172,7 @@ Silver is the haul that wants a road: {{silverShore}} m of mountainside as a rul
 
 **Mistlands.** The sap is carried, so the root's base is your Mistlands home: set it at the edge with the Plains, for the crops, if a root stands there.
 
-**Ashlands.** Landing here is the hardest step of a game without portals, and it starts on the last island north of the Ashlands: a full base there, fed by the Plains and the Mistlands. From it you cross in the Drakkar, or you bridge the sea with a stone walkway to the shore. On land, raise a walled yard of earth first, then take a cleared fortress as your base. Trees do not grow in the Ashlands, so carry the wood, and carry a spare Drakkar's materials too: with no portal the sea is your only way home, and only the Drakkar crosses it whole. The stone portal is no way out for you: everything comes in by sea or over your bridge.
+**Ashlands.** Landing here is the hardest step of a game without portals, and it starts on the last island north of the Ashlands: a full base there, fed by the Plains and the Mistlands. From it you cross in the Drakkar, or you bridge the sea with a stone walkway to the shore. On land, raise a walled yard of earth first, then take a cleared fortress as your base. Carry a spare Drakkar's materials: with no portal the sea is your only way home, and only the Drakkar crosses it whole. The stone portal is no way out for you: everything comes in by sea or over your bridge.
 
 | The crossing | As a rule | Middle half of seeds |
 |---|---|---|

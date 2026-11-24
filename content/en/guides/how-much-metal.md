@@ -11,7 +11,7 @@ Every altar wants an offering from its boss's own biome, and up to Yagluth you s
 | Eikthyr | {{deerTrophies}} deer trophies | found |
 | The Elder | {{ancientSeedsNeed}} ancient seeds | found |
 | Bonemass | {{witheredBones}} withered bones, from the Sunken Crypts | found |
-| Moder | {{dragonEggs}} dragon eggs, from the drake nests | found |
+| Moder | {{moderEggs}} dragon eggs, from the drake nests | found |
 | Yagluth | {{yagluthTotemsNeed}} Fuling totems | found |
 | The Queen | the Sealbreaker, {{sealbreakerFragments}} fragments | the Galdr Table, {{galdrYggdrasil}} Yggdrasil wood, {{galdrBlackMetal}} black metal, {{galdrBlackCores}} black cores, {{galdrEitr}} eitr |
 | Fader | {{bells}} bells, {{bellFragments}} fragments each | the Black Forge |
@@ -39,7 +39,7 @@ Every level and extension is on the [crafting stations](/catalog/crafting-statio
 
 ## What does a full kit take, age by age?
 
-This is the bill you actually pay: each age's armour set plus one weapon of every kind its station makes, all raised to top quality. That last part is the trap. Each level above the first adds the item's per-level amount once, then twice, then four times, so the last level alone costs as much as the craft and every level before it.
+This is the bill you actually pay: each age's armour set plus one weapon of every kind its station makes, all raised to top quality. That last part is the trap. Each level above the first adds the item's per-level amount once, then twice, then four times, so the last level alone costs more than every level before it together.
 
 | Age | Bronze | Iron | Silver | Black metal |
 |---|---|---|---|---|
@@ -49,11 +49,11 @@ This is the bill you actually pay: each age's armour set plus one weapon of ever
 | Black metal, the Plains | {{kitBlackMetalBronze}} | {{kitBlackMetalIron}} | {{kitBlackMetalSilver}} | {{kitBlackMetalBlackMetal}} |
 | All four | {{kitAllBronze}} | {{kitAllIron}} | {{kitAllSilver}} | {{kitAllBlackMetal}} |
 
-Iron is the metal that decides: {{kitAllIron}} bars across the ages, {{kitIronIron}} of them for the Iron Age alone, against {{kitSilverSilver}} of silver on the Mountain and {{kitBlackMetalBlackMetal}} of black metal on the Plains. The Swamp is where a full kit is paid for, and where raising only what you keep saves most. Every piece's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
+Iron is the metal that decides: {{kitAllIron}} bars across the ages, {{kitIronIron}} of them for the Iron Age alone, against {{kitSilverSilver}} of silver on the Mountain and {{kitBlackMetalBlackMetal}} of black metal on the Plains. The Swamp is where a full kit is paid for, and where raising only what you keep saves most. Every item's steps are on [Weapons](/catalog/weapons) and [Armour](/catalog/armour); what each bar is smelted from, on [Materials](/catalog/materials).
 
-> **At leisure**, raise only the age you will wear longest: the top level of a piece you shed in the next biome is the dearest metal you will ever spend.
+> **At leisure**, raise only the age you will wear longest: the top level of an item you shed in the next biome is the dearest metal you will ever spend.
 
-> **At leisure**, the kit is the plan, not the ceiling. The [Forge of Potential](/guides/forge-of-potential) can push a piece past its top level, but only at a chance, and shatters it otherwise: bring it only a spare.
+> **At leisure**, the kit is the plan, not the ceiling. The [Forge of Potential](/guides/forge-of-potential) can push an item past its top level, but only at a chance, and shatters it otherwise: bring it only a spare.
 
 ## Does my seed hold it?
 
@@ -80,6 +80,6 @@ One chest is luck; a run of chests is arithmetic. {{cryptChestIron}}% of crypt c
 
 The gates are a handful of chests: {{cryptChestsIronDeepNorth}} of them cover the whole road to Kall as a rule. The full kit would take {{cryptChestsIronKit}}, so the kit is dug out of the muck piles, and the chests give only its first bars.
 
-> **With no map**, breathe easy: the measures above count only the crypts of Bonemass's own Swamp, the one you must find anyway, so you never have to hunt down a second swamp by eye.
+> **With no map**, breathe easy: the measures above count only the crypts of Bonemass's own Swamp, the one you must find anyway, so you never have to hunt down a second Swamp by eye.
 
 A run on the clock strips this bill to its gates and one mace; the least it gets away with is counted on the [Speedrun](/guides/speedrun#how-much-metal-does-a-run-spend).

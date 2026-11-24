@@ -2,12 +2,12 @@
 
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { FormattedMessage } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 
 // The Tools menu item's index: every tool of the section, each in a sentence.
 export function ToolsIndex() {

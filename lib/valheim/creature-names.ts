@@ -2,7 +2,7 @@
 // left out (the owner, 2026-11-23: twins never read alike, and a page lists
 // only what a world holds).
 
-import { serverFormat, serverMessages } from "@/lib/i18n/server";
+import type { ServerIntl } from "@/lib/i18n/server";
 import creatures from "@/lib/valheim/creatures.json";
 import events from "@/lib/valheim/events.json";
 import places from "@/lib/valheim/places-spawners.json";
@@ -10,11 +10,15 @@ import places from "@/lib/valheim/places-spawners.json";
 type Creature = (typeof creatures)[number];
 
 // A creature's name, and for a variant that shares it, what tells it apart
-// (the game's prefab says it: an archer, sleeping, the Deep North's).
-export function creatureName(key: string, name: string): string {
-  return `pages.creatures.variant.${key}` in serverMessages
-    ? `${name} (${serverFormat(`pages.creatures.variant.${key}`)})`
-    : name;
+// (the game's prefab says it: an archer, sleeping, the Deep North's), in the
+// language of the formatter given.
+export function creatureName(
+  key: string,
+  name: string,
+  intl: ServerIntl,
+): string {
+  const variant = `pages.creatures.variant.${key}`;
+  return intl.has(variant) ? `${name} (${intl.format(variant)})` : name;
 }
 
 // The creatures some place's spawners or rooms, or some raid, make: each by

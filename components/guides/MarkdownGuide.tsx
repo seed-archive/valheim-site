@@ -3,12 +3,13 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { ChartBlock } from "@seed-archive/ui/chart";
 import { chartSpec, type ChartSpec } from "@seed-archive/ui/chart-spec";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
 import { sectionOf } from "@/lib/guides";
-import { serverFormat } from "@/lib/i18n/server";
+import { INTL_LOCALE } from "@/lib/i18n";
+import { serverIntl, type ServerIntl } from "@/lib/i18n/server";
 import { AnchorHeadings } from "@seed-archive/ui/anchor-heading";
 import type { Guide } from "@/lib/content";
 
@@ -16,14 +17,18 @@ import type { Guide } from "@/lib/content";
 // `Chart: share` or `Chart: spread` (the guide forum's marker, the Valheim
 // generator's notes → forum.md); the line itself is not shown.
 const MARKER = /<p>Chart: (share|spread)<\/p>\s*/g;
-// A cell that holds a share: the first percentage of the row.
-const SHARE = /(\d+(?:\.\d+)?)\s*%/;
+// A cell that holds a share: the first percentage of the row. A translated
+// guide writes its language's decimal comma (fill.ts), so both signs are read.
+const SHARE = /(\d+(?:[.,]\d+)?)\s*%/;
 // A cell that holds the middle half of seeds, "low–high" (the generator's
 // quartiles), and the number of the cell before it, the median.
-const SPREAD = /(-?\d+(?:\.\d+)?)\s*–\s*(-?\d+(?:\.\d+)?)/;
-const NUMBER = /-?\d+(?:\.\d+)?/;
-// A row of a distance in metres: its words end ", m" (the guides' Markdown).
-const METRES = /,\s*m$/;
+const SPREAD = /(-?\d+(?:[.,]\d+)?)\s*–\s*(-?\d+(?:[.,]\d+)?)/;
+const NUMBER = /-?\d+(?:[.,]\d+)?/;
+const num = (s: string) => Number(s.replace(",", "."));
+// A row of a distance in metres: its words end ", m" (the guides' Markdown;
+// Russian «м»), and the unit the chart writes in each language.
+const METRES = /,\s*[mм]$/;
+const METRE: Record<string, string> = { ru: "м" };
 
 // A cell's words: its tags dropped and the entities Markdown writes decoded.
 const text = (s: string) =>
@@ -44,7 +49,11 @@ const COLORS = { named: {} };
 // percentage. Spreads: each row's median and middle half ("low–high", the
 // cell after the median) on one axis, so their lengths compare; rows ending
 // ", m" are metres.
-function tableChart(table: string, kind: string): ChartSpec | null {
+function tableChart(
+  table: string,
+  kind: string,
+  intl: ServerIntl,
+): ChartSpec | null {
   const rows = [...table.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) =>
     [...r[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((c) => text(c[1])),
   );
@@ -54,7 +63,7 @@ function tableChart(table: string, kind: string): ChartSpec | null {
         .slice(1)
         .map((c) => SHARE.exec(c))
         .find(Boolean);
-      return share ? [{ label: cells[0], share: Number(share[1]) }] : [];
+      return share ? [{ label: cells[0], share: num(share[1]) }] : [];
     });
     if (shares.length < 2) {
       return null;
@@ -67,7 +76,11 @@ function tableChart(table: string, kind: string): ChartSpec | null {
         format: "share",
         whole: true,
         labelPosition: "above",
-        label: shares.map((r) => r.label).join(", "),
+        locale: INTL_LOCALE[intl.locale],
+        label: intl.list(
+          shares.map((r) => r.label),
+          "unit",
+        ),
       },
       COLORS,
     );
@@ -80,9 +93,9 @@ function tableChart(table: string, kind: string): ChartSpec | null {
       ? [
           {
             label: cells[0],
-            median: Number(median[0]),
-            low: Number(span[1]),
-            high: Number(span[2]),
+            median: num(median[0]),
+            low: num(span[1]),
+            high: num(span[2]),
           },
         ]
       : [];
@@ -91,8 +104,15 @@ function tableChart(table: string, kind: string): ChartSpec | null {
     return null;
   }
   const metres = spreads.every((r) => METRES.test(r.label));
-  const unit = metres ? " m" : "";
+  const metre = METRE[intl.locale] ?? "m";
+  const unit = metres ? ` ${metre}` : "";
   const labels = spreads.map((r) => r.label.replace(METRES, ""));
+  // A number as the guide's text writes it (fill.ts): no grouping, the
+  // language's decimal sign.
+  const plain = new Intl.NumberFormat(INTL_LOCALE[intl.locale], {
+    useGrouping: false,
+    maximumFractionDigits: 20,
+  }).format;
   return chartSpec(
     {
       kind: "spread",
@@ -102,13 +122,17 @@ function tableChart(table: string, kind: string): ChartSpec | null {
           label: "",
           values: spreads.map((r) => r.median),
           spans: spreads.map((r) => [r.low, r.high] as [number, number]),
-          exact: spreads.map((r) => `${r.median}${unit} (${r.low}–${r.high})`),
+          exact: spreads.map(
+            (r) =>
+              `${plain(r.median)}${unit} (${plain(r.low)}–${plain(r.high)})`,
+          ),
         },
       ],
       format: "number",
-      unit: metres ? "m" : undefined,
-      axis: serverFormat("pages.guides.spreadLegend"),
-      label: labels.join(", "),
+      unit: metres ? metre : undefined,
+      locale: INTL_LOCALE[intl.locale],
+      axis: intl.format("pages.guides.spreadLegend"),
+      label: intl.list(labels, "unit"),
     },
     COLORS,
   );
@@ -118,6 +142,7 @@ function tableChart(table: string, kind: string): ChartSpec | null {
 // the markers are dropped.
 function markedCharts(
   html: string,
+  intl: ServerIntl,
 ): { html: string; chart?: ChartSpec | null }[] {
   const parts: { html: string; chart?: ChartSpec | null }[] = [];
   let from = 0;
@@ -130,7 +155,7 @@ function markedCharts(
     const table = html.slice(start, end);
     parts.push(
       { html: html.slice(from, start) },
-      { html: table, chart: tableChart(table, mark[1]) },
+      { html: table, chart: tableChart(table, mark[1], intl) },
     );
     from = mark.index + mark[0].length;
   }
@@ -148,13 +173,14 @@ const FIGURE = /<p>Figure: (\w+)<\/p>/;
 
 // `children`: what a page shows after its text, a table no Markdown holds (the
 // wind page's hours). `figures`: the pictures its `Figure:` lines name.
-export function MarkdownGuide(props: {
+export async function MarkdownGuide(props: {
   guide: Guide;
   crumb: string;
   children?: React.ReactNode;
   figures?: Record<string, React.ReactNode>;
 }) {
-  const parts = markedCharts(props.guide.html);
+  const intl = await serverIntl();
+  const parts = markedCharts(props.guide.html, intl);
   // Home › Guides › its section › the page; a guide out of the menu has no section.
   const section = sectionOf(props.crumb);
   // A part's HTML, each `Figure:` line in it replaced by its picture.
@@ -180,12 +206,12 @@ export function MarkdownGuide(props: {
       >
         <PageTrail
           steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.guides"), href: "/guides" },
+            { name: intl.format("archive.home"), href: "/" },
+            { name: intl.format("archive.guides"), href: "/guides" },
             ...(section?.id && section.href
-              ? [{ name: serverFormat(section.id), href: section.href }]
+              ? [{ name: intl.format(section.id), href: section.href }]
               : []),
-            { name: serverFormat(props.crumb) },
+            { name: intl.format(props.crumb) },
           ]}
         />
         <Typography variant="h3" component="h1" gutterBottom>
@@ -194,7 +220,7 @@ export function MarkdownGuide(props: {
         {/* Every section heading is its own link, copied on a click, as on
             the No Man's Sky section (the owner, 2026-11-23). */}
         <AnchorHeadings
-          copied={serverFormat("pages.crafting.copied")}
+          copied={intl.format("pages.crafting.copied")}
           sx={{
             typography: "body1",
             "& h2": {

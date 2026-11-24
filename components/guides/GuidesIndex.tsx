@@ -2,12 +2,12 @@
 
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { FormattedMessage } from "react-intl";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 import type { Entry } from "@/lib/guides";
 
 // A menu item's index (Guides, Catalog), or a section's contents page
@@ -28,7 +28,14 @@ export function GuidesIndex(props: {
         <PageTrail
           steps={[
             { name: <FormattedMessage id="archive.home" />, href: "/" },
-            ...(parent ? [{ name: <FormattedMessage id={parent.name} />, href: parent.href }] : []),
+            ...(parent
+              ? [
+                  {
+                    name: <FormattedMessage id={parent.name} />,
+                    href: parent.href,
+                  },
+                ]
+              : []),
             { name: <FormattedMessage id={name} /> },
           ]}
         />

@@ -33,7 +33,7 @@ The point of a pen or a pit is to keep the animal from running or fighting while
 
 ## How do I hatch an egg?
 
-Drop it on the ground: in a chest or in your pack an egg never hatches. It must lie alone, not in a pile, within the heat of a fire, and a hen's egg also under a roof that covers most of the sky above it; an asksvin's egg needs the fire only. Then it hatches after {{eggMin}} minutes of the world's time, and sleeping through the night counts. Move it, pick it up or let the fire die, and the count starts over. The chick is tame and has as many stars as its egg.
+Drop it on the ground: in a chest or in your pack an egg never hatches. It must lie alone, not in a pile, within the heat of a fire, and a hen's egg also under a roof that covers most of the sky above it; an Asksvin's egg needs the fire only. Then it hatches after {{eggMin}} minutes of the world's time, and sleeping through the night counts. Move it, pick it up or let the fire die, and the count starts over. The chick is tame and has as many stars as its egg.
 
 ## What if I stop feeding it?
 
@@ -53,16 +53,16 @@ A herd stops growing at the number under Stops at, counted within the distance b
 
 ## Can I ride it?
 
-Three of them take a saddle, the lox, the asksvin and the moose; each saddle in the first table links its recipe.
+Three of them take a saddle, the lox, the Asksvin and the moose; each saddle in the first table links its recipe.
 
-Riding is steering with the camera: forward walks, run gallops, back stops. A gallop and a swim use the saddle's stamina, and the Ride skill makes both last longer and the mount run faster. Your weight and your armour do not slow it. An asksvin carries you over lava unhurt.
+Riding is steering with the camera: forward walks, run gallops, back stops. A gallop and a swim use the saddle's stamina, and the Ride skill makes both last longer and the mount run faster. Your weight and your armour do not slow it. An Asksvin carries you over lava unhurt.
 
 Figure: mounts
 
-The saddles are alike: the same stamina and the same drain, so a gallop lasts as long on any of the three. What differs is the animal: the moose is the fastest by far, and the asksvin is the one that walks on lava.
+The saddles are alike: the same stamina and the same drain, so a gallop lasts as long on any of the three. What differs is the animal: the moose is the fastest by far, and the Asksvin is the one that walks on lava.
 
 You cannot fight from the saddle: an attack, a jump or a dodge throws you off, so no bow and no blade while mounted. The mount fights for itself, though, and a galloping lox tramples what stands in its way. No animal follows you through a portal.
 
 ## Which ones are worth it?
 
-The hen if you shoot: arrows eat feathers, and a coop gives them without a hunt. If you fight with a blade or a staff, you need few feathers and can do without her. A pack of starred wolves is the strongest guard a base can have, and an asksvin the fastest road across the Ashlands. Boars pay only early, for leather and meat; the lox and the moose are for riding and for meat by the stack.
+The hen if you shoot: arrows eat feathers, and a coop gives them without a hunt. If you fight with a blade or a staff, you need few feathers and can do without her. A pack of starred wolves is the strongest guard a base can have, and an Asksvin the fastest road across the Ashlands. Boars pay only early, for leather and meat; the lox and the moose are for riding and for meat by the stack.

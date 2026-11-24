@@ -14,7 +14,7 @@ Wherever your home stands, for the first days the forest is a place you walk int
 
 Where the raven says: copper in great deposits in the forest's ground, tin along its shores. A bar of bronze is {{bronzeCopper}} copper and {{bronzeTin}} tin, and the antler pickaxe breaks both. Within {{bossNearM}} m of home lie {{homeCopperFar}} copper deposits as a rule ({{homeCopperFarLow}}–{{homeCopperFarHigh}} on the middle half of seeds) and {{homeTinFar}} tin deposits ({{homeTinFarLow}}–{{homeTinFarHigh}}).
 
-Take the nearest of both first: this is the ore that stops the forest killing you. The whole Bronze Age, with every piece raised to its top, the forge's upgrades, the Karve's nails and the cart's, takes {{bronzeBill}} bars, which is {{bronzeCopperBill}} copper ore, about {{bronzeVeins}} deposits. So the copper by your home never runs short. What costs you is the carrying: ore passes no portal, and every load goes home on your back, then on a cart, then in a boat along the shore your house stands on.
+Take the nearest of both first: this is the ore that stops the forest killing you. The whole Bronze Age, with every item raised to its top, the forge's upgrades, the Karve's nails and the cart's, takes {{bronzeBill}} bars, which is {{bronzeCopperBill}} copper ore, about {{bronzeVeins}} deposits. So the copper by your home never runs short. What costs you is the carrying: ore passes no portal, and every load goes home on your back, then on a cart, then in a boat along the shore your house stands on.
 
 ## Where do I get the surtling cores?
 
@@ -40,7 +40,7 @@ The second is which armour. All three sets of the forest are worn at the same st
 | Troll leather, three pieces and the cape | {{trollSetArmour}} | {{trollSetWeight}} | no | {{trollSetHides}} troll hides, at the workbench |
 | Bear, three pieces | {{bearSetArmour}} | {{bearSetWeight}} | no | {{bearSetHides}} bear hides, at the workbench |
 
-Bronze stops the most and costs the most: {{bronzeSetBronze}} bars you smelted, and {{bronzeSetSlow}}% of your speed for as long as you wear it. Troll leather stops less, weighs less, slows nothing, and takes no metal at all, so every bar stays for tools, nails and weapons; its price is {{killsTroll}} trolls. The bear set beats the troll's on both counts, {{bearSetArmour}} armour against {{trollSetArmour}} and {{bearSetWeight}} weight against {{trollSetWeight}}, and takes no metal either; its price is {{killsBear}} bears, which neither your club nor your arrows hurt much. The troll's set and the bear's each add a bonus of their own when worn whole. Players who value their bronze wear hide; players who expect to be hit wear bronze. The pieces are on the [armour](/catalog/armour) page.
+Bronze stops the most and costs the most: {{bronzeSetBronze}} bars you smelted, and {{bronzeSetSlow}}% of your speed for as long as you wear it. Troll leather stops less, weighs less, slows nothing, and takes no metal at all, so every bar stays for tools, nails and weapons; its price is {{killsTroll}} trolls. The bear set beats the troll's on both counts, {{bearSetArmour}} armour against {{trollSetArmour}} and {{bearSetWeight}} weight against {{trollSetWeight}}, and takes no metal either; its price is {{killsBear}} bears, which neither your club nor your arrows hurt much. The troll's set and the bear's each add a bonus of their own when worn whole. Players who value their bronze wear hide; players who expect to be hit wear bronze. The items are on the [armour](/catalog/armour) page.
 
 ## Are the troll caves dangerous?
 
@@ -58,7 +58,7 @@ In bronze or troll leather the forest stops being a place you run from, and now 
 | The place Haldor may stand, m | {{homeHaldorM}} | {{homeHaldorMLow}}–{{homeHaldorMHigh}} |
 | The Elder's altar, m | {{homeElderM}} | {{homeElderMLow}}–{{homeElderMHigh}} |
 
-The cores are a walk and the Elder is a journey: {{homeCoresWalkM}} m to the last core, {{homeElderM}} m to his altar as a rule. So you comb the forest on your way to him. Climb every stone tower you pass, since the towers and {{vegvisirChamber}}% of the Burial Chambers hold his Vegvísir. Break every Greydwarf nest you meet: a broken nest drops the ancient seeds his altar takes, {{ancientSeeds}} of them, and you will have them before you go looking. The [seed map](/tools/map) shows the chambers, the caves and his altar on your own seed.
+The cores are a walk and the Elder is a journey: {{homeCoresWalkM}} m to the last core, {{homeElderM}} m to his altar as a rule. So you comb the forest on your way to him. Climb every stone tower you pass, since some of the towers and {{vegvisirChamber}}% of the Burial Chambers hold his Vegvísir. Break every Greydwarf nest you meet: his altar takes {{ancientSeedsNeed}} ancient seeds, and a broken Greydwarf nest drops them, so you will have them before you go looking. The [seed map](/tools/map) shows the chambers, the caves and his altar on your own seed.
 
 ## Where do I get fine wood?
 
@@ -80,6 +80,6 @@ Where his Vegvísir shows it, and on {{homeElderOnLand}}% of seeds on your home'
 
 He is very weak to fire, so the fight is the finewood bow and fire arrows. His roots reach farther than your bow, and the stone pillars round his altar are the one thing he cannot break: shoot from behind them. Set a portal by the altar before you light the first arrow. It is your way home, and his stomp fells the trees round him by the score, so the same portal carries the wood home. Every way to kill him is on [How to kill each boss](/catalog/bosses#the-elder).
 
-His death gives you the swamp key, and his trophy a power: {{elderPowerPercent}}% more damage to trees and rock for {{powerMinutes}} minutes. The Greydwarfs stop raiding your home. The trolls start: once a troll has died and the Elder is dead, their raid comes for good, so have walls up before he dies.
+His death gives you the Swamp key, and his trophy a power: {{elderPowerPercent}}% more damage to trees and rock for {{powerMinutes}} minutes. The Greydwarfs stop raiding your home. The trolls start: once a troll has died and the Elder is dead, their raid comes for good, so have walls up before he dies.
 
 You leave the forest in bronze or in hide, with a kiln, a smelter and a forge at home, a garden, a fermenter, portals and a boat on your own shore. The key in your pack opens the Sunken Crypts, and the iron in them is the next thing that will keep you alive: the [Swamp](/guides/swamp). On the clock the forest is one troll cave and a loop round it, and the [Speedrun](/guides/speedrun#black-forest) tells that.

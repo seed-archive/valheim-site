@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -8,7 +8,9 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 
 import { RowLink } from "@/components/catalog/RowLink";
-import { serverFormat } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type ServerIntl, type Values } from "@/lib/i18n/server";
 import { creatureName, UNMET } from "@/lib/valheim/creature-names";
 import { modifierText } from "@/lib/valheim/modifier";
 import { slug } from "@/lib/slug";
@@ -20,15 +22,10 @@ import matrix from "@/lib/valheim/weapon-matrix.json";
 // The Valheim generator writes it all (weapon-matrix.json); the page only lays
 // it out, by biome, the bosses last in their biome.
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.damage.${id}`, values);
-
-// A kind's name: the crafting catalogue's, where two-handed kinds carry ".2h".
+// A kind's key: the crafting catalogue's, where two-handed kinds carry ".2h".
 const TWO_HANDED = ["polearm", "fist"];
-const kindName = (kind: string) =>
-  serverFormat(
-    `pages.crafting.kind.${TWO_HANDED.includes(kind) ? `${kind}.2h` : kind}`,
-  );
+const kindKey = (kind: string) =>
+  `pages.crafting.kind.${TWO_HANDED.includes(kind) ? `${kind}.2h` : kind}`;
 
 // A cell's look: weak green, resistant red, immune grey (the catalogue's colours).
 function tone(m: number) {
@@ -50,7 +47,10 @@ function ByBiome(props: {
   head: React.ReactNode;
   cells: (c: Row) => React.ReactNode;
   columns: number;
+  name: GameName;
+  intl: ServerIntl;
 }) {
+  const { name, intl } = props;
   return (
     <TableContainer sx={{ mb: 2 }}>
       <Table size="small">
@@ -64,7 +64,7 @@ function ByBiome(props: {
                 colSpan={props.columns}
                 sx={{ fontWeight: "bold", bgcolor: "action.hover" }}
               >
-                {serverFormat(`pages.crafting.biome.${biome}`)}
+                {intl.format(`pages.crafting.biome.${biome}`)}
               </TableCell>
             </TableRow>,
             ...matrix.creatures
@@ -80,11 +80,11 @@ function ByBiome(props: {
                     {c.boss ? (
                       // The bosses guide's headings are its anchors, made from their words.
                       <Link href={`/catalog/bosses#${slug(c.name)}`}>
-                        {c.name}
+                        {name(c.name)}
                       </Link>
                     ) : (
                       <RowLink item={c.key} creature>
-                        {creatureName(c.key, c.name)}
+                        {creatureName(c.key, name(c.name), intl)}
                       </RowLink>
                     )}
                   </TableCell>
@@ -98,13 +98,17 @@ function ByBiome(props: {
   );
 }
 
-const typeHeads = TYPES.map((type) => (
-  <TableCell key={type} align="center">
-    {serverFormat(`pages.crafting.damage.${type}`)}
-  </TableCell>
-));
-
-export function WeaponMatrix() {
+export async function WeaponMatrix() {
+  const name = await gameNames();
+  const intl = await serverIntl();
+  const t = (id: string, values?: Values) =>
+    intl.format(`pages.damage.${id}`, values);
+  const kindName = (kind: string) => intl.format(kindKey(kind));
+  const typeHeads = TYPES.map((type) => (
+    <TableCell key={type} align="center">
+      {intl.format(`pages.crafting.damage.${type}`)}
+    </TableCell>
+  ));
   // The kinds of each damage type, as one line: "Slash: sword, axe…".
   const byType = TYPES.map((type) => ({
     type,
@@ -127,12 +131,17 @@ export function WeaponMatrix() {
         {byType.map((g, i) => (
           <span key={g.type}>
             {i > 0 ? " " : ""}
-            <b>{serverFormat(`pages.crafting.damage.${g.type}`)}:</b>{" "}
-            {g.kinds.join(", ")}.
+            {intl.rich("pages.damage.hurts.kinds", {
+              b: (chunks) => <b>{chunks}</b>,
+              type: intl.format(`pages.crafting.damage.${g.type}`),
+              kinds: intl.list(g.kinds, "unit"),
+            })}
           </span>
         ))}
       </Typography>
       <ByBiome
+        name={name}
+        intl={intl}
         columns={TYPES.length + 2}
         head={[
           <TableCell key="c">{t("creature")}</TableCell>,
@@ -148,7 +157,7 @@ export function WeaponMatrix() {
                 align="center"
                 sx={m === 1 ? undefined : tone(m)}
               >
-                {modifierText(m)}
+                {modifierText(m, intl)}
               </TableCell>
             );
           }),
@@ -157,7 +166,7 @@ export function WeaponMatrix() {
               ? t("any")
               : c.best.length === 0
                 ? t("none")
-                : c.best.map(kindName).join(", ")}
+                : intl.list(c.best.map(kindName), "unit")}
           </TableCell>,
         ]}
       />
@@ -173,6 +182,8 @@ export function WeaponMatrix() {
       </Typography>
       <Typography sx={{ mb: 2 }}>{t("deals.lead")}</Typography>
       <ByBiome
+        name={name}
+        intl={intl}
         columns={TYPES.length + 1}
         head={[<TableCell key="c">{t("creature")}</TableCell>, ...typeHeads]}
         cells={(c) =>
@@ -187,8 +198,9 @@ export function WeaponMatrix() {
         }
       />
       <Typography sx={{ mb: 4 }}>
-        {t("deals.pierce")}{" "}
-        <Link href="/catalog/armour">{t("deals.armour")}</Link>.
+        {intl.rich("pages.damage.deals.pierce", {
+          link: (chunks) => <Link href="/catalog/armour">{chunks}</Link>,
+        })}
       </Typography>
     </>
   );

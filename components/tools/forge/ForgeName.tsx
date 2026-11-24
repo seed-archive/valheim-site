@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
@@ -17,6 +17,8 @@ import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { moduleUrl } from "@/lib/valheim/generator";
 import FORGE_ITEMS from "@/lib/valheim/forge-items.json";
 import { TOP_LEVEL } from "@/lib/valheim/forge";
+import { localePath } from "@/lib/i18n/locales";
+import { useGameName } from "@/lib/i18n/useGameName";
 import { recipeHref } from "@/lib/valheim/recipes";
 
 type Item = (typeof FORGE_ITEMS)[number];
@@ -52,7 +54,11 @@ const steps = (item: Item | undefined) =>
 // in the browser by the Valheim generator's WebAssembly.
 export function ForgeName() {
   const intl = useIntl();
+  // The idols' and items' names in the page's language; the items stay in
+  // the order of their English names.
+  const name = useGameName();
   const router = useRouter();
+  const { lang } = useParams<{ lang?: string }>();
   const generator = useRef<MapClient | null>(null);
   const first = ofIdol(IDOLS[0])[0];
   const { control, handleSubmit, setValue } = useForm<ForgeForm>({
@@ -90,7 +96,8 @@ export function ForgeName() {
 
   const label = (id: string) =>
     intl.formatMessage({ id: `pages.forgeName.${id}` });
-  const ingredients = item ? recipeHref(item.key) : null;
+  const row = item ? recipeHref(item.key) : null;
+  const ingredients = row ? localePath(lang, row) : null;
   return (
     <Paper variant="outlined" sx={{ p: { xs: 2, sm: 3 } }}>
       <Box
@@ -118,7 +125,7 @@ export function ForgeName() {
               >
                 {IDOLS.map((i) => (
                   <MenuItem key={i} value={i}>
-                    <ItemIcon item={i}>{idolName(i)}</ItemIcon>
+                    <ItemIcon item={i}>{name(idolName(i))}</ItemIcon>
                   </MenuItem>
                 ))}
               </TextField>
@@ -141,7 +148,7 @@ export function ForgeName() {
               >
                 {ofIdol(idol).map((i) => (
                   <MenuItem key={i.key} value={i.key}>
-                    <ItemIcon item={i.key}>{i.name}</ItemIcon>
+                    <ItemIcon item={i.key}>{name(i.name)}</ItemIcon>
                   </MenuItem>
                 ))}
               </TextField>
