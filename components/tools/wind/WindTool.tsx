@@ -114,7 +114,9 @@ export function WindTool() {
                     >
                       {d === 1 && h < wind.startHour
                         ? ""
-                        : wind.compass[Number(wind.days[d - 1][h])]}
+                        : t(
+                            `compass.${wind.compass[Number(wind.days[d - 1][h])]}`,
+                          )}
                     </TableCell>
                   ))}
                 </TableRow>

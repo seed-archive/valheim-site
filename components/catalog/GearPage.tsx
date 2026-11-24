@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 
 import { ArchiveBar } from "@/components/archive/ArchiveBar";
 import { ArchiveFooter } from "@/components/archive/ArchiveFooter";
-import { PageTrail } from "@seed-archive/ui/page-trail";
+import { PageTrail } from "@/components/PageTrail";
 import {
   BiomeSections,
   material,
@@ -19,7 +19,9 @@ import {
 } from "@/components/catalog/BiomeSections";
 import { ItemIcon } from "@/components/catalog/ItemIcon";
 import { TableSearch } from "@/components/catalog/TableSearch";
-import { serverFormat } from "@/lib/i18n/server";
+import type { GameName } from "@/lib/i18n/game-names";
+import { gameNames } from "@/lib/i18n/names";
+import { serverIntl, type ServerIntl, type Values } from "@/lib/i18n/server";
 import crafting from "@/lib/valheim/crafting.json";
 import {
   effectText,
@@ -28,8 +30,19 @@ import {
   type GearEffect,
 } from "@/lib/valheim/effects";
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.crafting.${id}`, values);
+// The page's words in the page's language: `t` for `pages.crafting.<id>`,
+// `list` for parts of one line joined as the language joins a list of parts
+// ("a, b, c").
+type Words = {
+  intl: ServerIntl;
+  t: (id: string, values?: Values) => string;
+  list: (parts: string[]) => string;
+};
+const wordsOf = (intl: ServerIntl): Words => ({
+  intl,
+  t: (id, values) => intl.format(`pages.crafting.${id}`, values),
+  list: (parts) => intl.list(parts, "unit"),
+});
 
 // The gear's groups in a biome's table (the game's item types, grouped).
 const GEAR_GROUPS = [
@@ -126,7 +139,7 @@ const KIND_BY_KEY: [prefix: string, kind: string][] = [
 
 // A kind's word: the slot or the skill, or the group for the rest (food,
 // materials, arrows).
-const kindOf = (g: Gear) => {
+const kindOf = (g: Gear, { t }: Words) => {
   const own = KIND_BY_KEY.find(([prefix]) => g.key.startsWith(prefix));
   if (own) {
     return t(`kind.${own[1]}`);
@@ -146,7 +159,10 @@ const num = (v: number) => {
 // An item's stats at quality 1, one line each, the main ones first, each with
 // its value: damage by type, armour, block, tool tier, durability, speed,
 // eitr, set, quality, weight.
-function lines(g: Gear): { stat?: string; value?: number; text: string }[] {
+function lines(
+  g: Gear,
+  { t }: Words,
+): { stat?: string; value?: number; text: string }[] {
   const s = statsOf(g);
   const out: { stat?: string; value?: number; text: string }[] = [];
   for (const [k, v] of Object.entries(s.damage ?? {})) {
@@ -217,28 +233,29 @@ const signed = (v: number) => `${v > 0 ? "+" : ""}${num(v)}`;
 
 // What an upgrade step adds, in one line: damage by type, armour, block,
 // block force, durability.
-function gains(s: Step) {
+function gains(s: Step, { t, list }: Words) {
   const g = s.gains;
-  return [
+  return list([
     ...Object.entries(g.damage ?? {}).map(([k, v]) =>
       t("upgrade.damage", { type: t(`damage.${k}`), value: num(v) }),
     ),
     ...(["armor", "block", "deflection", "durability"] as const).flatMap((k) =>
       g[k] ? [t(`upgrade.${k}`, { value: num(g[k]) })] : [],
     ),
-  ].join(", ");
+  ]);
 }
 
 // An item's upgrades, short enough for a phone (the owner, 2026-11-19): what
 // a step adds is the same at every step (the Valheim generator's gains), so
 // it stands once; then each step with only its station level and materials.
-function upgrades(g: Gear) {
+function upgrades(g: Gear, name: GameName, w: Words) {
+  const { t, list } = w;
   const steps = g.upgrades as Step[];
   // No upgrades: a dash, as the piece pages show nothing.
   if (steps.length === 0) {
     return "—";
   }
-  const each = gains(steps[0]);
+  const each = gains(steps[0], w);
   return (
     <>
       {each && (
@@ -261,9 +278,11 @@ function upgrades(g: Gear) {
             {t("upgrade.step", { quality: s.quality, level: s.level })}
           </Box>{" "}
           <Box component="span" sx={{ color: "text.secondary" }}>
-            {s.resources
-              .map((r) => (r.amount > 1 ? `${r.name} × ${r.amount}` : r.name))
-              .join(", ")}
+            {list(
+              s.resources.map((r) =>
+                r.amount > 1 ? `${name(r.name)} × ${r.amount}` : name(r.name),
+              ),
+            )}
           </Box>
         </Typography>
       ))}
@@ -276,20 +295,22 @@ function upgrades(g: Gear) {
 // that changes no number says nothing.
 // What wearing or wielding it does beyond its stats (2026-11-23, the owner:
 // armour and trinkets show their effects): each with when it holds.
-function effectLines(g: Gear) {
-  const list = (g.effects ?? []) as GearEffect[];
-  return list.map((e, i) => (
+function effectLines(g: Gear, name: GameName, { intl, list }: Words) {
+  const effects = (g.effects ?? []) as GearEffect[];
+  return effects.map((e, i) => (
     <Box
       key={`effect-${i}`}
       component="span"
       sx={{ display: "block", mt: 0.5 }}
     >
       <Box component="span" sx={{ fontWeight: 500 }}>
-        {gearWhen(e)}
-        {e.name && e.when !== "hit" && e.name !== g.name ? ` (${e.name})` : ""}
+        {gearWhen({ ...e, name: e.name && name(e.name) }, intl)}
+        {e.name && e.when !== "hit" && e.name !== g.name
+          ? ` (${name(e.name)})`
+          : ""}
         {e.effects.length > 0 ? ": " : ""}
       </Box>
-      {joined(e.effects).map(effectText).join(", ")}
+      {list(joined(e.effects).map((x) => effectText(x, intl)))}
     </Box>
   ));
 }
@@ -331,7 +352,7 @@ type Casts = {
 
 // What a staff does (the staffs' page, 2026-11-23; the Valheim generator's
 // `casts`): its cost, what a cast fires, summons or lays on allies.
-function castLines(g: Gear) {
+function castLines(g: Gear, name: GameName, { t, list }: Words) {
   const c = (g as { casts?: Casts | null }).casts;
   if (!c) {
     return null;
@@ -358,9 +379,11 @@ function castLines(g: Gear) {
     );
   }
   if (c.returns) {
-    const damage = Object.entries(c.returns.damage)
-      .map(([k, v]) => `${t(`damage.${k}`)} ${num(v)}`)
-      .join(", ");
+    const damage = list(
+      Object.entries(c.returns.damage).map(
+        ([k, v]) => `${t(`damage.${k}`)} ${num(v)}`,
+      ),
+    );
     lines.push(t("casts.returns", { damage }));
     if (c.returns.eitr) {
       lines.push(t("casts.returnsEitr", { n: c.returns.eitr }));
@@ -380,42 +403,49 @@ function castLines(g: Gear) {
             to: levels[levels.length - 1].most,
           })
         : "";
-    const blows = Object.entries(s.blows ?? {})
-      .sort((a, b) => b[1] - a[1])
-      .map(([k, v]) => `${t(`damage.${k}`)} ${num(v)}`)
-      .join(", ");
+    const blows = list(
+      Object.entries(s.blows ?? {})
+        .sort((a, b) => b[1] - a[1])
+        .map(([k, v]) => `${t(`damage.${k}`)} ${num(v)}`),
+    );
     lines.push(
-      [
-        t("casts.summons", {
-          name: s.name,
-          health: s.health,
-          blows: blows ? t("casts.blows", { damage: blows }) : "",
-        }),
-        s.lifetime ? t("casts.lifetime", { s: Math.round(s.lifetime[1]) }) : "",
-        most,
-      ]
-        .filter(Boolean)
-        .join(", "),
+      list(
+        [
+          t("casts.summons", {
+            name: name(s.name),
+            health: s.health,
+            blows: blows ? "yes" : "no",
+            damage: blows,
+          }),
+          s.lifetime
+            ? t("casts.lifetime", { s: Math.round(s.lifetime[1]) })
+            : "",
+          most,
+        ].filter(Boolean),
+      ),
     );
   }
   if (c.status) {
     const s = c.status;
     lines.push(
-      [
-        t("casts.status", { name: s.name ?? "", radius: s.radius ?? 0 }),
-        s.seconds ? t("casts.seconds", { s: s.seconds }) : "",
-        s.shield
-          ? t("casts.shield", {
-              absorb: s.shield.absorb,
-              per: s.shield.perSkillLevel,
-            })
-          : "",
-      ]
-        .filter(Boolean)
-        .join(", "),
+      list(
+        [
+          t("casts.status", {
+            name: s.name ? name(s.name) : "",
+            radius: s.radius ?? 0,
+          }),
+          s.seconds ? t("casts.seconds", { s: s.seconds }) : "",
+          s.shield
+            ? t("casts.shield", {
+                absorb: s.shield.absorb,
+                per: s.shield.perSkillLevel,
+              })
+            : "",
+        ].filter(Boolean),
+      ),
     );
     if (s.tooltip) {
-      lines.push(s.tooltip);
+      lines.push(name(s.tooltip));
     }
   }
   return lines.map((text, i) => (
@@ -425,7 +455,7 @@ function castLines(g: Gear) {
   ));
 }
 
-function overLine(g: Gear) {
+function overLine(g: Gear, name: GameName, { t, list }: Words) {
   const o = g.over as Over | null;
   if (!o) {
     return null;
@@ -441,7 +471,7 @@ function overLine(g: Gear) {
   }
   return (
     <Box component="span" sx={{ display: "block", mt: 1 }}>
-      {t("over.name", { name: o.name })} {parts.join(", ")}
+      {t("over.name", { name: name(o.name), parts: list(parts) })}
     </Box>
   );
 }
@@ -453,10 +483,10 @@ const compared = (g: Gear, stat?: string) =>
 
 // The best and the worst value of each compared stat among an item's peers in
 // one biome, kept only where there is a choice (two different values).
-function extremes(rows: Gear[]) {
+function extremes(rows: Gear[], w: Words) {
   const seen = new Map<string, number[]>();
   for (const g of rows) {
-    for (const l of lines(g)) {
+    for (const l of lines(g, w)) {
       if (compared(g, l.stat) && l.value !== undefined) {
         const key = `${peers(g)}|${l.stat}`;
         seen.set(key, [...(seen.get(key) ?? []), l.value]);
@@ -474,20 +504,22 @@ function extremes(rows: Gear[]) {
   return out;
 }
 
-const station = (g: Gear) =>
+const station = (g: Gear, name: GameName, { t }: Words) =>
   g.station
-    ? t("stationLevel", { station: g.station, level: g.level })
+    ? t("stationLevel", { station: name(g.station), level: g.level })
     : t("noStation");
 
-function gearTable(list: Gear[]) {
-  // Within a biome, by kind (swords together, then axes…), then by name.
+function gearTable(list: Gear[], name: GameName, w: Words) {
+  const { t } = w;
+  // Within a biome, by kind (swords together, then axes…), then by the
+  // English name.
   const rows = [...list].sort(
     (a, b) =>
       GEAR_GROUPS.indexOf(a.group) - GEAR_GROUPS.indexOf(b.group) ||
-      kindOf(a).localeCompare(kindOf(b)) ||
+      kindOf(a, w).localeCompare(kindOf(b, w)) ||
       a.name.localeCompare(b.name),
   );
-  const marks = extremes(rows);
+  const marks = extremes(rows, w);
   // A staff's stats carry what it casts, several lines of prose: the column
   // takes the room the other columns can spare (the owner, 2026-11-23: it
   // stretched the rows tall).
@@ -550,15 +582,15 @@ function gearTable(list: Gear[]) {
               key={g.key}
               id={g.key.toLowerCase()}
               data-search={searchText(
-                g.name,
-                kindOf(g),
-                g.station,
-                ...g.resources.map((r) => r.name),
+                name(g.name),
+                kindOf(g, w),
+                g.station && name(g.station),
+                ...g.resources.map((r) => name(r.name)),
               )}
             >
               <TableCell>
                 <ItemIcon item={g.key}>
-                  {g.name}
+                  {name(g.name)}
                   {g.amount > 1 ? ` × ${g.amount}` : ""}
                   <Typography
                     component="span"
@@ -566,13 +598,13 @@ function gearTable(list: Gear[]) {
                     color="text.secondary"
                     sx={{ display: "block" }}
                   >
-                    {kindOf(g)}
-                    {g.season ? `. ${seasonNote(g.season)}` : ""}
+                    {kindOf(g, w)}
+                    {g.season ? `. ${seasonNote(g.season, w.intl)}` : ""}
                   </Typography>
                 </ItemIcon>
               </TableCell>
               <TableCell>
-                {lines(g).map((l, i) => (
+                {lines(g, w).map((l, i) => (
                   <Box
                     key={i}
                     component="span"
@@ -581,13 +613,13 @@ function gearTable(list: Gear[]) {
                     {l.text}
                   </Box>
                 ))}
-                {overLine(g)}
-                {castLines(g)}
-                {effectLines(g)}
+                {overLine(g, name, w)}
+                {castLines(g, name, w)}
+                {effectLines(g, name, w)}
               </TableCell>
-              <TableCell>{station(g)}</TableCell>
-              <TableCell>{g.resources.map(material)}</TableCell>
-              <TableCell>{upgrades(g)}</TableCell>
+              <TableCell>{station(g, name, w)}</TableCell>
+              <TableCell>{g.resources.map((r) => material(r, name))}</TableCell>
+              <TableCell>{upgrades(g, name, w)}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -599,13 +631,16 @@ function gearTable(list: Gear[]) {
 // One catalogue page of made items: those the Valheim generator puts on
 // `page` (weapons, bows, armour, tools), by biome; its words are
 // `pages.<words>`: title, question, lead.
-export function GearPage(props: {
+export async function GearPage(props: {
   page: string;
   words: string;
   crumb: string;
   before?: React.ReactNode;
 }) {
-  const own = (id: string) => serverFormat(`pages.${props.words}.${id}`);
+  const name = await gameNames();
+  const intl = await serverIntl();
+  const w = wordsOf(intl);
+  const own = (id: string) => intl.format(`pages.${props.words}.${id}`);
   const list = crafting.gear.filter((g) => g.page === props.page);
   return (
     <>
@@ -617,9 +652,9 @@ export function GearPage(props: {
       >
         <PageTrail
           steps={[
-            { name: serverFormat("archive.home"), href: "/" },
-            { name: serverFormat("archive.catalog"), href: "/catalog" },
-            { name: serverFormat(props.crumb) },
+            { name: intl.format("archive.home"), href: "/" },
+            { name: intl.format("archive.catalog"), href: "/catalog" },
+            { name: intl.format(props.crumb) },
           ]}
         />
         <Typography variant="h3" component="h1" gutterBottom>
@@ -629,9 +664,12 @@ export function GearPage(props: {
           <b>{own("question")}</b> {own("lead")}
         </Typography>
         {props.before}
-        <Typography sx={{ mb: 2 }}>{t("colours")}</Typography>
+        <Typography sx={{ mb: 2 }}>{w.t("colours")}</Typography>
         <TableSearch>
-          <BiomeSections list={list} table={gearTable} />
+          <BiomeSections
+            list={list}
+            table={(rows) => gearTable(rows, name, w)}
+          />
         </TableSearch>
       </Container>
       <ArchiveFooter />

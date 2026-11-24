@@ -6,6 +6,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { FormattedMessage } from "react-intl";
 
 import { ItemIcon } from "@/components/catalog/ItemIcon";
+import { useGameName } from "@/lib/i18n/useGameName";
 import tree from "@/lib/valheim/craft-tree.json";
 
 import {
@@ -107,6 +108,9 @@ function segments(row: Vertex[]) {
 // switches on everything it needs; raising an item's quality switches on the
 // station level it needs. The column sums the raw materials.
 export function CraftTree() {
+  // The game's names in the page's language; every list here stays sorted by
+  // the English name ("by name" included).
+  const name = useGameName();
   const [on, setOn] = useState<Set<string>>(() => new Set(DEFAULT_ON));
   const [quality, setQuality] = useState<Map<string, number>>(new Map());
   const [hover, setHover] = useState<string | null>(null);
@@ -304,7 +308,7 @@ export function CraftTree() {
         }}
       >
         <ItemIcon item={v.key}>
-          {nameOf(v.key)}
+          {name(nameOf(v.key))}
           {(PIECE_COUNT[v.key] ?? 1) > 1 ? ` × ${PIECE_COUNT[v.key]}` : ""}
         </ItemIcon>
         {max > 1 ? (
@@ -389,13 +393,13 @@ export function CraftTree() {
       >
         {boss.summon ? (
           <ItemIcon item={boss.summon.item}>
-            {boss.summon.name} × {boss.summon.count}
+            {name(boss.summon.name)} × {boss.summon.count}
           </ItemIcon>
         ) : null}
         <Typography
           sx={{ fontWeight: 700, color: isOn ? "#c62828" : "#e57373" }}
         >
-          {boss.name}
+          {name(boss.name)}
         </Typography>
         {boss.drops.length > 0 ? (
           <Box
@@ -408,7 +412,7 @@ export function CraftTree() {
           >
             {boss.drops.map((d) => (
               <ItemIcon key={d.key} item={d.key}>
-                {d.name}
+                {name(d.name)}
               </ItemIcon>
             ))}
           </Box>
@@ -525,7 +529,9 @@ export function CraftTree() {
                         {seg.group.station ? (
                           <FormattedMessage
                             id={`pages.craftTree.group.${seg.group.kind}`}
-                            values={{ station: nameOf(seg.group.station) }}
+                            values={{
+                              station: name(nameOf(seg.group.station)),
+                            }}
                           />
                         ) : (
                           <FormattedMessage id="pages.craftTree.group.byHand" />
@@ -628,7 +634,7 @@ export function CraftTree() {
               ) : null}
               <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 <ItemIcon item={key}>
-                  <b>{n}</b> {nameOf(key)}
+                  <b>{n}</b> {name(nameOf(key))}
                 </ItemIcon>
               </Box>
             </Box>

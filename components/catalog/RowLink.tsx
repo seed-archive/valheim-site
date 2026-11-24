@@ -1,6 +1,6 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
+import Link from "@/components/LocaleLink";
 import { creatureHref, recipeHref } from "@/lib/valheim/recipes";
 
 // An item's name (or a creature's, with `creature`), linked to its row in the

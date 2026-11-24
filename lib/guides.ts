@@ -17,13 +17,15 @@ const entry = (href: string, id: string, line: string): Entry => ({
 // Every page stands under its menu item's address, as in its breadcrumb:
 // /catalog/<kind>, /guides/<topic>, /tools/<tool>. The catalogue is one page a
 // players' category (the owner, 2026-11-17), in groups, each a bold line of
-// the menu.
+// the menu. Inside the groups, the order of the title review (the owner,
+// 2026-11-24, docs/seo.md): the bosses first, the armour second, the ships up
+// and the Deep North last.
 export const CATALOG_GROUPS: Group[] = [
   {
     id: "archive.groupWorld",
     entries: [
-      entry("/catalog/creatures", "archive.guideCreatures", "creatures"),
       entry("/catalog/bosses", "archive.guideBosses", "bosses"),
+      entry("/catalog/creatures", "archive.guideCreatures", "creatures"),
       entry("/catalog/damage", "archive.guideDamage", "damage"),
       entry("/catalog/dungeons", "archive.guideDungeons", "dungeons"),
       entry("/catalog/traders", "archive.guideTraders", "traders"),
@@ -34,9 +36,9 @@ export const CATALOG_GROUPS: Group[] = [
     id: "archive.groupGear",
     entries: [
       entry("/catalog/weapons", "archive.guideWeapons", "weapons"),
+      entry("/catalog/armour", "archive.guideArmour", "armour"),
       entry("/catalog/bows", "archive.guideBows", "bows"),
       entry("/catalog/staffs", "archive.guideStaffs", "staffs"),
-      entry("/catalog/armour", "archive.guideArmour", "armour"),
       entry("/catalog/tools", "archive.guideToolsCatalog", "toolsCatalog"),
     ],
   },
@@ -59,6 +61,7 @@ export const CATALOG_GROUPS: Group[] = [
     id: "archive.groupBase",
     entries: [
       entry("/catalog/crafting-stations", "archive.guideStations", "stations"),
+      entry("/catalog/ships", "archive.guideShips", "ships"),
       entry(
         "/catalog/wood-building",
         "archive.guideWoodBuilding",
@@ -71,13 +74,12 @@ export const CATALOG_GROUPS: Group[] = [
       ),
       entry("/catalog/furniture", "archive.guideFurniture", "furniture"),
       entry("/catalog/comfort", "archive.guideComfort", "comfort"),
+      entry("/catalog/other-pieces", "archive.guideOtherPieces", "otherPieces"),
       entry(
         "/catalog/deep-north-building",
         "archive.guideDeepNorthBuilding",
         "deepNorthBuilding",
       ),
-      entry("/catalog/ships", "archive.guideShips", "ships"),
-      entry("/catalog/other-pieces", "archive.guideOtherPieces", "otherPieces"),
     ],
   },
 ];
@@ -121,6 +123,13 @@ export const GUIDE_GROUPS: Group[] = [
         "archive.guideWhereToBuild",
         "whereToBuild",
       ),
+      // The owner, 2026-11-23: no guide stays out of the menu. Never folded
+      // into the Plains and the Mountain as planned, Farming and the Forge of
+      // Potential join the Basics at the addresses they were released at. The
+      // order is the title review's (the owner, 2026-11-24, docs/seo.md).
+      entry("/guides/farming", "archive.guideFarming", "farming"),
+      // The owner, 2026-11-23: "Как приручить животных" in the Basics.
+      entry("/guides/basics/taming", "archive.guideTaming", "taming"),
       entry(
         "/guides/basics/how-much-metal",
         "archive.guideHowMuchMetal",
@@ -131,12 +140,6 @@ export const GUIDE_GROUPS: Group[] = [
         "archive.guideBossArenas",
         "bossArenas",
       ),
-      // The owner, 2026-11-23: "Как приручить животных" in the Basics.
-      entry("/guides/basics/taming", "archive.guideTaming", "taming"),
-      // The owner, 2026-11-23: no guide stays out of the menu. Never folded
-      // into the Plains and the Mountain as planned, they join the Basics at
-      // the addresses they were released at.
-      entry("/guides/farming", "archive.guideFarming", "farming"),
       entry("/guides/forge-of-potential", "archive.guideForge", "forge"),
     ],
   },

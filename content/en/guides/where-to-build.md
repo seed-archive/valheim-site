@@ -4,7 +4,7 @@
 
 ## Why the open sea, and not just water?
 
-Because a boat is no use on a lake. Ore and metal pass no portal, so whatever your own land lacks is sailed home, and the water by your door has to lead to the Ocean. A lake looks the same from the shore and keeps every boat you build on it, so follow a shore until it opens before the first wall goes up. The [seed map](/tools/map) shows which water is which, and the [Meadows](/guides/meadows) chapter walks you from the stones to it.
+Because a boat is no use on a lake. Ore and metal pass no portal, so whatever your own land lacks is sailed home, and the water by your door has to lead to the open sea. A lake looks the same from the shore and keeps every boat you build on it, so follow a shore until it opens before the first wall goes up. The [seed map](/tools/map) shows which water is which, and the [Meadows](/guides/meadows) chapter walks you from the stones to it.
 
 ## How far is each errand from home?
 
@@ -30,7 +30,7 @@ Whatever does, you cart home; the rest sails:
 | Black metal: a Plains | {{islandPlains}}% of seeds |
 | Silver: Moder's altar on her Mountain | {{islandModer}}% of seeds |
 
-Iron stands on your land on {{swampOnFoot}}% of seeds and black metal on {{islandPlains}}%, silver on only {{islandModer}}%. Whatever a seed spares you, the silver most likely sails, and it sails before the Ashlands' stone portal, the first to carry metal, is yours.
+Iron stands on your land on {{swampOnFoot}}% of seeds and black metal on {{islandPlains}}%; silver on only {{islandModer}}%. Whatever a seed spares you, the silver most likely sails, and it sails before the Ashlands' stone portal, the first to carry metal, is yours.
 
 ## Can I bridge my land to the next?
 
@@ -47,6 +47,6 @@ A row without water needs no bridge: water you can swim, {{swimM}} m of it, coun
 
 ## Will raids come to my home?
 
-They will, and you invite them. A fire, a workbench and a bed set close together make the place a base, and most [raids](/catalog/events) come only to a base. The bargain runs both ways: inside the reach of those pieces nothing of the open world spawns, though a nest still does, so break the nests near the house. [Boss arenas](/guides/boss-arenas#which-pieces-make-the-ground-a-base) gives each piece's reach.
+They will, and you invite them. A fire, a workbench or a bed makes the ground round it a base, and most [raids](/catalog/events) come only where {{raidBasePieces}} such pieces stand within {{raidBaseM}} m of you. The bargain runs both ways: inside the reach of those pieces nothing of the open world spawns, though a nest still does, so break the nests near the house. [Boss arenas](/guides/boss-arenas#which-pieces-make-the-ground-a-base) gives each piece's reach.
 
 What the whole road will cost you in bars is counted on [How much metal a run takes](/guides/how-much-metal).

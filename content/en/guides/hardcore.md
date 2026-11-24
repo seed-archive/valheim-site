@@ -97,7 +97,7 @@ Some ground is meaner on any setting. Darker stretches of the Meadows, the rocky
 
 ## What does a star do?
 
-A star is a second creature hiding in the first. Each one adds the creature's whole health again and half its damage on top, and the Combat setting multiplies over that: a two-star creature on Very hard hits harder than either would alone.
+A star is a second creature hiding in the first. Each one adds the creature's whole health again and half its damage on top, and the Combat setting multiplies over that: a two-star creature on Very hard hits harder than the stars or the setting would make it alone.
 
 | Stars | Health | Damage |
 |---|---|---|

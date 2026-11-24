@@ -13,12 +13,18 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import CloseIcon from "@mui/icons-material/Close";
-import NextLink from "next/link";
+import NextLink from "@/components/LocaleLink";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import type { MapClient } from "@seed-archive/map/client";
-import { slug } from "@/lib/slug";
-import { decodeLoot, NAMES, type Certainty, type LootLine } from "@/lib/valheim/loot";
+import { useGameName } from "@/lib/i18n/useGameName";
+import { BUG_ANCHORS } from "@/components/bugs/BugsPage";
+import {
+  decodeLoot,
+  NAMES,
+  type Certainty,
+  type LootLine,
+} from "@/lib/valheim/loot";
 
 // What a place holds, in a panel on the right of the map (a sheet from the
 // bottom on a phone): the generator's loot of that place, in three sections by
@@ -31,11 +37,23 @@ const SECTIONS: Certainty[] = ["exact", "overYaws", "atPlay"];
 // A count is shown to one decimal, an at-play expectation too (our own choice).
 const round = (n: number) => Math.round(n * 10) / 10;
 
-export function LootPanel(props: { client: MapClient | null; seed: string; place: LootPlace | null; onClose: () => void }) {
+export function LootPanel(props: {
+  client: MapClient | null;
+  seed: string;
+  place: LootPlace | null;
+  onClose: () => void;
+}) {
   const intl = useIntl();
-  const phone = useMediaQuery((theme: { breakpoints: { down: (k: string) => string } }) => theme.breakpoints.down("md"));
-  const [lines, setLines] = useState<{ at: string; lines: LootLine[] } | null>(null);
-  const at = props.place ? `${props.seed}:${props.place.x},${props.place.y}` : null;
+  const phone = useMediaQuery(
+    (theme: { breakpoints: { down: (k: string) => string } }) =>
+      theme.breakpoints.down("md"),
+  );
+  const [lines, setLines] = useState<{ at: string; lines: LootLine[] } | null>(
+    null,
+  );
+  const at = props.place
+    ? `${props.seed}:${props.place.x},${props.place.y}`
+    : null;
 
   useEffect(() => {
     if (!props.client || !props.place || !at) {
@@ -51,9 +69,17 @@ export function LootPanel(props: { client: MapClient | null; seed: string; place
   }, [props.client, props.seed, props.place, at]);
 
   const current = lines && lines.at === at ? lines.lines : null;
+  // A catalogue name is the game's, in the page's language; the rest are the
+  // site's own messages.
+  const gameName = useGameName();
   const name = (key: string) => {
     const id = `pages.map.loot.items.${key}`;
-    return NAMES.get(key) ?? (intl.messages[id] ? intl.formatMessage({ id }) : key);
+    const english = NAMES.get(key);
+    return english !== undefined
+      ? gameName(english)
+      : intl.messages[id]
+        ? intl.formatMessage({ id })
+        : key;
   };
   return (
     <Drawer
@@ -61,13 +87,26 @@ export function LootPanel(props: { client: MapClient | null; seed: string; place
       open={Boolean(props.place)}
       onClose={props.onClose}
       variant="temporary"
-      slotProps={{ paper: { sx: { width: phone ? "auto" : 360, maxHeight: phone ? "60vh" : undefined, p: 2 } } }}
+      slotProps={{
+        paper: {
+          sx: {
+            width: phone ? "auto" : 360,
+            maxHeight: phone ? "60vh" : undefined,
+            p: 2,
+          },
+        },
+      }}
     >
       <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
         <Typography variant="h6" component="h2" sx={{ flex: 1 }}>
-          {props.place ? <FormattedMessage id={`pages.map.places.${props.place.key}`} /> : null}
+          {props.place ? (
+            <FormattedMessage id={`pages.map.places.${props.place.key}`} />
+          ) : null}
         </Typography>
-        <IconButton onClick={props.onClose} aria-label={intl.formatMessage({ id: "pages.map.loot.close" })}>
+        <IconButton
+          onClick={props.onClose}
+          aria-label={intl.formatMessage({ id: "pages.map.loot.close" })}
+        >
           <CloseIcon />
         </IconButton>
       </Box>
@@ -79,7 +118,9 @@ export function LootPanel(props: { client: MapClient | null; seed: string; place
         </Typography>
       ) : (
         SECTIONS.map((section) => {
-          const rows = current.filter((l) => l.certainty === section).sort((a, b) => b.expected - a.expected);
+          const rows = current
+            .filter((l) => l.certainty === section)
+            .sort((a, b) => b.expected - a.expected);
           return rows.length === 0 ? null : (
             <Box key={section} sx={{ mb: 2 }}>
               <Typography variant="subtitle2" component="h3">
@@ -97,7 +138,11 @@ export function LootPanel(props: { client: MapClient | null; seed: string; place
                         {section === "overYaws" && l.least !== l.most ? (
                           <FormattedMessage
                             id="pages.map.loot.range"
-                            values={{ n: round(l.expected), least: Math.round(l.least), most: Math.round(l.most) }}
+                            values={{
+                              n: round(l.expected),
+                              least: Math.round(l.least),
+                              most: Math.round(l.most),
+                            }}
                           />
                         ) : round(l.expected) > 0 ? (
                           round(l.expected)
@@ -119,8 +164,8 @@ export function LootPanel(props: { client: MapClient | null; seed: string; place
           <FormattedMessage
             id="pages.map.loot.why"
             values={{
-              a: (text: React.ReactNode) => (
-                <Link component={NextLink} href={`/bugs#${slug(intl.formatMessage({ id: "pages.bugs.loot.title" }))}`}>
+              link: (text: React.ReactNode) => (
+                <Link component={NextLink} href={`/bugs#${BUG_ANCHORS.loot}`}>
                   {text}
                 </Link>
               ),

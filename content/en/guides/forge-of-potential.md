@@ -14,7 +14,7 @@ Raise an item to its last level at its own workbench or forge first, with the us
 
 ## What does a try take?
 
-One idol of the item's tier and nothing else: a Battle idol for a weapon or a tool, a Protection idol for armour, a shield or a cape. The tier follows the biome the item belongs to, from the Wooden idols of the Meadows to the Bloodgold idols of the Deep North. Idols lie in chests in the places of their biome: the Meadows' abandoned houses, the Black Forest's ruins and the Swamp's huts, the Mountain's caves and cabins, the Plains' huts, the towers of the Mistlands, the Ashlands' fortresses and ruins, and the Deep North's shipwrecks and the halls of Mörkhalla; [Caves and dungeons](/catalog/dungeons) lists what each place holds.
+One idol of the item's tier and nothing else: a Battle Idol for a weapon or a tool, a Protection Idol for armour, a shield or a cape. The tier follows the biome the item belongs to, from the Wooden idols of the Meadows to the Bloodgold idols of the Deep North. Idols lie in chests in the places of their biome: the Meadows' abandoned houses, the Black Forest's ruins and the Swamp's huts, the Mountain's caves and cabins, the Plains' huts, the towers of the Mistlands, the Ashlands' fortresses and ruins, and the Deep North's shipwrecks and the halls of the Mörkhalla; [Caves and dungeons](/catalog/dungeons) lists what each place holds.
 
 ## What are the odds?
 
@@ -24,7 +24,7 @@ A try raises the item a level {{success}}% of the time and shatters it {{shatter
 
 Far less than you put in. Of each material, the game adds what the item's first level took to what its current level asks for, and gives back {{returned}}% of that sum, rounded up. Every level in between is lost, and so are the item and its idol.
 
-What a level "asks for" is not doubled each time. A recipe names, for each material, an amount to craft and an amount per level; an upgrade costs the amount per level times a step, and the step is the level less one up to level 3, then 4 at level 4, and half more for each level after. So the cost doubles from level 3 to level 4 and then grows by only half a step a level. The Iron Sword's table shows each level, its step and its cost, then what comes back.
+What a level "asks for" is not doubled each time. A recipe names, for each material, an amount to craft and an amount per level; an upgrade costs the amount per level times a step, and the step is the level less one up to level 3, then 4 at level 4, and half a step more for each level after. So the cost doubles from level 3 to level 4 and then grows by only half a step a level. The Iron Sword's table shows each level, its step and its cost, then what comes back.
 
 Figure: breakReturn
 
@@ -47,9 +47,9 @@ One step at a time, each by a fresh character of its own. Your main character do
 5. Go to the forge and press the button once.
 6. Bring everything back to the chest. For the next level, ask the tool again and make the next character.
 
-A name holds for the first try of each item at each level, so one character serves any number of items and steps. A second try of the same item at the same level is a new draw, and the tool no longer knows it.
+A name holds for the first try of each item at each level, and the tries of one level never touch another's; but a name that raises one step rarely raises the next, so the tool gives a name a step. A second try of the same item at the same level is a new draw, and the tool no longer knows it.
 
-So a character never learns the way up. Each level keeps its own count of tries: a second copy of the same item meets every level on its second try, and may break at a level the first copy passed. A name that took one copy to level 10 can shatter the next at the first step. Every copy goes up with fresh characters, one a step. Delete the character and make it again with the same name, and its tries start over: the first try is the same as before.
+So a character never learns the way up. Each level keeps its own count of tries: a second copy of the same item meets every level on its second try, and may break at a level the first copy passed. A name that took one copy to level {{top}} can shatter the next at the first step. Every copy goes up with fresh characters, one a step. Delete the character and make it again with the same name, and its tries start over: the first try is the same as before.
 
 ## Why does the new character need the ingredients?
 

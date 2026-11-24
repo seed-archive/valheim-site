@@ -1,25 +1,24 @@
-import { serverFormat } from "@/lib/i18n/server";
+import type { ServerIntl } from "@/lib/i18n/server";
 
 // What a status effect does, in words: a boss's power on the start altar, a
 // mead's effect. The Valheim generator writes each effect as a key and a
-// number (`catalog::power`); the words are `pages.effects.<key>`.
+// number (`catalog::power`); the words are `pages.effects.<key>`, in the
+// language of the formatter given.
 export type Effect = { key: string; value: unknown };
 
-const t = (id: string, values?: Record<string, string | number>) =>
-  serverFormat(`pages.effects.${id}`, values);
-const damage = (k: string) => serverFormat(`pages.crafting.damage.${k}`);
+const effects =
+  (intl: ServerIntl) =>
+  (id: string, values?: Record<string, string | number>) =>
+    intl.format(`pages.effects.${id}`, values);
 
-// A list of damage types in words: "Chop and Mining".
-const types = (list: string[]) => {
-  const names = list.map(damage);
-  return names.length > 1
-    ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`
-    : names.join("");
-};
 const signed = (v: number) => `${v > 0 ? "+" : "−"}${Math.abs(v)}`;
 
 // One effect in words.
-export function effectText(e: Effect) {
+export function effectText(e: Effect, intl: ServerIntl) {
+  const t = effects(intl);
+  // A list of damage types in words: "Chop and Mining".
+  const types = (list: string[]) =>
+    intl.list(list.map((k) => intl.format(`pages.crafting.damage.${k}`)));
   switch (e.key) {
     case "tailwind":
     case "taming":
@@ -68,7 +67,8 @@ export type GearEffect = {
 };
 
 // When a gear effect holds, in words.
-export function gearWhen(g: GearEffect) {
+export function gearWhen(g: GearEffect, intl: ServerIntl) {
+  const t = effects(intl);
   if (g.when === "hit") {
     return g.chance !== null && g.chance < 100
       ? t("when.hitChance", { name: g.name ?? "", chance: g.chance })
