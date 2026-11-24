@@ -116,6 +116,11 @@ export const GUIDE_GROUPS: Group[] = [
     // 2026-11-25).
     entries: [
       entry("/guides/basics/bosses", "archive.guideBosses", "bosses"),
+      entry(
+        "/guides/basics/boss-arenas",
+        "archive.guideBossArenas",
+        "bossArenas",
+      ),
       entry("/guides/basics/traders", "archive.guideTraders", "traders"),
       entry("/guides/basics/comfort", "archive.guideComfort", "comfort"),
       entry("/guides/basics/taming", "archive.guideTaming", "taming"),
@@ -131,11 +136,6 @@ export const GUIDE_GROUPS: Group[] = [
         "howMuchMetal",
       ),
       entry("/guides/basics/forge-of-potential", "archive.guideForge", "forge"),
-      entry(
-        "/guides/basics/boss-arenas",
-        "archive.guideBossArenas",
-        "bossArenas",
-      ),
     ],
   },
   {
