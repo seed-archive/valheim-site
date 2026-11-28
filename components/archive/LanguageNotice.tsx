@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, usePathname } from "next/navigation";
 import Alert from "@mui/material/Alert";
 import Link from "@mui/material/Link";
+import Snackbar from "@mui/material/Snackbar";
 import { LANGUAGE_KEY } from "@seed-archive/ui/language-switcher";
 
 import { BASE_PATH } from "@/lib/site";
@@ -52,19 +53,23 @@ export function LanguageNotice(props: { offers: Record<string, string> }) {
     return null;
   }
   const href = `${BASE_PATH}/${offer}${pathname.replace(/^\/[^/]+/, "")}`;
+  // A pop-up over the page's foot, never a bar above the header (the owner,
+  // 2026-11-28): the anchors' offsets count the header alone, and a bar above
+  // it would push every anchor off; the No Man's Sky section does the same.
   return (
-    <Alert
-      severity="info"
-      lang={offer}
-      onClose={() => {
-        choose(lang);
-        setOffer(null);
-      }}
-      sx={{ borderRadius: 0 }}
-    >
-      <Link href={href} onClick={() => choose(offer)}>
-        {props.offers[offer]}
-      </Link>
-    </Alert>
+    <Snackbar open anchorOrigin={{ vertical: "bottom", horizontal: "center" }}>
+      <Alert
+        severity="info"
+        lang={offer}
+        onClose={() => {
+          choose(lang);
+          setOffer(null);
+        }}
+      >
+        <Link href={href} onClick={() => choose(offer)}>
+          {props.offers[offer]}
+        </Link>
+      </Alert>
+    </Snackbar>
   );
 }
