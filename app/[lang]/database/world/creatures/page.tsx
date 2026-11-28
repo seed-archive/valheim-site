@@ -410,6 +410,15 @@ export default async function CreaturesPage() {
                         t("health", { n: c.health })
                       )}
                     </Typography>
+                    {c.sees ? (
+                      <Typography variant="body2" sx={{ mb: 1 }}>
+                        {t("sight", { n: c.sees })}
+                        <br />
+                        {c.hears
+                          ? t("hearing", { n: c.hears })
+                          : t("hearingNoise")}
+                      </Typography>
+                    ) : null}
                     <TableContainer sx={{ mb: 1 }}>
                       <Table size="small">
                         <TableHead>

@@ -51,6 +51,7 @@
     "woodfarm_henpen",
     "woodfarm_yard"
   ],
+  "gameVersion": "1.0.31",
   "kinds": [
     {
       "group": "start",
@@ -2140,6 +2141,7 @@
     "region.bonemass.abominationsTwo",
     "region.bonemass.abominationsFour",
     "around.fader.fortressesInSight",
+    "around.yagluth.villageClear",
     "strip.eikthyr",
     "strip.theElder",
     "strip.bonemass",
@@ -2268,6 +2270,8 @@
     "plains.fromStart",
     "mistlands.fromStart",
     "mistlands.fragmentsWalk",
+    "mistlands.fragmentsMines",
+    "mistlands.blackCoresMines",
     "mistlands.fragmentsReach",
     "mistlands.blackCoresReach",
     "mistlands.edge",
@@ -2385,7 +2389,10 @@
     "Trees Mistlands",
     "Swords Mistlands",
     "Hare Mistlands",
-    "BroodSwarm Mistlands"
+    "BroodSwarm Mistlands",
+    "Thistle",
+    "Greyling Meadows",
+    "Statue Swamp"
   ],
   "treePalette": [
     [3, 3, 3],

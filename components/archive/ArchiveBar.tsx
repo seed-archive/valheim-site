@@ -117,7 +117,17 @@ export function ArchiveBar() {
         <Drawer anchor="right" open={drawer} onClose={() => setDrawer(false)}>
           <List sx={{ width: 280 }}>
             {MENUS.flatMap((menu) => [
-              <ListSubheader key={menu.key} sx={{ fontWeight: 700 }}>
+              // Level one never reads smaller than level two (the owner,
+              // 2026-11-28): the subheader's own 0.875rem grey stood under
+              // the items' body1; weights 700, 600, 400 down the levels.
+              <ListSubheader
+                key={menu.key}
+                sx={{
+                  typography: "subtitle1",
+                  fontWeight: 700,
+                  color: "text.primary",
+                }}
+              >
                 <FormattedMessage id={menu.id} />
               </ListSubheader>,
               ...menu.groups.flatMap((group) => [

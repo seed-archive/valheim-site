@@ -75,6 +75,7 @@
       }
     ],
     "health": 800.0,
+    "hears": null,
     "key": "Abomination",
     "mines": {
       "damage": 60.0,
@@ -91,6 +92,7 @@
       "spirit": "immune"
     },
     "name": "Abomination",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -346,6 +348,7 @@
       }
     ],
     "health": 800.0,
+    "hears": 30.0,
     "key": "Asksvin",
     "mines": {
       "damage": 100.0,
@@ -359,6 +362,7 @@
       "spirit": "immune"
     },
     "name": "Asksvin",
+    "sees": 35.0,
     "sets": [
       {
         "by": {
@@ -515,6 +519,7 @@
       }
     ],
     "health": 200.0,
+    "hears": 2.0,
     "key": "Seal_Pup",
     "mines": null,
     "modifiers": {
@@ -523,6 +528,7 @@
       "spirit": "immune"
     },
     "name": "Baby Seal",
+    "sees": 1.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -613,6 +619,7 @@
       }
     ],
     "health": 2200.0,
+    "hears": null,
     "key": "Barka",
     "mines": {
       "damage": 30.0,
@@ -630,6 +637,7 @@
       "spirit": "immune"
     },
     "name": "Barka",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -820,6 +828,7 @@
       }
     ],
     "health": 10.0,
+    "hears": null,
     "key": "Bat",
     "mines": null,
     "modifiers": {
@@ -834,6 +843,7 @@
       "spirit": "weak"
     },
     "name": "Bat",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -1050,6 +1060,7 @@
       }
     ],
     "health": 500.0,
+    "hears": 15.0,
     "key": "Bjorn",
     "mines": {
       "damage": 40.0,
@@ -1065,6 +1076,7 @@
       "spirit": "immune"
     },
     "name": "Bear",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -1298,6 +1310,7 @@
       }
     ],
     "health": 500.0,
+    "hears": 15.0,
     "key": "Bjorn_sleeping",
     "mines": {
       "damage": 40.0,
@@ -1313,6 +1326,7 @@
       "spirit": "immune"
     },
     "name": "Bear",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -1444,6 +1458,7 @@
       }
     ],
     "health": 50.0,
+    "hears": null,
     "key": "Blob",
     "mines": null,
     "modifiers": {
@@ -1458,6 +1473,7 @@
       "slash": "resistant"
     },
     "name": "Blob",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -1702,6 +1718,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 20.0,
     "key": "Boar",
     "mines": null,
     "modifiers": {
@@ -1710,6 +1727,7 @@
       "spirit": "immune"
     },
     "name": "Boar",
+    "sees": 20.0,
     "sets": [
       {
         "by": {
@@ -1875,6 +1893,7 @@
       }
     ],
     "health": 5000.0,
+    "hears": null,
     "key": "Bonemass",
     "mines": {
       "damage": 1000.0,
@@ -1891,6 +1910,7 @@
       "slash": "resistant"
     },
     "name": "Bonemass",
+    "sees": 50.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -1961,6 +1981,7 @@
       }
     ],
     "health": 1100.0,
+    "hears": null,
     "key": "BonemawSerpent",
     "mines": null,
     "modifiers": {
@@ -1972,6 +1993,7 @@
       "spirit": "immune"
     },
     "name": "Bonemaw",
+    "sees": 50.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -2042,6 +2064,7 @@
       }
     ],
     "health": 1200.0,
+    "hears": 30.0,
     "key": "Skeleton_Hildir",
     "mines": null,
     "modifiers": {
@@ -2054,6 +2077,7 @@
       "poison": "immune"
     },
     "name": "Brenna",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -2144,6 +2168,7 @@
       }
     ],
     "health": 250.0,
+    "hears": null,
     "key": "GoblinDeepNorth",
     "mines": null,
     "modifiers": {
@@ -2152,6 +2177,7 @@
       "spirit": "immune"
     },
     "name": "Captive Fuling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -2249,6 +2275,7 @@
       }
     ],
     "health": 200.0,
+    "hears": null,
     "key": "Charred_Archer",
     "mines": null,
     "modifiers": {
@@ -2260,6 +2287,7 @@
       "spirit": "weak"
     },
     "name": "Charred Marksman",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -2429,6 +2457,7 @@
       }
     ],
     "health": 220.0,
+    "hears": null,
     "key": "Charred_Twitcher",
     "mines": null,
     "modifiers": {
@@ -2440,6 +2469,7 @@
       "spirit": "weak"
     },
     "name": "Charred Twitcher",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -2623,6 +2653,7 @@
       }
     ],
     "health": 600.0,
+    "hears": null,
     "key": "Charred_Mage",
     "mines": null,
     "modifiers": {
@@ -2635,6 +2666,7 @@
       "spirit": "weak"
     },
     "name": "Charred Warlock",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -2760,6 +2792,7 @@
       }
     ],
     "health": 600.0,
+    "hears": null,
     "key": "Charred_Melee",
     "mines": null,
     "modifiers": {
@@ -2771,6 +2804,7 @@
       "spirit": "weak"
     },
     "name": "Charred Warrior",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -3013,6 +3047,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 20.0,
     "key": "Chicken",
     "mines": null,
     "modifiers": {
@@ -3021,6 +3056,7 @@
       "spirit": "immune"
     },
     "name": "Chicken",
+    "sees": 20.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -3069,6 +3105,7 @@
       }
     ],
     "health": 200.0,
+    "hears": null,
     "key": "Fenring_Cultist",
     "mines": null,
     "modifiers": {
@@ -3078,6 +3115,7 @@
       "poison": "weak"
     },
     "name": "Cultist",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -3145,6 +3183,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 30.0,
     "key": "Deathsquito",
     "mines": null,
     "modifiers": {
@@ -3153,6 +3192,7 @@
       "spirit": "immune"
     },
     "name": "Deathsquito",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -3319,6 +3359,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 15.0,
     "key": "Deer",
     "mines": null,
     "modifiers": {
@@ -3327,6 +3368,7 @@
       "spirit": "immune"
     },
     "name": "Deer",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -3456,6 +3498,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Hatchling",
     "mines": null,
     "modifiers": {
@@ -3466,6 +3509,7 @@
       "spirit": "immune"
     },
     "name": "Drake",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -3559,6 +3603,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Draugr",
     "mines": null,
     "modifiers": {
@@ -3568,6 +3613,7 @@
       "poison": "immune"
     },
     "name": "Draugr",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -3701,6 +3747,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Draugr_Ranged",
     "mines": null,
     "modifiers": {
@@ -3710,6 +3757,7 @@
       "poison": "immune"
     },
     "name": "Draugr",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -3784,6 +3832,7 @@
       }
     ],
     "health": 200.0,
+    "hears": null,
     "key": "Draugr_Elite",
     "mines": null,
     "modifiers": {
@@ -3793,6 +3842,7 @@
       "poison": "immune"
     },
     "name": "Draugr Elite",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -3912,6 +3962,7 @@
       }
     ],
     "health": 350.0,
+    "hears": null,
     "key": "DvergerMage",
     "mines": null,
     "modifiers": {
@@ -3922,6 +3973,7 @@
       "spirit": "immune"
     },
     "name": "Dvergr Mage",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4033,6 +4085,7 @@
       }
     ],
     "health": 350.0,
+    "hears": null,
     "key": "Dverger",
     "mines": null,
     "modifiers": {
@@ -4041,6 +4094,7 @@
       "spirit": "immune"
     },
     "name": "Dvergr Rogue",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4157,6 +4211,7 @@
       }
     ],
     "health": 1000.0,
+    "hears": null,
     "key": "DvergerAshlands",
     "mines": null,
     "modifiers": {
@@ -4165,6 +4220,7 @@
       "spirit": "immune"
     },
     "name": "Dvergr Rogue",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4252,6 +4308,7 @@
       }
     ],
     "health": 500.0,
+    "hears": null,
     "key": "Eikthyr",
     "mines": {
       "damage": 1000.0,
@@ -4262,6 +4319,7 @@
       "pickaxe": "ignore"
     },
     "name": "Eikthyr",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4339,6 +4397,7 @@
       }
     ],
     "health": 350.0,
+    "hears": null,
     "key": "Elaking",
     "mines": {
       "damage": 100.0,
@@ -4352,6 +4411,7 @@
       "spirit": "immune"
     },
     "name": "Elaking",
+    "sees": 50.0,
     "sets": [
       {
         "by": {
@@ -4501,6 +4561,7 @@
       }
     ],
     "health": 350.0,
+    "hears": null,
     "key": "ElakingLantern",
     "mines": null,
     "modifiers": {
@@ -4511,6 +4572,7 @@
       "spirit": "immune"
     },
     "name": "Elaking",
+    "sees": 50.0,
     "sets": [
       {
         "by": {
@@ -4651,6 +4713,7 @@
       }
     ],
     "health": 1400.0,
+    "hears": null,
     "key": "ElakingMole",
     "mines": null,
     "modifiers": {
@@ -4660,6 +4723,7 @@
       "spirit": "immune"
     },
     "name": "Eyeless One",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4721,6 +4785,7 @@
       }
     ],
     "health": 25000.0,
+    "hears": null,
     "key": "Fader",
     "mines": {
       "damage": 1000.0,
@@ -4734,6 +4799,7 @@
       "spirit": "immune"
     },
     "name": "Fader",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4794,6 +4860,7 @@
       }
     ],
     "health": 1500.0,
+    "hears": null,
     "key": "FallenValkyrie",
     "mines": {
       "damage": 100.0,
@@ -4807,6 +4874,7 @@
       "spirit": "weak"
     },
     "name": "Fallen Valkyrie",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4899,6 +4967,7 @@
       }
     ],
     "health": 300.0,
+    "hears": null,
     "key": "Fenring",
     "mines": null,
     "modifiers": {
@@ -4908,6 +4977,7 @@
       "poison": "resistant"
     },
     "name": "Fenring",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -4975,6 +5045,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Frysling",
     "mines": null,
     "modifiers": {
@@ -4986,6 +5057,7 @@
       "spirit": "immune"
     },
     "name": "Frysling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5048,6 +5120,7 @@
       }
     ],
     "health": 175.0,
+    "hears": null,
     "key": "Goblin",
     "mines": null,
     "modifiers": {
@@ -5056,6 +5129,7 @@
       "spirit": "immune"
     },
     "name": "Fuling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5225,6 +5299,7 @@
       }
     ],
     "health": 175.0,
+    "hears": null,
     "key": "GoblinArcher",
     "mines": null,
     "modifiers": {
@@ -5233,6 +5308,7 @@
       "spirit": "immune"
     },
     "name": "Fuling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5316,6 +5392,7 @@
       }
     ],
     "health": 800.0,
+    "hears": null,
     "key": "GoblinBrute",
     "mines": {
       "damage": 40.0,
@@ -5327,6 +5404,7 @@
       "spirit": "immune"
     },
     "name": "Fuling Berserker",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5469,6 +5547,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "GoblinShaman",
     "mines": null,
     "modifiers": {
@@ -5477,6 +5556,7 @@
       "spirit": "immune"
     },
     "name": "Fuling Shaman",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5522,6 +5602,7 @@
     },
     "drops": [],
     "health": 3000.0,
+    "hears": null,
     "key": "TrollFrost",
     "mines": {
       "damage": 80.0,
@@ -5538,6 +5619,7 @@
       "spirit": "immune"
     },
     "name": "Gammeltroll",
+    "sees": 300.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5597,6 +5679,7 @@
       }
     ],
     "health": 3700.0,
+    "hears": null,
     "key": "Fenring_Cultist_Hildir",
     "mines": null,
     "modifiers": {
@@ -5606,6 +5689,7 @@
       "pickaxe": "ignore"
     },
     "name": "Geirrhafa",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5666,6 +5750,7 @@
       }
     ],
     "health": 60.0,
+    "hears": 30.0,
     "key": "Ghost",
     "mines": null,
     "modifiers": {
@@ -5678,6 +5763,7 @@
       "spirit": "weak"
     },
     "name": "Ghost",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5736,6 +5822,7 @@
       }
     ],
     "health": 60.0,
+    "hears": 30.0,
     "key": "Ghost_sleeping",
     "mines": null,
     "modifiers": {
@@ -5748,6 +5835,7 @@
       "spirit": "weak"
     },
     "name": "Ghost",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -5805,6 +5893,7 @@
       }
     ],
     "health": 1500.0,
+    "hears": null,
     "key": "Gjall",
     "mines": null,
     "modifiers": {
@@ -5814,6 +5903,7 @@
       "spirit": "immune"
     },
     "name": "Gjall",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -6198,6 +6288,7 @@
       }
     ],
     "health": 40.0,
+    "hears": null,
     "key": "Greydwarf",
     "mines": null,
     "modifiers": {
@@ -6208,6 +6299,7 @@
       "spirit": "immune"
     },
     "name": "Greydwarf",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -6694,6 +6786,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Greydwarf_Frozen",
     "mines": null,
     "modifiers": {
@@ -6704,6 +6797,7 @@
       "spirit": "immune"
     },
     "name": "Greydwarf",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -7051,6 +7145,7 @@
       }
     ],
     "health": 150.0,
+    "hears": null,
     "key": "Greydwarf_Elite",
     "mines": null,
     "modifiers": {
@@ -7061,6 +7156,7 @@
       "spirit": "immune"
     },
     "name": "Greydwarf Brute",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -7454,6 +7550,7 @@
       }
     ],
     "health": 60.0,
+    "hears": null,
     "key": "Greydwarf_Shaman",
     "mines": null,
     "modifiers": {
@@ -7464,6 +7561,7 @@
       "spirit": "immune"
     },
     "name": "Greydwarf Shaman",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -7899,6 +7997,7 @@
       }
     ],
     "health": 120.0,
+    "hears": null,
     "key": "Greydwarf_Shaman_Frozen",
     "mines": null,
     "modifiers": {
@@ -7909,6 +8008,7 @@
       "spirit": "immune"
     },
     "name": "Greydwarf Shaman",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8011,6 +8111,7 @@
       }
     ],
     "health": 20.0,
+    "hears": null,
     "key": "Greyling",
     "mines": null,
     "modifiers": {
@@ -8021,6 +8122,7 @@
       "spirit": "immune"
     },
     "name": "Greyling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8107,6 +8209,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "BlobTar",
     "mines": null,
     "modifiers": {
@@ -8120,6 +8223,7 @@
       "slash": "resistant"
     },
     "name": "Growth",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8263,6 +8367,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 15.0,
     "key": "Hare",
     "mines": null,
     "modifiers": {
@@ -8271,6 +8376,7 @@
       "spirit": "immune"
     },
     "name": "Hare",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -8472,6 +8578,7 @@
       }
     ],
     "health": 10.0,
+    "hears": 20.0,
     "key": "Hen",
     "mines": null,
     "modifiers": {
@@ -8480,6 +8587,7 @@
       "spirit": "immune"
     },
     "name": "Hen",
+    "sees": 20.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8667,6 +8775,7 @@
       }
     ],
     "health": 800.0,
+    "hears": null,
     "key": "JotunWitch",
     "mines": {
       "damage": 100.0,
@@ -8681,6 +8790,7 @@
       "spirit": "immune"
     },
     "name": "Hexen",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -8851,6 +8961,7 @@
       }
     ],
     "health": 1500.0,
+    "hears": null,
     "key": "DvergerDeepNorth",
     "mines": null,
     "modifiers": {
@@ -8859,6 +8970,7 @@
       "spirit": "immune"
     },
     "name": "Imprisoned Dvergr",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8895,6 +9007,7 @@
     },
     "drops": [],
     "health": 10000.0,
+    "hears": null,
     "key": "FrozenKing",
     "mines": {
       "damage": 300.0,
@@ -8910,6 +9023,7 @@
       "spirit": "immune"
     },
     "name": "Kall Fimbulbringer",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -8934,6 +9048,7 @@
     "chops": null,
     "drops": [],
     "health": 7000.0,
+    "hears": null,
     "key": "FrozenKing_p2",
     "mines": null,
     "modifiers": {
@@ -8949,6 +9064,7 @@
       "spirit": "immune"
     },
     "name": "Kall Fimbulbringer",
+    "sees": 100.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -9000,6 +9116,7 @@
       }
     ],
     "health": 30000.0,
+    "hears": null,
     "key": "FrozenKing_p3",
     "mines": {
       "damage": 300.0,
@@ -9016,6 +9133,7 @@
       "spirit": "immune"
     },
     "name": "Kall Fimbulbringer",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -9204,6 +9322,7 @@
       }
     ],
     "health": 1300.0,
+    "hears": null,
     "key": "JotunWarrior",
     "mines": {
       "damage": 80.0,
@@ -9218,6 +9337,7 @@
       "spirit": "ignore"
     },
     "name": "Krigen",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -9512,6 +9632,7 @@
       }
     ],
     "health": 1300.0,
+    "hears": null,
     "key": "JotunWarriorDualWield",
     "mines": null,
     "modifiers": {
@@ -9523,6 +9644,7 @@
       "spirit": "ignore"
     },
     "name": "Krigen",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -9855,6 +9977,7 @@
       }
     ],
     "health": 700.0,
+    "hears": 20.0,
     "key": "BogWitchKvastur",
     "mines": null,
     "modifiers": {
@@ -9865,6 +9988,7 @@
       "spirit": "immune"
     },
     "name": "Kvastur",
+    "sees": 10.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -9967,6 +10091,7 @@
       }
     ],
     "health": 300.0,
+    "hears": null,
     "key": "BlobLava",
     "mines": null,
     "modifiers": {
@@ -9980,6 +10105,7 @@
       "poison": "resistant"
     },
     "name": "Lava Blob",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10076,6 +10202,7 @@
       }
     ],
     "health": 60.0,
+    "hears": null,
     "key": "Leech",
     "mines": null,
     "modifiers": {
@@ -10086,6 +10213,7 @@
       "spirit": "immune"
     },
     "name": "Leech",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10182,6 +10310,7 @@
       }
     ],
     "health": 60.0,
+    "hears": null,
     "key": "Leech_cave",
     "mines": null,
     "modifiers": {
@@ -10192,6 +10321,7 @@
       "spirit": "immune"
     },
     "name": "Leech",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10231,6 +10361,7 @@
       }
     ],
     "health": 2500.0,
+    "hears": null,
     "key": "Charred_Melee_Dyrnwyn",
     "mines": null,
     "modifiers": {
@@ -10243,6 +10374,7 @@
       "spirit": "weak"
     },
     "name": "Lord Reto",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10362,6 +10494,7 @@
       }
     ],
     "health": 1000.0,
+    "hears": 15.0,
     "key": "Lox",
     "mines": {
       "damage": 100.0,
@@ -10377,6 +10510,7 @@
       "spirit": "immune"
     },
     "name": "Lox",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -10507,6 +10641,7 @@
       }
     ],
     "health": 7500.0,
+    "hears": null,
     "key": "Dragon",
     "mines": {
       "damage": 1000.0,
@@ -10520,6 +10655,7 @@
       "spirit": "immune"
     },
     "name": "Moder",
+    "sees": 60.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10697,6 +10833,7 @@
       }
     ],
     "health": 1000.0,
+    "hears": 15.0,
     "key": "Moose",
     "mines": null,
     "modifiers": {
@@ -10709,6 +10846,7 @@
       "spirit": "immune"
     },
     "name": "Moose",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -10883,6 +11021,7 @@
       }
     ],
     "health": 1600.0,
+    "hears": null,
     "key": "Morgen",
     "mines": {
       "damage": 100.0,
@@ -10898,6 +11037,7 @@
       "slash": "resistant"
     },
     "name": "Morgen",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -10993,6 +11133,7 @@
       }
     ],
     "health": 1600.0,
+    "hears": null,
     "key": "Morgen_NonSleeping",
     "mines": {
       "damage": 100.0,
@@ -11008,6 +11149,7 @@
       "slash": "resistant"
     },
     "name": "Morgen",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -11091,6 +11233,7 @@
       }
     ],
     "health": 5.0,
+    "hears": 20.0,
     "key": "Neck",
     "mines": null,
     "modifiers": {
@@ -11101,6 +11244,7 @@
       "spirit": "immune"
     },
     "name": "Neck",
+    "sees": 20.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -11238,6 +11382,7 @@
       }
     ],
     "health": 150.0,
+    "hears": null,
     "key": "BlobElite",
     "mines": null,
     "modifiers": {
@@ -11252,6 +11397,7 @@
       "slash": "resistant"
     },
     "name": "Oozer",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -11398,6 +11544,7 @@
       }
     ],
     "health": 100.0,
+    "hears": 30.0,
     "key": "Skeleton_Poison",
     "mines": null,
     "modifiers": {
@@ -11410,6 +11557,7 @@
       "poison": "immune"
     },
     "name": "Rancid Remains",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -11613,6 +11761,7 @@
       }
     ],
     "health": 400.0,
+    "hears": 2.0,
     "key": "Seal",
     "mines": null,
     "modifiers": {
@@ -11622,6 +11771,7 @@
       "spirit": "immune"
     },
     "name": "Seal",
+    "sees": 1.0,
     "sets": [
       {
         "by": {
@@ -11788,6 +11938,7 @@
       }
     ],
     "health": 200.0,
+    "hears": null,
     "key": "Seeker",
     "mines": {
       "damage": 200.0,
@@ -11802,6 +11953,7 @@
       "spirit": "immune"
     },
     "name": "Seeker",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -11988,6 +12140,7 @@
       }
     ],
     "health": 20.0,
+    "hears": null,
     "key": "SeekerBrood",
     "mines": null,
     "modifiers": {
@@ -11999,6 +12152,7 @@
       "spirit": "immune"
     },
     "name": "Seeker Brood",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -12167,6 +12321,7 @@
       }
     ],
     "health": 1500.0,
+    "hears": null,
     "key": "SeekerBrute",
     "mines": {
       "damage": 100.0,
@@ -12181,6 +12336,7 @@
       "spirit": "immune"
     },
     "name": "Seeker Soldier",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -12337,6 +12493,7 @@
       }
     ],
     "health": 400.0,
+    "hears": null,
     "key": "Serpent",
     "mines": null,
     "modifiers": {
@@ -12348,6 +12505,7 @@
       "spirit": "immune"
     },
     "name": "Serpent",
+    "sees": 50.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -12427,6 +12585,7 @@
     },
     "drops": [],
     "health": 750.0,
+    "hears": null,
     "key": "ShadowPerson",
     "mines": null,
     "modifiers": {
@@ -12443,6 +12602,7 @@
       "spirit": "ignore"
     },
     "name": "Shadow",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -12548,6 +12708,7 @@
       }
     ],
     "health": 150.0,
+    "hears": null,
     "key": "BlobMork",
     "mines": null,
     "modifiers": {
@@ -12562,6 +12723,7 @@
       "slash": "resistant"
     },
     "name": "Shapeless Pulp",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [
@@ -12687,6 +12849,7 @@
       }
     ],
     "health": 40.0,
+    "hears": null,
     "key": "Skeleton",
     "mines": null,
     "modifiers": {
@@ -12699,6 +12862,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -13033,6 +13197,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Skeleton_DeepNorth",
     "mines": null,
     "modifiers": {
@@ -13045,6 +13210,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -13274,6 +13440,7 @@
       }
     ],
     "health": 30.0,
+    "hears": null,
     "key": "Skeleton_Meadows",
     "mines": null,
     "modifiers": {
@@ -13286,6 +13453,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -13494,6 +13662,7 @@
       }
     ],
     "health": 30.0,
+    "hears": null,
     "key": "Skeleton_Meadows_noarcher",
     "mines": null,
     "modifiers": {
@@ -13506,6 +13675,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -13720,6 +13890,7 @@
       }
     ],
     "health": 75.0,
+    "hears": null,
     "key": "Skeleton_Mountains",
     "mines": null,
     "modifiers": {
@@ -13732,6 +13903,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -13952,6 +14124,7 @@
       }
     ],
     "health": 75.0,
+    "hears": null,
     "key": "Skeleton_Mountains_noarcher",
     "mines": null,
     "modifiers": {
@@ -13964,6 +14137,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -14166,6 +14340,7 @@
       }
     ],
     "health": 40.0,
+    "hears": null,
     "key": "Skeleton_NoArcher",
     "mines": null,
     "modifiers": {
@@ -14178,6 +14353,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -14383,6 +14559,7 @@
       }
     ],
     "health": 60.0,
+    "hears": null,
     "key": "Skeleton_Swamps",
     "mines": null,
     "modifiers": {
@@ -14395,6 +14572,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -14639,6 +14817,7 @@
       }
     ],
     "health": 60.0,
+    "hears": null,
     "key": "Skeleton_Swamps_noarcher",
     "mines": null,
     "modifiers": {
@@ -14651,6 +14830,7 @@
       "poison": "immune"
     },
     "name": "Skeleton",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -14830,6 +15010,7 @@
       }
     ],
     "health": 800.0,
+    "hears": null,
     "key": "StoneGolem",
     "mines": {
       "damage": 100.0,
@@ -14846,6 +15027,7 @@
       "spirit": "immune"
     },
     "name": "Stone Golem",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -14980,6 +15162,7 @@
       }
     ],
     "health": 20.0,
+    "hears": null,
     "key": "Surtling",
     "mines": null,
     "modifiers": {
@@ -14991,6 +15174,7 @@
       "spirit": "immune"
     },
     "name": "Surtling",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15053,6 +15237,7 @@
       }
     ],
     "health": 2500.0,
+    "hears": null,
     "key": "gd_king",
     "mines": {
       "damage": 1000.0,
@@ -15066,6 +15251,7 @@
       "spirit": "immune"
     },
     "name": "The Elder",
+    "sees": 50.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15112,6 +15298,7 @@
       }
     ],
     "health": 12500.0,
+    "hears": null,
     "key": "SeekerQueen",
     "mines": {
       "damage": 300.0,
@@ -15124,6 +15311,7 @@
       "spirit": "immune"
     },
     "name": "The Queen",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15158,6 +15346,7 @@
       }
     ],
     "health": 60.0,
+    "hears": 30.0,
     "key": "Ghost_old",
     "mines": null,
     "modifiers": {
@@ -15170,6 +15359,7 @@
       "spirit": "weak"
     },
     "name": "The Void",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15235,6 +15425,7 @@
       }
     ],
     "health": 50.0,
+    "hears": null,
     "key": "Tick",
     "mines": null,
     "modifiers": {
@@ -15244,6 +15435,7 @@
       "spirit": "immune"
     },
     "name": "Tick",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15343,6 +15535,7 @@
       }
     ],
     "health": 50.0,
+    "hears": null,
     "key": "BlobMorkMini",
     "mines": null,
     "modifiers": {
@@ -15357,6 +15550,7 @@
       "slash": "resistant"
     },
     "name": "Tiny Pulp",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15446,6 +15640,7 @@
       }
     ],
     "health": 600.0,
+    "hears": null,
     "key": "Troll",
     "mines": {
       "damage": 40.0,
@@ -15459,6 +15654,7 @@
       "spirit": "immune"
     },
     "name": "Troll",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -15594,6 +15790,7 @@
       }
     ],
     "health": 50.0,
+    "hears": null,
     "key": "Ulv",
     "mines": null,
     "modifiers": {
@@ -15603,6 +15800,7 @@
       "poison": "weak"
     },
     "name": "Ulv",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -15745,6 +15943,7 @@
       }
     ],
     "health": 1200.0,
+    "hears": 15.0,
     "key": "Unbjorn",
     "mines": {
       "damage": 40.0,
@@ -15762,6 +15961,7 @@
       "spirit": "weak"
     },
     "name": "Vile",
+    "sees": 25.0,
     "sets": [
       {
         "by": {
@@ -16014,6 +16214,7 @@
       }
     ],
     "health": 200.0,
+    "hears": null,
     "key": "Volture",
     "mines": null,
     "modifiers": {
@@ -16023,6 +16224,7 @@
       "poison": "immune"
     },
     "name": "Volture",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -16180,6 +16382,7 @@
       }
     ],
     "health": 80.0,
+    "hears": null,
     "key": "Wolf",
     "mines": null,
     "modifiers": {
@@ -16188,6 +16391,7 @@
       "spirit": "immune"
     },
     "name": "Wolf",
+    "sees": 30.0,
     "sets": [
       {
         "by": {
@@ -16359,6 +16563,7 @@
       }
     ],
     "health": 100.0,
+    "hears": null,
     "key": "Wraith",
     "mines": null,
     "modifiers": {
@@ -16373,6 +16578,7 @@
       "spirit": "weak"
     },
     "name": "Wraith",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -16475,6 +16681,7 @@
       }
     ],
     "health": 400.0,
+    "hears": null,
     "key": "Writhan",
     "mines": null,
     "modifiers": {
@@ -16486,6 +16693,7 @@
       "slash": "weak"
     },
     "name": "Writhan",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -16559,6 +16767,7 @@
       }
     ],
     "health": 10000.0,
+    "hears": null,
     "key": "GoblinKing",
     "mines": {
       "damage": 100.0,
@@ -16572,6 +16781,7 @@
       "poison": "immune"
     },
     "name": "Yagluth",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -16615,6 +16825,7 @@
       }
     ],
     "health": 2400.0,
+    "hears": null,
     "key": "GoblinShaman_Hildir",
     "mines": null,
     "modifiers": {
@@ -16623,6 +16834,7 @@
       "spirit": "immune"
     },
     "name": "Zil",
+    "sees": 40.0,
     "sets": [],
     "sources": {
       "areas": [],
@@ -16660,6 +16872,7 @@
       }
     ],
     "health": 4200.0,
+    "hears": null,
     "key": "GoblinBruteBros",
     "mines": {
       "damage": 40.0,
@@ -16671,6 +16884,7 @@
       "spirit": "immune"
     },
     "name": "Zil & Thungr",
+    "sees": 30.0,
     "sets": [],
     "sources": {
       "areas": [],

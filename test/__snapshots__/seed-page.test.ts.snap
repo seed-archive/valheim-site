@@ -8,12 +8,12 @@ exports[`seed 6Z4uDl0xNQ > scores as before 1`] = `
     "deepNorth": 1,
     "island": 0.7142857142857143,
     "meadows": 1,
-    "mistlands": 0.75,
-    "mountain": 0.5,
-    "plains": 0.75,
+    "mistlands": 0.6428571428571429,
+    "mountain": 0.8333333333333334,
+    "plains": 1,
     "swamp": 0.8333333333333334,
   },
-  "total": 81,
+  "total": 87,
 }
 `;
 
@@ -80,10 +80,10 @@ exports[`seed IzFt3SW5sA > scores as before 1`] = `
     "meadows": 0.8333333333333334,
     "mistlands": 0.5,
     "mountain": 0.8333333333333334,
-    "plains": 0.375,
-    "swamp": 0.8333333333333334,
+    "plains": 0.3,
+    "swamp": 0.9166666666666666,
   },
-  "total": 64,
+  "total": 65,
 }
 `;
 
@@ -140,9 +140,9 @@ exports[`seed Valheim > scores as before 1`] = `
     "deepNorth": 0.8333333333333334,
     "island": 0.42857142857142855,
     "meadows": 0.6666666666666666,
-    "mistlands": 0.4166666666666667,
-    "mountain": 0.16666666666666666,
-    "plains": 0.125,
+    "mistlands": 0.35714285714285715,
+    "mountain": 0.3333333333333333,
+    "plains": 0,
     "swamp": 0.5,
   },
   "total": 46,
