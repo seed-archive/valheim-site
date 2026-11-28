@@ -9,7 +9,10 @@
       "question": "¿Qué suelta cada criatura y para qué sirve?",
       "lead": "Caza con una receta en mente: cada criatura por bioma, su salud, qué le hace daño, qué suelta y todas las recetas en las que entra cada botín.",
       "health": "Salud: {n}",
-      "phases": "Salud: {first}, {second} y {third}, una fase tras otra; cómo pelea en cada una está en <link>Cómo matar a cada jefe</link>.",
+      "sight": "Vista: {n} m",
+      "hearing": "Oído: {n} m",
+      "hearingNoise": "Oído: según tu ruido",
+      "phases": "Salud:{first}, {second} y {third}, una fase tras otra; cómo pelea en cada una está en <link>Cómo matar a cada jefe</link>.",
       "variant": {
         "Bjorn_sleeping": "dormido",
         "Draugr_Ranged": "arquero",

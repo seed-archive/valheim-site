@@ -2,6 +2,8 @@ import type { SeedMeasures } from "@/lib/valheim/generator";
 import { shareBeaten, type Ranks } from "@/lib/scan";
 import report from "@/lib/valheim/report.json";
 import {
+  AT_MOST,
+  atMostTier,
   BIOMES,
   ISLAND_FLAGS,
   NEED_OF,
@@ -88,6 +90,11 @@ export function score(ranks: Ranks, of: SeedMeasures): Score {
         const x = value(of, m[0]);
         if (YES_NO.includes(m[0])) {
           return Number(Boolean(x));
+        }
+        // By its tier: a full yes 1, a yes at the most ½, a no 0.
+        if (m[0] in AT_MOST) {
+          const at = atMostTier(m[0], x);
+          return at === "high" ? 1 : at === "mid" ? 0.5 : 0;
         }
         // Yes when the need lies within the scan's median.
         if (m[0] in WITHIN) {

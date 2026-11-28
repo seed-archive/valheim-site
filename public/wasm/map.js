@@ -252,6 +252,30 @@ export function point(seed, _world, x, y) {
 }
 
 /**
+ * One portion of the distributed search: worlds `start .. start + count` of the scan's numbering
+ * (`locations::strip::seed_text`), each tested as `vh hunt` tests it. The result, little-endian: the digest (u64),
+ * the candidate count (u32), then each candidate: its position (u64), its part (u32, always 0), its value count
+ * (u32, always 0). A world is a candidate when every boss stands in the strip; its seed text is its position's.
+ * Empty for params it does not understand.
+ * @param {number} _search
+ * @param {number} start
+ * @param {number} count
+ * @param {Float64Array | number[]} params
+ * @returns {Uint8Array}
+ */
+export function searchPortion(_search, start, count, params) {
+  const val2 = +_search;
+  const val3 = +start;
+  const val4 = +count;
+  const ptr0 = passArrayF64ToWasm0(params, wasm.__wbindgen_malloc);
+  const len0 = WASM_VECTOR_LEN;
+  const ret = wasm.searchPortion(val2, val3, val4, ptr0, len0);
+  var v5 = getArrayU8FromWasm0(ret[0], ret[1]).slice();
+  wasm.__wbindgen_free(ret[0], ret[1] * 1, 1);
+  return v5;
+}
+
+/**
  * @param {string} seed
  * @param {number} _world
  * @param {number} x0
@@ -388,6 +412,13 @@ function getUint8ArrayMemory0() {
 function passArray8ToWasm0(arg, malloc) {
   const ptr = malloc(arg.length * 1, 1) >>> 0;
   getUint8ArrayMemory0().set(arg, ptr / 1);
+  WASM_VECTOR_LEN = arg.length;
+  return ptr;
+}
+
+function passArrayF64ToWasm0(arg, malloc) {
+  const ptr = malloc(arg.length * 8, 8) >>> 0;
+  getFloat64ArrayMemory0().set(arg, ptr / 8);
   WASM_VECTOR_LEN = arg.length;
   return ptr;
 }

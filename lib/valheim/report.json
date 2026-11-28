@@ -58,6 +58,7 @@
       "strip": [["strip.yagluth", false]],
       "measures": [
         ["plains.totem5", true],
+        ["around.yagluth.villageClear", false],
         ["region.yagluth.barley", false],
         ["region.yagluth.flax", false]
       ]
@@ -67,7 +68,8 @@
       "boss": "theQueen",
       "strip": [["strip.theQueen", false]],
       "measures": [
-        ["mistlands.fragmentsWalk", true],
+        ["mistlands.fragmentsMines", true],
+        ["mistlands.blackCoresMines", true],
         ["around.theQueen.giant1", true],
         ["around.theQueen.extractorM", true],
         ["around.theQueen.root1", true],
@@ -103,10 +105,6 @@
     "around.bonemass.fireHole1": { "need": 1, "name": "holes" },
     "around.moder.drakeNest3": { "need": "moderEggs", "name": "nests" },
     "around.moder.silver1": { "need": 1, "name": "silver" },
-    "mistlands.fragmentsWalk": {
-      "need": "sealbreakerFragments",
-      "name": "fragments"
-    },
     "plains.totem5": { "need": "yagluthTotemsNeed", "name": "totems" },
     "around.theQueen.giant1": { "need": 1, "name": "giant" },
     "around.theQueen.extractorM": { "need": 1, "name": "extractor" },
@@ -115,6 +113,21 @@
     "around.fader.morgenHole2": { "need": "morgenHoles", "name": "morgen" },
     "around.kall.morkhalla3": { "need": "kallMorkhallaNeed", "name": "mork" },
     "around.kall.hole1": { "need": 1, "name": "tunnels" }
+  },
+  "gates": ["mistlands.fragmentsMines", "around.yagluth.villageClear"],
+  "atMost": {
+    "mistlands.fragmentsMines": {
+      "full": 2,
+      "most": 3,
+      "need": "sealbreakerFragments",
+      "name": "fragments"
+    },
+    "mistlands.blackCoresMines": {
+      "full": 2,
+      "most": 3,
+      "need": "keyForgeBlackCores",
+      "name": "forgeCores"
+    }
   },
   "needOf": {
     "region.yagluth.totems": "yagluthTotemsNeed",
@@ -147,7 +160,8 @@
     "strip.theQueen",
     "strip.fader",
     "strip.kall",
-    "vegetation.base.shore"
+    "vegetation.base.shore",
+    "around.yagluth.villageClear"
   ],
   "bonus": ["around.theQueen.root1"],
   "about": ["vegetation.base.cores", "region.bonemass.iron"],
