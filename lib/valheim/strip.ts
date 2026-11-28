@@ -47,6 +47,36 @@ export const NEED_OF: Record<string, number> = Object.fromEntries(
   Object.entries(report.needOf).map(([p, need]) => [p, number(need)]),
 );
 
+// Yes or no by a count (the owner, 2026-11-28, from a speedrunner: the
+// Sealbreaker's fragments from one or two quick mines, three at most; every
+// mine is found and its guards fought, so the count of mines matters, not the
+// metres): at most `full` a full yes, at most `most` a yes worth half (the
+// owner: three mines a little lower), beyond it a no. The row shows the count
+// beside its answer; `need` and `name` fill its label as a `WITHIN` row's do
+// (`{name}` the need, `{nameMost}` the most).
+export const AT_MOST: Record<
+  string,
+  { full: number; most: number; need: number; name: string }
+> = Object.fromEntries(
+  Object.entries(report.atMost).map(([p, a]) => [
+    p,
+    { full: a.full, most: a.most, need: number(a.need), name: a.name },
+  ]),
+);
+// An `AT_MOST` row's tier: "high" at most `full`, "mid" at most `most`, else
+// (or none) "low".
+export const atMostTier = (
+  path: string,
+  x: number | undefined,
+): "high" | "mid" | "low" => {
+  const a = AT_MOST[path];
+  return x === undefined || x > a.most ? "low" : x <= a.full ? "high" : "mid";
+};
+// The rows a run cannot do without (the owner, 2026-11-28: more than three
+// mines for the fragments and the seed is not considered): a no here keeps a
+// seed off the best seeds' list, and the report says so.
+export const GATES = report.gates;
+
 // Rows every seed answers alike: grey, and left out of the score.
 export const NEUTRAL = report.neutral;
 
@@ -170,6 +200,9 @@ export const REACH = {
   queenNear: 100,
   extractor: 200,
   bossNear: 1000,
+  // No Fuling village within this of Yagluth's altar (the generator's
+  // `VILLAGE_CLEAR_M`: a Fuling's farthest sense, 50 m, and its wander, 50).
+  villageClear: 100,
 };
 
 // What the run asks for (the game's data): the Elder three ancient seeds,

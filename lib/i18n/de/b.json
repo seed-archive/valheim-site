@@ -9,6 +9,9 @@
       "question": "Was lässt jede Kreatur fallen, und wofür ist es gut?",
       "lead": "Jag mit einem Rezept im Kopf: jede Kreatur nach Biom, ihre Gesundheit, was ihr schadet, was sie fallen lässt und jedes Rezept, in das jede Beute geht.",
       "health": "Gesundheit: {n}",
+      "sight": "Sicht: {n} m",
+      "hearing": "Gehör: {n} m",
+      "hearingNoise": "Gehör: nach deinem Lärm",
       "phases": "Gesundheit: {first}, {second} und {third}, eine Phase nach der anderen; wie er in jeder kämpft, steht unter <link>Wie du jeden Boss besiegst</link>.",
       "variant": {
         "Bjorn_sleeping": "schlafend",

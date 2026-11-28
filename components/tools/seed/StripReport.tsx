@@ -16,8 +16,11 @@ import type { SeedMeasures } from "@/lib/valheim/generator";
 import { beaten, measured, score } from "@/lib/valheim/score";
 import {
   ABOUT,
+  AT_MOST,
+  atMostTier,
   BIOMES,
   BONUS,
+  GATES,
   ISLAND_FLAGS,
   islandFlag,
   NEED_OF,
@@ -104,6 +107,10 @@ export function StripReport(props: {
     labelValues[name] = need;
     labelValues[`${name}M`] = (ranks && withinM(ranks, path)) ?? "…";
   }
+  for (const { most, need, name } of Object.values(AT_MOST)) {
+    labelValues[name] = need;
+    labelValues[`${name}Most`] = most;
+  }
   // Whether the need lies within the scan's median; undefined until the ranks
   // and the measure are in. A measure missing once every pass is in means the
   // world holds too few within reach: a no (the owner, 2026-11-22), never
@@ -153,6 +160,22 @@ export function StripReport(props: {
         />
       );
     }
+    // Yes or no with the count beside it; none within reach once every pass is
+    // in is a no without a count.
+    if (meas[0] in AT_MOST && (x !== undefined || props.complete)) {
+      return x === undefined ? (
+        <FormattedMessage id="pages.seedRating.value.no" />
+      ) : (
+        <FormattedMessage
+          id={
+            x <= AT_MOST[meas[0]].most
+              ? "pages.seedRating.value.yesCount"
+              : "pages.seedRating.value.noCount"
+          }
+          values={{ n: x }}
+        />
+      );
+    }
     if (x === undefined) {
       // Not yet measured (the deep measures come seconds later) is not "none".
       return (
@@ -198,6 +221,15 @@ export function StripReport(props: {
           ? "success.main"
           : "error.main"
         : "text.secondary";
+    }
+    if (meas[0] in AT_MOST) {
+      const x = v(meas[0]);
+      const at = atMostTier(meas[0], x);
+      return (x === undefined && !props.complete) || at === "mid"
+        ? "text.secondary"
+        : at === "high"
+          ? "success.main"
+          : "error.main";
     }
     if (meas[0] in WITHIN) {
       // By the quarters: the lower quarter green, within the asked radius
@@ -296,6 +328,25 @@ export function StripReport(props: {
     if (biome === "mistlands" && v("region.theQueen.enoughFragments") === 0) {
       say("fragmentsSecond");
     }
+    // A row the run cannot do without, answered no: the seed is not for a run.
+    for (const path of GATES) {
+      const x = v(path);
+      if (
+        !measures.some((meas) => meas[0] === path) ||
+        (x === undefined && !props.complete)
+      ) {
+        continue;
+      }
+      const label = intl.formatMessage({ id: key([path, true]) }, labelValues);
+      if (!(path in AT_MOST)) {
+        // A yes or no gate.
+        if (x === 0) {
+          say("gateNo", { label });
+        }
+      } else if (atMostTier(path, x) === "low") {
+        say(x === undefined ? "gateNone" : "gate", { label, n: x ?? 0 });
+      }
+    }
     // The parts below most seeds; a joint radius and a yes or no speak for
     // themselves.
     if (ranks) {
@@ -305,7 +356,8 @@ export function StripReport(props: {
           !YES_NO.includes(x[0]) &&
           !NEUTRAL.includes(x[0]) &&
           !(x[0] in NEED_OF) &&
-          !(x[0] in WITHIN),
+          !(x[0] in WITHIN) &&
+          !(x[0] in AT_MOST),
       )) {
         const x = v(meas[0]);
         const share = beaten(ranks, m, meas);

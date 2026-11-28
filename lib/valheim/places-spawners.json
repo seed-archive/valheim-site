@@ -69,7 +69,7 @@
     "key": "ruins",
     "kind": "place",
     "prefab": "SwampRuin2",
-    "quantity": 30,
+    "quantity": 15,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -97,7 +97,7 @@
     "key": "fireHole",
     "kind": "place",
     "prefab": "FireHole",
-    "quantity": 75,
+    "quantity": 60,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -933,7 +933,7 @@
     "key": "tarPit",
     "kind": "place",
     "prefab": "TarPit1",
-    "quantity": 100,
+    "quantity": 40,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -955,7 +955,7 @@
     "key": "tarPit",
     "kind": "place",
     "prefab": "TarPit2",
-    "quantity": 16,
+    "quantity": 10,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -977,7 +977,7 @@
     "key": "tarPit",
     "kind": "place",
     "prefab": "TarPit3",
-    "quantity": 100,
+    "quantity": 75,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -1327,7 +1327,7 @@
     "key": "giantRemains",
     "kind": "place",
     "prefab": "Mistlands_Giant1",
-    "quantity": 250,
+    "quantity": 225,
     "roomCreatures": [],
     "roomKinds": [],
     "spawners": [
@@ -1977,7 +1977,7 @@
     "key": "fulingVillage",
     "kind": "camp",
     "prefab": "GoblinCamp2",
-    "quantity": 200,
+    "quantity": 190,
     "roomCreatures": ["Goblin", "GoblinArcher", "GoblinBrute", "GoblinShaman"],
     "roomKinds": ["fulings"],
     "spawners": [
@@ -2011,7 +2011,7 @@
     "key": "northVillage",
     "kind": "camp",
     "prefab": "NorthVillage",
-    "quantity": 135,
+    "quantity": 50,
     "roomCreatures": ["ShadowPerson"],
     "roomKinds": ["ghosts"],
     "spawners": [

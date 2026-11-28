@@ -7666,14 +7666,9 @@
         {
           "amount": 5,
           "biome": "ashlands",
-          "droppedBy": [
-            {
-              "key": "Charred_Melee",
-              "name": "Charred Warrior"
-            }
-          ],
-          "key": "TrophyCharredMelee",
-          "name": "Warrior Trophy",
+          "droppedBy": [],
+          "key": "Charredskull",
+          "name": "Charred Skull",
           "perLevel": 0
         },
         {
@@ -17766,6 +17761,9 @@
       "station": "Workbench",
       "tool": "Hammer",
       "uses": [
+        {
+          "use": "wall"
+        },
         {
           "material": "wood",
           "use": "support",
@@ -45024,12 +45022,10 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 140.0,
           "pierce": 200.0
         },
         "durability": 150.0,
         "movement": -0.05,
-        "tier": 5.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -52083,14 +52079,12 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 180.0,
           "fire": 12.0,
           "frost": 88.0,
           "pierce": 232.0
         },
         "durability": 300.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -52369,7 +52363,7 @@
       "stats": {
         "block": 76.0,
         "damage": {
-          "chop": 40.0,
+          "chop": 90.0,
           "fire": 12.0,
           "frost": 88.0,
           "slash": 154.0
@@ -56625,7 +56619,6 @@
       "name": "Nord Crossbow",
       "over": {
         "damage": {
-          "chop": 20.0,
           "pierce": 44.0
         },
         "key": "CrossbowRipper",
@@ -56664,12 +56657,10 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 180.0,
           "pierce": 264.0
         },
         "durability": 300.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -56892,7 +56883,7 @@
       "name": "Nord Greataxe",
       "over": {
         "damage": {
-          "chop": -40.0,
+          "chop": 10.0,
           "slash": 48.0
         },
         "key": "AxeBerzerkr",
@@ -56931,7 +56922,7 @@
       "stats": {
         "block": 76.0,
         "damage": {
-          "chop": 40.0,
+          "chop": 90.0,
           "slash": 188.0
         },
         "durability": 400.0,
@@ -58630,12 +58621,11 @@
       "name": "Ripper",
       "over": {
         "damage": {
-          "chop": 20.0,
           "pierce": 20.0
         },
         "key": "CrossbowArbalest",
         "name": "Arbalest",
-        "tier": 1
+        "tier": 0
       },
       "page": "bows",
       "resources": [
@@ -58687,12 +58677,10 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 160.0,
           "pierce": 220.0
         },
         "durability": 200.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -58993,13 +58981,11 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 160.0,
           "pierce": 220.0,
           "poison": 10.0
         },
         "durability": 200.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -62675,13 +62661,11 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 160.0,
           "lightning": 10.0,
           "pierce": 220.0
         },
         "durability": 200.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -63458,13 +63442,11 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 180.0,
           "lightning": 45.0,
           "pierce": 274.0
         },
         "durability": 300.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [
@@ -63760,7 +63742,7 @@
       "stats": {
         "block": 76.0,
         "damage": {
-          "chop": 40.0,
+          "chop": 90.0,
           "lightning": 45.0,
           "slash": 198.0
         },
@@ -65487,12 +65469,10 @@
       "stats": {
         "block": 3.0,
         "damage": {
-          "chop": 160.0,
           "pierce": 220.0
         },
         "durability": 200.0,
         "movement": -0.05,
-        "tier": 6.0,
         "weight": 1.5
       },
       "upgrades": [

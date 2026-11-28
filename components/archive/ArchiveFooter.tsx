@@ -4,11 +4,13 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { useParams } from "next/navigation";
 import { FormattedMessage } from "react-intl";
 
 import NextLink from "@/components/LocaleLink";
 import { localePath } from "@/lib/i18n/locales";
+import generator from "@/lib/valheim/generator.json";
 
 // The game's footer (D12): its own sections, and the archive's legal pages,
 // which live in the portal at the domain's root (plain links), in the page's
@@ -42,6 +44,14 @@ export function ArchiveFooter() {
             <FormattedMessage id="archive.support" />
           </Link>
         </Stack>
+        {/* The game version the section's data is read from (the owner,
+            2026-11-28), written by the Valheim generator. */}
+        <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
+          <FormattedMessage
+            id="archive.gameVersion"
+            values={{ version: generator.gameVersion }}
+          />
+        </Typography>
       </Container>
     </Box>
   );

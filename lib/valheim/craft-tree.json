@@ -2536,7 +2536,7 @@
     "BattleaxeGold": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 228.0,
+      "damage": 278.0,
       "eitrRegen": 0.0,
       "name": "Nord Greataxe",
       "set": null,
@@ -2560,7 +2560,7 @@
     "BattleaxeGold_BloodLightning": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 283.0,
+      "damage": 333.0,
       "eitrRegen": 0.0,
       "name": "Thunderblood Greataxe",
       "set": null,
@@ -2572,7 +2572,7 @@
     "BattleaxeGold_FrostFire": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 294.0,
+      "damage": 344.0,
       "eitrRegen": 0.0,
       "name": "Frostfire Greataxe",
       "set": null,
@@ -3868,7 +3868,7 @@
     "CrossbowArbalest": {
       "armor": 15.0,
       "biome": "mistlands",
-      "damage": 340.0,
+      "damage": 200.0,
       "eitrRegen": 0.0,
       "name": "Arbalest",
       "set": null,
@@ -3880,7 +3880,7 @@
     "CrossbowGold": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 444.0,
+      "damage": 264.0,
       "eitrRegen": 0.0,
       "name": "Nord Crossbow",
       "set": null,
@@ -3904,7 +3904,7 @@
     "CrossbowGold_BloodLightning": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 499.0,
+      "damage": 319.0,
       "eitrRegen": 0.0,
       "name": "Thunderblood Crossbow",
       "set": null,
@@ -3916,7 +3916,7 @@
     "CrossbowGold_FrostFire": {
       "armor": 15.0,
       "biome": "deepNorth",
-      "damage": 512.0,
+      "damage": 332.0,
       "eitrRegen": 0.0,
       "name": "Frostfire Crossbow",
       "set": null,
@@ -3928,7 +3928,7 @@
     "CrossbowRipper": {
       "armor": 15.0,
       "biome": "ashlands",
-      "damage": 380.0,
+      "damage": 220.0,
       "eitrRegen": 0.0,
       "name": "Ripper",
       "set": null,
@@ -3940,7 +3940,7 @@
     "CrossbowRipperBlood": {
       "armor": 15.0,
       "biome": "ashlands",
-      "damage": 380.0,
+      "damage": 220.0,
       "eitrRegen": 0.0,
       "name": "Wound Ripper",
       "set": null,
@@ -3952,7 +3952,7 @@
     "CrossbowRipperLightning": {
       "armor": 15.0,
       "biome": "ashlands",
-      "damage": 390.0,
+      "damage": 230.0,
       "eitrRegen": 0.0,
       "name": "Storm Ripper",
       "set": null,
@@ -3964,7 +3964,7 @@
     "CrossbowRipperNature": {
       "armor": 15.0,
       "biome": "ashlands",
-      "damage": 390.0,
+      "damage": 230.0,
       "eitrRegen": 0.0,
       "name": "Root Ripper",
       "set": null,
@@ -5879,7 +5879,7 @@
       "skill": 1,
       "stack": 50,
       "type": 1,
-      "weight": 2.0
+      "weight": 0.5
     },
     "Lingonberry": {
       "armor": 10.0,
@@ -15169,7 +15169,7 @@
         },
         {
           "amount": 5,
-          "key": "TrophyCharredMelee",
+          "key": "Charredskull",
           "perLevel": 0
         },
         {

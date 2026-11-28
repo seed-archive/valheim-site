@@ -300,8 +300,8 @@
     "biome": "blackForest",
     "group": "armour",
     "idol": {
-      "key": "Upgrader5Armor",
-      "name": "Black Marble Protection Idol"
+      "key": "Upgrader1Armor",
+      "name": "Bronze Protection Idol"
     },
     "key": "HelmetBerserkerHood",
     "maxQuality": 4,
@@ -317,6 +317,17 @@
     "key": "HelmetDNMage",
     "maxQuality": 4,
     "name": "Headdress of the Caller"
+  },
+  {
+    "biome": "deepNorth",
+    "group": "armour",
+    "idol": {
+      "key": "Upgrader7Armor",
+      "name": "Bloodgold Protection Idol"
+    },
+    "key": "HelmetDNHeavy",
+    "maxQuality": 4,
+    "name": "Helmet of the Protector"
   },
   {
     "biome": "ashlands",
@@ -1037,8 +1048,8 @@
     "biome": "ocean",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader3Weapon",
-      "name": "Silver Battle Idol"
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
     },
     "key": "KnifeChitin",
     "maxQuality": 4,
@@ -1147,8 +1158,8 @@
     "biome": "mistlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader4Weapon",
-      "name": "Black Metal Battle Idol"
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
     },
     "key": "PickaxeBlackMetal",
     "maxQuality": 4,
@@ -1213,8 +1224,8 @@
     "biome": "blackForest",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader2Weapon",
-      "name": "Iron Battle Idol"
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
     },
     "key": "AxeBronze",
     "maxQuality": 4,
@@ -1356,8 +1367,8 @@
     "biome": "mountain",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader2Weapon",
-      "name": "Iron Battle Idol"
+      "key": "Upgrader3Weapon",
+      "name": "Silver Battle Idol"
     },
     "key": "BowDraugrFang",
     "maxQuality": 4,
@@ -1389,8 +1400,8 @@
     "biome": "meadows",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader2Weapon",
-      "name": "Iron Battle Idol"
+      "key": "Upgrader1Weapon",
+      "name": "Bronze Battle Idol"
     },
     "key": "AxeEarly",
     "maxQuality": 4,
@@ -1455,8 +1466,8 @@
     "biome": "meadows",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader1Weapon",
-      "name": "Bronze Battle Idol"
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
     },
     "key": "AxeFlint",
     "maxQuality": 4,
@@ -1499,8 +1510,8 @@
     "biome": "deepNorth",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader4Weapon",
-      "name": "Black Metal Battle Idol"
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
     },
     "key": "AxeGold_FrostFire",
     "maxQuality": 4,
@@ -1664,8 +1675,8 @@
     "biome": "swamp",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader3Weapon",
-      "name": "Silver Battle Idol"
+      "key": "Upgrader2Weapon",
+      "name": "Iron Battle Idol"
     },
     "key": "AxeIron",
     "maxQuality": 4,
@@ -1719,8 +1730,8 @@
     "biome": "mistlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader4Weapon",
-      "name": "Black Metal Battle Idol"
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
     },
     "key": "AxeJotunBane",
     "maxQuality": 4,
@@ -1818,8 +1829,8 @@
     "biome": "deepNorth",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader1Weapon",
-      "name": "Bronze Battle Idol"
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
     },
     "key": "AtgeirGold",
     "maxQuality": 4,
@@ -1829,8 +1840,8 @@
     "biome": "deepNorth",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader4Weapon",
-      "name": "Black Metal Battle Idol"
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
     },
     "key": "AxeGold",
     "maxQuality": 4,
@@ -1895,8 +1906,8 @@
     "biome": "deepNorth",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader2Armor",
-      "name": "Iron Protection Idol"
+      "key": "Upgrader7Weapon",
+      "name": "Bloodgold Battle Idol"
     },
     "key": "FistGold",
     "maxQuality": 4,
@@ -2082,8 +2093,8 @@
     "biome": "mistlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader4Weapon",
-      "name": "Black Metal Battle Idol"
+      "key": "Upgrader5Weapon",
+      "name": "Black Marble Battle Idol"
     },
     "key": "KnifeSkollAndHati",
     "maxQuality": 4,
@@ -2148,8 +2159,8 @@
     "biome": "ashlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader5Weapon",
-      "name": "Black Marble Battle Idol"
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
     },
     "key": "SpearSplitner",
     "maxQuality": 4,
@@ -2159,8 +2170,8 @@
     "biome": "ashlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader5Weapon",
-      "name": "Black Marble Battle Idol"
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
     },
     "key": "SpearSplitner_Blood",
     "maxQuality": 4,
@@ -2170,8 +2181,8 @@
     "biome": "ashlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader5Weapon",
-      "name": "Black Marble Battle Idol"
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
     },
     "key": "SpearSplitner_Nature",
     "maxQuality": 4,
@@ -2181,8 +2192,8 @@
     "biome": "ashlands",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader5Weapon",
-      "name": "Black Marble Battle Idol"
+      "key": "Upgrader6Weapon",
+      "name": "Flametal Battle Idol"
     },
     "key": "SpearSplitner_Lightning",
     "maxQuality": 4,
@@ -2467,8 +2478,8 @@
     "biome": "blackForest",
     "group": "weapons",
     "idol": {
-      "key": "Upgrader1Weapon",
-      "name": "Bronze Battle Idol"
+      "key": "Upgrader0Weapon",
+      "name": "Wooden Battle Idol"
     },
     "key": "SwordWood",
     "maxQuality": 4,
